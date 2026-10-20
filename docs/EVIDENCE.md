@@ -6,6 +6,8 @@
 
 ## 실험 문서
 
+- [모바일 문서 스크롤과 지도 크기](assets/mobile-safari-20261021/README.md)
+
 - [지도 보조 PF 180개 조합과 실제 웹의 2층 재생](experiments/2026-10-21-map-particle-pdr.md)
 
 - [비평 반영: 고정 표면 비교와 GNSS 편향 분석](experiments/2026-10-21-critical-review.md)

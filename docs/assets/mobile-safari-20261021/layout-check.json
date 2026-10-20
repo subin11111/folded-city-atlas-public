@@ -1,0 +1,283 @@
+{
+  "base": "http://127.0.0.1:8791",
+  "engine": "Chromium mobile layout; not Safari toolbar automation",
+  "errors": [],
+  "cases": [
+    {
+      "name": "01-short-viewport",
+      "viewport": 650,
+      "scrollY": 0,
+      "scrollHeight": 746,
+      "clientHeight": 650,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 650,
+        "height": 650,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 650,
+        "height": 602,
+        "width": 393
+      },
+      "sheet": {
+        "top": 385,
+        "bottom": 650,
+        "height": 265,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 403,
+        "height": 355,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 403,
+        "height": 355,
+        "width": 393
+      }
+    },
+    {
+      "name": "02-document-scroll",
+      "viewport": 650,
+      "scrollY": 65,
+      "scrollHeight": 746,
+      "clientHeight": 650,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 650,
+        "height": 650,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 650,
+        "height": 602,
+        "width": 393
+      },
+      "sheet": {
+        "top": 385,
+        "bottom": 650,
+        "height": 265,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 403,
+        "height": 355,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 403,
+        "height": 355,
+        "width": 393
+      }
+    },
+    {
+      "name": "03-tall-viewport",
+      "viewport": 760,
+      "scrollY": 65,
+      "scrollHeight": 856,
+      "clientHeight": 760,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 760,
+        "height": 760,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 760,
+        "height": 712,
+        "width": 393
+      },
+      "sheet": {
+        "top": 447,
+        "bottom": 760,
+        "height": 313,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 465,
+        "height": 417,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 465,
+        "height": 417,
+        "width": 393
+      }
+    },
+    {
+      "name": "04-sheet-collapsed",
+      "viewport": 760,
+      "scrollY": 65,
+      "scrollHeight": 856,
+      "clientHeight": 760,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 760,
+        "height": 760,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 760,
+        "height": 712,
+        "width": 393
+      },
+      "sheet": {
+        "top": 704,
+        "bottom": 760,
+        "height": 56,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 722,
+        "height": 674,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 722,
+        "height": 674,
+        "width": 393
+      }
+    },
+    {
+      "name": "05-scroll-end-no-gap",
+      "viewport": 760,
+      "scrollY": 96,
+      "scrollHeight": 856,
+      "clientHeight": 760,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 760,
+        "height": 760,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 760,
+        "height": 712,
+        "width": 393
+      },
+      "sheet": {
+        "top": 704,
+        "bottom": 760,
+        "height": 56,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 722,
+        "height": 674,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 722,
+        "height": 674,
+        "width": 393
+      }
+    },
+    {
+      "name": "06-sheet-expanded",
+      "viewport": 760,
+      "scrollY": 96,
+      "scrollHeight": 856,
+      "clientHeight": 760,
+      "bodyPosition": "static",
+      "frame": {
+        "top": 0,
+        "bottom": 760,
+        "height": 760,
+        "width": 393
+      },
+      "header": {
+        "top": 0,
+        "bottom": 48,
+        "height": 48,
+        "width": 393
+      },
+      "workspace": {
+        "top": 48,
+        "bottom": 760,
+        "height": 712,
+        "width": 393
+      },
+      "sheet": {
+        "top": 118,
+        "bottom": 760,
+        "height": 642,
+        "width": 393
+      },
+      "map": {
+        "top": 48,
+        "bottom": 136,
+        "height": 88,
+        "width": 393
+      },
+      "canvas": {
+        "top": 48,
+        "bottom": 136,
+        "height": 88,
+        "width": 393
+      }
+    }
+  ],
+  "routeText": "32.8 m\n가장 짧은 도보 경로",
+  "walk": {
+    "sheetBottom": 760,
+    "frameBottom": 760,
+    "frameTop": 0,
+    "headerDisplay": "none"
+  },
+  "desktop": {
+    "frameDisplay": "contents",
+    "width": 1280,
+    "scrollWidth": 1280
+  }
+}

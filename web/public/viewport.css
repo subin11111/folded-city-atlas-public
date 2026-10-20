@@ -10,15 +10,22 @@
   --safe-right:env(safe-area-inset-right,0px);
 }
 @supports(height:100dvh){:root{--app-height:100dvh;}}
+.app-frame{display:contents}
 .location-controls svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;vertical-align:middle}
 .menu-map-controls{display:none}
 @media (max-width:650px), (max-height:500px) and (pointer:coarse) {
-  html { overflow:hidden; }
+  html { height:auto;min-height:100%;overflow-x:clip;overflow-y:auto;overscroll-behavior-y:auto; }
   body {
-    position:fixed;
-    top:var(--app-top);left:var(--app-left);
+    position:static;width:100%;height:auto;
+    min-height:calc(100vh + 96px);display:block;overflow:visible;overscroll-behavior-y:auto;
+  }
+  @supports(height:100lvh){body{min-height:calc(100lvh + 96px)}}
+  /* Keep native document scroll available to Safari's toolbar animation.
+     The sticky frame fills the visible area; the scroll runway is never a blank footer. */
+  .app-frame {
+    position:sticky;top:var(--app-top);left:var(--app-left);
     width:var(--app-width);height:var(--app-height);
-    min-height:0;display:flex;flex-direction:column;overflow:hidden;
+    min-height:0;display:flex;flex-direction:column;overflow:clip;
   }
   .topbar {
     flex:none;height:calc(48px + var(--safe-top));
@@ -33,6 +40,7 @@
   }
   .sidebar { padding-bottom:var(--safe-bottom);padding-left:var(--safe-left);padding-right:var(--safe-right); }
   .sheet-scroll { padding-bottom:16px; }
+  .sidebar,.sheet-scroll { overscroll-behavior-y:auto; }
   .sheet-grip { flex-shrink:0; }
   .workspace[data-sheet=collapsed] .sheet-grip { height:56px; }
   .walk-topbar { top:calc(10px + var(--safe-top));left:max(10px,var(--safe-left));right:max(10px,var(--safe-right)); }
@@ -75,4 +83,7 @@
   .menu-map-controls #headingButton span{font-size:13px}
   .wide-map .map-controls { bottom:calc(34px + var(--safe-bottom)); }
   .wide-map .route-player,.wide-map .building-card { bottom:calc(28px + var(--safe-bottom)); }
+}
+@media (display-mode:standalone) and (max-width:650px), (display-mode:standalone) and (max-height:500px) and (pointer:coarse) {
+  body { min-height:var(--app-height); }
 }

@@ -735,15 +735,17 @@ $
 ![실내 지도 위 3차원 경로](docs/assets/web-release-20261019/03-route-3d.jpg)
 
 <table>
-  <tr><th>목적지와 경로</th><th>사진 안내</th><th>펼친 장소 목록</th></tr>
+  <tr><th>모바일 지도와 목록</th><th>사진 안내</th><th>목록을 접은 지도</th></tr>
   <tr>
-    <td width="33%"><img src="docs/assets/mobile-journey-20261020/mobile-route.jpg" alt="모바일 목적지와 경로"></td>
+    <td width="33%"><img src="docs/assets/mobile-safari-20261021/03-tall-viewport.png" alt="보이는 화면 높이에 맞춘 모바일 지도와 목록"></td>
     <td width="33%"><img src="docs/assets/mobile-journey-20261020/mobile-walk.jpg" alt="모바일 실제 사진 안내"></td>
-    <td width="33%"><img src="docs/assets/mobile-journey-20261020/mobile-list-expanded.jpg" alt="위로 펼친 장소 목록"></td>
+    <td width="33%"><img src="docs/assets/mobile-safari-20261021/04-sheet-collapsed.png" alt="목록을 접으면 화면을 채우는 지도"></td>
   </tr>
 </table>
 
 모바일은 검색, 목적지 선택, 경로 확인과 안내 시작을 한 흐름으로 구성했다. 하단 목록을 내리면 지도 영역이 커지고 올리면 목록을 스크롤할 수 있다. 배포본 메뉴에는 안내 사용법만 남기고 연구 정보, GNSS 재현과 사진 검사 도구는 저장소의 개발 자료로 분리했다.
+
+페이지 전체의 고정과 스크롤 잠금을 풀어 모바일 브라우저의 문서 스크롤을 복원했다. 지도와 목록은 보이는 화면에 붙어 있고, 주소창 등으로 화면 높이가 바뀌면 함께 크기를 바꾼다. Windows의 모바일 레이아웃 확인에서는 문서 스크롤 전후와 화면 높이 변경, 목록의 세 높이, 경로 계산과 사진 안내를 대조했다. Safari 도구막대의 실제 축소 동작과 구분한 [모바일 화면 기록](docs/assets/mobile-safari-20261021/README.md)이다.
 
 <details>
 <summary>전체 화면 기록</summary>
@@ -755,9 +757,9 @@ $
 | 사진 이동 | [출입구](docs/assets/web-release-20261019/06-photo-entrance.jpg), [로비](docs/assets/web-release-20261019/07-photo-lobby.jpg) |
 | CU | [검색](docs/assets/web-release-20261019/13-search-cu.jpg), [경로](docs/assets/web-release-20261019/14-cu-route.jpg) |
 | 부가 정보 | [메뉴](docs/assets/web-release-20261019/10-menu.jpg), [프로젝트 정보](docs/assets/web-release-20261019/11-project-info.jpg), [사진 검사](docs/assets/web-release-20261019/12-photo-audit.jpg) |
-| 모바일 | [접힌 목록과 지도](docs/assets/mobile-journey-20261020/mobile-map-collapsed.jpg), [사진 보기 설정](docs/assets/mobile-journey-20261020/mobile-settings.jpg) |
+| 모바일 | [현재 펼친 목록](docs/assets/mobile-safari-20261021/06-sheet-expanded.png), [현재 사진 안내](docs/assets/mobile-safari-20261021/07-photo-navigation.png), [사진 보기 설정](docs/assets/mobile-journey-20261020/mobile-settings.jpg) |
 
-데스크톱 캡처는 2026-10-19 배포본, 모바일 캡처는 2026-10-20 개편본이다. [데스크톱 색인](docs/assets/web-release-20261019/README.md)과 [모바일 색인](docs/assets/mobile-journey-20261020/README.md)에 촬영 환경을 기록했다.
+데스크톱 기록은 2026-10-19 배포본이다. 모바일 사진 안내의 기존 캡처는 2026-10-20, 지도와 목록의 최신 캡처는 2026-10-21이다. [데스크톱 색인](docs/assets/web-release-20261019/README.md), [이전 모바일 색인](docs/assets/mobile-journey-20261020/README.md)과 [현재 레이아웃 확인](docs/assets/mobile-safari-20261021/README.md)에 환경을 기록했다.
 
 </details>
 
@@ -976,7 +978,7 @@ Windows 이관본에 원래 선택 포즈 CSV가 없어 웹 제작과 동일한 
 | 위치와 헤딩 | 위치 API, 칼만, RTS, 실내외 고유 GNSS 1,099개와 지도 위치 대조 | 큰 실내 차이의 보완, 실제 방문자의 웹 센서 수집과 측위 |
 | 실내외 전환 | 입구 수동 확인 후 기존 실내 경로 연결 | 미등록 접근로 관측과 실내 자동 재위치 추정 |
 
-코드 테스트는 알고리즘과 경계 조건을 확인한다. 웹 회귀 검사는 Node.js 79개와 Python 30개로 구성되며 오프라인 실험의 테스트 집계와 따로 관리한다. 위치 수신부터 실내 경로 API까지의 브라우저 시나리오와 실측 비교 화면의 구간 선택, 좌표 전환, 재생 및 모바일 표시를 확인했다. 지도 보조 PF는 브라우저 모듈 실행, 2층 표시와 현재 층 좌표의 재경로 계산까지 연결했다. 테스트 통과만으로 현장 통행이나 로봇 주행의 안전성이 확정되지는 않는다.
+코드 테스트는 알고리즘과 경계 조건을 확인한다. 웹 회귀 검사는 Node.js 80개와 Python 30개로 구성되며 오프라인 실험의 테스트 집계와 따로 관리한다. 위치 수신부터 실내 경로 API까지의 브라우저 시나리오와 실측 비교 화면의 구간 선택, 좌표 전환, 재생 및 모바일 표시를 확인했다. 지도 보조 PF는 브라우저 모듈 실행, 2층 표시와 현재 층 좌표의 재경로 계산까지 연결했다. 테스트 통과만으로 현장 통행이나 로봇 주행의 안전성이 확정되지는 않는다.
 
 ### 6.7 실내 높이와 배경지도의 기준
 

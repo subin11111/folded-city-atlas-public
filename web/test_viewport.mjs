@@ -54,3 +54,16 @@ test('mobile keeps auxiliary controls in the menu without duplicating their acti
   assert.ok(app.includes("['topView','mapControls']"));
   assert.ok(css.includes('.location-controls span{display:none}'));
 });
+
+test('native document scrolling remains available while the visible app frame stays pinned',()=>{
+  const css=fs.readFileSync(new URL('./public/viewport.css',import.meta.url),'utf8');
+  const html=fs.readFileSync(new URL('./public/index.html',import.meta.url),'utf8');
+  assert.ok(html.includes('class="app-frame" id="appFrame"'));
+  assert.ok(css.includes('position:static;width:100%;height:auto;'));
+  assert.ok(css.includes('position:sticky;top:var(--app-top)'));
+  assert.ok(css.includes('min-height:calc(100lvh + 96px)'));
+  assert.ok(css.includes('.sidebar,.sheet-scroll { overscroll-behavior-y:auto; }'));
+  assert.doesNotMatch(css,/body\s*\{\s*position:fixed/);
+  const metrics=viewportMetrics({scrollY:160,innerWidth:393,innerHeight:760,visualViewport:{width:393,height:760,offsetTop:0,offsetLeft:0,scale:1}});
+  assert.equal(metrics.top,0);assert.equal(metrics.height,760);
+});

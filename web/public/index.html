@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="/journey-shell.css?v=safari-1">
   <link rel="stylesheet" href="/location.css?v=walking-guide-1">
   <link rel="stylesheet" href="/world-map.css?v=1">
-  <link rel="stylesheet" href="/viewport.css?v=mobile-clean-1">
+  <link rel="stylesheet" href="/viewport.css?v=safari-scroll-2">
   <style>#mapSvg{user-select:none}</style>
   <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
 </head>
 <body>
+  <div class="app-frame" id="appFrame">
   <section class="loading-screen" id="loadingScreen" role="status" aria-live="polite" aria-label="지도 불러오는 중">
     <div class="loading-content">
       <div class="loading-artwork" id="loadingArtwork" aria-hidden="true">
@@ -94,6 +95,7 @@
       <div class="map-attribution"><span><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a> · <a href="https://openfreemap.org/" target="_blank" rel="noreferrer">OpenFreeMap</a> · <a href="https://openmaptiles.org/" target="_blank" rel="noreferrer">© OpenMapTiles</a> · <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">AWS Terrain</a> · Folded City</span></div>
     </section>
   </main>
+  </div>
   <dialog id="photoDialog" aria-labelledby="photoTitle"><button class="dialog-close" aria-label="닫기">×</button><div class="photo-body"><img id="photoImage" alt="해당 위치에서 실제 촬영한 사진"><div><p class="eyebrow">사진으로 만나는 공간</p><h2 id="photoTitle"></h2><p id="photoCaption"></p><div class="photo-nav"><button id="previousPhoto">← 이전 사진</button><button id="nextPhoto">다음 사진 →</button></div></div></div></dialog>
   <dialog id="evidenceDialog" class="menu-drawer" aria-labelledby="menuTitle"><button class="dialog-close" aria-label="메뉴 닫기">×</button><div class="evidence-body"><p class="eyebrow">FOLDED CITY</p><h2 id="menuTitle">메뉴</h2><nav class="menu-shortcuts" aria-label="빠른 이동"><button id="menuSearch">장소 검색·길찾기 <span>→</span></button><button id="menuIndoorStart">건물 안에서 안내 시작 <span>→</span></button></nav><section class="service-help"><h3>실내 안내 이용하기</h3><p>목적지를 선택하고 지금 있는 입구나 장소를 확인해 주세요. 동작·방향 접근을 허용하면 휴대폰 걸음과 방향으로 위치를 추정합니다.</p><p>휴대폰 위쪽을 걷는 방향으로 들고 화면을 켜 두세요. 계단·엘리베이터 이동 후에는 도착한 층을 확인해 주세요. 위치가 맞지 않으면 ‘현재 위치 수정’에서 주변 장소를 선택할 수 있어요.</p><p>실내 위치는 추정값이에요. 주변 표지와 출입문을 함께 확인해 주세요.</p><h3>사진으로 미리 보기</h3><p>방문하기 전에 실제 촬영 사진과 3D 지도로 경로를 둘러볼 수 있어요. 사진 화면에서 이동하는 위치는 휴대폰의 현재 위치와 다릅니다.</p><h3>위치 정보</h3><p>현재 위치와 동작 센서는 이 화면에서 처리합니다. 길을 다시 찾을 때는 선택한 목적지와 건물 안 추정 좌표만 전송합니다. 위치 이력을 서버에 저장하지 않습니다.</p></section><p class="menu-footer">Folded City · 건국대학교</p></div></dialog>
   <div id="toast" role="status"></div>
