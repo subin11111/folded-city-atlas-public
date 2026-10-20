@@ -37,9 +37,20 @@ test('viewport events are coalesced, write CSS metrics and release listeners',()
 test('mobile chrome and photo navigation share one bounded frame with safe areas',()=>{
   const css=fs.readFileSync(new URL('./public/viewport.css',import.meta.url),'utf8');
   const html=fs.readFileSync(new URL('./public/index.html',import.meta.url),'utf8');
-  assert.ok(html.includes('/viewport.css?v=safari-1'));
+  assert.match(html,/\/viewport\.css\?v=[^"\s]+/);
   for(const name of ['safe-area-inset-top','safe-area-inset-bottom','safe-area-inset-left','safe-area-inset-right'])assert.ok(css.includes(name));
   assert.ok(css.includes('.workspace,.workspace.walking'));
   assert.ok(css.includes('height:var(--app-height)'));
   assert.ok(css.includes('.location-anchor-dialog select { font-size:16px; }'));
+});
+
+test('mobile keeps auxiliary controls in the menu without duplicating their actions',()=>{
+  const layout=fs.readFileSync(new URL('./public/mobile-layout.js',import.meta.url),'utf8');
+  const app=fs.readFileSync(new URL('./public/app.js',import.meta.url),'utf8');
+  const css=fs.readFileSync(new URL('./public/viewport.css',import.meta.url),'utf8');
+  assert.ok(layout.includes('destination.append(element)'));
+  assert.ok(layout.includes('home.insertBefore(element,next)'));
+  assert.ok(!layout.includes('cloneNode'));
+  assert.ok(app.includes("['topView','mapControls']"));
+  assert.ok(css.includes('.location-controls span{display:none}'));
 });

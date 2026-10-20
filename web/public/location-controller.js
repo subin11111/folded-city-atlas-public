@@ -3,6 +3,7 @@ import {createGeoFrame} from './geo-frame.js';
 import {createOutdoorRouter,distance} from './outdoor-routing.js';
 import {navigationEstimate} from './live-navigation.js';
 import {PedestrianTracker,indoorProgress,requestWalkingSensors} from './indoor-position.js';
+import {dockMobileControl} from './mobile-layout.js';
 const $=id=>document.getElementById(id),finite=Number.isFinite;
 
 export function createLocationController({map,campus,entry,navigation,places,getScene,setView,onIndoor,onLevel,notify,collapseSheet}){
@@ -10,8 +11,9 @@ export function createLocationController({map,campus,entry,navigation,places,get
   const state={mode:'off',fix:null,heading:null,headingAt:0,follow:true,headingUp:false,goal:'',goalName:'',indoorDistance:0,route:null,indoorRoute:null,watch:null};
   let lastGoodAt=0,tracker=null,generation=0,sensorsAttached=false,headingAttached=false,lastDraw=0,error='',wakeLock=null,pendingTransition=null;
   const controls=document.createElement('div');controls.className='location-controls';
-  controls.innerHTML='<button id="locateButton" aria-label="현재 위치 사용">◎ <span>내 위치</span></button><button id="headingButton" aria-label="휴대폰 방향 사용">➤</button>';
+  controls.innerHTML='<button id="locateButton" aria-label="현재 위치 사용"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg><span>내 위치</span></button><button id="headingButton" aria-label="휴대폰 방향 사용">➤ <span>휴대폰 방향</span></button>';
   document.querySelector('.map-shell').append(controls);
+  dockMobileControl($('headingButton'));
   const panel=document.createElement('section');panel.className='location-card';panel.id='locationCard';panel.hidden=true;panel.setAttribute('aria-label','현재 위치 안내');
   panel.innerHTML='<div class="location-summary"><span id="locationMode">현재 위치</span><button id="stopLocation" aria-label="현재 위치 안내 종료">×</button></div><div class="live-navigation-summary" id="liveSummary" hidden><span id="liveDestination"></span><strong id="liveRemaining"></strong></div><strong id="locationInstruction">위치를 찾고 있어요</strong><p id="locationQuality" role="status"></p><p id="headingStatus"></p><div class="location-actions"><button id="followLocation" aria-pressed="true">위치 따라가기</button><button id="confirmEntrance" hidden>입구에서 실내 안내</button><button id="confirmFloor" hidden></button><button id="correctIndoor" hidden>현재 위치 수정</button><button id="retryWalkingSensors" hidden>동작 센서 허용</button><button id="rerouteIndoor" hidden>여기서 경로 다시 찾기</button></div><details><summary>이용 안내</summary><p id="locationHelp">위치 권한을 허용해 주세요. 실내에서는 입구를 확인한 뒤 걸음과 방향 센서로 위치를 추정합니다.</p></details>';
   document.querySelector('.map-shell').append(panel);

@@ -1,12 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {orbitCamera,followChanged} from './public/map-camera.js';
+import {orbitCamera,followChanged,campusFraming} from './public/map-camera.js';
 import {navigationEstimate} from './public/live-navigation.js';
 test('left drag changes viewpoint without moving the map centre; pitch stays bounded',()=>{
   assert.notEqual(orbitCamera({bearing:-32,pitch:50},200,0).bearing,-32);
   assert.equal(orbitCamera({bearing:0,pitch:50},0,1000).pitch,70);
   assert.equal(orbitCamera({bearing:0,pitch:50},0,-1000).pitch,0);
+});
+
+test('compact campus view stays above the 3D rendering cutoff with proportional padding',()=>{
+  for(const [width,height] of [[393,330],[393,540],[320,180],[1000,400],[1280,800]]){
+    const frame=campusFraming(width,height);
+    assert.ok(frame.minZoom>=13.5);
+    assert.ok(frame.padding.top+frame.padding.bottom<height*.4);
+  }
+  const world=fs.readFileSync(new URL('./public/world-map.js',import.meta.url),'utf8');
+  assert.ok(world.includes('zoom:Math.max(framing.minZoom,fit.zoom)'));
 });
 test('heading-up camera rotates even when the user turns in place across north',()=>{
   const previous={position:[0,0],headingDegrees:359,headingUp:true};

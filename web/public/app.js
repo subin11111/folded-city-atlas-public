@@ -2,9 +2,14 @@ const $ = (id) => document.getElementById(id);
 import {loadingScreen} from './loading-screen.js?v=3';
 import {createWalkController} from './walk-controller.js?v=journey-2';
 import {createBottomSheet} from './sheet-controller.js?v=safari-1';
-import {createLocationController} from './location-controller.js';
+import {createLocationController} from './location-controller.js?v=mobile-clean-1';
+import {dockMobileControl} from './mobile-layout.js';
 import {applyCampusLabels,campusBuildingMatches} from './campus-data.js';
 const bottomSheet=createBottomSheet();
+const mobileMapControls=document.createElement('section');mobileMapControls.id='menuMapControls';mobileMapControls.className='menu-map-controls';
+mobileMapControls.innerHTML='<h3>지도 조작</h3>';
+document.querySelector('.evidence-body').insertBefore(mobileMapControls,document.querySelector('.service-help'));
+for(const id of ['topView','mapControls'])dockMobileControl($(id));
 const svgNS = 'http://www.w3.org/2000/svg';
 const state = { level: 'all', view: '3d', sceneMode:'campus', selectedBuilding:null, route: null, photoIndex: 0, progress: 0, playing: false, box: [-40,-25,65,60], three: null, threeLoading:null };
 const escapeHTML = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -221,7 +226,7 @@ function updateSceneHUD() {
   }
 }
 async function initThree() {
-  const {createCampusScene}=await import('./campus-scene.js?v=walking-guide-1');
+  const {createCampusScene}=await import('./campus-scene.js?v=mobile-clean-1');
   state.three=await createCampusScene($('threeCanvas'),{campus,map,navigation,places,
     onEnterBuilding(){location.pauseFollow();state.three?.showIndoor();choosePlace($('destination').value);},onWalkLook(){walker.onLook();},
     onMode(mode,b){state.sceneMode=mode;state.selectedBuilding=b;updateSceneHUD();},
@@ -267,7 +272,7 @@ $('zoomOut').addEventListener('click',()=>state.view==='3d'?state.three?.zoom(1.
 $('resetView').addEventListener('click',()=>{state.box=[-40,-25,65,60];applyBox();state.three?.reset();});
 $('campusHome').addEventListener('click',async()=>{await setView('3d');state.three?.showCampus();});
 $('indoorHome').addEventListener('click',async()=>{selectLevel('all');await setView('3d');state.three?.showIndoor();});
-$('topView').addEventListener('click',()=>state.three?.topView());
+$('topView').addEventListener('click',()=>{state.three?.topView();if($('evidenceDialog').open)$('evidenceDialog').close();});
 $('buildingAction').addEventListener('click',()=>choosePlace($('destination').value));
 $('mapSvg').addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY>0?1.08:.92);},{passive:false});
 let drag=null;

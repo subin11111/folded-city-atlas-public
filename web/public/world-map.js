@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {createWorldRegistration,displayElevationOffset} from './world-registration.js?v=indoor-datum-1';
-import {orbitCamera,followChanged} from './map-camera.js';
+import {orbitCamera,followChanged,campusFraming} from './map-camera.js?v=mobile-clean-1';
+import {dockMobileControl} from './mobile-layout.js';
 
 // Background coverage is global; custom building/terrain geometry remains campus-only.
 export async function createWorldMap(container,{mapData,campus,frame,scene,lift,onReady,onRegion,onPick,onError,onUserMove}){
@@ -28,6 +29,7 @@ export async function createWorldMap(container,{mapData,campus,frame,scene,lift,
   const tools=document.createElement('div');tools.className='world-map-tools';tools.setAttribute('aria-label','지도 조작');
   tools.innerHTML='<button type="button" data-map-tool="pan" aria-label="드래그로 지도 이동">이동</button><button type="button" data-map-tool="rotate" aria-label="드래그로 지도 회전">회전</button><button type="button" data-map-tool="north" aria-label="북쪽 맞추기"><span>↑</span> N</button>';
   container.append(tools);
+  dockMobileControl(tools);
   function setInteraction(value){
     interaction=value;
     for(const b of tools.querySelectorAll('[data-map-tool]'))if(b.dataset.mapTool!=='north')b.setAttribute('aria-pressed',String(b.dataset.mapTool===value));
@@ -69,7 +71,12 @@ export async function createWorldMap(container,{mapData,campus,frame,scene,lift,
   function setVisible(next){visible=next;element.hidden=!next||!ready;tools.hidden=!next||!ready;notice.hidden=true;if(next&&ready){libre.resize();libre.triggerRepaint();}}
   function showCampus(duration=850){
     lastFollow=null;autoFrameCampus=true;
-    libre.fitBounds([[west,south],[east,north]],{padding:{top:120,bottom:55,left:25,right:25},pitch:50,bearing:-32,duration});
+    const r=element.getBoundingClientRect(),framing=campusFraming(r.width,r.height);
+    const fit=libre.cameraForBounds([[west,south],[east,north]],{padding:framing.padding,bearing:framing.bearing});
+    if(!fit)return;
+    // A small portrait map is pannable; do not zoom out until all custom 3D disappears.
+    libre.easeTo({...fit,zoom:Math.max(framing.minZoom,fit.zoom),pitch:framing.pitch,
+      bearing:framing.bearing,padding:framing.padding,duration});
   }
   libre.on('error',event=>{
     errors++;if(visible)notice.hidden=false;

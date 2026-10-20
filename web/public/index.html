@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/journey-shell.css?v=safari-1">
   <link rel="stylesheet" href="/location.css?v=walking-guide-1">
   <link rel="stylesheet" href="/world-map.css?v=1">
-  <link rel="stylesheet" href="/viewport.css?v=safari-1">
+  <link rel="stylesheet" href="/viewport.css?v=mobile-clean-1">
   <style>#mapSvg{user-select:none}</style>
   <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
 </head>
@@ -76,13 +76,13 @@
     </aside>
     <section class="map-shell" aria-label="지도">
       <div class="map-toolbar"><div class="view-switch" aria-label="지도 표시 방식"><button class="active" data-view="3d">3D 지도</button><button data-view="2d">실내 평면</button></div></div>
-      <nav class="scene-nav" aria-label="공간 이동"><button id="campusHome" class="active">캠퍼스 전체</button><span>›</span><button id="indoorHome">학생회관 실내</button><button id="topView" title="현재 공간을 위에서 보기">위에서 보기 ↓</button></nav>
+      <nav class="scene-nav" aria-label="공간 이동"><button id="campusHome" class="active">캠퍼스</button><span>›</span><button id="indoorHome">학생회관</button><button id="topView" title="현재 공간을 위에서 보기">위에서 보기 ↓</button></nav>
       <div id="map2d"><svg id="mapSvg" role="img" aria-label="학생회관 실내외 지도" viewBox="-42 -27 70 65"><defs><pattern id="grid" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M 5 0 L 0 0 0 5" fill="none" stroke="#dce2da" stroke-width=".035"/></pattern></defs><rect x="-2000" y="-2000" width="4000" height="4000" fill="#f1f3ee"/><rect x="-2000" y="-2000" width="4000" height="4000" fill="url(#grid)"/><g id="osmLayer"></g><g id="floorLayer"></g><g id="routeLayer"></g><g id="placesLayer"></g><g id="replayLayer"></g></svg></div>
       <div id="map3d" hidden><div id="threeCanvas"></div><div class="model-loading" id="modelLoading">3D 공간을 준비하고 있습니다…</div><section id="photoStage" class="photo-stage fill" hidden aria-label="사진으로 공간 둘러보기"><div id="photoBackdrop" class="photo-backdrop"></div><div class="photo-images"><img id="photoViewA" alt="주변 위치에서 실제 촬영한 공간"><img id="photoViewB" alt="주변 위치에서 실제 촬영한 공간"></div><div id="photoUnavailable" class="photo-unavailable" hidden><strong>아직 사진이 없는 방향이에요.</strong><p>가까운 촬영 방향을 보거나 3D 지도로 확인해 주세요.</p><button id="photoNearestDirection">가까운 촬영 방향 보기</button><button id="photoFallback3D">3D로 확인하기</button></div></section></div>
       <div class="map-label"><span class="eyebrow">KONKUK UNIVERSITY</span><strong id="mapTitle">건국대학교 서울캠퍼스</strong><span id="floorDescription">건물·도로·실내지도 연결</span></div>
       <div class="floor-control" id="floorControls" aria-label="층 선택" hidden><span>층</span><button data-level="all" class="active">전체</button><button data-level="2">2F</button><button data-level="1">1F</button><button data-level="outside">실외</button></div>
       <section class="building-card" id="buildingCard" aria-live="polite" hidden><span class="eyebrow">캠퍼스의 장소</span><h2 id="buildingName"></h2><p id="buildingDetail"></p><button id="buildingAction" hidden>입구에서 둘러보기 →</button></section>
-      <div class="map-controls"><button id="zoomIn" aria-label="확대">＋</button><button id="zoomOut" aria-label="축소">−</button><button id="resetView" aria-label="지도 전체 보기">⌖</button></div>
+      <div class="map-controls" id="mapControls"><button id="zoomIn" aria-label="확대">＋</button><button id="zoomOut" aria-label="축소">−</button><button id="resetView" aria-label="지도 전체 보기">⌖</button></div>
       <div class="route-player" id="routePlayer" hidden><button id="playButton" aria-label="경로 미리보기 재생">▶</button><div><strong>경로 미리보기</strong><span id="playProgress">출발 → 프라임홀</span></div><input type="range" id="routeProgress" min="0" max="100" value="0" aria-label="경로 진행 위치"><button id="routePhoto">사진 보기 ↗</button></div>
       <section id="walkHUD" class="walk-hud" hidden aria-label="사람 시점 탐색">
         <div class="walk-topbar"><button id="walkExit" class="icon-button" aria-label="3D 전체 지도로 돌아가기"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button><div class="walk-heading"><small id="walkLocation">제1학생회관 · 입구 앞</small><strong id="walkGoal">PRIME HALL</strong></div><span id="walkFloor">1F</span><button id="walkSettingsToggle" class="icon-button" aria-label="보기 설정" aria-expanded="false" aria-controls="walkSettings"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button></div>
@@ -98,5 +98,5 @@
   <dialog id="evidenceDialog" class="menu-drawer" aria-labelledby="menuTitle"><button class="dialog-close" aria-label="메뉴 닫기">×</button><div class="evidence-body"><p class="eyebrow">FOLDED CITY</p><h2 id="menuTitle">메뉴</h2><nav class="menu-shortcuts" aria-label="빠른 이동"><button id="menuSearch">장소 검색·길찾기 <span>→</span></button><button id="menuIndoorStart">건물 안에서 안내 시작 <span>→</span></button></nav><section class="service-help"><h3>실내 안내 이용하기</h3><p>목적지를 선택하고 지금 있는 입구나 장소를 확인해 주세요. 동작·방향 접근을 허용하면 휴대폰 걸음과 방향으로 위치를 추정합니다.</p><p>휴대폰 위쪽을 걷는 방향으로 들고 화면을 켜 두세요. 계단·엘리베이터 이동 후에는 도착한 층을 확인해 주세요. 위치가 맞지 않으면 ‘현재 위치 수정’에서 주변 장소를 선택할 수 있어요.</p><p>실내 위치는 추정값이에요. 주변 표지와 출입문을 함께 확인해 주세요.</p><h3>사진으로 미리 보기</h3><p>방문하기 전에 실제 촬영 사진과 3D 지도로 경로를 둘러볼 수 있어요. 사진 화면에서 이동하는 위치는 휴대폰의 현재 위치와 다릅니다.</p><h3>위치 정보</h3><p>현재 위치와 동작 센서는 이 화면에서 처리합니다. 길을 다시 찾을 때는 선택한 목적지와 건물 안 추정 좌표만 전송합니다. 위치 이력을 서버에 저장하지 않습니다.</p></section><p class="menu-footer">Folded City · 건국대학교</p></div></dialog>
   <div id="toast" role="status"></div>
   <noscript><style>.loading-screen{display:none}</style><p>지도를 보려면 브라우저의 자바스크립트를 켜 주세요.</p></noscript>
-  <script type="module" src="/bootstrap.js?v=safari-1"></script>
+  <script type="module" src="/bootstrap.js?v=mobile-clean-1"></script>
 </body></html>
