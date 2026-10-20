@@ -9,7 +9,7 @@
     "api/dispatch.py": {
       "maxDuration": 60,
       "includeFiles": "{server.py,navigation.py,walk.py,photo_library.py,public/data/{navigation,catalog,photos,photo_regions,photo_library,photo_views}.json}",
-      "excludeFiles": "{node_modules/**,**/__pycache__/**,tests/**,test_*,scripts/**,public/{models,photos,photos_full,photos_corrected,photo_thumbs,photo_audit,vendor,brand,research}/**}"
+      "excludeFiles": "{dist/**,node_modules/**,**/__pycache__/**,tests/**,test_*,scripts/**,public/{models,photos,photos_full,photos_corrected,photo_thumbs,photo_audit,vendor,brand,research}/**}"
     }
   },
   "rewrites": [
