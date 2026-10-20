@@ -1,0 +1,53 @@
+{
+  "replaced_figure": 14,
+  "existing_final_height_map_and_rviz_retained": true,
+  "all_other_report_text_preserved": true,
+  "image_extent_unchanged": true,
+  "source_images": {
+    "original": {
+      "path": "docs\\assets\\session-portfolios\\floor2\\O_FULL.png",
+      "sha256": "52fc07c804369ca1e81bd549be1a6cd62b5051ea945a5e2eaa9ddf88e261f37c"
+    },
+    "selected": {
+      "path": "docs\\assets\\session-portfolios\\floor2\\J04.png",
+      "sha256": "f26a02231df910129948d33238a565e47b5ebc764a0fd52e2c0c91d16ca1346f"
+    },
+    "wall": {
+      "path": "docs\\assets\\visual-shortlist-review\\floor2_548_981_wall.png",
+      "sha256": "b15af407cc771fb92ceeb045ce79956676a2abd854382006a5baaf84859f9397"
+    }
+  },
+  "original_xy_crop": [
+    228,
+    180,
+    828,
+    965
+  ],
+  "wall_xy_crops": {
+    "H00": [
+      263,
+      237,
+      539,
+      666
+    ],
+    "J04": [
+      975,
+      237,
+      1251,
+      666
+    ]
+  },
+  "initial_frames": 1215,
+  "selected_frames": 925,
+  "wall_diagnostic": {
+    "nodes": [
+      548,
+      981
+    ],
+    "H00_plane_gap_cm": 23.28,
+    "J04_plane_gap_cm": 1.54,
+    "not_survey_ground_truth": true
+  },
+  "other_wall_residual_cm": 54.42,
+  "method": "Existing measured pointcloud plots cropped to original axes and uniformly resized. No points edited or regenerated."
+}
