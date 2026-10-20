@@ -148,7 +148,7 @@ summary::-webkit-details-marker { display:none; }
 #toast { font-size:14px; bottom:24px; }
 @media (min-width:1600px) { .workspace { grid-template-columns:380px minmax(0,1fr); } .walking,.wide-map { grid-template-columns:0 minmax(0,1fr); } }
 @media (min-width:651px) and (max-width:1150px) { .workspace { grid-template-columns:320px minmax(0,1fr); height:calc(100dvh - 64px); margin:0; } .walking,.wide-map { grid-template-columns:0 minmax(0,1fr); } .scene-nav { top:68px; } .map-label { top:124px; } .walking .map-shell { margin:0; } }
-@media (max-width:650px) {
+@media (max-width:650px), (max-height:500px) and (pointer:coarse) {
   .topbar { height:56px; padding:0 16px; gap:12px; }
   .brand-mark { width:30px; height:30px; }
   .brand-name { font-size:20px; font-weight:700; letter-spacing:-.6px; }

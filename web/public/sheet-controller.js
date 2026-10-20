@@ -1,6 +1,8 @@
-export function sheetDetents(availableHeight){
-  const height=Math.max(240,availableHeight);
-  return [56,Math.round(height*.44),Math.max(180,height-70)];
+export function sheetDetents(availableHeight,bottomInset=0){
+  const height=Math.max(120,availableHeight),inset=Math.max(0,bottomInset);
+  const collapsed=Math.min(height-48,56+inset);
+  const expanded=Math.max(collapsed+24,height-70);
+  return [collapsed,Math.min(expanded-12,Math.max(collapsed+12,Math.round(height*.44))),expanded];
 }
 export function nearestDetent(height,detents,velocity=0){
   const projected=height+Math.max(-2,Math.min(2,velocity))*140;
@@ -10,10 +12,10 @@ export function nearestDetent(height,detents,velocity=0){
 export function createBottomSheet(){
   const workspace=document.querySelector('.workspace'),sidebar=document.querySelector('.sidebar');
   const grip=document.getElementById('sheetGrip'),scroll=document.getElementById('sheetScroll');
-  const mobile=window.matchMedia('(max-width:650px)');
+  const mobile=window.matchMedia('(max-width:650px), (max-height:500px) and (pointer:coarse)');
   let index=1,drag=null,ignoreClick=false;
   const names=['접힘 · 지도 전체 보기','중간 높이','펼침 · 목록 스크롤'];
-  const heights=()=>sheetDetents(workspace.getBoundingClientRect().height);
+  const heights=()=>sheetDetents(workspace.getBoundingClientRect().height,parseFloat(getComputedStyle(sidebar).paddingBottom)||0);
   function paint(height){workspace.style.setProperty('--place-sheet-height',`${Math.round(height)}px`);}
   function set(next){
     index=Math.max(0,Math.min(2,next));drag=null;sidebar.classList.remove('sheet-dragging');
@@ -66,6 +68,8 @@ export function createBottomSheet(){
   scroll.addEventListener('touchend',()=>{if(touch?.claimed)finish();touch=null;});
   scroll.addEventListener('touchcancel',()=>{touch=null;set(index);});
   window.addEventListener('resize',()=>set(index));mobile.addEventListener('change',()=>set(index));
+  // visualViewport updates can change the workspace without window.resize.
+  new ResizeObserver(()=>{if(!drag)set(index);}).observe(workspace);
   set(1);
   return {expand(){set(2);},reveal(){if(index===0)set(1);},set};
 }

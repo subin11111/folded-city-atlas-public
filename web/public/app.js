@@ -1,7 +1,7 @@
 const $ = (id) => document.getElementById(id);
 import {loadingScreen} from './loading-screen.js?v=3';
 import {createWalkController} from './walk-controller.js?v=journey-2';
-import {createBottomSheet} from './sheet-controller.js?v=1';
+import {createBottomSheet} from './sheet-controller.js?v=safari-1';
 import {createLocationController} from './location-controller.js';
 import {applyCampusLabels,campusBuildingMatches} from './campus-data.js';
 const bottomSheet=createBottomSheet();
