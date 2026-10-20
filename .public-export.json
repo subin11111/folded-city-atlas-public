@@ -1,0 +1,11 @@
+{
+  "source_repository": "subin11111/folded-city-atlas",
+  "source_repository_id": "1422354070",
+  "target_repository": "subin11111/folded-city-atlas-public",
+  "allowed_roots": ["config", "docs", "scripts", "src", "tests", "web"],
+  "allowed_root_files": [".gitignore", ".public-export.json", "README.md", "README_HISTORY.md", "pytest.ini", "requirements-processing.txt"],
+  "excluded_parts": [".git", ".github", ".codex", ".vercel", "node_modules", "__pycache__", ".venv", "venv", "public_release_work", "final_report_work", "outputs", "logs"],
+  "excluded_names": ["Folded_City_Codex_인계.md", "id_rsa", "id_ed25519", "credentials.json", "service-account.json"],
+  "excluded_suffixes": [".db", ".sqlite", ".sqlite3", ".zip", ".7z", ".bag", ".mcap", ".docx", ".hwpx", ".pdf", ".pem", ".key", ".p12", ".pfx", ".bundle"],
+  "required_files": ["README.md", "web/public/index.html", "web/public/data/navigation.json"]
+}
