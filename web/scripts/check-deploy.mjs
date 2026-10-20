@@ -18,7 +18,7 @@ const config=read('vercel.json');
 const research=fs.readFileSync(path.join(root,'public/research.html'),'utf8');
 for(const match of research.matchAll(/(?:src|poster|href)="(\/research\/[^"#]+)"/g))if(!fs.existsSync(path.join(root,'public',match[1])))errors.push(`Missing research media ${match[1]}`);
 if(!fs.existsSync(path.join(root,'public/research.css')))errors.push('Missing research stylesheet');
-if(config.framework!==null||config.outputDirectory!=='public')errors.push('Expected buildless frontend + Python API');
+if(config.framework!==null||config.outputDirectory!=='dist')errors.push('Expected product-only static output + Python API');
 if(!config.functions?.['api/dispatch.py']?.includeFiles)errors.push('Missing explicit runtime data include');
 for(const [entry,settings] of Object.entries(config.functions||{}))for(const field of ['includeFiles','excludeFiles']){
  if(typeof settings[field]==='string'&&settings[field].length>256)errors.push(`Vercel ${entry}.${field} exceeds the 256-character schema limit`);

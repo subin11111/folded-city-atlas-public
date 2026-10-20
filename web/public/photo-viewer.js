@@ -16,7 +16,6 @@ export function createPhotoViewer({onTurn,on3D,onNearest}) {
     identity=null;stage.dataset.loading='false';$('photoUnavailable').hidden=false;
     for(const image of images){image.classList.remove('visible');image.setAttribute('aria-hidden','true');}
     $('photoBackdrop').style.backgroundImage='none';$('photoSourceInfo').textContent=message||'이 방향의 사진 없음';
-    $('currentViewDetails').textContent=message||'현재 위치·방향에 대응하는 실사 사진이 없습니다. 미촬영 영역을 생성하거나 다른 방의 사진으로 대체하지 않습니다.';
     stage.removeAttribute('data-photo-id');
   }
   async function display(photo){
@@ -26,7 +25,6 @@ export function createPhotoViewer({onTurn,on3D,onNearest}) {
     const url=corrected&&photo.display_url?photo.display_url:photo.url;
     const variant=corrected&&photo.display_url?'v3 암부 보정':'원본';
     const caption=`실제 RGB · ${photo.session} #${photo.node} · ${variant} · 위치 ${photo.distance_m.toFixed(1)}m / 방향 ${photo.heading_delta_deg}° 차이 · 360° 아님`;
-    $('currentViewDetails').textContent=caption;
     $('photoSourceInfo').textContent='주변에서 촬영한 사진';
     $('photoBrightness').textContent=corrected?'밝게 보기 켬':'밝게 보기 끔';
     $('photoBrightness').disabled=!photo.display_url;
@@ -41,7 +39,7 @@ export function createPhotoViewer({onTurn,on3D,onNearest}) {
       images[active].classList.remove('visible');images[active].setAttribute('aria-hidden','true');active=next;
       $('photoBackdrop').style.backgroundImage=`url("${url}")`;
       $('photoUnavailable').hidden=true;stage.dataset.loading='false';stage.dataset.photoId=photo.id;
-      stage.dataset.sourceVariant=variant;$('currentViewDetails').textContent=caption;
+      stage.dataset.sourceVariant=variant;
     }catch(error){if(token===serial)unavailable('원본 사진을 읽지 못했습니다. 다른 방향 또는 3D 보기를 선택해 주세요.');}
   }
   $('photoFit').addEventListener('click',()=>{

@@ -132,7 +132,7 @@ export function createWalkController({navigation,ensureScene,getScene,getGoal,ge
     lookPending=false;viewer.show(false);workspace.classList.remove('walking','photo-mode');document.body.classList.remove('is-walking');$('walkHUD').hidden=true;$('walkPhotoPanel').hidden=true;toggleSettings(false);toggleMap(false);getScene()?.showCampus();
   }
   function onLook(){if(!current||busy)return;lookPending=true;current.yaw=getScene().getWalkYaw();render();clearTimeout(lookTimer);lookTimer=setTimeout(refresh,140);}
-  $('walkStart').addEventListener('click',()=>start());$('walkExit').addEventListener('click',exit);
+  $('walkExit').addEventListener('click',exit);
   $('walkViewToggle').addEventListener('click',()=>presentation(!photoMode));
   $('walkHistory').addEventListener('click',goBack);
   $('lookLeft').addEventListener('click',()=>getScene()?.turnWalk(Math.PI/4));

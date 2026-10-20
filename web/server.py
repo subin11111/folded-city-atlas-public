@@ -15,9 +15,9 @@ ROOT = Path(__file__).resolve().parent
 PUBLIC = ROOT / "public"
 
 
-def find_route(start, end, mode="demo", avoid_stairs=False, database=None, policy='shortest'):
+def find_route(start, end, mode="demo", avoid_stairs=False, database=None, policy='shortest', start_position=None, start_level=None):
     """촬영 기록이 아닌 공간 격자에서 최단 경로를 계산한다."""
-    if mode not in ("demo", "verified"):
+    if mode not in ("walk", "demo", "verified"):
         raise ValueError("지원하지 않는 경로 모드입니다.")
     places={p['id']:p for p in json.loads((PUBLIC/'data/catalog.json').read_text('utf-8'))}
     if start not in places or end not in places:
@@ -30,6 +30,10 @@ def find_route(start, end, mode="demo", avoid_stairs=False, database=None, polic
     if any(not places[key].get('navigation_node') for key in (start,end)):
         return {'found':False,'route':[],'segments':[],'message':'CU는 학생회관 1층으로 안내되어 있으나 정확한 출입구 좌표를 확인 중입니다. 임의의 위치로 안내하지 않습니다.'}
     a,b=(tuple(places[key]['navigation_node']) for key in (start,end))
+    if start_position is not None:
+        if start_level not in nav.grids or len(start_position)!=2 or not all(math.isfinite(v) for v in start_position):
+            raise ValueError('현재 위치와 층을 확인해 주세요.')
+        a=nav.snap(start_level,start_position,maximum=.6)
     result=nav.search(a,b,policy=policy)
     if result is None:
         return {'found':False,'route':[],'segments':[],'message':
@@ -49,7 +53,7 @@ def find_route(start, end, mode="demo", avoid_stairs=False, database=None, polic
         alternatives.append({'policy':alternative,'label':label,'found':candidate is not None,
             'distance_m':round(candidate['distance'],1) if candidate else None,'portals':portals,
             'operation_verified':False if 'elevator' in portals else None})
-    return {'found':True,'mode':'spatial','start':places[start]['name'],'end':places[end]['name'],
+    return {'found':True,'mode':'spatial','start':'현재 추정 위치' if start_position is not None else places[start]['name'],'end':places[end]['name'],
         'distance_m':round(result['distance'],1),'graph_distance_m':result['distance'],
         'node_count':len(route),'expanded_cells':result['expanded'],'review_connectors':len([s for s in segments if s['kind']!='walk']),
         'field_verified':False,'recording_trajectory_used':False,'algorithm':'A*','grid_resolution_m':nav.cell,
@@ -59,16 +63,21 @@ def find_route(start, end, mode="demo", avoid_stairs=False, database=None, polic
 
 
 class Handler(SimpleHTTPRequestHandler):
+    static_root=PUBLIC
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=str(PUBLIC), **kwargs)
+        super().__init__(*args, directory=str(self.static_root), **kwargs)
 
     def do_GET(self):
         url = urlsplit(self.path)
         if url.path == "/api/route":
             q = parse_qs(url.query)
             try:
+                point=None
+                if any(key in q for key in ('x','y','level')):
+                    if not all(key in q for key in ('x','y','level')):raise ValueError('현재 위치와 층을 함께 전달해 주세요.')
+                    point=[float(q['x'][0]),float(q['y'][0])]
                 value = find_route(q.get("start", ["outside_start"])[0], q.get("end", ["prime_hall"])[0],
-                                   q.get("mode", ["demo"])[0], q.get("avoidStairs", ["0"])[0] == "1",policy=q.get('policy',['shortest'])[0])
+                                   q.get("mode", ["walk"])[0], q.get("avoidStairs", ["0"])[0] == "1",policy=q.get('policy',['shortest'])[0],start_position=point,start_level=q.get('level',[None])[0])
                 self.send_json(200, value)
             except (ValueError, sqlite3.Error) as error:
                 self.send_json(400, {"error": str(error)})
@@ -105,7 +114,11 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--port", type=int, default=8767)
     p.add_argument("--host", default="127.0.0.1")
+    p.add_argument("--product", action='store_true', help='Serve the generated product bundle, without research tools')
     a = p.parse_args()
+    if a.product:
+        Handler.static_root=ROOT/'dist'
+        if not (Handler.static_root/'index.html').is_file():p.error('Run the product build first.')
     print(f"Folded City 로컬 주소: http://{a.host}:{a.port}", flush=True)
     # A page opens many static-asset connections together, especially on a cold mobile cache.
     ThreadingHTTPServer.request_queue_size = 64

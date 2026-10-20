@@ -8,8 +8,8 @@ const bottomSheet=createBottomSheet();
 const svgNS = 'http://www.w3.org/2000/svg';
 const state = { level: 'all', view: '3d', sceneMode:'campus', selectedBuilding:null, route: null, photoIndex: 0, progress: 0, playing: false, box: [-40,-25,65,60], three: null, threeLoading:null };
 const escapeHTML = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const [map, places, graph, photos, provenance, assetReport, navigation, campusSource,photoAudit] = await Promise.all([
-  'map','catalog','graph','photos','provenance','asset_report','navigation','campus_source','photo_audit'
+const [map, places, graph, photos, navigation, campusSource] = await Promise.all([
+  'map','catalog','graph','photos','navigation','campus_source'
 ].map((name) => fetch(`/data/${name}.json`, {signal:AbortSignal.timeout(30000)}).then((r) => { if (!r.ok) throw new Error(`${name} 자료를 읽지 못했습니다.`); return r.json(); })));
 const campus=applyCampusLabels(campusSource);
 const placeById = Object.fromEntries(places.map((p) => [p.id,p]));
@@ -20,10 +20,11 @@ for(const p of places){
   const [session,node]=id.split(':');const photo={id,session,node:Number(node),url:p.photo,position:p.position};
   photos.push(photo);photoById[id]=photo;
 }
-function routePolicy(){return $('avoidStairs').checked?'elevator':$('routePolicy').value;}
+function routePolicy(){return $('routePolicy').value;}
 const walker=createWalkController({navigation,ensureScene:()=>setView('3d'),getScene:()=>state.three,getGoal:()=>$('destination').value,getPolicy:routePolicy,onError:toast,onStart:()=>location.stop()});
-const location=createLocationController({map,campus,entry:placeById.outside_start.position,getScene:()=>state.three,setView,notify:toast,collapseSheet:()=>bottomSheet.set(0),onIndoor(){
-  $('start').value='outside_start';findRoute().then(()=>{bottomSheet.set(1);toast('입구를 출발점으로 선택했어요. 실내에서는 사진과 표지를 확인하며 이동해 주세요.');});
+const location=createLocationController({map,campus,navigation,places,entry:placeById.outside_start.position,getScene:()=>state.three,setView,notify:toast,collapseSheet:()=>bottomSheet.set(0),onLevel:selectLevel,async onIndoor(place){
+  if(place)$('start').value=place;
+  const route=await findRoute();bottomSheet.set(0);return route;
 }});
 $('campusCount').textContent=campus.buildings.length;
 
@@ -129,35 +130,36 @@ function updateDestinationPreview(){
 async function choosePlace(id) { $('destination').value=id;$('search').blur();updateDestinationPreview();bottomSheet.set(1);showJourney('route');await findRoute(); }
 let routeRequest=0;
 async function findRoute() {
-  const token=++routeRequest;showJourney('route');updateDestinationPreview();
+  const token=++routeRequest,liveStart=location.indoorSnapshot();showJourney('route');updateDestinationPreview();
   location.setGoal($('destination').value);
   if(walker.isActive())walker.exit();
   $('routeButton').disabled=true;$('journeyPanel').setAttribute('aria-busy','true');state.playing=false;$('playButton').textContent='▶';
   $('routeResult').innerHTML='<p class="route-note">경로를 찾고 있어요…</p>';
   try {
-    const query=new URLSearchParams({start:$('start').value,end:$('destination').value,mode:$('verifiedOnly').checked?'verified':'demo',policy:routePolicy()});
+    const query=new URLSearchParams({start:$('start').value,end:$('destination').value,mode:'walk',policy:routePolicy()});
+    if(liveStart){query.set('x',liveStart.position[0]);query.set('y',liveStart.position[1]);query.set('level',liveStart.level);}
     const response=await fetch(`/api/route?${query}`); const r=await response.json();if(token!==routeRequest)return;if(!response.ok)throw new Error(r.error);
     state.route=r; $('routePlayer').hidden=!r.found;
-    if (!r.found) {$('routeResult').innerHTML=`<p class="route-note">${escapeHTML(r.message)}</p>`;$('currentRouteDetails').textContent=r.message;renderRoute();$('replayLayer').replaceChildren();state.three?.updateRoute([]);return;}
-    $('currentRouteDetails').textContent=`${r.distance_m}m · 정책 ${r.policy}. 12cm 보행 격자와 등록 연결의 8방향 A* 거리 최소 경로입니다. 촬영 궤적은 사용하지 않습니다. 보행면·문·계단은 현장 검증 전이며, 엘리베이터 연결은 운행·접근성 미검증 후보입니다.`;
+    if (!r.found) {location.setIndoorRoute(null);$('routeResult').innerHTML=`<p class="route-note">${escapeHTML(r.message)}</p>`;renderRoute();$('replayLayer').replaceChildren();state.three?.updateRoute([]);return;}
     const destinationNote=$('destination').value==='food_market'?'식당으로 내려가는 1층 입구까지 안내합니다. 식당 내부는 포함하지 않습니다.':r.elevator_used?'엘리베이터 운행·문턱·접근성을 확인해 주세요. 대기시간 미포함이며 무장애 경로를 보장하지 않습니다.':'실제 개방 여부와 현장 안내를 확인해 주세요.';
-    const routeName={shortest:'가장 짧은 도보 경로',main_stairs:'메인 계단 이용',sub_stairs:'오른쪽 서브계단 이용',elevator:'엘리베이터 후보 경로'}[r.policy];
-    $('routeResult').innerHTML=`<div class="distance-row"><strong>${r.distance_m.toLocaleString()}<small> m</small></strong><span>${routeName}</span></div><button id="walkRoute" class="route-walk-button">사진으로 안내 시작 <span aria-hidden="true">→</span></button><p class="route-note">${destinationNote}</p><details class="route-details"><summary>다른 경로 비교 <span aria-hidden="true">⌄</span></summary><div class="route-alternatives" id="routeAlternatives"></div></details><details class="route-details"><summary>이동 경로 상세 <span aria-hidden="true">⌄</span></summary><div id="steps"></div></details>`;
+    const routeName={shortest:'가장 짧은 도보 경로',main_stairs:'메인 계단 이용',sub_stairs:'오른쪽 서브계단 이용',elevator:'엘리베이터 이용'}[r.policy];
+    $('routeResult').innerHTML=`<div class="distance-row"><strong>${r.distance_m.toLocaleString()}<small> m</small></strong><span>${routeName}</span></div><button id="walkRoute" class="route-walk-button">사진으로 경로 미리보기 <span aria-hidden="true">→</span></button><p class="route-note">${destinationNote}</p><details class="route-details"><summary>다른 경로 비교 <span aria-hidden="true">⌄</span></summary><div class="route-alternatives" id="routeAlternatives"></div></details><details class="route-details"><summary>이동 경로 상세 <span aria-hidden="true">⌄</span></summary><div id="steps"></div></details>`;
     for(const alternative of r.alternatives||[]){
       const button=document.createElement('button');button.className=alternative.policy===r.policy?'selected':'';button.disabled=!alternative.found;
       const actual=alternative.portals?.includes('elevator')?' · 이용 확인 필요':'';
       const labels={shortest:'가장 짧은 길',main_stairs:'메인 계단',sub_stairs:'오른쪽 서브계단',elevator:'엘리베이터'};
       button.innerHTML=`<span>${escapeHTML(labels[alternative.policy]||alternative.label)}</span> <strong>${alternative.found?alternative.distance_m+' m':'연결 없음'}</strong>${actual?' <small>이용 확인 필요</small>':''}`;
-      button.addEventListener('click',()=>{$('routePolicy').value=alternative.policy;$('avoidStairs').checked=alternative.policy==='elevator';updatePolicyNote();findRoute();});
+      button.addEventListener('click',()=>{$('routePolicy').value=alternative.policy;updatePolicyNote();findRoute();});
       $('routeAlternatives').appendChild(button);
     }
     const liveButton=document.createElement('button');liveButton.id='liveRoute';liveButton.className='route-live-button';liveButton.textContent='◎ 현재 위치에서 안내';
     liveButton.addEventListener('click',async()=>{
       if(walker.isActive())walker.exit();
-      $('start').value='outside_start';await findRoute();
-      if(state.route?.found)location.startNavigation($('destination').value,{name:placeById[$('destination').value].name,indoorDistance:state.route.distance_m});
+      location.stop();$('start').value='outside_start';const route=await findRoute();
+      if(route?.found)location.startNavigation($('destination').value,{name:placeById[$('destination').value].name,indoorDistance:route.distance_m});
     });
     $('walkRoute').before(liveButton);
+    const indoorButton=document.createElement('button');indoorButton.id='indoorLiveRoute';indoorButton.className='route-indoor-button';indoorButton.textContent='건물 안에서 안내 시작';indoorButton.onclick=()=>location.chooseIndoor();$('walkRoute').before(indoorButton);
     location.setGoal($('destination').value,{name:placeById[$('destination').value].name,indoorDistance:r.distance_m});
     const scope=document.createElement('p');scope.id='routeDistanceScope';scope.className='route-note';scope.textContent=location.state.mode==='off'?`${r.start}에서 출발하는 경로`:'입구 도착을 확인한 뒤 이어지는 실내 경로';$('routeResult').prepend(scope);
     $('walkRoute').addEventListener('click',()=>{location.stop();walker.start($('start').value);});
@@ -168,8 +170,8 @@ async function findRoute() {
     });
     selectLevel('all');fitPoints(r.route.map(n=>n.position));
     if(state.view==='3d'){await setView('3d');if(location.state.mode==='off')state.three?.showIndoor();}
-    state.three?.updateRoute(r.route);if(state.view==='3d'&&location.state.mode==='off')state.three?.focusRoute();updateSceneHUD();setProgress(0);location.render();
-  } catch(error) {if(token===routeRequest){$('routeResult').innerHTML='<p class="route-note">경로를 불러오지 못했어요. 출발지·이동 방식 변경에서 다시 계산해 주세요.</p>';toast(error.message||'경로를 계산하지 못했습니다.');}} finally {if(token===routeRequest){$('routeButton').disabled=false;$('journeyPanel').setAttribute('aria-busy','false');}}
+    state.three?.updateRoute(r.route);if(state.view==='3d'&&location.state.mode==='off')state.three?.focusRoute();updateSceneHUD();setProgress(0);location.setIndoorRoute(r);location.render();return r;
+  } catch(error) {if(token===routeRequest){state.route=null;location.setIndoorRoute(null);renderRoute();state.three?.updateRoute([]);$('routeResult').innerHTML='<p class="route-note">경로를 불러오지 못했어요. 출발지·이동 방식 변경에서 다시 계산해 주세요.</p>';toast(error.message||'경로를 계산하지 못했습니다.');}} finally {if(token===routeRequest){$('routeButton').disabled=false;$('journeyPanel').setAttribute('aria-busy','false');}}
 }
 function showNearestPhoto(nodeId) {
   let chosen=photoById[nodeId];
@@ -181,7 +183,6 @@ function showPhoto(index) {
   state.photoIndex=(index+photos.length)%photos.length;const p=photos[state.photoIndex];
   $('photoImage').src='/'+p.url;$('photoTitle').textContent=`${{outside:'학생회관 앞',lobby:'1층 로비',floor2:'계단·2층',bridge_out1f:'학생회관 출입구',bridge_12_sub:'오른쪽 서브계단'}[p.session]||'학생회관'}`;
   $('photoCaption').textContent='이 장소 주변에서 실제로 촬영한 사진입니다.';
-  $('currentViewDetails').textContent=`사진 보기: 촬영 세션 ${p.session} · 프레임 ${p.node}. 원본 RGB이며 360° 파노라마가 아닙니다. 지도 위 사진 위치는 재구성된 좌표입니다.`;
   if(!$('photoDialog').open)$('photoDialog').showModal();
 }
 function setProgress(value) {
@@ -207,23 +208,22 @@ function updateSceneHUD() {
   const nearCampus=!state.worldRegion||state.worldRegion==='campus';
   $('mapTitle').textContent=campusView?(nearCampus?'건국대학교 서울캠퍼스':state.worldRegion==='world'?'세계 지도':'주변 지도'):'제1학생회관';
   $('floorDescription').textContent=campusView?(nearCampus?`전역 배경지도 · 교내 ${campus.buildings.length}개 3D 건물`:'지도를 자유롭게 이동해 보세요 · 3D 건물은 교내 제공'):state.level==='all'?'실외 · 1층 · 계단 · 2층':state.level==='outside'?'출입구 주변 실외':`${state.level}층 보행 공간`;
-  $('floorControls').hidden=campusView||walkView;$('routePlayer').hidden=!state.route?.found||campusView||walkView;
+  $('floorControls').hidden=campusView||walkView;$('routePlayer').hidden=!state.route?.found||campusView||walkView||location.state.mode!=='off';
   $('campusHome').classList.toggle('active',campusView&&nearCampus&&!state.selectedBuilding);
   $('indoorHome').classList.toggle('active',!campusView&&state.view==='3d');
-  $('sceneBadge').textContent=campusView?'OSM 전역 배경지도 · 교내 3D 건물':'실제 RGB-D 스캔 · 공간 최단 경로';
   const b=state.selectedBuilding;
   $('buildingCard').hidden=walkView||!b||(!campusView&&!!state.route?.found);
   if(b) {
     const available=b.id==='way/367253036';
     $('buildingName').textContent=available?'제1학생회관':b.n||'캠퍼스 건물';
     $('buildingDetail').textContent=available?'사진으로 둘러보고, 1·2층 목적지까지 찾아보세요.':'이 건물의 실내 길찾기는 아직 준비 중입니다.';
-    $('buildingAction').hidden=!available;$('buildingAction').textContent='입구에서 둘러보기 ↗';
+    $('buildingAction').hidden=!available;$('buildingAction').textContent='실내 길찾기 ↗';
   }
 }
 async function initThree() {
-  const {createCampusScene}=await import('./campus-scene.js?v=indoor-datum-1');
+  const {createCampusScene}=await import('./campus-scene.js?v=walking-guide-1');
   state.three=await createCampusScene($('threeCanvas'),{campus,map,navigation,places,
-    onEnterBuilding(){location.stop();walker.start();},onWalkLook(){walker.onLook();},
+    onEnterBuilding(){location.pauseFollow();state.three?.showIndoor();choosePlace($('destination').value);},onWalkLook(){walker.onLook();},
     onMode(mode,b){state.sceneMode=mode;state.selectedBuilding=b;updateSceneHUD();},
     onMapRegion(region){state.worldRegion=region;updateSceneHUD();},
     onMapInteract(){location.pauseFollow();},
@@ -245,16 +245,15 @@ $('start').value='outside_start';$('destination').value='prime_hall';
 updateDestinationPreview();
 $('changePlace').addEventListener('click',()=>{showJourney('places');$('search').value='';searchPlaces('');$('search').focus();});
 $('destination').addEventListener('change',findRoute);
-$('start').addEventListener('change',findRoute);
+$('start').addEventListener('change',()=>{location.stop();findRoute();});
 $('search').addEventListener('input',e=>{showJourney('places');searchPlaces(e.target.value);});
 $('search').addEventListener('focus',()=>bottomSheet.expand());
 $('routeButton').addEventListener('click',findRoute);
+$('walkStart').addEventListener('click',()=>choosePlace($('destination').value));
 function updatePolicyNote(){
-  $('policyNote').textContent=routePolicy()==='elevator'?'운행·접근성을 확인해 주세요. 대기시간은 포함하지 않으며 무장애 경로를 보장하지 않습니다.':$('verifiedOnly').checked?'연구용 검증 필터가 적용되었습니다. 메뉴에서 해제할 수 있습니다.':'실제 개방 여부와 현장 안내를 확인해 주세요.';
+  $('policyNote').textContent=routePolicy()==='elevator'?'운행·접근성을 확인해 주세요. 대기시간은 포함하지 않으며 무장애 경로를 보장하지 않습니다.':'실제 개방 여부와 현장 안내를 확인해 주세요.';
 }
-$('routePolicy').addEventListener('change',()=>{$('avoidStairs').checked=$('routePolicy').value==='elevator';updatePolicyNote();if(walker.isActive())walker.start($('start').value);else if(state.route)findRoute();});
-$('avoidStairs').addEventListener('change',()=>{$('routePolicy').value=$('avoidStairs').checked?'elevator':'shortest';updatePolicyNote();if(walker.isActive())walker.start($('start').value);});
-$('verifiedOnly').addEventListener('change',updatePolicyNote);
+$('routePolicy').addEventListener('change',()=>{updatePolicyNote();if(walker.isActive())walker.start($('start').value);else if(state.route)findRoute();});
 document.querySelectorAll('[data-level]').forEach(b=>b.addEventListener('click',()=>selectLevel(b.dataset.level)));
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
 document.querySelectorAll('.dialog-close').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
@@ -269,7 +268,7 @@ $('resetView').addEventListener('click',()=>{state.box=[-40,-25,65,60];applyBox(
 $('campusHome').addEventListener('click',async()=>{await setView('3d');state.three?.showCampus();});
 $('indoorHome').addEventListener('click',async()=>{selectLevel('all');await setView('3d');state.three?.showIndoor();});
 $('topView').addEventListener('click',()=>state.three?.topView());
-$('buildingAction').addEventListener('click',()=>{location.stop();walker.start();});
+$('buildingAction').addEventListener('click',()=>choosePlace($('destination').value));
 $('mapSvg').addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY>0?1.08:.92);},{passive:false});
 let drag=null;
 $('mapSvg').addEventListener('pointerdown',e=>{if(e.target.closest('.place-marker'))return;drag={x:e.clientX,y:e.clientY,box:[...state.box]};$('mapSvg').setPointerCapture(e.pointerId);});
@@ -277,11 +276,6 @@ $('mapSvg').addEventListener('pointermove',e=>{if(!drag)return;const bounds=$('m
 $('mapSvg').addEventListener('pointerup',()=>drag=null);
 document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();$('search').focus();}});
 
-const totalSource=Object.values(assetReport).reduce((a,r)=>a+r.source_bytes,0),totalWeb=Object.values(assetReport).reduce((a,r)=>a+r.web_bytes,0);
-$('evidenceContent').innerHTML=`<div class="evidence-grid"><div><strong>${provenance.node_count.toLocaleString()}</strong>보행 가능 후보 격자</div><div><strong>12 cm</strong>바닥·장애물 지도 해상도</div><div><strong>${provenance.photos}</strong>실제 RGB 사진</div><div><strong>${(totalWeb/1e6).toFixed(0)} MB</strong>웹용 3D 모델</div></div><ul><li>길찾기는 촬영 순서·이동 궤적·SLAM 루프 연결을 사용하지 않습니다. 표시용 메시의 바닥 삼각형과 몸체 높이의 장애물로 별도 공간 격자를 만들었습니다.</li><li>0.24m의 중심 여유 공간을 두고 대각선 모서리 관통을 차단합니다. A*가 8방향 격자 및 등록된 연결 안에서 거리 합이 최소인 경로를 계산합니다. 연속 공간에서 수학적으로 완전한 최단곡선이라는 뜻은 아닙니다.</li><li>층 사이를 임의 연결하지 않습니다. 메인 계단은 디딤면 삼각형의 분포로 근사한 중심 연결이며, 출입문은 사진에서 확인한 개폐 가능한 연결입니다. 보조 계단·엘리베이터는 아직 등록하지 않았습니다.</li><li>최종 표시본 v9에는 보완된 표면이 포함됩니다. 따라서 자동 추출한 보행면과 계단 끝점은 현장 검증 전이며 로봇 주행·대피 안전을 보장하지 않습니다. 바닥이 없는 영역은 막힘으로 처리합니다.</li><li>장소 표식은 주로 실사 촬영 접근 위치입니다. 정확한 문 중심을 측량한 값이 아닙니다. 재생 점도 실시간 위치가 아닙니다.</li><li>GLB 삼각형 위치는 유지하고 텍스처만 압축했습니다. GNSS 중첩은 거친 임시 배치이며 RTK 결과가 아닙니다.</li></ul><a href="/data/navigation.json" target="_blank" rel="noreferrer">보행 지도·연결 근거 JSON ↗</a>`;
-$('evidenceContent').querySelectorAll('.evidence-grid strong')[2].textContent=photoAudit.decoded.toLocaleString();
-$('evidenceContent').querySelectorAll('li')[2].textContent='메인·오른쪽 서브계단은 디딤면 형상으로 근사하고 사진으로 위치를 검토했습니다. 엘리베이터는 1·2층 승강장 사이의 후보 연결로, 운행·문턱·접근성·대기시간·승강로 형상은 검증되지 않았습니다. 계단 제외는 무장애 경로 보장이 아닙니다.';
-$('evidenceContent').insertAdjacentHTML('beforeend',`<h3>전체 원본 실사 기반 탐색</h3><p class="route-note">원본 RGB ${photoAudit.decoded.toLocaleString()}개를 전수 해독·자동 검사했습니다. 지도 대응 후보는 ${photoAudit.navigation_eligible.toLocaleString()}개이며, 나머지 사진도 별도 보존합니다. 실제 사진은 주변 촬영 시점으로, 가상 위치의 정확한 시점이나 360° 파노라마가 아닙니다. 화면 밝기 보정은 끌 수 있으며 JPEG 원본은 변경하지 않습니다.</p><a href="/photo-audit.html" target="_blank" rel="noreferrer">전체 사진·검사 결과·대응 범위 ↗</a>`);
 $('evidenceButton').addEventListener('click',()=>{$('evidenceDialog').showModal();$('evidenceButton').setAttribute('aria-expanded','true');});
 $('evidenceDialog').addEventListener('close',()=>$('evidenceButton').setAttribute('aria-expanded','false'));
 $('menuSearch').addEventListener('click',()=>{
@@ -289,8 +283,6 @@ $('menuSearch').addEventListener('click',()=>{
   bottomSheet.expand();
   showJourney('places');$('search').focus();
 });
-$('evidenceContent').insertAdjacentHTML('beforeend',`<h3>전역 배경지도와 교내 3D</h3><ul><li>MapLibre에서 OpenFreeMap의 OSM 기반 벡터 타일을 불러와 전 세계 배경지도를 표시합니다. 교외는 평면 지도로, 직접 구성한 3D 건물 ${campus.buildings.length}동은 교내에서 제공합니다. 배경지도 범위와 실내 길찾기 데이터 범위는 서로 다릅니다.</li><li>교내 건물과 도로·녹지·호수는 OpenStreetMap 원본 API 자료로 구성했습니다. 원자료는 ODbL을 따릅니다.</li><li>지형은 SRTM 30m 기반 AWS Terrain Tiles를 사용합니다. 호숫가 급상승을 완화한 화면용 지형이며 원본 고도와 실내 지도는 유지합니다. 건물 높이와 수목에는 추정·장식 표현이 있습니다.</li><li>학생회관 입구 사진과 도서관·신공학관의 건축 자료를 참고해 재질을 구분했습니다. 사진으로 건물 전체를 복원한 결과는 아니며 외관 자료가 없는 건물은 중립 재질입니다.</li><li>기존 GNSS 배치와 2m 동쪽·2m 남쪽 미리보기 보정을 사용합니다. 축척은 1이며 출입구 기준점 정밀 정합은 아직 하지 않았습니다.</li><li>건물 외피를 이동 공간으로 사용하지 않습니다. 실외 안내는 접근 조건을 거른 OSM 도로 그래프, 실내 안내는 학생회관의 보행 격자를 사용합니다. 도로와 입구 사이 미등록 구간은 현장 확인으로 넘깁니다.</li></ul><a href="/data/campus_provenance.json" target="_blank" rel="noreferrer">캠퍼스 데이터 출처·한계 ↗</a> · <a href="/data/campus_osm_raw.json" download>OSM 원본 응답</a>`);
-window.foldedCity={state,places,graph,photos,campus,findRoute,selectLevel,setView,location};
 renderMap();applyBox();searchPlaces('');showJourney('places');await setView('3d');
-const recordingId=new URLSearchParams(window.location.search).get('recording');
-if(recordingId)await location.startRecorded(recordingId).catch(error=>toast(error.message));
+
+$('menuIndoorStart').onclick=async()=>{$('evidenceDialog').close();if(!state.route?.found)await findRoute();location.chooseIndoor();};

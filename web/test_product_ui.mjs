@@ -7,19 +7,20 @@ const app=fs.readFileSync(new URL('./public/app.js',import.meta.url),'utf8');
 test('UI identifiers remain unique and controller targets still exist',()=>{
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length);
-  const dynamic=new Set(['routeAlternatives','walkRoute','liveRoute','steps']);
+  const dynamic=new Set(['routeAlternatives','walkRoute','liveRoute','indoorLiveRoute','steps']);
   for(const file of ['app.js','walk-controller.js','photo-viewer.js']){
     const source=fs.readFileSync(new URL(`./public/${file}`,import.meta.url),'utf8');
     for(const match of source.matchAll(/\$\('([^']+)'\)/g))assert.ok(ids.includes(match[1])||dynamic.has(match[1]),`${file}: ${match[1]}`);
   }
 });
 
-test('Research tools and metadata have one menu entry, not map overlays',()=>{
+test('Product menu contains guidance only; research controls are not shipped in the UI',()=>{
   const menu=html.slice(html.indexOf('<dialog id="evidenceDialog"'),html.indexOf('<div id="toast"'));
-  for(const id of ['projectInfo','currentViewDetails','currentRouteDetails','sceneBadge','avoidStairs','verifiedOnly','evidenceContent'])assert.ok(menu.includes(`id="${id}"`),id);
+  for(const id of ['projectInfo','currentViewDetails','currentRouteDetails','sceneBadge','avoidStairs','verifiedOnly','evidenceContent'])assert.ok(!menu.includes(`id="${id}"`),id);
   assert.ok(!html.includes('class="status-strip"'));
   assert.ok(!html.includes('href="/photo-audit.html"'));
-  assert.ok(app.includes('href="/photo-audit.html"'));
+  assert.ok(!app.includes('href="/photo-audit.html"'));
+  assert.ok(menu.includes('id="menuIndoorStart"'));
   assert.ok(html.includes('https://www.openstreetmap.org/copyright'));
   assert.ok(html.includes('aria-controls="evidenceDialog"'));
 });

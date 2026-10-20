@@ -3,7 +3,7 @@
   "framework": null,
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
-  "outputDirectory": "public",
+  "outputDirectory": "dist",
   "regions": ["icn1"],
   "functions": {
     "api/dispatch.py": {

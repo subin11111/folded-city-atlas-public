@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "python server.py",
-    "build": "node scripts/vendor-map.mjs && node scripts/check-deploy.mjs",
+    "build": "node scripts/vendor-map.mjs && node scripts/check-deploy.mjs && node scripts/build-product.mjs",
     "preflight": "node scripts/check-deploy.mjs",
-    "test": "node --test test_campus.mjs test_world_map.mjs test_product_ui.mjs test_sheet.mjs test_gnss.mjs test_gnss_audit.mjs test_live_navigation.mjs test_research.mjs && python -X utf8 -m unittest test_navigation test_walk test_photo_library test_deployment",
+    "test": "node --test test_campus.mjs test_world_map.mjs test_product_ui.mjs test_sheet.mjs test_gnss.mjs test_gnss_audit.mjs test_live_navigation.mjs test_research.mjs test_indoor_position.mjs test_product_build.mjs && python -X utf8 -m unittest test_navigation test_walk test_photo_library test_deployment",
     "gnss:demo": "node scripts/generate-gnss-demo.mjs",
     "pack:vercel": "node scripts/pack-vercel.mjs"
   },

@@ -14,8 +14,8 @@ test('every research media asset exists, and videos do not autoplay or preload l
   for(const path of paths)assert.ok(fs.statSync(new URL('./public'+path,import.meta.url)).size>0,path);
   for(const video of html.matchAll(/<video\b([^>]+)>/g)){assert.match(video[1],/controls/);assert.match(video[1],/preload="none"/);assert.doesNotMatch(video[1],/autoplay/);}
 });
-test('research is reachable from the product menu without replacing navigation',()=>{
+test('research stays in the repository and is not linked from the deployed product',()=>{
   const index=fs.readFileSync(new URL('./public/index.html',import.meta.url),'utf8');
-  assert.ok(index.includes('href="/research.html"'));
+  assert.ok(!index.includes('href="/research.html"'));
   assert.ok(index.includes('id="menuSearch"'));
 });

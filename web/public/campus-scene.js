@@ -207,8 +207,9 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     liveData=data;liveGroup.visible=!!data&&mode!=='walk';livePath.visible=!!data&&mode==='campus';
     syncLocationViewport();
     if(!data){lastLocationFocus=null;lastRoute=null;lastTrackKey='';clearLivePath();world?.follow(null);return;}
-    const p=data.position,z=groundAt(p)+.4;
-    dot.position.set(p[0],p[1],z);dot.material.color.set(data.stale?'#8b9690':'#2789e9');rawDot.position.set(data.raw[0],data.raw[1],groundAt(data.raw)+.3);
+    const p=data.position,z=data.indoor?p[2]+.4:groundAt(p)+.4;
+    dot.scale.setScalar(data.indoor?.45:1);rawDot.visible=false;marker.visible=false;
+    dot.position.set(p[0],p[1],z);dot.material.color.set(data.stale?'#8b9690':'#2789e9');rawDot.position.set(data.raw[0],data.raw[1],data.indoor?p[2]+.3:groundAt(data.raw)+.3);
     for(const ring of [accuracyRing,accuracyFill]){ring.position.copy(rawDot.position);ring.scale.set(data.accuracy,data.accuracy,1);}
     headingCone.visible=!!data.heading&&!data.stale;if(data.heading){headingCone.position.set(p[0],p[1],z);headingCone.rotation.z=Math.atan2(-data.heading[0],data.heading[1]);}
     const trackKey=data.showTrack?`${data.rawTrack?.length}/${data.track?.length}/${data.rawTrack?.[0]}/${data.rawTrack?.at(-1)}`:'';

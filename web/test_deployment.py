@@ -33,7 +33,7 @@ class DeploymentTests(unittest.TestCase):
     def test_health_and_rewrite_contract(self):
         status,value=self.get('health');self.assertEqual(status,200);self.assertTrue(value['ok']);self.assertFalse(value['local'])
         config=json.loads((ROOT/'vercel.json').read_text('utf-8'))
-        self.assertEqual(config['outputDirectory'],'public')
+        self.assertEqual(config['outputDirectory'],'dist')
         self.assertEqual(len(config['rewrites']),5)
 
     def test_route_api_and_photo_walk_share_policy(self):
@@ -52,6 +52,14 @@ class DeploymentTests(unittest.TestCase):
         with self.assertRaises(HTTPError) as error:
             urlopen(Request(self.url+urlencode({'endpoint':'route'}),method='HEAD'),timeout=5)
         self.assertEqual(error.exception.code,405);error.exception.close()
+
+    def test_current_indoor_position_routes_from_its_own_floor(self):
+        status,value=self.get('route',start='entrance',end='prime_hall',mode='walk',x=-26.84,y=-4.72,level='2')
+        self.assertEqual(status,200);self.assertTrue(value['found'])
+        self.assertEqual(value['start'],'현재 추정 위치')
+        self.assertTrue(all(n['level']=='2' for n in value['route']))
+        for invalid in [{'x':'nan','y':0,'level':'1'},{'x':0,'y':0,'level':'3'},{'x':9999,'y':9999,'level':'1'},{'x':0}]:
+            self.assertEqual(self.get('route',**invalid)[0],400)
 
 
 if __name__=='__main__':unittest.main()

@@ -17,7 +17,7 @@ test('measured playback accepts only the five recorded DB sources and defaults t
  await assert.rejects(loadMeasuredRecording('outside',async()=>({ok:true,json:async()=>read('gnss_demo')})));
  await assert.rejects(loadMeasuredRecording('outside',mock('lobby')));
  const code=fs.readFileSync(new URL('./public/location-controller.js',import.meta.url),'utf8');
- assert.match(code,/syntheticGnssTools/);assert.match(code,/recordingSource/);assert.match(code,/if\(state\.mode==='log'\)\{state\.route=null/);
+ assert.doesNotMatch(code,/syntheticGnssTools|recordingSource|startRecorded|startReplay/);
 });
 test('five measured sessions keep unique fix times and explicit reference provenance',()=>{
  assert.equal(Object.keys(audit.sessions).length,5);assert.equal(audit.original_selected_pose_csv_available,false);

@@ -128,7 +128,7 @@ export async function createWorldMap(container,{mapData,campus,frame,scene,lift,
       autoFrameCampus=false;
       const card=document.getElementById('locationCard'),r=element.getBoundingClientRect();
       const top=r.width<=650&&card&&!card.hidden?Math.min(r.height*.48,Math.max(20,card.getBoundingClientRect().bottom-r.top+10)):90;
-      libre.easeTo({center:registration.toLngLat(p),zoom:Math.max(18,libre.getZoom()),pitch:50,
+      libre.easeTo({center:registration.toLngLat(p),zoom:Math.max(data.indoor?20:18,libre.getZoom()),pitch:50,
         ...(data.headingUp&&Number.isFinite(data.headingDegrees)?{bearing:data.headingDegrees}:{}),
         padding:{top,bottom:45,left:20,right:20},duration:lastFollow?350:0});lastFollow={position:[...p],headingDegrees:data.headingDegrees,headingUp:data.headingUp};
     },
