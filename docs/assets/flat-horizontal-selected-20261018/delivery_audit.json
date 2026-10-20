@@ -1,0 +1,1820 @@
+{
+  "created_utc": "2026-10-18T07:25:02.347484+00:00",
+  "sessions": {
+    "outside": {
+      "triangles": 272119,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58",
+      "ply_sha256": "168bd83f179cd5f3131d0b86c06f7c4285602bb44ed61a40b2453d815f22b3c8",
+      "flat_sheets": []
+    },
+    "lobby": {
+      "triangles": 616344,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "eeadba043c8d6482a242cc372b7cc2fd09331b87a67800774614e597fde87148",
+      "ply_sha256": "bb5c88b583c90c7eba95fa62180d09bb1ee4a7b2be143c73247a5c18f6827ada",
+      "flat_sheets": [
+        {
+          "id": "lobby_floor_1f",
+          "kind": "floor",
+          "height_band_m": [
+            -2.1,
+            -0.8
+          ],
+          "mode_hint_m": -1.625,
+          "accepted": true,
+          "height_m": -1.636272425559606,
+          "area_xy_m2": 504.94000000000005,
+          "model_inferred_area_m2": 50.92000000000001,
+          "observed_raster_area_m2": 454.02,
+          "triangles": 100988,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.3625274230530379,
+          "source_height_span_m": 1.288079102026602,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "lobby_floor_1f_mask.npz",
+          "original_photo_nodes": [
+            1,
+            232,
+            549,
+            27,
+            142,
+            360,
+            147,
+            384,
+            193,
+            258,
+            379,
+            195,
+            132,
+            149,
+            196,
+            254,
+            150,
+            257,
+            606,
+            683,
+            269,
+            66,
+            289,
+            152,
+            264,
+            215,
+            522,
+            97,
+            375,
+            100,
+            369,
+            621,
+            240,
+            699,
+            386,
+            270
+          ],
+          "photo_fraction_on_sheet": 0.2797763261809469,
+          "texture_shape": [
+            1400,
+            1400
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 0.9838223570563357,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0,
+              "21": 1.0,
+              "22": 1.0,
+              "23": 1.0,
+              "24": 1.0,
+              "25": 1.0,
+              "26": 1.0,
+              "27": 1.0,
+              "28": 1.0,
+              "29": 1.0,
+              "30": 1.0,
+              "31": 1.0,
+              "32": 1.0,
+              "33": 1.0,
+              "34": 1.0164436626466478,
+              "35": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  7,
+                  34
+                ],
+                "samples": 26,
+                "before_log_luma_jump": 0.040304345445540846,
+                "mad": 0.015330090208836467,
+                "after_log_luma_jump": 0.031663813559034026,
+                "predicted_after_log_luma_jump": 0.007684486096620674
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.031663813559034026,
+            "median_absolute_boundary_jump_before": 0.040304345445540846,
+            "median_absolute_boundary_jump_after": 0.031663813559034026,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "lobby_ceiling_1f",
+          "kind": "ceiling",
+          "height_band_m": [
+            1.2,
+            2.35
+          ],
+          "mode_hint_m": 1.675,
+          "paired_floor": "lobby_floor_1f",
+          "accepted": true,
+          "height_m": 1.6599834629025738,
+          "area_xy_m2": 441.76000000000005,
+          "model_inferred_area_m2": 259.08000000000004,
+          "observed_raster_area_m2": 182.68000000000004,
+          "triangles": 88352,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.29663987969252203,
+          "source_height_span_m": 1.078236276876108,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "lobby_ceiling_1f_mask.npz",
+          "original_photo_nodes": [
+            816,
+            857,
+            811,
+            813,
+            854,
+            885,
+            856,
+            884,
+            887,
+            882,
+            913,
+            808,
+            880,
+            912,
+            873,
+            802,
+            834,
+            558,
+            925,
+            922,
+            781,
+            573,
+            806,
+            875,
+            838,
+            878,
+            804,
+            840,
+            777,
+            769,
+            759,
+            303,
+            574,
+            897,
+            746,
+            793
+          ],
+          "photo_fraction_on_sheet": 0.20344903125304253,
+          "texture_shape": [
+            1252,
+            1400
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.012960321436346,
+              "1": 0.9999999999999999,
+              "2": 0.9855550620248752,
+              "3": 1.001674627266111,
+              "4": 1.0046743889664242,
+              "5": 1.1655544029567624,
+              "6": 0.995347359285994,
+              "7": 1.106105979022405,
+              "8": 1.0,
+              "9": 1.0266542654249509,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 0.8741099713761682,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0245542229026703,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 0.9760342377652736,
+              "21": 1.0,
+              "22": 1.0,
+              "23": 1.0,
+              "24": 1.0,
+              "25": 0.8643316584895963,
+              "26": 1.0,
+              "27": 1.0,
+              "28": 1.0,
+              "29": 1.0,
+              "30": 1.0,
+              "31": 1.0,
+              "32": 1.0,
+              "33": 1.0,
+              "34": 1.0,
+              "35": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  0,
+                  3
+                ],
+                "samples": 33,
+                "before_log_luma_jump": -0.0040300043904093474,
+                "mad": 0.013007035397740063,
+                "after_log_luma_jump": -0.001050196361323863,
+                "predicted_after_log_luma_jump": 0.007173824105713147
+              },
+              {
+                "labels": [
+                  4,
+                  6
+                ],
+                "samples": 25,
+                "before_log_luma_jump": -0.011612109861649955,
+                "mad": 0.008679533496354641,
+                "after_log_luma_jump": -0.009352237510893535,
+                "predicted_after_log_luma_jump": -0.0022851139888386725
+              },
+              {
+                "labels": [
+                  5,
+                  7
+                ],
+                "samples": 34,
+                "before_log_luma_jump": -0.0840863306687718,
+                "mad": 0.01619126454325892,
+                "after_log_luma_jump": -0.06468580427887116,
+                "predicted_after_log_luma_jump": -0.03173519489131764
+              },
+              {
+                "labels": [
+                  7,
+                  9
+                ],
+                "samples": 36,
+                "before_log_luma_jump": -0.11882987863588057,
+                "mad": 0.02734693334451399,
+                "after_log_luma_jump": -0.1005428877827852,
+                "predicted_after_log_luma_jump": -0.04428938733833264
+              },
+              {
+                "labels": [
+                  9,
+                  12
+                ],
+                "samples": 38,
+                "before_log_luma_jump": -0.25122959445432347,
+                "mad": 0.032448515003573375,
+                "after_log_luma_jump": -0.2084481027096552,
+                "predicted_after_log_luma_jump": -0.09037527947268498
+              },
+              {
+                "labels": [
+                  12,
+                  25
+                ],
+                "samples": 75,
+                "before_log_luma_jump": -0.04551567121106892,
+                "mad": 0.02168587427359836,
+                "after_log_luma_jump": -0.042523672021251624,
+                "predicted_after_log_luma_jump": -0.034266037237401986
+              },
+              {
+                "labels": [
+                  0,
+                  2
+                ],
+                "samples": 28,
+                "before_log_luma_jump": -0.033793085194474326,
+                "mad": 0.01102673376034713,
+                "after_log_luma_jump": -0.027309009977192655,
+                "predicted_after_log_luma_jump": -0.0063657482782222136
+              },
+              {
+                "labels": [
+                  0,
+                  3
+                ],
+                "samples": 24,
+                "before_log_luma_jump": -0.020213793876629582,
+                "mad": 0.006339953536202092,
+                "after_log_luma_jump": -0.016858836038050717,
+                "predicted_after_log_luma_jump": -0.009009965380507088
+              },
+              {
+                "labels": [
+                  5,
+                  7
+                ],
+                "samples": 29,
+                "before_log_luma_jump": -0.07985682067389366,
+                "mad": 0.021967835342486808,
+                "after_log_luma_jump": -0.06964651709228242,
+                "predicted_after_log_luma_jump": -0.027505684896439495
+              },
+              {
+                "labels": [
+                  7,
+                  9
+                ],
+                "samples": 29,
+                "before_log_luma_jump": -0.1268716505785581,
+                "mad": 0.025922128604833006,
+                "after_log_luma_jump": -0.11010109028941928,
+                "predicted_after_log_luma_jump": -0.05233115928101016
+              },
+              {
+                "labels": [
+                  12,
+                  25
+                ],
+                "samples": 33,
+                "before_log_luma_jump": 0.01250547132134594,
+                "mad": 0.018786846877680397,
+                "after_log_luma_jump": 0.01549748005162277,
+                "predicted_after_log_luma_jump": 0.023755105295012874
+              },
+              {
+                "labels": [
+                  15,
+                  20
+                ],
+                "samples": 62,
+                "before_log_luma_jump": -0.05330806194031945,
+                "mad": 0.0533035771117123,
+                "after_log_luma_jump": -0.041033229081082645,
+                "predicted_after_log_luma_jump": -0.004792834926744205
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.041778450551167134,
+            "median_absolute_boundary_jump_before": 0.049411866575694185,
+            "median_absolute_boundary_jump_after": 0.041778450551167134,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "triangles": 129944,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "d1b3d2fef4510218b0a68842727de1dd616d187b24d8019171ca57ea0d0a6666",
+      "ply_sha256": "b024c469a553a9001bc782c652d1faddf5df5f08e588130766f5a86af875d655",
+      "flat_sheets": [
+        {
+          "id": "bridge_out_floor_1f",
+          "kind": "floor",
+          "height_band_m": [
+            -2.05,
+            -1.3
+          ],
+          "mode_hint_m": -1.775,
+          "clip_to_session_floor": "lobby",
+          "clip_margin_m": 0.25,
+          "accepted": true,
+          "height_m": -1.7637841005316914,
+          "area_xy_m2": 65.53000000000002,
+          "model_inferred_area_m2": 6.030000000000001,
+          "observed_raster_area_m2": 78.33000000000001,
+          "triangles": 13106,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.13648333997980894,
+          "source_height_span_m": 0.7312396749842556,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "bridge_out_floor_1f_mask.npz",
+          "original_photo_nodes": [
+            86,
+            41,
+            101,
+            96,
+            116,
+            106,
+            36,
+            60,
+            59,
+            37,
+            40,
+            31,
+            44,
+            114,
+            14,
+            47,
+            12,
+            1,
+            99,
+            90,
+            46,
+            32,
+            130,
+            129,
+            52,
+            100,
+            33,
+            7,
+            127,
+            77,
+            53,
+            55,
+            81
+          ],
+          "photo_fraction_on_sheet": 0.7416259728368686,
+          "texture_shape": [
+            588,
+            508
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0,
+              "21": 1.0,
+              "22": 1.0,
+              "23": 1.0,
+              "24": 1.0,
+              "25": 1.0,
+              "26": 1.0,
+              "27": 1.0,
+              "28": 1.0,
+              "29": 1.0,
+              "30": 1.0,
+              "31": 1.0,
+              "32": 1.0
+            },
+            "boundaries": [],
+            "applied": false,
+            "candidate_median_absolute_boundary_jump_after": null,
+            "median_absolute_boundary_jump_before": null,
+            "median_absolute_boundary_jump_after": null,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        }
+      ]
+    },
+    "floor2": {
+      "triangles": 736520,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "bb4f12a70d9065f59a6c30a73a929af8dff58c51ebc94ec2b1897da0587e34da",
+      "ply_sha256": "28ca08741958bf373b2f93807e9c4e9551e4741a9deaf8033c0fd7c9534c76e9",
+      "flat_sheets": [
+        {
+          "id": "floor2_floor_1f",
+          "kind": "floor",
+          "height_band_m": [
+            -2.1,
+            -0.9
+          ],
+          "mode_hint_m": -1.625,
+          "accepted": true,
+          "height_m": -1.5998075386765134,
+          "area_xy_m2": 65.33000000000001,
+          "model_inferred_area_m2": 10.360000000000001,
+          "observed_raster_area_m2": 54.970000000000006,
+          "triangles": 13066,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.27260623307625764,
+          "source_height_span_m": 1.1010563399662496,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "floor2_floor_1f_mask.npz",
+          "original_photo_nodes": [
+            25,
+            32,
+            1,
+            1211,
+            28,
+            3,
+            1217,
+            54,
+            59,
+            5,
+            184,
+            7,
+            9,
+            1197,
+            93,
+            1163,
+            1164,
+            74
+          ],
+          "photo_fraction_on_sheet": 0.5553535894688505,
+          "texture_shape": [
+            532,
+            540
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0010655250020228,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0357233894767988,
+              "5": 0.9644810760116902,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  4,
+                  5
+                ],
+                "samples": 28,
+                "before_log_luma_jump": -0.08708739392144804,
+                "mad": 0.06463281624780448,
+                "after_log_luma_jump": -0.07002846119590811,
+                "predicted_after_log_luma_jump": -0.015822216963651534
+              },
+              {
+                "labels": [
+                  0,
+                  4
+                ],
+                "samples": 27,
+                "before_log_luma_jump": 0.03355197661129372,
+                "mad": 0.026943279966912925,
+                "after_log_luma_jump": 0.02592594986245933,
+                "predicted_after_log_luma_jump": -0.0004831752678322032
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.04797720552918372,
+            "median_absolute_boundary_jump_before": 0.06031968526637088,
+            "median_absolute_boundary_jump_after": 0.04797720552918372,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "floor2_ceiling_1f",
+          "kind": "ceiling",
+          "height_band_m": [
+            1.2,
+            1.95
+          ],
+          "mode_hint_m": 1.575,
+          "paired_floor": "floor2_floor_1f",
+          "accepted": true,
+          "height_m": 1.5530775879569934,
+          "area_xy_m2": 30.340000000000003,
+          "model_inferred_area_m2": 20.290000000000003,
+          "observed_raster_area_m2": 10.3,
+          "triangles": 6068,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.08256823467235269,
+          "source_height_span_m": 0.6904621496983336,
+          "guarded_stair_cells": 3413,
+          "free_space_excluded_cells": 44,
+          "mask_file": "floor2_ceiling_1f_mask.npz",
+          "original_photo_nodes": [
+            93,
+            5,
+            7,
+            1197,
+            9,
+            3,
+            105,
+            1217
+          ],
+          "photo_fraction_on_sheet": 0.23877307185234015,
+          "texture_shape": [
+            636,
+            264
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 1.0207133241351045,
+              "2": 1.0309383480883405,
+              "3": 0.9787553428830795,
+              "4": 0.9910445091694637,
+              "5": 0.9797070111212118,
+              "6": 1.0,
+              "7": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  1,
+                  5
+                ],
+                "samples": 47,
+                "before_log_luma_jump": -0.046346973994498164,
+                "mad": 0.014473910261751932,
+                "after_log_luma_jump": -0.037244497067147275,
+                "predicted_after_log_luma_jump": -0.0053435334723068995
+              },
+              {
+                "labels": [
+                  2,
+                  3
+                ],
+                "samples": 29,
+                "before_log_luma_jump": -0.013772823753224195,
+                "mad": 0.03767740310798162,
+                "after_log_luma_jump": -0.0021405409107493334,
+                "predicted_after_log_luma_jump": 0.03817015413283041
+              },
+              {
+                "labels": [
+                  3,
+                  4
+                ],
+                "samples": 39,
+                "before_log_luma_jump": 0.009652126554420049,
+                "mad": 0.023824472359057713,
+                "after_log_luma_jump": 0.006680401852393381,
+                "predicted_after_log_luma_jump": -0.002825613982479696
+              },
+              {
+                "labels": [
+                  2,
+                  3
+                ],
+                "samples": 24,
+                "before_log_luma_jump": -0.11361733963865961,
+                "mad": 0.03326676374408499,
+                "after_log_luma_jump": -0.10010084249080298,
+                "predicted_after_log_luma_jump": -0.061674361752605
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.021962449459770328,
+            "median_absolute_boundary_jump_before": 0.03005989887386118,
+            "median_absolute_boundary_jump_after": 0.021962449459770328,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "floor2_floor_2f",
+          "kind": "floor",
+          "height_band_m": [
+            1.95,
+            3.25
+          ],
+          "mode_hint_m": 2.475,
+          "accepted": true,
+          "height_m": 2.490410295659016,
+          "area_xy_m2": 435.1,
+          "model_inferred_area_m2": 39.52000000000001,
+          "observed_raster_area_m2": 399.52000000000004,
+          "triangles": 87020,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.2386147291182812,
+          "source_height_span_m": 1.2722001858306589,
+          "guarded_stair_cells": 3054,
+          "free_space_excluded_cells": 205,
+          "mask_file": "floor2_floor_2f_mask.npz",
+          "original_photo_nodes": [
+            237,
+            797,
+            448,
+            339,
+            514,
+            829,
+            267,
+            259,
+            831,
+            456,
+            822,
+            261,
+            794,
+            426,
+            241,
+            263,
+            800,
+            502,
+            802,
+            809,
+            698,
+            459,
+            701,
+            330,
+            804,
+            281,
+            462,
+            834,
+            311,
+            873,
+            338,
+            922,
+            972,
+            826,
+            970,
+            280
+          ],
+          "photo_fraction_on_sheet": 0.3650108878020919,
+          "texture_shape": [
+            1284,
+            1400
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0231037645781824,
+              "1": 1.0259864812736228,
+              "2": 0.9997615801437472,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 0.9723905559585658,
+              "6": 1.0,
+              "7": 0.9822514655280613,
+              "8": 0.9746717118130406,
+              "9": 1.0,
+              "10": 1.0068091623653572,
+              "11": 1.0,
+              "12": 1.0084632657356098,
+              "13": 1.0,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0032192792981645,
+              "17": 1.0,
+              "18": 1.0181604874423702,
+              "19": 1.0,
+              "20": 1.01806923694677,
+              "21": 1.0,
+              "22": 1.0,
+              "23": 1.0264029923111153,
+              "24": 1.0,
+              "25": 1.0,
+              "26": 1.0,
+              "27": 1.0,
+              "28": 1.0,
+              "29": 0.9916077600214457,
+              "30": 1.0,
+              "31": 1.0,
+              "32": 1.0,
+              "33": 1.0,
+              "34": 1.0,
+              "35": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  0,
+                  23
+                ],
+                "samples": 58,
+                "before_log_luma_jump": -0.023782186476555056,
+                "mad": 0.06319352534892231,
+                "after_log_luma_jump": -0.02345599088210304,
+                "predicted_after_log_luma_jump": -0.02700172266170185
+              },
+              {
+                "labels": [
+                  1,
+                  8
+                ],
+                "samples": 26,
+                "before_log_luma_jump": -0.06339639060007418,
+                "mad": 0.011779910247597503,
+                "after_log_luma_jump": -0.050801123244738344,
+                "predicted_after_log_luma_jump": -0.012087249569663942
+              },
+              {
+                "labels": [
+                  2,
+                  23
+                ],
+                "samples": 26,
+                "before_log_luma_jump": 0.049338963267920866,
+                "mad": 0.013241934759826046,
+                "after_log_luma_jump": 0.04291059878928416,
+                "predicted_after_log_luma_jump": 0.0230400653241143
+              },
+              {
+                "labels": [
+                  7,
+                  20
+                ],
+                "samples": 25,
+                "before_log_luma_jump": 0.044590742048215226,
+                "mad": 0.022065574625319773,
+                "after_log_luma_jump": 0.036376115183501145,
+                "predicted_after_log_luma_jump": 0.008774884981375679
+              },
+              {
+                "labels": [
+                  12,
+                  29
+                ],
+                "samples": 70,
+                "before_log_luma_jump": -0.03660874749189669,
+                "mad": 0.02414657060244796,
+                "after_log_luma_jump": -0.032125845267989894,
+                "predicted_after_log_luma_jump": -0.019753441304073874
+              },
+              {
+                "labels": [
+                  16,
+                  18
+                ],
+                "samples": 30,
+                "before_log_luma_jump": 0.02213244874546616,
+                "mad": 0.02156035673109369,
+                "after_log_luma_jump": 0.018638057571975453,
+                "predicted_after_log_luma_jump": 0.0073490018086853175
+              },
+              {
+                "labels": [
+                  0,
+                  23
+                ],
+                "samples": 36,
+                "before_log_luma_jump": 0.03895005630457016,
+                "mad": 0.12317061108521654,
+                "after_log_luma_jump": 0.03718393057468461,
+                "predicted_after_log_luma_jump": 0.03573052011942336
+              },
+              {
+                "labels": [
+                  5,
+                  10
+                ],
+                "samples": 37,
+                "before_log_luma_jump": 0.04405335830395851,
+                "mad": 0.005731159986625656,
+                "after_log_luma_jump": 0.035215858617736406,
+                "predicted_after_log_luma_jump": 0.009269524901669907
+              },
+              {
+                "labels": [
+                  10,
+                  16
+                ],
+                "samples": 31,
+                "before_log_luma_jump": 0.004810052294835554,
+                "mad": 0.013495937328922292,
+                "after_log_luma_jump": 0.0057677132322278,
+                "predicted_after_log_luma_jump": 0.008382028501469019
+              },
+              {
+                "labels": [
+                  12,
+                  29
+                ],
+                "samples": 48,
+                "before_log_luma_jump": 0.009800988413942724,
+                "mad": 0.07028809701304073,
+                "after_log_luma_jump": 0.013344665577724513,
+                "predicted_after_log_luma_jump": 0.026656294601765537
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.03367085194286315,
+            "median_absolute_boundary_jump_before": 0.03777940189823342,
+            "median_absolute_boundary_jump_after": 0.03367085194286315,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "floor2_ceiling_2f",
+          "kind": "ceiling",
+          "height_band_m": [
+            4.75,
+            6.25
+          ],
+          "mode_hint_m": 5.425,
+          "paired_floor": "floor2_floor_2f",
+          "accepted": true,
+          "height_m": 5.415130286347697,
+          "area_xy_m2": 463.40000000000003,
+          "model_inferred_area_m2": 187.9,
+          "observed_raster_area_m2": 275.5,
+          "triangles": 92680,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.2592790646689226,
+          "source_height_span_m": 1.276174126065813,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "floor2_ceiling_2f_mask.npz",
+          "original_photo_nodes": [
+            709,
+            247,
+            981,
+            249,
+            973,
+            779,
+            667,
+            245,
+            1099,
+            403,
+            439,
+            399,
+            444,
+            705,
+            866,
+            901,
+            398,
+            361,
+            972,
+            970,
+            556,
+            506,
+            949,
+            838,
+            935,
+            353,
+            964,
+            749,
+            836,
+            454,
+            1029,
+            700,
+            703,
+            524,
+            876,
+            540
+          ],
+          "photo_fraction_on_sheet": 0.19518756393489323,
+          "texture_shape": [
+            1236,
+            1400
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 0.9835636779476075,
+              "2": 1.0,
+              "3": 1.1462381296826938,
+              "4": 1.0,
+              "5": 0.93898298398241,
+              "6": 1.0,
+              "7": 0.9446369828716485,
+              "8": 0.987861184616222,
+              "9": 1.0322154007167674,
+              "10": 1.0122879768663993,
+              "11": 0.9868366951753095,
+              "12": 1.0,
+              "13": 0.9962331357277786,
+              "14": 1.0078870689472623,
+              "15": 0.9713460231888419,
+              "16": 0.9817126231392985,
+              "17": 1.0,
+              "18": 1.0,
+              "19": 1.0,
+              "20": 1.0,
+              "21": 1.0,
+              "22": 1.0,
+              "23": 1.0,
+              "24": 1.0,
+              "25": 1.0,
+              "26": 1.0,
+              "27": 1.0,
+              "28": 1.0160093973321662,
+              "29": 1.0,
+              "30": 1.0,
+              "31": 0.9889904557295994,
+              "32": 1.0203833236129678,
+              "33": 1.0,
+              "34": 1.0,
+              "35": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  1,
+                  7
+                ],
+                "samples": 49,
+                "before_log_luma_jump": -0.040463944962455534,
+                "mad": 0.03245705021725809,
+                "after_log_luma_jump": -0.029724996226353717,
+                "predicted_after_log_luma_jump": -8.227155012033305e-05
+              },
+              {
+                "labels": [
+                  5,
+                  7
+                ],
+                "samples": 62,
+                "before_log_luma_jump": 0.008477380780387622,
+                "mad": 0.024391632655118012,
+                "after_log_luma_jump": 0.00720938686618422,
+                "predicted_after_log_luma_jump": 0.0024740298182296255
+              },
+              {
+                "labels": [
+                  8,
+                  10
+                ],
+                "samples": 53,
+                "before_log_luma_jump": 0.04648069306841385,
+                "mad": 0.026642547289942753,
+                "after_log_luma_jump": 0.040646321217121306,
+                "predicted_after_log_luma_jump": 0.02205450805621257
+              },
+              {
+                "labels": [
+                  9,
+                  11
+                ],
+                "samples": 41,
+                "before_log_luma_jump": -0.05523073177984683,
+                "mad": 0.038746432361633776,
+                "after_log_luma_jump": -0.04767537608821959,
+                "predicted_after_log_luma_jump": -0.010272655887627893
+              },
+              {
+                "labels": [
+                  15,
+                  31
+                ],
+                "samples": 35,
+                "before_log_luma_jump": 0.028177299596565786,
+                "mad": 0.01101649508274316,
+                "after_log_luma_jump": 0.023389439504096443,
+                "predicted_after_log_luma_jump": 0.010175380814571339
+              },
+              {
+                "labels": [
+                  1,
+                  3
+                ],
+                "samples": 40,
+                "before_log_luma_jump": 0.19485693604406207,
+                "mad": 0.04280668560273093,
+                "after_log_luma_jump": 0.15750822037140377,
+                "predicted_after_log_luma_jump": 0.04179865030499602
+              },
+              {
+                "labels": [
+                  1,
+                  7
+                ],
+                "samples": 47,
+                "before_log_luma_jump": -0.07154968869191425,
+                "mad": 0.010518969136680045,
+                "after_log_luma_jump": -0.06119376224634676,
+                "predicted_after_log_luma_jump": -0.031168015279579048
+              },
+              {
+                "labels": [
+                  5,
+                  7
+                ],
+                "samples": 65,
+                "before_log_luma_jump": 0.015508653853866017,
+                "mad": 0.019450638749816562,
+                "after_log_luma_jump": 0.014359197181590844,
+                "predicted_after_log_luma_jump": 0.00950530289170802
+              },
+              {
+                "labels": [
+                  8,
+                  10
+                ],
+                "samples": 51,
+                "before_log_luma_jump": 0.004440331212602455,
+                "mad": 0.014693073772368948,
+                "after_log_luma_jump": -0.0016396447847668583,
+                "predicted_after_log_luma_jump": -0.019985853799598823
+              },
+              {
+                "labels": [
+                  9,
+                  11
+                ],
+                "samples": 33,
+                "before_log_luma_jump": -0.04396523811013653,
+                "mad": 0.01507147177882473,
+                "after_log_luma_jump": -0.0324871567221634,
+                "predicted_after_log_luma_jump": 0.0009928377820824091
+              },
+              {
+                "labels": [
+                  11,
+                  16
+                ],
+                "samples": 52,
+                "before_log_luma_jump": -0.00955391161248409,
+                "mad": 0.01656451917530921,
+                "after_log_luma_jump": -0.008169326483445483,
+                "predicted_after_log_luma_jump": -0.004347962682468388
+              },
+              {
+                "labels": [
+                  13,
+                  14
+                ],
+                "samples": 35,
+                "before_log_luma_jump": 0.031827646203024695,
+                "mad": 0.00886590525694353,
+                "after_log_luma_jump": 0.028737904575994344,
+                "predicted_after_log_luma_jump": 0.020197540832476324
+              },
+              {
+                "labels": [
+                  13,
+                  32
+                ],
+                "samples": 26,
+                "before_log_luma_jump": -0.0014585326687209799,
+                "mad": 0.02772512778411712,
+                "after_log_luma_jump": -0.006564863921258657,
+                "predicted_after_log_luma_jump": -0.02541087360293364
+              },
+              {
+                "labels": [
+                  14,
+                  28
+                ],
+                "samples": 33,
+                "before_log_luma_jump": 0.0265318139127102,
+                "mad": 0.01412029977475382,
+                "after_log_luma_jump": 0.024397061998951308,
+                "predicted_after_log_luma_jump": 0.018505344054783057
+              },
+              {
+                "labels": [
+                  28,
+                  31
+                ],
+                "samples": 35,
+                "before_log_luma_jump": -0.041003286342710554,
+                "mad": 0.05930680079749817,
+                "after_log_luma_jump": -0.033834677020790904,
+                "predicted_after_log_luma_jump": -0.014050090055445018
+              },
+              {
+                "labels": [
+                  28,
+                  32
+                ],
+                "samples": 25,
+                "before_log_luma_jump": 0.0406104726921368,
+                "mad": 0.01852260397411909,
+                "after_log_luma_jump": 0.039467960956633186,
+                "predicted_after_log_luma_jump": 0.03631470698639965
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.02923145040117403,
+            "median_absolute_boundary_jump_before": 0.036145795582740115,
+            "median_absolute_boundary_jump_after": 0.02923145040117403,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "triangles": 282823,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "0f5894c9cb400bf5cdb23770d31142c064c2b56150d7686ccf769aa1eb1805f8",
+      "ply_sha256": "060e4bc9f745e7fd2127683ae5fd8d96eda8dcb6f8c8ca512b0ad28761809529",
+      "flat_sheets": [
+        {
+          "id": "sub_floor_1f",
+          "kind": "floor",
+          "height_band_m": [
+            -1.9,
+            -0.9
+          ],
+          "mode_hint_m": -1.375,
+          "accepted": true,
+          "height_m": -1.3729515447050549,
+          "area_xy_m2": 52.400000000000006,
+          "model_inferred_area_m2": 9.850000000000001,
+          "observed_raster_area_m2": 44.32000000000001,
+          "triangles": 10480,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.22857622334887345,
+          "source_height_span_m": 0.854963035621472,
+          "guarded_stair_cells": 225,
+          "free_space_excluded_cells": 0,
+          "mask_file": "sub_floor_1f_mask.npz",
+          "original_photo_nodes": [
+            1,
+            35,
+            205,
+            62,
+            36,
+            12,
+            204,
+            7,
+            24,
+            196,
+            27,
+            34,
+            18,
+            9,
+            33,
+            207,
+            26,
+            29,
+            210,
+            28,
+            57,
+            40,
+            48,
+            46
+          ],
+          "photo_fraction_on_sheet": 0.6707895992366413,
+          "texture_shape": [
+            516,
+            532
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 0.9991857737770029,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.181814372028532,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 0.9784453424804216,
+              "14": 1.0,
+              "15": 1.0,
+              "16": 1.0,
+              "17": 1.0,
+              "18": 1.0220294957559264,
+              "19": 1.0,
+              "20": 1.0,
+              "22": 1.0,
+              "23": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  0,
+                  7
+                ],
+                "samples": 24,
+                "before_log_luma_jump": 0.25313096250523026,
+                "mad": 0.15195655452604662,
+                "after_log_luma_jump": 0.20948583714261637,
+                "predicted_after_log_luma_jump": 0.08526554363021294
+              },
+              {
+                "labels": [
+                  13,
+                  18
+                ],
+                "samples": 25,
+                "before_log_luma_jump": 0.05425797693561829,
+                "mad": 0.05440901658005626,
+                "after_log_luma_jump": 0.047361016263547384,
+                "predicted_after_log_luma_jump": 0.010677272569659897
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.12842342670308188,
+            "median_absolute_boundary_jump_before": 0.15369446972042428,
+            "median_absolute_boundary_jump_after": 0.12842342670308188,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "sub_ceiling_1f",
+          "kind": "ceiling",
+          "height_band_m": [
+            0.9,
+            1.85
+          ],
+          "mode_hint_m": 1.125,
+          "paired_floor": "sub_floor_1f",
+          "accepted": true,
+          "height_m": 1.1143848450297325,
+          "area_xy_m2": 56.800000000000004,
+          "model_inferred_area_m2": 44.43000000000001,
+          "observed_raster_area_m2": 13.600000000000001,
+          "triangles": 11360,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.46097920404126574,
+          "source_height_span_m": 0.9477787215956495,
+          "guarded_stair_cells": 1282,
+          "free_space_excluded_cells": 175,
+          "mask_file": "sub_ceiling_1f_mask.npz",
+          "original_photo_nodes": [
+            40,
+            46,
+            48,
+            28,
+            29,
+            210,
+            18,
+            88,
+            57,
+            27,
+            26,
+            33,
+            24,
+            16,
+            90
+          ],
+          "photo_fraction_on_sheet": 0.1027068661971831,
+          "texture_shape": [
+            480,
+            632
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 0.9828679786407167,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0174306435163107,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  6,
+                  11
+                ],
+                "samples": 29,
+                "before_log_luma_jump": 0.04186045467138522,
+                "mad": 0.019655474261075945,
+                "after_log_luma_jump": 0.03339013897730059,
+                "predicted_after_log_luma_jump": 0.0072995098893163385
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.03339013897730059,
+            "median_absolute_boundary_jump_before": 0.04186045467138522,
+            "median_absolute_boundary_jump_after": 0.03339013897730059,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "sub_floor_2f",
+          "kind": "floor",
+          "height_band_m": [
+            2.25,
+            3.45
+          ],
+          "mode_hint_m": 2.825,
+          "accepted": true,
+          "height_m": 2.810284618408088,
+          "area_xy_m2": 42.620000000000005,
+          "model_inferred_area_m2": 9.600000000000001,
+          "observed_raster_area_m2": 34.050000000000004,
+          "triangles": 8524,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.15764861249798767,
+          "source_height_span_m": 1.1787111304304392,
+          "guarded_stair_cells": 1007,
+          "free_space_excluded_cells": 0,
+          "mask_file": "sub_floor_2f_mask.npz",
+          "original_photo_nodes": [
+            153,
+            140,
+            169,
+            143,
+            129,
+            142,
+            144,
+            154,
+            148,
+            145,
+            174,
+            126,
+            161,
+            160,
+            146
+          ],
+          "photo_fraction_on_sheet": 0.6432572735804787,
+          "texture_shape": [
+            524,
+            532
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 1.0,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.0,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0,
+              "10": 1.0,
+              "11": 1.0,
+              "12": 1.0,
+              "13": 1.0,
+              "14": 1.0
+            },
+            "boundaries": [],
+            "applied": false,
+            "candidate_median_absolute_boundary_jump_after": null,
+            "median_absolute_boundary_jump_before": null,
+            "median_absolute_boundary_jump_after": null,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        },
+        {
+          "id": "sub_ceiling_2f",
+          "kind": "ceiling",
+          "height_band_m": [
+            5.25,
+            6.4
+          ],
+          "mode_hint_m": 5.825,
+          "paired_floor": "sub_floor_2f",
+          "accepted": true,
+          "height_m": 5.822988108945386,
+          "area_xy_m2": 44.71000000000001,
+          "model_inferred_area_m2": 26.82,
+          "observed_raster_area_m2": 18.270000000000003,
+          "triangles": 8942,
+          "height_span_m": 0.0,
+          "maximum_abs_height_deviation_m": 0.0,
+          "source_height_deviation_p90_m": 0.3503192368787643,
+          "source_height_span_m": 0.8963850888902698,
+          "guarded_stair_cells": 0,
+          "free_space_excluded_cells": 0,
+          "mask_file": "sub_ceiling_2f_mask.npz",
+          "original_photo_nodes": [
+            160,
+            144,
+            145,
+            154,
+            161,
+            146,
+            148,
+            142,
+            126,
+            143
+          ],
+          "photo_fraction_on_sheet": 0.2757772310445091,
+          "texture_shape": [
+            456,
+            448
+          ],
+          "fallback": "smoothed_existing_horizontal_surface_RGB_not_generated_photography",
+          "photograph_depth_tolerance_m": 0.45,
+          "boundary_leveling": {
+            "method": "Robust adjacent photo-label log-luminance graph; bounded gain; original RGB detail retained",
+            "gain_bounds": [
+              0.6,
+              1.6
+            ],
+            "gains": {
+              "0": 0.9453169288971495,
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0,
+              "6": 1.057846283538629,
+              "7": 1.0,
+              "8": 1.0,
+              "9": 1.0
+            },
+            "boundaries": [
+              {
+                "labels": [
+                  0,
+                  6
+                ],
+                "samples": 35,
+                "before_log_luma_jump": 0.13215232806585142,
+                "mad": 0.019231058916602706,
+                "after_log_luma_jump": 0.1056500549795909,
+                "predicted_after_log_luma_jump": 0.01968226162682886
+              }
+            ],
+            "applied": true,
+            "candidate_median_absolute_boundary_jump_after": 0.1056500549795909,
+            "median_absolute_boundary_jump_before": 0.13215232806585142,
+            "median_absolute_boundary_jump_after": 0.1056500549795909,
+            "scope": "Self-consistency on the same selected boundary samples; not ground-truth illumination."
+          },
+          "bounded_chart_lighting": {
+            "low_frequency_radius_m": 0.35,
+            "local_gain_bounds": [
+              0.65,
+              1.55
+            ],
+            "global_exposure_gain": 2.5
+          },
+          "photo_boundary_feather_m": 0.12
+        }
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/manifest.json": "ededb3b2bb515a6816232bab2ab888097e308f8dd3a62ccbd4714a2abaff1099",
+    "/home/subin/folded-city-atlas/src/surface_model_utils.py": "1c4bfe269991ca77f172afb600d6d1232a8ee8839b5b5158328c2205710423e3",
+    "/home/subin/folded-city-atlas/src/append_plane_glb.py": "030cde9c5b8e16dfbc273b6e12ca97e30fd92a9fd7cf12c2668e5d1c1b179e97",
+    "/home/subin/folded-city-atlas/src/coherent_photo_charts.py": "a97045e2f865bda7d3f1af2cb02cd4e3c991a8906486c89d0dc5f31552fa1d40",
+    "/home/subin/folded-city-atlas/src/rebuild_structural_display.py": "7a59667d2e9de65b992b70d8e76bf3a7c1a74633176e009be398d2ab9b9be8fd",
+    "/home/subin/folded-city-atlas/src/clean_structural_fragments.py": "5b91a3953c0ef7fa92490068e5a2b80ed54e283095915633e2aa725680cbaaa2",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/floor2/clean_structural.ply": "68b0e59474a93d0d11cf3f63f1bb3468d586720f6dbc916e6b31e50f642cf33c",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/floor2/clean_textured.glb": "e3542f75b3abbcb96e1f4b25f5f74d321bee13b17adb9ff64dc6320a662e0009",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/lobby/clean_structural.ply": "3ae37f00032a79f54e47fea419a243ecede322b282501a28c0943735f8d6c195",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/lobby/clean_textured.glb": "02cc4e72b4abc146f4d24c74fcfc7e4495becb4171ed5d1f9408bdc1c11df353",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/outside/clean_structural.ply": "168bd83f179cd5f3131d0b86c06f7c4285602bb44ed61a40b2453d815f22b3c8",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/outside/clean_textured.glb": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/bridge_out1f/clean_structural.ply": "fd18d27fdad3e3d410707eba30fd611be64af3660af4ca942bb656c7cdb454a9",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/bridge_out1f/clean_textured.glb": "dc3580b59f9387545e4cb4c0f4a84ae48524c22a02fc132bc264b7ec08c1705a",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/bridge_12_sub/clean_structural.ply": "09d01f3b56524034efcb8549bf0425df50b1a794840a3ee58be209747a544f31",
+    "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/bridge_12_sub/clean_textured.glb": "80b2f9a567eeaf42e401a64f7fb08385b570082aa59bc1f15b8cceedb8b0737d",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_planes_v2/reconstruction_source_snapshot.py": "6f51876df08b8437ee98739d036f6b90bf193eb60148cdb9b4b1cbe181624a31",
+    "/home/subin/folded-city-atlas/src/retexture_continuous_planes.py": "22142a87ce9a20096ac8dacdc96fd0c2cd88d91f7be8ede28b0717763cea8239",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_planes_v2/manifest.json": "bf11961d28215e19a1551c760b0c669d8f637d8b0719a7910b214c0e6df3f67d",
+    "/home/subin/folded-city-atlas/src/aligned_photo_charts.py": "ac061448a02c26cb5565a8482bdfa017b8ed0877e99b2a7fec745148cbfcabf2",
+    "/home/subin/folded-city-atlas/src/reconstruct_continuous_planes.py": "3644d82fdc80d62f8d187697ce8c945d90aabadf1d059be8877c9f9f0cfdf996",
+    "/home/subin/folded-city-atlas/src/guard_stair_corridor.py": "b736a529dba4987a78e7bc5c2a740ce8d5412c77427cbfbea4a2dbde1c715b1e",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_photos_v3/manifest.json": "3ea11b9b4f4325f029b7642a18ea8e67d4431e2a286bc288f54223ef7795a80b",
+    "/home/subin/folded-city-atlas/src/photo_semantic_surfaces.py": "edfc98d3881b651ff2a5c2cc5e620826360f975803004f968606fdbb65086ae3",
+    "/home/subin/folded-city-atlas/config/photo_semantic_annotations.json": "5a8a10a9d420585ae98ff75fa9cf609fc93bc62287ef9a913aa8e924008651fb",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_selected_v4/manifest.json": "51b368d6561c109a652a86e37cec77a59f56bb86bbaa597fde2085659a7f99fe",
+    "/home/subin/folded-city-atlas/src/texture_boundary_leveling.py": "e4dd9110f95c0b11f2f98ba943635e34b2e61b72e5a1e14283d48ad23215ff31",
+    "/home/subin/folded-city-atlas/src/flatten_horizontal_surfaces.py": "7f343f889c4c2d4c0896ae6421b4feeb5ab190280e451544009442ed9baae942",
+    "/home/subin/folded-city-atlas/config/flat_horizontal_surfaces.json": "8818ee5a78434a6ac362a60c157a303de293d2e59e647ca14592ae11edef452c",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/manifest.json": "1c44f4473b8b8b9f4d59689c938a94f2420724acf6fc0d0aedfa3a319d7566a8",
+    "/home/subin/folded-city-atlas/outputs/student_union_flat_inventory_v1/source_policy.json": "8efc5d2cce6653d6ff8487913b6041219609d1d5d57690a3e164ba20e587b3df",
+    "/home/subin/folded-city-atlas/src/inspect_flat_surfaces.py": "4a39740b81de33e4231751fb744da0cb6627de06b7790eebd314d7595c983fbc",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/lobby/clean_structural.ply": "f789c5ca08c8cba742b82e4e838267c7a4683148d24d1b55ded3f2eb0813c644",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/lobby/clean_textured.glb": "7cce58502e56d5b6f89fcd996156f22a171ed671e38b07ce197dba9fa73a8cbb",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/floor2/clean_structural.ply": "4972b5bdfe11e20731f01a89f61d6d358b3c5289463e3896d9998de180e40cd3",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/floor2/clean_textured.glb": "050a5d7e9594827ab9a73dc827b61dc91b1c14f2dd19e47f5601208ebc31f174",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_12_sub/preserved_geometry.ply": "f2276a1639cce1b567efb13c33f3db0a5da48b5a7345e63112803428449155ad",
+    "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_12_sub/balanced_only.glb": "0fc9a8494b38994ef89360ec9f45e782aa5730e7f536e8c12209599fdfd02975",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_out1f/preserved_geometry.ply": "3c7497e913523c4d4c7202453785e31228a396bba716dc6b71f160050b09734f",
+    "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_out1f/balanced_only.glb": "05587126dc458b61f8521b6ab20c8d01cc87b0af3818366b410d4d8904647168",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/outside/clean_structural.ply": "168bd83f179cd5f3131d0b86c06f7c4285602bb44ed61a40b2453d815f22b3c8",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_semantics_v10/outside/clean_textured.glb": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58"
+  },
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "raw_databases_unchanged": true,
+  "pose_changes": 0,
+  "modeled_display_geometry_changes": true,
+  "navigation_ready": false,
+  "manifest_sha256": "f297f9d281a69f9573676cc933f3017d904c08959663ce975e956f697339dbbb",
+  "cleanup_sha256": "3103de2b7cf3689ebd9aa7320f89f535a792e3927137d58f3325e6afed7e238b",
+  "audit_source_sha256": "a16cd7db32dfa009509731b6497c67374c92085159ea84b4d74ce137e0803e0e",
+  "native_selected_view": {
+    "loaded": {
+      "loaded_files": [
+        "/home/subin/folded-city-atlas/outputs/student_union_flat_horizontal_v3/outside/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_flat_horizontal_v3/lobby/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_flat_horizontal_v3/bridge_out1f/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_flat_horizontal_v3/floor2/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_flat_horizontal_v3/bridge_12_sub/clean_textured.glb"
+      ],
+      "status": "Loaded 5 session(s) | Flat floors + ceilings",
+      "native_window": true,
+      "selected_map_changed": false,
+      "roadview_nodes": 1199,
+      "time_unix": 1792308174.0650027,
+      "start_view": "indoor",
+      "ceiling_cutaway": false
+    },
+    "scene_render_sha256": "c2c30b2145d676c4c4d87ddba522f061d2510da052dfd44845b66e86c5546d58",
+    "scene_render": "selected_overview.png",
+    "scope": "Native scene render callback, not a desktop screenshot",
+    "selection_policy_sha256": "ee14786ce26c1b62cbe722e85164495c1c44b66465ae3cf94fced168370704cb"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "bundle_manifest_sha256": "442aece905b897f265044d17d2e8da3e7c014fb9a5b9ce5c6056f271cbc20d1d",
+  "sessions": {
+    "floor2": {
+      "retained_XYZ_exact": true,
+      "original_binary_UV_photos_materials_exact": true,
+      "floor_and_2F_levels_preserved": true,
+      "GLB_PLY_equal": true,
+      "removed_local_old_ceiling_or_sign_prism_faces": 0,
+      "retained_faces": 737706,
+      "GLB_sha256": "0fe754e5101143b58729642414d4fe5a224ea71c445a696fbf9e2a8da13942f7"
+    },
+    "lobby": {
+      "retained_XYZ_exact": true,
+      "original_binary_UV_photos_materials_exact": true,
+      "floor_and_2F_levels_preserved": true,
+      "GLB_PLY_equal": true,
+      "removed_local_old_ceiling_or_sign_prism_faces": 506,
+      "retained_faces": 671559,
+      "GLB_sha256": "b8ee6942f23e28a95d8b91daffc6b43d1fe9206b14aace0210fdffdd7eb84d6d"
+    },
+    "bridge_12_sub": {
+      "retained_XYZ_exact": true,
+      "original_binary_UV_photos_materials_exact": true,
+      "floor_and_2F_levels_preserved": true,
+      "GLB_PLY_equal": true,
+      "removed_local_old_ceiling_or_sign_prism_faces": 0,
+      "retained_faces": 276424,
+      "GLB_sha256": "c1b16c0d9b51c2ea62fc58add5035de161d1eeeffe8773cc80f40f587e309e33"
+    },
+    "bridge_out1f": {
+      "retained_XYZ_exact": true,
+      "original_binary_UV_photos_materials_exact": true,
+      "floor_and_2F_levels_preserved": true,
+      "GLB_PLY_equal": true,
+      "removed_local_old_ceiling_or_sign_prism_faces": 0,
+      "retained_faces": 129944,
+      "GLB_sha256": "00da8a6251c832f09936d8e49649f3f2dd0d6d45385ff7167344e698d5f7e0f2"
+    },
+    "outside": {
+      "retained_XYZ_exact": true,
+      "original_binary_UV_photos_materials_exact": true,
+      "floor_and_2F_levels_preserved": true,
+      "GLB_PLY_equal": true,
+      "removed_local_old_ceiling_or_sign_prism_faces": 0,
+      "retained_faces": 272119,
+      "GLB_sha256": "44a6c8139943fd4ded08b4ec3e25176649c9566cbe77abd2e6d493a7eafc8ada"
+    }
+  },
+  "prior_clearance_audit": {
+    "bundle_manifest_sha256": "ee50b7fef0cd34e46a6fb2a7b338e8bd51e1721aa6ac3f57f26e84d0e382bbea",
+    "sessions": {
+      "floor2": {
+        "XY_exact": true,
+        "non_target_XYZ_exact": true,
+        "images_UV_materials_indices_exact": true,
+        "GLB_PLY_equal": true,
+        "triangle_count_unchanged": 737706,
+        "changed_triangle_corners": 0,
+        "GLB_sha256": "0fe754e5101143b58729642414d4fe5a224ea71c445a696fbf9e2a8da13942f7"
+      },
+      "lobby": {
+        "XY_exact": true,
+        "non_target_XYZ_exact": true,
+        "images_UV_materials_indices_exact": true,
+        "GLB_PLY_equal": true,
+        "triangle_count_unchanged": 672065,
+        "changed_triangle_corners": 8676,
+        "GLB_sha256": "51bd1c02900a42af992444bc3f84780e378c2e124839af058518c639a8b0bad7"
+      },
+      "bridge_12_sub": {
+        "XY_exact": true,
+        "non_target_XYZ_exact": true,
+        "images_UV_materials_indices_exact": true,
+        "GLB_PLY_equal": true,
+        "triangle_count_unchanged": 276424,
+        "changed_triangle_corners": 0,
+        "GLB_sha256": "c1b16c0d9b51c2ea62fc58add5035de161d1eeeffe8773cc80f40f587e309e33"
+      },
+      "bridge_out1f": {
+        "XY_exact": true,
+        "non_target_XYZ_exact": true,
+        "images_UV_materials_indices_exact": true,
+        "GLB_PLY_equal": true,
+        "triangle_count_unchanged": 129944,
+        "changed_triangle_corners": 0,
+        "GLB_sha256": "00da8a6251c832f09936d8e49649f3f2dd0d6d45385ff7167344e698d5f7e0f2"
+      },
+      "outside": {
+        "XY_exact": true,
+        "non_target_XYZ_exact": true,
+        "images_UV_materials_indices_exact": true,
+        "GLB_PLY_equal": true,
+        "triangle_count_unchanged": 272119,
+        "changed_triangle_corners": 0,
+        "GLB_sha256": "44a6c8139943fd4ded08b4ec3e25176649c9566cbe77abd2e6d493a7eafc8ada"
+      }
+    },
+    "clearance": {
+      "config": {
+        "source_bundle": "outputs/student_union_edge_finish_v18",
+        "slab_session": "lobby",
+        "slab_id": "bank",
+        "slab_mask": "outputs/student_union_service_slabs_v3/lobby/bank_slab_mask.npz",
+        "sign_id": "lobby_shinhan_heading",
+        "minimum_display_clearance_m": 0.08,
+        "round_height_step_m": 0.02,
+        "maximum_raise_m": 0.35,
+        "scope": "Local display-only underside clearance correction where actual same-camera render and first-hit diagnostic confirm bank ceiling occludes the sign. Raise only existing bank slab underside vertices and their welded side-skin bottom endpoints. Keep all XY, all floor/2F levels, sign geometry/photos, materials, open atrium and other 1F ceilings unchanged. This is sign-compatible presentation geometry, not a surveyed ceiling height or a global 1F height correction."
+      },
+      "old_underside_m": 1.7563660144805908,
+      "new_underside_m": 1.98,
+      "sign_top_m": 1.8836694955825806,
+      "upper_floor_unchanged_m": 2.6,
+      "source_manifest": "/home/subin/folded-city-atlas/outputs/student_union_edge_finish_v18/manifest.json"
+    },
+    "source_map_pose_changes": 0,
+    "source_sha256": "22e083c239f693be070a899dc89e8d31cdb3458ab4cfec64eaaad4547e0b924c",
+    "scope": "Actual output preservation check, not a surveyed ceiling height or visual acceptance."
+  },
+  "source_map_pose_changes": 0,
+  "source_sha256": "54dd7e24ff3b9356ad7edfe594714dc5012b75e5bb980560b09312d7f674d4d0",
+  "scope": "Local old-ceiling overlap filtering after verified Z-only underside correction; visual acceptance separate."
+}

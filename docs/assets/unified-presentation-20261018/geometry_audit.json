@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-10-18T12:37:48.242887+00:00",
+  "sessions": {
+    "lobby": {
+      "actual_GLB_PLY_equal": true,
+      "retained_source_XY_exact": true,
+      "only_declared_display_Z_warp_applied": true,
+      "original_embedded_images_unchanged": 162,
+      "superseded_triangles": 6816,
+      "source_retained_triangles": 675346,
+      "added_triangles": 22326,
+      "floors": [
+        {
+          "id": "lobby_floor_1f",
+          "display_level_m": -1.55,
+          "maximum_deviation_m": 2.384185791015625e-07,
+          "height_span_m": 3.5762786865234375e-07,
+          "scope": "Flat by model construction, not measured accuracy."
+        }
+      ],
+      "new_low_horizontal_faces_inside_atrium_core": 0,
+      "ply_sha256": "0d0a2a23ff629169d3e883018969af928e1d6991f46dc89b7239ae5f6753b284",
+      "glb_sha256": "cb82a001f850d4565d6f6f9b09e55e9ad93822cf62eb06f8aa1118f644f600bd"
+    },
+    "floor2": {
+      "actual_GLB_PLY_equal": true,
+      "retained_source_XY_exact": true,
+      "only_declared_display_Z_warp_applied": true,
+      "original_embedded_images_unchanged": 163,
+      "superseded_triangles": 12569,
+      "source_retained_triangles": 901310,
+      "added_triangles": 2037,
+      "floors": [
+        {
+          "id": "floor2_floor_1f",
+          "display_level_m": -1.55,
+          "maximum_deviation_m": 1.1920928955078125e-07,
+          "height_span_m": 1.1920928955078125e-07,
+          "scope": "Flat by model construction, not measured accuracy."
+        },
+        {
+          "id": "floor2_floor_2f",
+          "display_level_m": 2.6,
+          "maximum_deviation_m": 2.384185791015625e-07,
+          "height_span_m": 2.384185791015625e-07,
+          "scope": "Flat by model construction, not measured accuracy."
+        }
+      ],
+      "new_low_horizontal_faces_inside_atrium_core": 0,
+      "ply_sha256": "9ce63c2d209dbef6a0b4774ec115a9f0e58c0b30e3f06a2fca8955f51e80cc4e",
+      "glb_sha256": "ad6c27fca895cefef9bfca5b9db62aac61fdf55232fd485025853b3fa1501a52"
+    },
+    "bridge_12_sub": {
+      "actual_GLB_PLY_equal": true,
+      "retained_source_XY_exact": true,
+      "only_declared_display_Z_warp_applied": true,
+      "original_embedded_images_unchanged": 8,
+      "superseded_triangles": 0,
+      "source_retained_triangles": 281759,
+      "added_triangles": 0,
+      "floors": [
+        {
+          "id": "sub_floor_1f",
+          "display_level_m": -1.55,
+          "maximum_deviation_m": 1.1920928955078125e-07,
+          "height_span_m": 1.1920928955078125e-07,
+          "scope": "Flat by model construction, not measured accuracy."
+        },
+        {
+          "id": "sub_floor_2f",
+          "display_level_m": 2.6,
+          "maximum_deviation_m": 2.384185791015625e-07,
+          "height_span_m": 2.384185791015625e-07,
+          "scope": "Flat by model construction, not measured accuracy."
+        }
+      ],
+      "new_low_horizontal_faces_inside_atrium_core": 0,
+      "ply_sha256": "90a6d6e45fea6cf73d046f7a4217cf5141b14a0ec120c96dc78b5fa3ac1fb467",
+      "glb_sha256": "c61f12e1a45a5e9126035d68ac94a489165f7c1f53bd524b8cccd9ef1d6b192a"
+    },
+    "bridge_out1f": {
+      "actual_GLB_PLY_equal": true,
+      "retained_source_XY_exact": true,
+      "only_declared_display_Z_warp_applied": true,
+      "original_embedded_images_unchanged": 2,
+      "superseded_triangles": 0,
+      "source_retained_triangles": 129944,
+      "added_triangles": 0,
+      "floors": [],
+      "new_low_horizontal_faces_inside_atrium_core": 0,
+      "ply_sha256": "fdecabfabfd803c5b95dde5f7b4dc436970badf92f5bd45db008a8104d459da5",
+      "glb_sha256": "e0a1c91b8ad71b5e6a129c33ce4e494502c4779445c04a2fa9eb71d3a2f72f1b"
+    },
+    "outside": {
+      "actual_GLB_PLY_equal": true,
+      "retained_source_XY_exact": true,
+      "only_declared_display_Z_warp_applied": true,
+      "original_embedded_images_unchanged": 18,
+      "superseded_triangles": 0,
+      "source_retained_triangles": 272119,
+      "added_triangles": 0,
+      "floors": [],
+      "new_low_horizontal_faces_inside_atrium_core": 0,
+      "ply_sha256": "83a7e53ec311d093709f2065f169a250983525e56ef9c3f260ad2bce037c2723",
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58"
+    }
+  },
+  "input_bindings_valid": true,
+  "source_selected_map_replaced": false,
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "database_sha256_unchanged": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "bundle_manifest_sha256": "daa84193d7b7bd658e6ac12b3288d54fa7b341b538f40b97fd6a5c323cf311b9",
+  "audit_source_sha256": "7f2c97c8ea195fc3f79cd6599ca9bb4fbd138934b19bede85c015380f9fea4a4",
+  "scope": "Architectural presentation, explicit modeled completion and vertical normalization. Original poses/maps retained. Not surveyed or navigation-ready."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "EXPLORATORY_DISPLAY_SELECTION_NOT_NAVIGATION",
+  "structural_manifest_sha256": "1c44f4473b8b8b9f4d59689c938a94f2420724acf6fc0d0aedfa3a319d7566a8",
+  "basis": "Retained display choices plus explicit original-photo semantic polygons, mapped plane anchors, first-hit visibility review and boundary exposure checks; not surveyed or independent pose accuracy.",
+  "sessions": {
+    "outside": {"method": "structural", "reason": "Source/audit median depth discrepancy both decreased."},
+    "lobby": {"method": "structural", "reason": "65 base wall planes plus six original-photo semantic surfaces: elevator, indicator, posters, entry glazing and service door. Closed/open elevator observations recorded separately. Boundary gains applied only when the measured chart objective does not worsen. Existing horizontal geometry retained."},
+    "floor2": {"method": "structural", "reason": "58 base wall planes plus 18 bounded photo surfaces (doors, glazing, signs, walls, local floor and ceiling). One observed open service doorway is not sealed. Explicit clear-photo sightlines remove conflicting vertical duplicates locally. The inspected stair corridor retains all 119099 source triangles; horizontal replacement is limited to the two reviewed floor/ceiling polygons."},
+    "bridge_out1f": {"method": "balanced_only", "reason": "Reject reconstructed default: audit median 5.22 to 10.95cm, about 33% of paired pixels worse by over 3cm."},
+    "bridge_12_sub": {"method": "balanced_only", "reason": "Reject reconstructed default: stair probe median 3.44 to 7.03cm, about 39% of paired pixels worse by over 3cm."}
+  },
+  "original_map_pose_changes": 0,
+  "navigation_ready": false
+}

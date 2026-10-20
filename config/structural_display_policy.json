@@ -1,0 +1,37 @@
+{
+  "status": "USER_SELECTED_FINAL_WORKING_MAP",
+  "user_selected_final": true,
+  "accepted_date": "2026-10-19",
+  "structural_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "basis": "Visually reviewed finish over the colour-preserving shadow v3. Remove tiny unprotected components, actual-covered residual surfaces and exact duplicates; re-prune after filtering; join only guarded sub-1.8cm coplanar seams. Two photo-depth-verified main-stair side walls use their real photographed boundaries and remove cross-session occluders by seven-point hits on the actual replacement mesh, including wrong-normal facets only within those explicit bare-wall regions. Source map poses, fixed floors/cavity, original photos and existing signs remain. Existing colours are retained outside the two photo wall replacements. Nineteen fixed-camera renders and two tiny-motion sequences expose remaining stair noise, texture seams and unobserved edges. This is a finished working display derivative, not a claim that all defects or navigation safety are solved.",
+  "sessions": {
+    "outside": {
+      "method": "structural",
+      "reason": "All existing outside geometry retained; no global flattening of real outdoor slopes or invented outdoor ceiling."
+    },
+    "lobby": {
+      "method": "structural",
+      "reason": "Keep prior floor/sign/door coordinates and photos, accepted old soffit heights and lower atrium opening. Add underside/side skins only beneath actual upper-floor support, leaving independent ceiling/floor levels. Match new materials and three artificial grey fascia materials to local real ceiling/wall colour. Unknown material/shape is labelled inferred. Non-walkable display only."
+    },
+    "floor2": {
+      "method": "structural",
+      "reason": "Keep v15 floor material, complete PRIME HALL and all existing floor/stair/door/glazing XYZ. Extend the upper ceiling at the existing height within the prior floor/roof envelope, replacing coplanar overlap only. Original ceiling colour/detail is sampled correctly; new unknown material is inferred. Do not treat the added ceiling as measured geometry or a navigable surface."
+    },
+    "bridge_out1f": {
+      "method": "structural",
+      "reason": "The previously accepted balanced_only geometry is the source, not the rejected rebuilt trial. Only indoor-clipped horizontal ground is replaced; source standing structures and outside slope geometry retained."
+    },
+    "bridge_12_sub": {
+      "method": "structural",
+      "reason": "Protected stairs/landings, all horizontal faces and v15 appearance retained. Only small unprotected convex contour teeth and narrow texture edge bands are softened. No stair flattening, new roof/floor or claim of visual approval at every location."
+    }
+  },
+  "original_map_pose_changes": 0,
+  "navigation_ready": false,
+  "shadow_lift_source": "outputs/student_union_closed_ceiling_material_v5/manifest.json",
+  "active_display_colour_changes": true,
+  "original_source_photo_pack_changes": false,
+  "candidate_requires_user_review": false,
+  "mesh_finish_source": "outputs/student_union_shadow_colour_v3/manifest.json",
+  "manual_wall_source": "outputs/student_union_final_mesh_v3/manifest.json"
+}

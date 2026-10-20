@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-18T04:10:11.260602+00:00",
+  "sessions": {
+    "outside": {
+      "default_original_face_coordinates_exact_at_float32": true,
+      "default_added_faces": 0,
+      "raw_DB_hash_unchanged": true,
+      "original_faces": 526730
+    },
+    "lobby": {
+      "default_original_face_coordinates_exact_at_float32": true,
+      "default_added_faces": 0,
+      "raw_DB_hash_unchanged": true,
+      "original_faces": 1626810
+    },
+    "bridge_out1f": {
+      "default_original_face_coordinates_exact_at_float32": true,
+      "default_added_faces": 0,
+      "raw_DB_hash_unchanged": true,
+      "original_faces": 194105
+    },
+    "floor2": {
+      "default_original_face_coordinates_exact_at_float32": true,
+      "default_added_faces": 0,
+      "raw_DB_hash_unchanged": true,
+      "original_faces": 1950311
+    },
+    "bridge_12_sub": {
+      "default_original_face_coordinates_exact_at_float32": true,
+      "default_added_faces": 0,
+      "raw_DB_hash_unchanged": true,
+      "original_faces": 351131
+    }
+  },
+  "input_files_verified": 20,
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/config/current_map.json": "65b363cab0c970dd3b4ffe432f20bf2448059ee8a325c412cca77c403b7ec97e",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "/home/subin/folded-city-atlas/src/repair_visual_appearance.py": "4a6be51f0ee3d32d00355aad24636d2c94d7cda26366bb58358e4a89a21152c5",
+    "/home/subin/folded-city-atlas/src/surface_model_utils.py": "1c4bfe269991ca77f172afb600d6d1232a8ee8839b5b5158328c2205710423e3",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/floor2/preserved_geometry.ply": "2e7dda5d717a834b4a49c05b671a1245d0899f78c8ea5941a34de26b522c797a",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/outside/preserved_geometry.ply": "683fe22263f80c1fe35160d389477737dd27de40f9de3f5223c3c4fd319d8032",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside_trajectory.csv": "f2af5d9c5a222478897e17338de5050af4c2acf20ae0c8f4b5489ecf772f1948",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/lobby/preserved_geometry.ply": "3b179eca08b66a809e7d9985a9e7cfee40d08f6ef682b657672b4b6ba00f435d",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_out1f/preserved_geometry.ply": "3c7497e913523c4d4c7202453785e31228a396bba716dc6b71f160050b09734f",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f_trajectory.csv": "eb4dceda80b371ed938a94fdb69413a2cae0ab7c0927064efeb7caee3f2b35a5",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_12_sub/preserved_geometry.ply": "f2276a1639cce1b567efb13c33f3db0a5da48b5a7345e63112803428449155ad",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub_trajectory.csv": "917acabc8b558247908bf0d4646461ee6cd47b75d89f0e07c10217427f066582",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/src/prepare_roadview_pack.py": "7fd621505c1a438b182cb29705ea16fd239f91f3192a074f5df3d44661bd3815"
+  },
+  "photos_verified": 1199,
+  "sequence_edges_not_navigation": 1194,
+  "automatic_cross_session_edges": 0,
+  "panoramas_360": false,
+  "public_release_ready": false,
+  "OSM_viewport_tiles": 9,
+  "OSM_uploads": false,
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "test_suite": "Run separately with pytest; this auditor does not execute or certify the test suite",
+  "repair_review_sha256": "58de6cb196386da3e1efbf4513f047d202b69b58f415b67409c8cc741ba7bdc5",
+  "auditor_sha256": "f5ba87524166df36d5f20d58640d0cb67c3bcd32106e7cc89c6a66a94ba15643"
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "watchPosition callback + ENU + Kalman + current marker",
+    "deviceorientation event listener and magnetic heading label",
+    "clearWatch and orientation listener cleanup",
+    "injected jump rejected, raw log retained and last good position held",
+    "gap starts new filter segment",
+    "browser download contains original, Kalman, covariance and RTS",
+    "exported log imports and replays",
+    "manual entrance handoff invokes existing indoor A* API",
+    "mobile viewport has no horizontal overflow",
+    "permission denied gives an actionable message"
+  ],
+  "requests": [
+    {
+      "url": "/api/route?start=outside_start&end=classical_music&mode=demo&policy=shortest",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "live_phone_field_test": false,
+  "heading_test": "permission stub + dispatched browser sensor event; not measured phone compass",
+  "screenshots": "actual local browser using explicitly labelled deterministic synthetic replay"
+}

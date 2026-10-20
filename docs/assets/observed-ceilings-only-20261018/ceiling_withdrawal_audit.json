@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-18T10:49:24.975220+00:00",
+  "sessions": {
+    "lobby": {
+      "new_inferred_ceiling_faces": 0,
+      "all_nonwithdrawn_coordinates_and_textures_retained": true,
+      "all_original_walls_and_stair_prefix_coordinates_exact": true,
+      "original_prefix_faces": 427004,
+      "removed_modeled_ceiling_faces": 56756,
+      "restored_observed_TSDF_faces": 151887,
+      "restoration_height_change_m": 0.0,
+      "new_geometry_not_in_either_source_faces": 0,
+      "GLB_PLY_exact_float32": true
+    },
+    "floor2": {
+      "new_inferred_ceiling_faces": 0,
+      "all_nonwithdrawn_coordinates_and_textures_retained": true,
+      "all_original_walls_and_stair_prefix_coordinates_exact": true,
+      "original_prefix_faces": 537686,
+      "removed_modeled_ceiling_faces": 96436,
+      "restored_observed_TSDF_faces": 275540,
+      "restoration_height_change_m": 0.0,
+      "new_geometry_not_in_either_source_faces": 0,
+      "GLB_PLY_exact_float32": true
+    },
+    "bridge_12_sub": {
+      "new_inferred_ceiling_faces": 0,
+      "all_nonwithdrawn_coordinates_and_textures_retained": true,
+      "all_original_walls_and_stair_prefix_coordinates_exact": true,
+      "original_prefix_faces": 243517,
+      "removed_modeled_ceiling_faces": 15094,
+      "restored_observed_TSDF_faces": 19664,
+      "restoration_height_change_m": 0.0,
+      "new_geometry_not_in_either_source_faces": 0,
+      "GLB_PLY_exact_float32": true
+    },
+    "bridge_out1f": {
+      "new_inferred_ceiling_faces": 0,
+      "all_nonwithdrawn_coordinates_and_textures_retained": true,
+      "all_original_walls_and_stair_prefix_coordinates_exact": true,
+      "original_prefix_faces": 116838,
+      "removed_modeled_ceiling_faces": 0,
+      "restored_observed_TSDF_faces": 0,
+      "restoration_height_change_m": 0.0,
+      "new_geometry_not_in_either_source_faces": 0,
+      "GLB_PLY_exact_float32": true
+    },
+    "outside": {
+      "new_inferred_ceiling_faces": 0,
+      "all_nonwithdrawn_coordinates_and_textures_retained": true,
+      "all_original_walls_and_stair_prefix_coordinates_exact": true,
+      "original_prefix_faces": 272119,
+      "removed_modeled_ceiling_faces": 0,
+      "restored_observed_TSDF_faces": 0,
+      "restoration_height_change_m": 0.0,
+      "new_geometry_not_in_either_source_faces": 0,
+      "GLB_PLY_exact_float32": true
+    }
+  },
+  "pose_changes": 0,
+  "new_ceiling_planes": 0,
+  "scope": "Only unchanged existing TSDF ceiling-band faces restored; original depth-based reconstruction is not sensor truth or independent surveyed accuracy.",
+  "manifest_sha256": "027330f5e5d18970b8795d6d43019cea115c795b2f0701d423dd84b2163c7ba5",
+  "source_sha256": "c11bf8a67ebdff87582beec829ae11df1c4905c3df70ccab45ea650ee67b6be9"
+}

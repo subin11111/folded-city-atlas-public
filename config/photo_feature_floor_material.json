@@ -1,0 +1,9 @@
+{
+  "source_bundle":"outputs/student_union_visual_floor_v10",
+  "comparison_bundle":"outputs/student_union_photo_finish_v9",
+  "material_reconstruction":true,
+  "target_linear_luminance":0.20,
+  "grain_source":"outputs/student_union_roadview_v1/floor2/photos/00892.jpg",
+  "grain_crop":[30,770,170,900],
+  "scope":"Explicit modeled appearance preview: use a real photographed stone colour and micro-grain, retain finite dark accents and thin joint evidence at existing photographed texel locations, and omit broad baked shadows/glare. No periodic tile grid or invented marker layout. Not exact photographic appearance, full original tile-layout recovery or calibrated albedo. Original photo-roadview, map poses, ceiling/wall/sign geometry and PRIME HALL photo remain untouched. Direct visual review determines whether this preview is useful."
+}

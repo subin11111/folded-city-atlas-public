@@ -1,0 +1,683 @@
+{
+  "created_utc": "2026-10-18T12:12:35.396362+00:00",
+  "candidate": "Z02",
+  "all_non_z_csv_fields_exact": true,
+  "pose_xy_and_all_rotations_exact": true,
+  "reviewed_stair_pose_count": 133,
+  "reviewed_stair_pose_movement_m": 0.0,
+  "all_current_cross_session_endpoint_poses_exact": [
+    14,
+    51,
+    66,
+    553,
+    1215
+  ],
+  "paired_depth_preview_points": 1777733,
+  "paired_preview_xy_rgb_order_exact": true,
+  "maximum_point_delta_z_vs_pose_delta_error_m": 4.762535468216811e-07,
+  "all_valid_original_samples_xy_exact": 28595643,
+  "input_bindings_still_valid": true,
+  "database_integrity": {
+    "outside": {
+      "database_sha256_matches_selected": true
+    },
+    "lobby": {
+      "database_sha256_matches_selected": true
+    },
+    "bridge_out1f": {
+      "database_sha256_matches_selected": true
+    },
+    "floor2": {
+      "database_sha256_matches_selected": true
+    },
+    "bridge_12_sub": {
+      "database_sha256_matches_selected": true
+    }
+  },
+  "geometry": {
+    "J04": {
+      "triangles": 1950307,
+      "actual_GLB_PLY_coordinates_equal": true,
+      "ply_sha256": "0c089e42d57f791348bfddbe344b8d42b3636c813cb1c025a61db6956062204e",
+      "glb_sha256": "1596f44b25f2b6322c93efa2ec11ff5e40989d4b6dc880632155d9848cce6699"
+    },
+    "Z02": {
+      "triangles": 1919271,
+      "actual_GLB_PLY_coordinates_equal": true,
+      "ply_sha256": "88c345b6c58834011ab08e5767255948b7b595ff22f5eb9d6f04157377f5eb18",
+      "glb_sha256": "b8737ef3ab17e0407972def4f98f0af22cf6873b5f80069e6d667f79a6cdb749"
+    }
+  },
+  "floor_before": {
+    "count": 48,
+    "median_m": 2.58932358689905,
+    "p10_m": 2.4776204080875095,
+    "p90_m": 2.7443016647827556,
+    "p90_minus_p10_m": 0.2666812566952461,
+    "minimum_m": 2.445026701523596,
+    "maximum_m": 2.839140289648721,
+    "maximum_minus_minimum_m": 0.394113588125125,
+    "scope": "Original below-camera finite depth-patch centres on reviewed upper floor, NOT camera-height or all-building floor accuracy."
+  },
+  "floor_after": {
+    "count": 48,
+    "median_m": 2.635175355642727,
+    "p10_m": 2.579789381554265,
+    "p90_m": 2.697922719204519,
+    "p90_minus_p10_m": 0.11813333765025424,
+    "minimum_m": 2.543907739977298,
+    "maximum_m": 2.839140289648721,
+    "maximum_minus_minimum_m": 0.295232549671423,
+    "scope": "Original below-camera finite depth-patch centres on reviewed upper floor, NOT camera-height or all-building floor accuracy."
+  },
+  "depth_checks": {
+    "1": {
+      "valid_pixels": 25171,
+      "old_all_hits": {
+        "pixels": 25169,
+        "median_m": 0.09949660301208496,
+        "p90_m": 0.34847173690795896,
+        "signed_median_m": -0.005685210227966309
+      },
+      "new_all_hits": {
+        "pixels": 25169,
+        "median_m": 0.09949660301208496,
+        "p90_m": 0.34847173690795896,
+        "signed_median_m": -0.005685210227966309
+      },
+      "same_pixels_before": {
+        "pixels": 25169,
+        "median_m": 0.09949660301208496,
+        "p90_m": 0.34847173690795896,
+        "signed_median_m": -0.005685210227966309
+      },
+      "same_pixels_after": {
+        "pixels": 25169,
+        "median_m": 0.09949660301208496,
+        "p90_m": 0.34847173690795896,
+        "signed_median_m": -0.005685210227966309
+      },
+      "newly_hit": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "lost_hits": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 25169,
+        "median_m": 0.0,
+        "p90_m": 0.0,
+        "signed_median_m": 0.0
+      },
+      "paired_worse_by_over_3cm_fraction": 0.0,
+      "paired_better_by_over_3cm_fraction": 0.0,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "280": {
+      "valid_pixels": 33925,
+      "old_all_hits": {
+        "pixels": 33612,
+        "median_m": 0.03103923797607422,
+        "p90_m": 0.2952658891677856,
+        "signed_median_m": -0.006655514240264893
+      },
+      "new_all_hits": {
+        "pixels": 33595,
+        "median_m": 0.031838417053222656,
+        "p90_m": 0.29579353332519537,
+        "signed_median_m": -0.0020248889923095703
+      },
+      "same_pixels_before": {
+        "pixels": 33454,
+        "median_m": 0.030810832977294922,
+        "p90_m": 0.2940174818038941,
+        "signed_median_m": -0.006722092628479004
+      },
+      "same_pixels_after": {
+        "pixels": 33454,
+        "median_m": 0.0316166877746582,
+        "p90_m": 0.2944165587425232,
+        "signed_median_m": -0.0021485090255737305
+      },
+      "newly_hit": {
+        "pixels": 141,
+        "median_m": 0.27696871757507324,
+        "p90_m": 0.5350136756896973,
+        "signed_median_m": 0.2726631164550781
+      },
+      "lost_hits": {
+        "pixels": 158,
+        "median_m": 0.2816028594970703,
+        "p90_m": 0.8022976398468018,
+        "signed_median_m": 0.22353017330169678
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 33454,
+        "median_m": 0.008442938327789307,
+        "p90_m": 0.035870409011840826,
+        "signed_median_m": 0.0030399560928344727
+      },
+      "paired_worse_by_over_3cm_fraction": 0.07296586357386262,
+      "paired_better_by_over_3cm_fraction": 0.05969390805284869,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "282": {
+      "valid_pixels": 36233,
+      "old_all_hits": {
+        "pixels": 34595,
+        "median_m": 0.05010509490966797,
+        "p90_m": 0.3410616874694825,
+        "signed_median_m": 0.02710115909576416
+      },
+      "new_all_hits": {
+        "pixels": 34608,
+        "median_m": 0.04452502727508545,
+        "p90_m": 0.3369189023971557,
+        "signed_median_m": 0.020683884620666504
+      },
+      "same_pixels_before": {
+        "pixels": 34292,
+        "median_m": 0.049496352672576904,
+        "p90_m": 0.3322889328002931,
+        "signed_median_m": 0.026673078536987305
+      },
+      "same_pixels_after": {
+        "pixels": 34292,
+        "median_m": 0.044039011001586914,
+        "p90_m": 0.3298507452011109,
+        "signed_median_m": 0.020438969135284424
+      },
+      "newly_hit": {
+        "pixels": 316,
+        "median_m": 0.3473947048187256,
+        "p90_m": 1.3910118341445923,
+        "signed_median_m": 0.33817505836486816
+      },
+      "lost_hits": {
+        "pixels": 303,
+        "median_m": 0.40674710273742676,
+        "p90_m": 1.324098539352417,
+        "signed_median_m": 0.40674710273742676
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 34292,
+        "median_m": 0.01089411973953247,
+        "p90_m": 0.05990576744079591,
+        "signed_median_m": 0.00023221969604492188
+      },
+      "paired_worse_by_over_3cm_fraction": 0.05389012014464015,
+      "paired_better_by_over_3cm_fraction": 0.13802052956957891,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "553": {
+      "valid_pixels": 35370,
+      "old_all_hits": {
+        "pixels": 34728,
+        "median_m": 0.06541526317596436,
+        "p90_m": 2.1570375680923464,
+        "signed_median_m": -0.007627964019775391
+      },
+      "new_all_hits": {
+        "pixels": 34727,
+        "median_m": 0.056047916412353516,
+        "p90_m": 2.1543832778930665,
+        "signed_median_m": -0.003936052322387695
+      },
+      "same_pixels_before": {
+        "pixels": 34673,
+        "median_m": 0.06526875495910645,
+        "p90_m": 2.157114362716675,
+        "signed_median_m": -0.00774383544921875
+      },
+      "same_pixels_after": {
+        "pixels": 34673,
+        "median_m": 0.055855751037597656,
+        "p90_m": 2.154424953460693,
+        "signed_median_m": -0.003980398178100586
+      },
+      "newly_hit": {
+        "pixels": 54,
+        "median_m": 0.1265043020248413,
+        "p90_m": 2.083871984481812,
+        "signed_median_m": 0.07683813571929932
+      },
+      "lost_hits": {
+        "pixels": 55,
+        "median_m": 0.5221395492553711,
+        "p90_m": 0.5942991733551025,
+        "signed_median_m": 0.49945735931396484
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 34673,
+        "median_m": 0.001593947410583496,
+        "p90_m": 0.027324628829956052,
+        "signed_median_m": 0.0008646249771118164
+      },
+      "paired_worse_by_over_3cm_fraction": 0.0223516857497188,
+      "paired_better_by_over_3cm_fraction": 0.06085426700891183,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "620": {
+      "valid_pixels": 21412,
+      "old_all_hits": {
+        "pixels": 21189,
+        "median_m": 0.25998568534851074,
+        "p90_m": 0.5964677810668946,
+        "signed_median_m": 0.24395084381103516
+      },
+      "new_all_hits": {
+        "pixels": 21146,
+        "median_m": 0.15246832370758057,
+        "p90_m": 0.3213568925857544,
+        "signed_median_m": 0.12417006492614746
+      },
+      "same_pixels_before": {
+        "pixels": 20946,
+        "median_m": 0.2599647045135498,
+        "p90_m": 0.5898417234420776,
+        "signed_median_m": 0.24617034196853638
+      },
+      "same_pixels_after": {
+        "pixels": 20946,
+        "median_m": 0.1525951623916626,
+        "p90_m": 0.31859004497528076,
+        "signed_median_m": 0.12500083446502686
+      },
+      "newly_hit": {
+        "pixels": 200,
+        "median_m": 0.11346650123596191,
+        "p90_m": 0.44319159984588624,
+        "signed_median_m": 0.023807644844055176
+      },
+      "lost_hits": {
+        "pixels": 243,
+        "median_m": 0.4561758041381836,
+        "p90_m": 1.2371070861816407,
+        "signed_median_m": -0.25953149795532227
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 20946,
+        "median_m": 0.16796445846557617,
+        "p90_m": 0.4211859703063965,
+        "signed_median_m": -0.13809353113174438
+      },
+      "paired_worse_by_over_3cm_fraction": 0.12895063496610332,
+      "paired_better_by_over_3cm_fraction": 0.6405996371622267,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "642": {
+      "valid_pixels": 26970,
+      "old_all_hits": {
+        "pixels": 26850,
+        "median_m": 0.174382746219635,
+        "p90_m": 0.49571928977966373,
+        "signed_median_m": 0.17426055669784546
+      },
+      "new_all_hits": {
+        "pixels": 26885,
+        "median_m": 0.08142387866973877,
+        "p90_m": 0.26920232772827163,
+        "signed_median_m": 0.07612347602844238
+      },
+      "same_pixels_before": {
+        "pixels": 26798,
+        "median_m": 0.17438626289367676,
+        "p90_m": 0.4942792654037475,
+        "signed_median_m": 0.17427074909210205
+      },
+      "same_pixels_after": {
+        "pixels": 26798,
+        "median_m": 0.08131128549575806,
+        "p90_m": 0.2602278590202331,
+        "signed_median_m": 0.07591503858566284
+      },
+      "newly_hit": {
+        "pixels": 87,
+        "median_m": 1.5054783821105957,
+        "p90_m": 1.6464482307434083,
+        "signed_median_m": 1.5054783821105957
+      },
+      "lost_hits": {
+        "pixels": 52,
+        "median_m": 0.16312319040298462,
+        "p90_m": 0.7541289567947388,
+        "signed_median_m": 0.16312319040298462
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 26798,
+        "median_m": 0.1055716872215271,
+        "p90_m": 0.3304159879684448,
+        "signed_median_m": -0.10019773244857788
+      },
+      "paired_worse_by_over_3cm_fraction": 0.11426225837749086,
+      "paired_better_by_over_3cm_fraction": 0.6554220464213747,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "726": {
+      "valid_pixels": 34828,
+      "old_all_hits": {
+        "pixels": 34690,
+        "median_m": 0.08673781156539917,
+        "p90_m": 0.263150954246521,
+        "signed_median_m": 0.08268922567367554
+      },
+      "new_all_hits": {
+        "pixels": 34680,
+        "median_m": 0.06713980436325073,
+        "p90_m": 0.2627525568008423,
+        "signed_median_m": 0.06450700759887695
+      },
+      "same_pixels_before": {
+        "pixels": 34630,
+        "median_m": 0.08673781156539917,
+        "p90_m": 0.26297736167907715,
+        "signed_median_m": 0.08278006315231323
+      },
+      "same_pixels_after": {
+        "pixels": 34630,
+        "median_m": 0.06713837385177612,
+        "p90_m": 0.2625648021697998,
+        "signed_median_m": 0.06450247764587402
+      },
+      "newly_hit": {
+        "pixels": 50,
+        "median_m": 0.10719668865203857,
+        "p90_m": 0.4442406177520752,
+        "signed_median_m": 0.1014409065246582
+      },
+      "lost_hits": {
+        "pixels": 60,
+        "median_m": 0.08600848913192749,
+        "p90_m": 0.772814154624939,
+        "signed_median_m": 0.03651142120361328
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 34630,
+        "median_m": 0.006087660789489746,
+        "p90_m": 0.059654211997985866,
+        "signed_median_m": -0.002001851797103882
+      },
+      "paired_worse_by_over_3cm_fraction": 0.021253248628356917,
+      "paired_better_by_over_3cm_fraction": 0.2453941669073058,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "728": {
+      "valid_pixels": 35483,
+      "old_all_hits": {
+        "pixels": 34904,
+        "median_m": 0.07096856832504272,
+        "p90_m": 0.28984611034393315,
+        "signed_median_m": 0.05733615159988403
+      },
+      "new_all_hits": {
+        "pixels": 34898,
+        "median_m": 0.05275464057922363,
+        "p90_m": 0.2970422744750977,
+        "signed_median_m": 0.03244924545288086
+      },
+      "same_pixels_before": {
+        "pixels": 34714,
+        "median_m": 0.07096856832504272,
+        "p90_m": 0.28833956718444825,
+        "signed_median_m": 0.05738067626953125
+      },
+      "same_pixels_after": {
+        "pixels": 34714,
+        "median_m": 0.05259442329406738,
+        "p90_m": 0.29355497360229493,
+        "signed_median_m": 0.03226006031036377
+      },
+      "newly_hit": {
+        "pixels": 184,
+        "median_m": 0.3113013505935669,
+        "p90_m": 0.5031867504119877,
+        "signed_median_m": 0.3079136610031128
+      },
+      "lost_hits": {
+        "pixels": 190,
+        "median_m": 0.07129859924316406,
+        "p90_m": 0.5516242504119873,
+        "signed_median_m": 0.04131042957305908
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 34714,
+        "median_m": 0.007476925849914551,
+        "p90_m": 0.07847779989242555,
+        "signed_median_m": -0.001809835433959961
+      },
+      "paired_worse_by_over_3cm_fraction": 0.05700869966007951,
+      "paired_better_by_over_3cm_fraction": 0.22025695684738145,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "828": {
+      "valid_pixels": 24568,
+      "old_all_hits": {
+        "pixels": 23660,
+        "median_m": 0.038758039474487305,
+        "p90_m": 0.09972331523895268,
+        "signed_median_m": 0.011638283729553223
+      },
+      "new_all_hits": {
+        "pixels": 23950,
+        "median_m": 0.047557532787323,
+        "p90_m": 0.18510764837265017,
+        "signed_median_m": -0.007869541645050049
+      },
+      "same_pixels_before": {
+        "pixels": 23399,
+        "median_m": 0.03911542892456055,
+        "p90_m": 0.09955849647521976,
+        "signed_median_m": 0.012332558631896973
+      },
+      "same_pixels_after": {
+        "pixels": 23399,
+        "median_m": 0.048390746116638184,
+        "p90_m": 0.1833035469055176,
+        "signed_median_m": -0.008759498596191406
+      },
+      "newly_hit": {
+        "pixels": 551,
+        "median_m": 0.008164644241333008,
+        "p90_m": 0.24592697620391846,
+        "signed_median_m": 0.003588438034057617
+      },
+      "lost_hits": {
+        "pixels": 261,
+        "median_m": 0.006829261779785156,
+        "p90_m": 0.22328615188598633,
+        "signed_median_m": -0.0002703666687011719
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 23399,
+        "median_m": 0.034223079681396484,
+        "p90_m": 0.09659080505371097,
+        "signed_median_m": -0.03147721290588379
+      },
+      "paired_worse_by_over_3cm_fraction": 0.2984315569041412,
+      "paired_better_by_over_3cm_fraction": 0.22932603957434078,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "1031": {
+      "valid_pixels": 35218,
+      "old_all_hits": {
+        "pixels": 33835,
+        "median_m": 0.04443073272705078,
+        "p90_m": 0.24480304718017604,
+        "signed_median_m": 0.005601644515991211
+      },
+      "new_all_hits": {
+        "pixels": 33722,
+        "median_m": 0.06358444690704346,
+        "p90_m": 0.26787853240966797,
+        "signed_median_m": 0.0169561505317688
+      },
+      "same_pixels_before": {
+        "pixels": 33393,
+        "median_m": 0.043950557708740234,
+        "p90_m": 0.24287400245666504,
+        "signed_median_m": 0.005139827728271484
+      },
+      "same_pixels_after": {
+        "pixels": 33393,
+        "median_m": 0.06343388557434082,
+        "p90_m": 0.26560673713684074,
+        "signed_median_m": 0.01670384407043457
+      },
+      "newly_hit": {
+        "pixels": 329,
+        "median_m": 0.09025025367736816,
+        "p90_m": 0.5168232917785643,
+        "signed_median_m": 0.04434537887573242
+      },
+      "lost_hits": {
+        "pixels": 442,
+        "median_m": 0.0694732666015625,
+        "p90_m": 0.4553023695945741,
+        "signed_median_m": 0.051273345947265625
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 33393,
+        "median_m": 0.006558895111083984,
+        "p90_m": 0.17225213050842286,
+        "signed_median_m": 0.0013207197189331055
+      },
+      "paired_worse_by_over_3cm_fraction": 0.21348785673644177,
+      "paired_better_by_over_3cm_fraction": 0.11367651903093463,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "1078": {
+      "valid_pixels": 39866,
+      "old_all_hits": {
+        "pixels": 39377,
+        "median_m": 0.059607744216918945,
+        "p90_m": 1.2223464965820312,
+        "signed_median_m": 0.05349302291870117
+      },
+      "new_all_hits": {
+        "pixels": 39377,
+        "median_m": 0.059607744216918945,
+        "p90_m": 1.2223464965820312,
+        "signed_median_m": 0.05349302291870117
+      },
+      "same_pixels_before": {
+        "pixels": 39377,
+        "median_m": 0.059607744216918945,
+        "p90_m": 1.2223464965820312,
+        "signed_median_m": 0.05349302291870117
+      },
+      "same_pixels_after": {
+        "pixels": 39377,
+        "median_m": 0.059607744216918945,
+        "p90_m": 1.2223464965820312,
+        "signed_median_m": 0.05349302291870117
+      },
+      "newly_hit": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "lost_hits": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 39377,
+        "median_m": 0.0,
+        "p90_m": 0.0,
+        "signed_median_m": 0.0
+      },
+      "paired_worse_by_over_3cm_fraction": 0.0,
+      "paired_better_by_over_3cm_fraction": 0.0,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    },
+    "1218": {
+      "valid_pixels": 20029,
+      "old_all_hits": {
+        "pixels": 19996,
+        "median_m": 0.10755419731140137,
+        "p90_m": 0.6865957975387573,
+        "signed_median_m": 0.1023331880569458
+      },
+      "new_all_hits": {
+        "pixels": 19996,
+        "median_m": 0.10755419731140137,
+        "p90_m": 0.6865957975387573,
+        "signed_median_m": 0.1023331880569458
+      },
+      "same_pixels_before": {
+        "pixels": 19996,
+        "median_m": 0.10755419731140137,
+        "p90_m": 0.6865957975387573,
+        "signed_median_m": 0.1023331880569458
+      },
+      "same_pixels_after": {
+        "pixels": 19996,
+        "median_m": 0.10755419731140137,
+        "p90_m": 0.6865957975387573,
+        "signed_median_m": 0.1023331880569458
+      },
+      "newly_hit": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "lost_hits": {
+        "pixels": 0,
+        "median_m": null,
+        "p90_m": null
+      },
+      "display_depth_change_on_same_pixels": {
+        "pixels": 19996,
+        "median_m": 0.0,
+        "p90_m": 0.0,
+        "signed_median_m": 0.0
+      },
+      "paired_worse_by_over_3cm_fraction": 0.0,
+      "paired_better_by_over_3cm_fraction": 0.00010002000400080016,
+      "scope": "Each reconstruction uses its own calibrated candidate camera; same original depth pixels. Reused integrated data, NOT independent pose accuracy."
+    }
+  },
+  "native": {
+    "status": "Z02 | 5 sessions | XY/R fixed",
+    "variant": "Z02",
+    "native_window": true,
+    "files": {
+      "floor2": {
+        "path": "/home/subin/folded-city-atlas/outputs/student_union_floor2_z_rebuild_v1/Z02/tsdf_5cm.ply",
+        "sha256": "88c345b6c58834011ab08e5767255948b7b595ff22f5eb9d6f04157377f5eb18"
+      },
+      "outside": {
+        "path": "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/outside/preserved_geometry.ply",
+        "sha256": "683fe22263f80c1fe35160d389477737dd27de40f9de3f5223c3c4fd319d8032"
+      },
+      "lobby": {
+        "path": "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/lobby/preserved_geometry.ply",
+        "sha256": "3b179eca08b66a809e7d9985a9e7cfee40d08f6ef682b657672b4b6ba00f435d"
+      },
+      "bridge_out1f": {
+        "path": "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_out1f/preserved_geometry.ply",
+        "sha256": "3c7497e913523c4d4c7202453785e31228a396bba716dc6b71f160050b09734f"
+      },
+      "bridge_12_sub": {
+        "path": "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_12_sub/preserved_geometry.ply",
+        "sha256": "f2276a1639cce1b567efb13c33f3db0a5da48b5a7345e63112803428449155ad"
+      }
+    },
+    "source_selected_map_replaced": false,
+    "xy_rotations_unchanged": true,
+    "rebuild_manifest_sha256": "b22faa81ecb70183980242d47f74c550a4c46525e8f5071c10fdf497c939ead4",
+    "scene_render_sha256": "6941ec900fa482b0a982b2a1c6a79bee5b829998b65fd600512af05881362326",
+    "scene_render_scope": "Actual native scene-render callback; not a desktop screenshot."
+  },
+  "selected_map_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "source_selected_map_replaced": false,
+  "optimizer_report_sha256": "e9b0a35f8601baca839de2331aa2c547d53731a70a60e113feebd671dd85152d",
+  "rebuild_manifest_sha256": "b22faa81ecb70183980242d47f74c550a4c46525e8f5071c10fdf497c939ead4",
+  "audit_source_sha256": "2b5bc61405acea3aedf2adc505e3660082daed7316b620b513bd549fcc4fb031",
+  "navigation_ready": false
+}

@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "checks": [
+    "same-camera historical and current render",
+    "continuous display terrain and lake boundary",
+    "evidence-informed materials",
+    "measured outdoor GNSS playback advances",
+    "building selection opens registered entrance photo",
+    "recommended shortest-path move",
+    "mobile overflow"
+  ],
+  "stats": {
+    "mode": "campus",
+    "loaded": 0,
+    "failed": 0,
+    "buildings": 48,
+    "registrationScale": 1,
+    "terrain": {
+      "displayOnly": true,
+      "maxSlope": 0.35,
+      "rawMaxStep": 62,
+      "displayMaxStep": 1.7500000000000036,
+      "changedVertices": 3063,
+      "passes": 2
+    },
+    "appearances": [
+      {
+        "id": "way/369210727",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582526",
+        "style": "library-granite"
+      },
+      {
+        "id": "relation/16467731",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210724",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210737",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367253036",
+        "style": "student-brick-accent"
+      },
+      {
+        "id": "relation/16467730",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "relation/16467729",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210735",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210747",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1226351422",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210749",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/175320273",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625240",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210741",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210751",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/471670359",
+        "style": "new-engineering-glass"
+      },
+      {
+        "id": "way/367251119",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/175320274",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/468985595",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582520",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1229028251",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625239",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210721",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582518",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210734",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210739",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625236",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582519",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367553845",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/572774537",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210730",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/637160331",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1214667540",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/372481901",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582522",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625235",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625238",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210742",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367253035",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1229632375",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582523",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210750",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210726",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/572774580",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367252344",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210729",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1117757877",
+        "style": "unverified-neutral"
+      }
+    ]
+  },
+  "entrance": {
+    "photo": "bridge_out1f:99",
+    "location": "제1학생회관 · 입구 앞"
+  },
+  "movement": "29.5 m 남음",
+  "replay": {
+    "start": 0,
+    "end": 2
+  },
+  "errors": [],
+  "requests": [
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/app.js",
+      "status": 200
+    },
+    {
+      "path": "/campus-terrain.js",
+      "status": 200
+    },
+    {
+      "path": "/campus-appearance.js",
+      "status": 200
+    },
+    {
+      "path": "/api/walk/start",
+      "status": 200
+    },
+    {
+      "path": "/api/walk/move",
+      "status": 200
+    }
+  ],
+  "surveyed_entrance_alignment": false
+}

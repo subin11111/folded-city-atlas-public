@@ -1,0 +1,941 @@
+{
+  "started_utc": "2026-10-17T12:57:03.978669+00:00",
+  "torch": "2.13.0+cu130",
+  "torch_file": "/home/subin/anaconda3/envs/teamkai-yolo/lib/python3.10/site-packages/torch/__init__.py",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "cuda_available": true,
+  "conda_environment": "teamkai-yolo",
+  "user_site_disabled": true,
+  "gsplat_commit": "512d366b67073d77ca099ede742683c165dfc23b",
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "sessions": {
+    "outside": {
+      "session": "outside",
+      "gaussians": 160000,
+      "steps": 600,
+      "width": 270,
+      "height": 360,
+      "train_view_ids": [
+        1,
+        8,
+        13,
+        18,
+        23,
+        28,
+        32,
+        43,
+        48,
+        55,
+        60,
+        64,
+        69,
+        74,
+        86,
+        91,
+        96,
+        101,
+        106,
+        111,
+        116,
+        126,
+        132,
+        137,
+        142,
+        148,
+        152,
+        160,
+        174,
+        181,
+        186,
+        190,
+        196,
+        206,
+        211,
+        223,
+        228,
+        233,
+        238,
+        243,
+        249,
+        254,
+        263,
+        268,
+        273,
+        278,
+        284,
+        288,
+        296,
+        310,
+        315,
+        322,
+        326,
+        333,
+        338,
+        343
+      ],
+      "audit_view_ids": [
+        38,
+        81,
+        120,
+        166,
+        217,
+        262,
+        305,
+        354
+      ],
+      "history": [
+        {
+          "step": 1,
+          "training_view": 69,
+          "loss": 0.05709153786301613,
+          "l1": 0.03413170203566551,
+          "coverage_loss": 0.3647758960723877,
+          "depth_l1_clipped_m": 0.23605214059352875
+        },
+        {
+          "step": 101,
+          "training_view": 160,
+          "loss": 0.1084744855761528,
+          "l1": 0.08005233854055405,
+          "coverage_loss": 0.49018633365631104,
+          "depth_l1_clipped_m": 0.1954953670501709
+        },
+        {
+          "step": 201,
+          "training_view": 326,
+          "loss": 0.020138446241617203,
+          "l1": 0.01298094354569912,
+          "coverage_loss": 0.07645648717880249,
+          "depth_l1_clipped_m": 0.16625061631202698
+        },
+        {
+          "step": 301,
+          "training_view": 148,
+          "loss": 0.02880718931555748,
+          "l1": 0.021216798573732376,
+          "coverage_loss": 0.09519826620817184,
+          "depth_l1_clipped_m": 0.14064809679985046
+        },
+        {
+          "step": 401,
+          "training_view": 116,
+          "loss": 0.032021623104810715,
+          "l1": 0.0268674548715353,
+          "coverage_loss": 0.04976591095328331,
+          "depth_l1_clipped_m": 0.13199757039546967
+        },
+        {
+          "step": 501,
+          "training_view": 228,
+          "loss": 0.03509413078427315,
+          "l1": 0.025350362062454224,
+          "coverage_loss": 0.10877147316932678,
+          "depth_l1_clipped_m": 0.21356822550296783
+        },
+        {
+          "step": 600,
+          "training_view": 249,
+          "loss": 0.03109295666217804,
+          "l1": 0.025300027802586555,
+          "coverage_loss": 0.06405037641525269,
+          "depth_l1_clipped_m": 0.12746374309062958
+        }
+      ],
+      "scores": [
+        {
+          "node": 263,
+          "role": "training_RGB",
+          "masked_rgb_psnr_db": 27.005115664561,
+          "masked_rgb_l1": 0.022062426432967186,
+          "mean_alpha_valid_depth": 0.9066413044929504
+        },
+        {
+          "node": 217,
+          "role": "audit_RGB_not_used_in_gradients",
+          "masked_rgb_psnr_db": 22.728980358245213,
+          "masked_rgb_l1": 0.059750065207481384,
+          "mean_alpha_valid_depth": 0.4055830240249634
+        }
+      ],
+      "figures": [
+        {
+          "file": "gaussian_263.png",
+          "sha256": "49b9866be499e88f64d9d8abc1e36e95210fad6b5368d09cc055545a1e0841ad"
+        },
+        {
+          "file": "gaussian_217.png",
+          "sha256": "3759c0f1221ea7efcf4863af3e38a3aa10bbc0c0e085347f2b38f90ef1ef1eae"
+        }
+      ],
+      "centre_position_updates": 0,
+      "camera_pose_updates": 0,
+      "density_control": false,
+      "view_dependent_SH": false,
+      "maximum_allocated_GPU_bytes": 155608064,
+      "seconds": 75.77456423700005,
+      "outputs": {
+        "gaussians.splat": {
+          "bytes": 5120000,
+          "sha256": "2c003da578e189c19968b6e7dcf495d8dedab994e7634ce3c510a1194583d584"
+        },
+        "checkpoint.pt": {
+          "bytes": 8962682,
+          "sha256": "67d3d0da406f0f24779b38ade5993771c8b9153e4180b2f62389a5d9ec37ee98"
+        },
+        "gaussians.ply": {
+          "bytes": 8960362,
+          "sha256": "e262de68b96d7c1ffc6af1e2144ed1f1dfca4f22b8396143f5c82fbedc5b1aaa"
+        }
+      }
+    },
+    "lobby": {
+      "session": "lobby",
+      "gaussians": 160000,
+      "steps": 600,
+      "width": 270,
+      "height": 360,
+      "train_view_ids": [
+        1,
+        21,
+        35,
+        39,
+        49,
+        60,
+        73,
+        95,
+        105,
+        116,
+        130,
+        144,
+        154,
+        165,
+        187,
+        197,
+        207,
+        219,
+        229,
+        241,
+        251,
+        273,
+        284,
+        294,
+        305,
+        316,
+        329,
+        337,
+        350,
+        361,
+        372,
+        382,
+        394,
+        406,
+        422,
+        444,
+        464,
+        476,
+        493,
+        507,
+        519,
+        532,
+        554,
+        565,
+        579,
+        590,
+        603,
+        614,
+        630,
+        653,
+        670,
+        682,
+        695,
+        705,
+        719,
+        730,
+        753,
+        766,
+        777,
+        788,
+        801,
+        811,
+        821,
+        847,
+        862,
+        878,
+        888,
+        903,
+        915,
+        925
+      ],
+      "audit_view_ids": [
+        85,
+        176,
+        261,
+        339,
+        433,
+        542,
+        640,
+        743,
+        836,
+        958
+      ],
+      "history": [
+        {
+          "step": 1,
+          "training_view": 464,
+          "loss": 0.17676693201065063,
+          "l1": 0.13377733528614044,
+          "coverage_loss": 0.8200604915618896,
+          "depth_l1_clipped_m": 0.09932835400104523
+        },
+        {
+          "step": 101,
+          "training_view": 915,
+          "loss": 0.05845217406749725,
+          "l1": 0.02200034074485302,
+          "coverage_loss": 0.5827617645263672,
+          "depth_l1_clipped_m": 0.3656061291694641
+        },
+        {
+          "step": 201,
+          "training_view": 766,
+          "loss": 0.0491497777402401,
+          "l1": 0.01543674897402525,
+          "coverage_loss": 0.6240451335906982,
+          "depth_l1_clipped_m": 0.12519091367721558
+        },
+        {
+          "step": 301,
+          "training_view": 811,
+          "loss": 0.25636985898017883,
+          "l1": 0.22234150767326355,
+          "coverage_loss": 0.6513528823852539,
+          "depth_l1_clipped_m": 0.07227444648742676
+        },
+        {
+          "step": 401,
+          "training_view": 284,
+          "loss": 0.033133890479803085,
+          "l1": 0.010923169553279877,
+          "coverage_loss": 0.3859729468822479,
+          "depth_l1_clipped_m": 0.14431805908679962
+        },
+        {
+          "step": 501,
+          "training_view": 464,
+          "loss": 0.0918828547000885,
+          "l1": 0.06274738162755966,
+          "coverage_loss": 0.5479384064674377,
+          "depth_l1_clipped_m": 0.0850241631269455
+        },
+        {
+          "step": 600,
+          "training_view": 60,
+          "loss": 0.03146127983927727,
+          "l1": 0.010119565762579441,
+          "coverage_loss": 0.3523983955383301,
+          "depth_l1_clipped_m": 0.18355262279510498
+        }
+      ],
+      "scores": [
+        {
+          "node": 39,
+          "role": "training_RGB",
+          "masked_rgb_psnr_db": 21.061664149642077,
+          "masked_rgb_l1": 0.05811581015586853,
+          "mean_alpha_valid_depth": 0.5349912047386169
+        },
+        {
+          "node": 542,
+          "role": "audit_RGB_not_used_in_gradients",
+          "masked_rgb_psnr_db": 12.721329683117467,
+          "masked_rgb_l1": 0.14376799762248993,
+          "mean_alpha_valid_depth": 0.35725629329681396
+        }
+      ],
+      "figures": [
+        {
+          "file": "gaussian_39.png",
+          "sha256": "f2930d4384868c977e623139ad612f0c9a37c752d552b67385abf6cc2bf00703"
+        },
+        {
+          "file": "gaussian_542.png",
+          "sha256": "6ff77f4e0dc2bef30540909071e17eccbf077db2eae7425fc0b0f8b47a9bc7af"
+        }
+      ],
+      "centre_position_updates": 0,
+      "camera_pose_updates": 0,
+      "density_control": false,
+      "view_dependent_SH": false,
+      "maximum_allocated_GPU_bytes": 183254528,
+      "seconds": 4.737899937000293,
+      "outputs": {
+        "gaussians.splat": {
+          "bytes": 5120000,
+          "sha256": "9f891817786ed3080380395683a6b8d7caf12fafdb73b8daae260e2e9d61abf3"
+        },
+        "checkpoint.pt": {
+          "bytes": 8962682,
+          "sha256": "a29f94e5dcb041485d95e5c39d97b4bf5ef87f81c5ee5e9633ff4f3deb2e1cf8"
+        },
+        "gaussians.ply": {
+          "bytes": 8960362,
+          "sha256": "e5619801466e71c0b30964b32b45fad56980df3c224b050ef4fa353193a5bc8a"
+        }
+      }
+    },
+    "bridge_out1f": {
+      "session": "bridge_out1f",
+      "gaussians": 153559,
+      "steps": 600,
+      "width": 270,
+      "height": 360,
+      "train_view_ids": [
+        1,
+        5,
+        8,
+        14,
+        17,
+        20,
+        29,
+        36,
+        39,
+        44,
+        47,
+        51,
+        55,
+        61,
+        68,
+        71,
+        74,
+        80,
+        82,
+        90,
+        95,
+        101,
+        108,
+        111,
+        116,
+        117,
+        118,
+        121
+      ],
+      "audit_view_ids": [
+        32,
+        66,
+        99,
+        134
+      ],
+      "history": [
+        {
+          "step": 1,
+          "training_view": 116,
+          "loss": 0.04526302218437195,
+          "l1": 0.03254744037985802,
+          "coverage_loss": 0.21170935034751892,
+          "depth_l1_clipped_m": 0.10650568455457687
+        },
+        {
+          "step": 101,
+          "training_view": 80,
+          "loss": 0.029144499450922012,
+          "l1": 0.02089061215519905,
+          "coverage_loss": 0.13513337075710297,
+          "depth_l1_clipped_m": 0.07465264201164246
+        },
+        {
+          "step": 201,
+          "training_view": 39,
+          "loss": 0.024007592350244522,
+          "l1": 0.019630488008260727,
+          "coverage_loss": 0.05910082533955574,
+          "depth_l1_clipped_m": 0.07059595733880997
+        },
+        {
+          "step": 301,
+          "training_view": 117,
+          "loss": 0.03607702627778053,
+          "l1": 0.032064031809568405,
+          "coverage_loss": 0.02235567197203636,
+          "depth_l1_clipped_m": 0.1439605951309204
+        },
+        {
+          "step": 401,
+          "training_view": 121,
+          "loss": 0.013272736221551895,
+          "l1": 0.010868473909795284,
+          "coverage_loss": 0.010599300265312195,
+          "depth_l1_clipped_m": 0.09266211837530136
+        },
+        {
+          "step": 501,
+          "training_view": 80,
+          "loss": 0.024254774674773216,
+          "l1": 0.019789516925811768,
+          "coverage_loss": 0.0614728145301342,
+          "depth_l1_clipped_m": 0.0682934820652008
+        },
+        {
+          "step": 600,
+          "training_view": 121,
+          "loss": 0.014922750182449818,
+          "l1": 0.012646127492189407,
+          "coverage_loss": 0.008276885375380516,
+          "depth_l1_clipped_m": 0.09163284301757812
+        }
+      ],
+      "scores": [
+        {
+          "node": 80,
+          "role": "training_RGB",
+          "masked_rgb_psnr_db": 32.150820891651264,
+          "masked_rgb_l1": 0.01406575832515955,
+          "mean_alpha_valid_depth": 0.9503178596496582
+        },
+        {
+          "node": 99,
+          "role": "audit_RGB_not_used_in_gradients",
+          "masked_rgb_psnr_db": 15.333411166908146,
+          "masked_rgb_l1": 0.08560957759618759,
+          "mean_alpha_valid_depth": 0.9653776288032532
+        }
+      ],
+      "figures": [
+        {
+          "file": "gaussian_80.png",
+          "sha256": "b79061d6f32f99c3561e9de5ae07812043e4c3053e855473a5a2224ea079b60f"
+        },
+        {
+          "file": "gaussian_99.png",
+          "sha256": "ae285bc503ea14fdf16baedabaab1b852ee732565fd423a682cb69014fad3ab4"
+        }
+      ],
+      "centre_position_updates": 0,
+      "camera_pose_updates": 0,
+      "density_control": false,
+      "view_dependent_SH": false,
+      "maximum_allocated_GPU_bytes": 105062400,
+      "seconds": 3.2851576130005924,
+      "outputs": {
+        "gaussians.splat": {
+          "bytes": 4913888,
+          "sha256": "75234836e81d2e82d4577a22ec1bf05426dfea051fe5be5fa51af5a81507636c"
+        },
+        "checkpoint.pt": {
+          "bytes": 8601850,
+          "sha256": "ccbbb8cf8301c85491efa42c3312b627c0aa3c9a6addba2b32ceb2592e5a9a99"
+        },
+        "gaussians.ply": {
+          "bytes": 8599666,
+          "sha256": "071cfa386a4a80f79758bd1f83fa6556e9d68418577d7f72d8ee9ff0466edfe7"
+        }
+      }
+    },
+    "floor2": {
+      "session": "floor2",
+      "gaussians": 160000,
+      "steps": 600,
+      "width": 270,
+      "height": 360,
+      "train_view_ids": [
+        1,
+        10,
+        20,
+        39,
+        52,
+        66,
+        80,
+        105,
+        119,
+        134,
+        148,
+        161,
+        173,
+        183,
+        208,
+        220,
+        233,
+        244,
+        257,
+        267,
+        276,
+        300,
+        319,
+        328,
+        338,
+        357,
+        388,
+        398,
+        422,
+        434,
+        448,
+        460,
+        473,
+        483,
+        500,
+        524,
+        535,
+        552,
+        565,
+        574,
+        589,
+        614,
+        634,
+        646,
+        656,
+        666,
+        676,
+        686,
+        698,
+        720,
+        731,
+        746,
+        759,
+        771,
+        782,
+        791,
+        818,
+        829,
+        842,
+        852,
+        864,
+        876,
+        886,
+        906,
+        915,
+        925,
+        936,
+        949,
+        963,
+        973,
+        984,
+        1017,
+        1033,
+        1047,
+        1055,
+        1063,
+        1075,
+        1098,
+        1110,
+        1128,
+        1150,
+        1164,
+        1180,
+        1194
+      ],
+      "audit_view_ids": [
+        94,
+        198,
+        286,
+        408,
+        512,
+        623,
+        708,
+        805,
+        896,
+        981,
+        1088,
+        1218
+      ],
+      "history": [
+        {
+          "step": 1,
+          "training_view": 1047,
+          "loss": 0.23053213953971863,
+          "l1": 0.1921510249376297,
+          "coverage_loss": 0.6223441362380981,
+          "depth_l1_clipped_m": 0.3631955087184906
+        },
+        {
+          "step": 101,
+          "training_view": 829,
+          "loss": 0.5037486553192139,
+          "l1": 0.4607507586479187,
+          "coverage_loss": 0.8150097131729126,
+          "depth_l1_clipped_m": 0.1122906357049942
+        },
+        {
+          "step": 201,
+          "training_view": 666,
+          "loss": 0.09206081181764603,
+          "l1": 0.0548713393509388,
+          "coverage_loss": 0.6772265434265137,
+          "depth_l1_clipped_m": 0.166060671210289
+        },
+        {
+          "step": 301,
+          "training_view": 483,
+          "loss": 0.05348995327949524,
+          "l1": 0.022538091987371445,
+          "coverage_loss": 0.5487208962440491,
+          "depth_l1_clipped_m": 0.17506273090839386
+        },
+        {
+          "step": 401,
+          "training_view": 1194,
+          "loss": 0.10349148511886597,
+          "l1": 0.0724981278181076,
+          "coverage_loss": 0.5170194506645203,
+          "depth_l1_clipped_m": 0.2559381127357483
+        },
+        {
+          "step": 501,
+          "training_view": 698,
+          "loss": 0.07622572034597397,
+          "l1": 0.05252864211797714,
+          "coverage_loss": 0.43331143260002136,
+          "depth_l1_clipped_m": 0.09980601072311401
+        },
+        {
+          "step": 600,
+          "training_view": 173,
+          "loss": 0.04686107113957405,
+          "l1": 0.03196166828274727,
+          "coverage_loss": 0.18265262246131897,
+          "depth_l1_clipped_m": 0.2859722673892975
+        }
+      ],
+      "scores": [
+        {
+          "node": 1055,
+          "role": "training_RGB",
+          "masked_rgb_psnr_db": 18.58705244815752,
+          "masked_rgb_l1": 0.07688362151384354,
+          "mean_alpha_valid_depth": 0.7332660555839539
+        },
+        {
+          "node": 708,
+          "role": "audit_RGB_not_used_in_gradients",
+          "masked_rgb_psnr_db": 8.357539876845532,
+          "masked_rgb_l1": 0.305949866771698,
+          "mean_alpha_valid_depth": 0.6764351725578308
+        }
+      ],
+      "figures": [
+        {
+          "file": "gaussian_1055.png",
+          "sha256": "52fc0d292f1b6b6119499a8bf9523a1cac60c493ae582445e3c5f5256b133880"
+        },
+        {
+          "file": "gaussian_708.png",
+          "sha256": "e256cb926711a230c5bb4622c4f14bfa90185d0834c49a9c61d1d7cbaa591e25"
+        }
+      ],
+      "centre_position_updates": 0,
+      "camera_pose_updates": 0,
+      "density_control": false,
+      "view_dependent_SH": false,
+      "maximum_allocated_GPU_bytes": 208297472,
+      "seconds": 4.807960076999734,
+      "outputs": {
+        "gaussians.splat": {
+          "bytes": 5120000,
+          "sha256": "eeb344c031009ab9355387b0cac84d351f4d2d2861861eb7d83330cc4f1a3382"
+        },
+        "checkpoint.pt": {
+          "bytes": 8962682,
+          "sha256": "1ee5b1c9b2f982471e80b553af18673d365992296cfa084de6735aef7ae9682a"
+        },
+        "gaussians.ply": {
+          "bytes": 8960362,
+          "sha256": "d9956b6ba9bfd03af948bb3676bca1c103cb7dee6c2639121338fe8a348923a1"
+        }
+      }
+    },
+    "bridge_12_sub": {
+      "session": "bridge_12_sub",
+      "gaussians": 160000,
+      "steps": 600,
+      "width": 270,
+      "height": 360,
+      "train_view_ids": [
+        1,
+        5,
+        9,
+        13,
+        16,
+        19,
+        24,
+        29,
+        34,
+        40,
+        47,
+        56,
+        60,
+        62,
+        75,
+        79,
+        82,
+        85,
+        88,
+        91,
+        94,
+        104,
+        107,
+        117,
+        123,
+        126,
+        130,
+        143,
+        153,
+        158,
+        159,
+        160,
+        166,
+        170,
+        175,
+        181,
+        186,
+        188,
+        193,
+        196,
+        200,
+        204
+      ],
+      "audit_view_ids": [
+        26,
+        69,
+        97,
+        146,
+        178,
+        211
+      ],
+      "history": [
+        {
+          "step": 1,
+          "training_view": 123,
+          "loss": 0.034557219594717026,
+          "l1": 0.007679196540266275,
+          "coverage_loss": 0.40869319438934326,
+          "depth_l1_clipped_m": 0.32216814160346985
+        },
+        {
+          "step": 101,
+          "training_view": 29,
+          "loss": 0.04990748316049576,
+          "l1": 0.025491371750831604,
+          "coverage_loss": 0.43448689579963684,
+          "depth_l1_clipped_m": 0.13441070914268494
+        },
+        {
+          "step": 201,
+          "training_view": 62,
+          "loss": 0.036145057529211044,
+          "l1": 0.02205757610499859,
+          "coverage_loss": 0.2259935736656189,
+          "depth_l1_clipped_m": 0.13883934915065765
+        },
+        {
+          "step": 301,
+          "training_view": 196,
+          "loss": 0.020403677597641945,
+          "l1": 0.013983441516757011,
+          "coverage_loss": 0.10113994777202606,
+          "depth_l1_clipped_m": 0.06718761473894119
+        },
+        {
+          "step": 401,
+          "training_view": 193,
+          "loss": 0.03422517329454422,
+          "l1": 0.027543310075998306,
+          "coverage_loss": 0.04618247225880623,
+          "depth_l1_clipped_m": 0.2172509878873825
+        },
+        {
+          "step": 501,
+          "training_view": 5,
+          "loss": 0.042731113731861115,
+          "l1": 0.03290139138698578,
+          "coverage_loss": 0.14906534552574158,
+          "depth_l1_clipped_m": 0.11698590964078903
+        },
+        {
+          "step": 600,
+          "training_view": 29,
+          "loss": 0.011958446353673935,
+          "l1": 0.0064924331381917,
+          "coverage_loss": 0.08153289556503296,
+          "depth_l1_clipped_m": 0.06720522791147232
+        }
+      ],
+      "scores": [
+        {
+          "node": 159,
+          "role": "training_RGB",
+          "masked_rgb_psnr_db": 33.289242236578,
+          "masked_rgb_l1": 0.013677438721060753,
+          "mean_alpha_valid_depth": 0.8866135478019714
+        },
+        {
+          "node": 146,
+          "role": "audit_RGB_not_used_in_gradients",
+          "masked_rgb_psnr_db": 21.32503494729141,
+          "masked_rgb_l1": 0.06316021829843521,
+          "mean_alpha_valid_depth": 0.7332895994186401
+        }
+      ],
+      "figures": [
+        {
+          "file": "gaussian_159.png",
+          "sha256": "5fafe2b7ccac04b1f11b3de8b21bca1a35a411f7fb9a3fd0afed7d505a50767b"
+        },
+        {
+          "file": "gaussian_146.png",
+          "sha256": "2c8e16943afb126709a288d2a9ed147f78b7cbf87eec62ef7ebc5d0f6fda94fd"
+        }
+      ],
+      "centre_position_updates": 0,
+      "camera_pose_updates": 0,
+      "density_control": false,
+      "view_dependent_SH": false,
+      "maximum_allocated_GPU_bytes": 133597696,
+      "seconds": 3.564046650999444,
+      "outputs": {
+        "gaussians.splat": {
+          "bytes": 5120000,
+          "sha256": "d59d31e02fb79640fbbbd1b473ad59a86fe807f3d76a87b533c26245cc727be3"
+        },
+        "checkpoint.pt": {
+          "bytes": 8962682,
+          "sha256": "3bd1a6d64957c2f2a0b45bc2f84d52a3028582a43489054e3144a5fc11dadb7f"
+        },
+        "gaussians.ply": {
+          "bytes": 8960362,
+          "sha256": "bdc084b8112325815ae66a687d8121300f473a5465c43d0673d23d1c120b9605"
+        }
+      }
+    }
+  },
+  "method": "Fixed selected-map centres; CUDA gsplat 3D Gaussian rendering; optimize RGB, opacity and bounded scale only",
+  "limitations": [
+    "NOT a full 3DGS reconstruction or converged radiance field.",
+    "No densification/pruning/position updates/camera updates/view-dependent SH.",
+    "Audit RGB views excluded from gradient fitting, but initial points use the same capture/map: NOT independent truth.",
+    "No semantic sign recognition or navigation geometry approval."
+  ],
+  "finished_utc": "2026-10-17T12:58:36.194369+00:00",
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/config/current_map.json": "65b363cab0c970dd3b4ffe432f20bf2448059ee8a325c412cca77c403b7ec97e",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "/home/subin/folded-city-atlas/src/train_gaussian_display_probe.py": "a1d0bb8366decfd934aaad2ee33654c70b1146284a79553ae0f918e4245256e6",
+    "/home/subin/folded-city-atlas/src/surface_model_utils.py": "1c4bfe269991ca77f172afb600d6d1232a8ee8839b5b5158328c2205710423e3",
+    "/home/subin/folded-city-atlas/scripts/run_gaussian_probe.sh": "879e785cd759d0305437fd95d0de286274ff7116bf0662ceb3614e0dab759293",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside.ply": "01f23defd8ead99c56cc545640650a86ac0d7d78d4840fecd1c74c2aabfd9358",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside_trajectory.csv": "f2af5d9c5a222478897e17338de5050af4c2acf20ae0c8f4b5489ecf772f1948",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f.ply": "893ffff7ec451076bb0150f76da724c1122a3501c1dd1a0a9ebcb3569364640f",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f_trajectory.csv": "eb4dceda80b371ed938a94fdb69413a2cae0ab7c0927064efeb7caee3f2b35a5",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub.ply": "8215a179bb1f40a5c0576ce0f14fe6b19003153215ddcff19a3ad88b384d0687",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub_trajectory.csv": "917acabc8b558247908bf0d4646461ee6cd47b75d89f0e07c10217427f066582"
+  },
+  "all_inputs_unchanged": true
+}

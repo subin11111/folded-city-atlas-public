@@ -1,0 +1,374 @@
+{
+  "created_utc": "2026-10-19T04:58:05.442256+00:00",
+  "actual_rqt_graph_plugin": true,
+  "inventory": [
+    {
+      "name": "capture_db_replay",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/recorded_batch",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/folded_city_demo/replay_complete",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/folded_city_demo/source_rgb/compressed",
+          [
+            "sensor_msgs/msg/CompressedImage"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/ack",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "evidence_recorder",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/ack",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/map_snapshot",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "final_reference_recorder",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/offline_final_reference",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "incremental_prefix_optimizer",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/optimized_prefix",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/verified_constraints",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "offline_final_artifact_loader",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/offline_final_reference",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/replay_complete",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "prefix_cloud_assembler",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/map_cloud",
+          [
+            "sensor_msgs/msg/PointCloud2"
+          ]
+        ],
+        [
+          "/folded_city_demo/map_snapshot",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/folded_city_demo/scope",
+          [
+            "visualization_msgs/msg/MarkerArray"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/optimized_prefix",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "rgbd_confidence_filter",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/filtered_batch",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/recorded_batch",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "rqt_live_graph_capture_10645",
+      "namespace": "/",
+      "publishers": [
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": []
+    },
+    {
+      "name": "rviz",
+      "namespace": "/",
+      "publishers": [
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/map_cloud",
+          [
+            "sensor_msgs/msg/PointCloud2"
+          ]
+        ],
+        [
+          "/folded_city_demo/scope",
+          [
+            "visualization_msgs/msg/MarkerArray"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "stored_loop_reverification",
+      "namespace": "/folded_city_demo",
+      "publishers": [
+        [
+          "/folded_city_demo/verified_constraints",
+          [
+            "std_msgs/msg/String"
+          ]
+        ],
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/folded_city_demo/filtered_batch",
+          [
+            "std_msgs/msg/String"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "transform_listener_impl_57d29e956a70",
+      "namespace": "/",
+      "publishers": [
+        [
+          "/rosout",
+          [
+            "rcl_interfaces/msg/Log"
+          ]
+        ]
+      ],
+      "subscribers": [
+        [
+          "/parameter_events",
+          [
+            "rcl_interfaces/msg/ParameterEvent"
+          ]
+        ],
+        [
+          "/tf",
+          [
+            "tf2_msgs/msg/TFMessage"
+          ]
+        ],
+        [
+          "/tf_static",
+          [
+            "tf2_msgs/msg/TFMessage"
+          ]
+        ]
+      ]
+    }
+  ],
+  "topic_filter": "/folded_city_demo/.*,/tf.*",
+  "all_replay_nodes_visible": true,
+  "source": "live DDS discovery, installed rqt_graph plugin",
+  "scope": "ROS processing graph, not SLAM keyframe graph; offline scripts are not pretended to be live ROS nodes",
+  "native_screenshot_sha256": "a1f56f986a136ed2ec2fc1f5ba11e060482c65557497777699357676c0f2c09f"
+}

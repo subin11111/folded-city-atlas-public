@@ -1,0 +1,159 @@
+{
+  "created_utc": "2026-10-19T03:55:00.436003+00:00",
+  "bundle_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "semantic_file_sha256": "8f92b75872c3bbe42c99f7cdf9186cf02fabdf4969d85f7e87770bb71ce2feef",
+  "objects": 29,
+  "checks": [
+    {
+      "id": "lobby_elevator_door",
+      "class": "door",
+      "source_photo_sha256": "8c1fefdc28330bddae06345a393c1836038e47e1bbc39f56338151b1880f4539"
+    },
+    {
+      "id": "lobby_elevator_indicator",
+      "class": "sign",
+      "source_photo_sha256": "8c1fefdc28330bddae06345a393c1836038e47e1bbc39f56338151b1880f4539"
+    },
+    {
+      "id": "lobby_foodmarket_poster",
+      "class": "sign",
+      "source_photo_sha256": "e10300e0d87f4b3d92d46c3d0a420a13ff219e9fd1988e8a6190392c17061ffa"
+    },
+    {
+      "id": "lobby_foodmarket_quote",
+      "class": "sign",
+      "source_photo_sha256": "e10300e0d87f4b3d92d46c3d0a420a13ff219e9fd1988e8a6190392c17061ffa"
+    },
+    {
+      "id": "lobby_entry_glazing",
+      "class": "window",
+      "source_photo_sha256": "b44e5217f341cabd50f1e5527efd62889158e48e3133419d335b6a7ddc7218bb"
+    },
+    {
+      "id": "lobby_service_door",
+      "class": "door",
+      "source_photo_sha256": "b44e5217f341cabd50f1e5527efd62889158e48e3133419d335b6a7ddc7218bb"
+    },
+    {
+      "id": "f2_storefront_glazing",
+      "class": "window",
+      "source_photo_sha256": "e9f8956766c1bb75c9c8eb2f9d7eb275487ddb14ea17e65563d08d92cf75c27e"
+    },
+    {
+      "id": "f2_plain_wall_completion",
+      "class": "wall",
+      "source_photo_sha256": "51f99141a189cf0e3b0f3e3a8f959e5407dc26cb50f36534d5ecc4b49714d18d"
+    },
+    {
+      "id": "f2_mens_restroom_door",
+      "class": "door",
+      "source_photo_sha256": "320916635a5d61f75805464ca59e82500d6893460101f054ec1a6a83e00ff59b"
+    },
+    {
+      "id": "f2_mens_restroom_sign",
+      "class": "sign",
+      "source_photo_sha256": "320916635a5d61f75805464ca59e82500d6893460101f054ec1a6a83e00ff59b"
+    },
+    {
+      "id": "f2_womens_restroom_sign",
+      "class": "sign",
+      "source_photo_sha256": "d96e4cc094dad6403a52f9a94007f795631e1a5914dda5a8c29c306272910256"
+    },
+    {
+      "id": "f2_cleaning_opening",
+      "class": "door",
+      "source_photo_sha256": "d96e4cc094dad6403a52f9a94007f795631e1a5914dda5a8c29c306272910256"
+    },
+    {
+      "id": "f2_career_heading",
+      "class": "sign",
+      "source_photo_sha256": "c0d9eb6852f19d4ae5ca9392213c04bb9a9c1ee07a9714c3e12d9381729d69c1"
+    },
+    {
+      "id": "f2_counselling_sign",
+      "class": "sign",
+      "source_photo_sha256": "370f32830879a81c0c8ac59205102a331280fd17d46663e559bfc29df2dde68d"
+    },
+    {
+      "id": "f2_exit_sign",
+      "class": "sign",
+      "source_photo_sha256": "370f32830879a81c0c8ac59205102a331280fd17d46663e559bfc29df2dde68d"
+    },
+    {
+      "id": "f2_access_glass_door",
+      "class": "door",
+      "source_photo_sha256": "53f4aeaddc294a847bf24a3016211949ec12bf19a99bf6a7b44e627262f0b63e"
+    },
+    {
+      "id": "f2_access_transom",
+      "class": "window",
+      "source_photo_sha256": "53f4aeaddc294a847bf24a3016211949ec12bf19a99bf6a7b44e627262f0b63e"
+    },
+    {
+      "id": "f2_main_glazed_panel",
+      "class": "window",
+      "source_photo_sha256": "923b174efa33b64805169f8d42cc3ed0af605d861b58abc567f2fe409e612415"
+    },
+    {
+      "id": "f2_main_transom",
+      "class": "window",
+      "source_photo_sha256": "923b174efa33b64805169f8d42cc3ed0af605d861b58abc567f2fe409e612415"
+    },
+    {
+      "id": "f2_central_pier_wall",
+      "class": "wall",
+      "source_photo_sha256": "923b174efa33b64805169f8d42cc3ed0af605d861b58abc567f2fe409e612415"
+    },
+    {
+      "id": "f2_room_label",
+      "class": "sign",
+      "source_photo_sha256": "923b174efa33b64805169f8d42cc3ed0af605d861b58abc567f2fe409e612415"
+    },
+    {
+      "id": "f2_room_heading",
+      "class": "sign",
+      "source_photo_sha256": "53f4aeaddc294a847bf24a3016211949ec12bf19a99bf6a7b44e627262f0b63e"
+    },
+    {
+      "id": "f2_fire_equipment_front",
+      "class": "sign",
+      "source_photo_sha256": "d18f9739b6585722b4e219ef582488955d803c040303d34e71e7ad29e4ba6b03"
+    },
+    {
+      "id": "f2_flat_floor_photo",
+      "class": "floor",
+      "source_photo_sha256": "51f99141a189cf0e3b0f3e3a8f959e5407dc26cb50f36534d5ecc4b49714d18d"
+    },
+    {
+      "id": "f2_flat_ceiling_photo",
+      "class": "ceiling",
+      "source_photo_sha256": "923b174efa33b64805169f8d42cc3ed0af605d861b58abc567f2fe409e612415"
+    },
+    {
+      "id": "lobby_shinhan_heading",
+      "class": "sign",
+      "source_photo_sha256": "b76cac0132bbc2f615bc79d58f75dee3ee1f8a9171bb319390781690386e83e0"
+    },
+    {
+      "id": "floor2_prime_hall_complete_fascia",
+      "class": "sign",
+      "source_photo_sha256": "6d08cebeaededf35e7ba9aa7e1b2434644616ab6122e2e1ac09bc12e0eec3edf"
+    },
+    {
+      "id": "final_main_stair_side_wall",
+      "class": "wall",
+      "source_photo_sha256": "6f0d400f3bbd0d49d2fa211dfdbc83099226866f90890a3d8be6504957c57008"
+    },
+    {
+      "id": "final_main_stair_return_wall",
+      "class": "wall",
+      "source_photo_sha256": "6f0d400f3bbd0d49d2fa211dfdbc83099226866f90890a3d8be6504957c57008"
+    }
+  ],
+  "stable_ids_unique": true,
+  "historical_triangle_indices_not_exposed_as_current": true,
+  "finite_world_anchors_and_source_photos_verified": true,
+  "place_address_database_created": false,
+  "routing_approved": false,
+  "scope": "These are semantic objects, not an automatically inferred room/address directory. Persistent place IDs and portals must remain independent of transient mesh face indices."
+}

@@ -1,0 +1,19 @@
+{
+  "source_bundle": "outputs/student_union_lower_ceiling_clearance_v22",
+  "cell_m": 0.10,
+  "upper_floor_m": 2.60,
+  "lower_extension_height_m": 1.98,
+  "lower_height_basis": "Reuse the current bank ceiling clearance level; preserve existing lower soffits. Additional lower ceilings are explicitly inferred presentation surfaces, not measured height everywhere.",
+  "roof_mask": "outputs/student_union_lower_ceiling_clearance_v22/roof_mask.npz",
+  "atrium_mask": "outputs/student_union_lower_ceiling_clearance_v22/reviewed_atrium.npz",
+  "texture_maximum_side_px": 1800,
+  "texture_metres_per_pixel": 0.025,
+  "texture_blend_m": 0.14,
+  "ceiling_colour_fill_radius_m": 0.18,
+  "roof_close_radius_m": 0.30,
+  "semantic_ray_guard_m": 0.12,
+  "service_void_is_not_walkable": true,
+  "navigation_export": false,
+  "user_clarification": "Keep 1F ceiling and 2F floor at their respective heights. Enclose the intervening equipment/reinforcement cavity; do not merge the surfaces or create a walking surface inside it.",
+  "scope": "Latest explicit user request: extend display ceilings and close the space between existing 2F floors and 1F ceilings. Reuse actual complete 2F floor cells as the unchanged upper skin; add opaque underside and perimeter/void side skins. Never cap the central atrium or real stair openings at 1F. Expand the upper roof only inside the existing upper-floor/observed-roof envelope, using its established height. Photo-sign rays protect headings. Existing floors/poses and accepted colour remain unchanged; new unobserved surfaces/textures are inferred appearance, not surveyed or navigation geometry."
+}

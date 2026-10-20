@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-10-18T12:59:35.068889+00:00",
+  "bundle_manifest_sha256": "5f6de8f4b0056d1359547f485712b9bb4b6d1dd6d2ea59740386a17c2b2df93d",
+  "selected_map_unchanged": true,
+  "selected_map_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "source_databases_unchanged": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "input_bindings_valid": true,
+  "sessions": {
+    "lobby": {
+      "retained_source_coordinates_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "preserved_embedded_source_images": 165,
+      "retained_triangles": 663868,
+      "removed_triangles": 33804,
+      "added_triangles": 9389,
+      "ply_sha256": "caf1d17e05eb4192260340e97ad88643392c91c4f5da3398c7f70b31a2358029",
+      "glb_sha256": "5905939875ce91a3c44413d8156b9b01fa73802164a808ceac29129899bad698"
+    },
+    "floor2": {
+      "retained_source_coordinates_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "preserved_embedded_source_images": 165,
+      "retained_triangles": 899545,
+      "removed_triangles": 3802,
+      "added_triangles": 0,
+      "ply_sha256": "e1a6d2ca2b5b93a26825a2a9ea609404d9ebbc0fc1a8cb748b8b79342b979475",
+      "glb_sha256": "60303b97798ee27ecb57da745e718ebcd55f9d4b6dd6352f621f46de9a3275a0"
+    },
+    "bridge_12_sub": {
+      "retained_source_coordinates_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "preserved_embedded_source_images": 8,
+      "retained_triangles": 281759,
+      "removed_triangles": 0,
+      "added_triangles": 0,
+      "ply_sha256": "90a6d6e45fea6cf73d046f7a4217cf5141b14a0ec120c96dc78b5fa3ac1fb467",
+      "glb_sha256": "c61f12e1a45a5e9126035d68ac94a489165f7c1f53bd524b8cccd9ef1d6b192a"
+    },
+    "bridge_out1f": {
+      "retained_source_coordinates_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "preserved_embedded_source_images": 2,
+      "retained_triangles": 129944,
+      "removed_triangles": 0,
+      "added_triangles": 0,
+      "ply_sha256": "fdecabfabfd803c5b95dde5f7b4dc436970badf92f5bd45db008a8104d459da5",
+      "glb_sha256": "e0a1c91b8ad71b5e6a129c33ce4e494502c4779445c04a2fa9eb71d3a2f72f1b"
+    },
+    "outside": {
+      "retained_source_coordinates_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "preserved_embedded_source_images": 18,
+      "retained_triangles": 272119,
+      "removed_triangles": 0,
+      "added_triangles": 0,
+      "ply_sha256": "83a7e53ec311d093709f2065f169a250983525e56ef9c3f260ad2bce037c2723",
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58"
+    }
+  },
+  "slabs": [
+    {
+      "id": "restroom",
+      "area_m2": 5.730000000000001,
+      "bottom_m": 1.4804538488388062,
+      "top_m": 2.6,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_m3": 6.414999446153639,
+      "volume_matches_closed_extrusion": true,
+      "single_flat_underside_and_top": true,
+      "all_cells_within_existing_complete_upper_floor": true,
+      "new_ceilings_inside_open_atrium_core": 0,
+      "actual_GLB_PLY_slab_coordinates_verified": true
+    },
+    {
+      "id": "bank",
+      "area_m2": 13.280000000000003,
+      "bottom_m": 1.7563660144805908,
+      "top_m": 2.6,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume_m3": 11.203459327697951,
+      "volume_matches_closed_extrusion": true,
+      "single_flat_underside_and_top": true,
+      "all_cells_within_existing_complete_upper_floor": true,
+      "new_ceilings_inside_open_atrium_core": 0,
+      "actual_GLB_PLY_slab_coordinates_verified": true
+    }
+  ],
+  "bank_signs": [
+    {
+      "id": "lobby_shinhan_heading",
+      "source_node": 811,
+      "source_RGB_pixels_exact": true,
+      "source_RGB_sha256": "b76cac0132bbc2f615bc79d58f75dee3ee1f8a9171bb319390781690386e83e0",
+      "sampled_photo_rays": 1172,
+      "new_sign_first_hit_fraction": 0.8447098976109215,
+      "blue_heading_first_hit_fraction": 0.9893333333333333,
+      "blocked_rays_by_geometry": {
+        "lobby": 52,
+        "floor2": 0,
+        "bridge_12_sub": 0,
+        "bridge_out1f": 0,
+        "outside": 0,
+        "miss": 130,
+        "lobby_new_slab": 0
+      },
+      "scope": "Visibility from vertically adjusted virtual source camera, not physical pose accuracy."
+    }
+  ],
+  "audit_source_sha256": "d7f639a46272eadee420fdc7ed3420721ef4818f4f6cbd6e09bdcec3a1f9508c",
+  "scope": "Closed presentation volumes, no further retained coordinate changes, not surveyed slab dimensions or navigation geometry."
+}

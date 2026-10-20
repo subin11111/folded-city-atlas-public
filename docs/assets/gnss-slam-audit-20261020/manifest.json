@@ -1,0 +1,127 @@
+{
+  "description": "Measured GNSS vs reconstructed web-map pose evidence",
+  "independent_survey_ground_truth": false,
+  "generated_scene_images": false,
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 8,
+      "sha256": "9a64457e3d7a33fee0b8c78afe75836719f23c7291d67c33d3a507394909e504"
+    },
+    {
+      "file": "all-session-overlay.png",
+      "bytes": 933417,
+      "sha256": "f83f1d418c36c39d7205c7ca89350493a98875edc3f3077eaf168a913b2d24ea"
+    },
+    {
+      "file": "browser-verification.json",
+      "bytes": 810,
+      "sha256": "ec693044112df10777b3fe78a3132111ab576785bd8c40ceff64a3fa37ccebea"
+    },
+    {
+      "file": "comparison.geojson",
+      "bytes": 156449,
+      "sha256": "ca84bf8531369d5bf2caef3ab3caf0cfe01dd55bcd892040e2c5344cacb01aaf"
+    },
+    {
+      "file": "comparison.json",
+      "bytes": 2074508,
+      "sha256": "c7b5d99c66e44709a10cf8da00072e097570b0032e7c1c912ba3bd6d96f422eb"
+    },
+    {
+      "file": "corridor-ambiguity.png",
+      "bytes": 152143,
+      "sha256": "9ab3014fcba1adfd8269c0ee394bced0ec819591129cee12f9e8f9837319fe08"
+    },
+    {
+      "file": "indoor-report.png",
+      "bytes": 348683,
+      "sha256": "9210bb0ccca3eb5f6e9a41af2f4c7a8178eade737944e945c5a1974cde42666c"
+    },
+    {
+      "file": "measured-replay.gif",
+      "bytes": 843968,
+      "sha256": "a48018e7306faee3b19e4b028c7d7cd254e6e03a46efc8dcbd56ffff7fc3ccda"
+    },
+    {
+      "file": "multilevel-discrepancy.png",
+      "bytes": 262140,
+      "sha256": "8ecb9328e11d938bee71d7786ffa1eba8aab86a6f30982b52b2274c93ad835c0"
+    },
+    {
+      "file": "paired-input.json",
+      "bytes": 1607117,
+      "sha256": "12708fe1e5ebb3158e4eaedf6dd284a536e691a5038551aabc8b95528e1bee73"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1946,
+      "sha256": "f7be59c1ce06e7f7f337a9b1c4f1ead343388fe8b0ac6fc20019d08f2e8d42ac"
+    },
+    {
+      "file": "registration-diagnostics.png",
+      "bytes": 86742,
+      "sha256": "d0a699d5f524da500e1a287a2758a26587410e24f10fd5101fab13e30f521ea1"
+    },
+    {
+      "file": "registration-sensitivity.json",
+      "bytes": 2667,
+      "sha256": "229d161e726a99c8ab4ef2750093b2e44b8d3a6c8e50fd2fcb4bfa36ee9384cc"
+    },
+    {
+      "file": "residual-summary.png",
+      "bytes": 60165,
+      "sha256": "887cb8dbc1183060a13f3eeccadf6abb1914999ab0277c796ef28636d0793eb2"
+    },
+    {
+      "file": "residual-time.png",
+      "bytes": 537499,
+      "sha256": "b0941b817994309b700a1f3c8fb0dec305240faf2fe232a1feb948ab17363550"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 16344,
+      "sha256": "9c79b35fb7ed1aef5a2e4b8a32522d3063c51eaaf4bba7b0477caf81c5def1b1"
+    },
+    {
+      "file": "unique-fixes.csv",
+      "bytes": 227923,
+      "sha256": "f619055bf78066eac4d97d871ee49efa96a3193d2ad701f7262e163b06eac84a"
+    },
+    {
+      "file": "web-bridge_12_sub.png",
+      "bytes": 132633,
+      "sha256": "7c4236072bf8654e6391dd5371f9eddfe2d400e4f5aac423b3c3d0e05a13d2fe"
+    },
+    {
+      "file": "web-bridge_out1f.png",
+      "bytes": 141778,
+      "sha256": "f24982721457c37314004f4c719c2ad0aa1c3c1b9ab4783d6bb06133ccfc61a0"
+    },
+    {
+      "file": "web-floor2.png",
+      "bytes": 179570,
+      "sha256": "aa5e56e8b4c17a6dab7f5b8e330d6370f120a0c73838099e05b8adb837a31025"
+    },
+    {
+      "file": "web-global.png",
+      "bytes": 139190,
+      "sha256": "06266e2b40f07f980c7f535cde51f3d77184a93edf1d354b7c0249f3c306f86e"
+    },
+    {
+      "file": "web-lobby.png",
+      "bytes": 163716,
+      "sha256": "773334469da0d7146e2d2be56d1baf4fc921619ab62f174001f7d9e23217dc83"
+    },
+    {
+      "file": "web-mobile.png",
+      "bytes": 96171,
+      "sha256": "3e8308a34cb55bd05db619f46c69ef82f98047310964e1af26ef6a7f7262b5d0"
+    },
+    {
+      "file": "web-outside.png",
+      "bytes": 160203,
+      "sha256": "98e9605803b9b25ff269d8e86d2dcb0bdcc0d8fa305dc2461b733260da251ab0"
+    }
+  ]
+}

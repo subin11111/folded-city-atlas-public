@@ -1,0 +1,20 @@
+/* Folded map + continuous route. Keep the mark legible at navigation size. */
+.brand{gap:11px;flex-shrink:0;color:#063d2a}
+.brand-mark{display:block;width:44px;height:44px;flex:none;background:none;border-radius:0}
+.brand-wordmark{display:grid;gap:5px}
+.brand-name{font-size:23px;font-weight:750;letter-spacing:-1.1px;line-height:1}
+.brand-dot{color:#17804a}
+.brand-tagline{font-size:8px;font-weight:650;letter-spacing:1.65px;line-height:1;color:#687c70}
+.brand:focus-visible{outline:3px solid #8ec7a3;outline-offset:6px;border-radius:7px}
+@media(max-width:650px){
+  .brand{gap:8px}
+  .brand-mark{width:35px;height:35px}
+  .brand-name{font-size:19px;letter-spacing:-.85px}
+  .brand-wordmark{gap:4px}
+  .brand-tagline{font-size:6px;letter-spacing:1.1px}
+}
+@media(max-width:380px){
+  .brand-name{font-size:17px}
+  .brand-mark{width:31px;height:31px}
+  .brand-tagline{font-size:5.5px;letter-spacing:.85px}
+}

@@ -1,0 +1,28 @@
+{
+  "source_bundle": "outputs/student_union_verified_wall_delivery_v2",
+  "presentation_only": true,
+  "level_anchors": {"lower_floor_m":-1.55,"upper_floor_m":2.60,"basis":"Rounded presentation levels from the existing 1F observed floor (-1.545m) and reviewed 2F landing/restroom observations (~2.58-2.62m), not surveyed elevations."},
+  "height_models": {"lower":"outputs/student_union_topology_fixed_v2/main_floor_1f_anchors.npz","upper":"outputs/student_union_topology_fixed_v2/shared_upper_floor_anchors.npz","sub_lower":"outputs/student_union_topology_fixed_v2/sub_floor_1f_existing_offset_retained_anchors.npz"},
+  "scope": "One unified presentation surface. Original poses/XY and recorded geometry stay separate. Use photographed opaque spandrels and physically photographed ceilings, not whole-floor roof inference.",
+  "regions": [
+    {"id":"restroom_soffit_713", "session":"lobby", "node":713, "kind":"ceiling", "polygon":[[114,301],[345,239],[451,180],[596,140],[718,130],[718,166],[481,278],[347,335],[114,356]], "front_edge":[[114,301],[345,239],[451,180],[596,140],[718,130]], "evidence":"White photographed 1F restroom soffit directly below the blue-gray inter-floor spandrel. Does not extend across the double-height lobby."},
+    {"id":"restroom_soffit_167", "session":"lobby", "node":167, "kind":"ceiling", "polygon":[[0,191],[235,158],[369,141],[530,70],[719,25],[719,110],[421,243],[240,280],[0,281]], "evidence":"Same existing white soffit seen from the other original lobby camera; front fascia and yellow wall excluded."},
+    {"id":"restroom_parapet_730", "session":"floor2", "node":730, "kind":"wall", "polygon":[[270,493],[400,470],[575,458],[580,554],[410,574],[270,625]], "evidence":"Opaque white curved parapet BELOW the photographed glass railing; never replace the glass above."},
+    {"id":"restroom_parapet_282", "session":"floor2", "node":282, "kind":"wall", "polygon":[[230,322],[500,310],[500,358],[420,399],[250,413]], "evidence":"Second view of opaque parapet, separated from glazing and floor."},
+    {"id":"restroom_roof_726", "session":"floor2", "node":726, "kind":"ceiling", "polygon":[[310,5],[719,5],[719,45],[368,173],[310,113]], "evidence":"Actual photographed upper-restroom wood ceiling, only this bounded area."},
+    {"id":"north_corridor_roof_642", "session":"floor2", "node":642, "kind":"ceiling", "polygon":[[0,0],[719,0],[719,180],[420,365],[245,290],[0,145]], "neighbour_depth_nodes":[620,639,643,644,656,1025,1031], "evidence":"Photographed ceiling above the north corridor, never the footprint below it. Neighbour depth may support the same photographed roof."},
+    {"id":"west_corridor_roof_828", "session":"floor2", "node":828, "kind":"ceiling", "polygon":[[0,0],[719,0],[719,150],[360,300],[200,280],[0,180]], "evidence":"Photographed ceiling above west corridor; bounded original photo extent."}
+  ],
+  "ceiling_depth_limit_m": 5.5,
+  "minimum_support_points": 30,
+  "ceiling_mesh_cell_m": 0.06,
+  "keep_atrium_open": true,
+  "soffit_group":["restroom_soffit_713","restroom_soffit_167"],
+  "spandrel_source_region":"restroom_soffit_713",
+  "spandrel_paint_rgb":[64,69,77],
+  "spandrel_interior_rgb":[217,215,201],
+  "spandrel_opaque_cap_source_m":3.467132129949486,
+  "spandrel_nominal_backing_m":0.28,
+  "maximum_display_ceiling_tilt_deg":20.0,
+  "atrium_mask": "outputs/student_union_topology_fixed_v2/reviewed_atrium.npz"
+}

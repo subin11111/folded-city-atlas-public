@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="휴대폰으로 측정한 공간이 건물 안의 길찾기가 되기까지. Folded City의 실제 관측, 보정과 구현 과정.">
+  <title>도시는 더 이상 평면이 아니다 · Folded City</title>
+  <link rel="icon" href="/brand/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/research.css">
+</head>
+<body>
+<a class="skip" href="#story">본문으로</a>
+<header class="top"><a class="brand" href="/"><img src="/brand/mark.svg" width="34" height="34" alt="">Folded City.</a><a class="map-link" href="/">지도 사용하기 ↗</a></header>
+<main id="story">
+  <section class="hero">
+    <p class="eyebrow">FOLDED CITY / 건국대학교 학술공모전 성(誠)</p>
+    <h1>도시는 더 이상<br>평면이 아니다.</h1>
+    <p class="subtitle">Multi-Sensor Fusion SLAM 기반<br>실내외 연속 측위 및 3차원 경로 탐색</p>
+    <figure><img src="/research/campus-indoor.jpg" width="814" height="871" alt="주변 배경지도 위에 놓인 제1학생회관의 실측 실내 공간"><figcaption>전역 배경지도와 직접 측정한 학생회관 실내 공간</figcaption></figure>
+  </section>
+  <section class="chapter" id="why">
+    <p class="number">01 / 출발점</p><h2>학교를 오래 다니면,<br>학교를 다 알게 될까?</h2>
+    <p class="lead">나는 학생회관 2층에 보건실이 있다는 사실을<br class="desktop"> 3학년이 되어서야 알았다.</p>
+    <p>건물 이름을 아는 것과 그 안의 장소를 찾는 것은 달랐다. 어느 문으로 들어가고, 어느 계단으로 올라가야 할까? 건물 앞에서 끝나는 지도를 실제 목적지의 문 앞까지 이어 보고 싶었다.</p>
+    <figure><img src="/research/destinations.png" loading="lazy" alt="직접 촬영한 학생회관의 출입구와 목적지"><figcaption>연구 대상: 제1학생회관의 실외, 로비, 두 계단과 2층</figcaption></figure>
+  </section>
+  <section class="chapter pipeline" id="pipeline">
+    <p class="number">02 / 전체 파이프라인</p><h2>관측한 공간이<br>길찾기가 되기까지</h2>
+    <figure class="wide"><a href="/research/whole_pipeline.png" aria-label="전체 파이프라인 원본 크게 보기"><img src="/research/whole_pipeline.png" loading="lazy" alt="수집, 입력 정리, 기하 보정, 세션 통합, 공간 경로, 사진과 3D 안내의 여섯 단계"></a><figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption></figure>
+    <dl class="stats"><div><dt>5개</dt><dd>RGB-D 촬영본</dd></div><div><dt>2,875장</dt><dd>원본 RGB</dd></div><div><dt>약 349만 점</dt><dd>5cm 복셀 통합</dd></div><div><dt>48,767셀</dt><dd>경로 탐색 격자</dd></div></dl>
+    <p class="note">지도 제작에는 카메라와 LiDAR를 사용한다. 방문자는 카메라 없이 실외 위치를 확인하고, 입구를 한 번 선택한 뒤 실내 경로와 사진 안내를 이용한다. 자동 실내 보행 추적은 후속 단계다.</p>
+  </section>
+  <section class="chapter" id="design">
+    <p class="number">03 / 설계</p><h2>요구사항에서<br>구현 방법으로</h2>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="공학 설계 비교표"><table><thead><tr><th>개념 설계</th><th>기본 설계</th><th>상세 설계</th><th>선택 근거</th></tr></thead><tbody>
+      <tr><td>문 앞까지 안내</td><td>공간과 층 연결</td><td>RGB-D 지도와 문·계단 연결</td><td>건물 중심 좌표로 구별되지 않는 동선 표현</td></tr>
+      <tr><td>반복 구조의 오류 억제</td><td>영상 후보와 표면 검사 분리</td><td>SIFT/RootSIFT → RANSAC → 양방향 ICP</td><td>닮은 문을 같은 장소로 연결하는 오류 억제</td></tr>
+      <tr><td>높이 보존</td><td>내부 기하와 전체 배치 분리</td><td>4DoF·SE(3), 강건 손실, 국소 BA와 강체 통합 비교</td><td>수치 수렴과 벽·바닥 정합을 따로 확인</td></tr>
+      <tr><td>짧은 보행 경로</td><td>벽과 이동 공간 정의</td><td>12cm 격자, 장애물 여유와 A*</td><td>촬영자가 걸은 궤적과 분리</td></tr>
+      <tr><td>수집 범위 확장</td><td>처리 모듈과 관측 과정 분리</td><td>ROS 2 Humble, rqt와 RViz</td><td>현장 재수집과 로봇 탑재형 처리로 확장</td></tr>
+    </tbody></table></div>
+  </section>
+  <section class="chapter" id="geometry">
+    <p class="number">04 / 관측과 보정</p><h2>SLAM을 실행한 뒤가<br>더 어려웠다.</h2>
+    <p>중복 벽, 유리 출입문의 깊이 결손, 긴 복도의 회전 오차. 형상이 보인다는 것과 지도에 쓸 수 있다는 것은 달랐다.</p>
+    <figure><a href="/research/selected-map.png"><img src="/research/selected-map.png" loading="lazy" alt="원본 지도와 후보를 비교해 선택한 지도"></a><figcaption>원본과 선택 지도. 모든 구간을 하나의 보정값으로 처리하지 않았다.</figcaption></figure>
+    <div class="pair"><figure><img src="/research/ransac-image.png" loading="lazy" alt="실제 사진의 특징 대응"><figcaption>닮은 사진에서 대응 후보 찾기</figcaption></figure><figure><img src="/research/ransac-metric.png" loading="lazy" alt="깊이 기반 미터 좌표의 RANSAC 일관성"><figcaption>실제 표면에서도 일치하는지 확인하기</figcaption></figure></div>
+    <p>같은 장소를 다시 촬영하면 누적 오차를 줄일 기회를 얻는다. 반복되는 문은 잘못된 루프 폐쇄를 만들 수 있어, 양방향 점군 정합을 통과한 제약을 그래프 계산에 사용했다.</p>
+    <figure><img src="/research/ba_xy_before_after.png" loading="lazy" alt="656과 1055 재방문 관측의 국소 BA 전후 XY 확대"><figcaption>656↔1055, 61개 트랙의 국소 RGB-D BA. 진단 초기 배치의 벽 간격 115.79 → 5.14cm. 기존 미리보기 4.05cm보다 좋은 결과는 아니므로 수렴 여부만으로 후보를 선택하지 않았다.</figcaption></figure>
+  </section>
+  <section class="chapter" id="ros">
+    <p class="number">05 / 관측 과정을 보는 시스템</p><h2>어디를 다시 찍어야 할지<br>현장에서 알 수 있도록.</h2>
+    <p>추후 360도 카메라나 이동 로봇으로 지도를 만들 때도 관측과 보정 결과를 함께 볼 수 있어야 한다. Ubuntu에서 ROS 2 Humble로 입력, 필터, 재방문 검사, 누적 최적화와 점군 발행을 분리했다.</p>
+    <figure><video controls playsinline preload="none" poster="/research/rqt.png" aria-label="저장 RGB-D 관측의 순차 재생과 지도 생성 과정"><source src="/research/mapping-story.mp4" type="video/mp4"><a href="/research/mapping-story.mp4">지도 생성 영상</a></video><figcaption>113초 영상. 저장된 2,875프레임을 시간 순서대로 빠르게 재생했다. 새 카메라의 현장 실시간 수집은 아니며, 최종 표면을 불러오는 구간은 별도 참조 결과다.</figcaption></figure>
+    <p class="note">74배치 · 기하 검사 통과 루프 91개 · 누적 최적화 20회 · 처리 약 95.36초. 기록 재생 실험의 처리량으로, 센서 전체 주기의 실시간 성능 보장과는 구분한다.</p>
+  </section>
+  <section class="chapter" id="photos">
+    <p class="number">06 / 공간을 사람이 읽는 방법</p><h2>3D로 구조를 보고,<br>사진으로 장소를 알아본다.</h2>
+    <p>휴대폰 LiDAR의 근거리 깊이는 넓은 공간과 미관측 면에서 빈틈을 남겼다. TSDF, Poisson과 Gaussian 표현을 비교한 뒤, 1인칭 안내에는 실제 촬영 사진을 연결했다.</p>
+    <figure><img src="/research/photo_and_3d.png" loading="lazy" alt="PRIME HALL 앞 같은 위치의 사진과 3D 비교"><figcaption>사진과 3D의 위치·방향을 맞췄다. 옆을 보면 그 방향의 저장 사진을 보여 준다. 일반 카메라의 여러 시점을 연결한 방식이며 연속 360도 파노라마는 아니다.</figcaption></figure>
+  </section>
+  <section class="chapter" id="routing">
+    <p class="number">07 / 공간 기반 경로</p><h2>내가 걸은 길이 아니라,<br>걸을 수 있는 공간에서.</h2>
+    <figure><img src="/research/map_layers.png" loading="lazy" alt="관측 기하, 이동 연결, 장소의 세 레이어"></figure>
+    <p>넓은 로비는 바닥 전체가 이동 후보가 된다. 벽 주변에 24cm 여유를 두고, 모서리 통과를 차단한 12cm 격자에서 A*로 경로를 계산했다. 두 계단과 엘리베이터 후보는 층 사이의 연결로 다뤘다.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="목적지별 계단 거리"><table><thead><tr><th>목적지</th><th>메인 계단</th><th>서브계단</th><th>짧은 도보 경로</th></tr></thead><tbody><tr><td>PRIME HALL</td><td>32.8m</td><td>64.5m</td><td>메인 계단</td></tr><tr><td>학생취업처</td><td>39.3m</td><td>68.2m</td><td>메인 계단</td></tr><tr><td>고전음악감상실</td><td>47.9m</td><td>41.8m</td><td>서브계단</td></tr></tbody></table></div>
+    <figure class="phone-video"><video controls playsinline preload="none" poster="/research/prime-photo.jpg" aria-label="입구에서 PRIME HALL까지 사진 안내 조작 시연"><source src="/research/navigation-prime.mp4" type="video/mp4"><a href="/research/navigation-prime.mp4">길안내 시연</a></video><figcaption>실제 브라우저 캡처 13장을 편집한 시연. 현장 보행이나 자동 실내 추적 영상은 아니다. 거리값은 등록 그래프의 계산 결과이며 엘리베이터 대기시간은 포함하지 않는다.</figcaption></figure>
+  </section>
+  <section class="chapter" id="position">
+    <p class="number">08 / 방문자의 현재 위치</p><h2>실외 위치는 보정하고,<br>실내 진입은 확인한다.</h2>
+    <p>휴대폰 OS의 위치와 헤딩을 표시하고, 칼만 필터와 정확도·잔차 게이트로 위치 튐을 처리한다. 저장 GNSS와 동시각 SLAM 지도 위치를 대조하니, 실내의 큰 편향은 평활화만으로 줄어들지 않았다.</p>
+    <figure><img src="/research/measured-gnss.jpg" loading="lazy" alt="학생회관 계측 때 저장된 실제 GNSS를 지도에서 재생"><figcaption>고유 GNSS 1,099개 대조. 2층 RMSE는 원 수신 27.01m, RTS 후보정 26.47m였다. 기준은 독립 측량이 아닌 재구성 SLAM 지도다.</figcaption></figure>
+    <p>현재 구현은 <strong>실외 위치 안내 → 입구 한 번 확인 → 실내 경로와 사진 안내</strong>다. 추가 수집한 약 112초의 IMU·기압으로 층간 이동을 살폈으며, 보행 추정과 GNSS/IMU EKF는 다음 단계다.</p>
+    <figure><img src="/research/sensor-floor.png" loading="lazy" alt="추가 보행 로그의 기압 기반 상대 높이와 층간 이동"><figcaption>상대 높이 변화 약 4.18m, 지도 층간 높이 4.15m. 유사한 값이라는 사실만으로 자동 실내 측위 성능을 주장하지 않는다.</figcaption></figure>
+  </section>
+  <section class="chapter" id="next">
+    <p class="number">09 / 결과와 다음 연결</p><h2>건물 밖에서 시작해,<br>실내 목적지까지.</h2>
+    <p>전역 OSM 배경, 교내 48개 3D 건물, 학생회관 실측 지도를 한 화면에 놓았다. Figma는 화면 구성의 참고로 사용했고, Vercel로 배포했다.</p>
+    <figure><img src="/research/external_indoor_handoff.png" loading="lazy" alt="외부 대중교통·보행 경로와 구현한 입구·실내 경로 연결 구상"><figcaption>외부 대중교통·보행 API와 전체 이동시간 통합은 요금·쿼터·운영비를 고려한 후속 단계다. 현재 교내 보행로와 학생회관 실내 경로를 제공한다.</figcaption></figure>
+    <details><summary>알고리즘과 AI 활용의 구분</summary><p>SIFT/RootSIFT, RANSAC, ICP, PGO, BA와 칼만 필터는 고전적 특징·기하·수치 알고리즘이다. 학습 기반 실험은 LoFTR, YOLO 마스크 후보, 고정 Gaussian 중심의 표현 학습으로 나눴다. 생성형 AI는 연구자가 정한 방법과 입력 형식에 맞춰 코드 수정과 화면 편집을 보조했다. 전체 설정과 비교 결과는 저장소 기술 보고서에 연결했다.</p></details>
+    <div class="end-links"><a class="primary" href="/">지도에서 직접 확인하기 ↗</a><a href="https://github.com/subin11111/folded-city-atlas">코드·실험·전체 시각 자료 ↗</a></div>
+  </section>
+</main>
+<footer><p>Folded City · 공간을 펼치고, 길을 연결합니다.</p><p>수집 기반: RTAB-Map iOS / ARKit · 배경: © OpenStreetMap contributors / OpenFreeMap · 표시: Three.js / MapLibre</p><img src="/research/loading.gif" width="420" height="236" loading="lazy" alt="지도가 펼쳐지고 경로가 이어지는 로딩 애니메이션"></footer>
+</body></html>

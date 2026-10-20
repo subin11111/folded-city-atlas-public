@@ -1,0 +1,10 @@
+# ROS 2 publishing additionally uses the system ROS Humble Python packages.
+# Exact versions used in the experiment are recorded in the JSON reports.
+numpy>=1.21,<2
+scipy>=1.8,<2
+opencv-python>=4.5,<5
+matplotlib>=3.5,<4
+PyYAML>=5.4,<7
+pytest>=6
+# Optional mask trial only: ultralytics 8.3.91 and torch 1.13.1+cpu were used.
+# Semantic masks are disabled by default after visual QC in this dataset.

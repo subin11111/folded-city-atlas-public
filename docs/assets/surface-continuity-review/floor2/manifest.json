@@ -1,0 +1,72 @@
+{
+  "figures": [
+    {
+      "file": "floor2/source_comparison.png",
+      "sha256": "119237e7dc856643692e6da64ceb73f8824d24b5feb2062526a3663b8315953b",
+      "session": "floor2",
+      "view": "source",
+      "camera_node": 1055,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/audit_comparison.png",
+      "sha256": "762ed2a282c4fb2682d6725380d7ee23aea6ab1c1e5502ece39f241faca0d8fb",
+      "session": "floor2",
+      "view": "audit",
+      "camera_node": 1054,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/stairs_comparison.png",
+      "sha256": "fdf9b2b2041539e9be61c066dd0563574d0954ff204cd054d72851774a0fca15",
+      "session": "floor2",
+      "view": "stairs",
+      "camera_node": 1078,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/oblique_comparison.png",
+      "sha256": "314b00b99a4c750c614b9976395b6bf2d7509c6152e04a3ef9face770cfeb509",
+      "session": "floor2",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/source_geometry.png",
+      "sha256": "87008571245e4b92c54ca9613abd611d8dfdc2ca158c470bfb7b787d0af2cc6d",
+      "session": "floor2",
+      "view": "source",
+      "camera_node": 1055,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/audit_geometry.png",
+      "sha256": "79c01ea3625d427653432f1cb9bfa58bebf3ab0e8ce942401a05c42f307bd8b0",
+      "session": "floor2",
+      "view": "audit",
+      "camera_node": 1054,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/stairs_geometry.png",
+      "sha256": "40b7dadfbaa1619c757324fa66aa1746dd7c3d7eb9942ac59d3ab1351dbd755c",
+      "session": "floor2",
+      "view": "stairs",
+      "camera_node": 1078,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/oblique_geometry.png",
+      "sha256": "b03cc6ec7d1d09af5190a44287b514a30cd5a311f3d0999b9374f725d1d69b98",
+      "session": "floor2",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    }
+  ]
+}

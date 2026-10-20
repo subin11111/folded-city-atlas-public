@@ -1,0 +1,1874 @@
+{
+  "created_utc": "2026-10-17T13:51:48.786605+00:00",
+  "figures": [
+    {
+      "file": "outside/source_photo.png",
+      "sha256": "5e9a02428225c644a78c5000d5b4c13e587ffe0378e0197a96e4c53f569673dc",
+      "node": 263,
+      "session": "outside",
+      "kind": "photo"
+    },
+    {
+      "file": "outside/audit_photo.png",
+      "sha256": "0735fff0e8af3212fe4cabec614145f42a3e347390d86ecc610da2861d19da4b",
+      "node": 264,
+      "session": "outside",
+      "kind": "photo"
+    },
+    {
+      "file": "outside/source_geometry.png",
+      "sha256": "b57f429c68bac863c31a78409a8e1a63df2034c8bf98377913fd29c1d7dbd8b0",
+      "node": 263,
+      "session": "outside",
+      "kind": "geometry"
+    },
+    {
+      "file": "outside/audit_geometry.png",
+      "sha256": "ece6b9a0880ae11a756ad2e177f790c929b8ce834c769a93526196d60c16221c",
+      "node": 264,
+      "session": "outside",
+      "kind": "geometry"
+    },
+    {
+      "file": "lobby/source_photo.png",
+      "sha256": "9692f77919747364adf0b0301700d08e5f03d209f0252e0874fedbbae25521ea",
+      "node": 39,
+      "session": "lobby",
+      "kind": "photo"
+    },
+    {
+      "file": "lobby/audit_photo.png",
+      "sha256": "fffae0f0a974393a7126b3442287fd4af17f31acafddcc352b5a1064cd18f56a",
+      "node": 38,
+      "session": "lobby",
+      "kind": "photo"
+    },
+    {
+      "file": "lobby/source_geometry.png",
+      "sha256": "4b88c99494eea5b2c32d42474cf75ba9bf1e267e1fa865186aba64ad8e22c631",
+      "node": 39,
+      "session": "lobby",
+      "kind": "geometry"
+    },
+    {
+      "file": "lobby/audit_geometry.png",
+      "sha256": "37d69884042d476a86593385138a7632838c62334d5afed9395590c600ce056e",
+      "node": 38,
+      "session": "lobby",
+      "kind": "geometry"
+    },
+    {
+      "file": "bridge_out1f/source_photo.png",
+      "sha256": "0c0d5f5003cfdd1294a29683fe0ff64f10b0f937a38911ee4e9f62454de636a4",
+      "node": 80,
+      "session": "bridge_out1f",
+      "kind": "photo"
+    },
+    {
+      "file": "bridge_out1f/audit_photo.png",
+      "sha256": "e9433e888a0b254f676e8b4da8618488458ef425588a41f57ca2bb249c02578f",
+      "node": 81,
+      "session": "bridge_out1f",
+      "kind": "photo"
+    },
+    {
+      "file": "bridge_out1f/source_geometry.png",
+      "sha256": "2001791ea48c3b96099bbeada9535dff54e3f4e156775beb40ebd0b55871b618",
+      "node": 80,
+      "session": "bridge_out1f",
+      "kind": "geometry"
+    },
+    {
+      "file": "bridge_out1f/audit_geometry.png",
+      "sha256": "2d0ba4576c6e3e734fd32fb6996ccbf7dc080a2c56c8234d4ae02985aa5b6d19",
+      "node": 81,
+      "session": "bridge_out1f",
+      "kind": "geometry"
+    },
+    {
+      "file": "floor2/source_photo.png",
+      "sha256": "2ae9b4a8356cf2a17373beec1dff43354a87590620cc8a5e38c81006562145e5",
+      "node": 1055,
+      "session": "floor2",
+      "kind": "photo"
+    },
+    {
+      "file": "floor2/audit_photo.png",
+      "sha256": "af8b54ba14fac0ec0ecd2c36729050380e2d69a8c1031188aa9b54e9824a7f01",
+      "node": 1054,
+      "session": "floor2",
+      "kind": "photo"
+    },
+    {
+      "file": "floor2/stairs_photo.png",
+      "sha256": "51cef89b6eaeff39171857816d5b202bedc3c09aaf74b191925003962a0f2483",
+      "node": 1078,
+      "session": "floor2",
+      "kind": "photo"
+    },
+    {
+      "file": "floor2/source_geometry.png",
+      "sha256": "d81cd6f51f1d49f3d0583454dba5dd51e7c9d8927f0e40b5b7964799f68b3a7e",
+      "node": 1055,
+      "session": "floor2",
+      "kind": "geometry"
+    },
+    {
+      "file": "floor2/audit_geometry.png",
+      "sha256": "91dd1662ec7d7a77d3d42e6dab92cbf064e8a027f24e8ffdf13343d6846a4f48",
+      "node": 1054,
+      "session": "floor2",
+      "kind": "geometry"
+    },
+    {
+      "file": "floor2/stairs_geometry.png",
+      "sha256": "bcb31241fa9d257a70b3be7502062af316ee0453e972a432d8aff5e9248660ed",
+      "node": 1078,
+      "session": "floor2",
+      "kind": "geometry"
+    },
+    {
+      "file": "bridge_12_sub/source_photo.png",
+      "sha256": "aaebec8da312eea8adcf5a1e5c918c99f49568434f2415777c558014e6ad9c50",
+      "node": 159,
+      "session": "bridge_12_sub",
+      "kind": "photo"
+    },
+    {
+      "file": "bridge_12_sub/audit_photo.png",
+      "sha256": "fe030a9aaa4ac30e1cb89803f4c08c24d9b57b0100ad5d299d91277ea6f9a61c",
+      "node": 157,
+      "session": "bridge_12_sub",
+      "kind": "photo"
+    },
+    {
+      "file": "bridge_12_sub/stairs_photo.png",
+      "sha256": "796ce2dffecb9b2af19b205d1798cb913c681587e3e43e5a5f22d73cd15d45f1",
+      "node": 108,
+      "session": "bridge_12_sub",
+      "kind": "photo"
+    },
+    {
+      "file": "bridge_12_sub/source_geometry.png",
+      "sha256": "4f106729e6b982a77455aecdfb2e4cf2811d7d6d716a2f9900dc73140d1b6b28",
+      "node": 159,
+      "session": "bridge_12_sub",
+      "kind": "geometry"
+    },
+    {
+      "file": "bridge_12_sub/audit_geometry.png",
+      "sha256": "bccdced492802f9dbb3d710a49dc951c26ec420e0a2a5f452eef7facf8597406",
+      "node": 157,
+      "session": "bridge_12_sub",
+      "kind": "geometry"
+    },
+    {
+      "file": "bridge_12_sub/stairs_geometry.png",
+      "sha256": "0e5821743129ec665d1004fd131dd7219f76c903d98a71c62395cb0ea257847e",
+      "node": 108,
+      "session": "bridge_12_sub",
+      "kind": "geometry"
+    },
+    {
+      "file": "interactive_map.jpg",
+      "sha256": "5e839a1f3ec58f79456015bfa5fd4d755ef031dcabb72db47b2c81b0aeda0226",
+      "kind": "actual_browser_screenshot"
+    }
+  ],
+  "all_original_inputs_unchanged": true,
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "renderer_sha256": "ece5fef6fbf02313df0094fa3bd42bdedf0ddee566168e44a4f230ab1fd542f5",
+  "display_files_verified": 43,
+  "sessions": {
+    "outside": {
+      "session": "outside",
+      "candidate": "J01",
+      "source_mesh": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/outside/tsdf_5cm.ply",
+      "vertex_displacement_m": 0.0,
+      "new_triangles": 0,
+      "decimation": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "exact_retained_triangle_coordinates_verified": true,
+      "minimum_component_area_m2": 0.005,
+      "original_components": 1996,
+      "removed_components": 1419,
+      "removed_triangles": 9941,
+      "removed_surface_area_m2": 2.049603116271127,
+      "topology": {
+        "components": 577,
+        "triangles": 526730,
+        "surface_area_m2": 479.3302749935141,
+        "components_smaller_than_002m2": 403,
+        "small_component_area_fraction": 0.007783636600865578,
+        "largest_component_area_fraction": 0.9131721469999405
+      },
+      "camera_nodes": {
+        "source": 263,
+        "audit": 264
+      },
+      "depth_checks": {
+        "source": {
+          "node": 263,
+          "valid_pixels": 24565,
+          "old_all_hits": {
+            "pixels": 23402,
+            "median_m": 0.11521297693252563,
+            "p90_m": 0.2324148654937745,
+            "signed_median_m": 0.1149858832359314
+          },
+          "new_all_hits": {
+            "pixels": 23383,
+            "median_m": 0.11518573760986328,
+            "p90_m": 0.23212714195251463,
+            "signed_median_m": 0.11495089530944824
+          },
+          "same_pixels_before": {
+            "pixels": 23383,
+            "median_m": 0.11518573760986328,
+            "p90_m": 0.23181443214416503,
+            "signed_median_m": 0.11495089530944824
+          },
+          "same_pixels_after": {
+            "pixels": 23383,
+            "median_m": 0.11518573760986328,
+            "p90_m": 0.23212714195251463,
+            "signed_median_m": 0.11495089530944824
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 19,
+            "median_m": 0.276686429977417,
+            "p90_m": 0.29684605598449704,
+            "signed_median_m": 0.276686429977417
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 23383,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0005559594577256981,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 264,
+          "valid_pixels": 35977,
+          "old_all_hits": {
+            "pixels": 31938,
+            "median_m": 0.12568849325180054,
+            "p90_m": 0.22358484268188478,
+            "signed_median_m": 0.12565910816192627
+          },
+          "new_all_hits": {
+            "pixels": 31926,
+            "median_m": 0.12571847438812256,
+            "p90_m": 0.22328591346740723,
+            "signed_median_m": 0.12566471099853516
+          },
+          "same_pixels_before": {
+            "pixels": 31926,
+            "median_m": 0.12567198276519775,
+            "p90_m": 0.22328591346740723,
+            "signed_median_m": 0.12564074993133545
+          },
+          "same_pixels_after": {
+            "pixels": 31926,
+            "median_m": 0.12571847438812256,
+            "p90_m": 0.22328591346740723,
+            "signed_median_m": 0.12566471099853516
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 12,
+            "median_m": 0.26314616203308105,
+            "p90_m": 0.2728827953338623,
+            "signed_median_m": 0.26314616203308105
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 31926,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0008457056944183425,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 83844124,
+          "triangles": 526730,
+          "textured_faces": 224056,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          8,
+          13,
+          18,
+          23,
+          28,
+          32,
+          38,
+          43,
+          48,
+          55,
+          60,
+          64,
+          69,
+          74,
+          81,
+          86,
+          91,
+          96,
+          101,
+          106,
+          111,
+          116,
+          120,
+          126,
+          132,
+          137,
+          142,
+          148,
+          152,
+          160,
+          166,
+          174,
+          181,
+          186,
+          190,
+          196,
+          206,
+          211,
+          217,
+          223,
+          228,
+          233,
+          238,
+          243,
+          249,
+          254,
+          262,
+          263,
+          268,
+          273,
+          278,
+          284,
+          288,
+          296,
+          305,
+          310,
+          315,
+          322,
+          326,
+          333,
+          338,
+          343,
+          354
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.42537163252520266,
+        "unassigned_face_fraction": 0.5746283674747973,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "navigation_ready": false
+    },
+    "lobby": {
+      "session": "lobby",
+      "candidate": "N05",
+      "source_mesh": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/lobby/tsdf_5cm.ply",
+      "vertex_displacement_m": 0.0,
+      "new_triangles": 0,
+      "decimation": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "exact_retained_triangle_coordinates_verified": true,
+      "minimum_component_area_m2": 0.005,
+      "original_components": 4754,
+      "removed_components": 3485,
+      "removed_triangles": 22576,
+      "removed_surface_area_m2": 4.8258920864995005,
+      "topology": {
+        "components": 1269,
+        "triangles": 1626810,
+        "surface_area_m2": 1487.8899030340951,
+        "components_smaller_than_002m2": 870,
+        "small_component_area_fraction": 0.0056608770201203055,
+        "largest_component_area_fraction": 0.9362971311895544
+      },
+      "camera_nodes": {
+        "source": 39,
+        "audit": 38
+      },
+      "depth_checks": {
+        "source": {
+          "node": 39,
+          "valid_pixels": 41883,
+          "old_all_hits": {
+            "pixels": 41127,
+            "median_m": 0.06163895130157471,
+            "p90_m": 0.42011742591857915,
+            "signed_median_m": 0.06005120277404785
+          },
+          "new_all_hits": {
+            "pixels": 41123,
+            "median_m": 0.06172537803649902,
+            "p90_m": 0.42157254219055196,
+            "signed_median_m": 0.06013000011444092
+          },
+          "same_pixels_before": {
+            "pixels": 41123,
+            "median_m": 0.06164693832397461,
+            "p90_m": 0.4201282024383546,
+            "signed_median_m": 0.06006801128387451
+          },
+          "same_pixels_after": {
+            "pixels": 41123,
+            "median_m": 0.06172537803649902,
+            "p90_m": 0.42157254219055196,
+            "signed_median_m": 0.06013000011444092
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 4,
+            "median_m": 0.004519820213317871,
+            "p90_m": 0.1267637372016907,
+            "signed_median_m": -0.0007412433624267578
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 41123,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0025046810787150743,
+          "paired_better_by_over_3cm_fraction": 2.4317292026359943e-05,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 38,
+          "valid_pixels": 17270,
+          "old_all_hits": {
+            "pixels": 16781,
+            "median_m": 0.18700075149536133,
+            "p90_m": 0.7104129791259766,
+            "signed_median_m": 0.18700075149536133
+          },
+          "new_all_hits": {
+            "pixels": 16776,
+            "median_m": 0.18796861171722412,
+            "p90_m": 0.7123734951019287,
+            "signed_median_m": 0.18796861171722412
+          },
+          "same_pixels_before": {
+            "pixels": 16776,
+            "median_m": 0.18703263998031616,
+            "p90_m": 0.7104215621948242,
+            "signed_median_m": 0.18703263998031616
+          },
+          "same_pixels_after": {
+            "pixels": 16776,
+            "median_m": 0.18796861171722412,
+            "p90_m": 0.7123734951019287,
+            "signed_median_m": 0.18796861171722412
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 5,
+            "median_m": 0.021845579147338867,
+            "p90_m": 0.04286065101623535,
+            "signed_median_m": -0.019023895263671875
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 16776,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0037553648068669528,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 205592844,
+          "triangles": 1626810,
+          "textured_faces": 408612,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          21,
+          35,
+          39,
+          49,
+          60,
+          73,
+          85,
+          95,
+          105,
+          116,
+          130,
+          144,
+          154,
+          165,
+          176,
+          187,
+          197,
+          207,
+          219,
+          229,
+          241,
+          251,
+          261,
+          273,
+          284,
+          294,
+          305,
+          316,
+          329,
+          337,
+          339,
+          350,
+          361,
+          372,
+          382,
+          394,
+          406,
+          422,
+          433,
+          444,
+          464,
+          476,
+          493,
+          507,
+          519,
+          532,
+          542,
+          554,
+          565,
+          579,
+          590,
+          603,
+          614,
+          630,
+          640,
+          653,
+          670,
+          682,
+          695,
+          705,
+          719,
+          730,
+          743,
+          753,
+          766,
+          777,
+          788,
+          801,
+          811,
+          821,
+          836,
+          847,
+          862,
+          878,
+          888,
+          903,
+          915,
+          925,
+          958
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.2511737695244067,
+        "unassigned_face_fraction": 0.7488262304755934,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "navigation_ready": false
+    },
+    "bridge_out1f": {
+      "session": "bridge_out1f",
+      "candidate": "H03",
+      "source_mesh": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/bridge_out1f/tsdf_5cm.ply",
+      "vertex_displacement_m": 0.0,
+      "new_triangles": 0,
+      "decimation": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "exact_retained_triangle_coordinates_verified": true,
+      "minimum_component_area_m2": 0.005,
+      "original_components": 534,
+      "removed_components": 408,
+      "removed_triangles": 2530,
+      "removed_surface_area_m2": 0.6076240165388382,
+      "topology": {
+        "components": 126,
+        "triangles": 194105,
+        "surface_area_m2": 176.30028191490948,
+        "components_smaller_than_002m2": 85,
+        "small_component_area_fraction": 0.004254392995506403,
+        "largest_component_area_fraction": 0.9789021125260251
+      },
+      "camera_nodes": {
+        "source": 80,
+        "audit": 81
+      },
+      "depth_checks": {
+        "source": {
+          "node": 80,
+          "valid_pixels": 47927,
+          "old_all_hits": {
+            "pixels": 47519,
+            "median_m": 0.03700137138366699,
+            "p90_m": 0.08474740982055667,
+            "signed_median_m": -0.0030524730682373047
+          },
+          "new_all_hits": {
+            "pixels": 47511,
+            "median_m": 0.037012338638305664,
+            "p90_m": 0.08475255966186523,
+            "signed_median_m": -0.003055095672607422
+          },
+          "same_pixels_before": {
+            "pixels": 47511,
+            "median_m": 0.037012338638305664,
+            "p90_m": 0.08475255966186523,
+            "signed_median_m": -0.003055095672607422
+          },
+          "same_pixels_after": {
+            "pixels": 47511,
+            "median_m": 0.037012338638305664,
+            "p90_m": 0.08475255966186523,
+            "signed_median_m": -0.003055095672607422
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 8,
+            "median_m": 0.0019199848175048828,
+            "p90_m": 0.0037458181381225582,
+            "signed_median_m": -0.0019199848175048828
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 47511,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 8.419102944581255e-05,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 81,
+          "valid_pixels": 35347,
+          "old_all_hits": {
+            "pixels": 30192,
+            "median_m": 0.05543231964111328,
+            "p90_m": 0.8456438541412354,
+            "signed_median_m": 0.03569868206977844
+          },
+          "new_all_hits": {
+            "pixels": 30144,
+            "median_m": 0.055283546447753906,
+            "p90_m": 0.8479780912399292,
+            "signed_median_m": 0.0354231595993042
+          },
+          "same_pixels_before": {
+            "pixels": 30144,
+            "median_m": 0.055283546447753906,
+            "p90_m": 0.8442882180213931,
+            "signed_median_m": 0.0354231595993042
+          },
+          "same_pixels_after": {
+            "pixels": 30144,
+            "median_m": 0.055283546447753906,
+            "p90_m": 0.8479780912399292,
+            "signed_median_m": 0.0354231595993042
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 48,
+            "median_m": 0.80814528465271,
+            "p90_m": 1.8855082035064696,
+            "signed_median_m": 0.80814528465271
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 30144,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0017250530785562633,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 33516612,
+          "triangles": 194105,
+          "textured_faces": 116182,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 2,
+        "camera_frames": [
+          1,
+          5,
+          8,
+          14,
+          17,
+          20,
+          29,
+          32,
+          36,
+          39,
+          44,
+          47,
+          51,
+          55,
+          61,
+          66,
+          68,
+          71,
+          74,
+          80,
+          82,
+          90,
+          95,
+          99,
+          101,
+          108,
+          111,
+          116,
+          117,
+          118,
+          121,
+          134
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5985523299245253,
+        "unassigned_face_fraction": 0.4014476700754746,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "navigation_ready": false
+    },
+    "floor2": {
+      "session": "floor2",
+      "candidate": "J04",
+      "source_mesh": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/floor2/tsdf_5cm.ply",
+      "vertex_displacement_m": 0.0,
+      "new_triangles": 0,
+      "decimation": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "exact_retained_triangle_coordinates_verified": true,
+      "minimum_component_area_m2": 0.005,
+      "original_components": 6849,
+      "removed_components": 4929,
+      "removed_triangles": 33974,
+      "removed_surface_area_m2": 6.798742409844676,
+      "topology": {
+        "components": 1920,
+        "triangles": 1950311,
+        "surface_area_m2": 1773.5307092774751,
+        "components_smaller_than_002m2": 1359,
+        "small_component_area_fraction": 0.007338195689030462,
+        "largest_component_area_fraction": 0.9357987030998791
+      },
+      "camera_nodes": {
+        "source": 1055,
+        "audit": 1054,
+        "stairs": 1078
+      },
+      "depth_checks": {
+        "source": {
+          "node": 1055,
+          "valid_pixels": 35369,
+          "old_all_hits": {
+            "pixels": 35051,
+            "median_m": 0.4359276294708252,
+            "p90_m": 2.3262667655944824,
+            "signed_median_m": 0.4355921745300293
+          },
+          "new_all_hits": {
+            "pixels": 35046,
+            "median_m": 0.4369361400604248,
+            "p90_m": 2.3276716470718384,
+            "signed_median_m": 0.4363292455673218
+          },
+          "same_pixels_before": {
+            "pixels": 35046,
+            "median_m": 0.43585145473480225,
+            "p90_m": 2.3261057138442993,
+            "signed_median_m": 0.43536895513534546
+          },
+          "same_pixels_after": {
+            "pixels": 35046,
+            "median_m": 0.4369361400604248,
+            "p90_m": 2.3276716470718384,
+            "signed_median_m": 0.4363292455673218
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 5,
+            "median_m": 2.624938488006592,
+            "p90_m": 2.765216064453125,
+            "signed_median_m": 2.624938488006592
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 35046,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0025680534155110425,
+          "paired_better_by_over_3cm_fraction": 0.00028533926839011586,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 1054,
+          "valid_pixels": 44234,
+          "old_all_hits": {
+            "pixels": 43663,
+            "median_m": 0.5345702171325684,
+            "p90_m": 2.293458080291748,
+            "signed_median_m": 0.5323014259338379
+          },
+          "new_all_hits": {
+            "pixels": 43651,
+            "median_m": 0.5368890762329102,
+            "p90_m": 2.296586513519287,
+            "signed_median_m": 0.5345702171325684
+          },
+          "same_pixels_before": {
+            "pixels": 43651,
+            "median_m": 0.5344734191894531,
+            "p90_m": 2.293459892272949,
+            "signed_median_m": 0.5322554111480713
+          },
+          "same_pixels_after": {
+            "pixels": 43651,
+            "median_m": 0.5368890762329102,
+            "p90_m": 2.296586513519287,
+            "signed_median_m": 0.5345702171325684
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 12,
+            "median_m": 0.6895496845245361,
+            "p90_m": 0.9096020221710205,
+            "signed_median_m": 0.6895496845245361
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 43651,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0033218024787519188,
+          "paired_better_by_over_3cm_fraction": 0.00027490779134498635,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "stairs": {
+          "node": 1078,
+          "valid_pixels": 39866,
+          "old_all_hits": {
+            "pixels": 39390,
+            "median_m": 0.059642672538757324,
+            "p90_m": 1.2219963550567625,
+            "signed_median_m": 0.053528428077697754
+          },
+          "new_all_hits": {
+            "pixels": 39377,
+            "median_m": 0.059607744216918945,
+            "p90_m": 1.2223464965820312,
+            "signed_median_m": 0.05349302291870117
+          },
+          "same_pixels_before": {
+            "pixels": 39377,
+            "median_m": 0.059607744216918945,
+            "p90_m": 1.2221009254455568,
+            "signed_median_m": 0.05349302291870117
+          },
+          "same_pixels_after": {
+            "pixels": 39377,
+            "median_m": 0.059607744216918945,
+            "p90_m": 1.2223464965820312,
+            "signed_median_m": 0.05349302291870117
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 13,
+            "median_m": 0.6834902763366699,
+            "p90_m": 0.6972161293029785,
+            "signed_median_m": 0.6834902763366699
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 39377,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0011427990959189374,
+          "paired_better_by_over_3cm_fraction": 0.00027935089011351804,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 247536088,
+          "triangles": 1950311,
+          "textured_faces": 473013,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 5,
+        "camera_frames": [
+          1,
+          10,
+          20,
+          39,
+          52,
+          66,
+          80,
+          94,
+          105,
+          119,
+          134,
+          148,
+          161,
+          173,
+          183,
+          198,
+          208,
+          220,
+          233,
+          244,
+          257,
+          267,
+          276,
+          286,
+          300,
+          319,
+          328,
+          338,
+          357,
+          388,
+          398,
+          408,
+          422,
+          434,
+          448,
+          460,
+          473,
+          483,
+          500,
+          512,
+          524,
+          535,
+          552,
+          565,
+          574,
+          589,
+          614,
+          623,
+          634,
+          646,
+          656,
+          666,
+          676,
+          686,
+          698,
+          708,
+          720,
+          731,
+          746,
+          759,
+          771,
+          782,
+          791,
+          805,
+          818,
+          829,
+          842,
+          852,
+          864,
+          876,
+          886,
+          896,
+          906,
+          915,
+          925,
+          936,
+          949,
+          963,
+          973,
+          981,
+          984,
+          1017,
+          1033,
+          1047,
+          1055,
+          1063,
+          1075,
+          1088,
+          1098,
+          1110,
+          1128,
+          1150,
+          1164,
+          1180,
+          1194,
+          1218
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.2425320884720437,
+        "unassigned_face_fraction": 0.7574679115279563,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "navigation_ready": false
+    },
+    "bridge_12_sub": {
+      "session": "bridge_12_sub",
+      "candidate": "H03",
+      "source_mesh": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/bridge_12_sub/tsdf_5cm.ply",
+      "vertex_displacement_m": 0.0,
+      "new_triangles": 0,
+      "decimation": false,
+      "smoothing": false,
+      "hole_filling": false,
+      "exact_retained_triangle_coordinates_verified": true,
+      "minimum_component_area_m2": 0.005,
+      "original_components": 882,
+      "removed_components": 664,
+      "removed_triangles": 3971,
+      "removed_surface_area_m2": 0.87614518125396,
+      "topology": {
+        "components": 218,
+        "triangles": 351131,
+        "surface_area_m2": 318.3907639278038,
+        "components_smaller_than_002m2": 146,
+        "small_component_area_fraction": 0.00437337402231847,
+        "largest_component_area_fraction": 0.943501877203808
+      },
+      "camera_nodes": {
+        "source": 159,
+        "audit": 157,
+        "stairs": 108
+      },
+      "depth_checks": {
+        "source": {
+          "node": 159,
+          "valid_pixels": 36180,
+          "old_all_hits": {
+            "pixels": 35867,
+            "median_m": 0.045757293701171875,
+            "p90_m": 0.15666708946228033,
+            "signed_median_m": -0.02217411994934082
+          },
+          "new_all_hits": {
+            "pixels": 35865,
+            "median_m": 0.045743703842163086,
+            "p90_m": 0.15671429634094247,
+            "signed_median_m": -0.02214527130126953
+          },
+          "same_pixels_before": {
+            "pixels": 35865,
+            "median_m": 0.04575657844543457,
+            "p90_m": 0.1565860748291017,
+            "signed_median_m": -0.02217411994934082
+          },
+          "same_pixels_after": {
+            "pixels": 35865,
+            "median_m": 0.045743703842163086,
+            "p90_m": 0.15671429634094247,
+            "signed_median_m": -0.02214527130126953
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 2,
+            "median_m": 0.49830734729766846,
+            "p90_m": 0.5167364358901978,
+            "signed_median_m": 0.02303636074066162
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 35865,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.00013941168269901018,
+          "paired_better_by_over_3cm_fraction": 0.0002230586923184163,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 157,
+          "valid_pixels": 16551,
+          "old_all_hits": {
+            "pixels": 15459,
+            "median_m": 0.0926215648651123,
+            "p90_m": 0.20044536590576173,
+            "signed_median_m": 0.0880136489868164
+          },
+          "new_all_hits": {
+            "pixels": 15448,
+            "median_m": 0.09274744987487793,
+            "p90_m": 0.20197966098785403,
+            "signed_median_m": 0.08810555934906006
+          },
+          "same_pixels_before": {
+            "pixels": 15448,
+            "median_m": 0.09271752834320068,
+            "p90_m": 0.2004702806472779,
+            "signed_median_m": 0.08806586265563965
+          },
+          "same_pixels_after": {
+            "pixels": 15448,
+            "median_m": 0.09274744987487793,
+            "p90_m": 0.20197966098785403,
+            "signed_median_m": 0.08810555934906006
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 11,
+            "median_m": 0.005201578140258789,
+            "p90_m": 0.007898807525634766,
+            "signed_median_m": -0.005201578140258789
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 15448,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.002524598653547385,
+          "paired_better_by_over_3cm_fraction": 0.0,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "stairs": {
+          "node": 108,
+          "valid_pixels": 46194,
+          "old_all_hits": {
+            "pixels": 45538,
+            "median_m": 0.0349963903427124,
+            "p90_m": 0.17001403570175175,
+            "signed_median_m": 0.004575610160827637
+          },
+          "new_all_hits": {
+            "pixels": 45538,
+            "median_m": 0.03498855233192444,
+            "p90_m": 0.16995832324028018,
+            "signed_median_m": 0.004586279392242432
+          },
+          "same_pixels_before": {
+            "pixels": 45538,
+            "median_m": 0.0349963903427124,
+            "p90_m": 0.17001403570175175,
+            "signed_median_m": 0.004575610160827637
+          },
+          "same_pixels_after": {
+            "pixels": 45538,
+            "median_m": 0.03498855233192444,
+            "p90_m": 0.16995832324028018,
+            "signed_median_m": 0.004586279392242432
+          },
+          "newly_hit": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "lost_hits": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 45538,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0,
+          "paired_better_by_over_3cm_fraction": 0.00017567745619043436,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 53630932,
+          "triangles": 351131,
+          "textured_faces": 197678,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 3,
+        "camera_frames": [
+          1,
+          5,
+          9,
+          13,
+          16,
+          19,
+          24,
+          26,
+          29,
+          34,
+          40,
+          47,
+          56,
+          60,
+          62,
+          69,
+          75,
+          79,
+          82,
+          85,
+          88,
+          91,
+          94,
+          97,
+          104,
+          107,
+          117,
+          123,
+          126,
+          130,
+          143,
+          146,
+          153,
+          158,
+          159,
+          160,
+          166,
+          170,
+          175,
+          178,
+          181,
+          186,
+          188,
+          193,
+          196,
+          200,
+          204,
+          211
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5629750719816821,
+        "unassigned_face_fraction": 0.43702492801831794,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "navigation_ready": false
+    }
+  },
+  "depth_audit": {
+    "created_utc": "2026-10-17T13:42:36.696176+00:00",
+    "sessions": {
+      "outside": {
+        "source": {
+          "node": 263,
+          "valid_pixels": 24565,
+          "old_all_hits": {
+            "pixels": 22798,
+            "median_m": 0.16450339555740356,
+            "p90_m": 0.27924485206604,
+            "signed_median_m": 0.164215087890625
+          },
+          "new_all_hits": {
+            "pixels": 24170,
+            "median_m": 0.1225963830947876,
+            "p90_m": 0.25648837089538584,
+            "signed_median_m": 0.12234246730804443
+          },
+          "same_pixels_before": {
+            "pixels": 22780,
+            "median_m": 0.1645258665084839,
+            "p90_m": 0.2793112039566042,
+            "signed_median_m": 0.16422998905181885
+          },
+          "same_pixels_after": {
+            "pixels": 22780,
+            "median_m": 0.12165474891662598,
+            "p90_m": 0.2369986772537234,
+            "signed_median_m": 0.12154591083526611
+          },
+          "newly_hit": {
+            "pixels": 1390,
+            "median_m": 0.16761934757232666,
+            "p90_m": 0.4243369340896607,
+            "signed_median_m": 0.16575658321380615
+          },
+          "lost_hits": {
+            "pixels": 18,
+            "median_m": 0.07732319831848145,
+            "p90_m": 0.2010519027709961,
+            "signed_median_m": -0.01067352294921875
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 22780,
+            "median_m": 0.03228473663330078,
+            "p90_m": 0.10736460685729987,
+            "signed_median_m": -0.030405163764953613
+          },
+          "paired_worse_by_over_3cm_fraction": 0.027480245829675155,
+          "paired_better_by_over_3cm_fraction": 0.4946005267778753,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 264,
+          "valid_pixels": 35977,
+          "old_all_hits": {
+            "pixels": 30482,
+            "median_m": 0.1605081558227539,
+            "p90_m": 0.2538781881332398,
+            "signed_median_m": 0.16038405895233154
+          },
+          "new_all_hits": {
+            "pixels": 33245,
+            "median_m": 0.13158798217773438,
+            "p90_m": 0.23937568664550782,
+            "signed_median_m": 0.13149571418762207
+          },
+          "same_pixels_before": {
+            "pixels": 30345,
+            "median_m": 0.1607198715209961,
+            "p90_m": 0.25376973152160665,
+            "signed_median_m": 0.1606121063232422
+          },
+          "same_pixels_after": {
+            "pixels": 30345,
+            "median_m": 0.12857866287231445,
+            "p90_m": 0.2255713939666749,
+            "signed_median_m": 0.12844538688659668
+          },
+          "newly_hit": {
+            "pixels": 2900,
+            "median_m": 0.19160830974578857,
+            "p90_m": 0.2892220497131347,
+            "signed_median_m": 0.19115114212036133
+          },
+          "lost_hits": {
+            "pixels": 137,
+            "median_m": 0.01183319091796875,
+            "p90_m": 1.484856653213501,
+            "signed_median_m": 0.003957033157348633
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 30345,
+            "median_m": 0.02376270294189453,
+            "p90_m": 0.0826093673706055,
+            "signed_median_m": -0.02176046371459961
+          },
+          "paired_worse_by_over_3cm_fraction": 0.02211237436150931,
+          "paired_better_by_over_3cm_fraction": 0.3836875926841325,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "lobby": {
+        "source": {
+          "node": 39,
+          "valid_pixels": 41883,
+          "old_all_hits": {
+            "pixels": 40000,
+            "median_m": 0.06895840167999268,
+            "p90_m": 0.4916367053985595,
+            "signed_median_m": 0.06869745254516602
+          },
+          "new_all_hits": {
+            "pixels": 41289,
+            "median_m": 0.06602001190185547,
+            "p90_m": 0.4737303733825685,
+            "signed_median_m": 0.06464529037475586
+          },
+          "same_pixels_before": {
+            "pixels": 39431,
+            "median_m": 0.07155048847198486,
+            "p90_m": 0.49405503273010254,
+            "signed_median_m": 0.07114171981811523
+          },
+          "same_pixels_after": {
+            "pixels": 39431,
+            "median_m": 0.06433725357055664,
+            "p90_m": 0.4642062187194824,
+            "signed_median_m": 0.06352126598358154
+          },
+          "newly_hit": {
+            "pixels": 1858,
+            "median_m": 0.25477635860443115,
+            "p90_m": 0.5786767721176147,
+            "signed_median_m": 0.21734535694122314
+          },
+          "lost_hits": {
+            "pixels": 569,
+            "median_m": 0.005770444869995117,
+            "p90_m": 0.05525474548339844,
+            "signed_median_m": -0.002866506576538086
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 39431,
+            "median_m": 0.01413106918334961,
+            "p90_m": 0.10777688026428223,
+            "signed_median_m": -0.008348703384399414
+          },
+          "paired_worse_by_over_3cm_fraction": 0.059217367046232657,
+          "paired_better_by_over_3cm_fraction": 0.2932717912302503,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 38,
+          "valid_pixels": 17270,
+          "old_all_hits": {
+            "pixels": 15955,
+            "median_m": 0.30219364166259766,
+            "p90_m": 0.6899333000183107,
+            "signed_median_m": 0.29352617263793945
+          },
+          "new_all_hits": {
+            "pixels": 17062,
+            "median_m": 0.226678729057312,
+            "p90_m": 0.7955771684646605,
+            "signed_median_m": 0.226678729057312
+          },
+          "same_pixels_before": {
+            "pixels": 15889,
+            "median_m": 0.301347017288208,
+            "p90_m": 0.6905194282531743,
+            "signed_median_m": 0.2931084632873535
+          },
+          "same_pixels_after": {
+            "pixels": 15889,
+            "median_m": 0.2160637378692627,
+            "p90_m": 0.7419245243072516,
+            "signed_median_m": 0.2160637378692627
+          },
+          "newly_hit": {
+            "pixels": 1173,
+            "median_m": 0.5856385231018066,
+            "p90_m": 0.9237664699554441,
+            "signed_median_m": 0.5856385231018066
+          },
+          "lost_hits": {
+            "pixels": 66,
+            "median_m": 0.4980841875076294,
+            "p90_m": 0.5485444068908691,
+            "signed_median_m": 0.4980841875076294
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 15889,
+            "median_m": 0.03918731212615967,
+            "p90_m": 0.36057643890380914,
+            "signed_median_m": -0.02895379066467285
+          },
+          "paired_worse_by_over_3cm_fraction": 0.0932720750204544,
+          "paired_better_by_over_3cm_fraction": 0.4941783623890742,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "bridge_out1f": {
+        "source": {
+          "node": 80,
+          "valid_pixels": 47927,
+          "old_all_hits": {
+            "pixels": 47629,
+            "median_m": 0.03033900260925293,
+            "p90_m": 0.1642377853393555,
+            "signed_median_m": 0.0012395381927490234
+          },
+          "new_all_hits": {
+            "pixels": 47915,
+            "median_m": 0.03811931610107422,
+            "p90_m": 0.08949866294860839,
+            "signed_median_m": -0.0020525455474853516
+          },
+          "same_pixels_before": {
+            "pixels": 47629,
+            "median_m": 0.03033900260925293,
+            "p90_m": 0.1642377853393555,
+            "signed_median_m": 0.0012395381927490234
+          },
+          "same_pixels_after": {
+            "pixels": 47629,
+            "median_m": 0.038237571716308594,
+            "p90_m": 0.08949832916259766,
+            "signed_median_m": -0.0022335052490234375
+          },
+          "newly_hit": {
+            "pixels": 286,
+            "median_m": 0.010832786560058594,
+            "p90_m": 0.09170782566070557,
+            "signed_median_m": 0.004565238952636719
+          },
+          "lost_hits": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 47629,
+            "median_m": 0.01983785629272461,
+            "p90_m": 0.08573369979858404,
+            "signed_median_m": -0.01877284049987793
+          },
+          "paired_worse_by_over_3cm_fraction": 0.11020596695290684,
+          "paired_better_by_over_3cm_fraction": 0.25188435616956056,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 81,
+          "valid_pixels": 35347,
+          "old_all_hits": {
+            "pixels": 28868,
+            "median_m": 0.059681057929992676,
+            "p90_m": 1.2269324779510498,
+            "signed_median_m": 0.05565667152404785
+          },
+          "new_all_hits": {
+            "pixels": 29009,
+            "median_m": 0.054064929485321045,
+            "p90_m": 0.7946269035339356,
+            "signed_median_m": 0.031015634536743164
+          },
+          "same_pixels_before": {
+            "pixels": 26943,
+            "median_m": 0.05205678939819336,
+            "p90_m": 0.848528218269348,
+            "signed_median_m": 0.047519683837890625
+          },
+          "same_pixels_after": {
+            "pixels": 26943,
+            "median_m": 0.05496358871459961,
+            "p90_m": 0.708006906509399,
+            "signed_median_m": 0.024341106414794922
+          },
+          "newly_hit": {
+            "pixels": 2066,
+            "median_m": 0.045713722705841064,
+            "p90_m": 0.8896088004112244,
+            "signed_median_m": 0.04454374313354492
+          },
+          "lost_hits": {
+            "pixels": 1925,
+            "median_m": 1.2315704822540283,
+            "p90_m": 1.489202690124512,
+            "signed_median_m": 1.2315704822540283
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 26943,
+            "median_m": 0.02931070327758789,
+            "p90_m": 0.1365394115447997,
+            "signed_median_m": -0.026133358478546143
+          },
+          "paired_worse_by_over_3cm_fraction": 0.12088483093939056,
+          "paired_better_by_over_3cm_fraction": 0.2844523623946851,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "floor2": {
+        "source": {
+          "node": 1055,
+          "valid_pixels": 35369,
+          "old_all_hits": {
+            "pixels": 33733,
+            "median_m": 0.35492682456970215,
+            "p90_m": 2.3297125339508056,
+            "signed_median_m": 0.3546464443206787
+          },
+          "new_all_hits": {
+            "pixels": 35172,
+            "median_m": 0.5094822645187378,
+            "p90_m": 2.402507209777832,
+            "signed_median_m": 0.5094822645187378
+          },
+          "same_pixels_before": {
+            "pixels": 33556,
+            "median_m": 0.3534284830093384,
+            "p90_m": 2.3053447008132935,
+            "signed_median_m": 0.35335206985473633
+          },
+          "same_pixels_after": {
+            "pixels": 33556,
+            "median_m": 0.5277792811393738,
+            "p90_m": 2.4010069370269775,
+            "signed_median_m": 0.5277792811393738
+          },
+          "newly_hit": {
+            "pixels": 1616,
+            "median_m": 0.16701769828796387,
+            "p90_m": 2.7726728916168213,
+            "signed_median_m": 0.16701769828796387
+          },
+          "lost_hits": {
+            "pixels": 177,
+            "median_m": 2.367880344390869,
+            "p90_m": 2.4920470237731935,
+            "signed_median_m": 2.367880344390869
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 33556,
+            "median_m": 0.0693364143371582,
+            "p90_m": 1.9211387634277344,
+            "signed_median_m": -0.029248952865600586
+          },
+          "paired_worse_by_over_3cm_fraction": 0.21832161163428299,
+          "paired_better_by_over_3cm_fraction": 0.49573846704017166,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 1054,
+          "valid_pixels": 44234,
+          "old_all_hits": {
+            "pixels": 40892,
+            "median_m": 0.5734145641326904,
+            "p90_m": 2.879088926315308,
+            "signed_median_m": 0.5731693506240845
+          },
+          "new_all_hits": {
+            "pixels": 43505,
+            "median_m": 0.6116082668304443,
+            "p90_m": 2.6053839683532716,
+            "signed_median_m": 0.6116082668304443
+          },
+          "same_pixels_before": {
+            "pixels": 40272,
+            "median_m": 0.5661749839782715,
+            "p90_m": 2.8443202495574957,
+            "signed_median_m": 0.5658831596374512
+          },
+          "same_pixels_after": {
+            "pixels": 40272,
+            "median_m": 0.6180530786514282,
+            "p90_m": 2.5898616790771487,
+            "signed_median_m": 0.6180530786514282
+          },
+          "newly_hit": {
+            "pixels": 3233,
+            "median_m": 0.4749569892883301,
+            "p90_m": 2.968968296051028,
+            "signed_median_m": 0.47083210945129395
+          },
+          "lost_hits": {
+            "pixels": 620,
+            "median_m": 1.7790820598602295,
+            "p90_m": 3.247353458404541,
+            "signed_median_m": 1.7790820598602295
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 40272,
+            "median_m": 0.07788145542144775,
+            "p90_m": 2.2513338804245,
+            "signed_median_m": -0.022468209266662598
+          },
+          "paired_worse_by_over_3cm_fraction": 0.2431962653953119,
+          "paired_better_by_over_3cm_fraction": 0.45147993643226064,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "bridge_12_sub": {
+        "source": {
+          "node": 159,
+          "valid_pixels": 36180,
+          "old_all_hits": {
+            "pixels": 35823,
+            "median_m": 0.04515814781188965,
+            "p90_m": 0.1719670295715332,
+            "signed_median_m": -0.02165389060974121
+          },
+          "new_all_hits": {
+            "pixels": 36180,
+            "median_m": 0.04588210582733154,
+            "p90_m": 0.15344972610473634,
+            "signed_median_m": -0.02191162109375
+          },
+          "same_pixels_before": {
+            "pixels": 35823,
+            "median_m": 0.04515814781188965,
+            "p90_m": 0.1719670295715332,
+            "signed_median_m": -0.02165389060974121
+          },
+          "same_pixels_after": {
+            "pixels": 35823,
+            "median_m": 0.04577898979187012,
+            "p90_m": 0.15171995162963867,
+            "signed_median_m": -0.022271394729614258
+          },
+          "newly_hit": {
+            "pixels": 357,
+            "median_m": 0.1221926212310791,
+            "p90_m": 0.3471821784973146,
+            "signed_median_m": 0.10790109634399414
+          },
+          "lost_hits": {
+            "pixels": 0,
+            "median_m": null,
+            "p90_m": null
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 35823,
+            "median_m": 0.001744985580444336,
+            "p90_m": 0.030474662780761705,
+            "signed_median_m": -0.00039386749267578125
+          },
+          "paired_worse_by_over_3cm_fraction": 0.011835971303352595,
+          "paired_better_by_over_3cm_fraction": 0.0876810987354493,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 157,
+          "valid_pixels": 16551,
+          "old_all_hits": {
+            "pixels": 15271,
+            "median_m": 0.1520071029663086,
+            "p90_m": 0.2463984489440918,
+            "signed_median_m": 0.14981746673583984
+          },
+          "new_all_hits": {
+            "pixels": 16522,
+            "median_m": 0.09953856468200684,
+            "p90_m": 0.19777095317840576,
+            "signed_median_m": 0.09530651569366455
+          },
+          "same_pixels_before": {
+            "pixels": 15265,
+            "median_m": 0.15199923515319824,
+            "p90_m": 0.24625606536865235,
+            "signed_median_m": 0.14980554580688477
+          },
+          "same_pixels_after": {
+            "pixels": 15265,
+            "median_m": 0.1047677993774414,
+            "p90_m": 0.20168585777282716,
+            "signed_median_m": 0.10022807121276855
+          },
+          "newly_hit": {
+            "pixels": 1257,
+            "median_m": 0.05061078071594238,
+            "p90_m": 0.1333802461624146,
+            "signed_median_m": 0.03547501564025879
+          },
+          "lost_hits": {
+            "pixels": 6,
+            "median_m": 0.4421050548553467,
+            "p90_m": 0.4641944169998169,
+            "signed_median_m": 0.4421050548553467
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 15265,
+            "median_m": 0.02512073516845703,
+            "p90_m": 0.08958034515380861,
+            "signed_median_m": -0.017241954803466797
+          },
+          "paired_worse_by_over_3cm_fraction": 0.05391418277104487,
+          "paired_better_by_over_3cm_fraction": 0.3938421225024566,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      }
+    },
+    "input_hashes": {
+      "/home/subin/folded-city-atlas/config/current_map.json": "65b363cab0c970dd3b4ffe432f20bf2448059ee8a325c412cca77c403b7ec97e",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+      "/home/subin/folded-city-atlas/src/audit_display_depth.py": "2d6436c63c96e9a5b3b971e40b103d6bdd5a3ec0eddebd1e5d326165c9d96295",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/outside/tsdf_3cm_display.ply": "52efab77d26a6fd96f272b08f2f14c3cb16c1234da31e31fa352e80379fc593e",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_continuity_v1/outside/supported_poisson.ply": "98acdaa996e658ba846da9be6327ad2dd73cf4923c85e8f79bc1b3d98ac393f6",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside_trajectory.csv": "f2af5d9c5a222478897e17338de5050af4c2acf20ae0c8f4b5489ecf772f1948",
+      "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/lobby/tsdf_3cm_display.ply": "69454cc0b29db539bcee2613b26a18bfe63d32f746b2d64a5f24b77d157d1fa1",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_continuity_v1/lobby/supported_poisson.ply": "75c62ee9c1395a7b9f5c20c9bf3954e72f6e218b86c28ce28a52163c9f2effe6",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+      "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/bridge_out1f/tsdf_3cm_display.ply": "afc25d7192a13ad1ccfebfd988a7dbbc137b238b6122c82d75a338ace266234c",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_continuity_v1/bridge_out1f/supported_poisson.ply": "fe8240c8f6eac9f205a205541f4d1c071c79af57c4f53a2a9a0607d6816fd638",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f_trajectory.csv": "eb4dceda80b371ed938a94fdb69413a2cae0ab7c0927064efeb7caee3f2b35a5",
+      "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/floor2/tsdf_3cm_display.ply": "4952e6b62dcc01fdfdfb913b53734c3c0d21c21c17f027510ddc5bb5c0c2792f",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_continuity_v1/floor2/supported_poisson.ply": "a8ce6e5038951be5e3392ca632248ba07c7423137cec31fd310841677053f1d8",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+      "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1/bridge_12_sub/tsdf_3cm_display.ply": "93ec3621ee3526127fb696e7ccf9f6e19dc9de172536da0e2a0b40510133f877",
+      "/home/subin/folded-city-atlas/outputs/student_union_surface_continuity_v1/bridge_12_sub/supported_poisson.ply": "d11ba492db105b66eb44a5bd3c96fd8f483f4912fcd251cb0cb7d40402d40fb0",
+      "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub_trajectory.csv": "917acabc8b558247908bf0d4646461ee6cd47b75d89f0e07c10217427f066582",
+      "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+    },
+    "all_inputs_unchanged": true,
+    "camera_pose_changes": 0,
+    "pose_accuracy_measured": false
+  },
+  "navigation_ready": false,
+  "source_map_replaced": false
+}

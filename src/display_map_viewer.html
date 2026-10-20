@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><title>Folded City · 통합 지도</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111923;color:#ebf1fa;font-family:system-ui,sans-serif}
+header{padding:20px 28px;border-bottom:1px solid #354457;display:flex;justify-content:space-between;align-items:center}
+h1{font-size:22px;margin:0 0 6px}p{margin:0;color:#b3c4d6;font-size:13px}
+nav{display:flex;gap:9px;padding:16px 28px;flex-wrap:wrap}button,select{padding:10px 14px;background:#223348;color:#ecf3fa;border:1px solid #45617d;border-radius:8px;font-size:14px;cursor:pointer}
+button.active{background:#257b78;border-color:#55c8bd}main{position:relative;margin:0 28px;background:#12171f;border:1px solid #364555;border-radius:12px;overflow:hidden}
+#map{display:block;width:100%;height:calc(100vh - 240px);min-height:400px;object-fit:contain;cursor:grab;touch-action:none}
+#busy{position:absolute;top:15px;left:16px;background:#142539e8;padding:9px 13px;border-radius:7px;font-size:13px}
+footer{padding:14px 28px;color:#b5c6d8;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+.badge{color:#8be4d2;background:#173936;padding:8px 12px;border-radius:20px;font-size:12px}
+</style>
+<header><div><h1>Folded City · 제1학생회관 통합 지도</h1><p>선택한 최적화 포즈 유지 · 전체 5개 기록 · 마우스로 회전 / 휠로 확대</p></div><span class="badge">표시 개선 · 길찾기 정확도 승인 아님</span></header>
+<nav id="sessions"></nav>
+<main><img id="map" alt="실제 다섯 세션의 통합 지도 렌더링"><div id="busy">전체 지도 불러오는 중…</div></main>
+<footer><span id="status">최초 실행 시 모델과 원본 사진 텍스처를 읽습니다.</span><span>형상 보존: 정점 이동·평활화·구멍 메우기 없음. 작은 독립 파편만 제외.</span></footer>
+<script>
+const names={all:'전체 지도',outside:'외부',lobby:'1층 로비',bridge_out1f:'외부 ↔ 로비',floor2:'2층 · 메인 계단',bridge_12_sub:'서브 계단'};
+const state={session:'all',method:'preserved',yaw:-55,pitch:60,zoom:1};let busy=false,pending=false,drag=null;
+const nav=document.querySelector('nav'),image=document.querySelector('#map'),label=document.querySelector('#busy');
+for(const [key,title] of Object.entries(names)){const b=document.createElement('button');b.textContent=title;b.dataset.session=key;b.onclick=()=>{state.session=key;state.zoom=1;render()};nav.append(b)}
+const select=document.createElement('select');select.setAttribute('aria-label','표시 방식');
+for(const [value,title] of [['preserved','형상 보존 + 원본 사진'],['previous','이전 18만 면 표시'],['poisson','Poisson 연속 표면 (형상 변화 있음)'],['points','선택한 원본 점군']]){const o=document.createElement('option');o.value=value;o.textContent=title;select.append(o)}
+select.onchange=()=>{state.method=select.value;render()};nav.append(select);
+const reset=document.createElement('button');reset.textContent='시점 초기화';reset.onclick=()=>{state.yaw=-55;state.pitch=60;state.zoom=1;render()};nav.append(reset);
+async function render(){if(busy){pending=true;return}busy=true;label.hidden=false;label.textContent='실제 지도 렌더링 중…';
+ for(const b of nav.querySelectorAll('button[data-session]'))b.classList.toggle('active',b.dataset.session===state.session);
+ try{const q=new URLSearchParams(state);const r=await fetch('/render.png?'+q);if(!r.ok)throw new Error(await r.text());
+ const blob=await r.blob();const old=image.src;image.src=URL.createObjectURL(blob);await image.decode();if(old.startsWith('blob:'))URL.revokeObjectURL(old);
+ const s=await (await fetch('/status.json')).json();document.querySelector('#status').textContent=names[state.session]+' · '+s.loaded.length+'개 기록 표시 · '+select.selectedOptions[0].textContent;label.hidden=true;
+ }catch(e){label.textContent='표시 실패: '+e.message}finally{busy=false;if(pending){pending=false;render()}}}
+image.onpointerdown=e=>{drag=[e.clientX,e.clientY];image.setPointerCapture(e.pointerId)};
+image.onpointermove=e=>{if(!drag)return;state.yaw+=(e.clientX-drag[0])*.4;state.pitch=Math.max(5,Math.min(88,state.pitch+(e.clientY-drag[1])*.3));drag=[e.clientX,e.clientY];render()};
+image.onpointerup=()=>drag=null;image.onwheel=e=>{e.preventDefault();state.zoom=Math.max(.15,Math.min(4,state.zoom*Math.exp(e.deltaY*.001)));render()};
+render();
+</script></html>

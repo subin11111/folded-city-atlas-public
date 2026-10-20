@@ -1,0 +1,25 @@
+{
+  "annotation_origin": "Assistant visual inspection of original 720x960 RGB frames on 2026-10-17; approximate pixel labels, not surveyed coordinates or user clicks.",
+  "purpose": "Repeated-wall place identity and asymmetric RGB-D structure fitting; all observations are development data.",
+  "annotations": [
+    {
+      "session_a": "floor2",
+      "node_a": 548,
+      "session_b": "floor2",
+      "node_b": 981,
+      "uncertainty_pixels": 8,
+      "finite_surfaces": [["wall", 0, 0], ["horizontal", 0, 0]],
+      "feasibility": "Same closed black grille, opaque partition outline and railing corner. Low light, coarse corners and occlusion can bias the annotations; inspect overlays before any promotion.",
+      "landmarks": [
+        ["left_partition_ceiling_junction", [80, 125], [122, 230]],
+        ["right_partition_ceiling_junction", [269, 140], [299, 238]],
+        ["grille_left_upper_junction", [91, 222], [131, 322]],
+        ["grille_right_upper_junction", [266, 232], [298, 325]],
+        ["partition_left_floor_junction", [101, 430], [138, 511]],
+        ["partition_right_floor_junction", [276, 430], [302, 511]],
+        ["right_wall_floor_railing_corner", [439, 434], [470, 517]],
+        ["railing_far_top_corner", [451, 350], [479, 430]]
+      ]
+    }
+  ]
+}

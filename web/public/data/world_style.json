@@ -1,0 +1,27 @@
+{
+  "version": 8,
+  "name": "Folded City global background",
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet",
+      "attribution": "<a href=\"https://openfreemap.org/\">OpenFreeMap</a> <a href=\"https://www.openmaptiles.org/\">© OpenMapTiles</a> Data from <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+    }
+  },
+  "layers": [
+    {"id":"background","type":"background","paint":{"background-color":"#f2f4ef"}},
+    {"id":"landcover","type":"fill","source":"openmaptiles","source-layer":"landcover","paint":{"fill-color":"#dbe8d1","fill-opacity":0.7}},
+    {"id":"park","type":"fill","source":"openmaptiles","source-layer":"park","paint":{"fill-color":"#d5e5cd","fill-opacity":0.65}},
+    {"id":"water","type":"fill","source":"openmaptiles","source-layer":"water","paint":{"fill-color":"#aacfd2"}},
+    {"id":"waterway","type":"line","source":"openmaptiles","source-layer":"waterway","paint":{"line-color":"#aacfd2","line-width":2}},
+    {"id":"buildings-2d","type":"fill","source":"openmaptiles","source-layer":"building","minzoom":14,"paint":{"fill-color":"#d9dfd7","fill-outline-color":"#ccd4ca"}},
+    {"id":"roads-casing","type":"line","source":"openmaptiles","source-layer":"transportation","filter":["!in","class","rail","transit","ferry","path"],"paint":{"line-color":"#d4d9d1","line-width":["interpolate",["linear"],["zoom"],5,0.5,12,2,16,7,19,22]}},
+    {"id":"roads","type":"line","source":"openmaptiles","source-layer":"transportation","filter":["!in","class","rail","transit","ferry","path"],"paint":{"line-color":"#ffffff","line-width":["interpolate",["linear"],["zoom"],5,0.25,12,1,16,5,19,18]}},
+    {"id":"paths","type":"line","source":"openmaptiles","source-layer":"transportation","filter":["==","class","path"],"minzoom":14,"paint":{"line-color":"#c8cbb5","line-width":["interpolate",["linear"],["zoom"],14,0.6,19,3],"line-dasharray":[2,2]}},
+    {"id":"rail","type":"line","source":"openmaptiles","source-layer":"transportation","filter":["==","class","rail"],"minzoom":8,"paint":{"line-color":"#b2bbb3","line-width":1,"line-dasharray":[3,3]}},
+    {"id":"boundaries","type":"line","source":"openmaptiles","source-layer":"boundary","filter":["<=","admin_level",4],"paint":{"line-color":"#bcc6bd","line-width":1,"line-dasharray":[4,3]}},
+    {"id":"place-label","type":"symbol","source":"openmaptiles","source-layer":"place","layout":{"text-field":["coalesce",["get","name:ko"],["get","name"],["get","name:en"]],"text-font":["Noto Sans Regular"],"text-size":["interpolate",["linear"],["zoom"],2,11,10,14,17,16],"text-max-width":8},"paint":{"text-color":"#53675a","text-halo-color":"#f8faf5","text-halo-width":1.5}},
+    {"id":"road-label","type":"symbol","source":"openmaptiles","source-layer":"transportation_name","minzoom":13,"layout":{"symbol-placement":"line","text-field":["coalesce",["get","name:ko"],["get","name"],["get","name:en"]],"text-font":["Noto Sans Regular"],"text-size":11},"paint":{"text-color":"#748376","text-halo-color":"#ffffff","text-halo-width":1.5}}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source_bundle": "outputs/student_union_edge_finish_v18",
+  "slab_session": "lobby",
+  "slab_id": "bank",
+  "slab_mask": "outputs/student_union_service_slabs_v3/lobby/bank_slab_mask.npz",
+  "sign_id": "lobby_shinhan_heading",
+  "minimum_display_clearance_m": 0.08,
+  "round_height_step_m": 0.02,
+  "maximum_raise_m": 0.35,
+  "scope": "Local display-only underside clearance correction where actual same-camera render and first-hit diagnostic confirm bank ceiling occludes the sign. Raise only existing bank slab underside vertices and their welded side-skin bottom endpoints. Keep all XY, all floor/2F levels, sign geometry/photos, materials, open atrium and other 1F ceilings unchanged. This is sign-compatible presentation geometry, not a surveyed ceiling height or a global 1F height correction."
+}

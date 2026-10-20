@@ -1,0 +1,163 @@
+{
+  "session": "bridge_12_sub",
+  "gaussians": 160000,
+  "steps": 600,
+  "width": 270,
+  "height": 360,
+  "train_view_ids": [
+    1,
+    5,
+    9,
+    13,
+    16,
+    19,
+    24,
+    29,
+    34,
+    40,
+    47,
+    56,
+    60,
+    62,
+    75,
+    79,
+    82,
+    85,
+    88,
+    91,
+    94,
+    104,
+    107,
+    117,
+    123,
+    126,
+    130,
+    143,
+    153,
+    158,
+    159,
+    160,
+    166,
+    170,
+    175,
+    181,
+    186,
+    188,
+    193,
+    196,
+    200,
+    204
+  ],
+  "audit_view_ids": [
+    26,
+    69,
+    97,
+    146,
+    178,
+    211
+  ],
+  "history": [
+    {
+      "step": 1,
+      "training_view": 123,
+      "loss": 0.034557219594717026,
+      "l1": 0.007679196540266275,
+      "coverage_loss": 0.40869319438934326,
+      "depth_l1_clipped_m": 0.32216814160346985
+    },
+    {
+      "step": 101,
+      "training_view": 29,
+      "loss": 0.04990748316049576,
+      "l1": 0.025491371750831604,
+      "coverage_loss": 0.43448689579963684,
+      "depth_l1_clipped_m": 0.13441070914268494
+    },
+    {
+      "step": 201,
+      "training_view": 62,
+      "loss": 0.036145057529211044,
+      "l1": 0.02205757610499859,
+      "coverage_loss": 0.2259935736656189,
+      "depth_l1_clipped_m": 0.13883934915065765
+    },
+    {
+      "step": 301,
+      "training_view": 196,
+      "loss": 0.020403677597641945,
+      "l1": 0.013983441516757011,
+      "coverage_loss": 0.10113994777202606,
+      "depth_l1_clipped_m": 0.06718761473894119
+    },
+    {
+      "step": 401,
+      "training_view": 193,
+      "loss": 0.03422517329454422,
+      "l1": 0.027543310075998306,
+      "coverage_loss": 0.04618247225880623,
+      "depth_l1_clipped_m": 0.2172509878873825
+    },
+    {
+      "step": 501,
+      "training_view": 5,
+      "loss": 0.042731113731861115,
+      "l1": 0.03290139138698578,
+      "coverage_loss": 0.14906534552574158,
+      "depth_l1_clipped_m": 0.11698590964078903
+    },
+    {
+      "step": 600,
+      "training_view": 29,
+      "loss": 0.011958446353673935,
+      "l1": 0.0064924331381917,
+      "coverage_loss": 0.08153289556503296,
+      "depth_l1_clipped_m": 0.06720522791147232
+    }
+  ],
+  "scores": [
+    {
+      "node": 159,
+      "role": "training_RGB",
+      "masked_rgb_psnr_db": 33.289242236578,
+      "masked_rgb_l1": 0.013677438721060753,
+      "mean_alpha_valid_depth": 0.8866135478019714
+    },
+    {
+      "node": 146,
+      "role": "audit_RGB_not_used_in_gradients",
+      "masked_rgb_psnr_db": 21.32503494729141,
+      "masked_rgb_l1": 0.06316021829843521,
+      "mean_alpha_valid_depth": 0.7332895994186401
+    }
+  ],
+  "figures": [
+    {
+      "file": "gaussian_159.png",
+      "sha256": "5fafe2b7ccac04b1f11b3de8b21bca1a35a411f7fb9a3fd0afed7d505a50767b"
+    },
+    {
+      "file": "gaussian_146.png",
+      "sha256": "2c8e16943afb126709a288d2a9ed147f78b7cbf87eec62ef7ebc5d0f6fda94fd"
+    }
+  ],
+  "centre_position_updates": 0,
+  "camera_pose_updates": 0,
+  "density_control": false,
+  "view_dependent_SH": false,
+  "maximum_allocated_GPU_bytes": 133597696,
+  "seconds": 3.564046650999444,
+  "outputs": {
+    "gaussians.splat": {
+      "bytes": 5120000,
+      "sha256": "d59d31e02fb79640fbbbd1b473ad59a86fe807f3d76a87b533c26245cc727be3"
+    },
+    "checkpoint.pt": {
+      "bytes": 8962682,
+      "sha256": "3bd1a6d64957c2f2a0b45bc2f84d52a3028582a43489054e3144a5fc11dadb7f"
+    },
+    "gaussians.ply": {
+      "bytes": 8960362,
+      "sha256": "bdc084b8112325815ae66a687d8121300f473a5465c43d0673d23d1c120b9605"
+    }
+  }
+}

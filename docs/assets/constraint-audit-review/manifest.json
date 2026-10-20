@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-10-17T07:19:12.535305+00:00",
+  "input_hashes": {
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_constraint_audit_v1/completion.json": "a7d409db4e1046ee582e567b04db826f8cf312a8fa292479978453a0ebc32c96",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_constraint_audit_v1/report.json": "ae48ac895ac93c689d38a8dc8bcf106c1f0c042e069ccfea12457a6415accf0f",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_constraint_audit_v1/inventory.json": "757b8436a2261427df27b8146b15755ce0d51ac6cf745d5014a8ccdfca532b5d",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_constraint_audit_v1/provenance/report.json": "9e1814b797cf28ef9b1eed208e0a340d06b06c3cedf1a3ff237a889aaf88aeed",
+    "/home/subin/folded-city-atlas/src/publish_constraint_audit.py": "1756085ea035d1cdcda45cc8a6db173bb5bbb3674840e88d072199e6c5aa3e9c",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_added_reviewed/floor2/raw_main_trajectory.csv": "21516f6b7b069d21536b8d13ecd55c8e0b9e9a2e1a4ace1714ad316d4f0caf52"
+  },
+  "figures": [
+    {
+      "file": "inventory.png",
+      "sha256": "ea9248b35baf0ead533b19eed3d31f7db7c09bca53444c6038a8d1b924ac195e",
+      "synthetic": false,
+      "caption": "Canonical joint duplicates some isolated evidence; occurrences are not unique physical measurements."
+    },
+    {
+      "file": "physical_vs_normalized.png",
+      "sha256": "35ead6795641fcad6f066d218ec5a600860b08e5b75cde04fc9bc6eab019fc3f",
+      "synthetic": false,
+      "caption": "Residuals at original warm poses; line=norm 3, not a universally calibrated acceptance gate."
+    },
+    {
+      "file": "exclusion_summary.png",
+      "sha256": "9485eb9f880a1ed74ba42743a94df3b21f77c90398ae7fe12d2e170eaf5c4a9f",
+      "synthetic": false,
+      "caption": "Top four and bottom three P90 changes; full rankings include per-heldout geometry and solver status."
+    },
+    {
+      "file": "floor2_regression_causality.png",
+      "sha256": "ad67b43c69abe9bb8a481425cf7ff034fb399900fa87037054263eded6d93807",
+      "synthetic": false,
+      "caption": "Repeated development patch diagnostics, not surveyed truth; excluded poses are not installed."
+    },
+    {
+      "file": "floor2_patch_620_1025_horizontal_0_0.png",
+      "sha256": "350ce02f81414be942a5cfd386d91662b95254b321ee8a0978ab37b08d798658",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_639_1029_horizontal_0_0.png",
+      "sha256": "20880c1bc67fce706b0f135e6103239742624743e122a06d3c33188b86926ca6",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_642_1031_horizontal_0_0.png",
+      "sha256": "7e433669f47eceda7f99016c95cb10302a7801000cb6a968db31ec3bc3df03de",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_642_1032_horizontal_0_0.png",
+      "sha256": "c0b04f973b9f07f360dcaee0e5248fffe8784706e892a8d73a7270cf0119b757",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_644_1034_horizontal_0_0.png",
+      "sha256": "3cc65816d843284a1167aa84f9539f44c17b1a20ad182b60a1bfed8a2ac88db0",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_644_1034_wall_0_0.png",
+      "sha256": "df3ddf7a0a16d1fc57af7c404111923220e98394a826f770fc451377d0edcba1",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "floor2_patch_644_1035_wall_0_0.png",
+      "sha256": "47b226df6be012965d5653fd31b2d72f1e36de3d68ef7b5b46351dd8d9e1be30",
+      "synthetic": false,
+      "caption": "Original finite depth samples reprojected using each diagnostic pose; no surface synthesis."
+    },
+    {
+      "file": "cross_session_original_rgb.png",
+      "sha256": "f07a8fd7f9f2acb498c2fd2fa39d8134fb05b2a98f5b3b12bc12b7ed85e22049",
+      "synthetic": false,
+      "caption": "Five canonical cross-session measurements. Adjacent or similar-looking structure is not sufficient for independent geometric validation."
+    },
+    {
+      "file": "suspect_pair_original_rgb.png",
+      "sha256": "acc4576e221de6158b0921c786a2bc609ec047e7dafaf12710b5109eb3127d6d",
+      "synthetic": false,
+      "caption": "Original RGB of target/inherited regressions and a lobby revisit; visual identification remains conditional."
+    }
+  ],
+  "summary_sha256": "85fac32ded9b376dea46094bd15119875000a8df3e8e761c30acd064d38eca79",
+  "test_status": "Run full pytest separately; see experiment document.",
+  "default_map_replaced": false,
+  "synthetic_images": false
+}

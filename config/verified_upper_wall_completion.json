@@ -1,0 +1,24 @@
+{
+  "source_bundle": "outputs/student_union_observed_ceilings_v1",
+  "method": "Original-photo bounded opaque wall continuation; existing wall geometry anchors range, not a guessed ceiling height.",
+  "wall_regions": [
+    {"id":"restroom_interfloor_fascia", "session":"lobby", "node":713, "model":"vertical_radial_profile", "polygon":[[110,0],[719,0],[719,135],[600,140],[450,180],[355,235],[110,302]], "evidence":"Opaque blue-gray fascia above the 1F restroom/vending area. The cropped top does not authorize extension outside this photograph.", "independent_review_nodes":[167,303,579], "upper_opaque_boundary":{"session":"floor2","node":282,"polygon":[[230,310],[500,300],[500,330],[230,340]],"method":"95th percentile of measured depth heights in the white parapet strip below the glazing; never extend the opaque curtain over the glass railing."}},
+    {"id":"restroom_interfloor_left_panel", "session":"lobby", "node":713, "model":"vertical_plane", "depth_max_m":5.5, "reuse_opaque_boundary":"restroom_interfloor_fascia", "polygon":[[110,0],[355,0],[355,235],[110,302]], "evidence":"The visibly flat left panel is a separate vertical face, not the curved balcony corner. 491 original moderate-or-high-confidence depth samples are available within 5.5m; no wall or floor height is guessed.", "independent_review_nodes":[167,579]},
+    {"id":"restroom_upper_wall_to_junction", "session":"floor2", "node":726, "model":"vertical_plane", "plane_index":3, "polygon":[[361,181],[719,53],[719,242],[594,263],[502,275],[490,307],[467,307],[460,251],[393,267]], "junction_pixels":[[365,181],[500,134],[713,56]], "evidence":"White wall above the women's/service door. Polygon stops at the visible wood-ceiling joint and above the actual doorway openings.", "independent_review_nodes":[724,728]},
+    {"id":"restroom_portal_upper_wall", "session":"floor2", "node":722, "model":"vertical_plane", "plane_index":3, "polygon":[[0,196],[430,125],[430,255],[141,282],[0,306]], "evidence":"Visible upper wall above the recessed restroom portal; central pier and doorway remain excluded.", "independent_review_nodes":[721,724]}
+  ],
+  "ceiling_regions": [
+    {"id":"restroom_local_ceiling_at_verified_joint", "session":"floor2", "node":726, "wall_region":"restroom_upper_wall_to_junction", "polygon":[[310,5],[719,5],[719,45],[368,173],[310,113]], "junction_pixels":[[365,181],[500,134],[713,56]], "independent_review_nodes":[724,728], "evidence":"Only the locally photographed wood ceiling next to the reviewed wall-top joint, never an entire 1F/2F footprint."}
+  ],
+  "minimum_valid_depth_samples": 30,
+  "maximum_plane_fit_p90_m": 0.06,
+  "maximum_junction_disagreement_m": 0.10,
+  "range_profile_bin_deg": 1.0,
+  "fascia_support_max_depth_m": 5.5,
+  "fascia_single_view_extended_minimum_confidence": 100,
+  "fascia_cross_view_agreement_m": 0.12,
+  "maximum_profile_internal_gap_deg": 4.0,
+  "maximum_junction_pixel_correction_px": 15.0,
+  "maximum_profile_angular_extrapolation_deg": 2.0,
+  "scope": "Assistant reviewed original pixels, not automated architectural semantics or surveyed topology. Preserve atrium, doors, windows, stairs; no whole-session height change or global ceiling generation."
+}

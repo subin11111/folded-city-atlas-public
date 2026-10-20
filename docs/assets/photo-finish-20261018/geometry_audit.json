@@ -1,0 +1,184 @@
+{
+  "created_utc": "2026-10-18T13:59:37.497905+00:00",
+  "bundle_manifest_sha256": "ec558a88a708d56ca10d676850f5e228418761c42d9ebb6e088517786f405997",
+  "sessions": {
+    "floor2": {
+      "retained_XYZ_exact": true,
+      "GLB_PLY_equal": true,
+      "floor_ceiling_geometry_retained": true,
+      "old_binary_and_images_preserved": true,
+      "removed_facade_triangles": 2463,
+      "added_photographic_sign_triangles": 1024,
+      "ply_sha256": "da294c37da12239f8160dc91c7286af3ce3103f9ceeb185bd97d76a31a30a231",
+      "glb_sha256": "cfaf05a86e8295bd8386e72d3acf4d61c5ca26ddd43d6708963521d6fe1cd950"
+    },
+    "lobby": {
+      "retained_XYZ_exact": true,
+      "GLB_PLY_equal": true,
+      "floor_ceiling_geometry_retained": true,
+      "old_binary_and_images_preserved": true,
+      "removed_facade_triangles": 0,
+      "added_photographic_sign_triangles": 0,
+      "ply_sha256": "cfa8ef07022040e33c126e8c4449d8e5195ab5f3319f5781219f45eb7b1826c3",
+      "glb_sha256": "cdd123c092c6d13c4397bb514606962d4e1f2b4c3d0d40a4d8833de2741d1c57"
+    },
+    "bridge_12_sub": {
+      "retained_XYZ_exact": true,
+      "GLB_PLY_equal": true,
+      "floor_ceiling_geometry_retained": true,
+      "old_binary_and_images_preserved": true,
+      "removed_facade_triangles": 0,
+      "added_photographic_sign_triangles": 0,
+      "ply_sha256": "a69203bb925ed3fd096c30452876bf0e20f1adb2c4d1ee853ebec26d72a7a4af",
+      "glb_sha256": "b67a9e58c6dc5fa51c2bdc493088365513c549df0ed1a8e946deb85252617668"
+    },
+    "bridge_out1f": {
+      "retained_XYZ_exact": true,
+      "GLB_PLY_equal": true,
+      "floor_ceiling_geometry_retained": true,
+      "old_binary_and_images_preserved": true,
+      "removed_facade_triangles": 0,
+      "added_photographic_sign_triangles": 0,
+      "ply_sha256": "fdecabfabfd803c5b95dde5f7b4dc436970badf92f5bd45db008a8104d459da5",
+      "glb_sha256": "05e5d207618451f929190ad55f59758099faff347d6a4a1bbfcc9b6e698947f2"
+    },
+    "outside": {
+      "retained_XYZ_exact": true,
+      "GLB_PLY_equal": true,
+      "floor_ceiling_geometry_retained": true,
+      "old_binary_and_images_preserved": true,
+      "removed_facade_triangles": 0,
+      "added_photographic_sign_triangles": 0,
+      "ply_sha256": "83a7e53ec311d093709f2065f169a250983525e56ef9c3f260ad2bce037c2723",
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58"
+    }
+  },
+  "prime_hall": [
+    {
+      "id": "floor2_prime_hall_complete_fascia",
+      "all_original_RGB_pixels_exact": true,
+      "source_node": 781,
+      "letter_components": [
+        {
+          "letter": "P",
+          "source_pixel_bbox": [
+            147,
+            259,
+            26,
+            41
+          ],
+          "glyph_pixels": 578,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "R",
+          "source_pixel_bbox": [
+            185,
+            262,
+            30,
+            42
+          ],
+          "glyph_pixels": 714,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "I",
+          "source_pixel_bbox": [
+            225,
+            265,
+            16,
+            41
+          ],
+          "glyph_pixels": 357,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "M",
+          "source_pixel_bbox": [
+            253,
+            268,
+            31,
+            41
+          ],
+          "glyph_pixels": 814,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "E",
+          "source_pixel_bbox": [
+            297,
+            272,
+            23,
+            40
+          ],
+          "glyph_pixels": 555,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "H",
+          "source_pixel_bbox": [
+            356,
+            278,
+            25,
+            38
+          ],
+          "glyph_pixels": 564,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "A",
+          "source_pixel_bbox": [
+            392,
+            282,
+            26,
+            37
+          ],
+          "glyph_pixels": 496,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "L",
+          "source_pixel_bbox": [
+            428,
+            284,
+            19,
+            36
+          ],
+          "glyph_pixels": 281,
+          "actual_sign_first_hit_fraction": 1.0
+        },
+        {
+          "letter": "L",
+          "source_pixel_bbox": [
+            457,
+            286,
+            19,
+            36
+          ],
+          "glyph_pixels": 297,
+          "actual_sign_first_hit_fraction": 1.0
+        }
+      ],
+      "H_first_hit_fraction": 1.0,
+      "plane_fit": {
+        "accepted": true,
+        "support_points": 1446,
+        "support_source": "same_frame_surrounding_frame_depth",
+        "median_plane_distance_m": 0.026513995263247922,
+        "p90_plane_distance_m": 0.05322603367163496
+      },
+      "scope": "Photo-plane glyph visibility from display-height-adjusted source camera; not surveyed positional accuracy."
+    }
+  ],
+  "selected_map_unchanged": true,
+  "source_database_hashes_unchanged": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "input_bindings_valid": true,
+  "audit_source_sha256": "fa05409a30d06ca0e6e480d1bc974dfc59f12b755abc3800633ebf474f74bc59",
+  "scope": "Retained geometry, exact source sign crop and visible photo glyphs. No claimed surveyed accuracy or removal of all unknown surface gaps."
+}

@@ -1,0 +1,9 @@
+.world-map{position:absolute;inset:0;z-index:0;background:#e9eee7;font-family:inherit}
+.world-map canvas{outline:none}
+.world-map .maplibregl-canvas-container{position:absolute;inset:0}
+.world-map-notice{position:absolute;left:16px;bottom:40px;z-index:4;background:#fffef1ed;color:#5a5639;border:1px solid #e4dfc3;border-radius:10px;padding:9px 12px;font-size:11px;max-width:calc(100% - 40px)}
+#threeCanvas>.local-scene-canvas{position:absolute;inset:0}
+.map-attribution{line-height:1.5}
+.world-map-tools{position:absolute;right:16px;bottom:164px;z-index:6;display:flex;gap:2px;padding:4px;border:1px solid #dce6df;border-radius:13px;background:#fffffff2;box-shadow:0 2px 10px #173d2910;font-size:11px}
+.world-map-tools[hidden]{display:none}.world-map-tools button{border:0;background:transparent;color:#435c4c;border-radius:9px;padding:9px;cursor:pointer;font:inherit;touch-action:manipulation}.world-map-tools button[aria-pressed=true]{background:#e7f2e9;color:#176044;font-weight:700}.world-map-tools [data-map-tool=north] span{display:inline-block;color:#176044}.world-map[data-interaction=rotate] canvas{cursor:grab}.world-map[data-interaction=rotate] canvas:active{cursor:grabbing}
+@media(max-width:650px){.world-map-tools{right:12px;bottom:153px;font-size:10px}.world-map-tools button{padding:9px 7px}}

@@ -1,0 +1,140 @@
+{
+  "created_utc": "2026-10-17T12:02:13.830375+00:00",
+  "pose_equivalence": [
+    {
+      "session": "outside",
+      "left": "J02",
+      "right": "J03",
+      "maximum_translation_mm": 0.39236971704366036,
+      "maximum_rotation_deg": 0.002322809167207683
+    },
+    {
+      "session": "outside",
+      "left": "J02",
+      "right": "J04",
+      "maximum_translation_mm": 1.3911036252047824,
+      "maximum_rotation_deg": 0.009450620753089401
+    },
+    {
+      "session": "lobby",
+      "left": "H02",
+      "right": "H03",
+      "maximum_translation_mm": 0.17304265072934194,
+      "maximum_rotation_deg": 0.00031467864610010965
+    },
+    {
+      "session": "bridge_out1f",
+      "left": "H02",
+      "right": "H03",
+      "maximum_translation_mm": 0.0,
+      "maximum_rotation_deg": 0.0
+    },
+    {
+      "session": "bridge_12_sub",
+      "left": "H02",
+      "right": "H03",
+      "maximum_translation_mm": 0.0007767689817163761,
+      "maximum_rotation_deg": 5.216875914857421e-06
+    },
+    {
+      "session": "bridge_12_sub",
+      "left": "H02",
+      "right": "H04",
+      "maximum_translation_mm": 1.8393752010755147,
+      "maximum_rotation_deg": 0.014845154683851107
+    }
+  ],
+  "substairs_training_closure": [
+    {
+      "candidate": "O00",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.45630460702488224,
+      "source_overlap": 0.396484375,
+      "target_overlap": 0.5373831775700935,
+      "rmse_m": 0.14727692069789913,
+      "clipped_rmse_m": 0.1776680587779229,
+      "pairs": 433
+    },
+    {
+      "candidate": "H02",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.6444165970481761,
+      "source_overlap": 0.5703125,
+      "target_overlap": 0.7406542056074766,
+      "rmse_m": 0.12055100019555744,
+      "clipped_rmse_m": 0.15329820432295158,
+      "pairs": 609
+    },
+    {
+      "candidate": "H03",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.6444165970481761,
+      "source_overlap": 0.5703125,
+      "target_overlap": 0.7406542056074766,
+      "rmse_m": 0.12055089995325712,
+      "clipped_rmse_m": 0.15329815325198173,
+      "pairs": 609
+    },
+    {
+      "candidate": "H04",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.6444165970481761,
+      "source_overlap": 0.5703125,
+      "target_overlap": 0.7406542056074766,
+      "rmse_m": 0.12052636594710034,
+      "clipped_rmse_m": 0.15328565454886084,
+      "pairs": 609
+    },
+    {
+      "candidate": "N05",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.6078029655396044,
+      "source_overlap": 0.53515625,
+      "target_overlap": 0.7032710280373832,
+      "rmse_m": 0.12531275844043685,
+      "clipped_rmse_m": 0.15854857055345742,
+      "pairs": 575
+    },
+    {
+      "candidate": "N06",
+      "a": 75,
+      "b": 209,
+      "edge_id": "extra:bridge_12_sub:75:bridge_12_sub:209:8",
+      "role": "TRAINING_CORRELATED_DIAGNOSTIC_NOT_HOLDOUT",
+      "overlap": 0.6158267406792255,
+      "source_overlap": 0.544921875,
+      "target_overlap": 0.7079439252336449,
+      "rmse_m": 0.1221485417652211,
+      "clipped_rmse_m": 0.15643500098309243,
+      "pairs": 582
+    }
+  ],
+  "database_unchanged": true,
+  "default_map_modified": false,
+  "source_hashes": {
+    "/home/subin/folded-city-atlas/docs/assets/visual-shortlist-review/summary.json": "3dffb441c1126b02e786ce6e26edc55660cf86054079964b218b847ab630a5b9",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/isolation/bridge_12_sub/manifest.json": "73249780770dbb12522e35a405f4394df36918ef209e455bb0ab380902359b0b",
+    "/home/subin/folded-city-atlas/src/supplement_visual_shortlist.py": "eb73b7d0e3bd8a097b1803b30bdc2a4d2b143163fe57e238ee4e2f3adeb40761",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/O00.csv": "4c50897f8614140c86fead01f8b0681645d3e3f5edebe0a5d9c55ffd499eb629",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/H02.csv": "de14c88af64670d9f06357c6394b305b7b5096a3329d2ada22cffcca14fa7778",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/H03.csv": "e45a8e6669f425090583a65b61f658d7c10e1f4b7314aefc4a9832d5f3c4b320",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/H04.csv": "ada5de632c1c17d3fd05cecf9c54331b60459d7627a901486fa562a5b7dfce80",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/N05.csv": "bdf65b1f2a98d55defb83af07a02e8dcdde28b4eff18e60484c9f257da0f5af1",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/N06.csv": "315ea5d45328b41bd38d6ca4ff92e87d8b4fef7a5ed9188e8997107274a41b7e"
+  }
+}

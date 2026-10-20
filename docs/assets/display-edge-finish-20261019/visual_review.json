@@ -1,0 +1,16 @@
+{
+  "review_date_local": "2026-10-19",
+  "acceptance_basis": "Direct inspection of actual same-camera 800x800 before/after renders and native_scene_render.png; not numerical seam scores.",
+  "user_selected_material": "student_union_joint_material_v15",
+  "boundary_finish": "student_union_edge_finish_v18",
+  "rejected_candidate": {"bundle":"student_union_edge_finish_v16", "observation":"New small triangular floor cracks visible in the actual floor2:892 render; not promoted."},
+  "views": [
+    {"view":"floor2:892:-15", "observation":"Preferred floor colour/grain retained. The newly introduced v16 triangular cracks are absent."},
+    {"view":"floor2:720:-15", "observation":"Small column/wall contour teeth soften modestly. Large missing silhouette above door remains; not filled."},
+    {"view":"floor2:905:8", "observation":"Ceiling photo handover is somewhat softer. Broad patch outlines remain visible. Complex flower geometry remains."},
+    {"view":"floor2:781:0", "observation":"Full PRIME HALL including H remains visible."},
+    {"view":"lobby:516:15", "observation":"Open central atrium remains. Large upper observation-ending contours remain uneven."},
+    {"view":"lobby:811:12", "observation":"Shinhan heading and overall preferred floor appearance retained."}
+  ],
+  "limitation":"Bounded small-edge finish, not removal of every photo patch, reconstruction of unobserved geometry or navigation approval. Original raw photographs remain unchanged."
+}

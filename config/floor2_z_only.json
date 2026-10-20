@@ -1,0 +1,38 @@
+{
+  "status": "EXPERIMENTAL_Z_ONLY_CANDIDATES_NOT_A_MAP_REPLACEMENT",
+  "source_manifest": "outputs/student_union_selected_20261017_v1/manifest.json",
+  "session": "floor2",
+  "adjustable_frame_interval": [216, 1055],
+  "hard_fixed_knots": [216, 553, 1055],
+  "knot_stride_frames": 20,
+  "maximum_absolute_z_correction_m": 0.35,
+  "maximum_adjacent_correction_step_m": 0.035,
+  "maximum_floor_band_regression_m": 0.005,
+  "horizontal_normal_max_difference_deg": 8.0,
+  "common_xy_support_radius_m": 0.20,
+  "minimum_common_xy_training_points": 25,
+  "additional_floor_pairs": [
+    {"a": 282, "b": 728, "plane_a": 0, "plane_b": 0, "role": "train", "region": "restroom", "basis": "Reviewed same upper-restroom floor area; frozen original depth patches, not camera-height equality."},
+    {"a": 280, "b": 726, "plane_a": 0, "plane_b": 0, "role": "audit", "region": "restroom", "basis": "Neighbouring original photos; correlated development audit, not independent survey."}
+  ],
+  "training_pairs": [
+    {"a": 620, "b": 1025, "region": "north_corridor"},
+    {"a": 644, "b": 1034, "region": "north_corridor"},
+    {"a": 656, "b": 1055, "region": "south_landing"},
+    {"a": 789, "b": 859, "region": "west_corridor"},
+    {"a": 828, "b": 892, "region": "southwest_corridor"},
+    {"a": 927, "b": 948, "region": "northwest_corridor"}
+  ],
+  "extra_floor_observation_nodes": [260, 280, 282, 553, 726, 728, 1055],
+  "same_level_floor_centre_band_m": [2.2, 3.05],
+  "floor_centre_region_cell_m": 5.0,
+  "floor_observation_scope": "Reviewed upper-level below-camera depth patches, excluding stair intervals. Common floor-level prior is an explicit modelling assumption; no surveyed level supplied. Never constrain camera Z to be constant.",
+  "variants": [
+    {"id": "Z01", "pair_sigma_m": 0.04, "offset_prior_sigma_m": 0.15, "increment_sigma_m_per_sqrt_m": 0.035, "floor_level_sigma_m": 0.10},
+    {"id": "Z02", "pair_sigma_m": 0.03, "offset_prior_sigma_m": 0.25, "increment_sigma_m_per_sqrt_m": 0.05, "floor_level_sigma_m": 0.065},
+    {"id": "Z03", "pair_sigma_m": 0.025, "offset_prior_sigma_m": 0.35, "increment_sigma_m_per_sqrt_m": 0.07, "floor_level_sigma_m": 0.04}
+  ],
+  "preferred_variant_before_audits": "Z02",
+  "huber_delta": 2.5,
+  "limits": "X/Y, all rotations, lower-floor/main-stair poses and current cross-session attachment frame 553 remain exact. No full-floor height collapse across stairs, no global rigid refit, no app/H00 Z copy. Original selected map stays immutable."
+}

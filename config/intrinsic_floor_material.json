@@ -1,0 +1,9 @@
+{
+  "source_bundle":"outputs/student_union_visual_floor_v10",
+  "illumination_radius_m":0.45,
+  "target_linear_luminance":0.20,
+  "gain_bounds":[0.18,5.0],
+  "grain_source":"outputs/student_union_roadview_v1/floor2/photos/00892.jpg",
+  "grain_crop":[30,770,170,900],
+  "scope":"Visual material candidate, not calibrated albedo. Remove baked floor lighting using a smooth scalar luminance field, preserving spatial tile pattern, black accents, joints and RGB chromaticity. Textureless/overexposed stone gets zero-mean high-frequency grain from a real floor photograph only; no invented tile grid or black accents. Raw roadview photographs and all geometry unchanged. Promotion requires direct same-camera visual inspection."
+}

@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-16T18:54:27.369888+00:00",
+  "script": "src/publish_geometry_evidence.py",
+  "script_sha256": "941171ed6eec8fd03952ab4c0986124218e537cd28426e76ecacf0630e79a34b",
+  "pillow_version": "12.3.0",
+  "argv": [
+    "src/publish_geometry_evidence.py",
+    "--include-final"
+  ],
+  "image_count": 27,
+  "total_image_bytes": 17789142,
+  "all_decoded_pixels_verified_identical": true,
+  "no_synthetic_or_reconstructed_screenshots": true,
+  "image_metadata_note": "Source embedded metadata may be stripped; image dimensions and RGBA pixel values are unchanged.",
+  "gallery_note": "Selected historical and current experiment evidence; captions identify stages and limits. Original full outputs remain local.",
+  "images": [
+    {
+      "source": "outputs/student_union_20261017_all_preview/bundle/rviz_all_preview_screenshot.png",
+      "destination": "historic_rviz_preview.png",
+      "stage": "00_historical_exploratory_preview",
+      "caption": "이전 작업에서 실제 RViz로 표시한 외부·로비·2층·두 브리지 통합 미리보기.",
+      "limitations": "과거 화면이며 이번 재최적화 결과가 아니다. 통합 배치는 미검증 가설이고 RViz 정상 표시는 지도 정확도를 보증하지 않는다.",
+      "source_sha256": "d482c2ef8b5f3a9e7dd74e6f44852324a63050c58ddd5b9a4b53ad0d8e440aae",
+      "source_bytes": 704504,
+      "destination_sha256": "6c30e64519e0edd17d0c08b954191dc814f9649f4fa05ff25df5d0da307e3d9d",
+      "destination_bytes": 698516,
+      "dimensions_pixels": [
+        1792,
+        900
+      ],
+      "decoded_rgba_sha256": "1f5f95ba941a4851f021aa9c8d7380049bd5bbfb03d28971051f0829b1e701a4",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_added_reviewed/bridge_12_sub/trajectory_comparison.png",
+      "destination": "historic_substairs_trajectories.png",
+      "stage": "01_prior_session_optimization",
+      "caption": "이전 서브 계단 세션의 원본·앱·오프라인 포즈 궤적 및 카메라 높이 비교.",
+      "limitations": "카메라 높이는 휴대폰 움직임을 포함하므로 실측 층고가 아니다. 이전 실험의 기존 그림을 보존했다.",
+      "source_sha256": "0abd6ac5ff098ffccbf3a1790980791781d425e2149d6c891f8ec28b496c47f8",
+      "source_bytes": 275272,
+      "destination_sha256": "81ad696c653db2017a702cdbec4627c9f28104faac13ac71f9f4a03246185e3b",
+      "destination_bytes": 244845,
+      "dimensions_pixels": [
+        2550,
+        781
+      ],
+      "decoded_rgba_sha256": "3cb4b75cef235b62a42b90af888165b8e94460a57b4250b97f94fd044caf1477",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_added_reviewed/floor2/cloud_comparison.png",
+      "destination": "historic_floor2_cloud_comparison.png",
+      "stage": "01_prior_session_optimization",
+      "caption": "이전 2층 처리의 원본·앱 저장·오프라인 최적화 점군을 같은 축 범위에서 비교.",
+      "limitations": "동일한 RGB-D와 필터를 사용한 과거 결과이며 이번 단계의 최종 승인 지도는 아니다. 표시 범위는 원본 그림의 0.5–99.5 백분위이다.",
+      "source_sha256": "93b058e31fc3b682e7da943425d0e3cfcd4d26a6bb8b504333754ccfa393f372",
+      "source_bytes": 2923685,
+      "destination_sha256": "472bb991bbcf47ca8f91bf0c0072bb667114b851ccd82d75b24b236a9c19d48f",
+      "destination_bytes": 2565610,
+      "dimensions_pixels": [
+        2720,
+        1530
+      ],
+      "decoded_rgba_sha256": "50ffbbc5ff181ef71085943131a8d50ecc48a01b7bb8710ccffbf814ea2712d5",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/baselines/outside/worst_wall.png",
+      "destination": "baseline_outside_worst_wall.png",
+      "stage": "02_baseline_wall_diagnosis",
+      "caption": "outside: 가장 큰 기준 벽 불일치의 동일 관측·동일 축 단면과 원본 RGB 프레임.",
+      "limitations": "벽 대응은 기존 루프 측정에서 선정한 국소 평면 가설이다. 실측 오차가 아니며 반사면 깊이 편향이나 잘못된 대응 가능성이 남아 있다.",
+      "source_sha256": "6e3ba96b4756ab04cfe7ba7dbc06181981ea79600f9d4e5488aff3d90c052626",
+      "source_bytes": 735982,
+      "destination_sha256": "b1ec7328915d7e15b4a139a8aa1eeded6257212419efec28ce88bfcb77cd6c31",
+      "destination_bytes": 634126,
+      "dimensions_pixels": [
+        2400,
+        1440
+      ],
+      "decoded_rgba_sha256": "f978279c9adae64bcfdf599b072cc60be823234d4bb8569c904bac890ca7c33a",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/baselines/lobby/worst_wall.png",
+      "destination": "baseline_lobby_worst_wall.png",
+      "stage": "02_baseline_wall_diagnosis",
+      "caption": "lobby: 가장 큰 기준 벽 불일치의 동일 관측·동일 축 단면과 원본 RGB 프레임.",
+      "limitations": "벽 대응은 기존 루프 측정에서 선정한 국소 평면 가설이다. 실측 오차가 아니며 반사면 깊이 편향이나 잘못된 대응 가능성이 남아 있다.",
+      "source_sha256": "88a9e89b24d98bd6eb39d9b6063c1fbc83a1031aa258d53c9e811e25e9b94226",
+      "source_bytes": 489789,
+      "destination_sha256": "b8f13a502398e87a5fa207d30c90b7178a2fe78fc3e23fdd7fb3e77511b09827",
+      "destination_bytes": 426211,
+      "dimensions_pixels": [
+        2400,
+        1440
+      ],
+      "decoded_rgba_sha256": "d69746ef89f8468b0a944fa3c6c3357da63a5458233a9b5f421149d4b0074249",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/baselines/floor2/worst_wall.png",
+      "destination": "baseline_floor2_worst_wall.png",
+      "stage": "02_baseline_wall_diagnosis",
+      "caption": "floor2: 가장 큰 기준 벽 불일치의 동일 관측·동일 축 단면과 원본 RGB 프레임.",
+      "limitations": "벽 대응은 기존 루프 측정에서 선정한 국소 평면 가설이다. 실측 오차가 아니며 반사면 깊이 편향이나 잘못된 대응 가능성이 남아 있다.",
+      "source_sha256": "78b8d0c24ce51ca0211381081bbd728e150d162148cfa739540980026abb64e1",
+      "source_bytes": 670773,
+      "destination_sha256": "425e8295768576a8abbe32a1ad9e5b46661c7fed4b93b62128fba56fae249ed3",
+      "destination_bytes": 576676,
+      "dimensions_pixels": [
+        2400,
+        1440
+      ],
+      "decoded_rgba_sha256": "e60e7a408297495d10a9bf42812df95679600bde65b922c1756bba5b332635e2",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/baselines/lobby/cloud_baselines.png",
+      "destination": "baseline_lobby_clouds.png",
+      "stage": "02_baseline_selection",
+      "caption": "lobby: 같은 RGB-D 샘플을 원본·앱·기존 오프라인 포즈로 투영한 동일 축 비교. 색은 촬영 순서.",
+      "limitations": "전체 지도에서 일부 프레임·점만 결정적으로 샘플링한 진단용 그림이다. frozen은 추가 최적화의 임시 기준이며 검증 완료를 뜻하지 않는다.",
+      "source_sha256": "6f750f1d39d6f7b2bedd3915ad222da86a32f409f27abb2897d0c640b97cbe1e",
+      "source_bytes": 593218,
+      "destination_sha256": "11e43111895bb39a4cbcbdb13a6385f0c233bd0ca41247dd6ce100f4ca08690a",
+      "destination_bytes": 527545,
+      "dimensions_pixels": [
+        2250,
+        1350
+      ],
+      "decoded_rgba_sha256": "82c5f0c4bd97a5783eeaee41d60ed537ae63bfd4921ee366ad2c2a8fdb207a05",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/baselines/floor2/cloud_baselines.png",
+      "destination": "baseline_floor2_clouds.png",
+      "stage": "02_baseline_selection",
+      "caption": "floor2: 같은 RGB-D 샘플을 원본·앱·기존 오프라인 포즈로 투영한 동일 축 비교. 색은 촬영 순서.",
+      "limitations": "전체 지도에서 일부 프레임·점만 결정적으로 샘플링한 진단용 그림이다. frozen은 추가 최적화의 임시 기준이며 검증 완료를 뜻하지 않는다.",
+      "source_sha256": "63d0134164b368ed8fdf50168393dad6c055ee71a5397d6760518e7a8c3a7502",
+      "source_bytes": 1206547,
+      "destination_sha256": "4f36af26899c5e0cd4cef3f314fa6cac7856eb8c73fdd32a1c33f86bdc34fe89",
+      "destination_bytes": 1076512,
+      "dimensions_pixels": [
+        2250,
+        1350
+      ],
+      "decoded_rgba_sha256": "abf7ebff11f940fcc1341d52570b702a8096e8372b71a4f7a9e9a4fb743e0143",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/floor2/548_981/holdout_before_after.png",
+      "destination": "local_floor2_548_981_before_after.png",
+      "stage": "03_local_surface_refinement",
+      "caption": "floor2 548_981: 국소 RGB-D 표면 재정합 전후의 예약 샘플 비교.",
+      "limitations": "국소 상대 변환 실험이다. 훈련과 같은 관측의 예약 샘플은 독립 실측이 아니며 국소 개선이 전체 지도 개선을 보증하지 않는다.",
+      "source_sha256": "c67a3ca99d7ac9c04ab41e0efc0d2ea77d71a15b813ae41cdea268d184935701",
+      "source_bytes": 597292,
+      "destination_sha256": "25956476629fab48ab02d8f434dca720df0849bc65a173c148f6a891344bc122",
+      "destination_bytes": 527161,
+      "dimensions_pixels": [
+        2687,
+        1440
+      ],
+      "decoded_rgba_sha256": "b8888a8f5bb79294f1c908c427773acef05cc19468730f321d79797a13116e4e",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/lobby/595_650/holdout_before_after.png",
+      "destination": "local_lobby_595_650_before_after.png",
+      "stage": "03_local_surface_refinement",
+      "caption": "lobby 595_650: 국소 RGB-D 표면 재정합 전후의 예약 샘플 비교.",
+      "limitations": "국소 상대 변환 실험이다. 훈련과 같은 관측의 예약 샘플은 독립 실측이 아니며 국소 개선이 전체 지도 개선을 보증하지 않는다.",
+      "source_sha256": "48663153e6e521ca96569d21985bdf06040745dae261c4d30df0775e92774b6e",
+      "source_bytes": 784560,
+      "destination_sha256": "11d170f828246445928d00bbdd7671943a2b7c3cae844b6bed9dad5291d1bcde",
+      "destination_bytes": 690268,
+      "dimensions_pixels": [
+        2687,
+        1440
+      ],
+      "decoded_rgba_sha256": "1bbc1fa97b6db24cafbe107c80e23afdb0eb46b1d71a6eab00c0753633524dff",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/near_holdouts/floor2/548_981/near_frame_before_after.png",
+      "destination": "near_floor2_548_981.png",
+      "stage": "04_near_frame_audit",
+      "caption": "floor2 548_981: 정합에 사용하지 않은 인접 프레임에서 국소 변환을 평가.",
+      "limitations": "인접 촬영 프레임은 시공간적으로 상관되어 있다. 개선되지 않은 구간도 그대로 표시하며 독립 외부 검증으로 부르지 않는다.",
+      "source_sha256": "8fad1aa209056aa753c0695810a006474793f10719c6b94f6511953822bba927",
+      "source_bytes": 617933,
+      "destination_sha256": "c789df6e28d31f80b8fb31c58da3baa5d8847c72dd39557460774bc65c005af0",
+      "destination_bytes": 545980,
+      "dimensions_pixels": [
+        2687,
+        1440
+      ],
+      "decoded_rgba_sha256": "1c18526a3fe71e3381dab7b9255e5ec4a80854b2ef28dde834c57b8ac8a2fa55",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/near_holdouts/lobby/595_650/near_frame_before_after.png",
+      "destination": "near_lobby_595_650.png",
+      "stage": "04_near_frame_audit",
+      "caption": "lobby 595_650: 정합에 사용하지 않은 인접 프레임에서 국소 변환을 평가.",
+      "limitations": "인접 촬영 프레임은 시공간적으로 상관되어 있다. 개선되지 않은 구간도 그대로 표시하며 독립 외부 검증으로 부르지 않는다.",
+      "source_sha256": "70448b46aa10f95befb0e59dac576b99b9cd3a95966c93bec5a2fdb1e44457f7",
+      "source_bytes": 585276,
+      "destination_sha256": "040fb54683b4c41766036710791f5d3e438f2ca19d6c34309ef404c925d58c2c",
+      "destination_bytes": 518993,
+      "dimensions_pixels": [
+        2687,
+        1440
+      ],
+      "decoded_rgba_sha256": "377f7aa08b1dd425008fdf72607a69ec285f8f7b28b500ed1912102b19c9a01a",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/surface_refinement_progression.png",
+      "destination": "surface_refinement_progression.png",
+      "stage": "04_local_ablation_summary",
+      "caption": "문제 표면 재정합과 주변 프레임 검사 단계별 측정 결과.",
+      "limitations": "국소 측정과 전역 포즈 그래프는 다른 단계다. 이 비교만으로 새 지도를 승인하지 않는다.",
+      "source_sha256": "234d29d6d94ac11f4501a16814b5e5029ce5a81454d31d7325b4a90093297ef7",
+      "source_bytes": 132057,
+      "destination_sha256": "65cd286c4aad07ecaf45df329de4636c771aade90be92358a26f45335c1d8d31",
+      "destination_bytes": 113768,
+      "dimensions_pixels": [
+        2380,
+        1530
+      ],
+      "decoded_rgba_sha256": "f23a31fc432da66d0242c160d1508aefedab3b2a8d4d4f30f200c757ef212adf",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/connections/connection_search_summary.png",
+      "destination": "connection_search_summary.png",
+      "stage": "05_cross_session_search_before_union_audit",
+      "caption": "과거 검증 픽셀 합집합 제외 전의 초기 세션 간 탐색 진단. 최종 채택 제약 수가 아니다.",
+      "limitations": "이 그림의 통과 수는 잠정 결과이다. 이후 검증 깊이 영역 합집합과 기존 7cm 기준을 적용하여 176/51 및 396/208을 철회했다. 최종 새 적격 대응은 495/85이며 112/14는 기존 대응의 중복이다. 최종 입력은 connections/union_audit/graph_candidates.json을 확인한다. 연속 프레임·매칭 수는 독립 구역 수가 아니다.",
+      "source_sha256": "9b7e0c82aae96a5f84101424c82c146a791d97f6b1abf3de9fd994593647a301",
+      "source_bytes": 94324,
+      "destination_sha256": "50e3c1ac478b47b25ec5c579cd48d77c55d102f42ff6b70d3c48363e2d5a61d2",
+      "destination_bytes": 82109,
+      "dimensions_pixels": [
+        2340,
+        900
+      ],
+      "decoded_rgba_sha256": "b29818502c001e9cfaaf5395cfc68656e5dc122f070a583f24823702499e5010",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/plane_reviewed/548_981_wall_patch_projection.png",
+      "destination": "plane_548_981_wall_projection.png",
+      "stage": "06_finite_plane_support_review",
+      "caption": "2층 548_981: wall 국소 평면의 학습·예약 깊이 점을 저장된 보정값으로 원본 RGB에 재투영.",
+      "limitations": "검토된 실제 유한 표면 지지점이다. 이 평면의 학습 점은 같은 표면 가설에 사용되므로 최종 독립 검증으로 계산하지 않는다. 관측하지 않은 곳까지 벽이나 지면을 연장하지 않는다.",
+      "source_sha256": "87c9cc59eb803484561f08d458de385bf055a4ff1189a7f5f633d2ee53325e18",
+      "source_bytes": 1552573,
+      "destination_sha256": "56051785cd02b0da4c464a71ffd0936c4878d4004ef6a081704a58fc20ae5218",
+      "destination_bytes": 1302472,
+      "dimensions_pixels": [
+        1500,
+        1800
+      ],
+      "decoded_rgba_sha256": "e7885f4be03c98c8ec174ace86aad5da04ff473a3265554f74dc9864a76822c1",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/surfaces/plane_reviewed/503_961_horizontal_patch_projection.png",
+      "destination": "plane_503_961_horizontal_projection.png",
+      "stage": "06_finite_plane_support_review",
+      "caption": "2층 503_961: horizontal 국소 평면의 학습·예약 깊이 점을 저장된 보정값으로 원본 RGB에 재투영.",
+      "limitations": "검토된 실제 유한 표면 지지점이다. 이 평면의 학습 점은 같은 표면 가설에 사용되므로 최종 독립 검증으로 계산하지 않는다. 관측하지 않은 곳까지 벽이나 지면을 연장하지 않는다.",
+      "source_sha256": "5e890876c5cdf0bdbbfd7c9c9632ac38b9f96af5f42fec5e41e8a369aa58b193",
+      "source_bytes": 1769306,
+      "destination_sha256": "fb8d82118be93ee8a0d37b67f14641ef14ef6a758d6b925187a5605e2a63e3fe",
+      "destination_bytes": 1499644,
+      "dimensions_pixels": [
+        1500,
+        1800
+      ],
+      "decoded_rgba_sha256": "a18f9f6477e63a47c33c80526b616fe5ac6a4df7fb2dae43edf25ac354b61c72",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/connections/manual_feasibility/lobby_39__bridge_out1f_79_manual_corner_audit.jpg",
+      "destination": "manual_lobby_bridge_corner_audit.png",
+      "stage": "05_manual_correspondence_feasibility",
+      "caption": "로비39–외부 브리지79의 실제 문틀 모서리를 수동 검토한 대응과 깊이 유효성.",
+      "limitations": "8개 모서리 중 양쪽 깊이가 유효한 것은 3개이다. 수동 클릭 오차는 약 ±5픽셀이고 사후 검토이며 실측 기준점·새 독립 검증이 아니다. 새 그래프 제약으로 승격하지 않았다.",
+      "source_sha256": "08cfb0867b14fe416ded5b4f67c80a7008bdcc6f1a095d882c6324d313411230",
+      "source_bytes": 249661,
+      "destination_sha256": "74810147a0c1fc7d5c5f498e30df88f9de2e35f3bfad7877701d45c2fb883190",
+      "destination_bytes": 800519,
+      "dimensions_pixels": [
+        1440,
+        1070
+      ],
+      "decoded_rgba_sha256": "6284c669f41f8577ab30e38c5d49c518f47b12bb415bd30270570a598d8bbaca",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/connections/progress/connection_recovery_progress.png",
+      "destination": "connection_recovery_progress.png",
+      "stage": "05_final_cross_session_union_audit",
+      "caption": "교차 세션 후보 415쌍과 PnP 추정 67개를 조사하고 과거 모든 예약 깊이 영역을 제외한 최종 재검증 결과.",
+      "limitations": "초기 4개 통과 중 과거 예약 샘플 재검증을 통과한 것은 2개이며, 기존 대응 중복을 제외한 새 그래프 후보는 로비495–서브 계단85 한 쌍이다. 이는 독립된 여러 연결 구역 확보 또는 전역 지도 승인과 다르다.",
+      "source_sha256": "7fcc979861b39755264e0dfedcf99dc4bb1ae3b7c62a4b87764172ce5ae38886",
+      "source_bytes": 111209,
+      "destination_sha256": "d7ca56ffbdf85e2b6a455b13154bcb14af7d230d0e5bdbeb011d762700fa355b",
+      "destination_bytes": 90708,
+      "dimensions_pixels": [
+        2520,
+        900
+      ],
+      "decoded_rgba_sha256": "60c375caf44b3fb314dd8d962230187b4c8c703ed76fb00cb5489c60367542c9",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/connections/progress/stair_pair_alignment_progress.png",
+      "destination": "stair_pair_alignment_progress.png",
+      "stage": "05_local_stair_connection_progress",
+      "caption": "로비495–서브 계단85의 같은 국소 관측과 19개 예약 대응에서 이전 배치·비대칭 PnP·과거 예약 영역 합집합 제외 PnP를 비교.",
+      "limitations": "국소 예약 대응 RMSE는 14.76cm에서 5.23cm로 감소했다. 이 쌍만의 상대 변환 평가이며 독립 실측 또는 공동 최적화된 전체 지도의 정확도가 아니다. 동일 crop·축 범위를 유지했다.",
+      "source_sha256": "4a83ea74232d2d6677429a27cac89e50d593a790744461340bf0d681c7ca94ed",
+      "source_bytes": 1250967,
+      "destination_sha256": "9c9a1bbb29d11b87265b35ee413c36daa7bab37d5321b331ad0b793e403e6167",
+      "destination_bytes": 1098756,
+      "dimensions_pixels": [
+        2800,
+        1600
+      ],
+      "decoded_rgba_sha256": "12c1bf62f09d27333b07bd29789356d3604735f511a4652039c38048aaf25033",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/figures/01_global_progress.png",
+      "destination": "final_global_progress.png",
+      "stage": "07_global_graph_progression",
+      "caption": "이전 RViz 배치, 고정 기준, 강건 포즈 그래프 및 법선·유한 평면 제약 실험의 실제 점군 진행 과정.",
+      "limitations": "동일 RGB-D 샘플과 공통 표시 축의 단계별 비교이다. 연결되지 않은 세션의 표시 위치는 탐색용이며 모든 후보는 검증 한계를 갖는다. 학습 표면의 개선을 독립 정확도 향상으로 해석하지 않는다.",
+      "source_sha256": "395fdb966bdbe6efc115ca85abfaa5afd57895a2bdd4e113a9c02c4bcf772787",
+      "source_bytes": 1479882,
+      "destination_sha256": "ccd416a4d7a64d45515d1f1817a0bc4b0fdd430d226f386f2c087922d78304a2",
+      "destination_bytes": 1337633,
+      "dimensions_pixels": [
+        3000,
+        1350
+      ],
+      "decoded_rgba_sha256": "10abaaec06a9b29c07b28b13fb764171e22c0dbe9eded4b45bdbd6c34e3edae6",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/figures/03_floor2548_floor2981.png",
+      "destination": "final_floor2_wall_progress.png",
+      "stage": "07_global_graph_progression",
+      "caption": "2층548–981의 동일 관측을 전역 포즈 그래프 단계별로 재투영한 벽 중복 비교.",
+      "limitations": "동일 RGB-D 샘플과 공통 표시 축의 단계별 비교이다. 연결되지 않은 세션의 표시 위치는 탐색용이며 모든 후보는 검증 한계를 갖는다. 학습 표면의 개선을 독립 정확도 향상으로 해석하지 않는다.",
+      "source_sha256": "e2ce27721467674fbd1b3f8d9c1424a73762cfe78426edd453cd82c084ad79c4",
+      "source_bytes": 670781,
+      "destination_sha256": "503461d759e5c0fc5614d292943be1870688ceab439189ecd35c61bfa911a99b",
+      "destination_bytes": 628755,
+      "dimensions_pixels": [
+        3000,
+        1350
+      ],
+      "decoded_rgba_sha256": "52714598d4232825dd9b1b3bf91143a01d4187e09a8660d7d37594ed4c96244d",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/figures/03_outside69_outside323.png",
+      "destination": "final_outside_wall_progress.png",
+      "stage": "07_global_graph_progression",
+      "caption": "외부69–323의 동일 관측을 전역 포즈 그래프 단계별로 재투영한 벽 중복 비교.",
+      "limitations": "동일 RGB-D 샘플과 공통 표시 축의 단계별 비교이다. 연결되지 않은 세션의 표시 위치는 탐색용이며 모든 후보는 검증 한계를 갖는다. 학습 표면의 개선을 독립 정확도 향상으로 해석하지 않는다.",
+      "source_sha256": "ae288ec8410e3f824cc24452a34d9c5e8d68b1642efac1b5e74419022a97e2b4",
+      "source_bytes": 468313,
+      "destination_sha256": "a49f67b431b8fcc1676e6b32152eaf17a0391c614e3703c1f2e0194b80c6611e",
+      "destination_bytes": 410506,
+      "dimensions_pixels": [
+        3000,
+        1350
+      ],
+      "decoded_rgba_sha256": "0f9ba38f9c1471f3fd6f4f846433c0959d81216712e619b00d0dcbf353049772",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/figures/04_height_profiles.png",
+      "destination": "final_height_profiles.png",
+      "stage": "07_global_graph_progression",
+      "caption": "주 계단·서브 계단 촬영의 카메라 Z 변화 비교. 실제 층고 실측값은 아니다.",
+      "limitations": "동일 RGB-D 샘플과 공통 표시 축의 단계별 비교이다. 연결되지 않은 세션의 표시 위치는 탐색용이며 모든 후보는 검증 한계를 갖는다. 학습 표면의 개선을 독립 정확도 향상으로 해석하지 않는다.",
+      "source_sha256": "f60cb135976b6e7289a240c0f6d83a279b4592f3ebe3704260b0a1ad53b99c6c",
+      "source_bytes": 244120,
+      "destination_sha256": "2405b1cd6f282f6012b9f96c2501834ded631b3f31232497ab1c09d46d21ac16",
+      "destination_bytes": 217828,
+      "dimensions_pixels": [
+        2250,
+        750
+      ],
+      "decoded_rgba_sha256": "f7c70c2a8c577a3c3a5e8cbf53b13017ab2a59b51772fcf4be03697b0c8d9825",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/figures/05_added_evidence_ablation.png",
+      "destination": "final_added_evidence_ablation.png",
+      "stage": "07_global_graph_progression",
+      "caption": "같은 제한 SE(3) 풀이에서 추가 측정 전후의 동일 관측 비교.",
+      "limitations": "동일 RGB-D 샘플과 공통 표시 축의 단계별 비교이다. 연결되지 않은 세션의 표시 위치는 탐색용이며 모든 후보는 검증 한계를 갖는다. 학습 표면의 개선을 독립 정확도 향상으로 해석하지 않는다.",
+      "source_sha256": "932d560936a3abf3dc6ebd89cf466efc2134b9c5b0504eebefda91e02805e879",
+      "source_bytes": 760826,
+      "destination_sha256": "30d3bb847e0577ab0ecf73325a0bd4baac3d7f23e8e245e2545584efb6c2e4e2",
+      "destination_bytes": 688324,
+      "dimensions_pixels": [
+        1500,
+        1350
+      ],
+      "decoded_rgba_sha256": "7073cd41cfbb735e929ab7aed5c9c453c30343592e08cfe896d87951ed385a17",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/evaluation/final/finite_patch_progression.png",
+      "destination": "final_finite_patch_metrics.png",
+      "stage": "08_final_fixed_patch_evaluation",
+      "caption": "고정된 실제 벽·수평면 관측에 대해 원본 기준과 전역 최적화 단계의 잔차를 비교.",
+      "limitations": "학습에 포함된 유한 평면과 사용하지 않은 진단 구간을 구분해야 한다. 모든 값은 동일 센서의 조건부 일관성이며 측량 정확도가 아니다.",
+      "source_sha256": "62e4872e0476be81718fac008f63025fd575da9726a8de7dd28d7f06cea85e09",
+      "source_bytes": 192635,
+      "destination_sha256": "f1055ed2f1393cdb2d32f246bceee5043b952110fd671ab58cd4bb42c6689a99",
+      "destination_bytes": 164502,
+      "dimensions_pixels": [
+        2880,
+        2700
+      ],
+      "decoded_rgba_sha256": "a50efcd88356791812179e8df2340bddf05173de9638722115e4391a830235ca",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/evaluation/final/floor2/548_981_wall_0_0.png",
+      "destination": "final_wall_training_patch.png",
+      "stage": "08_final_training_surface_fit",
+      "caption": "2층548–981의 같은 벽: 이전 통합 미리보기의 평면 간격23.28cm에서 유한 평면 제약을 포함한 실험의1.54cm로 감소.",
+      "limitations": "이 벽은 같은 평면 제약의 학습 대상이다. 동일한 원본 샘플·평면 축·표시 범위를 사용한 학습 일관성 개선이며 독립 검증 성공 또는 전체 지도 정확도 향상을 뜻하지 않는다.",
+      "source_sha256": "3e5e97e99c79ea2d5d43e0d0f21d8989bf693b7282416c5c9dfc6b4d752b60e0",
+      "source_bytes": 179076,
+      "destination_sha256": "53cb9e168b3de97a22fde9c19cf6fdaa3d71e53ab2f4900bcb5760e06ad996c6",
+      "destination_bytes": 145488,
+      "dimensions_pixels": [
+        4464,
+        1209
+      ],
+      "decoded_rgba_sha256": "7c2002ecc9612fbc126405326c928fc842a5278087a6d7abe74b5e5b56f286d3",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    },
+    {
+      "source": "outputs/student_union_20261017_geometry_review/evaluation/final/floor2/656_1055_wall_0_1.png",
+      "destination": "final_wall_reserved_regression.png",
+      "stage": "08_final_reserved_surface_regression",
+      "caption": "2층656–1055의 예약 벽: 이전 통합 미리보기의 평면 간격4.05cm에서 유한 평면 제약 실험의54.42cm로 악화.",
+      "limitations": "그래프 학습에서 제외된 대응의 실패를 동일 관측·평면 축·표시 범위로 보존했다. 과거 모델 선택에도 사용된 예약 자료로 새 외부 실측은 아니며, 학습 벽의 개선만으로 후보를 채택할 수 없음을 보여준다.",
+      "source_sha256": "be5a1c27ee85a2482d2b4bf7307d127fb12c679445e8b3d5fd9ddb7e07b811b7",
+      "source_bytes": 212359,
+      "destination_sha256": "11259a60ab31e518f096b60301459047e7e6fd1b4376eb2060a867666db43e4d",
+      "destination_bytes": 175687,
+      "dimensions_pixels": [
+        4464,
+        1209
+      ],
+      "decoded_rgba_sha256": "a6a9e2f36e10d0ee686306e074daaa925384c0ba6764fc108a5af425c7e5670a",
+      "decoded_rgba_identical": true,
+      "transform": "Lossless PNG recompression; dimensions and decoded RGBA values unchanged"
+    }
+  ]
+}

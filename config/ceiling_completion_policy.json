@@ -1,0 +1,18 @@
+{
+  "allow_inferred_ceiling_completion": false,
+  "allow_height_from_histogram_or_floor_footprint": false,
+  "allow_wall_height_changes": false,
+  "wall_height_policy_scope": "Original calibrated map and pose graph. A separate explicitly labeled presentation derivative may normalize only vertex Z to shared floor levels under the latest user request; original poses and XY remain unchanged.",
+  "allow_separate_unified_presentation": true,
+  "allow_explicit_bounded_display_ceiling_extension": true,
+  "bounded_display_extension_authority": "2026-10-19 latest user request: extend ceilings like the floor and enclose inter-floor equipment voids, without merging 1F ceiling and 2F floor heights. This separate inferred presentation derivative may extend within actual complete upper-floor support / established upper-roof envelope; preserve all old lower soffit heights, stairs and the lower atrium opening. New lower extension reuses the accepted 1.98m clearance level; upper roof stays at 5.571264m. These are display assumptions, not measured new ceilings.",
+  "service_cavity_navigation_policy": "Keep floor and ceiling elevations independent. Added undersides and perimeter skins are non-walkable presentation geometry only. Do not derive a route, traversable floor or automatic navigation surface from these equipment voids. The immutable selected map remains the navigation source; physical collision/occupancy use requires a separate review.",
+  "allow_closed_service_slabs_within_photographed_upper_floor_support": true,
+  "allow_observed_multiframe_roof_continuity": true,
+  "allow_bounded_internal_completion_within_observed_roof_envelope": true,
+  "allow_verified_photo_bounded_ceiling_patches": true,
+  "allowed_ceiling_geometry": "Source reconstruction: existing depth-based TSDF, finite original-photo polygons and observed multi-frame RGB-D contours only. Separate presentation derivative: reviewed wall-roof anchors and the explicitly authorized bounded extension described above. The legacy inferred-ceilings-disabled flag still protects the source map and forbids blanket atrium caps; the newer display-only exception is identified by ceiling_expansion_and_closure. Never invent an independent upper roof height or alter existing floors.",
+  "unknown_area": "Leave open in the source/reconstructed map. Only the latest explicitly requested bounded display extension may fill unobserved areas, with inferred geometry/colour recorded separately. No blanket lower atrium cap or independent height invention.",
+  "future_reconstruction_gate": "Require verified physical wall-top/ceiling junctions and source depth/RGB evidence; never choose an independent ceiling height from horizontal fragments alone.",
+  "user_correction": "Walls were consistent; do not invent ceilings at arbitrary heights."
+}

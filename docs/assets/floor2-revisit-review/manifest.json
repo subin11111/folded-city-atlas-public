@@ -1,0 +1,204 @@
+{
+  "created_utc": "2026-10-17T05:32:54.996917+00:00",
+  "source_sha256": "5c9598bb512e972c92234895d84b0364cd468dc8931bc9dc4cb88ba94e291a39",
+  "algorithm": "byte-identical copy, no retouching",
+  "accepted": false,
+  "images": [
+    {
+      "file": "numerical_progress.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/convergence/numerical_progress.png",
+      "sha256": "a368c6ea8e4c676aa60d1b8caa9ecd124e022151403b6e56fefec8594c815fae",
+      "size_pixels": [
+        2800,
+        1520
+      ],
+      "bytes": 463767,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "ba_numerical_progress.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/bundle_dense_exact/numerical_progress.png",
+      "sha256": "04578b85248201a5761477acf2cdb9b9dcfb31c34d9f1f905463a1a4e99a5368",
+      "size_pixels": [
+        2240,
+        848
+      ],
+      "bytes": 205401,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "comparison.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/common_support_all_stages.png",
+      "sha256": "7e9b45a32e5ea5b4994f42837de09507aed187f64f035d66f4f66ad1c28b7738",
+      "size_pixels": [
+        2550,
+        1530
+      ],
+      "bytes": 123134,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "wall_656_1055.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/floor2_656_1055_wall_0_1.png",
+      "sha256": "6b9eb01e39830089f8841f665ffbfd2c5a5e4f716eb6e8fb4b7432937d9362b7",
+      "size_pixels": [
+        2720,
+        2040
+      ],
+      "bytes": 265424,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "wall_548_981.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/floor2_548_981_wall_0_0.png",
+      "sha256": "fe89ccfd2a3ea88ae77b4a6fee7364b6e219d03db5ea931faf7886408cdfb8cd",
+      "size_pixels": [
+        2720,
+        2040
+      ],
+      "bytes": 250100,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "upper_corridor.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/upper_corridor_time_windows_xy.png",
+      "sha256": "04fab49ef648f4d956738f6e850945a733104eda621958299f190be7ba5ace7f",
+      "size_pixels": [
+        4312,
+        1400
+      ],
+      "bytes": 952834,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "withheld_windows.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/whole_frame_validation.png",
+      "sha256": "0e6b427e97f6b797a7e2e726af502dcfe14617d945e0bac3d8bc38f43fefa050",
+      "size_pixels": [
+        2560,
+        1280
+      ],
+      "bytes": 146235,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "withheld_rgb_656_1055.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/withheld_region_656_1055_original_rgb.png",
+      "sha256": "689f96de7257d1b03ed0fe941f36fd281f88b6867c833fa14186b0db37916059",
+      "size_pixels": [
+        2240,
+        1260
+      ],
+      "bytes": 1572593,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "training_rgb_548_981.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/revisits_dense/548_981/source_training_frames.png",
+      "sha256": "e4e5022f05e3471cd13f9e9c95ac682975d72ea1ac6453fe3ff73c144c30de45",
+      "size_pixels": [
+        900,
+        960
+      ],
+      "bytes": 835617,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "training_rgb_656_1055.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/revisits_dense/656_1055/source_training_frames.png",
+      "sha256": "b4cfbcdb165c95809c5ec6ae3cc199af34baa5613e9bfc5cb94352a595c9a093",
+      "size_pixels": [
+        900,
+        960
+      ],
+      "bytes": 963055,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "feature_matches_656_1055.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/revisits_ba_continued/656_1055/feature_inliers.png",
+      "sha256": "742bfdb3fc77db2c7e552ee339a88862bbc768f3a68937f37061eb2a56696239",
+      "size_pixels": [
+        1560,
+        1040
+      ],
+      "bytes": 1206520,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "surface_hypothesis_548_981.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/revisits_dense/548_981/withheld_surface_before_after.png",
+      "sha256": "d1dd3ad1513f38f210deef76ee4ffe5546d39d20339d9363d1863dc219f31c68",
+      "size_pixels": [
+        1680,
+        1400
+      ],
+      "bytes": 812017,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "surface_hypothesis_656_1055.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/revisits_dense/656_1055/withheld_surface_before_after.png",
+      "sha256": "cae19a29aec33ece48cafbaa56accd11a5733d479a723fba53b65df8e422a1e6",
+      "size_pixels": [
+        1680,
+        1400
+      ],
+      "bytes": 646818,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "local_ba_656_1055_all_pose_variables.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/local_ba_656_1055_all_pose_variables.png",
+      "sha256": "bae1b64ffc152da936a11c34b8793979aeb6dc04294a1928ad0414ef732718e0",
+      "size_pixels": [
+        2080,
+        1760
+      ],
+      "bytes": 1315612,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    },
+    {
+      "file": "local_ba_656_1055_visual_observations_only.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_floor2_revisit_v2/evaluation_final/figures/local_ba_656_1055_visual_observations_only.png",
+      "sha256": "2b18d015e6760c4e10ecd26c284e3e03816ac6659279a3756f4dff3739177150",
+      "size_pixels": [
+        2080,
+        1760
+      ],
+      "bytes": 1055398,
+      "byte_identical": true,
+      "synthetic": false,
+      "limitations": "Diagnostic evidence; not an approved map or surveyed accuracy"
+    }
+  ],
+  "summary_sha256": "50eb8cf8be86c27baf6f54dc651ef97ee8d56e25046244fd0d52b0e10821d26e"
+}

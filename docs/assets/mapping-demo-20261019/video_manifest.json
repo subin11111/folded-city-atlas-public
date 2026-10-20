@@ -1,0 +1,185 @@
+{
+  "created_utc": "2026-10-19T05:01:28.820549+00:00",
+  "video_sha256": "068eafea342f4c619db17adddd92b32baca33dcc6a1861c0b668b412ffe4d890",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 12,
+  "frames": 1356,
+  "duration_seconds": 113.0,
+  "chapters": [
+    {
+      "start_s": 6.0,
+      "title": "실제로 실행한 ROS 처리 노드",
+      "source_files": [
+        "outputs/student_union_slam_replay_v3/graph_delivery/rqt_native_window.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 12.0,
+      "title": "기록 재생 outside",
+      "mode": "actual_prefix_recalculation"
+    },
+    {
+      "start_s": 19.5,
+      "title": "기록 재생 lobby",
+      "mode": "actual_prefix_recalculation"
+    },
+    {
+      "start_s": 37.5,
+      "title": "기록 재생 bridge_out1f",
+      "mode": "actual_prefix_recalculation"
+    },
+    {
+      "start_s": 40.5,
+      "title": "기록 재생 floor2",
+      "mode": "actual_prefix_recalculation"
+    },
+    {
+      "start_s": 64.0,
+      "title": "기록 재생 bridge_12_sub",
+      "mode": "actual_prefix_recalculation"
+    },
+    {
+      "start_s": 75.0,
+      "title": "오프라인 · 선택한 다섯 세션 통합",
+      "source_files": [
+        "/home/subin/folded-city-atlas/docs/assets/selected-map-review/selected_map_before_after.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 81.0,
+      "title": "오프라인 · 점군에서 표면으로",
+      "source_files": [
+        "/home/subin/folded-city-atlas/docs/assets/surface-continuity-review/floor2/oblique_comparison.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 87.0,
+      "title": "오프라인 · 층 연결과 개방 로비",
+      "source_files": [
+        "/home/subin/folded-city-atlas/docs/assets/unified-presentation-20261018/lobby_516_presentation.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 93.0,
+      "title": "오프라인 · 색감 보존과 메시 마감",
+      "source_files": [
+        "/home/subin/folded-city-atlas/docs/assets/final-mesh-cleanup-20261019/lobby_445_presentation.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 100.0,
+      "title": "최종 지도 · student_union_final_mesh_v9",
+      "source_files": [
+        "/home/subin/folded-city-atlas/docs/assets/final-mesh-cleanup-20261019/native_scene_render.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    },
+    {
+      "start_s": 107.0,
+      "title": "일반 지도 레이어 · 길 / 건물 / 층별 실내 영역",
+      "source_files": [
+        "outputs/student_union_cartographic_v3/campus_f1.png",
+        "outputs/student_union_cartographic_v3/indoor_f2.png"
+      ],
+      "mode": "historical_offline_evidence_not_rerun"
+    }
+  ],
+  "historical_source_sha256": {
+    "outputs/student_union_slam_replay_v3/graph_delivery/rqt_native_window.png": "a1f56f986a136ed2ec2fc1f5ba11e060482c65557497777699357676c0f2c09f",
+    "/home/subin/folded-city-atlas/docs/assets/selected-map-review/selected_map_before_after.png": "c9f6b46b897af62be31154b6ec06dae388866c8b69da28ee8487345ee370815e",
+    "/home/subin/folded-city-atlas/docs/assets/surface-continuity-review/floor2/oblique_comparison.png": "314b00b99a4c750c614b9976395b6bf2d7509c6152e04a3ef9face770cfeb509",
+    "/home/subin/folded-city-atlas/docs/assets/unified-presentation-20261018/lobby_516_presentation.png": "818ea3b9d3a4eeb9ced96e424f3b86683a83aca5d02f156c4aee86c59897cd0a",
+    "/home/subin/folded-city-atlas/docs/assets/final-mesh-cleanup-20261019/lobby_445_presentation.png": "0ad628fdf2334e2e87babbb27887ee70f97c34428c8f9b0ad58949e80681fcdb",
+    "/home/subin/folded-city-atlas/docs/assets/final-mesh-cleanup-20261019/native_scene_render.png": "9aea89e8cd9e3e043ab40f386ecffad543fc58865417b39145eb82728f2b41cd",
+    "outputs/student_union_cartographic_v3/campus_f1.png": "e1f257e283114fa8c8707ba157f1cc0325d36587e45e3da33a8b48cd73e93a02",
+    "outputs/student_union_cartographic_v3/indoor_f2.png": "41e4601fcd0146f55cf1d0e2a57c8f1d7d901afc2c1a382515c4f7a3b85bbdbc"
+  },
+  "replay_manifest_sha256": "e4c2a3d0dc9ad4a303fb30bab1a8f008d3afe846878b29a2bbe5001c3be764ad",
+  "replay_wall_seconds": 95.36207640299995,
+  "contains_synthetic_sensor_data": false,
+  "pose_morphing": false,
+  "final_mesh_generated_online": false,
+  "video_is_edited_accelerated_replay_not_real_time_benchmark": true,
+  "loop_proposals_historical_not_new_place_recognition": true,
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "r_frame_rate": "12/1",
+        "avg_frame_rate": "12/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1388544,
+        "duration": "113.000000",
+        "bit_rate": "463621",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1356",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "outputs/student_union_mapping_video_v3/mapping_story.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "113.000000",
+      "size": "6565838",
+      "bit_rate": "464838",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.76.100"
+      }
+    }
+  },
+  "renderer_sha256": "675dd8d7163d0a9ff8e96417978e73673fff82696a477c1b9f9f95c28c6a477f"
+}

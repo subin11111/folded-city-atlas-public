@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-10-19T03:32:58.277076+00:00",
+  "bundle_manifest_sha256": "5b10a7c36a3f2daedb3ff26b06cad437c43a58092c18b561d52828746cba3b11",
+  "sessions": {
+    "floor2": {
+      "triangles_before": 779712,
+      "triangles_after": 724357,
+      "retained_source_order_and_positions_verified": true,
+      "no_triangle_flip_or_area_collapse": true,
+      "maximum_seam_vertex_motion_m": 0.008715975098311901,
+      "retained_semantic_and_fixed_coordinates_exact": true,
+      "original_binary_UV_images_colour_materials_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "GLB_sha256": "5242c31f2a21b45d798f662e2f4d1ddd202f870ce9365babe0b9cbf7c92d7fed"
+    },
+    "lobby": {
+      "triangles_before": 760667,
+      "triangles_after": 736136,
+      "retained_source_order_and_positions_verified": true,
+      "no_triangle_flip_or_area_collapse": true,
+      "maximum_seam_vertex_motion_m": 0.006164829712361097,
+      "retained_semantic_and_fixed_coordinates_exact": true,
+      "original_binary_UV_images_colour_materials_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "GLB_sha256": "919dd22a0f58a02eb462faa848a90ae409c36917a3236710b0006030e2f06843"
+    },
+    "bridge_12_sub": {
+      "triangles_before": 276424,
+      "triangles_after": 227492,
+      "retained_source_order_and_positions_verified": true,
+      "no_triangle_flip_or_area_collapse": true,
+      "maximum_seam_vertex_motion_m": 0.0,
+      "retained_semantic_and_fixed_coordinates_exact": true,
+      "original_binary_UV_images_colour_materials_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "GLB_sha256": "6b44b37835bf08c11a5cb4aba8137d213077edc017e8d43f2f65b5190152a477"
+    },
+    "bridge_out1f": {
+      "triangles_before": 129944,
+      "triangles_after": 119654,
+      "retained_source_order_and_positions_verified": true,
+      "no_triangle_flip_or_area_collapse": true,
+      "maximum_seam_vertex_motion_m": 0.008740554563701153,
+      "retained_semantic_and_fixed_coordinates_exact": true,
+      "original_binary_UV_images_colour_materials_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "GLB_sha256": "bd5f19e2eadf7393c3cc7adc8eb5ab931df7b2f4207e31edcddffad9ba22aaba"
+    },
+    "outside": {
+      "triangles_before": 272119,
+      "triangles_after": 270960,
+      "retained_source_order_and_positions_verified": true,
+      "no_triangle_flip_or_area_collapse": true,
+      "maximum_seam_vertex_motion_m": 0.008903469890356064,
+      "retained_semantic_and_fixed_coordinates_exact": true,
+      "original_binary_UV_images_colour_materials_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "GLB_sha256": "8499025c63435e01655a39b045adcf66f894036ff4ee7521aadcef585d936d7a"
+    }
+  },
+  "all_semantic_and_fixed_triangles_still_exist_globally": true,
+  "service_cavity_boundary_edges": 0,
+  "service_cavity_nonmanifold_edges": 0,
+  "actual_exported_service_cavity_six_direction_rays_passed": 261276,
+  "floor_and_ceiling_heights_not_merged": true,
+  "new_large_caps": 0,
+  "selected_map_unchanged": true,
+  "raw_database_hashes_unchanged": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "source_pose_changes": 0,
+  "navigation_ready": false,
+  "audit_source_sha256": "91d891b095ce20b055fc12fa3971b6c33679ba410df9bd21f470116f1ca8da94",
+  "scope": "Final display cleanup integrity, not whole-building watertightness, surveying, photo restoration or navigation safety. Actual visual renders remain mandatory."
+}

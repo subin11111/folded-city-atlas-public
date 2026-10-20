@@ -1,0 +1,18 @@
+Folded City 배포 안내
+
+현재 배포와 API 설정은 web/README.md에 정리되어 있습니다.
+
+서비스: https://folded-city-atlas-subin11111s-projects.vercel.app/
+Root Directory: web
+Production Branch: main
+Framework: Other
+Install Command: npm ci
+Build Command: npm run build
+Output Directory: public
+Python: 3.12
+Function: api/dispatch.py
+Region: icn1
+
+지도와 사진은 정적 자산으로, 경로와 사진 이동은 Python API로 제공합니다.
+원본 센서 DB와 환경변수, 인증정보는 배포에 포함하지 않습니다.
+저장소 공개와 서비스 접근 보호는 별도 설정입니다.

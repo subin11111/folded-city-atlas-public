@@ -1,0 +1,15 @@
+{
+  "source_bundle": "outputs/student_union_final_mesh_v3",
+  "session": "lobby",
+  "node": 445,
+  "maximum_plane_distance_m": 0.18,
+  "minimum_normal_agreement": 0.0,
+  "verified_bare_wall_volume_override": true,
+  "minimum_inlier_fraction": 0.90,
+  "maximum_depth_plane_p90_m": 0.025,
+  "regions": [
+    {"id":"final_main_stair_side_wall", "label":"Main stair side wall / original photo 445", "class":"wall", "polygon":[[160,5],[710,5],[500,206],[500,800],[410,950],[302,709],[302,252],[174,384],[160,384]], "protect_photo_polygons":[[[300,555],[365,605],[365,675],[300,640]]], "evidence":"Full actually photographed main stair side-wall polygon, stopping at the true doorway, return corner and stair boundary rather than an arbitrary rectangle. Expanded source-depth inliers99.3%, p90 approximately1.3cm."},
+    {"id":"final_main_stair_return_wall", "label":"Main stair return wall / original photo 445", "class":"wall", "polygon":[[502,215],[719,290],[719,950],[535,950],[502,804]], "protect_photo_polygons":[], "evidence":"Actually photographed right return wall, separately fitted and stopped at its real corner/recess. Expanded source-depth inliers95.6%, p90 approximately1.6cm."}
+  ],
+  "scope":"Source-photo-bounded whole visible wall patches after rejecting narrow interior strips with artificial colour edges. Clear duplicate planes across all captures in these same regions. Do not include the real door opening, stairs, handrail guard or unseen ceiling. Original map/poses unchanged."
+}

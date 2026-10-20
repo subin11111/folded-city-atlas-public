@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "input": "five original measured iOS/RTAB-Map GPS recordings; no synthetic data",
+  "sessions": {
+    "outside": {
+      "mode": "log",
+      "source": {
+        "kind": "measured",
+        "session": "outside",
+        "label": "실외 · 학생회관 입구 주변",
+        "source": "261016-234854-outside.db",
+        "sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91"
+      },
+      "rows": 121,
+      "raw": [
+        12.885394702474152,
+        5.86675281475729
+      ],
+      "position": [
+        4.685761923789361,
+        6.587636408547145
+      ],
+      "route": null,
+      "tracks": [
+        {
+          "kind": "raw-recording",
+          "points": 121
+        },
+        {
+          "kind": "filtered-recording",
+          "points": 121
+        }
+      ]
+    },
+    "lobby": {
+      "mode": "log",
+      "source": {
+        "kind": "measured",
+        "session": "lobby",
+        "label": "1층",
+        "source": "261017-000622-1f.db",
+        "sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c"
+      },
+      "rows": 31,
+      "raw": [
+        6.136105261047825,
+        7.459737312941812
+      ],
+      "position": [
+        0.050929581391404466,
+        -3.185738545384308
+      ],
+      "route": null,
+      "tracks": [
+        {
+          "kind": "raw-recording",
+          "points": 31
+        },
+        {
+          "kind": "filtered-recording",
+          "points": 30
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "mode": "log",
+      "source": {
+        "kind": "measured",
+        "session": "bridge_out1f",
+        "label": "실외와 1층 연결",
+        "source": "261017-011331-bridgeout1f.db",
+        "sha256": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b"
+      },
+      "rows": 31,
+      "raw": [
+        6.04972668895384,
+        8.050512073304603
+      ],
+      "position": [
+        12.365646295945343,
+        -1.356439756389005
+      ],
+      "route": null,
+      "tracks": [
+        {
+          "kind": "raw-recording",
+          "points": 31
+        },
+        {
+          "kind": "filtered-recording",
+          "points": 31
+        }
+      ]
+    },
+    "floor2": {
+      "mode": "log",
+      "source": {
+        "kind": "measured",
+        "session": "floor2",
+        "label": "2층과 메인 계단",
+        "source": "261017-013501-2f.db",
+        "sha256": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e"
+      },
+      "rows": 31,
+      "raw": [
+        6.375692260864992,
+        -8.827571488394453
+      ],
+      "position": [
+        5.713254835752981,
+        6.739093965365903
+      ],
+      "route": null,
+      "tracks": [
+        {
+          "kind": "raw-recording",
+          "points": 31
+        },
+        {
+          "kind": "filtered-recording",
+          "points": 31
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "mode": "log",
+      "source": {
+        "kind": "measured",
+        "session": "bridge_12_sub",
+        "label": "서브 계단",
+        "source": "261017-013904-bridg12_2.db",
+        "sha256": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+      },
+      "rows": 31,
+      "raw": [
+        6.13448954523553,
+        7.458233113285794
+      ],
+      "position": [
+        6.138234204463933,
+        7.459230012183809
+      ],
+      "route": null,
+      "tracks": [
+        {
+          "kind": "raw-recording",
+          "points": 31
+        },
+        {
+          "kind": "filtered-recording",
+          "points": 31
+        }
+      ]
+    }
+  },
+  "checks": [
+    "direct measured replay link",
+    "five original DB identities",
+    "measured playback advances",
+    "seek preserves source metadata",
+    "original and filtered tracks in 3D",
+    "no OSM planned route while viewing collected track",
+    "synthetic test collapsed separately",
+    "original DB identity retained in export",
+    "mobile layout"
+  ],
+  "errors": [],
+  "filter_settings_changed": false,
+  "coordinates_snapped_to_entrance": false
+}

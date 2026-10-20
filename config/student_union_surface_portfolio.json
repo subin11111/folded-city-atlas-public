@@ -1,0 +1,11 @@
+{
+  "status": "DISPLAY_CANDIDATES_NOT_A_REPLACEMENT_MAP",
+  "tsdf": [{"id": "tsdf_5cm", "voxel_m": 0.05, "truncation_m": 0.15}, {"id": "tsdf_3cm", "voxel_m": 0.03, "truncation_m": 0.09}],
+  "ball_pivoting": {"normal_radius_m": 0.18, "normal_max_nn": 30, "radii_m": [0.075, 0.11], "maximum_triangle_edge_m": 0.24},
+  "presentation_max_triangles": 180000,
+  "texture": {"atlas_side": 4096, "columns": 5, "rows": 4, "maximum_frames": {"outside": 64, "lobby": 80, "bridge_out1f": 32, "floor2": 96, "bridge_12_sub": 48}, "minimum_abs_view_cosine": 0.35, "depth_tolerance_m": 0.08, "relative_depth_tolerance": 0.02},
+  "detail_overlay": {"voxel_m": 0.015, "maximum_mesh_distance_m": 0.25, "minimum_mesh_distance_m": 0.025, "gradient_threshold": 80.0, "depth_jump_m": 0.05},
+  "representative_frames": {"outside": [263, 69], "lobby": [39, 337], "bridge_out1f": [80, 117], "floor2": [1055, 981, 656], "bridge_12_sub": [159, 60]},
+  "world_geometry_policy": "Each session fused independently; frozen selected world poses; no cross-session TSDF, pose optimization, hole filling, floor flattening or global smoothing.",
+  "gaussian_splatting": {"training_requested_as_mandatory": false, "execution": "audit environment and export calibrated views; no claim of neural training", "observed_torch": "system 1.8.0a0 CPU-only", "observed_cuda_available": false, "observed_nvcc": null}
+}

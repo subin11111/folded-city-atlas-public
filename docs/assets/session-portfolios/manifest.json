@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-17T07:41:55.875035+00:00",
+  "sessions": [
+    {
+      "session": "outside",
+      "summary": "/home/subin/folded-city-atlas/docs/assets/session-portfolios/outside/summary.json",
+      "figures": 21,
+      "clouds": 17
+    },
+    {
+      "session": "bridge_out1f",
+      "summary": "/home/subin/folded-city-atlas/docs/assets/session-portfolios/bridge_out1f/summary.json",
+      "figures": 21,
+      "clouds": 17
+    },
+    {
+      "session": "lobby",
+      "summary": "/home/subin/folded-city-atlas/docs/assets/session-portfolios/lobby/summary.json",
+      "figures": 22,
+      "clouds": 18
+    },
+    {
+      "session": "bridge_12_sub",
+      "summary": "/home/subin/folded-city-atlas/docs/assets/session-portfolios/bridge_12_sub/summary.json",
+      "figures": 22,
+      "clouds": 18
+    },
+    {
+      "session": "floor2",
+      "summary": "/home/subin/folded-city-atlas/docs/assets/session-portfolios/floor2/summary.json",
+      "figures": 25,
+      "clouds": 21
+    }
+  ],
+  "overview_sha256": "aea52a6c739d0900df42b0726a2b1482df6478b57ae15cda5f889a5eb93ccf6c",
+  "accepted": false,
+  "navigation": false,
+  "user_winner": null,
+  "default_rviz_changed": false
+}

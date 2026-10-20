@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | Continuous ceilings + clean floors",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792330608.4773982,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_continuous_horizontals_v5/manifest.json",
+  "structural_manifest_sha256": "61ca4728de76d62130a3a96e48630721e748d5bf0bb4fcbacfefd3fa668c962e",
+  "architectural_presentation": true,
+  "start_view": "roof2f",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "floor2",
+    "node": 905
+  },
+  "camera_model_matrix_open3d": [
+    [
+      0.19472171366214752,
+      0.06376786530017853,
+      0.9787834882736206,
+      -21.116140365600586
+    ],
+    [
+      0.980661153793335,
+      0.007362578995525837,
+      -0.19557492434978485,
+      -12.621720314025879
+    ],
+    [
+      -0.019677765667438507,
+      0.9979376196861267,
+      -0.06110101193189621,
+      4.28620719909668
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

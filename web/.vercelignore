@@ -1,0 +1,26 @@
+# Preserve nested API directories; omit only private and local build artifacts.
+.git/
+.vercel/
+node_modules/
+__pycache__/
+.env
+.env.*
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.bag
+*.mcap
+*.npz
+*.zip
+*.docx
+*.hwpx
+*.pdf
+reference-folded-city-atlas/
+campus_raw_cache/
+/outputs/
+/logs/
+/docs/
+/config/
+/src/
+/tests/

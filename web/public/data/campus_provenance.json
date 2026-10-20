@@ -1,0 +1,39 @@
+{
+  "source": "OpenStreetMap original API data; independently assembled by Folded City",
+  "api_source": "https://api.openstreetmap.org/api/0.6/map",
+  "original_xml_sha256": "c87fc73950fa81a79ca0ccd832125cabf247bc95a2fa685effe3004c1cf9db82",
+  "osm_url": "https://www.openstreetmap.org/way/26281749",
+  "query": "[out:json][timeout:90];(\nway(26281749);\nway[\"building\"](37.5375,127.0705,37.5465,127.0848);relation[\"building\"](37.5375,127.0705,37.5465,127.0848);\nway[\"highway\"](37.5375,127.0705,37.5465,127.0848);\nway[\"natural\"~\"water|wood\"](37.5375,127.0705,37.5465,127.0848);relation[\"natural\"~\"water|wood\"](37.5375,127.0705,37.5465,127.0848);\nway[\"landuse\"~\"grass|forest|recreation_ground\"](37.5375,127.0705,37.5465,127.0848);\nway[\"leisure\"~\"park|pitch|garden\"](37.5375,127.0705,37.5465,127.0848);\n);out body geom;",
+  "bbox_south_west_north_east": [
+    37.5375,
+    127.0705,
+    37.5465,
+    127.0848
+  ],
+  "osm_timestamp": null,
+  "converted_osm_json_sha256": "59acfba24fc1b261d7e959a9565171985906a5d5d16aefd9f8809a885bfa6aaa",
+  "sha256": "2cb0ed840475c06020c4664da37961ee607e784f5c6ee97db9d63353c248d31b",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "terrain": "AWS Open Data Terrain Tiles, Terrarium encoding, SRTM 30m based; 5m resampled display grid; not surveyed elevations",
+  "terrain_source": "https://registry.opendata.aws/terrain-tiles/",
+  "building_heights": "OSM heights where present; otherwise 4m per level or 16m fallback, explicitly estimated",
+  "trees_and_facades": "illustrative trees; reference-informed procedural facade palettes for student union, library and new engineering; other facades neutral and unverified; not photographic reconstruction",
+  "appearance_catalog": "/campus-appearance.js",
+  "building_label_overrides": "campus-data.js/applyCampusLabels adds the missing Veterinary Medicine building name and search aliases from official university guidance; OSM source records and geometry remain unchanged",
+  "display_terrain": "runtime-only upper-envelope slope limit 0.35 m/m with continuous mesh and lake shoreline constraints; original DEM grid preserved; not surveyed terrain and not used for routing",
+  "display_terrain_module": "/campus-terrain.js",
+  "display_building_base": "background building base lowered where needed to meet display terrain; student union registration datum unchanged; source building records preserved",
+  "third_party_application_dataset_used": false,
+  "third_party_application_code_used": false,
+  "generated_ai_images_used": false,
+  "coordinate_frame": "WGS84 ECEF/ENU into common local metre coordinates, scale 1; original indoor mesh unchanged",
+  "registration": "existing coarse GNSS placement plus existing 2m east / -2m north preview offset; not surveyed",
+  "routing": "background is not walkability evidence; indoor routes remain in independent navigation.json",
+  "counts": {
+    "buildings": 48,
+    "roads": 290,
+    "lands": 9,
+    "illustrative_trees": 2000
+  }
+}

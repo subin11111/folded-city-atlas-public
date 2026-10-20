@@ -1,0 +1,38 @@
+{
+  "source_bundle": "outputs/student_union_service_slabs_v3",
+  "presentation_only": true,
+  "ceiling_session": "floor2",
+  "cell_m": 0.1,
+  "maximum_depth_m": 5.5,
+  "maximum_frames": 220,
+  "minimum_camera_z_m": 3.3,
+  "roof_source_z_range_m": [4.65, 6.5],
+  "minimum_roof_points": 80,
+  "ceiling_anchor_regions": ["restroom_roof_726", "west_corridor_roof_828"],
+  "maximum_display_height_change_m": 0.45,
+  "maximum_ceiling_hole_area_m2": 3.0,
+  "maximum_ceiling_hole_distance_m": 0.7,
+  "minimum_ceiling_component_area_m2": 0.75,
+  "floor_fragment_band_m": 0.24,
+  "ceiling_fragment_band_m": 0.65,
+  "maximum_floor_hole_area_m2": 0.6,
+  "texture_maximum_side_px": 1800,
+  "texture_metres_per_pixel": 0.025,
+  "maximum_texture_frames": 28,
+  "manual_roof_regions": [
+    {"id":"hall_210","node":210,"polygon":[[253,0],[719,0],[719,335],[252,333]]},
+    {"id":"hall_905","node":905,"polygon":[[0,0],[719,0],[719,326],[470,271],[0,170]]},
+    {"id":"hall_777","node":777,"polygon":[[0,0],[719,0],[719,144],[350,126],[0,74]]},
+    {"id":"hall_916","node":916,"polygon":[[0,0],[719,0],[719,180],[379,130],[0,83]]},
+    {"id":"north_642","node":642,"polygon":[[73,0],[576,0],[551,176],[347,173],[235,146],[156,120]]},
+    {"id":"west_530","node":530,"polygon":[[254,0],[719,0],[719,270],[381,275]]},
+    {"id":"east_1119","node":1119,"polygon":[[285,0],[719,0],[719,290],[622,263],[466,153]]},
+    {"id":"wood_720","node":720,"polygon":[[0,0],[719,0],[719,211],[441,219],[319,199],[0,234]]},
+    {"id":"wood_738","node":738,"polygon":[[0,0],[719,0],[719,130],[428,157],[272,132],[0,158]]}
+  ],
+  "floor_layers": [
+    {"id":"main_1f","height_m":-1.55,"masks":["outputs/student_union_topology_fixed_v2/lobby/lobby_floor_1f_mask.npz","outputs/student_union_topology_fixed_v2/floor2/floor2_floor_1f_mask.npz"],"texture":"outputs/student_union_topology_fixed_v2/lobby/lobby_floor_1f_texture.png","owner":"lobby"},
+    {"id":"main_2f","height_m":2.6,"masks":["outputs/student_union_topology_fixed_v2/floor2/floor2_floor_2f_mask.npz"],"texture":"outputs/student_union_topology_fixed_v2/floor2/floor2_floor_2f_texture.png","owner":"floor2"}
+  ],
+  "scope":"Observed ceiling RGB-D plane contours plus explicit original-photo ceiling polygons; bounded interior filling only, no outward dilation or whole-floor roof inheritance. Preserve original map/poses, the open atrium below, staircase surfaces, existing bank heading and closed service slabs. Remove overlapping floor fragments without changing accepted floor levels."
+}

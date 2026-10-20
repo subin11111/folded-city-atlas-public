@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-10-19T03:54:16.875278+00:00",
+  "bundle_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "source_cleanup_audit_sha256": "dbea703fbf32e8abd4c6b44e53f5966e063a853c6c5902b91b115255e2bf6aae",
+  "sessions": {
+    "floor2": {
+      "retained_XYZ_exact": true,
+      "source_binary_UV_colour_photos_exact": true,
+      "known_cavity_and_level_planes_preserved": true,
+      "wrong_normal_facets_removed_inside_explicit_photo_wall_volume": 0,
+      "actual_GLB_PLY_equal": true,
+      "removed_covered_wall_faces": 0,
+      "source_photo_bounded_new_wall_faces": 0
+    },
+    "lobby": {
+      "retained_XYZ_exact": true,
+      "source_binary_UV_colour_photos_exact": true,
+      "known_cavity_and_level_planes_preserved": true,
+      "wrong_normal_facets_removed_inside_explicit_photo_wall_volume": 67,
+      "actual_GLB_PLY_equal": true,
+      "removed_covered_wall_faces": 3966,
+      "source_photo_bounded_new_wall_faces": 5100
+    },
+    "bridge_12_sub": {
+      "retained_XYZ_exact": true,
+      "source_binary_UV_colour_photos_exact": true,
+      "known_cavity_and_level_planes_preserved": true,
+      "wrong_normal_facets_removed_inside_explicit_photo_wall_volume": 339,
+      "actual_GLB_PLY_equal": true,
+      "removed_covered_wall_faces": 8204,
+      "source_photo_bounded_new_wall_faces": 0
+    },
+    "bridge_out1f": {
+      "retained_XYZ_exact": true,
+      "source_binary_UV_colour_photos_exact": true,
+      "known_cavity_and_level_planes_preserved": true,
+      "wrong_normal_facets_removed_inside_explicit_photo_wall_volume": 0,
+      "actual_GLB_PLY_equal": true,
+      "removed_covered_wall_faces": 0,
+      "source_photo_bounded_new_wall_faces": 0
+    },
+    "outside": {
+      "retained_XYZ_exact": true,
+      "source_binary_UV_colour_photos_exact": true,
+      "known_cavity_and_level_planes_preserved": true,
+      "wrong_normal_facets_removed_inside_explicit_photo_wall_volume": 0,
+      "actual_GLB_PLY_equal": true,
+      "removed_covered_wall_faces": 0,
+      "source_photo_bounded_new_wall_faces": 0
+    }
+  },
+  "all_existing_semantic_ids_and_world_anchors_exact": true,
+  "semantic_objects": 29,
+  "new_bounded_photo_wall_regions": 2,
+  "all_removed_wall_facets_seven_point_coverage_verified": 12170,
+  "source_cavity_remains_closed_because_all_actual_skins_retained": true,
+  "source_selected_map_unchanged": true,
+  "source_pose_changes": 0,
+  "navigation_ready": false,
+  "audit_source_sha256": "01b3352d6ad6b48003beb48ef18d7bc172789fe4a7dfcb07b49d9700ac2ace03",
+  "scope": "Cross-session replacement only in two photographed stair-side wall polygons. Not whole-building watertightness, survey accuracy or full removal of remaining texture seams and unobserved gaps."
+}

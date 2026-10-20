@@ -1,0 +1,29 @@
+{
+  "source_bundle": "outputs/student_union_photo_finish_v9",
+  "texture_bundle": "outputs/student_union_photo_seams_v7",
+  "maximum_frames_per_session_layer": 140,
+  "maximum_selected_photos": 56,
+  "coarse_side_px": 280,
+  "maximum_texture_side_px": 1800,
+  "metres_per_pixel": 0.02,
+  "depth_tolerance_m": 0.20,
+  "gain_bounds": [0.65,1.6],
+  "spatial_gain_bounds": [0.35,2.8],
+  "illumination_radius_m": 0.40,
+  "fallback_gain_bounds": [0.25,4.0],
+  "multiband_levels": 6,
+  "groups": {"lower":["lobby_floor_1f","floor2_floor_1f","sub_floor_1f"],"upper":["floor2_floor_2f","sub_floor_2f"]},
+  "charts": [
+    {"id":"lobby_floor_1f","session":"lobby"},
+    {"id":"floor2_floor_1f","session":"floor2"},
+    {"id":"floor2_floor_2f","session":"floor2"},
+    {"id":"sub_floor_1f","session":"bridge_12_sub"},
+    {"id":"sub_floor_2f","session":"bridge_12_sub"}
+  ],
+  "preferred_nodes": {"floor2":[720,781,892,905],"lobby":[516,713,811]},
+  "reviewed_floor_polygons": {
+    "floor2:892": [[0,455],[195,435],[285,465],[399,521],[547,638],[719,765],[719,959],[0,959]],
+    "floor2:720": [[0,560],[285,603],[301,720],[360,759],[431,720],[445,612],[598,645],[719,665],[719,959],[0,959]]
+  },
+  "scope": "Visual candidate: measured per-frame floor planes, same-position multiview illumination consensus, local scalar illumination fields and multiband transitions. Photographic material variation and PRIME HALL geometry retained. Explicit reviewed RGB floor polygons may bridge missing depth for appearance only, with raw-depth foreground occlusion checks. No new geometry, uniform paint or claimed independent accuracy. Promotion requires direct same-camera render inspection, not seam metrics."
+}

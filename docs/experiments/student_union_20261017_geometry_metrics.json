@@ -1,0 +1,1606 @@
+{
+  "status": "EXPERIMENT_EXECUTED_GLOBAL_MAP_NOT_APPROVED",
+  "source_reports": {
+    "graph": {
+      "path": "outputs/student_union_20261017_geometry_review/graph_final/report.json",
+      "sha256": "fcb43d982ffe7a6e99583f2c546882be3d52ba70296213fa44cdb34c8e7ce50a"
+    },
+    "postrun_review": {
+      "path": "outputs/student_union_20261017_geometry_review/graph_final/postrun_guard_review.json",
+      "sha256": "2c7190b13959d8607007d1c49d32eef7d14e668ebcc2d314787a094eb00cd8f0"
+    },
+    "evaluation": {
+      "path": "outputs/student_union_20261017_geometry_review/evaluation/final/report.json",
+      "sha256": "da5c728ac78650f76a2aa27e7613eaffaabc69fadf9dbb191be56da4e750eee2"
+    },
+    "clouds": {
+      "path": "outputs/student_union_20261017_geometry_review/candidate_clouds/manifest.json",
+      "sha256": "b46da303688c47095cc3db111dc8997b12c920f4cf785fdcb277ea26cf15c8ea"
+    },
+    "connections": {
+      "path": "outputs/student_union_20261017_geometry_review/connections/progress/progress_metrics.json",
+      "sha256": "892370cdddd57b567f7eb03c6e572c4b1f61e238d415bebfe6824affc5aa1ecb"
+    },
+    "surface": {
+      "path": "outputs/student_union_20261017_geometry_review/surfaces/summary.json",
+      "sha256": "800c009cf974d8abb5aa0bddac0a65e021fed915c3c0c278b4d8c81f1998347d"
+    }
+  },
+  "summary_source_sha256": "5b7334f6a942987c938bc30785e30cd25ec33c350a30fded360f56d35335c9e4",
+  "source_graph_finished_utc": "2026-10-16T18:46:00.927267+00:00",
+  "navigation_ready": false,
+  "canonical_preview_replaced": false,
+  "graph_components": [
+    [
+      "bridge_12_sub",
+      "floor2",
+      "lobby"
+    ],
+    [
+      "outside"
+    ],
+    [
+      "bridge_out1f"
+    ]
+  ],
+  "all_sessions_connected": false,
+  "baseline_selection": {
+    "outside": {
+      "selected": "app",
+      "selected_pose_csv": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/outside_poses.csv"
+    },
+    "lobby": {
+      "selected": "app",
+      "selected_pose_csv": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/lobby_poses.csv"
+    },
+    "bridge_out1f": {
+      "selected": "app",
+      "selected_pose_csv": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/bridge_out1f_poses.csv"
+    },
+    "floor2": {
+      "selected": "app",
+      "selected_pose_csv": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/floor2_poses.csv"
+    },
+    "bridge_12_sub": {
+      "selected": "app",
+      "selected_pose_csv": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/bridge_12_sub_poses.csv"
+    }
+  },
+  "connection_recovery": {
+    "connections": [
+      {
+        "connection": "outside / bridge_out1f",
+        "unique_pairs": 95,
+        "pnp_estimates": 1,
+        "fresh_split_passes": 0,
+        "historical_union_passes": 0,
+        "new_graph_candidates": 0
+      },
+      {
+        "connection": "lobby / bridge_out1f",
+        "unique_pairs": 95,
+        "pnp_estimates": 7,
+        "fresh_split_passes": 0,
+        "historical_union_passes": 0,
+        "new_graph_candidates": 0
+      },
+      {
+        "connection": "lobby / floor2",
+        "unique_pairs": 35,
+        "pnp_estimates": 7,
+        "fresh_split_passes": 2,
+        "historical_union_passes": 1,
+        "new_graph_candidates": 0
+      },
+      {
+        "connection": "lobby / bridge_12_sub",
+        "unique_pairs": 95,
+        "pnp_estimates": 38,
+        "fresh_split_passes": 2,
+        "historical_union_passes": 1,
+        "new_graph_candidates": 1
+      },
+      {
+        "connection": "floor2 / bridge_12_sub",
+        "unique_pairs": 95,
+        "pnp_estimates": 14,
+        "fresh_split_passes": 0,
+        "historical_union_passes": 0,
+        "new_graph_candidates": 0
+      }
+    ],
+    "unique_pair_count": 415,
+    "fresh_pair_passes": 4,
+    "historical_union_passes": 2,
+    "truly_new_graph_candidates": 1,
+    "local_stair_progress": [
+      {
+        "stage": "Prior combined preview",
+        "heldout": {
+          "count": 19,
+          "inliers": 1,
+          "inlier_ratio": 0.05263157894736842,
+          "rmse_m": 0.14764456104114115,
+          "median_m": 0.1190377702268235,
+          "errors_m": [
+            0.13218140858608,
+            0.13778333739785537,
+            0.1145993053979611,
+            0.1247102883544437,
+            0.11118033969020258,
+            0.12446434834211381,
+            0.11180836606967083,
+            0.2824303979113964,
+            0.13341991918295285,
+            0.11684115381466138,
+            0.2812825039500564,
+            0.07922088183685341,
+            0.11893536982377492,
+            0.10677381821391702,
+            0.18249623396157416,
+            0.1190377702268235,
+            0.11821493167767624,
+            0.10341883167818779,
+            0.1199050169122506
+          ]
+        }
+      },
+      {
+        "stage": "Asymmetric PnP candidate",
+        "heldout": {
+          "count": 19,
+          "inliers": 17,
+          "inlier_ratio": 0.8947368421052632,
+          "rmse_m": 0.052089193272505836,
+          "median_m": 0.02076710593122018,
+          "errors_m": [
+            0.013163020537192661,
+            0.06085070378486773,
+            0.010073293986559626,
+            0.011333683142970574,
+            0.0753467228149169,
+            0.005567667721885205,
+            0.017504091880005315,
+            0.12667595141116164,
+            0.03941430736226131,
+            0.057471706120379794,
+            0.12192734810689158,
+            0.05423022347207228,
+            0.02076710593122018,
+            0.030969413500307044,
+            0.025043278176694512,
+            0.010338891459812006,
+            0.009168477865225849,
+            0.019526335367071327,
+            0.01147293554460222
+          ]
+        }
+      },
+      {
+        "stage": "Prior-sample-union audited PnP",
+        "heldout": {
+          "count": 19,
+          "inliers": 16,
+          "inlier_ratio": 0.8421052631578947,
+          "rmse_m": 0.052328842418151035,
+          "median_m": 0.021937126259148947,
+          "errors_m": [
+            0.011234457926430937,
+            0.0641997283695792,
+            0.012438378096370535,
+            0.014289130286599047,
+            0.08159226431725293,
+            0.009181334858650221,
+            0.017615636606419762,
+            0.12119525327024508,
+            0.04511191229666024,
+            0.06127144056190977,
+            0.11631608951355116,
+            0.05708863812583128,
+            0.023968416857439726,
+            0.03411435320451287,
+            0.020148076011508222,
+            0.012064642352758038,
+            0.010851713518007464,
+            0.021937126259148947,
+            0.014640723720777378
+          ]
+        }
+      }
+    ],
+    "withdrawn_after_union": [
+      {
+        "session_a": "lobby",
+        "node_a": 176,
+        "session_b": "floor2",
+        "node_b": 51,
+        "reason": "historical_sample_holdout_3d"
+      },
+      {
+        "session_a": "lobby",
+        "node_a": 396,
+        "session_b": "bridge_12_sub",
+        "node_b": 208,
+        "reason": "historical_sample_holdout_3d"
+      }
+    ],
+    "figure_scope": "Pair-local metric evidence, not proof of final globally optimized map",
+    "source_sha256": "e2e71fae7c95717c2fe61dd662c71b1b4ab0a4e00be7e7fb118f5c681f2d0bfe"
+  },
+  "experimental_surface_constraints": 5,
+  "same_finite_plane_factors": 2,
+  "local_normal_factors": 167,
+  "new_independent_imu_factors": 0,
+  "variants": {
+    "pgo4": {
+      "solver": {
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 323,
+        "njev": 323,
+        "initial_block_huber_cost": 224.3283960525153,
+        "final_block_huber_cost": 36.375363291097166,
+        "optimality": 0.06900831816835637,
+        "active_bounds": 0,
+        "component_anchors": [
+          1,
+          354,
+          1303
+        ],
+        "variable_nodes": 2859,
+        "accepted_for_output": false
+      },
+      "accepted": false,
+      "failures": [
+        "all_sessions_not_connected_by_verified_measurements",
+        "floor2__lobby_cross_audit_translation_m_failed",
+        "independent_region_coverage_not_established_for_all_connections",
+        "outside_original_whole_pair_audit_regression"
+      ],
+      "cross_whole_pair_audits": [
+        {
+          "session_a": "lobby",
+          "node_a": 327,
+          "session_b": "floor2",
+          "node_b": 51,
+          "held_out": true,
+          "translation_m": 0.16869259459165378,
+          "rotation_deg": 2.580809997127488,
+          "variant": "pgo4"
+        },
+        {
+          "session_a": "floor2",
+          "node_a": 560,
+          "session_b": "bridge_12_sub",
+          "node_b": 162,
+          "held_out": true,
+          "translation_m": 0.1003431873168566,
+          "rotation_deg": 2.7393312511609116,
+          "variant": "pgo4"
+        }
+      ],
+      "session_geometry": {
+        "outside": {
+          "original_whole_pair_audit": {
+            "pairs": 2,
+            "before_rmse_m": 0.16594590565332717,
+            "after_rmse_m": 0.17201560494354995,
+            "before_overlap": 0.3825400435575247,
+            "after_overlap": 0.3372167446578667,
+            "passed_regression_guard": false
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12987644490976002,
+            "after_rmse_m": 0.13029796946588884,
+            "before_overlap": 0.7477707470307118,
+            "after_overlap": 0.7478546804291293,
+            "passed_regression_guard": true
+          }
+        },
+        "lobby": {
+          "original_whole_pair_audit": {
+            "pairs": 7,
+            "before_rmse_m": 0.1590705215168313,
+            "after_rmse_m": 0.15107532776239474,
+            "before_overlap": 0.5542642305916496,
+            "after_overlap": 0.5542642305916496,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12351356086164118,
+            "after_rmse_m": 0.12346625572208063,
+            "before_overlap": 0.7736789505976349,
+            "after_overlap": 0.7733225909081651,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_out1f": {
+          "adjacent_audit": {
+            "pairs": 45,
+            "before_rmse_m": 0.15579545201271586,
+            "after_rmse_m": 0.1557954568970297,
+            "before_overlap": 0.5736090553640026,
+            "after_overlap": 0.5736090553640026,
+            "passed_regression_guard": true
+          }
+        },
+        "floor2": {
+          "original_whole_pair_audit": {
+            "pairs": 8,
+            "before_rmse_m": 0.15557117053259273,
+            "after_rmse_m": 0.14811141379468878,
+            "before_overlap": 0.5712282449078858,
+            "after_overlap": 0.5920858521824333,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.1529255855873782,
+            "after_rmse_m": 0.15316416316987805,
+            "before_overlap": 0.5545226719168154,
+            "after_overlap": 0.5549075585543091,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_12_sub": {
+          "adjacent_audit": {
+            "pairs": 35,
+            "before_rmse_m": 0.15361871982451253,
+            "after_rmse_m": 0.1537155541673946,
+            "before_overlap": 0.5411997114477554,
+            "after_overlap": 0.541746504861259,
+            "passed_regression_guard": true
+          }
+        }
+      },
+      "heights": {
+        "outside": {
+          "before_camera_z_range_m": 1.2458434488505916,
+          "after_camera_z_range_m": 1.038226581481899,
+          "surveyed_floor_height": null
+        },
+        "lobby": {
+          "before_camera_z_range_m": 1.333761661253993,
+          "after_camera_z_range_m": 1.0628859357563776,
+          "surveyed_floor_height": null
+        },
+        "bridge_out1f": {
+          "before_camera_z_range_m": 0.23765974396296838,
+          "after_camera_z_range_m": 0.23829783226099616,
+          "surveyed_floor_height": null
+        },
+        "floor2": {
+          "before_camera_z_range_m": 5.333207686488065,
+          "after_camera_z_range_m": 4.810942439704255,
+          "surveyed_floor_height": null
+        },
+        "bridge_12_sub": {
+          "before_camera_z_range_m": 4.600059617288021,
+          "after_camera_z_range_m": 4.668885391970438,
+          "surveyed_floor_height": null
+        }
+      }
+    },
+    "pgo6_attitude": {
+      "solver": {
+        "success": true,
+        "nfev": 347,
+        "message": "`ftol` termination condition is satisfied.",
+        "initial_cost": 224.3283960525153,
+        "final_cost": 35.480257423944664,
+        "active_bounds": 0,
+        "maximum_tilt_change_deg": 0.3315008333926411,
+        "physical_tilt_guard_passed": true,
+        "elapsed_seconds": 112.8195414610002,
+        "active_relative_edges": 2939,
+        "normal_factors": 0,
+        "attitude_prior_sigma_deg": 2.0,
+        "normal_sigma_deg": 3.0,
+        "attitude_source": "selected baseline attitude regularization, not a newly measured IMU signal",
+        "plane_height_factors": 0,
+        "absolute_global_floor_height_factors": 0,
+        "same_finite_plane_factors": 0,
+        "same_plane_sigma_m_deg": [
+          0.08,
+          3.0
+        ],
+        "loss": "edge and same-plane block Huber delta=3; horizontal normal block Huber delta=2"
+      },
+      "accepted": false,
+      "failures": [
+        "all_sessions_not_connected_by_verified_measurements",
+        "floor2__lobby_cross_audit_translation_m_failed",
+        "independent_region_coverage_not_established_for_all_connections",
+        "outside_original_whole_pair_audit_regression"
+      ],
+      "cross_whole_pair_audits": [
+        {
+          "session_a": "lobby",
+          "node_a": 327,
+          "session_b": "floor2",
+          "node_b": 51,
+          "held_out": true,
+          "translation_m": 0.16708434917989035,
+          "rotation_deg": 2.6231299929507315,
+          "variant": "pgo6_attitude"
+        },
+        {
+          "session_a": "floor2",
+          "node_a": 560,
+          "session_b": "bridge_12_sub",
+          "node_b": 162,
+          "held_out": true,
+          "translation_m": 0.09968287120789207,
+          "rotation_deg": 2.7111404232556584,
+          "variant": "pgo6_attitude"
+        }
+      ],
+      "session_geometry": {
+        "outside": {
+          "original_whole_pair_audit": {
+            "pairs": 2,
+            "before_rmse_m": 0.16594590565332717,
+            "after_rmse_m": 0.17169820159544205,
+            "before_overlap": 0.3825400435575247,
+            "after_overlap": 0.33527795167573043,
+            "passed_regression_guard": false
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12987644490976002,
+            "after_rmse_m": 0.13042061718781428,
+            "before_overlap": 0.7477707470307118,
+            "after_overlap": 0.7478546804291293,
+            "passed_regression_guard": true
+          }
+        },
+        "lobby": {
+          "original_whole_pair_audit": {
+            "pairs": 7,
+            "before_rmse_m": 0.1590705215168313,
+            "after_rmse_m": 0.1510389705132596,
+            "before_overlap": 0.5542642305916496,
+            "after_overlap": 0.5542642305916496,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12351356086164118,
+            "after_rmse_m": 0.1234819094684315,
+            "before_overlap": 0.7736789505976349,
+            "after_overlap": 0.7733225909081651,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_out1f": {
+          "adjacent_audit": {
+            "pairs": 45,
+            "before_rmse_m": 0.15579545201271586,
+            "after_rmse_m": 0.15579718798963432,
+            "before_overlap": 0.5736090553640026,
+            "after_overlap": 0.5736090553640026,
+            "passed_regression_guard": true
+          }
+        },
+        "floor2": {
+          "original_whole_pair_audit": {
+            "pairs": 8,
+            "before_rmse_m": 0.15557117053259273,
+            "after_rmse_m": 0.1482974212717624,
+            "before_overlap": 0.5712282449078858,
+            "after_overlap": 0.5920687594670238,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.1529255855873782,
+            "after_rmse_m": 0.15314203130198095,
+            "before_overlap": 0.5545226719168154,
+            "after_overlap": 0.5549075585543091,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_12_sub": {
+          "adjacent_audit": {
+            "pairs": 35,
+            "before_rmse_m": 0.15361871982451253,
+            "after_rmse_m": 0.1537261098003852,
+            "before_overlap": 0.5411997114477554,
+            "after_overlap": 0.5411404728789986,
+            "passed_regression_guard": true
+          }
+        }
+      },
+      "heights": {
+        "outside": {
+          "before_camera_z_range_m": 1.2458434488505916,
+          "after_camera_z_range_m": 1.0305651146016739,
+          "surveyed_floor_height": null
+        },
+        "lobby": {
+          "before_camera_z_range_m": 1.333761661253993,
+          "after_camera_z_range_m": 1.0584072355287435,
+          "surveyed_floor_height": null
+        },
+        "bridge_out1f": {
+          "before_camera_z_range_m": 0.23765974396296838,
+          "after_camera_z_range_m": 0.2386456678600111,
+          "surveyed_floor_height": null
+        },
+        "floor2": {
+          "before_camera_z_range_m": 5.333207686488065,
+          "after_camera_z_range_m": 4.785266546251998,
+          "surveyed_floor_height": null
+        },
+        "bridge_12_sub": {
+          "before_camera_z_range_m": 4.600059617288021,
+          "after_camera_z_range_m": 4.671656471443008,
+          "surveyed_floor_height": null
+        }
+      }
+    },
+    "pgo6_normals": {
+      "solver": {
+        "success": true,
+        "nfev": 70,
+        "message": "`ftol` termination condition is satisfied.",
+        "initial_cost": 505.28147459471467,
+        "final_cost": 302.82664218192406,
+        "active_bounds": 0,
+        "maximum_tilt_change_deg": 0.6056404190592126,
+        "physical_tilt_guard_passed": true,
+        "elapsed_seconds": 22.84960197800001,
+        "active_relative_edges": 2939,
+        "normal_factors": 167,
+        "attitude_prior_sigma_deg": 2.0,
+        "normal_sigma_deg": 3.0,
+        "attitude_source": "selected baseline attitude regularization, not a newly measured IMU signal",
+        "plane_height_factors": 0,
+        "absolute_global_floor_height_factors": 0,
+        "same_finite_plane_factors": 0,
+        "same_plane_sigma_m_deg": [
+          0.08,
+          3.0
+        ],
+        "loss": "edge and same-plane block Huber delta=3; horizontal normal block Huber delta=2"
+      },
+      "accepted": false,
+      "failures": [
+        "all_sessions_not_connected_by_verified_measurements",
+        "floor2__lobby_cross_audit_translation_m_failed",
+        "independent_region_coverage_not_established_for_all_connections",
+        "outside_original_whole_pair_audit_regression"
+      ],
+      "cross_whole_pair_audits": [
+        {
+          "session_a": "lobby",
+          "node_a": 327,
+          "session_b": "floor2",
+          "node_b": 51,
+          "held_out": true,
+          "translation_m": 0.16982853216656632,
+          "rotation_deg": 2.6608790679631364,
+          "variant": "pgo6_normals"
+        },
+        {
+          "session_a": "floor2",
+          "node_a": 560,
+          "session_b": "bridge_12_sub",
+          "node_b": 162,
+          "held_out": true,
+          "translation_m": 0.10296331594644195,
+          "rotation_deg": 2.7448402587566476,
+          "variant": "pgo6_normals"
+        }
+      ],
+      "session_geometry": {
+        "outside": {
+          "original_whole_pair_audit": {
+            "pairs": 2,
+            "before_rmse_m": 0.16594590565332717,
+            "after_rmse_m": 0.17169859912842508,
+            "before_overlap": 0.3825400435575247,
+            "after_overlap": 0.33527795167573043,
+            "passed_regression_guard": false
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12987644490976002,
+            "after_rmse_m": 0.13042048471055007,
+            "before_overlap": 0.7477707470307118,
+            "after_overlap": 0.7478546804291293,
+            "passed_regression_guard": true
+          }
+        },
+        "lobby": {
+          "original_whole_pair_audit": {
+            "pairs": 7,
+            "before_rmse_m": 0.1590705215168313,
+            "after_rmse_m": 0.14936494503199477,
+            "before_overlap": 0.5542642305916496,
+            "after_overlap": 0.5637383662483381,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12351356086164118,
+            "after_rmse_m": 0.12349853230953506,
+            "before_overlap": 0.7736789505976349,
+            "after_overlap": 0.7733225909081651,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_out1f": {
+          "adjacent_audit": {
+            "pairs": 45,
+            "before_rmse_m": 0.15579545201271586,
+            "after_rmse_m": 0.15579718812227122,
+            "before_overlap": 0.5736090553640026,
+            "after_overlap": 0.5736090553640026,
+            "passed_regression_guard": true
+          }
+        },
+        "floor2": {
+          "original_whole_pair_audit": {
+            "pairs": 8,
+            "before_rmse_m": 0.15557117053259273,
+            "after_rmse_m": 0.14774015222785478,
+            "before_overlap": 0.5712282449078858,
+            "after_overlap": 0.5920858521824333,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.1529255855873782,
+            "after_rmse_m": 0.1532405883041141,
+            "before_overlap": 0.5545226719168154,
+            "after_overlap": 0.5574909719084229,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_12_sub": {
+          "adjacent_audit": {
+            "pairs": 35,
+            "before_rmse_m": 0.15361871982451253,
+            "after_rmse_m": 0.15376400248072816,
+            "before_overlap": 0.5411997114477554,
+            "after_overlap": 0.541047054617641,
+            "passed_regression_guard": true
+          }
+        }
+      },
+      "heights": {
+        "outside": {
+          "before_camera_z_range_m": 1.2458434488505916,
+          "after_camera_z_range_m": 1.0305621075880316,
+          "surveyed_floor_height": null
+        },
+        "lobby": {
+          "before_camera_z_range_m": 1.333761661253993,
+          "after_camera_z_range_m": 1.2248335528783212,
+          "surveyed_floor_height": null
+        },
+        "bridge_out1f": {
+          "before_camera_z_range_m": 0.23765974396296838,
+          "after_camera_z_range_m": 0.23864566119780523,
+          "surveyed_floor_height": null
+        },
+        "floor2": {
+          "before_camera_z_range_m": 5.333207686488065,
+          "after_camera_z_range_m": 4.810319365457053,
+          "surveyed_floor_height": null
+        },
+        "bridge_12_sub": {
+          "before_camera_z_range_m": 4.600059617288021,
+          "after_camera_z_range_m": 4.664113656245779,
+          "surveyed_floor_height": null
+        }
+      }
+    },
+    "pgo6_planes": {
+      "solver": {
+        "success": true,
+        "nfev": 87,
+        "message": "`ftol` termination condition is satisfied.",
+        "initial_cost": 558.1116484813178,
+        "final_cost": 304.7126710056001,
+        "active_bounds": 0,
+        "maximum_tilt_change_deg": 0.6055953608730417,
+        "physical_tilt_guard_passed": true,
+        "elapsed_seconds": 28.542676741999912,
+        "active_relative_edges": 2939,
+        "normal_factors": 167,
+        "attitude_prior_sigma_deg": 2.0,
+        "normal_sigma_deg": 3.0,
+        "attitude_source": "selected baseline attitude regularization, not a newly measured IMU signal",
+        "plane_height_factors": 1,
+        "absolute_global_floor_height_factors": 0,
+        "same_finite_plane_factors": 2,
+        "same_plane_sigma_m_deg": [
+          0.08,
+          3.0
+        ],
+        "loss": "edge and same-plane block Huber delta=3; horizontal normal block Huber delta=2"
+      },
+      "accepted": false,
+      "failures": [
+        "all_sessions_not_connected_by_verified_measurements",
+        "floor2__lobby_cross_audit_translation_m_failed",
+        "independent_region_coverage_not_established_for_all_connections",
+        "outside_original_whole_pair_audit_regression"
+      ],
+      "cross_whole_pair_audits": [
+        {
+          "session_a": "lobby",
+          "node_a": 327,
+          "session_b": "floor2",
+          "node_b": 51,
+          "held_out": true,
+          "translation_m": 0.1708893777183174,
+          "rotation_deg": 2.7546171213559227,
+          "variant": "pgo6_planes"
+        },
+        {
+          "session_a": "floor2",
+          "node_a": 560,
+          "session_b": "bridge_12_sub",
+          "node_b": 162,
+          "held_out": true,
+          "translation_m": 0.10385734704546314,
+          "rotation_deg": 2.909552822275214,
+          "variant": "pgo6_planes"
+        }
+      ],
+      "session_geometry": {
+        "outside": {
+          "original_whole_pair_audit": {
+            "pairs": 2,
+            "before_rmse_m": 0.16594590565332717,
+            "after_rmse_m": 0.17169893414322912,
+            "before_overlap": 0.3825400435575247,
+            "after_overlap": 0.3343191081298648,
+            "passed_regression_guard": false
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12987644490976002,
+            "after_rmse_m": 0.13042022740286988,
+            "before_overlap": 0.7477707470307118,
+            "after_overlap": 0.7478546804291293,
+            "passed_regression_guard": true
+          }
+        },
+        "lobby": {
+          "original_whole_pair_audit": {
+            "pairs": 7,
+            "before_rmse_m": 0.1590705215168313,
+            "after_rmse_m": 0.15169249359756343,
+            "before_overlap": 0.5542642305916496,
+            "after_overlap": 0.5637383662483381,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.12351356086164118,
+            "after_rmse_m": 0.12350226607515774,
+            "before_overlap": 0.7736789505976349,
+            "after_overlap": 0.7733225909081651,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_out1f": {
+          "adjacent_audit": {
+            "pairs": 45,
+            "before_rmse_m": 0.15579545201271586,
+            "after_rmse_m": 0.1557971879466109,
+            "before_overlap": 0.5736090553640026,
+            "after_overlap": 0.5736090553640026,
+            "passed_regression_guard": true
+          }
+        },
+        "floor2": {
+          "original_whole_pair_audit": {
+            "pairs": 8,
+            "before_rmse_m": 0.15557117053259273,
+            "after_rmse_m": 0.15959680659586517,
+            "before_overlap": 0.5712282449078858,
+            "after_overlap": 0.5959372754730017,
+            "passed_regression_guard": true
+          },
+          "adjacent_audit": {
+            "pairs": 36,
+            "before_rmse_m": 0.1529255855873782,
+            "after_rmse_m": 0.15328218947485284,
+            "before_overlap": 0.5545226719168154,
+            "after_overlap": 0.5574909719084229,
+            "passed_regression_guard": true
+          }
+        },
+        "bridge_12_sub": {
+          "adjacent_audit": {
+            "pairs": 35,
+            "before_rmse_m": 0.15361871982451253,
+            "after_rmse_m": 0.15376126927424555,
+            "before_overlap": 0.5411997114477554,
+            "after_overlap": 0.541047054617641,
+            "passed_regression_guard": true
+          }
+        }
+      },
+      "heights": {
+        "outside": {
+          "before_camera_z_range_m": 1.2458434488505916,
+          "after_camera_z_range_m": 1.0305510260123774,
+          "surveyed_floor_height": null
+        },
+        "lobby": {
+          "before_camera_z_range_m": 1.333761661253993,
+          "after_camera_z_range_m": 1.233945394930976,
+          "surveyed_floor_height": null
+        },
+        "bridge_out1f": {
+          "before_camera_z_range_m": 0.23765974396296838,
+          "after_camera_z_range_m": 0.23864566534581816,
+          "surveyed_floor_height": null
+        },
+        "floor2": {
+          "before_camera_z_range_m": 5.333207686488065,
+          "after_camera_z_range_m": 4.748360350801283,
+          "surveyed_floor_height": null
+        },
+        "bridge_12_sub": {
+          "before_camera_z_range_m": 4.600059617288021,
+          "after_camera_z_range_m": 4.67518128985756,
+          "surveyed_floor_height": null
+        }
+      }
+    }
+  },
+  "postrun_guard_review": {
+    "created_utc": "2026-10-16T18:47:55.379598+00:00",
+    "review_type": "Post-run code guard audit; runtime outputs remain immutable",
+    "runtime_report_sha256": "fcb43d982ffe7a6e99583f2c546882be3d52ba70296213fa44cdb34c8e7ce50a",
+    "runtime_source_snapshot_sha256": "1265fcbe9c425d5d893597cc631f42ffab118cf613e4df51c15e3c8564175d92",
+    "runtime_manifest_source_sha256": "1265fcbe9c425d5d893597cc631f42ffab118cf613e4df51c15e3c8564175d92",
+    "reviewed_current_source_sha256": "858e0aebbec7e54225452919864ed369669624876641513f9c735aa33012ab66",
+    "source_difference": [
+      {
+        "function": "cross_audit_failures",
+        "change": "Receive all cross-session rows; report each training connection lacking a whole-pair holdout instead of examining only pairs having heldouts."
+      },
+      {
+        "function": "optimize_four_dof",
+        "change": "Exclude held_out type0 odometry before passing to legacy optimize(), which filters only loop holdouts."
+      }
+    ],
+    "reserved_odometry_count_in_actual_run": 0,
+    "reserved_odometry_in_actual_run": [],
+    "rerun_required_for_pose_values": false,
+    "rerun_reason": "No reserved odometry was present, so input factors and fitted poses are numerically unaffected. Additional missing-audit guard only changes explanatory metadata; every runtime variant was already rejected.",
+    "variant_guard_review": {
+      "pgo4": {
+        "additional_failures": [
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "all_cross_audit_failures_after_review": [
+          "floor2__lobby_cross_audit_translation_m_failed",
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "runtime_accepted": false,
+        "review_accepted": false
+      },
+      "pgo6_attitude": {
+        "additional_failures": [
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "all_cross_audit_failures_after_review": [
+          "floor2__lobby_cross_audit_translation_m_failed",
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "runtime_accepted": false,
+        "review_accepted": false
+      },
+      "pgo6_normals": {
+        "additional_failures": [
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "all_cross_audit_failures_after_review": [
+          "floor2__lobby_cross_audit_translation_m_failed",
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "runtime_accepted": false,
+        "review_accepted": false
+      },
+      "pgo6_planes": {
+        "additional_failures": [
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "all_cross_audit_failures_after_review": [
+          "floor2__lobby_cross_audit_translation_m_failed",
+          "bridge_12_sub__lobby_missing_whole_pair_cross_audit"
+        ],
+        "runtime_accepted": false,
+        "review_accepted": false
+      }
+    },
+    "selection_bias": {
+      "normal_factors": 167,
+      "description": "collect_normals calls fit_planes(train,test); the within-frame test samples select accepted plane factors, and some global geometry diagnostics reuse those same test voxels. These metrics are conditional on factor selection, not untouched independent validation.",
+      "current_explicit_heldout_constraint_endpoints_have_normal_factors": false,
+      "finite_plane_note": "Finite-plane patch acceptance also uses reserved within-frame samples; selected-patch consistency is conditional and correlated with factor construction.",
+      "same_sensor_note": "Nearby-frame surface checks and same-frame depth splits remain correlated measurements, not surveyed ground truth."
+    },
+    "correlation_note": "Exact pair deduplication is present; uncertainty and Huber losses are modeling choices. Overlapping/repeated physical regions can remain statistically correlated and do not establish three independent regions.",
+    "components_preserved": [
+      [
+        "bridge_12_sub",
+        "floor2",
+        "lobby"
+      ],
+      [
+        "outside"
+      ],
+      [
+        "bridge_out1f"
+      ]
+    ],
+    "all_sessions_connected": false,
+    "navigation_ready": false,
+    "validation": "10 targeted tests passed, including an unaudited connection hidden by another audited connection and a huge-information heldout odometry edge; git diff --check passed."
+  },
+  "fixed_patch_aggregates": {
+    "previous_preview": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.050034862154658674,
+        "p90_m": 0.18479782013290605,
+        "maximum_m": 0.5984494470335298
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.047863876433700034,
+        "p90_m": 0.13138113901692702,
+        "maximum_m": 0.301217701518934
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.04776034000800774,
+          "p90_m": 0.15125748492183877,
+          "maximum_m": 0.3661192871774513
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.031888467272773,
+          "p90_m": 0.18933084271235887,
+          "maximum_m": 0.44589433808071616
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.12639245960087864,
+          "p90_m": 0.28918951415139155,
+          "maximum_m": 0.5984494470335298
+        }
+      }
+    },
+    "selected_initial": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.05953642781448912,
+        "p90_m": 0.3117604677845452,
+        "maximum_m": 1.0277377534156784
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.06488295802082417,
+        "p90_m": 0.36834250937559054,
+        "maximum_m": 0.44400176246348777
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.06429853914171965,
+          "p90_m": 0.2679920108678543,
+          "maximum_m": 1.0047346067943397
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.04245386498105841,
+          "p90_m": 0.21506538544572504,
+          "maximum_m": 0.4773429602458879
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.18045428754468812,
+          "p90_m": 0.4261698782073604,
+          "maximum_m": 1.0277377534156784
+        }
+      }
+    },
+    "pgo4": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.04874811573503538,
+        "p90_m": 0.14506396369074445,
+        "maximum_m": 0.5579366551522755
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.05662610929641296,
+        "p90_m": 0.16608098495060028,
+        "maximum_m": 0.5579366551522755
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.0585315391304399,
+          "p90_m": 0.14476450192297988,
+          "maximum_m": 0.5579366551522755
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.03086494762014897,
+          "p90_m": 0.08593465201566287,
+          "maximum_m": 0.21482947398920893
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.06877907927496557,
+          "p90_m": 0.1908214941619919,
+          "maximum_m": 0.2895595815119388
+        }
+      }
+    },
+    "pgo6_attitude": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.0496670752718955,
+        "p90_m": 0.14737909475046726,
+        "maximum_m": 0.558481524168436
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.05360574512445499,
+        "p90_m": 0.16930226341556473,
+        "maximum_m": 0.558481524168436
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.05576806418572139,
+          "p90_m": 0.14375486705824764,
+          "maximum_m": 0.558481524168436
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.03074422568748482,
+          "p90_m": 0.08551140382711774,
+          "maximum_m": 0.21251115500646195
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.07813289132736573,
+          "p90_m": 0.19934827672721941,
+          "maximum_m": 0.2895508236740206
+        }
+      }
+    },
+    "pgo6_normals": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.04799118177575517,
+        "p90_m": 0.14991785642616243,
+        "maximum_m": 0.5590533029993645
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.05223594763575577,
+        "p90_m": 0.22305790591634275,
+        "maximum_m": 0.5590533029993645
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.05379765095057259,
+          "p90_m": 0.14372405914026032,
+          "maximum_m": 0.5590533029993645
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.030216899859918857,
+          "p90_m": 0.117051433754971,
+          "maximum_m": 0.23924963104709202
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.07815725700893027,
+          "p90_m": 0.1993295185979726,
+          "maximum_m": 0.2895577855729432
+        }
+      }
+    },
+    "pgo6_planes": {
+      "all_fixed_patches": {
+        "patches": 122,
+        "frame_pairs": 78,
+        "median_m": 0.04730904008759624,
+        "p90_m": 0.15005851843350637,
+        "maximum_m": 0.5442392042050123
+      },
+      "reserved_graph_holdout": {
+        "patches": 22,
+        "frame_pairs": 13,
+        "median_m": 0.046693160771928366,
+        "p90_m": 0.23341944166583203,
+        "maximum_m": 0.5442392042050123
+      },
+      "by_session": {
+        "floor2": {
+          "patches": 61,
+          "frame_pairs": 41,
+          "median_m": 0.05167964587756526,
+          "p90_m": 0.1332323681217826,
+          "maximum_m": 0.5442392042050123
+        },
+        "lobby": {
+          "patches": 44,
+          "frame_pairs": 28,
+          "median_m": 0.03004502499928373,
+          "p90_m": 0.11699606336650091,
+          "maximum_m": 0.2390567182444065
+        },
+        "outside": {
+          "patches": 17,
+          "frame_pairs": 9,
+          "median_m": 0.0782570642372865,
+          "p90_m": 0.19924887569585922,
+          "maximum_m": 0.2896338905977463
+        }
+      }
+    }
+  },
+  "fixed_patch_metric_definition": "Distribution of per-patch symmetric absolute plane-distance medians, metres; not surveyed error.",
+  "fixed_patch_examples": [
+    {
+      "session": "floor2",
+      "a": 503,
+      "b": 961,
+      "kind": "horizontal",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "native_graph_training",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.3661192871774513,
+        "selected_initial": 0.631027270954058,
+        "pgo4": 0.3569731142121858,
+        "pgo6_attitude": 0.34597227062147434,
+        "pgo6_normals": 0.33768823286976624,
+        "pgo6_planes": 0.016333636882452165
+      },
+      "pgo4_delta_vs_initial_m": -0.27405415674187217,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.009146172965265487,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.28505500033258363,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.02014701655597695,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.29333903808429174,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.028431054307685055,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.6146936340716058,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.34978565029499914,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "floor2",
+      "a": 548,
+      "b": 981,
+      "kind": "wall",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "native_graph_training",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.23275608738986803,
+        "selected_initial": 1.0047346067943397,
+        "pgo4": 0.3582867678819268,
+        "pgo6_attitude": 0.3574389530137586,
+        "pgo6_normals": 0.356966481878465,
+        "pgo6_planes": 0.015377465395220245
+      },
+      "pgo4_delta_vs_initial_m": -0.6464478389124129,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": 0.1255306804920588,
+      "pgo4_severe_regression_vs_previous": true,
+      "pgo6_attitude_delta_vs_initial_m": -0.6472956537805811,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": 0.12468286562389058,
+      "pgo6_attitude_severe_regression_vs_previous": true,
+      "pgo6_normals_delta_vs_initial_m": -0.6477681249158747,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": 0.124210394488597,
+      "pgo6_normals_severe_regression_vs_previous": true,
+      "pgo6_planes_delta_vs_initial_m": -0.9893571413991195,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.21737862199464777,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "floor2",
+      "a": 642,
+      "b": 1031,
+      "kind": "horizontal",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "reserved_graph_holdout",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.028635155187405725,
+        "selected_initial": 0.024027116410816916,
+        "pgo4": 0.16658660109791373,
+        "pgo6_attitude": 0.17026157890679175,
+        "pgo6_normals": 0.16928638152990003,
+        "pgo6_planes": 0.1806009117823092
+      },
+      "pgo4_delta_vs_initial_m": 0.1425594846870968,
+      "pgo4_severe_regression": true,
+      "pgo4_delta_vs_previous_m": 0.137951445910508,
+      "pgo4_severe_regression_vs_previous": true,
+      "pgo6_attitude_delta_vs_initial_m": 0.14623446249597483,
+      "pgo6_attitude_severe_regression": true,
+      "pgo6_attitude_delta_vs_previous_m": 0.14162642371938602,
+      "pgo6_attitude_severe_regression_vs_previous": true,
+      "pgo6_normals_delta_vs_initial_m": 0.1452592651190831,
+      "pgo6_normals_severe_regression": true,
+      "pgo6_normals_delta_vs_previous_m": 0.1406512263424943,
+      "pgo6_normals_severe_regression_vs_previous": true,
+      "pgo6_planes_delta_vs_initial_m": 0.15657379537149227,
+      "pgo6_planes_severe_regression": true,
+      "pgo6_planes_delta_vs_previous_m": 0.15196575659490347,
+      "pgo6_planes_severe_regression_vs_previous": true
+    },
+    {
+      "session": "floor2",
+      "a": 642,
+      "b": 1031,
+      "kind": "wall",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "reserved_graph_holdout",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.11243893505752701,
+        "selected_initial": 0.23949630022849022,
+        "pgo4": 0.06195505890455924,
+        "pgo6_attitude": 0.06219781851098488,
+        "pgo6_normals": 0.0620933779815285,
+        "pgo6_planes": 0.07488421234055365
+      },
+      "pgo4_delta_vs_initial_m": -0.17754124132393098,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.050483876152967774,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.17729848171750534,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.05024111654654213,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.17740292224696172,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.05034555707599851,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.16461208788793658,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.03755472271697337,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "floor2",
+      "a": 656,
+      "b": 1055,
+      "kind": "horizontal",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "reserved_graph_holdout",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.022948873756549807,
+        "selected_initial": 0.03814366621721118,
+        "pgo4": 0.06365619789053405,
+        "pgo6_attitude": 0.053638318404419426,
+        "pgo6_normals": 0.054604682247990574,
+        "pgo6_planes": 0.046040728570780565
+      },
+      "pgo4_delta_vs_initial_m": 0.025512531673322868,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": 0.04070732413398424,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": 0.015494652187208247,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": 0.03068944464786962,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": 0.016461016030779395,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": 0.03165580849144077,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": 0.007897062353569385,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": 0.023091854814230758,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "floor2",
+      "a": 656,
+      "b": 1055,
+      "kind": "wall",
+      "plane_a": 0,
+      "plane_b": 1,
+      "graph_role": "reserved_graph_holdout",
+      "new_surface_fitting_pair": false,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.04048412629829139,
+        "selected_initial": 0.44400176246348777,
+        "pgo4": 0.5579366551522755,
+        "pgo6_attitude": 0.558481524168436,
+        "pgo6_normals": 0.5590533029993645,
+        "pgo6_planes": 0.5442392042050123
+      },
+      "pgo4_delta_vs_initial_m": 0.11393489268878776,
+      "pgo4_severe_regression": true,
+      "pgo4_delta_vs_previous_m": 0.5174525288539842,
+      "pgo4_severe_regression_vs_previous": true,
+      "pgo6_attitude_delta_vs_initial_m": 0.11447976170494822,
+      "pgo6_attitude_severe_regression": true,
+      "pgo6_attitude_delta_vs_previous_m": 0.5179973978701446,
+      "pgo6_attitude_severe_regression_vs_previous": true,
+      "pgo6_normals_delta_vs_initial_m": 0.11505154053587674,
+      "pgo6_normals_severe_regression": true,
+      "pgo6_normals_delta_vs_previous_m": 0.5185691767010732,
+      "pgo6_normals_severe_regression_vs_previous": true,
+      "pgo6_planes_delta_vs_initial_m": 0.10023744174152449,
+      "pgo6_planes_severe_regression": true,
+      "pgo6_planes_delta_vs_previous_m": 0.5037550779067209,
+      "pgo6_planes_severe_regression_vs_previous": true
+    },
+    {
+      "session": "lobby",
+      "a": 595,
+      "b": 650,
+      "kind": "horizontal",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "graph_training",
+      "new_surface_fitting_pair": true,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.035128010433250145,
+        "selected_initial": 0.03579353060667187,
+        "pgo4": 0.030901158386638417,
+        "pgo6_attitude": 0.029279296073224624,
+        "pgo6_normals": 0.02517946340735935,
+        "pgo6_planes": 0.025150353255102148
+      },
+      "pgo4_delta_vs_initial_m": -0.004892372220033452,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.004226852046611728,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.006514234533447245,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.005848714360025521,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.01061406719931252,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.009948547025890795,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.010643177351569721,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.009977657178147997,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "lobby",
+      "a": 595,
+      "b": 650,
+      "kind": "wall",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "graph_training",
+      "new_surface_fitting_pair": true,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.44589433808071616,
+        "selected_initial": 0.46193899619848716,
+        "pgo4": 0.11798656014338171,
+        "pgo6_attitude": 0.11779822807009445,
+        "pgo6_normals": 0.11839908516658408,
+        "pgo6_planes": 0.11838211176872687
+      },
+      "pgo4_delta_vs_initial_m": -0.34395243605510545,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.32790777793733444,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.3441407681283927,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.3280961100106217,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.34353991103190307,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.32749525291413206,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.3435568844297603,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.3275122263119893,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "outside",
+      "a": 69,
+      "b": 323,
+      "kind": "horizontal",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "graph_training",
+      "new_surface_fitting_pair": true,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.05071220270846982,
+        "selected_initial": 0.0702922226374393,
+        "pgo4": 0.03873435857368565,
+        "pgo6_attitude": 0.03622865878714514,
+        "pgo6_normals": 0.03622939520116934,
+        "pgo6_planes": 0.03623184167751558
+      },
+      "pgo4_delta_vs_initial_m": -0.031557864063753646,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.011977844134784171,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.03406356385029416,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.014483543921324685,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.034062827436269955,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.01448280750730048,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.03406038095992372,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.014480361030954243,
+      "pgo6_planes_severe_regression_vs_previous": false
+    },
+    {
+      "session": "outside",
+      "a": 69,
+      "b": 323,
+      "kind": "wall",
+      "plane_a": 0,
+      "plane_b": 0,
+      "graph_role": "graph_training",
+      "new_surface_fitting_pair": true,
+      "stage_plane_abs_median_m": {
+        "previous_preview": 0.5984494470335298,
+        "selected_initial": 1.0277377534156784,
+        "pgo4": 0.03526247314839294,
+        "pgo6_attitude": 0.03553903334433467,
+        "pgo6_normals": 0.0355307202859325,
+        "pgo6_planes": 0.03550156444621094
+      },
+      "pgo4_delta_vs_initial_m": -0.9924752802672855,
+      "pgo4_severe_regression": false,
+      "pgo4_delta_vs_previous_m": -0.5631869738851368,
+      "pgo4_severe_regression_vs_previous": false,
+      "pgo6_attitude_delta_vs_initial_m": -0.9921987200713438,
+      "pgo6_attitude_severe_regression": false,
+      "pgo6_attitude_delta_vs_previous_m": -0.5629104136891951,
+      "pgo6_attitude_severe_regression_vs_previous": false,
+      "pgo6_normals_delta_vs_initial_m": -0.9922070331297459,
+      "pgo6_normals_severe_regression": false,
+      "pgo6_normals_delta_vs_previous_m": -0.5629187267475972,
+      "pgo6_normals_severe_regression_vs_previous": false,
+      "pgo6_planes_delta_vs_initial_m": -0.9922361889694675,
+      "pgo6_planes_severe_regression": false,
+      "pgo6_planes_delta_vs_previous_m": -0.5629478825873189,
+      "pgo6_planes_severe_regression_vs_previous": false
+    }
+  ],
+  "regressions_over_5cm_vs_initial": {
+    "pgo4": 9,
+    "pgo6_attitude": 9,
+    "pgo6_normals": 10,
+    "pgo6_planes": 11
+  },
+  "regressions_over_5cm_vs_previous": {
+    "pgo4": 13,
+    "pgo6_attitude": 13,
+    "pgo6_normals": 12,
+    "pgo6_planes": 11
+  },
+  "candidate_clouds": {
+    "manifest": "outputs/student_union_20261017_geometry_review/candidate_clouds/manifest.json",
+    "variant": "pgo6_planes",
+    "points": 5287589,
+    "sha256": "4ae15238d86a7aed0f064acfff076a6f6b366e7763d2e7722e751721e7b49841",
+    "per_session_points": {
+      "outside": 631767,
+      "lobby": 1943794,
+      "bridge_out1f": 237102,
+      "floor2": 2451359,
+      "bridge_12_sub": 473244
+    },
+    "missing_pose_ids_skipped": {
+      "outside": [
+        349
+      ],
+      "lobby": [
+        175,
+        185,
+        319,
+        320,
+        321,
+        398,
+        727,
+        736,
+        904
+      ],
+      "bridge_out1f": [],
+      "floor2": [
+        495,
+        496,
+        497
+      ],
+      "bridge_12_sub": []
+    }
+  },
+  "source_databases_sha256": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "all_original_hash_checks_passed": true,
+  "unavailable_ground_truth": [
+    "surveyed_door_width",
+    "surveyed_corridor_width",
+    "surveyed_floor_elevations",
+    "fresh_independent_validation_capture"
+  ],
+  "limitations": [
+    "Reserved depth samples on a graph-training pair are not independent graph validation.",
+    "548/981 and horizontal82/290,503/961 are native graph training pairs, despite not used by new surface ICP.",
+    "Requested reserved holdout examples include floor2656/1055 and608/1023; all actual pair roles are recorded individually.",
+    "Original loop-defined finite-patch correspondence is conditional, not ground-truth survey.",
+    "No physically measured stair rise, door width or floor height available.",
+    "Old whole-link audits influenced past policy choices; not fresh generalization data.",
+    "No surveyed dimensions or floor elevations provided.",
+    "Below-camera horizontal patch factors assume horizontality; not semantic floor truth.",
+    "Locally verified substairs links are hypotheses without enough independent regions."
+  ]
+}

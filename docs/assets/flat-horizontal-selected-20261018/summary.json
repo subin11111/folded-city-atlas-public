@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-10-18T07:20:35.099147+00:00",
+  "sessions": {
+    "lobby": {
+      "planes": 2,
+      "floor_area_xy_m2": 504.94000000000005,
+      "ceiling_area_xy_m2": 441.76000000000005,
+      "modeled_inferred_area_m2": 310.00000000000006,
+      "replaced_source_faces": 687161,
+      "protected_source_faces": 379599,
+      "stair_guard_kind": "none",
+      "levels": [
+        {
+          "id": "lobby_floor_1f",
+          "kind": "floor",
+          "height_m": -1.636272425559606,
+          "area_xy_m2": 504.94000000000005,
+          "model_inferred_area_m2": 50.92000000000001,
+          "photo_fraction_on_sheet": 0.2797763261809469,
+          "source_height_deviation_p90_m": 0.3625274230530379
+        },
+        {
+          "id": "lobby_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.6599834629025738,
+          "area_xy_m2": 441.76000000000005,
+          "model_inferred_area_m2": 259.08000000000004,
+          "photo_fraction_on_sheet": 0.20344903125304253,
+          "source_height_deviation_p90_m": 0.29663987969252203
+        }
+      ]
+    },
+    "floor2": {
+      "planes": 4,
+      "floor_area_xy_m2": 500.43000000000006,
+      "ceiling_area_xy_m2": 493.74,
+      "modeled_inferred_area_m2": 258.07000000000005,
+      "replaced_source_faces": 785327,
+      "protected_source_faces": 516944,
+      "stair_guard_kind": "previous_reviewed_main_stair_corridor",
+      "levels": [
+        {
+          "id": "floor2_floor_1f",
+          "kind": "floor",
+          "height_m": -1.5998075386765134,
+          "area_xy_m2": 65.33000000000001,
+          "model_inferred_area_m2": 10.360000000000001,
+          "photo_fraction_on_sheet": 0.5553535894688505,
+          "source_height_deviation_p90_m": 0.27260623307625764
+        },
+        {
+          "id": "floor2_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.5530775879569934,
+          "area_xy_m2": 30.340000000000003,
+          "model_inferred_area_m2": 20.290000000000003,
+          "photo_fraction_on_sheet": 0.23877307185234015,
+          "source_height_deviation_p90_m": 0.08256823467235269
+        },
+        {
+          "id": "floor2_floor_2f",
+          "kind": "floor",
+          "height_m": 2.490410295659016,
+          "area_xy_m2": 435.1,
+          "model_inferred_area_m2": 39.52000000000001,
+          "photo_fraction_on_sheet": 0.3650108878020919,
+          "source_height_deviation_p90_m": 0.2386147291182812
+        },
+        {
+          "id": "floor2_ceiling_2f",
+          "kind": "ceiling",
+          "height_m": 5.415130286347697,
+          "area_xy_m2": 463.40000000000003,
+          "model_inferred_area_m2": 187.9,
+          "photo_fraction_on_sheet": 0.19518756393489323,
+          "source_height_deviation_p90_m": 0.2592790646689226
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "planes": 4,
+      "floor_area_xy_m2": 95.02000000000001,
+      "ceiling_area_xy_m2": 101.51000000000002,
+      "modeled_inferred_area_m2": 90.70000000000002,
+      "replaced_source_faces": 107614,
+      "protected_source_faces": 225814,
+      "stair_guard_kind": "camera_height_transition_guard_not_semantic_stair_survey",
+      "levels": [
+        {
+          "id": "sub_floor_1f",
+          "kind": "floor",
+          "height_m": -1.3729515447050549,
+          "area_xy_m2": 52.400000000000006,
+          "model_inferred_area_m2": 9.850000000000001,
+          "photo_fraction_on_sheet": 0.6707895992366413,
+          "source_height_deviation_p90_m": 0.22857622334887345
+        },
+        {
+          "id": "sub_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.1143848450297325,
+          "area_xy_m2": 56.800000000000004,
+          "model_inferred_area_m2": 44.43000000000001,
+          "photo_fraction_on_sheet": 0.1027068661971831,
+          "source_height_deviation_p90_m": 0.46097920404126574
+        },
+        {
+          "id": "sub_floor_2f",
+          "kind": "floor",
+          "height_m": 2.810284618408088,
+          "area_xy_m2": 42.620000000000005,
+          "model_inferred_area_m2": 9.600000000000001,
+          "photo_fraction_on_sheet": 0.6432572735804787,
+          "source_height_deviation_p90_m": 0.15764861249798767
+        },
+        {
+          "id": "sub_ceiling_2f",
+          "kind": "ceiling",
+          "height_m": 5.822988108945386,
+          "area_xy_m2": 44.71000000000001,
+          "model_inferred_area_m2": 26.82,
+          "photo_fraction_on_sheet": 0.2757772310445091,
+          "source_height_deviation_p90_m": 0.3503192368787643
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "planes": 1,
+      "floor_area_xy_m2": 65.53000000000002,
+      "ceiling_area_xy_m2": 0,
+      "modeled_inferred_area_m2": 6.030000000000001,
+      "replaced_source_faces": 77267,
+      "protected_source_faces": 77162,
+      "stair_guard_kind": "none",
+      "levels": [
+        {
+          "id": "bridge_out_floor_1f",
+          "kind": "floor",
+          "height_m": -1.7637841005316914,
+          "area_xy_m2": 65.53000000000002,
+          "model_inferred_area_m2": 6.030000000000001,
+          "photo_fraction_on_sheet": 0.7416259728368686,
+          "source_height_deviation_p90_m": 0.13648333997980894
+        }
+      ]
+    },
+    "outside": {
+      "planes": 0,
+      "floor_area_xy_m2": 0,
+      "ceiling_area_xy_m2": 0,
+      "modeled_inferred_area_m2": 0,
+      "replaced_source_faces": 0,
+      "protected_source_faces": 84802,
+      "stair_guard_kind": "none",
+      "levels": []
+    }
+  },
+  "totals": {
+    "floor_area_xy_m2": 1165.92,
+    "ceiling_area_xy_m2": 1037.01,
+    "modeled_inferred_area_m2": 664.8000000000002
+  },
+  "sheets": 11,
+  "area_scope": "Sum of separate session floor/ceiling sheets; overlaps and two sides counted, not net building area.",
+  "model_scope": "Fixed horizontal display modeling, not new pose optimization or surveyed accuracy.",
+  "figures": [
+    {
+      "file": "lobby_floor_1f_support_map.png",
+      "sha256": "8e77ccceec0dd3a0cefd86b3956a22ffab3ac615677da6ee2be3ac35510142dd",
+      "plane": "lobby_floor_1f"
+    },
+    {
+      "file": "lobby_ceiling_1f_support_map.png",
+      "sha256": "6d773af9ead35fdce8de0f8f9f2ab6ad44d496e02d7c95a8d2b27b331625fd94",
+      "plane": "lobby_ceiling_1f"
+    },
+    {
+      "file": "floor2_floor_2f_support_map.png",
+      "sha256": "a9145a7f0a50de8e757db38cc9faa76067d6fd04c3eb0cf7e01392d9eb3bcdb1",
+      "plane": "floor2_floor_2f"
+    },
+    {
+      "file": "floor2_ceiling_2f_support_map.png",
+      "sha256": "26d140c07419d3b343cbf9d01c73b7d7812f3cff86cb020f0f58705cbb9d897a",
+      "plane": "floor2_ceiling_2f"
+    }
+  ],
+  "bundle_manifest_sha256": "f297f9d281a69f9573676cc933f3017d904c08959663ce975e956f697339dbbb",
+  "source_sha256": "c0be35e081d3a7e62b02e8392eee8192fbbf5acb7c587b001551b7baad99cddc"
+}

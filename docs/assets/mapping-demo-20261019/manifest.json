@@ -1,0 +1,165 @@
+{
+  "created_utc": "2026-10-19T05:04:56.083833+00:00",
+  "files": [
+    {
+      "file": "mapping_story.mp4",
+      "source": "outputs/student_union_mapping_video_v3/mapping_story.mp4",
+      "sha256": "068eafea342f4c619db17adddd92b32baca33dcc6a1861c0b668b412ffe4d890",
+      "bytes": 6565838
+    },
+    {
+      "file": "video_manifest.json",
+      "source": "outputs/student_union_mapping_video_v3/manifest.json",
+      "sha256": "e11238820c28ef5417b54ceb24ead005021c71574a639e69270d3d4db9ec3c21",
+      "bytes": 6690
+    },
+    {
+      "file": "replay_manifest.json",
+      "source": "outputs/student_union_slam_replay_v3/manifest.json",
+      "sha256": "e4c2a3d0dc9ad4a303fb30bab1a8f008d3afe846878b29a2bbe5001c3be764ad",
+      "bytes": 3345
+    },
+    {
+      "file": "replay_audit.json",
+      "source": "outputs/student_union_slam_replay_v3/independent_audit.json",
+      "sha256": "bd4c1929911b5cbabda2d38e4c5ceac0804a5965d30f92691a583d8b992a7470",
+      "bytes": 15100
+    },
+    {
+      "file": "actual_dds_compact.png",
+      "source": "outputs/student_union_mapping_video_v3/actual_dds_compact.png",
+      "sha256": "e09e583cb44c6cad18a862eecc360201c91275d89d9dc5d724490ac93bcddf9d",
+      "bytes": 51651
+    },
+    {
+      "file": "actual_dds_compact.dot",
+      "source": "outputs/student_union_mapping_video_v3/actual_dds_compact.dot",
+      "sha256": "bf9127ec23588f9d466469f3dd875bb08fdd3081784b034b88408447cd61f282",
+      "bytes": 1236
+    },
+    {
+      "file": "rqt_native_window.png",
+      "source": "outputs/student_union_slam_replay_v3/graph_delivery/rqt_native_window.png",
+      "sha256": "a1f56f986a136ed2ec2fc1f5ba11e060482c65557497777699357676c0f2c09f",
+      "bytes": 150277
+    },
+    {
+      "file": "rqt_graph.png",
+      "source": "outputs/student_union_slam_replay_v3/graph_delivery/rqt_graph.png",
+      "sha256": "6e0ef54b3bd3833dcb2877f8697d019f53b4ef2d35234ac4a6558d30c36cc69b",
+      "bytes": 118642
+    },
+    {
+      "file": "rqt_graph.svg",
+      "source": "outputs/student_union_slam_replay_v3/graph_delivery/rqt_graph.svg",
+      "sha256": "b6ad111ea8193502bf537dbc07351ec3ea359f783fe63c9b4d87710c08b94276",
+      "bytes": 33097
+    },
+    {
+      "file": "rqt_graph.dot",
+      "source": "outputs/student_union_slam_replay_v3/graph_delivery/rqt_graph.dot",
+      "sha256": "cba1c88092c4c952aabf5c2fb739b735a728b2ede9f4a9fc63ccd5d5dc8004ec",
+      "bytes": 18826
+    },
+    {
+      "file": "ros_graph_inventory.json",
+      "source": "outputs/student_union_slam_replay_v3/graph_delivery/ros_graph_inventory.json",
+      "sha256": "a98172a9d88b4a3b642803e1478ec0f77761c461e4bbbe73e2beca24fe10e3f9",
+      "bytes": 7610
+    },
+    {
+      "file": "campus_f1.png",
+      "source": "outputs/student_union_cartographic_v3/campus_f1.png",
+      "sha256": "e1f257e283114fa8c8707ba157f1cc0325d36587e45e3da33a8b48cd73e93a02",
+      "bytes": 64283
+    },
+    {
+      "file": "indoor_f1.png",
+      "source": "outputs/student_union_cartographic_v3/indoor_f1.png",
+      "sha256": "29b74a86dcaba973edf61697eb395d538b48e219d25d3ea5ade19388212a0f33",
+      "bytes": 46897
+    },
+    {
+      "file": "indoor_f2.png",
+      "source": "outputs/student_union_cartographic_v3/indoor_f2.png",
+      "sha256": "41e4601fcd0146f55cf1d0e2a57c8f1d7d901afc2c1a382515c4f7a3b85bbdbc",
+      "bytes": 47254
+    },
+    {
+      "file": "indoor_f1.svg",
+      "source": "outputs/student_union_cartographic_v3/indoor_f1.svg",
+      "sha256": "8ef58596c698f3205900db78ce451628072e0367e55fb19cb613a8319ded33e0",
+      "bytes": 3115
+    },
+    {
+      "file": "indoor_f2.svg",
+      "source": "outputs/student_union_cartographic_v3/indoor_f2.svg",
+      "sha256": "b4b60b670a9612e2c99e11193b6648f32fb54a10691d07d5bc324b3c7b2ba95a",
+      "bytes": 3211
+    },
+    {
+      "file": "map_vectors.json",
+      "source": "outputs/student_union_cartographic_v3/map_vectors.json",
+      "sha256": "8d86e85c08e433242321604f459175c5d1ee6047cc7dd3cee1aecd14c7faf172",
+      "bytes": 136292
+    },
+    {
+      "file": "campus_osm.geojson",
+      "source": "outputs/student_union_cartographic_v3/campus_osm.geojson",
+      "sha256": "066c07d2654c44b4fbc6c3e3333e8f18d5157abd4d675c0fa7e5da0462d771ce",
+      "bytes": 49509
+    },
+    {
+      "file": "indoor_coarse.geojson",
+      "source": "outputs/student_union_cartographic_v3/indoor_coarse.geojson",
+      "sha256": "6ef7a3a8a1f3020893ce73ca857ea6925dcc1ca49a5ca4149536f5ea34793d19",
+      "bytes": 15492
+    },
+    {
+      "file": "osm_source.xml",
+      "source": "outputs/student_union_cartographic_v3/osm_source.xml",
+      "sha256": "5f2473bd925df23bc952585739cf488f7a3eb0c07337a5b4bbf96131b470d9b2",
+      "bytes": 236649
+    },
+    {
+      "file": "cartographic_manifest.json",
+      "source": "outputs/student_union_cartographic_v3/manifest.json",
+      "sha256": "2429ec9ff737f7c11aadfc113d0ff32628bc9a339a6bbdb86d2abe1e54150a7e",
+      "bytes": 3190
+    },
+    {
+      "file": "replay_outside.png",
+      "source": "outputs/student_union_mapping_video_v3/stills/0007_outside.png",
+      "sha256": "f381af3dc9c8144efc921b30b1056f569010b47d71aa3975cb5aefae737064db",
+      "bytes": 950830
+    },
+    {
+      "file": "replay_lobby.png",
+      "source": "outputs/student_union_mapping_video_v3/stills/0024_lobby.png",
+      "sha256": "5a766165743401528c65c48f431f9921e63f2356166d5fe106ab612b1f096f4d",
+      "bytes": 817157
+    },
+    {
+      "file": "replay_bridge_out1f.png",
+      "source": "outputs/student_union_mapping_video_v3/stills/0036_bridge_out1f.png",
+      "sha256": "a14b47be7dab9b3ad392bce9dcc72e21f00272ddd60d64546e2fe29e5b7b7ca9",
+      "bytes": 1029916
+    },
+    {
+      "file": "replay_floor2.png",
+      "source": "outputs/student_union_mapping_video_v3/stills/0060_floor2.png",
+      "sha256": "b7e2983c23e52220f2fd820014a632dde51a71a698d666882080d43c97997629",
+      "bytes": 961456
+    },
+    {
+      "file": "replay_bridge_12_sub.png",
+      "source": "outputs/student_union_mapping_video_v3/stills/0071_bridge_12_sub.png",
+      "sha256": "c467db7c19af3ac166e9341dc2ca9c5de46eb145b712332d18e475a5e053c3db",
+      "bytes": 969272
+    }
+  ],
+  "all_files_copied_without_image_retouching": true,
+  "video_scope": "edited causal recorded-data replay + historical offline finalization",
+  "public_release_ready": false,
+  "OSM_attribution": "\u00a9 OpenStreetMap contributors; ODbL; https://www.openstreetmap.org/copyright"
+}

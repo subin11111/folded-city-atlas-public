@@ -1,0 +1,10 @@
+{
+  "description": "Five unchanged Student Union DBs for explicit loop revalidation and conditional joint optimization",
+  "sessions": {
+    "outside": {"database": "data/raw/rtabmap/261016-234854-outside.db", "reviewed_dir": "outputs/student_union_20261017_reviewed/outside"},
+    "lobby": {"database": "data/raw/rtabmap/261017-000622-1f.db", "reviewed_dir": "outputs/student_union_20261017_reviewed/lobby"},
+    "bridge_out1f": {"database": "data/raw/rtabmap/261017-011331-bridgeout1f.db", "reviewed_dir": "outputs/student_union_20261017_added_reviewed/bridge_out1f"},
+    "floor2": {"database": "data/raw/rtabmap/261017-013501-2f.db", "reviewed_dir": "outputs/student_union_20261017_added_reviewed/floor2"},
+    "bridge_12_sub": {"database": "data/raw/rtabmap/261017-013904-bridg12_2.db", "reviewed_dir": "outputs/student_union_20261017_added_reviewed/bridge_12_sub"}
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-18T13:35:59.575933+00:00",
+  "bundle_manifest_sha256": "61ca4728de76d62130a3a96e48630721e748d5bf0bb4fcbacfefd3fa668c962e",
+  "sessions": {
+    "lobby": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 172,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "floor2": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 167,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_12_sub": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 2,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 8,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_out1f": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 2,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "outside": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 18,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    }
+  },
+  "audit_source_sha256": "f5f8848ab831a201dddc8f9c55076e1e15953836ed1176ce80dcd8c4b5882f41",
+  "scope": "Appearance-only display material change. Reliable original photographic detail is normalized; missing floor texture uses inferred smooth photographed stone colour, not reconstructed original tile layout."
+}

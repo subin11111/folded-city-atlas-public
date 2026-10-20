@@ -1,0 +1,65 @@
+# Original sensor captures and experiment copies
+/data/
+*.db
+*.db-wal
+*.db-shm
+*.bag
+*.mcap
+*.pdf
+
+# Generated maps, trajectories, figures, and runtime logs
+/outputs/
+/logs/
+
+# Local-only intermediate renders; documented evidence galleries remain tracked
+/docs/assets/appearance-review-20261018/
+/docs/assets/continuous-walls-final-20261018/
+/docs/assets/continuous-walls-review-20261018/
+/docs/assets/photo-semantic-v8-review-20261018/
+/docs/assets/photo-semantic-v9-review-20261018/
+/docs/assets/photo-semantics-facing-review-20261018/
+/docs/assets/photo-semantics-final-20261018/
+/docs/assets/photo-semantics-review-20261018/
+/docs/assets/photo-semantics-selected-20261018/
+/docs/assets/structural-clean-review-20261018/
+/docs/assets/structural-review-20261018/
+/docs/assets/structural-v2-review-20261018/
+
+# ROS 2 / colcon build products
+/build/
+/install/
+/log/
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Native crash artifacts
+core
+core.*
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.vercel
+.env*
+
+# Removed personal handoff transcript: never track it again.
+Folded_City_Codex_인계.md

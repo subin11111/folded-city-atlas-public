@@ -1,0 +1,2279 @@
+{
+  "created_utc": "2026-10-17T06:57:32.377656+00:00",
+  "accepted": false,
+  "navigation": false,
+  "run": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1",
+  "sessions": {
+    "outside": {
+      "used_AB_frames": 305,
+      "submaps": 85,
+      "native_loop_count": 11,
+      "retained_loop_roles": {
+        "train": 8,
+        "heldout": 2
+      },
+      "common_fixed_patch_count": 16,
+      "fixed_patch_statistics": {
+        "selected_initial": {
+          "count": 16,
+          "median_m": 0.14280170334393727,
+          "p90_m": 0.44253485402196124,
+          "maximum_m": 1.0277377534156822,
+          "severe_regression_count": 5
+        },
+        "incumbent_preview": {
+          "count": 16,
+          "median_m": 0.1287602077143544,
+          "p90_m": 0.2898439859007029,
+          "maximum_m": 0.5984494470335318,
+          "severe_regression_count": 0
+        },
+        "baseline_huber": {
+          "count": 16,
+          "median_m": 0.08408118424284619,
+          "p90_m": 0.2096678232254821,
+          "maximum_m": 0.3198341765519028,
+          "severe_regression_count": 3
+        },
+        "dcs": {
+          "count": 16,
+          "median_m": 0.08408117924575355,
+          "p90_m": 0.20966780459859868,
+          "maximum_m": 0.3198341621256707,
+          "severe_regression_count": 3
+        },
+        "group_switch": {
+          "count": 16,
+          "median_m": 0.08487116930326208,
+          "p90_m": 0.21054195706679457,
+          "maximum_m": 0.3185584046771503,
+          "severe_regression_count": 3
+        },
+        "reviewed_4dof": {
+          "count": 16,
+          "median_m": 0.12876020771435445,
+          "p90_m": 0.28984398590070237,
+          "maximum_m": 0.5984494470335332,
+          "severe_regression_count": 0
+        },
+        "floor2_rgbd_ba": {
+          "count": 16,
+          "median_m": 0.14280170334393766,
+          "p90_m": 0.442534854021961,
+          "maximum_m": 1.0277377534156822,
+          "severe_regression_count": 5
+        }
+      },
+      "decisions": {
+        "baseline_huber": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "dcs": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "group_switch": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "reviewed_4dof": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "floor2_rgbd_ba": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        }
+      },
+      "selected_label": "incumbent_preview",
+      "best_attempt_for_visual_comparison": "dcs",
+      "selected_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/selected/outside/trajectory.csv",
+      "selected_trajectory_sha256": "1a24f2c67eb6e2872fdfa2a63e6f2e3efc23e8225f7f8fbeb06b05d21758c689",
+      "database_unchanged": true,
+      "database_sha256_after": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91"
+    },
+    "lobby": {
+      "used_AB_frames": 800,
+      "submaps": 171,
+      "native_loop_count": 36,
+      "retained_loop_roles": {
+        "train": 17,
+        "heldout": 5
+      },
+      "common_fixed_patch_count": 36,
+      "fixed_patch_statistics": {
+        "selected_initial": {
+          "count": 36,
+          "median_m": 0.034150921120851135,
+          "p90_m": 0.2680809282069277,
+          "maximum_m": 0.4773429602458887,
+          "severe_regression_count": 4
+        },
+        "incumbent_preview": {
+          "count": 36,
+          "median_m": 0.030339859162218468,
+          "p90_m": 0.21794437150881601,
+          "maximum_m": 0.4458943380807141,
+          "severe_regression_count": 0
+        },
+        "baseline_huber": {
+          "count": 36,
+          "median_m": 0.04492110498250144,
+          "p90_m": 0.18224812484929248,
+          "maximum_m": 0.6061314616569089,
+          "severe_regression_count": 6
+        },
+        "dcs": {
+          "count": 36,
+          "median_m": 0.04491639571381015,
+          "p90_m": 0.18224776533095519,
+          "maximum_m": 0.6061133602076756,
+          "severe_regression_count": 6
+        },
+        "group_switch": {
+          "count": 36,
+          "median_m": 0.04468457066858861,
+          "p90_m": 0.18365308905487662,
+          "maximum_m": 0.602534061517742,
+          "severe_regression_count": 6
+        },
+        "reviewed_4dof": {
+          "count": 36,
+          "median_m": 0.030878495150882295,
+          "p90_m": 0.31758157848075386,
+          "maximum_m": 0.5083047566332664,
+          "severe_regression_count": 3
+        },
+        "floor2_rgbd_ba": {
+          "count": 36,
+          "median_m": 0.03415092112085136,
+          "p90_m": 0.26808092820692764,
+          "maximum_m": 0.47734296024588907,
+          "severe_regression_count": 4
+        }
+      },
+      "decisions": {
+        "baseline_huber": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "dcs": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "group_switch": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm"
+          ]
+        },
+        "reviewed_4dof": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "floor2_rgbd_ba": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        }
+      },
+      "selected_label": "incumbent_preview",
+      "best_attempt_for_visual_comparison": "dcs",
+      "selected_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/selected/lobby/trajectory.csv",
+      "selected_trajectory_sha256": "ab34c75d5a0d3fe618df9e8a7e747e0dd4f1387f14e4f41d9d74376ebe61fb1d",
+      "database_unchanged": true,
+      "database_sha256_after": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c"
+    },
+    "bridge_out1f": {
+      "used_AB_frames": 86,
+      "submaps": 17,
+      "native_loop_count": 1,
+      "retained_loop_roles": {},
+      "common_fixed_patch_count": 0,
+      "fixed_patch_statistics": {
+        "selected_initial": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "incumbent_preview": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "baseline_huber": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "dcs": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "group_switch": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "reviewed_4dof": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "floor2_rgbd_ba": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        }
+      },
+      "decisions": {
+        "baseline_huber": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "dcs": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "group_switch": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "reviewed_4dof": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "floor2_rgbd_ba": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        }
+      },
+      "selected_label": "incumbent_preview",
+      "best_attempt_for_visual_comparison": "dcs",
+      "selected_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/selected/bridge_out1f/trajectory.csv",
+      "selected_trajectory_sha256": "72c3c759dfdacd12df0ea4eca9b5637c8753d1e9af63d234e409d91e777602f6",
+      "database_unchanged": true,
+      "database_sha256_after": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b"
+    },
+    "floor2": {
+      "used_AB_frames": 925,
+      "submaps": 227,
+      "native_loop_count": 42,
+      "retained_loop_roles": {
+        "train": 19,
+        "heldout": 6
+      },
+      "common_fixed_patch_count": 38,
+      "fixed_patch_statistics": {
+        "selected_initial": {
+          "count": 38,
+          "median_m": 0.06301569361628509,
+          "p90_m": 0.26817116745964475,
+          "maximum_m": 1.0047346067943368,
+          "severe_regression_count": 9
+        },
+        "incumbent_preview": {
+          "count": 38,
+          "median_m": 0.04669237935651467,
+          "p90_m": 0.10646260494198212,
+          "maximum_m": 0.23275608738986558,
+          "severe_regression_count": 0
+        },
+        "baseline_huber": {
+          "count": 38,
+          "median_m": 0.05975634664538601,
+          "p90_m": 0.2058773963678789,
+          "maximum_m": 1.1554329534584324,
+          "severe_regression_count": 9
+        },
+        "dcs": {
+          "count": 38,
+          "median_m": 0.059782022377795174,
+          "p90_m": 0.20587444785220332,
+          "maximum_m": 1.1554215043705862,
+          "severe_regression_count": 9
+        },
+        "group_switch": {
+          "count": 38,
+          "median_m": 0.061016693420599975,
+          "p90_m": 0.20688430302494504,
+          "maximum_m": 1.1607482155708673,
+          "severe_regression_count": 11
+        },
+        "reviewed_4dof": {
+          "count": 38,
+          "median_m": 0.05704062614207668,
+          "p90_m": 0.10631155464652116,
+          "maximum_m": 0.3133800823789574,
+          "severe_regression_count": 4
+        },
+        "floor2_rgbd_ba": {
+          "count": 38,
+          "median_m": 0.047582334446306065,
+          "p90_m": 0.15032620832264457,
+          "maximum_m": 0.25966971288354557,
+          "severe_regression_count": 7
+        }
+      },
+      "decisions": {
+        "baseline_huber": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "dcs": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "group_switch": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "heldout_loop_geometry_regressed_or_missing",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "reviewed_4dof": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        },
+        "floor2_rgbd_ba": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "strict_outer_convergence_not_met",
+            "fixed_patch_distribution_regression",
+            "one_or_more_fixed_patches_worsen_over_5cm",
+            "no_material_5mm_distribution_improvement"
+          ]
+        }
+      },
+      "selected_label": "incumbent_preview",
+      "best_attempt_for_visual_comparison": "floor2_rgbd_ba",
+      "selected_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/selected/floor2/trajectory.csv",
+      "selected_trajectory_sha256": "be69bdfe1c723cdbef343a5709d5682edd23207318937971f766244a716e43ea",
+      "database_unchanged": true,
+      "database_sha256_after": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e"
+    },
+    "bridge_12_sub": {
+      "used_AB_frames": 135,
+      "submaps": 32,
+      "native_loop_count": 1,
+      "retained_loop_roles": {
+        "train": 1
+      },
+      "common_fixed_patch_count": 0,
+      "fixed_patch_statistics": {
+        "selected_initial": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "incumbent_preview": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "baseline_huber": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "dcs": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "group_switch": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "reviewed_4dof": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        },
+        "floor2_rgbd_ba": {
+          "count": 0,
+          "median_m": null,
+          "p90_m": null,
+          "maximum_m": null,
+          "severe_regression_count": 0
+        }
+      },
+      "decisions": {
+        "baseline_huber": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "dcs": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "group_switch": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "reviewed_4dof": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        },
+        "floor2_rgbd_ba": {
+          "eligible_for_development_selection": false,
+          "reasons": [
+            "insufficient_fixed_patch_validation"
+          ]
+        }
+      },
+      "selected_label": "incumbent_preview",
+      "best_attempt_for_visual_comparison": "dcs",
+      "selected_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/selected/bridge_12_sub/trajectory.csv",
+      "selected_trajectory_sha256": "0457fd6e960cdedaef690b1e092c1293d7418f7bde6e3ba1846dc8c8b69b31a6",
+      "database_unchanged": true,
+      "database_sha256_after": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+    }
+  },
+  "independent_numerical_runs": {
+    "outside": {
+      "baseline_huber": {
+        "outer_iterations": 6,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.1232170550601284,
+          "maximum_parameter_step": 3.6675102677019566e-08,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 4,
+          "outer_iteration": 6,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "dcs": {
+        "outer_iterations": 4,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.1232170550601805,
+          "maximum_parameter_step": 1.8218737130037965e-08,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 3,
+          "outer_iteration": 4,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "group_switch": {
+        "outer_iterations": 10,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.0813561716202469,
+          "maximum_parameter_step": 3.221853968338184e-08,
+          "maximum_weight_change": 2.2935817245439694e-08,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 3,
+          "outer_iteration": 10,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      }
+    },
+    "lobby": {
+      "baseline_huber": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.1727825439405772,
+          "maximum_parameter_step": 2.2576815555841456e-05,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "dcs": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.1727825446155877,
+          "maximum_parameter_step": 4.0718313804921635e-05,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "group_switch": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.1401774730571725,
+          "maximum_parameter_step": 1.0470435630460795e-05,
+          "maximum_weight_change": 1.1191067883498107e-07,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      }
+    },
+    "bridge_out1f": {
+      "baseline_huber": {
+        "outer_iterations": 2,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.132575211824499e-26,
+          "maximum_parameter_step": 0.0,
+          "maximum_weight_change": 0.0,
+          "message": "`gtol` termination condition is satisfied.",
+          "nfev": 1,
+          "outer_iteration": 2,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "dcs": {
+        "outer_iterations": 2,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.132575211824499e-26,
+          "maximum_parameter_step": 0.0,
+          "maximum_weight_change": 0.0,
+          "message": "`gtol` termination condition is satisfied.",
+          "nfev": 1,
+          "outer_iteration": 2,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "group_switch": {
+        "outer_iterations": 2,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 1.9963451701026478e-26,
+          "maximum_parameter_step": 0.0,
+          "maximum_weight_change": 1.1249990050643532e-08,
+          "message": "`gtol` termination condition is satisfied.",
+          "nfev": 1,
+          "outer_iteration": 2,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      }
+    },
+    "floor2": {
+      "baseline_huber": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 3.899378304146772,
+          "maximum_parameter_step": 0.0001775963334882391,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "dcs": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 3.8993783104487147,
+          "maximum_parameter_step": 5.7237449584413014e-05,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "group_switch": {
+        "outer_iterations": 12,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 3.388214411864545,
+          "maximum_parameter_step": 0.00015380024013422755,
+          "maximum_weight_change": 5.428520464367814e-06,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 2,
+          "outer_iteration": 12,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      }
+    },
+    "bridge_12_sub": {
+      "baseline_huber": {
+        "outer_iterations": 3,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 0.10004958687052826,
+          "maximum_parameter_step": 9.468171247029034e-10,
+          "maximum_weight_change": 0.0,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 6,
+          "outer_iteration": 3,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "dcs": {
+        "outer_iterations": 7,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 0.10004958687052107,
+          "maximum_parameter_step": 0.0,
+          "maximum_weight_change": 0.0,
+          "message": "`xtol` termination condition is satisfied.",
+          "nfev": 6,
+          "outer_iteration": 7,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      },
+      "group_switch": {
+        "outer_iterations": 8,
+        "final_iteration": {
+          "active_bounds": 0,
+          "cost": 0.0989393664964597,
+          "maximum_parameter_step": 7.99299199327752e-08,
+          "maximum_weight_change": 9.701747183399334e-10,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 3,
+          "outer_iteration": 8,
+          "success": true
+        },
+        "heldout_edges_in_objective": 0
+      }
+    }
+  },
+  "manual_doorway": {
+    "training_observations": 34,
+    "test_observations": 5,
+    "training_unique_metric_landmarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "training_after": {
+      "pixel_observations": 34,
+      "pixel_median_px": 2.4777297599408388,
+      "pixel_p90_px": 5.735131388218832,
+      "valid_depth_observations": 31,
+      "depth_median_m": 0.04408987816799037,
+      "depth_p90_m": 0.19565994374305617,
+      "behind_camera_count": 0
+    },
+    "test_before": {
+      "pixel_observations": 5,
+      "pixel_median_px": 10.137845813208768,
+      "pixel_p90_px": 13.405534896565406,
+      "valid_depth_observations": 2,
+      "depth_median_m": 0.10340582183586977,
+      "depth_p90_m": 0.12297032889910695,
+      "behind_camera_count": 0
+    },
+    "test_after": {
+      "pixel_observations": 5,
+      "pixel_median_px": 11.376363342008103,
+      "pixel_p90_px": 15.343483787638455,
+      "valid_depth_observations": 2,
+      "depth_median_m": 0.08882389387174405,
+      "depth_p90_m": 0.15484536284610145,
+      "behind_camera_count": 0
+    },
+    "withheld_cloud_before": {
+      "overlap": 0.25506528154279845,
+      "source_overlap": 0.22602118003025717,
+      "target_overlap": 0.2926744388376544,
+      "rmse_m": 0.11213979088313332,
+      "clipped_rmse_m": 0.18152493890272112,
+      "pairs": 3176
+    },
+    "withheld_cloud_after": {
+      "overlap": 0.24795756153336063,
+      "source_overlap": 0.22284417549167929,
+      "target_overlap": 0.2794501479032539,
+      "rmse_m": 0.10117514248215535,
+      "clipped_rmse_m": 0.18050980844732703,
+      "pairs": 3079
+    },
+    "delta_from_incumbent": {
+      "translation_m": 0.07330084051545006,
+      "rotation_deg": 1.4715637720959254
+    },
+    "local_support_passed": false,
+    "local_rejection_reasons": [
+      "withheld_reprojection_regression_or_missing",
+      "manual_click_sensitivity_above_10cm_or_3deg"
+    ],
+    "depth_threshold_sweep": {
+      "unchanged_confidence_minimum": 50,
+      "per_corner": {
+        "a": [
+          {
+            "name": "upper_panel_top_left",
+            "valid_confident_pixels": 9,
+            "range_m": 0.009765625,
+            "center_confidence": 50,
+            "center_depth_m": 3.603515625
+          },
+          {
+            "name": "upper_panel_top_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.216796875,
+            "center_confidence": 100,
+            "center_depth_m": 3.708984375
+          },
+          {
+            "name": "upper_panel_bottom_left",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 3.1484375
+          },
+          {
+            "name": "upper_panel_bottom_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.548828125,
+            "center_confidence": 50,
+            "center_depth_m": 3.748046875
+          },
+          {
+            "name": "door_frame_top_left",
+            "valid_confident_pixels": 9,
+            "range_m": 0.0078125,
+            "center_confidence": 100,
+            "center_depth_m": 3.875
+          },
+          {
+            "name": "door_frame_top_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.0078125,
+            "center_confidence": 100,
+            "center_depth_m": 3.759765625
+          },
+          {
+            "name": "door_frame_bottom_left",
+            "valid_confident_pixels": 9,
+            "range_m": 0.24609375,
+            "center_confidence": 50,
+            "center_depth_m": 4.3984375
+          },
+          {
+            "name": "door_frame_bottom_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.0546875,
+            "center_confidence": 100,
+            "center_depth_m": 3.998046875
+          }
+        ],
+        "b": [
+          {
+            "name": "upper_panel_top_left",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 2.486328125
+          },
+          {
+            "name": "upper_panel_top_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.01171875,
+            "center_confidence": 100,
+            "center_depth_m": 3.296875
+          },
+          {
+            "name": "upper_panel_bottom_left",
+            "valid_confident_pixels": 3,
+            "range_m": 0.02734375,
+            "center_confidence": 0,
+            "center_depth_m": 3.10546875
+          },
+          {
+            "name": "upper_panel_bottom_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.123046875,
+            "center_confidence": 50,
+            "center_depth_m": 3.357421875
+          },
+          {
+            "name": "door_frame_top_left",
+            "valid_confident_pixels": 9,
+            "range_m": 0.01171875,
+            "center_confidence": 100,
+            "center_depth_m": 3.341796875
+          },
+          {
+            "name": "door_frame_top_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.0078125,
+            "center_confidence": 100,
+            "center_depth_m": 3.283203125
+          },
+          {
+            "name": "door_frame_bottom_left",
+            "valid_confident_pixels": 9,
+            "range_m": 0.16015625,
+            "center_confidence": 50,
+            "center_depth_m": 3.78515625
+          },
+          {
+            "name": "door_frame_bottom_right",
+            "valid_confident_pixels": 9,
+            "range_m": 0.103515625,
+            "center_confidence": 100,
+            "center_depth_m": 3.609375
+          }
+        ]
+      },
+      "sweep": [
+        {
+          "range_gate_m": 0.06,
+          "minimum_valid_pixels": 5,
+          "valid_a": 4,
+          "valid_b": 3,
+          "valid_both": 2
+        },
+        {
+          "range_gate_m": 0.12,
+          "minimum_valid_pixels": 5,
+          "valid_a": 4,
+          "valid_b": 4,
+          "valid_both": 3
+        },
+        {
+          "range_gate_m": 0.13,
+          "minimum_valid_pixels": 5,
+          "valid_a": 4,
+          "valid_b": 5,
+          "valid_both": 3
+        },
+        {
+          "range_gate_m": 0.25,
+          "minimum_valid_pixels": 5,
+          "valid_a": 6,
+          "valid_b": 6,
+          "valid_both": 5
+        },
+        {
+          "range_gate_m": 0.4,
+          "minimum_valid_pixels": 5,
+          "valid_a": 6,
+          "valid_b": 6,
+          "valid_both": 5
+        },
+        {
+          "range_gate_m": 0.6,
+          "minimum_valid_pixels": 5,
+          "valid_a": 7,
+          "valid_b": 6,
+          "valid_both": 6
+        }
+      ],
+      "warning": "A wider patch range may mix foreground/background surfaces; more accepted depth is not evidence of better depth."
+    }
+  },
+  "floor2_structure_local": {
+    "training_observations": 31,
+    "test_observations": 8,
+    "training_unique_metric_landmarks": [
+      0,
+      1
+    ],
+    "training_after": {
+      "pixel_observations": 31,
+      "pixel_median_px": 2.3716287726950647,
+      "pixel_p90_px": 7.823008835991167,
+      "valid_depth_observations": 5,
+      "depth_median_m": 0.3224812581584171,
+      "depth_p90_m": 0.44414139344144704,
+      "behind_camera_count": 0
+    },
+    "test_before": {
+      "pixel_observations": 8,
+      "pixel_median_px": 10.749685598965378,
+      "pixel_p90_px": 27.218741672235847,
+      "valid_depth_observations": 0,
+      "depth_median_m": null,
+      "depth_p90_m": null,
+      "behind_camera_count": 0
+    },
+    "test_after": {
+      "pixel_observations": 8,
+      "pixel_median_px": 4.264425823854076,
+      "pixel_p90_px": 20.43736030550874,
+      "valid_depth_observations": 0,
+      "depth_median_m": null,
+      "depth_p90_m": null,
+      "behind_camera_count": 0
+    },
+    "withheld_cloud_before": {
+      "overlap": 0.23207372173760005,
+      "source_overlap": 0.23014872699773128,
+      "target_overlap": 0.23403118991668448,
+      "rmse_m": 0.11312153040146665,
+      "clipped_rmse_m": 0.18352650036831258,
+      "pairs": 4017
+    },
+    "withheld_cloud_after": {
+      "overlap": 0.29340852338622253,
+      "source_overlap": 0.31383917317872445,
+      "target_overlap": 0.27547532578508865,
+      "rmse_m": 0.10496396745482367,
+      "clipped_rmse_m": 0.17749923051280303,
+      "pairs": 5069
+    },
+    "delta_from_incumbent": {
+      "translation_m": 0.43238582953406435,
+      "rotation_deg": 3.2057726783819525
+    },
+    "local_support_passed": false,
+    "local_rejection_reasons": [
+      "withheld_reprojection_regression_or_missing",
+      "manual_click_sensitivity_above_10cm_or_3deg"
+    ],
+    "depth_threshold_sweep": {
+      "unchanged_confidence_minimum": 50,
+      "per_corner": {
+        "a": [
+          {
+            "name": "left_partition_ceiling_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 5.1796875
+          },
+          {
+            "name": "right_partition_ceiling_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 5.4921875
+          },
+          {
+            "name": "grille_left_upper_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 6.4453125
+          },
+          {
+            "name": "grille_right_upper_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 6.5078125
+          },
+          {
+            "name": "partition_left_floor_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 7.54296875
+          },
+          {
+            "name": "partition_right_floor_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 7.61328125
+          },
+          {
+            "name": "right_wall_floor_railing_corner",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 7.42578125
+          },
+          {
+            "name": "railing_far_top_corner",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 7.1484375
+          }
+        ],
+        "b": [
+          {
+            "name": "left_partition_ceiling_junction",
+            "valid_confident_pixels": 9,
+            "range_m": 0.19921875,
+            "center_confidence": 50,
+            "center_depth_m": 4.51171875
+          },
+          {
+            "name": "right_partition_ceiling_junction",
+            "valid_confident_pixels": 3,
+            "range_m": 0.00390625,
+            "center_confidence": 0,
+            "center_depth_m": 5.203125
+          },
+          {
+            "name": "grille_left_upper_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 6.70703125
+          },
+          {
+            "name": "grille_right_upper_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 100,
+            "center_depth_m": 6.98828125
+          },
+          {
+            "name": "partition_left_floor_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 7.08984375
+          },
+          {
+            "name": "partition_right_floor_junction",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 7.13671875
+          },
+          {
+            "name": "right_wall_floor_railing_corner",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 0,
+            "center_depth_m": 7.33203125
+          },
+          {
+            "name": "railing_far_top_corner",
+            "valid_confident_pixels": 0,
+            "range_m": null,
+            "center_confidence": 50,
+            "center_depth_m": 7.20703125
+          }
+        ]
+      },
+      "sweep": [
+        {
+          "range_gate_m": 0.06,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 0,
+          "valid_both": 0
+        },
+        {
+          "range_gate_m": 0.12,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 0,
+          "valid_both": 0
+        },
+        {
+          "range_gate_m": 0.13,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 0,
+          "valid_both": 0
+        },
+        {
+          "range_gate_m": 0.25,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 1,
+          "valid_both": 0
+        },
+        {
+          "range_gate_m": 0.4,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 1,
+          "valid_both": 0
+        },
+        {
+          "range_gate_m": 0.6,
+          "minimum_valid_pixels": 5,
+          "valid_a": 0,
+          "valid_b": 1,
+          "valid_both": 0
+        }
+      ],
+      "warning": "A wider patch range may mix foreground/background surfaces; more accepted depth is not evidence of better depth."
+    }
+  },
+  "floor2_structure_full_graph": {
+    "common_support": {
+      "matched_count": 38,
+      "historical_patch_count": 61,
+      "patch_ids": [
+        "432/488:horizontal:0/0",
+        "548/981:wall:0/0",
+        "609/1024:horizontal:0/0",
+        "620/1025:horizontal:0/0",
+        "639/1029:horizontal:0/0",
+        "642/1031:wall:0/0",
+        "642/1031:horizontal:0/0",
+        "642/1032:horizontal:0/0",
+        "642/1032:wall:0/0",
+        "643/1033:horizontal:0/0",
+        "643/1033:wall:0/0",
+        "644/1034:horizontal:0/0",
+        "644/1034:wall:0/0",
+        "644/1035:wall:0/0",
+        "656/1055:wall:0/1",
+        "656/1055:horizontal:0/0",
+        "790/860:horizontal:0/0",
+        "803/882:horizontal:0/0",
+        "809/889:wall:2/1",
+        "809/889:wall:0/0",
+        "834/897:horizontal:0/0",
+        "834/897:wall:0/0",
+        "841/904:horizontal:0/0",
+        "1081/1131:horizontal:0/0",
+        "1192/1217:wall:0/0",
+        "7/44:wall:0/0",
+        "7/44:horizontal:0/0",
+        "340/355:wall:1/1",
+        "340/355:wall:0/0",
+        "729/755:wall:0/2",
+        "729/755:horizontal:0/0",
+        "729/755:wall:2/1",
+        "730/756:horizontal:0/0",
+        "730/756:wall:2/1",
+        "730/756:wall:0/2",
+        "789/859:horizontal:0/0",
+        "828/892:horizontal:0/0",
+        "927/948:horizontal:0/0"
+      ],
+      "excluded_patch_ids": [
+        "474/940:horizontal:0/0",
+        "503/961:horizontal:0/0",
+        "608/1023:horizontal:0/0",
+        "608/1023:wall:0/0",
+        "639/1030:horizontal:0/0",
+        "639/1030:wall:0/0",
+        "657/1056:horizontal:0/0",
+        "657/1057:horizontal:0/0",
+        "696/789:horizontal:0/0",
+        "696/858:horizontal:0/0",
+        "696/859:wall:1/0",
+        "696/859:horizontal:0/0",
+        "839/902:horizontal:0/0",
+        "840/903:horizontal:0/0",
+        "414/470:wall:0/0",
+        "414/470:wall:2/2",
+        "733/758:wall:2/1",
+        "733/758:wall:0/0",
+        "788/858:horizontal:0/0",
+        "1157/1190:wall:2/1",
+        "1158/1215:wall:1/1",
+        "1158/1215:wall:0/0",
+        "1158/1215:horizontal:0/0"
+      ],
+      "metrics": {
+        "previous_preview": {
+          "count": 38,
+          "median_m": 0.04669237935651467,
+          "p90_m": 0.10646260494198212,
+          "maximum_m": 0.23275608738986558
+        },
+        "selected_initial": {
+          "count": 38,
+          "median_m": 0.06301569361628509,
+          "p90_m": 0.26817116745964475,
+          "maximum_m": 1.0047346067943368
+        },
+        "integrated_dcs": {
+          "count": 38,
+          "median_m": 0.07197487642890063,
+          "p90_m": 0.20848193016902233,
+          "maximum_m": 1.1434440081698554
+        },
+        "weak_structure": {
+          "count": 38,
+          "median_m": 0.0449124430166219,
+          "p90_m": 0.11972632837859537,
+          "maximum_m": 0.24637345829030577
+        },
+        "prior_rgbd_ba": {
+          "count": 38,
+          "median_m": 0.04758233444630636,
+          "p90_m": 0.15032620832264504,
+          "maximum_m": 0.25966971288354557
+        }
+      },
+      "severe_regressions_by_candidate": {
+        "weak_structure": {
+          "previous_preview": 7,
+          "selected_initial": 5,
+          "integrated_dcs": 1,
+          "per_patch_best_baseline": 7
+        },
+        "prior_rgbd_ba": {
+          "previous_preview": 7,
+          "selected_initial": 5,
+          "integrated_dcs": 1,
+          "per_patch_best_baseline": 7
+        }
+      }
+    },
+    "critical_patches": [
+      {
+        "a": 548,
+        "b": 981,
+        "kind": "wall",
+        "plane_a": 0,
+        "plane_b": 0,
+        "historical_reproduction_error_m": 3.774758283725532e-15,
+        "graph_partition_status": "graph_training",
+        "graph_edge_ids": [
+          "manual_structure_weak:548:981"
+        ],
+        "graph_edge_roles": [
+          "train"
+        ],
+        "graph_region_groups": [
+          "manual_structure:floor2:548_981"
+        ],
+        "graph_correlation_reason": "the exact frame pair contributes a training edge",
+        "independent_ground_truth": false,
+        "values": {
+          "previous_preview": 0.23275608738986558,
+          "selected_initial": 1.0047346067943368,
+          "integrated_dcs": 0.33467759646991974,
+          "weak_structure": 0.009808327509930534,
+          "prior_rgbd_ba": 0.2492550207781135
+        }
+      },
+      {
+        "a": 656,
+        "b": 1055,
+        "kind": "wall",
+        "plane_a": 0,
+        "plane_b": 1,
+        "historical_reproduction_error_m": 3.3306690738754696e-16,
+        "graph_partition_status": "graph_training",
+        "graph_edge_ids": [
+          "revisit_rgbd_ba:656:1055"
+        ],
+        "graph_edge_roles": [
+          "train"
+        ],
+        "graph_region_groups": [
+          "floor2__floor2:cell_-9_-4_2"
+        ],
+        "graph_correlation_reason": "the exact frame pair contributes a training edge",
+        "independent_ground_truth": false,
+        "values": {
+          "previous_preview": 0.04048412629829104,
+          "selected_initial": 0.44400176246348755,
+          "integrated_dcs": 1.1434440081698554,
+          "weak_structure": 0.051166542859653524,
+          "prior_rgbd_ba": 0.0514094477100129
+        }
+      },
+      {
+        "a": 656,
+        "b": 1055,
+        "kind": "horizontal",
+        "plane_a": 0,
+        "plane_b": 0,
+        "historical_reproduction_error_m": 9.853229343548264e-16,
+        "graph_partition_status": "graph_training",
+        "graph_edge_ids": [
+          "revisit_rgbd_ba:656:1055"
+        ],
+        "graph_edge_roles": [
+          "train"
+        ],
+        "graph_region_groups": [
+          "floor2__floor2:cell_-9_-4_2"
+        ],
+        "graph_correlation_reason": "the exact frame pair contributes a training edge",
+        "independent_ground_truth": false,
+        "values": {
+          "previous_preview": 0.022948873756549824,
+          "selected_initial": 0.03814366621721051,
+          "integrated_dcs": 0.05675866822534393,
+          "weak_structure": 0.027121385705812625,
+          "prior_rgbd_ba": 0.027221126795503803
+        }
+      }
+    ],
+    "final_iteration": {
+      "outer_iteration": 20,
+      "maximum_weight_change": 0.0,
+      "maximum_parameter_step": 9.163767030084813e-06,
+      "fixed_weight_cost_before": 5.76536304932871,
+      "duration_seconds": 0.2781128610004089,
+      "strict_converged": false,
+      "success": true,
+      "status": 2,
+      "nfev": 2,
+      "njev": 2,
+      "cost": 5.765363049275448,
+      "optimality": 5.392436314082338e-05,
+      "message": "`ftol` termination condition is satisfied.",
+      "active_bounds": 0
+    },
+    "strict_converged": false,
+    "weak_factor": {
+      "id": "manual_structure_weak:548:981",
+      "from": "floor2:frame:00548",
+      "to": "floor2:frame:00981",
+      "type": "registration",
+      "role": "train",
+      "measurement": [
+        [
+          0.9876783158537132,
+          -0.1042739102651534,
+          0.11669831202887226,
+          -0.03215408879980397
+        ],
+        [
+          0.10218284162632833,
+          0.9944814423027831,
+          0.02377662281623435,
+          0.11241877731298527
+        ],
+        [
+          -0.11853358709472171,
+          -0.011559089643721349,
+          0.9928827605397664,
+          0.48209637542263717
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "covariance": [
+        [
+          0.09382994571799425,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.09382994571799425,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.09382994571799425,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.007615435494667714,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.007615435494667714,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.007615435494667714
+        ]
+      ],
+      "region_group": "manual_structure:floor2:548_981",
+      "provenance": {
+        "frame_endpoints": [
+          "floor2",
+          548,
+          "floor2",
+          981
+        ],
+        "source": "Manual RGB landmarks + measured finite wall/floor normals; fixed within-visit cameras",
+        "evidence_class": "weak_correlated_development_factor_not_independently_validated",
+        "sigma_translation_m": 0.3063167408386199,
+        "sigma_rotation_deg": 5.0,
+        "covariance_interpretation": "Conservative isotropic model floor enlarged to maximum click-perturbation displacement; not statistical covariance or calibrated confidence.",
+        "all_views_count_as_one_region": true,
+        "archived_factor_ids": [
+          "floor2:native_loop:548:981"
+        ]
+      }
+    },
+    "cloud_points": 2283395
+  },
+  "cloud_exports": [
+    {
+      "session": "outside",
+      "label": "selected",
+      "points": 571102,
+      "frames": 305,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/outside/selected/cloud.ply",
+      "sha256": "a4d6400e97afe4e483518b826b6a8b0222dc0651507b0d0c5f2a6c31a4e75cb3"
+    },
+    {
+      "session": "outside",
+      "label": "attempt",
+      "points": 583101,
+      "frames": 305,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/outside/attempt/cloud.ply",
+      "sha256": "aa780551ca3bfa9a5ab40df994f63cc7acd960398dac5fd6c7474a263277410e"
+    },
+    {
+      "session": "lobby",
+      "label": "selected",
+      "points": 1707007,
+      "frames": 800,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/lobby/selected/cloud.ply",
+      "sha256": "7fe60a6b77ffcc34b33b222c62ace6edbd4ac3e103af1beae68603d070324b8e"
+    },
+    {
+      "session": "lobby",
+      "label": "attempt",
+      "points": 1735155,
+      "frames": 800,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/lobby/attempt/cloud.ply",
+      "sha256": "b9f5a27ff84810e186d0577d0a17d10d944fd7b6ba97656888a78c3ca14704a7"
+    },
+    {
+      "session": "bridge_out1f",
+      "label": "selected",
+      "points": 181326,
+      "frames": 86,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/bridge_out1f/selected/cloud.ply",
+      "sha256": "632fa03b91a4936bb3ee23e4d33c000ae9d6aee6b05f8af95cdd60a7e6f484d0"
+    },
+    {
+      "session": "bridge_out1f",
+      "label": "attempt",
+      "points": 180594,
+      "frames": 86,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/bridge_out1f/attempt/cloud.ply",
+      "sha256": "064cacae5c6abb549c61ee9853488bb164bd2130e053cd1d4c0ed446f5a32256"
+    },
+    {
+      "session": "floor2",
+      "label": "selected",
+      "points": 2220260,
+      "frames": 925,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/floor2/selected/cloud.ply",
+      "sha256": "1936f009a72ec986addd3226a33750f20d560aa0d85eda9542655cd64c1cf774"
+    },
+    {
+      "session": "floor2",
+      "label": "attempt",
+      "points": 2218966,
+      "frames": 925,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/floor2/attempt/cloud.ply",
+      "sha256": "a072f09525e56c5bc97c516e99449c3010c6b364c6d3d7dd0b51ace8f081a484"
+    },
+    {
+      "session": "bridge_12_sub",
+      "label": "selected",
+      "points": 343214,
+      "frames": 135,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/bridge_12_sub/selected/cloud.ply",
+      "sha256": "17497c37ed5551ec09a0aaa3bb8ad2d0a9d1f8cb915260e45d86fc0164d165a8"
+    },
+    {
+      "session": "bridge_12_sub",
+      "label": "attempt",
+      "points": 362248,
+      "frames": 135,
+      "cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/bridge_12_sub/attempt/cloud.ply",
+      "sha256": "8e1901c363a3b8bac54c77c3a1f83287aad13d6ced17724620a0431de1593cfb"
+    }
+  ],
+  "merge_consideration": {
+    "combined_cloud_created": false,
+    "next_step": "Remeasure spatially separated cross-session RGB-D regions after per-session choices; jointly optimize only connections that survive heldout checks.",
+    "existing_cross_session_edges": [
+      {
+        "id": "lobby:112__floor2:14",
+        "from": "lobby:s0019",
+        "to": "floor2:s0003",
+        "measurement": [
+          [
+            0.5842650161065605,
+            -0.28033166903512385,
+            -0.7616091821203215,
+            2.124559630335177
+          ],
+          [
+            0.07440712659467238,
+            0.9529983250002614,
+            -0.293696734845017,
+            1.059373413295494
+          ],
+          [
+            0.8081447707347543,
+            0.11492757668497496,
+            0.5776622556921956,
+            0.7309654297190276
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "covariance": [
+          [
+            0.010170874011493872,
+            -3.9862315841940484e-05,
+            0.00012197457055421453,
+            -6.3500065903797655e-21,
+            -0.0006505809182407446,
+            -0.00021261531748641228
+          ],
+          [
+            -3.9862315841940484e-05,
+            0.010250753183155395,
+            5.045435118772498e-05,
+            0.0006505809182407445,
+            -2.4297134680861325e-21,
+            0.0005140024880542268
+          ],
+          [
+            0.00012197457055421453,
+            5.045435118772498e-05,
+            0.010112856984553286,
+            0.00021261531748641225,
+            -0.0005140024880542266,
+            1.4867198975149893e-20
+          ],
+          [
+            -6.3500065903797655e-21,
+            0.0006505809182407445,
+            0.00021261531748641225,
+            0.0027415567780803758,
+            2.5701320391602815e-19,
+            6.057432759850934e-19
+          ],
+          [
+            -0.0006505809182407446,
+            -2.4297134680861325e-21,
+            -0.0005140024880542266,
+            2.5701320391602815e-19,
+            0.002741556778080377,
+            -2.6585854468419817e-19
+          ],
+          [
+            -0.00021261531748641228,
+            0.0005140024880542268,
+            1.4867198975149893e-20,
+            6.057432759850934e-19,
+            -2.6585854468419817e-19,
+            0.0027415567780803766
+          ]
+        ],
+        "type": "cross_session",
+        "role": "train",
+        "region_group": "floor2__lobby:cell_-2_-4_0",
+        "provenance": {
+          "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session/disjoint_hypothesis/drift_hypothesis_edges.json",
+          "frame_endpoints": [
+            "lobby",
+            112,
+            "floor2",
+            14
+          ],
+          "endpoint_quality_weights": [
+            1.0,
+            1.0
+          ],
+          "endpoint_correlation_evidence_weights": [
+            1.0,
+            1.0
+          ],
+          "frame_edge_covariance": {
+            "source": "metrics.covariance_6x6",
+            "assumed_sigma_translation_m": null,
+            "assumed_sigma_rotation_deg": null,
+            "raw_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "used_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "raw_information_eigenvalues": null,
+            "was_clipped": false
+          },
+          "mapped_anchor_nodes": [
+            107,
+            10
+          ]
+        }
+      },
+      {
+        "id": "lobby:317__floor2:1215",
+        "from": "lobby:s0051",
+        "to": "floor2:s0227",
+        "measurement": [
+          [
+            -0.6976399659333258,
+            -0.5002882499436869,
+            -0.5128451470968854,
+            2.955180200968539
+          ],
+          [
+            -0.544850267779495,
+            0.8352916130602954,
+            -0.07366211272929801,
+            1.137217786752095
+          ],
+          [
+            0.46522753963319735,
+            0.22803418191010924,
+            -0.8553149994285302,
+            -3.0162006846407188
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "covariance": [
+          [
+            0.011568099246126385,
+            -0.004974978646782787,
+            -0.00044481703864210245,
+            -5.93650661611912e-20,
+            -0.00018464882603890214,
+            0.0020651726145683295
+          ],
+          [
+            -0.004974978646782787,
+            0.02592231892063771,
+            -0.00013909312471534048,
+            0.00018464882603890233,
+            5.632233760782989e-19,
+            -0.006604380831741476
+          ],
+          [
+            -0.00044481703864210245,
+            -0.00013909312471534048,
+            0.02746554529947197,
+            -0.0020651726145683295,
+            0.006604380831741476,
+            -6.168390816881955e-19
+          ],
+          [
+            -5.93650661611912e-20,
+            0.00018464882603890233,
+            -0.0020651726145683295,
+            0.002741556778080376,
+            4.0949275897135964e-19,
+            -2.82049385206418e-19
+          ],
+          [
+            -0.00018464882603890214,
+            5.632233760782989e-19,
+            0.006604380831741476,
+            4.0949275897135964e-19,
+            0.002741556778080376,
+            3.702135045355036e-20
+          ],
+          [
+            0.0020651726145683295,
+            -0.006604380831741476,
+            -6.168390816881955e-19,
+            -2.82049385206418e-19,
+            3.702135045355036e-20,
+            0.002741556778080378
+          ]
+        ],
+        "type": "cross_session",
+        "role": "train",
+        "region_group": "floor2__lobby:cell_-3_-2_0",
+        "provenance": {
+          "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session/disjoint_hypothesis/drift_hypothesis_edges.json",
+          "frame_endpoints": [
+            "lobby",
+            317,
+            "floor2",
+            1215
+          ],
+          "endpoint_quality_weights": [
+            1.0,
+            1.0
+          ],
+          "endpoint_correlation_evidence_weights": [
+            0.3333333333333333,
+            1.0
+          ],
+          "frame_edge_covariance": {
+            "source": "metrics.covariance_6x6",
+            "assumed_sigma_translation_m": null,
+            "assumed_sigma_rotation_deg": null,
+            "raw_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "used_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "raw_information_eigenvalues": null,
+            "was_clipped": false
+          },
+          "mapped_anchor_nodes": [
+            308,
+            1211
+          ]
+        }
+      },
+      {
+        "id": "lobby:327__floor2:51",
+        "from": "lobby:s0052",
+        "to": "floor2:s0009",
+        "measurement": [
+          [
+            -0.3374278529246184,
+            -0.3354887407046247,
+            -0.8795395095907359,
+            0.5763090339131763
+          ],
+          [
+            -0.3888922314633913,
+            0.9005587417378778,
+            -0.1943110521481288,
+            0.16973194114752096
+          ],
+          [
+            0.8572661642559465,
+            0.2764801214190907,
+            -0.43434256766057483,
+            -1.9955490483473988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "covariance": [
+          [
+            0.01575390443027768,
+            -0.0031588024273164032,
+            0.00699516062799623,
+            -1.2276161980694383e-18,
+            0.003619778534875258,
+            0.0016345822248240664
+          ],
+          [
+            -0.0031588024273164032,
+            0.025017645406364374,
+            0.0021581992020788046,
+            -0.0036197785348752597,
+            3.909689693458074e-19,
+            -0.005298011977438536
+          ],
+          [
+            0.00699516062799623,
+            0.0021581992020788046,
+            0.02121289561047048,
+            -0.0016345822248240672,
+            0.005298011977438542,
+            9.67805704786129e-19
+          ],
+          [
+            -1.2276161980694383e-18,
+            -0.0036197785348752597,
+            -0.0016345822248240672,
+            0.002741556778080378,
+            -4.1019926262107087e-19,
+            -7.467281165049701e-19
+          ],
+          [
+            0.003619778534875258,
+            3.909689693458074e-19,
+            0.005298011977438542,
+            -4.1019926262107087e-19,
+            0.002741556778080377,
+            6.249337870314456e-19
+          ],
+          [
+            0.0016345822248240664,
+            -0.005298011977438536,
+            9.67805704786129e-19,
+            -7.467281165049701e-19,
+            6.249337870314456e-19,
+            0.002741556778080376
+          ]
+        ],
+        "type": "cross_session",
+        "role": "heldout",
+        "region_group": "floor2__lobby:cell_-3_-2_0",
+        "provenance": {
+          "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session/disjoint_hypothesis/drift_hypothesis_edges.json",
+          "frame_endpoints": [
+            "lobby",
+            327,
+            "floor2",
+            51
+          ],
+          "endpoint_quality_weights": [
+            1.0,
+            1.0
+          ],
+          "endpoint_correlation_evidence_weights": [
+            1.0,
+            1.0
+          ],
+          "frame_edge_covariance": {
+            "source": "metrics.covariance_6x6",
+            "assumed_sigma_translation_m": null,
+            "assumed_sigma_rotation_deg": null,
+            "raw_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "used_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "raw_information_eigenvalues": null,
+            "was_clipped": false
+          },
+          "mapped_anchor_nodes": [
+            322,
+            47
+          ]
+        }
+      },
+      {
+        "id": "lobby:337__floor2:66",
+        "from": "lobby:s0053",
+        "to": "floor2:s0011",
+        "measurement": [
+          [
+            0.21131677199877336,
+            -0.187072411719426,
+            0.9593482864140117,
+            1.417682885555172
+          ],
+          [
+            -0.35618362172911183,
+            0.8992832098078034,
+            0.25381673737109983,
+            0.5302400003202312
+          ],
+          [
+            -0.910207915524773,
+            -0.3953398807750778,
+            0.12340149587745664,
+            -0.21157079598349504
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "covariance": [
+          [
+            0.010826757333868198,
+            -1.7706155062441568e-05,
+            0.00030019819484549423,
+            7.104187878737948e-21,
+            -0.001502911973398234,
+            -8.864407882228846e-05
+          ],
+          [
+            -1.7706155062441568e-05,
+            0.010933273275072332,
+            4.8594378383131715e-05,
+            0.001502911973398234,
+            3.2103785872813337e-20,
+            0.0005476105124009643
+          ],
+          [
+            0.00030019819484549423,
+            4.8594378383131715e-05,
+            0.010112248284793053,
+            8.864407882228851e-05,
+            -0.0005476105124009641,
+            5.819168891539239e-20
+          ],
+          [
+            7.104187878737948e-21,
+            0.001502911973398234,
+            8.864407882228851e-05,
+            0.002741556778080377,
+            5.544976428642885e-19,
+            7.750092158763465e-19
+          ],
+          [
+            -0.001502911973398234,
+            3.2103785872813337e-20,
+            -0.0005476105124009641,
+            5.544976428642885e-19,
+            0.0027415567780803775,
+            1.909315712957272e-19
+          ],
+          [
+            -8.864407882228846e-05,
+            0.0005476105124009643,
+            5.819168891539239e-20,
+            7.750092158763465e-19,
+            1.909315712957272e-19,
+            0.0027415567780803766
+          ]
+        ],
+        "type": "cross_session",
+        "role": "train",
+        "region_group": "floor2__lobby:cell_-4_-3_0",
+        "provenance": {
+          "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session/disjoint_hypothesis/drift_hypothesis_edges.json",
+          "frame_endpoints": [
+            "lobby",
+            337,
+            "floor2",
+            66
+          ],
+          "endpoint_quality_weights": [
+            1.0,
+            1.0
+          ],
+          "endpoint_correlation_evidence_weights": [
+            1.0,
+            1.0
+          ],
+          "frame_edge_covariance": {
+            "source": "metrics.covariance_6x6",
+            "assumed_sigma_translation_m": null,
+            "assumed_sigma_rotation_deg": null,
+            "raw_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "used_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "raw_information_eigenvalues": null,
+            "was_clipped": false
+          },
+          "mapped_anchor_nodes": [
+            329,
+            56
+          ]
+        }
+      },
+      {
+        "id": "lobby:495__bridge_12_sub:85",
+        "from": "lobby:s0079",
+        "to": "bridge_12_sub:s0011",
+        "measurement": [
+          [
+            0.7425225257017805,
+            -0.0889198484313268,
+            0.6638927318327861,
+            -1.4701832031933748
+          ],
+          [
+            0.00811932407749695,
+            0.9922713568403888,
+            0.12382096337316872,
+            -0.24163529688229035
+          ],
+          [
+            -0.6697718831079533,
+            -0.0865494942162279,
+            0.7375058031289936,
+            1.2299298911333763
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "covariance": [
+          [
+            0.010367726749068596,
+            -0.0022443576736226323,
+            -0.0013075951744250247,
+            4.195608076626222e-20,
+            -0.0005054531520797367,
+            0.0008675602990242995
+          ],
+          [
+            -0.0022443576736226323,
+            0.028440906478521957,
+            -0.00015994966482806418,
+            0.0005054531520797367,
+            -2.6400858197367788e-20,
+            -0.007092341592252223
+          ],
+          [
+            -0.0013075951744250247,
+            -0.00015994966482806418,
+            0.028622255260889306,
+            -0.0008675602990243004,
+            0.007092341592252228,
+            1.4449817684140555e-20
+          ],
+          [
+            4.195608076626222e-20,
+            0.0005054531520797367,
+            -0.0008675602990243004,
+            0.002741556778080376,
+            -8.13965811069848e-19,
+            -8.466741134083252e-19
+          ],
+          [
+            -0.0005054531520797367,
+            -2.6400858197367788e-20,
+            0.007092341592252228,
+            -8.13965811069848e-19,
+            0.0027415567780803745,
+            1.8910778186252112e-19
+          ],
+          [
+            0.0008675602990242995,
+            -0.007092341592252223,
+            1.4449817684140555e-20,
+            -8.466741134083252e-19,
+            1.8910778186252112e-19,
+            0.0027415567780803723
+          ]
+        ],
+        "type": "cross_session",
+        "role": "train",
+        "region_group": "lobby__bridge_12_sub:region0",
+        "provenance": {
+          "source": "outputs/student_union_20261017_geometry_review/connections/union_audit/graph_candidates.json",
+          "frame_endpoints": [
+            "lobby",
+            495,
+            "bridge_12_sub",
+            85
+          ],
+          "endpoint_quality_weights": [
+            1.0,
+            1.0
+          ],
+          "endpoint_correlation_evidence_weights": [
+            1.0,
+            1.0
+          ],
+          "frame_edge_covariance": {
+            "source": "explicit_sigma_translation_rotation",
+            "assumed_sigma_translation_m": 0.1,
+            "assumed_sigma_rotation_deg": 3.0000000000000004,
+            "raw_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "used_covariance_eigenvalues": [
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.0027415567780803775,
+              0.010000000000000002,
+              0.010000000000000002,
+              0.010000000000000002
+            ],
+            "raw_information_eigenvalues": null,
+            "was_clipped": false
+          },
+          "mapped_anchor_nodes": [
+            493,
+            81
+          ]
+        }
+      }
+    ],
+    "outside_to_bridge": "no validated cross-session edge in canonical graph",
+    "bridge_to_lobby": "no validated cross-session edge in canonical graph",
+    "lobby_to_floor2": "3 training edges, 1 heldout; repeated spatial region correlation remains",
+    "lobby_to_substairs": "one training edge; insufficient distributed support",
+    "floor2_to_substairs": "no validated cross-session edge in canonical graph",
+    "all_five_connected_with_validated_evidence": false
+  },
+  "test_result": "341 passed; code tests do not establish map accuracy",
+  "limitations": [
+    "Repeated development observations, not surveyed ground truth.",
+    "The strongest local wall/floor numbers use fitted surfaces.",
+    "Incumbent lobby/floor2 poses inherit a prior joint hypothesis; the 15 new graph solves contain no cross-session factors.",
+    "Bridge sessions lack enough independent within-session validation.",
+    "Latest weak-structure capture is a comparison candidate; default RViz is not replaced."
+  ],
+  "input_hashes": {
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/review.json": "93102c48b31f8bd862baaa4a36727160a93b2eccecd8883bf4deb6e6f482f396",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/manifest.json": "01e52a99a0345b8a64e27cddbc1bc72e53717c989edac330ae627956419a377c",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration/report.json": "fcafa5947ff8879afa5e4aa51a257013d51a5881d40632820d20c5dcccea3caf",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration_evaluation/report.json": "63e16c4a8804dad92738d453a2f7fa4af8798370b505a4919a82238a11a6b06e",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/directional_diagnostics/report.json": "9945b2767690b1f15060e6d7b7210c928d8f0a0a163d08a1d2426fce8e4b68be"
+  }
+}

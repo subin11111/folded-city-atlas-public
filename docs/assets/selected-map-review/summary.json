@@ -1,0 +1,1159 @@
+{
+  "started_utc": "2026-10-17T12:15:21.236854+00:00",
+  "status": "EXPLORATORY_ALL_SESSION_PREVIEW_NOT_FOR_NAVIGATION",
+  "user_designated_working_map": true,
+  "selection_fixed": true,
+  "selection": {
+    "version": "student_union_selected_20261017_v1",
+    "status": "USER_DESIGNATED_WORKING_MAP_NOT_SURVEY_VALIDATED",
+    "user_request": "전체적으로 J04를 쓰는 것이 맞아보임. 지금까지 이야기한 거 바탕으로 전체 지도를 확정하고 서로 합쳐 줘",
+    "anchor_session": "floor2",
+    "preserve_selected_internal_geometry": true,
+    "navigation_ready": false,
+    "sessions": {
+      "outside": {
+        "candidate": "J01",
+        "reason": "User preferred J family; J01 has lower fixed-patch P90 within that family. Not a global accuracy winner."
+      },
+      "lobby": {
+        "candidate": "N05",
+        "reason": "Within user shortlist N04/N05/SE3; attitude-regularized SE3 retains stable shape without N06's extra normal-induced changes."
+      },
+      "bridge_out1f": {
+        "candidate": "H03",
+        "reason": "User preferred H02/H03, which have exactly identical exported poses; use DCS-labelled representative."
+      },
+      "floor2": {
+        "candidate": "J04",
+        "reason": "Explicit user choice prioritizing whole-map appearance despite documented 656/1055 finite-patch regression."
+      },
+      "bridge_12_sub": {
+        "candidate": "H03",
+        "reason": "User preferred H02/H03/H04 and NEW SE3; select conservative H03, with better historical training-closure geometry and no added normal deformation."
+      }
+    }
+  },
+  "unvalidated_preview": true,
+  "accepted_by_validation": false,
+  "navigation_ready": false,
+  "frame": "map_selected_working",
+  "topic_prefix": "/folded_city/selected_working",
+  "combined_cloud": "combined.ply",
+  "sessions": {
+    "outside": {
+      "candidate": "J01",
+      "reason": "User preferred J family; J01 has lower fixed-patch P90 within that family. Not a global accuracy winner.",
+      "cloud": "outside.ply",
+      "trajectory": "outside_trajectory.csv",
+      "placement": "selected internal poses frozen; rigid xyz+yaw only",
+      "point_count": 464565,
+      "pose_count": 305,
+      "source_cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/outside/clouds/J01.ply",
+      "source_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/outside/poses/J01.csv",
+      "preprocessing": {
+        "name": "outdoor_coverage",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.15,
+        "edge_gate": 0.0
+      },
+      "T_working_selected": [
+        [
+          0.9999521697179966,
+          -0.009780504908787034,
+          0.0,
+          0.30740891828291356
+        ],
+        [
+          0.009780504908787034,
+          0.9999521697179966,
+          0.0,
+          -0.25334105726897327
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999999,
+          -0.08664257811238621
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "internal_shape_changed": false,
+      "vertical_scale": 1.0,
+      "maximum_internal_relative_matrix_error": 5.329070518200751e-15,
+      "camera_z_span_before_m": 1.0305857999543764,
+      "camera_z_span_after_m": 1.0305857999543764,
+      "bounds_min_m": [
+        -6.415445804595947,
+        -4.441928386688232,
+        -2.9154088497161865
+      ],
+      "bounds_max_m": [
+        17.70177459716797,
+        14.62116813659668,
+        2.003854751586914
+      ]
+    },
+    "lobby": {
+      "candidate": "N05",
+      "reason": "Within user shortlist N04/N05/SE3; attitude-regularized SE3 retains stable shape without N06's extra normal-induced changes.",
+      "cloud": "lobby.ply",
+      "trajectory": "lobby_trajectory.csv",
+      "placement": "selected internal poses frozen; rigid xyz+yaw only",
+      "point_count": 1430215,
+      "pose_count": 800,
+      "source_cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/lobby/clouds/N05.ply",
+      "source_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/lobby/poses/N05.csv",
+      "preprocessing": {
+        "name": "lobby_conservative",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.15,
+        "edge_gate": 0.0
+      },
+      "T_working_selected": [
+        [
+          0.9985811213819739,
+          -0.05325170438136149,
+          0.0,
+          0.19378244070570003
+        ],
+        [
+          0.05325170438136149,
+          0.9985811213819739,
+          0.0,
+          -0.32900027766695683
+        ],
+        [
+          0.0,
+          0.0,
+          1.0000000000000002,
+          -0.2939661910601214
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "internal_shape_changed": false,
+      "vertical_scale": 1.0,
+      "maximum_internal_relative_matrix_error": 1.4210854715202004e-14,
+      "camera_z_span_before_m": 1.0430192374196043,
+      "camera_z_span_after_m": 1.0430192374196046,
+      "bounds_min_m": [
+        -29.4732723236084,
+        -27.422029495239258,
+        -2.2557945251464844
+      ],
+      "bounds_max_m": [
+        3.680575132369995,
+        17.388946533203125,
+        3.645791530609131
+      ]
+    },
+    "bridge_out1f": {
+      "candidate": "H03",
+      "reason": "User preferred H02/H03, which have exactly identical exported poses; use DCS-labelled representative.",
+      "cloud": "bridge_out1f.ply",
+      "trajectory": "bridge_out1f_trajectory.csv",
+      "placement": "selected internal poses frozen; rigid xyz+yaw only",
+      "point_count": 153559,
+      "pose_count": 86,
+      "source_cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_out1f/clouds/H03.ply",
+      "source_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_out1f/poses/H03.csv",
+      "preprocessing": {
+        "name": "transition_coverage",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.18,
+        "edge_gate": 0.0
+      },
+      "T_working_selected": [
+        [
+          0.9991290071940883,
+          -0.04172801197463908,
+          0.0,
+          0.218227805854206
+        ],
+        [
+          0.04172801197463908,
+          0.9991290071940883,
+          0.0,
+          -0.36374419339327957
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.2548718854458549
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "internal_shape_changed": false,
+      "vertical_scale": 1.0,
+      "maximum_internal_relative_matrix_error": 1.7763568394002505e-15,
+      "camera_z_span_before_m": 0.23220145076638285,
+      "camera_z_span_after_m": 0.23220145076638285,
+      "bounds_min_m": [
+        -5.903759956359863,
+        -5.302946090698242,
+        -2.647369146347046
+      ],
+      "bounds_max_m": [
+        7.67979097366333,
+        5.568419456481934,
+        1.9858829975128174
+      ]
+    },
+    "floor2": {
+      "candidate": "J04",
+      "reason": "Explicit user choice prioritizing whole-map appearance despite documented 656/1055 finite-patch regression.",
+      "cloud": "floor2.ply",
+      "trajectory": "floor2_trajectory.csv",
+      "placement": "selected internal poses frozen; rigid xyz+yaw only",
+      "point_count": 1754344,
+      "pose_count": 925,
+      "source_cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/clouds/J04.ply",
+      "source_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/poses/J04.csv",
+      "preprocessing": {
+        "name": "corridor_boundary",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.1,
+        "edge_gate": 0.2
+      },
+      "T_working_selected": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "internal_shape_changed": false,
+      "vertical_scale": 1.0,
+      "maximum_internal_relative_matrix_error": 0.0,
+      "camera_z_span_before_m": 4.896072705691524,
+      "camera_z_span_after_m": 4.896072705691524,
+      "bounds_min_m": [
+        -33.097984313964844,
+        -25.923004150390625,
+        -2.021984100341797
+      ],
+      "bounds_max_m": [
+        -0.2139640897512436,
+        15.465032577514648,
+        6.280079364776611
+      ]
+    },
+    "bridge_12_sub": {
+      "candidate": "H03",
+      "reason": "User preferred H02/H03/H04 and NEW SE3; select conservative H03, with better historical training-closure geometry and no added normal deformation.",
+      "cloud": "bridge_12_sub.ply",
+      "trajectory": "bridge_12_sub_trajectory.csv",
+      "placement": "selected internal poses frozen; rigid xyz+yaw only",
+      "point_count": 261829,
+      "pose_count": 135,
+      "source_cloud": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/clouds/H03.ply",
+      "source_trajectory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/H03.csv",
+      "preprocessing": {
+        "name": "stairs_preserve_edges",
+        "confidence": 50,
+        "max_depth": 3.5,
+        "median_gate": 0.22,
+        "edge_gate": 0.0
+      },
+      "T_working_selected": [
+        [
+          0.9997356127641949,
+          -0.02299357673351361,
+          0.0,
+          0.6162603712938517
+        ],
+        [
+          0.02299357673351361,
+          0.9997356127641949,
+          0.0,
+          -0.5992215911007267
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.4817914491333216
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "internal_shape_changed": false,
+      "vertical_scale": 1.0,
+      "maximum_internal_relative_matrix_error": 7.105427357601002e-15,
+      "camera_z_span_before_m": 4.625765807637745,
+      "camera_z_span_after_m": 4.625765807637744,
+      "bounds_min_m": [
+        -19.018598556518555,
+        4.875195026397705,
+        -1.8354359865188599
+      ],
+      "bounds_max_m": [
+        -4.781728267669678,
+        18.758825302124023,
+        6.528199672698975
+      ]
+    }
+  },
+  "method": "Selected immutable session geometries + hierarchical rigid xyz/yaw placement; no internal re-optimization",
+  "placement_solver": {
+    "success": true,
+    "nfev": 14,
+    "initial_cost": 44.02428909354723,
+    "final_cost": 1.240313432832356,
+    "optimality": 7.510101202813249e-06,
+    "active_bounds": 0,
+    "variables": [
+      "bridge_12_sub",
+      "lobby"
+    ],
+    "anchor": "floor2",
+    "translation_sigma_m": 0.15,
+    "rotation_sigma_deg": 5.0,
+    "loss": "block Huber delta 3; one averaged information unit per connection",
+    "sigma_scope": "Conservative modelling assumptions, not calibrated sensor covariance",
+    "internal_frame_variables": 0,
+    "bounds_m_deg": [
+      5,
+      5,
+      3,
+      20
+    ]
+  },
+  "door_solver": {
+    "success": true,
+    "nfev": 5,
+    "initial_cost": 1.4152164351724803,
+    "final_cost": 0.00472232083053116,
+    "optimality": 6.397044458402562e-11,
+    "active_bounds": 0,
+    "variables": [
+      "bridge_out1f"
+    ],
+    "anchor": "lobby",
+    "translation_sigma_m": 0.3,
+    "rotation_sigma_deg": 8.0,
+    "loss": "block Huber delta 3; one averaged information unit per connection",
+    "sigma_scope": "Conservative modelling assumptions, not calibrated sensor covariance",
+    "internal_frame_variables": 0,
+    "bounds_m_deg": [
+      5,
+      5,
+      3,
+      20
+    ]
+  },
+  "bridge79_attachment_only_pose": {
+    "method": "attachment_only_same_submap_left_correction_interpolation",
+    "bracket": [
+      77,
+      80
+    ],
+    "primary_submap": "bridge_out1f:s0012",
+    "fraction": 0.6666666666666666,
+    "excluded_from_cloud_and_saved_selected_trajectory": true,
+    "quality_grade": "C",
+    "not_a_new_measurement": true
+  },
+  "exterior_solver": {
+    "success": true,
+    "nfev": 8,
+    "cost": 1.0383765536205882,
+    "training_points": 49,
+    "observations": [
+      {
+        "matcher": "SIFT",
+        "node_a": 263,
+        "node_b": 117,
+        "training_before_union_exclusion": 13,
+        "training_after_union_exclusion": 6,
+        "original_failed_gates": [
+          "outside_image_hull_below_0.04",
+          "bridge_image_hull_below_0.04",
+          "forward_heldout",
+          "reverse_heldout",
+          "forward_icp",
+          "reprojection"
+        ],
+        "reserved_correspondence_rmse_m": 0.09745606376360597,
+        "reserved_correspondence_count": 7
+      },
+      {
+        "matcher": "SIFT",
+        "node_a": 262,
+        "node_b": 117,
+        "training_before_union_exclusion": 6,
+        "training_after_union_exclusion": 5,
+        "original_failed_gates": [
+          "minimum_mutual_matches",
+          "minimum_depth_matches",
+          "minimum_train_inliers",
+          "outside_image_hull_below_0.04",
+          "bridge_image_hull_below_0.04",
+          "forward_heldout",
+          "reverse_heldout",
+          "forward_icp",
+          "reverse_icp",
+          "icp_cycle",
+          "reprojection"
+        ],
+        "reserved_correspondence_rmse_m": 0.06567606206312665,
+        "reserved_correspondence_count": 5
+      },
+      {
+        "matcher": "SIFT",
+        "node_a": 263,
+        "node_b": 118,
+        "training_before_union_exclusion": 9,
+        "training_after_union_exclusion": 6,
+        "original_failed_gates": [
+          "minimum_mutual_matches",
+          "minimum_depth_matches",
+          "minimum_train_inliers",
+          "outside_image_hull_below_0.04",
+          "bridge_image_hull_below_0.04",
+          "forward_heldout",
+          "reverse_heldout",
+          "forward_icp",
+          "reverse_icp",
+          "icp_cycle",
+          "reprojection"
+        ],
+        "reserved_correspondence_rmse_m": 0.059390455485103216,
+        "reserved_correspondence_count": 5
+      },
+      {
+        "matcher": "LoFTR",
+        "node_a": 263,
+        "node_b": 118,
+        "training_before_union_exclusion": 35,
+        "training_after_union_exclusion": 32,
+        "original_failed_gates": [
+          "forward_heldout_failed",
+          "reverse_heldout_failed",
+          "heldout_reprojection_failed"
+        ],
+        "reserved_correspondence_rmse_m": 0.13526244999861112,
+        "reserved_correspondence_count": 21
+      }
+    ],
+    "strict_accepted": false,
+    "independent_physical_regions": 1,
+    "loss": "3D point-block Huber 8cm; equal pair/matcher weight; union holdout depth-neighbour exclusion",
+    "fit_direction": "T_selected_outside_selected_bridge",
+    "scope": "Current selected poses, reused raw correspondences; no fresh independent validation"
+  },
+  "connection_evaluations": [
+    {
+      "edge_id": "lobby:112__floor2:14",
+      "session_a": "lobby",
+      "node_a": 112,
+      "session_b": "floor2",
+      "node_b": 14,
+      "T_a_b": [
+        [
+          0.9931677092051915,
+          -0.0409033050401652,
+          -0.1092923649158773,
+          -0.17720478069908235
+        ],
+        [
+          0.047294124007195286,
+          0.9972797708709198,
+          0.056536045546536344,
+          -0.023627544777896567
+        ],
+        [
+          0.10668255352449196,
+          -0.0613186615023461,
+          0.9924005514534238,
+          -0.0891453600981886
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.03551771643679406,
+      "rotation_error_deg": 0.6597805070541787,
+      "direct_measurement_geometry": {
+        "overlap": 0.9782001117942984,
+        "source_overlap": 0.9573304157549234,
+        "target_overlap": 1.0,
+        "rmse_m": 0.04442853571401629,
+        "clipped_rmse_m": 0.05346070587887176,
+        "pairs": 4915
+      },
+      "placed_geometry": {
+        "overlap": 0.9693666604021801,
+        "source_overlap": 0.9405543398978847,
+        "target_overlap": 1.0,
+        "rmse_m": 0.05089408833564725,
+        "clipped_rmse_m": 0.061660456500276295,
+        "pairs": 4869
+      },
+      "rmse_increase_m": 0.008199750621404538,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:317__floor2:1215",
+      "session_a": "lobby",
+      "node_a": 317,
+      "session_b": "floor2",
+      "node_b": 1215,
+      "T_a_b": [
+        [
+          0.9721883000454176,
+          -0.07009137257330415,
+          -0.22346612438037688,
+          0.7079144462032039
+        ],
+        [
+          0.05347271218131351,
+          0.9953934101176912,
+          -0.07957781189659081,
+          0.199352913049118
+        ],
+        [
+          0.22801442565498037,
+          0.0654152779178152,
+          0.971457803050735,
+          0.4380121284330715
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.10481496885547374,
+      "rotation_error_deg": 1.7656034120957347,
+      "direct_measurement_geometry": {
+        "overlap": 0.6372256947017154,
+        "source_overlap": 0.7807486631016043,
+        "target_overlap": 0.5382758620689655,
+        "rmse_m": 0.055553216969967505,
+        "clipped_rmse_m": 0.12812474728980985,
+        "pairs": 6334
+      },
+      "placed_geometry": {
+        "overlap": 0.6057921105366185,
+        "source_overlap": 0.7615459406903257,
+        "target_overlap": 0.5029310344827587,
+        "rmse_m": 0.08686399236374706,
+        "clipped_rmse_m": 0.14210774902705597,
+        "pairs": 6050
+      },
+      "rmse_increase_m": 0.01398300173724612,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:327__floor2:51",
+      "session_a": "lobby",
+      "node_a": 327,
+      "session_b": "floor2",
+      "node_b": 51,
+      "T_a_b": [
+        [
+          0.9559440560585599,
+          0.16710401539343975,
+          0.2413445871066991,
+          0.026295910495497624
+        ],
+        [
+          -0.1776498057245215,
+          0.9838374821131535,
+          0.022457856426824116,
+          -0.02546821883947787
+        ],
+        [
+          -0.23369105291464057,
+          -0.06434327337520691,
+          0.9701795890241184,
+          -0.028898130848599074
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "audit",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.13108113849843214,
+      "rotation_error_deg": 3.9350489706264713,
+      "direct_measurement_geometry": {
+        "overlap": 0.7354400732354955,
+        "source_overlap": 0.7211923847695391,
+        "target_overlap": 0.7502620545073375,
+        "rmse_m": 0.0607522164106956,
+        "clipped_rmse_m": 0.11531804969584328,
+        "pairs": 5742
+      },
+      "placed_geometry": {
+        "overlap": 0.7456769684238389,
+        "source_overlap": 0.7307114228456913,
+        "target_overlap": 0.7612683438155137,
+        "rmse_m": 0.07760165047375168,
+        "clipped_rmse_m": 0.12109694267958798,
+        "pairs": 5822
+      },
+      "rmse_increase_m": 0.0057788929837447045,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:337__floor2:66",
+      "session_a": "lobby",
+      "node_a": 337,
+      "session_b": "floor2",
+      "node_b": 66,
+      "T_a_b": [
+        [
+          0.9710864838580996,
+          0.18763629474792862,
+          0.14759289197444606,
+          0.1939214016303988
+        ],
+        [
+          -0.19162673764048807,
+          0.9813795182339493,
+          0.01316945755022442,
+          -0.0014906004620413784
+        ],
+        [
+          -0.14237357300207418,
+          -0.04107142661475542,
+          0.9889605167176568,
+          0.28547838931286174
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.11826108239421085,
+      "rotation_error_deg": 1.6186348899831984,
+      "direct_measurement_geometry": {
+        "overlap": 0.8435270457820854,
+        "source_overlap": 0.9686285397001666,
+        "target_overlap": 0.747043918918919,
+        "rmse_m": 0.04808696136267008,
+        "clipped_rmse_m": 0.09076374627177354,
+        "pairs": 7027
+      },
+      "placed_geometry": {
+        "overlap": 0.8120226368800666,
+        "source_overlap": 0.944752915047196,
+        "target_overlap": 0.7119932432432432,
+        "rmse_m": 0.0659658548584027,
+        "clipped_rmse_m": 0.1050427798371681,
+        "pairs": 6775
+      },
+      "rmse_increase_m": 0.014279033565394561,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:462__bridge_12_sub:36",
+      "session_a": "lobby",
+      "node_a": 462,
+      "session_b": "bridge_12_sub",
+      "node_b": 36,
+      "T_a_b": [
+        [
+          0.9852070064731813,
+          0.1524091292562252,
+          -0.07834929301220825,
+          -0.01869063330272653
+        ],
+        [
+          -0.14995101251891135,
+          0.9880235634883899,
+          0.03638862234627565,
+          -0.010115467222780403
+        ],
+        [
+          0.0829569059253467,
+          -0.024101769874138045,
+          0.9962616405584573,
+          -0.06510968752636247
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.1776013709797403,
+      "rotation_error_deg": 0.8793100274198703,
+      "direct_measurement_geometry": {
+        "overlap": 0.9337962482873132,
+        "source_overlap": 0.9446716382006255,
+        "target_overlap": 0.9231684110371076,
+        "rmse_m": 0.042125777448541846,
+        "clipped_rmse_m": 0.06559593088500147,
+        "pairs": 7808
+      },
+      "placed_geometry": {
+        "overlap": 0.9149032952592727,
+        "source_overlap": 0.9473177772432042,
+        "target_overlap": 0.8846336822074216,
+        "rmse_m": 0.07653307367550119,
+        "clipped_rmse_m": 0.09344592696705274,
+        "pairs": 7657
+      },
+      "rmse_increase_m": 0.02784999608205127,
+      "geometry_guard_passed": false
+    },
+    {
+      "edge_id": "floor2:553__bridge_12_sub:159",
+      "session_a": "floor2",
+      "node_a": 553,
+      "session_b": "bridge_12_sub",
+      "node_b": 159,
+      "T_a_b": [
+        [
+          0.9121881730110228,
+          -0.0139756197034677,
+          0.40953317212737633,
+          0.9754048005490779
+        ],
+        [
+          0.015008010703575112,
+          0.9998871331340469,
+          0.000693258749646774,
+          0.1410834208575322
+        ],
+        [
+          -0.40949663812237597,
+          0.005513895798492446,
+          0.9122949634408785,
+          1.252449474170469
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.07525008340330552,
+      "rotation_error_deg": 2.8455330275665878,
+      "direct_measurement_geometry": {
+        "overlap": 0.8185502107091331,
+        "source_overlap": 0.9851784080512351,
+        "target_overlap": 0.700133155792277,
+        "rmse_m": 0.0683760089692812,
+        "clipped_rmse_m": 0.10500915269348796,
+        "pairs": 10642
+      },
+      "placed_geometry": {
+        "overlap": 0.7877196959413498,
+        "source_overlap": 0.9515096065873742,
+        "target_overlap": 0.6720372836218376,
+        "rmse_m": 0.07789403917018668,
+        "clipped_rmse_m": 0.11489912850854919,
+        "pairs": 10247
+      },
+      "rmse_increase_m": 0.009889975815061236,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:495__bridge_12_sub:85",
+      "session_a": "lobby",
+      "node_a": 495,
+      "session_b": "bridge_12_sub",
+      "node_b": 85,
+      "T_a_b": [
+        [
+          0.9846864028959836,
+          -0.07682366929947369,
+          0.15649540500325776,
+          0.15600924722076168
+        ],
+        [
+          0.06906700723434088,
+          0.9961265099482873,
+          0.05442172994251704,
+          0.02956586617925183
+        ],
+        [
+          -0.1600700985926481,
+          -0.04277966822697264,
+          0.9861782108335847,
+          0.1069791026308589
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "translation_error_m": 0.17119239198892233,
+      "rotation_error_deg": 1.8229721578097229,
+      "direct_measurement_geometry": {
+        "overlap": 0.8791976494660714,
+        "source_overlap": 0.8956285295963188,
+        "target_overlap": 0.8633587786259542,
+        "rmse_m": 0.06331817325186204,
+        "clipped_rmse_m": 0.0915036094303684,
+        "pairs": 8806
+      },
+      "placed_geometry": {
+        "overlap": 0.872770550116043,
+        "source_overlap": 0.8860071114829533,
+        "target_overlap": 0.8599236641221374,
+        "rmse_m": 0.0879085859219503,
+        "clipped_rmse_m": 0.1088433221833937,
+        "pairs": 8742
+      },
+      "rmse_increase_m": 0.017339712753025302,
+      "geometry_guard_passed": true
+    },
+    {
+      "edge_id": "lobby:443__bridge_12_sub:60",
+      "session_a": "lobby",
+      "node_a": 443,
+      "session_b": "bridge_12_sub",
+      "node_b": 60,
+      "T_a_b": [
+        [
+          0.9977749991291657,
+          0.059817964099788255,
+          -0.029442525091333143,
+          -0.2656906236942842
+        ],
+        [
+          -0.059670544715132064,
+          0.998200917778997,
+          0.005861214769070223,
+          0.01948529649190558
+        ],
+        [
+          0.02974016150253648,
+          -0.004091322051115988,
+          0.9995492903692534,
+          0.055055339136158246
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "audit",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session_clahe_depth/lobby__bridge_12_sub/accepted_frame_edges.json",
+      "translation_error_m": 0.1986378009463765,
+      "rotation_error_deg": 1.8844951911073733,
+      "direct_measurement_geometry": {
+        "overlap": 0.9429338623424867,
+        "source_overlap": 0.8925348646431501,
+        "target_overlap": 0.9993652808632181,
+        "rmse_m": 0.048156572650035645,
+        "clipped_rmse_m": 0.06712155394755598,
+        "pairs": 6413
+      },
+      "placed_geometry": {
+        "overlap": 0.900506311964845,
+        "source_overlap": 0.8539786710418376,
+        "target_overlap": 0.952396064741352,
+        "rmse_m": 0.12566029071106738,
+        "clipped_rmse_m": 0.13499198905790152,
+        "pairs": 6124
+      },
+      "rmse_increase_m": 0.06787043511034554,
+      "geometry_guard_passed": false
+    },
+    {
+      "edge_id": "lobby:39__bridge_out1f:79",
+      "session_a": "lobby",
+      "node_a": 39,
+      "session_b": "bridge_out1f",
+      "node_b": 79,
+      "T_a_b": [
+        [
+          0.9976370745414305,
+          0.030519297765593693,
+          -0.0615535536286227,
+          0.5229705766083782
+        ],
+        [
+          -0.030979708396473994,
+          0.9994986227274638,
+          -0.006539176826644353,
+          0.06271101063607289
+        ],
+        [
+          0.06132312099107588,
+          0.00843063638142706,
+          0.9980823609312565,
+          -0.005403993760809256
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/lobby_bridge/attachment.json",
+      "historical_eligible_for_joint": false,
+      "translation_error_m": 1.1902782092182736e-16,
+      "rotation_error_deg": 0.777468369972688,
+      "direct_measurement_geometry": {
+        "overlap": 0.9127510216083413,
+        "source_overlap": 0.9983546617915905,
+        "target_overlap": 0.8406681657565049,
+        "rmse_m": 0.049489835350962956,
+        "clipped_rmse_m": 0.07525302875872766,
+        "pairs": 10695
+      },
+      "placed_geometry": {
+        "overlap": 0.9121826986083403,
+        "source_overlap": 0.9983546617915905,
+        "target_overlap": 0.8397044651461613,
+        "rmse_m": 0.049492245821307415,
+        "clipped_rmse_m": 0.07538235716789513,
+        "pairs": 10689
+      },
+      "rmse_increase_m": 0.0001293284091674618,
+      "geometry_guard_passed": true
+    }
+  ],
+  "skipped_measurements": [
+    {
+      "edge_id": "lobby:172__floor2:1158",
+      "session_a": "lobby",
+      "node_a": 172,
+      "session_b": "floor2",
+      "node_b": 1158,
+      "T_a_b": [
+        [
+          0.9919835688099832,
+          -0.05778695341781035,
+          -0.11238001257206114,
+          0.07298236233501895
+        ],
+        [
+          0.042987062754723936,
+          0.9905917250022972,
+          -0.12992361907170819,
+          0.05434942645811739
+        ],
+        [
+          0.11883060063270794,
+          0.1240512086666506,
+          0.9851348059943931,
+          0.07314320385845419
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "train",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "reason": "Selected A/B poses do not contain endpoint; no interpolation across hard boundary"
+    },
+    {
+      "edge_id": "floor2:560__bridge_12_sub:162",
+      "session_a": "floor2",
+      "node_a": 560,
+      "session_b": "bridge_12_sub",
+      "node_b": 162,
+      "T_a_b": [
+        [
+          0.9715294885332747,
+          -0.0022302429029316968,
+          0.23690816559769387,
+          -0.06638973172319035
+        ],
+        [
+          0.021279111664736776,
+          0.9967356528197174,
+          -0.07787963665049229,
+          0.018384229343833266
+        ],
+        [
+          -0.2359611245884157,
+          0.08070355887225181,
+          0.9684055365745932,
+          0.43011583781618246
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "audit",
+      "historical_eligible_for_joint": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json",
+      "reason": "Selected A/B poses do not contain endpoint; no interpolation across hard boundary"
+    },
+    {
+      "edge_id": "lobby:11__bridge_out1f:23",
+      "role": "audit",
+      "reason": "bridge23 excluded from selected A/B poses; not restored"
+    }
+  ],
+  "limitations": [
+    "User visual selection is not survey or navigation validation.",
+    "Every historical cross-session strict eligibility flag remains false.",
+    "Single entrance support cannot validate outdoor/bridge or bridge/lobby globally.",
+    "Some C-grade endpoints are absent; they are not silently reintroduced into clouds.",
+    "Bridge79 is attachment-only transported inside one submap, with larger model uncertainty.",
+    "Historical audits are reused/correlated development observations, not new independent truth.",
+    "Selected J04 retains the documented 656/1055 finite-patch gap; nothing is flattened or erased.",
+    "Any cross-session mismatch that cannot be fixed rigidly is retained, not hidden by warping."
+  ],
+  "combined_points": 3493208,
+  "combined_voxel_m": 0.05,
+  "combined_sha256": "48a8debb47f1b2391f3ec314cff9e9310e0ebda2a9554d781210cd4c35224ea1",
+  "rviz_config": "SELECTED_WORKING_MAP.rviz",
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/config/student_union_selected_map_20261017.json": "8a6833012226f29a34ccb57c070b8878b8b8af728ed1775cc364e8e7f2f99937",
+    "/home/subin/folded-city-atlas/src/assemble_selected_map.py": "b1a4c646ea32f462fd910cc61a83a1037ae5fc1e7306146cba568c4e82905319",
+    "/home/subin/folded-city-atlas/src/optimize_session.py": "a6da368b4e0607d3f8133b53023302c4631c0ee37300ea993cac55238bde45cc",
+    "/home/subin/folded-city-atlas/src/export_rtabmap_db.py": "743941f629d8fb3073cc7a82bff771f9c94c3540511bd05d385d40f9614552b3",
+    "/home/subin/folded-city-atlas/src/build_all_session_preview.py": "567cb49d3195111b89d8025c969768ec6a97a9b2f79fd2b52b056dcd4b731973",
+    "/home/subin/folded-city-atlas/src/revalidate_loop_constraints.py": "6acffe5d2e5674e76bb31dfdb4e61cf4420cd6b21d41ce22dd766039a76d3a86",
+    "/home/subin/folded-city-atlas/src/check_session_overlap.py": "91aa27df5a539c14e1c7e03f7fa83fd68439845f376964727a899916a10d4c2a",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_quality/manifest.json": "b81cf7f36b2bd5bdb564911b79c83b16d417d8f630a8839ece29e86e723c495c",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/outside/summary.json": "c13899f9d3b9c95abd8bc12ad21a0f546bb88964d5d8d99824d4ce6a9812bf51",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/outside/poses/J01.csv": "7700225140742a2cc1e4b76130002675defd5266ec6d224bd44ba6db5d69b686",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/outside/clouds/J01.ply": "85d685eb4090b4afe37d2c02542c5a1ea453fa02ec04871d334e6c1a84cb614f",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/lobby/summary.json": "b8c9593e1694af8a9e3614c671b696ab54d95446d7789744996b6aab904667f5",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/lobby/poses/N05.csv": "bafbb96355afe9cc263fa1863c5fd66b1922e5fc69c4e6fc2b695a383acb07bc",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/lobby/clouds/N05.ply": "53f721421b00382b00975a77a7705117c5a810f94cd3a42211a676ec48efb22c",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/bridge_out1f/summary.json": "06b93f9c979515359251eba7273725aaaad7b1d186015d49d488596ffb6833fa",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_out1f/poses/H03.csv": "9333614912185ac883a3aeec0d0bc5154f1c023bc851560b11a50c5fb2c70b08",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_out1f/clouds/H03.ply": "45bb147b23ba9b9410dee842c7579de4cb180bfc53b7adc4f5814a38123f38d9",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/floor2/summary.json": "2e38a9df34f87081c4fbfe6b28f1f8387fcbe3e76b7598dbf43ea7b6185efdf6",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/poses/J04.csv": "21a13eff467c06df44d08b0f4caa954cb32dd524c85b9a5675bb292e4def45d7",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/clouds/J04.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/bridge_12_sub/summary.json": "3416c13db55068524a6c28ccd94fdd4e770181781a6a80a2ffe4dbdc31b5ed15",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/poses/H03.csv": "e45a8e6669f425090583a65b61f658d7c10e1f4b7314aefc4a9832d5f3c4b320",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/bridge_12_sub/clouds/H03.ply": "5cce6f5058ca8a57a0638353ac96869c2fb491c94ed8e901c61f519c7a20fece",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/graph_final/used_constraints.json": "5803e49acc689fe0203e17d9c166de2ebaf91f78e0da43e1f4b62e8a04125eef",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/cross_session_clahe_depth/lobby__bridge_12_sub/accepted_frame_edges.json": "9db680c617b6bfc8bd11036c1d674fa98ac25b65a5e90be4e31df60da7056bfa",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/lobby_bridge/attachment.json": "b42ba3af00ccd21a7c19ee69c516e768d67e4b7dc0bcea18f4a479415b7a26b2",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_quality/bridge_out1f/frames.csv": "93ba358877b39377c2d0c5f52a87072f37695c87cd64e0bbe909ebc0beacf7ee",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_quality/bridge_out1f/submaps.json": "593aaa101d52e717c10fa6ea2a9b25d33c03700b1cf3f3919dd061958d52c931",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_geometry_review/baselines/frozen/bridge_out1f_poses.csv": "c1737fd94a868fb4e5e22dbd6400289e244e7695e76106045a40cd6a15247f0f",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/outside_bridge/attachment_candidate.json": "2a2f0dba887634d40b75f072201c9ffe9611717da6684e07f2a2cec62d175c9a",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/outside_bridge/correspondences/263_117.npz": "f320adefbd2ede58abee40fdf064b9e592a41517bab921b274f130d8be34ca30",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/outside_bridge/correspondences/262_117.npz": "a98b286633c1d49b1195f8faac7842eb9ab9397bd2663f377ee79d77d34d0f60",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_all_preview/outside_bridge/correspondences/263_118.npz": "432ef0225dbfca9637220f8e29f8fde3c75c3579f9752cf27a712d25c6bbd056",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/learned_cross_session/outside__bridge_out1f/correspondences/263_118.npz": "1960b793ee7c2ffe626ac5e9fe60d7afe1f331e4b8723dc945dc14f483f8b62d",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_revalidated/learned_cross_session/outside__bridge_out1f/verification_checkpoint.json": "7b9250766c5354b6ed8bbc210e840a156d64a6b6e41f39c344f37c66f67f560c"
+  },
+  "all_inputs_unchanged": true,
+  "database_integrity": {
+    "outside": {
+      "database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db",
+      "sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+      "unchanged": true
+    },
+    "lobby": {
+      "database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db",
+      "sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+      "unchanged": true
+    },
+    "bridge_out1f": {
+      "database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db",
+      "sha256": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+      "unchanged": true
+    },
+    "floor2": {
+      "database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db",
+      "sha256": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+      "unchanged": true
+    },
+    "bridge_12_sub": {
+      "database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db",
+      "sha256": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+      "unchanged": true
+    }
+  },
+  "finished_utc": "2026-10-17T12:15:32.265932+00:00"
+}

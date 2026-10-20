@@ -1,0 +1,1461 @@
+{
+  "created_utc": "2026-10-17T02:27:13.368077+00:00",
+  "accepted": false,
+  "navigation": false,
+  "command": [
+    "src/publish_submap_evidence.py",
+    "--patch-report",
+    "DCS 8x60",
+    "dcs",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_primary_v7/report.json",
+    "--patch-report",
+    "Huber 16x300",
+    "baseline_huber",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+    "--patch-report",
+    "DCS 16x300",
+    "dcs",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+    "--patch-report",
+    "Group switch 16x300",
+    "group_switch",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/figures_quality/01_quality_group_submap_summary.png",
+    "quality_summary.png",
+    "실제 5개 세션의 프레임 품질과 상관 그룹·서브맵 수",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/figures_quality/05_floor2_trajectory_quality_submaps.png",
+    "floor2_quality.png",
+    "실제 2층 궤적의 품질·경계·서브맵; 경계는 추적 실패의 확정 라벨이 아님",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/backend_summary_v7_extended/graph_components_structural_bridges.png",
+    "graph_components.png",
+    "실제 그래프 연결 성분 및 단독 구조 경계; 절대 위치 오차가 아님",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/dcs_xy_xz.png",
+    "final_cloud_xy_xz.png",
+    "확장 DCS의 실제 RGB-D 재생성; 외부·브리지·실내의 독립 gauge 표시를 포함하며 검증된 통합 지도가 아님",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/representative_main_stairs_floor2_nodes_80_240.png",
+    "main_stairs.png",
+    "실제 메인 계단 crop과 선택 카메라 위치; 실측 층고가 아님",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/figures/floor2_656_1055_wall_0_1.png",
+    "reserved_wall.png",
+    "2층656↔1055의 동일 유한 벽 패치; 예약 관계가 크게 악화함",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/figures/outside_69_323_wall_0_0.png",
+    "outside_wall.png",
+    "외부69↔323의 동일 유한 벽 패치; 학습 관계의 국소 개선",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_outside_xy_xz.png",
+    "session_outside.png",
+    "확장 DCS 외부 세션; 실제 재생성 점군",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_lobby_xy_xz.png",
+    "session_lobby.png",
+    "확장 DCS 로비 세션; 실제 재생성 점군",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_bridge_out1f_xy_xz.png",
+    "session_outside_bridge.png",
+    "확장 DCS 외부–로비 브리지; 양쪽 지도 연결은 미검증",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_floor2_xy_xz.png",
+    "session_floor2.png",
+    "확장 DCS 메인 계단·2층 세션; 실제 재생성 점군",
+    "--image",
+    "outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_bridge_12_sub_xy_xz.png",
+    "session_substairs.png",
+    "확장 DCS 서브 계단 세션; 한 연결 장소만으로 정확도 승인 불가",
+    "--output",
+    "docs/assets/submap-review"
+  ],
+  "source_sha256": "4ea93167a4182c7a9758ac0f9f611c21f5bc3ddf99451f1fdd42d2d748ef91bd",
+  "candidates": [
+    {
+      "label": "DCS 8x60",
+      "variant": "dcs",
+      "report": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_primary_v7/report.json",
+      "report_sha256": "17439817e48346b957ede9cdb0668fa47ab46beeebb8efd4beff108f231daf1a",
+      "metrics": {
+        "total_patches": 122,
+        "available_patches": 90,
+        "missing_patches": 32,
+        "coverage_fraction": 0.7377049180327869,
+        "same_support_metrics": {
+          "previous_preview": {
+            "count": 90,
+            "median_m": 0.04738743372724252,
+            "p90_m": 0.21612631209059396,
+            "maximum_m": 0.5984494470335318
+          },
+          "selected_initial": {
+            "count": 90,
+            "median_m": 0.057278597648416224,
+            "p90_m": 0.3237045598893657,
+            "maximum_m": 1.0277377534156822
+          },
+          "dcs": {
+            "count": 90,
+            "median_m": 0.06107061399495363,
+            "p90_m": 0.19315804618064952,
+            "maximum_m": 1.1434723420937778
+          }
+        },
+        "severe_regression_threshold_m": 0.05,
+        "severe_regressions_vs_each_baseline": {
+          "previous_preview": 21,
+          "selected_initial": 17
+        },
+        "severe_regressions_vs_per_patch_best_baseline": 21,
+        "missing_patch_ids": [
+          [
+            "outside",
+            292,
+            334,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "lobby",
+            11,
+            24,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            295,
+            527,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            296,
+            528,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            417,
+            507,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            753,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            754,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            2,
+            2
+          ],
+          [
+            "floor2",
+            474,
+            940,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            503,
+            961,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1056,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1057,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            789,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "wall",
+            1,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            788,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            839,
+            902,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            840,
+            903,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1157,
+            1190,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "horizontal",
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Huber 16x300",
+      "variant": "baseline_huber",
+      "report": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+      "report_sha256": "08a55aa3c75995eaa2ba4285a0eab1ded08497dff1f62c7409ef0d77b21804cb",
+      "metrics": {
+        "total_patches": 122,
+        "available_patches": 90,
+        "missing_patches": 32,
+        "coverage_fraction": 0.7377049180327869,
+        "same_support_metrics": {
+          "previous_preview": {
+            "count": 90,
+            "median_m": 0.04738743372724252,
+            "p90_m": 0.21612631209059396,
+            "maximum_m": 0.5984494470335318
+          },
+          "selected_initial": {
+            "count": 90,
+            "median_m": 0.057278597648416224,
+            "p90_m": 0.3237045598893657,
+            "maximum_m": 1.0277377534156822
+          },
+          "baseline_huber": {
+            "count": 90,
+            "median_m": 0.06106714146301717,
+            "p90_m": 0.19315811967260704,
+            "maximum_m": 1.1434472575561008
+          }
+        },
+        "severe_regression_threshold_m": 0.05,
+        "severe_regressions_vs_each_baseline": {
+          "previous_preview": 21,
+          "selected_initial": 17
+        },
+        "severe_regressions_vs_per_patch_best_baseline": 21,
+        "missing_patch_ids": [
+          [
+            "outside",
+            292,
+            334,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "lobby",
+            11,
+            24,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            295,
+            527,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            296,
+            528,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            417,
+            507,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            753,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            754,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            2,
+            2
+          ],
+          [
+            "floor2",
+            474,
+            940,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            503,
+            961,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1056,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1057,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            789,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "wall",
+            1,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            788,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            839,
+            902,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            840,
+            903,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1157,
+            1190,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "horizontal",
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "DCS 16x300",
+      "variant": "dcs",
+      "report": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+      "report_sha256": "08a55aa3c75995eaa2ba4285a0eab1ded08497dff1f62c7409ef0d77b21804cb",
+      "metrics": {
+        "total_patches": 122,
+        "available_patches": 90,
+        "missing_patches": 32,
+        "coverage_fraction": 0.7377049180327869,
+        "same_support_metrics": {
+          "previous_preview": {
+            "count": 90,
+            "median_m": 0.04738743372724252,
+            "p90_m": 0.21612631209059396,
+            "maximum_m": 0.5984494470335318
+          },
+          "selected_initial": {
+            "count": 90,
+            "median_m": 0.057278597648416224,
+            "p90_m": 0.3237045598893657,
+            "maximum_m": 1.0277377534156822
+          },
+          "dcs": {
+            "count": 90,
+            "median_m": 0.061067568767721694,
+            "p90_m": 0.19315816090511947,
+            "maximum_m": 1.1434440081698554
+          }
+        },
+        "severe_regression_threshold_m": 0.05,
+        "severe_regressions_vs_each_baseline": {
+          "previous_preview": 21,
+          "selected_initial": 17
+        },
+        "severe_regressions_vs_per_patch_best_baseline": 21,
+        "missing_patch_ids": [
+          [
+            "outside",
+            292,
+            334,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "lobby",
+            11,
+            24,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            295,
+            527,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            296,
+            528,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            417,
+            507,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            753,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            754,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            2,
+            2
+          ],
+          [
+            "floor2",
+            474,
+            940,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            503,
+            961,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1056,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1057,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            789,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "wall",
+            1,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            788,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            839,
+            902,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            840,
+            903,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1157,
+            1190,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "horizontal",
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Group switch 16x300",
+      "variant": "group_switch",
+      "report": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/report.json",
+      "report_sha256": "08a55aa3c75995eaa2ba4285a0eab1ded08497dff1f62c7409ef0d77b21804cb",
+      "metrics": {
+        "total_patches": 122,
+        "available_patches": 90,
+        "missing_patches": 32,
+        "coverage_fraction": 0.7377049180327869,
+        "same_support_metrics": {
+          "previous_preview": {
+            "count": 90,
+            "median_m": 0.04738743372724252,
+            "p90_m": 0.21612631209059396,
+            "maximum_m": 0.5984494470335318
+          },
+          "selected_initial": {
+            "count": 90,
+            "median_m": 0.057278597648416224,
+            "p90_m": 0.3237045598893657,
+            "maximum_m": 1.0277377534156822
+          },
+          "group_switch": {
+            "count": 90,
+            "median_m": 0.06120336906505211,
+            "p90_m": 0.19379362214368634,
+            "maximum_m": 1.1496358569037308
+          }
+        },
+        "severe_regression_threshold_m": 0.05,
+        "severe_regressions_vs_each_baseline": {
+          "previous_preview": 21,
+          "selected_initial": 17
+        },
+        "severe_regressions_vs_per_patch_best_baseline": 21,
+        "missing_patch_ids": [
+          [
+            "outside",
+            292,
+            334,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "lobby",
+            11,
+            24,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            295,
+            527,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            296,
+            528,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            415,
+            504,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            417,
+            507,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            753,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "lobby",
+            687,
+            754,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            414,
+            470,
+            "wall",
+            2,
+            2
+          ],
+          [
+            "floor2",
+            474,
+            940,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            503,
+            961,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            608,
+            1023,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            639,
+            1030,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1056,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            657,
+            1057,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            789,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "wall",
+            1,
+            0
+          ],
+          [
+            "floor2",
+            696,
+            859,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            733,
+            758,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            788,
+            858,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            839,
+            902,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            840,
+            903,
+            "horizontal",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1157,
+            1190,
+            "wall",
+            2,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            1,
+            1
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "wall",
+            0,
+            0
+          ],
+          [
+            "floor2",
+            1158,
+            1215,
+            "horizontal",
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "generated_figures": [
+    {
+      "destination": "matched_support_metrics.png",
+      "sha256": "4354add19d9065f6193f2862d3db0a89959a6597f4f37a1b7638f4cc729b2db9",
+      "actual_data_only": true
+    },
+    {
+      "destination": "critical_patch_progress.png",
+      "sha256": "81d308f250f5cabd1d0d47571e693ad4b1d245a6dedaaa99909fbb536f603d94",
+      "actual_data_only": true
+    }
+  ],
+  "copied_images": [
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/figures_quality/01_quality_group_submap_summary.png",
+      "destination": "quality_summary.png",
+      "caption": "실제 5개 세션의 프레임 품질과 상관 그룹·서브맵 수",
+      "source_sha256": "7be175b86ebfd00c86125b51162c2924c5881dc5acd0b8c66943dc860b6c62f9",
+      "source_bytes": 237741,
+      "destination_sha256": "20078a45a076bd04bbc8afa715b3351827e56dc6afad6fde068516c8f73fdad4",
+      "destination_bytes": 207710,
+      "dimensions_pixels": [
+        2850,
+        2660
+      ],
+      "decoded_rgba_sha256": "5025af9d8395dcc2bd5d5f6a38b107d96171c1c684351e7ee31fef4f0e4a8acd",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/figures_quality/05_floor2_trajectory_quality_submaps.png",
+      "destination": "floor2_quality.png",
+      "caption": "실제 2층 궤적의 품질·경계·서브맵; 경계는 추적 실패의 확정 라벨이 아님",
+      "source_sha256": "d8944a041692b8e8380d9a64887a176dd28caa0b27800172d6745ed2d60cf997",
+      "source_bytes": 624319,
+      "destination_sha256": "58e3d7c89d73912165f0576b78edb540294a2dd90c5f976cdaf9755050a1bd27",
+      "destination_bytes": 553335,
+      "dimensions_pixels": [
+        3040,
+        1425
+      ],
+      "decoded_rgba_sha256": "c3f622376ccfd8d7d65c9195d443919ae82c07aced3164e561bd364d8a40c71e",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/backend_summary_v7_extended/graph_components_structural_bridges.png",
+      "destination": "graph_components.png",
+      "caption": "실제 그래프 연결 성분 및 단독 구조 경계; 절대 위치 오차가 아님",
+      "source_sha256": "39ab809f8341a55bc5d740e2bd4550154d3beeb86faf46bb2b8022af6da975de",
+      "source_bytes": 708519,
+      "destination_sha256": "56cc8e7909b10c3498c59a63c04baf4d5a1123398ee57bba62d6a2022d441721",
+      "destination_bytes": 618035,
+      "dimensions_pixels": [
+        2240,
+        2951
+      ],
+      "decoded_rgba_sha256": "f3f0c1da2ec177e445a874b8ef2582912d7ee93ea9b29d8ab824c7f952da7af6",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/dcs_xy_xz.png",
+      "destination": "final_cloud_xy_xz.png",
+      "caption": "확장 DCS의 실제 RGB-D 재생성; 외부·브리지·실내의 독립 gauge 표시를 포함하며 검증된 통합 지도가 아님",
+      "source_sha256": "5c87b8a69551d8ee75e0a6ba36227c1e52caa0520a9ef858cc00819762fc7d9e",
+      "source_bytes": 1699870,
+      "destination_sha256": "f6c843a68ea29959a8ad91932a38214545659216fbe4b45c65138685e436b1b1",
+      "destination_bytes": 1526476,
+      "dimensions_pixels": [
+        2860,
+        1188
+      ],
+      "decoded_rgba_sha256": "2aad0bf6338c571a9b38482feb0532d6aa280262c092e863568aa42217a4afca",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/representative_main_stairs_floor2_nodes_80_240.png",
+      "destination": "main_stairs.png",
+      "caption": "실제 메인 계단 crop과 선택 카메라 위치; 실측 층고가 아님",
+      "source_sha256": "4359826643f38037c1053450993ceb152247d57fb421ac2d44c51321f7edc08a",
+      "source_bytes": 2401785,
+      "destination_sha256": "653214bf3f90848872d190891fec1e3f2dcb9adfa46603046d54894983c09058",
+      "destination_bytes": 2124183,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "5cd9ee874cd70ac4244463ce9fd8b385d05f5039fd74fb1cae6697c2a557656b",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/figures/floor2_656_1055_wall_0_1.png",
+      "destination": "reserved_wall.png",
+      "caption": "2층656↔1055의 동일 유한 벽 패치; 예약 관계가 크게 악화함",
+      "source_sha256": "14724fc12fcb2554811934a75a1186301b75942600de84e8e883e6a51cfd9757",
+      "source_bytes": 275936,
+      "destination_sha256": "6fc4325020fdf2c3c3d725fe461bd3368929425c5c190f83ad24c50d4d6b6793",
+      "destination_bytes": 232122,
+      "dimensions_pixels": [
+        4180,
+        1628
+      ],
+      "decoded_rgba_sha256": "9cb75a025101c2495165309c2a05abe29c3bc966416a1ec88758b18a55e234c7",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/fixed_patch_extended_v7/figures/outside_69_323_wall_0_0.png",
+      "destination": "outside_wall.png",
+      "caption": "외부69↔323의 동일 유한 벽 패치; 학습 관계의 국소 개선",
+      "source_sha256": "2cdf9cd770d60592b2d6eb745bfc6c5725d50e71fa52c6d7c22294adfdad6e25",
+      "source_bytes": 302441,
+      "destination_sha256": "53d7b602833203be6eadaedf9e785ca8eb83ed17c3dd65a4b0b4bd096c25f924",
+      "destination_bytes": 256499,
+      "dimensions_pixels": [
+        4180,
+        1628
+      ],
+      "decoded_rgba_sha256": "fcb10661cd370b69f16ba7eda5744851346ab9968e2b06a210a4d5bea4979fb2",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_outside_xy_xz.png",
+      "destination": "session_outside.png",
+      "caption": "확장 DCS 외부 세션; 실제 재생성 점군",
+      "source_sha256": "6e39ac232046f91f61f4e3620260f45022ceb9cec29255497cfabd49a84ec46a",
+      "source_bytes": 1909844,
+      "destination_sha256": "e31edbc47cb1ee37e3e25f2b728371fee87a8ff8301a5aa3cb3d8fcbbb27b523",
+      "destination_bytes": 1688074,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "d0d6d84152e9c6124d539a8ccdb9788af500964d84a8396990ccd8c07283c697",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_lobby_xy_xz.png",
+      "destination": "session_lobby.png",
+      "caption": "확장 DCS 로비 세션; 실제 재생성 점군",
+      "source_sha256": "bcff2a939a95c2b62f75226e84ed9ba1d94467388fa6f116ab26be52daf6b63c",
+      "source_bytes": 1472538,
+      "destination_sha256": "a4b514030265d0e9e50c282e832ee9b3fc54ecb4bc0391068f9db91480b9e14f",
+      "destination_bytes": 1313799,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "543153d796f9738f4196faa142914542a1449edf486495e91179575cb7249cd9",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_bridge_out1f_xy_xz.png",
+      "destination": "session_outside_bridge.png",
+      "caption": "확장 DCS 외부–로비 브리지; 양쪽 지도 연결은 미검증",
+      "source_sha256": "35304b815134bafb33a774b5116c2b32306bc6c44fdb08935dc0ff97659edd8f",
+      "source_bytes": 1766927,
+      "destination_sha256": "c257d27beb036049b7c65d1fc285757f245a962b6ef77ad283b0a41dfc92ddbc",
+      "destination_bytes": 1550672,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "bf7953640cf3b144e393f01e066f39fe520356cd96679ffe1af90b6c41189192",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_floor2_xy_xz.png",
+      "destination": "session_floor2.png",
+      "caption": "확장 DCS 메인 계단·2층 세션; 실제 재생성 점군",
+      "source_sha256": "7ba5d2d95dcadd068c6ed3691467360f52535553c90c2eb7445e8e718dcbde06",
+      "source_bytes": 1787597,
+      "destination_sha256": "126fdbfc27e651c61a2e8a6d8c86f5fceca71078569d66e09e5a434e9c5deee1",
+      "destination_bytes": 1598162,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "12821008753d3d2a06fb46ec8d2dd4940142bdea5e3b38bdd6188ddd1541b83d",
+      "decoded_rgba_identical": true
+    },
+    {
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_submap_robust/clouds_extended_v7/figures/session_bridge_12_sub_xy_xz.png",
+      "destination": "session_substairs.png",
+      "caption": "확장 DCS 서브 계단 세션; 한 연결 장소만으로 정확도 승인 불가",
+      "source_sha256": "e28ab96c409d0b7de36120e7938031466a2d733662abc929de454c514a392982",
+      "source_bytes": 2142615,
+      "destination_sha256": "1f969443918d550cd56aefa1b290528b71ca8d8b5f605dce722b554747721809",
+      "destination_bytes": 1898170,
+      "dimensions_pixels": [
+        1364,
+        2244
+      ],
+      "decoded_rgba_sha256": "4f80233d239849ac855d0ca9a5960bd17412da7bc393f6fb1b1369ae1486d42b",
+      "decoded_rgba_identical": true
+    }
+  ],
+  "limitations": [
+    "Candidate and baselines share identical available patches within each column group.",
+    "Different coverage across candidates must still be reported; missing values never score zero.",
+    "These historical sensor observations have been used for repeated model selection.",
+    "No surveyed ground truth, measured stair height, or navigation approval."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-10-18T06:58:38.779275+00:00",
+  "bundle_manifest_sha256": "1c44f4473b8b8b9f4d59689c938a94f2420724acf6fc0d0aedfa3a319d7566a8",
+  "reviewed_objects": 25,
+  "classes": {
+    "window": 5,
+    "wall": 2,
+    "door": 5,
+    "sign": 11,
+    "floor": 1,
+    "ceiling": 1
+  },
+  "added_photo_surfaces": 24,
+  "sum_of_added_surface_areas_m2_not_net_gap_area": 42.88032839511999,
+  "lighting": {
+    "floor2": {
+      "all_charts": 58,
+      "charts_with_accepted_seam_samples": 40,
+      "adjusted_charts": 37,
+      "rejected_worsening_charts": 3,
+      "median_chart_absolute_log_luminance_jump_before": 0.034069591396192256,
+      "median_chart_absolute_log_luminance_jump_after": 0.026742862644067777,
+      "relative_reduction": 0.2150518527481765,
+      "same_samples_self_consistency_not_independent_accuracy": true
+    },
+    "lobby": {
+      "all_charts": 65,
+      "charts_with_accepted_seam_samples": 49,
+      "adjusted_charts": 49,
+      "rejected_worsening_charts": 0,
+      "median_chart_absolute_log_luminance_jump_before": 0.027704232651220018,
+      "median_chart_absolute_log_luminance_jump_after": 0.022343456890451807,
+      "relative_reduction": 0.19350024338364546,
+      "same_samples_self_consistency_not_independent_accuracy": true
+    }
+  },
+  "reviewed_sightline_carved_source_faces_by_object": {
+    "f2_mens_restroom_door": 1086,
+    "f2_mens_restroom_sign": 80,
+    "f2_main_glazed_panel": 1187,
+    "f2_main_transom": 497,
+    "f2_fire_equipment_front": 171,
+    "lobby_foodmarket_quote": 347,
+    "lobby_service_door": 998
+  },
+  "figures": [
+    {
+      "file": "brightness_boundary_comparison.png",
+      "sha256": "19d1c723c174cca40ed9d991968e169470b2941c5a7c87310b315dbc51eb931c"
+    },
+    {
+      "file": "elevator_open_closed_originals.png",
+      "sha256": "2f730f632b9693c5e1fca272e60632525942ffb16750e882584c9c0ce175664f"
+    }
+  ],
+  "source_sha256": "c36eccde0c59588806c1892818949ba0569f18079d41ad50bf8b4e4250dec78a"
+}

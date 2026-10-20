@@ -1,0 +1,36 @@
+{
+  "version": "student_union_final_display_20261019_v9",
+  "status": "USER_SELECTED_FINAL_WORKING_MAP",
+  "accepted_date": "2026-10-19",
+  "timezone": "Asia/Seoul",
+  "accepted_by": "user",
+  "request": "이거를 우선 최종 지도로 결정. 커밋 푸쉬 및 readme 수정",
+  "scope": "Final working visualization baseline; sensor map, display geometry and navigable topology remain separate.",
+  "selected_map_manifest": "outputs/student_union_selected_20261017_v1/manifest.json",
+  "selected_map_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "structural_manifest": "outputs/student_union_final_mesh_v9/manifest.json",
+  "structural_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "session_pose_choices": {
+    "outside": "J01",
+    "lobby": "N05",
+    "bridge_out1f": "H03",
+    "floor2": "J04",
+    "bridge_12_sub": "H03"
+  },
+  "pose_count": 2251,
+  "selected_cloud_point_count": 3493208,
+  "colour_basis": "outputs/student_union_shadow_colour_v3/manifest.json",
+  "candidate_requires_user_review": false,
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "public_release_ready": false,
+  "equipment_void_is_walkable": false,
+  "known_limitations": [
+    "Residual stair depth noise, unobserved boundaries and baked illumination seams remain.",
+    "The retained J04 diagnostic wall 656-1055 has a 54.42 cm surface gap; visual selection is not survey validation.",
+    "Display-only inferred ceilings and service-cavity skins are not walkable routing geometry.",
+    "Indoor place/address data, verified route graph, public web packaging and privacy review remain separate work."
+  ],
+  "evidence": "docs/experiments/2026-10-19-final-mesh-visual-cleanup.md",
+  "historical_outputs_preserved": true
+}

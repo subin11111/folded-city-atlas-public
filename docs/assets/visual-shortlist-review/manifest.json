@@ -1,0 +1,100 @@
+{
+  "created_utc": "2026-10-17T12:00:12.527521+00:00",
+  "figures": [
+    {
+      "file": "outside_shortlist.png",
+      "sha256": "59ecf2606d3ae022c740e057c5897c1261341eefa61feaca090e9249149ef8e2",
+      "caption": "Actual existing candidate point clouds. Brackets mark human visual preference, not navigation approval; counterexamples are retained.",
+      "synthetic": false
+    },
+    {
+      "file": "lobby_shortlist.png",
+      "sha256": "d68438da1e0fb3bf8747425a536cccac2acd5f180789f72424939b897af9e6f1",
+      "caption": "Actual existing candidate point clouds. Brackets mark human visual preference, not navigation approval; counterexamples are retained.",
+      "synthetic": false
+    },
+    {
+      "file": "lobby_trajectory.png",
+      "sha256": "63c859a08c3f96f8c78730f454242a676cdae5165da06366a27d3881b24abb17",
+      "caption": "A/B node samples without lines across rejected-frame gaps. Traces show differences, not metric truth or measured stair rise.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f_shortlist.png",
+      "sha256": "cb6dd95eab4844e717a71fd6351aee73492ab316832590f5086f3286ef756031",
+      "caption": "Actual existing candidate point clouds. Brackets mark human visual preference, not navigation approval; counterexamples are retained.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f_trajectory.png",
+      "sha256": "8717f6bf8b3201239dadd73267ea0f90887c77208aa1af352cf59bb19179a2e6",
+      "caption": "A/B node samples without lines across rejected-frame gaps. Traces show differences, not metric truth or measured stair rise.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_548_981_wall.png",
+      "sha256": "b15af407cc771fb92ceeb045ce79956676a2abd854382006a5baaf84859f9397",
+      "caption": "Same unmodified original depth patch; no refit per candidate or wall deletion. Gaps are repeated development diagnostics, not surveyed accuracy.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_656_1055_wall.png",
+      "sha256": "c039ba9819605599d068165df8ad6cfef7e4f292c22ade14be32f7c42a6102b4",
+      "caption": "Same unmodified original depth patch; no refit per candidate or wall deletion. Gaps are repeated development diagnostics, not surveyed accuracy.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_642_1031_horizontal.png",
+      "sha256": "88d25d7fd8f325389acf7eae880dafd52dec28c39990e029e070b64005b9c9cb",
+      "caption": "Same unmodified original depth patch; no refit per candidate or wall deletion. Gaps are repeated development diagnostics, not surveyed accuracy.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_shortlist.png",
+      "sha256": "5c747ae13943890f9dad94add3756f4dd123f836c38d8663ca5bf87b240444b2",
+      "caption": "Actual existing candidate point clouds. Brackets mark human visual preference, not navigation approval; counterexamples are retained.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub_shortlist.png",
+      "sha256": "c6c743100446d1572c928ee6c2acd0839ef178707e560f70871886a40dff457a",
+      "caption": "Actual existing candidate point clouds. Brackets mark human visual preference, not navigation approval; counterexamples are retained.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub_trajectory.png",
+      "sha256": "5965ca6334d6c8f5778581a3c9bc4faa2979225add9dbbd5dc91c98dda007a1b",
+      "caption": "A/B node samples without lines across rejected-frame gaps. Traces show differences, not metric truth or measured stair rise.",
+      "synthetic": false
+    },
+    {
+      "file": "raw_capture_profiles.png",
+      "sha256": "3b776715a2b8996e30f09b409572d37eda2e08aa03a8a72e574dac884417b529",
+      "caption": "Derived per-node raw RGB-D/pose audit rows; all nodes, before candidate choice. Some quality measures are correlated.",
+      "synthetic": false
+    },
+    {
+      "file": "visual_preference_vs_patch_p90.png",
+      "sha256": "106b1461da2bbebbcefc236ecf7530d27f5c6c596d4e87d879dc265d2c137884",
+      "caption": "Controls are blue. The plot deliberately retains cases where the visually preferred method has worse local metrics.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_local_tradeoff.png",
+      "sha256": "e3e8b47015ec8a62c1f46109891a75560bd822a2fb32591e777062228f6a9606",
+      "caption": "J04 fits one local wall/floor combination; F03/N06 use different graph inputs. This is not a loss-only controlled ablation.",
+      "synthetic": false
+    }
+  ],
+  "summary_sha256": "3dffb441c1126b02e786ce6e26edc55660cf86054079964b218b847ab630a5b9",
+  "csv_hashes": {
+    "fixed_patch_rows.csv": "b8887ddd8dcc9ba0baf2d801e39b4e52ddfa0fab4ab3f1e1c9c2be035ffc03f5",
+    "pose_pair_differences.csv": "e97bcbddf2c38204b99ee422330af17c1dc59c08d3245510c3568478125cb7bf",
+    "candidate_rows.csv": "306276e0c27ed9c291d44a15eff0cfccdd4dbc4fda75975a291bd21e3cdbbf1e",
+    "raw_quality_rows.csv": "6a941a4b083fe7cfcf87c23b47355ad1b43fe284138ff4346ff7d070b123ced5"
+  },
+  "source_sha256": "32112b514db3529a1a3012ce2e56c6a89c3742ae16ec5f81d8712cdbcb634f53",
+  "source_report": "/home/subin/folded-city-atlas/outputs/student_union_20261017_visual_shortlist_v2/report.json",
+  "default_map_changed": false,
+  "synthetic": false
+}

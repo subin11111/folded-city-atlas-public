@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-17T13:02:42.258972+00:00",
+  "all_original_inputs_unchanged": true,
+  "frozen_input_files": 23,
+  "reconstruction_files_verified": 403,
+  "rendered_figures_verified": 101,
+  "summary_figures": [
+    {
+      "file": "mesh_complexity.png",
+      "sha256": "95a08af3bc9a03bdf85b53f3f58b046c0a5df668400b2a8def17949f50315c4c",
+      "synthetic": false
+    },
+    {
+      "file": "representation_consistency.png",
+      "sha256": "e7000dd62cd21225965a61e6e5ca6ec1c8479a7fcb9a45ca409e774405d6abd5",
+      "synthetic": false
+    },
+    {
+      "file": "texture_and_detail_coverage.png",
+      "sha256": "fe30ecddd0e61b28ff8ab2cf2ce72676ad13f98b34a4853fe6c5f9eb4ce4847b",
+      "synthetic": false
+    }
+  ],
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "source_sha256": "a3003ea738e1137a95b5326b259fce54aacae1ee946e447bb4b3053a4d1e542a",
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "surface_report_sha256": "4bcfba118a13499872c6faaef280fa171e2bf337f34941061c316df74258103d",
+  "display_layer_manifest_sha256": "2bd5ea28f7c3029ce88bd86be87bc9c9bfd2382951cee33680ed256a9402c46a",
+  "depth_sheet_hashes_at_publication": {
+    "outside": "b7dc9cebd84d2d41a411de40a7c456870716dd64dace992435e7cab08f57d537",
+    "lobby": "04ba2c5d635518c8a83e78e6368abaa1b57c5068a4be472c99f124846ee1a8ba",
+    "bridge_out1f": "29529c9a53a9345e9141c69524d03c2e9d4b825a63019426967e57274000822a",
+    "floor2": "3d024a13b09976faf28845b043827a43242f826c57700359c9f3190d86c77e12",
+    "bridge_12_sub": "7139337d7d42351ed8b15717c75d3c217d565c964c87026ef1eeed6e8ba5c5a0"
+  },
+  "gaussian_report_sha256": "a38aa3b41b6cf0ce96035a99f0b2e26bbd65f2c2f387ec934f044a56ae78cb07",
+  "gaussian_sessions": [
+    "outside",
+    "lobby",
+    "bridge_out1f",
+    "floor2",
+    "bridge_12_sub"
+  ],
+  "gaussian_outputs_verified": 15,
+  "gaussian_figures_verified": 10
+}

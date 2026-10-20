@@ -1,0 +1,14 @@
+{
+  "source_bundle": "outputs/student_union_closed_ceiling_material_v5",
+  "contour_simplification_m": 0.12,
+  "maximum_shared_XY_motion_m": 0.055,
+  "semantic_guard_m": 0.12,
+  "opening_guard_m": 0.20,
+  "iterations": 7,
+  "boundary_step": 0.40,
+  "maximum_total_motion_m": 0.065,
+  "maximum_boundary_leg_m": 0.45,
+  "minimum_normal_coherence": 0.95,
+  "minimum_triangle_area_fraction": 0.24,
+  "scope": "Appearance only. Simplify small raster stair-steps on outer contours, preserve coarse architectural corners and all hole/atrium/stair/sign guards. A shared XY-column displacement is applied across all sessions and all elevations so matching floor/underside/fascia skins cannot split. Existing floor and ceiling Z levels, triangle topology, UVs, photographs, colour streams, selected map and source poses are fixed. Remaining nonhorizontal unprotected raw boundary teeth receive bounded local planar trimming. No added navigation surfaces, caps, mesh smoothing of stair treads or global pose optimization."
+}

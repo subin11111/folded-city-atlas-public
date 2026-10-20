@@ -1,0 +1,629 @@
+{
+  "created_utc": "2026-10-18T05:24:08.686499+00:00",
+  "sessions": {
+    "floor2": {
+      "paired_depth": {
+        "source": {
+          "node": 1055,
+          "valid_pixels": 35369,
+          "old_all_hits": {
+            "pixels": 34346,
+            "median_m": 0.1413096785545349,
+            "p90_m": 2.0276434421539307,
+            "signed_median_m": 0.048377394676208496
+          },
+          "new_all_hits": {
+            "pixels": 33902,
+            "median_m": 0.13146042823791504,
+            "p90_m": 2.034446144104004,
+            "signed_median_m": 0.04396247863769531
+          },
+          "same_pixels_before": {
+            "pixels": 33847,
+            "median_m": 0.14145398139953613,
+            "p90_m": 2.0306107997894287,
+            "signed_median_m": 0.04870176315307617
+          },
+          "same_pixels_after": {
+            "pixels": 33847,
+            "median_m": 0.13189315795898438,
+            "p90_m": 2.0347458362579345,
+            "signed_median_m": 0.044000864028930664
+          },
+          "newly_hit": {
+            "pixels": 55,
+            "median_m": 0.04264545440673828,
+            "p90_m": 0.0816375732421875,
+            "signed_median_m": 0.04264545440673828
+          },
+          "lost_hits": {
+            "pixels": 499,
+            "median_m": 0.1192317008972168,
+            "p90_m": 0.8304309368133542,
+            "signed_median_m": 0.02934741973876953
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 33847,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.011906520518805211,
+          "paired_better_by_over_3cm_fraction": 0.037019529057228114,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 1054,
+          "valid_pixels": 44234,
+          "old_all_hits": {
+            "pixels": 43503,
+            "median_m": 0.32442307472229004,
+            "p90_m": 0.9741504669189454,
+            "signed_median_m": -0.10115015506744385
+          },
+          "new_all_hits": {
+            "pixels": 42938,
+            "median_m": 0.3114374279975891,
+            "p90_m": 0.9840309619903568,
+            "signed_median_m": -0.12537288665771484
+          },
+          "same_pixels_before": {
+            "pixels": 42871,
+            "median_m": 0.3251802921295166,
+            "p90_m": 0.9799716472625732,
+            "signed_median_m": -0.11301994323730469
+          },
+          "same_pixels_after": {
+            "pixels": 42871,
+            "median_m": 0.31208014488220215,
+            "p90_m": 0.9844396114349365,
+            "signed_median_m": -0.12630391120910645
+          },
+          "newly_hit": {
+            "pixels": 67,
+            "median_m": 0.1389915943145752,
+            "p90_m": 0.19191360473632812,
+            "signed_median_m": 0.12719225883483887
+          },
+          "lost_hits": {
+            "pixels": 632,
+            "median_m": 0.2625105381011963,
+            "p90_m": 0.7166220664978027,
+            "signed_median_m": 0.2610234022140503
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 42871,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.025774999416855217,
+          "paired_better_by_over_3cm_fraction": 0.04791117538662499,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "stairs": {
+          "node": 1078,
+          "valid_pixels": 39866,
+          "old_all_hits": {
+            "pixels": 38629,
+            "median_m": 0.061682701110839844,
+            "p90_m": 1.0784911632537848,
+            "signed_median_m": 0.042249441146850586
+          },
+          "new_all_hits": {
+            "pixels": 37752,
+            "median_m": 0.06130880117416382,
+            "p90_m": 1.0840537548065186,
+            "signed_median_m": 0.04440027475357056
+          },
+          "same_pixels_before": {
+            "pixels": 37749,
+            "median_m": 0.061534881591796875,
+            "p90_m": 1.0832129001617432,
+            "signed_median_m": 0.043331146240234375
+          },
+          "same_pixels_after": {
+            "pixels": 37749,
+            "median_m": 0.06129467487335205,
+            "p90_m": 1.083889102935791,
+            "signed_median_m": 0.044397830963134766
+          },
+          "newly_hit": {
+            "pixels": 3,
+            "median_m": 1.8642454147338867,
+            "p90_m": 1.8711545944213868,
+            "signed_median_m": 1.8642454147338867
+          },
+          "lost_hits": {
+            "pixels": 880,
+            "median_m": 0.168057382106781,
+            "p90_m": 0.4015657305717468,
+            "signed_median_m": 0.02306830883026123
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 37749,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.016238840763993748,
+          "paired_better_by_over_3cm_fraction": 0.006066385864526212,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "replaced_faces": 702758,
+      "patches": 77
+    },
+    "lobby": {
+      "paired_depth": {
+        "source": {
+          "node": 39,
+          "valid_pixels": 41883,
+          "old_all_hits": {
+            "pixels": 41340,
+            "median_m": 0.07340538501739502,
+            "p90_m": 0.38416697978973385,
+            "signed_median_m": 0.054604172706604004
+          },
+          "new_all_hits": {
+            "pixels": 41097,
+            "median_m": 0.07419347763061523,
+            "p90_m": 0.38373417854309083,
+            "signed_median_m": 0.05495905876159668
+          },
+          "same_pixels_before": {
+            "pixels": 40968,
+            "median_m": 0.07348477840423584,
+            "p90_m": 0.3853345155715943,
+            "signed_median_m": 0.05486738681793213
+          },
+          "same_pixels_after": {
+            "pixels": 40968,
+            "median_m": 0.07428455352783203,
+            "p90_m": 0.3840597152709963,
+            "signed_median_m": 0.05497443675994873
+          },
+          "newly_hit": {
+            "pixels": 129,
+            "median_m": 0.054551124572753906,
+            "p90_m": 0.2697342872619629,
+            "signed_median_m": 0.05256533622741699
+          },
+          "lost_hits": {
+            "pixels": 372,
+            "median_m": 0.05733036994934082,
+            "p90_m": 0.2028082251548767,
+            "signed_median_m": 0.02298581600189209
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 40968,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.009934583089240383,
+          "paired_better_by_over_3cm_fraction": 0.012521968365553603,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        },
+        "audit": {
+          "node": 38,
+          "valid_pixels": 17270,
+          "old_all_hits": {
+            "pixels": 16889,
+            "median_m": 0.17970824241638184,
+            "p90_m": 0.44923114776611334,
+            "signed_median_m": 0.17866909503936768
+          },
+          "new_all_hits": {
+            "pixels": 16925,
+            "median_m": 0.17880463600158691,
+            "p90_m": 0.4459601402282715,
+            "signed_median_m": 0.17608177661895752
+          },
+          "same_pixels_before": {
+            "pixels": 16700,
+            "median_m": 0.17963725328445435,
+            "p90_m": 0.450412392616272,
+            "signed_median_m": 0.17865067720413208
+          },
+          "same_pixels_after": {
+            "pixels": 16700,
+            "median_m": 0.17680120468139648,
+            "p90_m": 0.4472012042999268,
+            "signed_median_m": 0.17395222187042236
+          },
+          "newly_hit": {
+            "pixels": 225,
+            "median_m": 0.24488449096679688,
+            "p90_m": 0.29393973350524905,
+            "signed_median_m": 0.24420499801635742
+          },
+          "lost_hits": {
+            "pixels": 189,
+            "median_m": 0.18071985244750977,
+            "p90_m": 0.21578664779663087,
+            "signed_median_m": 0.18071985244750977
+          },
+          "display_depth_change_on_same_pixels": {
+            "pixels": 16700,
+            "median_m": 0.0,
+            "p90_m": 0.0,
+            "signed_median_m": 0.0
+          },
+          "paired_worse_by_over_3cm_fraction": 0.01029940119760479,
+          "paired_better_by_over_3cm_fraction": 0.020419161676646706,
+          "scope": "First-hit display/sensor disagreement, NOT pose error; common-pixel masks explicitly matched."
+        }
+      },
+      "replaced_faces": 622009,
+      "patches": 85
+    }
+  },
+  "figures": [
+    {
+      "file": "floor2/overview.png",
+      "sha256": "1163c2a080085c77947339c226e2c0b182e4bce230d4a95120aec0105f7a5ef8",
+      "camera": {
+        "centre": [
+          -16.655974201858044,
+          -5.228985786437988,
+          2.1290476322174072
+        ],
+        "eye": [
+          3.9451330692701845,
+          -31.716123706459992,
+          25.673170227792525
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "floor2/wall_1.png",
+      "sha256": "6181a5d9dfa6d4383af76833ff3288bcaefbddeec804f058d87ae69086c2fe8a",
+      "camera": {
+        "centre": [
+          -18.167407705673632,
+          1.518974722502704,
+          4.271610187336589
+        ],
+        "eye": [
+          -13.333307050351447,
+          0.24886799021318584,
+          4.336333645369892
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "floor2/wall_2.png",
+      "sha256": "6a35acc489765cce4ea3b589794e8cf9454dcfb02f6ff6ebf8d2e84aaa4fc0b7",
+      "camera": {
+        "centre": [
+          -18.899951294796132,
+          -18.865477308269696,
+          4.104030559292652
+        ],
+        "eye": [
+          -23.71847704997178,
+          -17.530655901801186,
+          4.311863792491881
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "floor2/wall_3.png",
+      "sha256": "6872e67b170dd2c25e72217c71ca63db9b7e7ae08fe6c692e9ef195513ef6f10",
+      "camera": {
+        "centre": [
+          -11.957717162701634,
+          -13.840099574789475,
+          4.119410128764084
+        ],
+        "eye": [
+          -11.018758028789911,
+          -9.953366405068715,
+          4.635293037823985
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "floor2/wall_4.png",
+      "sha256": "52d11698258f8079ecaff6005ccf1644ba2013239625221943ce79086e26c5b0",
+      "camera": {
+        "centre": [
+          -5.64455619138404,
+          -9.810219964687409,
+          4.239103825609189
+        ],
+        "eye": [
+          -8.983972405796292,
+          -8.967944074040208,
+          4.43652100641078
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "floor2/source.png",
+      "sha256": "0890bd4bbcd40fd950c187013b4e0402f7efdef23ec0f6d8e4bfe95a6cf25bd8",
+      "camera": {
+        "K": [
+          [
+            490.92075983683264,
+            0.0,
+            349.1767279307047
+          ],
+          [
+            0.0,
+            490.92075983683264,
+            352.0174026489258
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_optical": [
+          [
+            -0.9967691444839816,
+            -0.008676766805265678,
+            -0.07985102883534897,
+            -16.71472375503604
+          ],
+          [
+            0.07385624248520528,
+            0.29175654701858283,
+            -0.9536370719595386,
+            -8.775791388944091
+          ],
+          [
+            0.03157160859452228,
+            -0.956453505313675,
+            -0.2901730287207652,
+            4.104282478188134
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "node": 1055
+      }
+    },
+    {
+      "file": "floor2/stairs.png",
+      "sha256": "d17dee77eef1b1e24c0730468e7fadf2596031ea90bd94542aa5ab6ce1f87ae6",
+      "camera": {
+        "K": [
+          [
+            491.74699147542316,
+            0.0,
+            349.6028391520182
+          ],
+          [
+            0.0,
+            491.74699147542316,
+            351.320858001709
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_optical": [
+          [
+            0.206073913807629,
+            -0.660739514801374,
+            0.7217735844504514,
+            -12.47207049201421
+          ],
+          [
+            -0.9779511314462827,
+            -0.1645750218582145,
+            0.12855719158658716,
+            -10.334297192168089
+          ],
+          [
+            0.033843241120626644,
+            -0.7323515771797232,
+            -0.6800854208844094,
+            2.1791406187660165
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "node": 1078
+      }
+    },
+    {
+      "file": "lobby/overview.png",
+      "sha256": "d7fd3c8362e3f64c3ca2f52503c671bd22f0a9b8dc403e4a3c2ee8221e31b2a0",
+      "camera": {
+        "centre": [
+          -12.896348595619202,
+          -5.016541481018066,
+          0.6949985027313232
+        ],
+        "eye": [
+          8.684369202952563,
+          -32.76317865061034,
+          25.358675986813342
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lobby/wall_1.png",
+      "sha256": "0e88b7ac2be5eff9a4b54f4e1ed2ce3fe0730193ef9a1856c2c7e245911c5791",
+      "camera": {
+        "centre": [
+          -19.049894138424953,
+          -14.49966325411648,
+          0.3962386139132811
+        ],
+        "eye": [
+          -21.9026559430443,
+          -13.600987198224079,
+          0.8289002408968347
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lobby/wall_2.png",
+      "sha256": "a8acda3ae2da4015f34bba4ee28c74708eec5f6dbb3cd39db23c1afcfff9d1db",
+      "camera": {
+        "centre": [
+          -1.7914901853184364,
+          -7.514849718187139,
+          -0.08968410709820852
+        ],
+        "eye": [
+          -4.691509521441266,
+          -6.754241043336355,
+          0.2169099539719861
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lobby/wall_3.png",
+      "sha256": "21266718424512f41603c6023c9efe6d465e43a0ea0a63dab74a69e10d2eed58",
+      "camera": {
+        "centre": [
+          -3.1024079862896192,
+          6.816502582275372,
+          -0.11016006556798245
+        ],
+        "eye": [
+          -5.7007220885484555,
+          5.324461448743299,
+          0.24009665425241228
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lobby/wall_4.png",
+      "sha256": "2fa43466bdf3cd74394aec001b2ca4172bc6a64d6aaf1caa0c45f710afd540d8",
+      "camera": {
+        "centre": [
+          -20.6698776880352,
+          -19.94500016533254,
+          0.041355673414664576
+        ],
+        "eye": [
+          -23.56091989469009,
+          -19.152198326737395,
+          0.35685547454076266
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lobby/source.png",
+      "sha256": "34d6d2a50f988bc8ed533fb250da0586cb99ea4baedee168573f0ac6efd42645",
+      "camera": {
+        "K": [
+          [
+            487.4758656819661,
+            0.0,
+            348.6732451121012
+          ],
+          [
+            0.0,
+            487.4758656819661,
+            351.86481793721515
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_optical": [
+          [
+            -0.879352013239928,
+            -0.06206911006673756,
+            0.47211005039381215,
+            0.0007562203049192306
+          ],
+          [
+            -0.47598380999047846,
+            0.14248904711777352,
+            -0.8678342758661319,
+            -0.013416134253410983
+          ],
+          [
+            -0.013404769913783553,
+            -0.9878485581627415,
+            -0.15484188182680478,
+            -0.1846971732670979
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "node": 39
+      }
+    }
+  ],
+  "renderer_sha256": "61fc994c9ac1f2bf3c1a7b5e0f71a4a1101e497bb4665893f6f86338644dd556",
+  "before_bundle": "outputs/student_union_structural_floors_v4",
+  "selected_map_unchanged": true,
+  "modeled_display_not_navigation": true,
+  "structural_manifest_sha256": "ededb3b2bb515a6816232bab2ab888097e308f8dd3a62ccbd4714a2abaff1099"
+}

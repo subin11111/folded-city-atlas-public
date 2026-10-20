@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-10-17T07:39:43.618698+00:00",
+  "figures": [
+    {
+      "file": "O_FULL.png",
+      "sha256": "aeb92f1e2f6483312fb9c51148b906e8d6cbe74ccc5acfa933ec13d1db6cdd43",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "O00.png",
+      "sha256": "1e91790d0887d4b69fad49d71143123c82eea84e22d17d3f27f218f88ba8784e",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "P00.png",
+      "sha256": "021d08d9691426bf56481cf8477e35ecab471c5b3622c4e54a464cf9062d5424",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "H00.png",
+      "sha256": "5f246e8a04d7f783850c7f3841759cef93d8f682c19fb6ef0ebf2ec1205bebbf",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "H01.png",
+      "sha256": "5dfcf7999db55aca30fb1ab474c103efa9dde97867f8fcbc8c3da095ea410e9b",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "H02.png",
+      "sha256": "debda47e10d56c944cfbb3687a842918f1503210086de1705d2296b984131497",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "H03.png",
+      "sha256": "fd7f07ab140daff15782781e868bfd4df235f5d8a8926eacf79d2e0469397558",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "H04.png",
+      "sha256": "af325885e6c03fe021926142e3129174d87b9edb192c68ff9e8bd8dd25b81d00",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N01.png",
+      "sha256": "1aa9cdcf2d29c19003f8ac1b86f0fb20c4144ddc95a5a21f621e472b4b2e8e29",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N02.png",
+      "sha256": "21e00eddf935a6e7728b890efb04cf6dfe72fb1796cfb0b02edd7917d3440e4b",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N03.png",
+      "sha256": "2b25873230cfe7823e065df0114a47fb0a68b9463bd0d1b6d262458faf5c266b",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N04.png",
+      "sha256": "7acad41d9201eb86a7f5114e314e3c3f17eb971595a4fde40979a4147eb9b006",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N05.png",
+      "sha256": "125009e49381ee8fed484cecf1fbf659ea47ca376ccba993b55b35441de4fd61",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "N06.png",
+      "sha256": "e8c6246ed0c67ab941f3d72f3249314e51de611cc39be5f6340aef680a2d3c0b",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "J01.png",
+      "sha256": "e351c41b1d2a1daf6aa2b9e31e62b4ddeaf217c97c401db642e5b0ecf4c79458",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "J02.png",
+      "sha256": "74cd8383f55ba61bd9ab827dfa3e69356d172cf2b9fb0084da83d52df59d312a",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "J03.png",
+      "sha256": "ed3bfaa10dbef70d923b7bb35db33e51465806ba7b528e5b59c4f1c7d173c3b0",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "J04.png",
+      "sha256": "6f15214cf7a0fcfe759fabffb8c3f5eafad7f8cded5745b4006740c1f78e3831",
+      "size_pixels": [
+        1950,
+        1050
+      ],
+      "caption": "Actual RGB-D reprojected using named poses; common full extents and height colors. Patches evaluate unfiltered fixed observations.",
+      "synthetic": false
+    },
+    {
+      "file": "three_stage.png",
+      "sha256": "99c151bf11733231f26d4033c2eed3637896928909105eb07f56e2d3d3301aa8",
+      "size_pixels": [
+        2850,
+        1650
+      ],
+      "caption": "Third column is N02 for a consistent example, not an automatic winner. Preprocessed optimization candidates use exactly P00 camera points.",
+      "synthetic": false
+    },
+    {
+      "file": "matched_three_stage.png",
+      "sha256": "e4d4fa28f286079d7f472bd38da1fbc8a558a18f49be7b4e4563622adcd619c8",
+      "size_pixels": [
+        2850,
+        1650
+      ],
+      "caption": "Third column is N02 for a consistent example, not an automatic winner. Preprocessed optimization candidates use exactly P00 camera points.",
+      "synthetic": false
+    },
+    {
+      "file": "portfolio_xy.png",
+      "sha256": "2932304ca7c2ccb4404340e4d28d5cf2ddde5cc95afb382bc5f616a9855d5800",
+      "size_pixels": [
+        3450,
+        4125
+      ],
+      "caption": "Each candidate uses the same preprocessed observations except explicit original references; historical joint and frame candidates are labelled, not re-executed.",
+      "synthetic": false
+    },
+    {
+      "file": "portfolio_xz.png",
+      "sha256": "b32798c3d278529289e16b1a7685b730a44b36ecb3b7f0baef7f36d9a6f49333",
+      "size_pixels": [
+        3450,
+        4125
+      ],
+      "caption": "Each candidate uses the same preprocessed observations except explicit original references; historical joint and frame candidates are labelled, not re-executed.",
+      "synthetic": false
+    }
+  ],
+  "summary_sha256": "3416c13db55068524a6c28ccd94fdd4e770181781a6a80a2ffe4dbdc31b5ed15",
+  "source_sha256": "5d8af0a03a89786ba5bcd131d7e38b9b3c2b2eeac95fe22b573a565a0f087b7f",
+  "synthetic": false,
+  "default_rviz_changed": false
+}

@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-10-18T13:40:36.596375+00:00",
+  "bundle_manifest_sha256": "d1ea10396eba7d961d295e6b0962f8fc8e9fa16a3ae552582ccbbddeb52abf33",
+  "selected_map_unchanged": true,
+  "source_database_hashes_unchanged": {
+    "outside": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "lobby": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "bridge_out1f": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "floor2": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "bridge_12_sub": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+  },
+  "input_bindings_valid": true,
+  "sessions": {
+    "lobby": {
+      "retained_source_XYZ_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "original_embedded_image_streams_preserved": 172,
+      "removed_floor_overlap_triangles": 1192,
+      "removed_roof_fragment_triangles": 0,
+      "standing_vertical_structure_retained": true,
+      "bank_heading_retained": true,
+      "ply_sha256": "cfa8ef07022040e33c126e8c4449d8e5195ab5f3319f5781219f45eb7b1826c3",
+      "glb_sha256": "b1d2ad5af3d0bea87915d602eb3758564c3635d6d0badaf91a72bfeed8f907ee"
+    },
+    "floor2": {
+      "retained_source_XYZ_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "original_embedded_image_streams_preserved": 165,
+      "removed_floor_overlap_triangles": 561,
+      "removed_roof_fragment_triangles": 206857,
+      "standing_vertical_structure_retained": true,
+      "bank_heading_retained": null,
+      "ply_sha256": "26028e6cd4b659b388c78e2c933163758bfa6eb5685851251deb545840d9c7be",
+      "glb_sha256": "12b4e6d794aaf2931ce00e1e77acd25132a90d80c3ff3b3b822735ce03b11c45"
+    },
+    "bridge_12_sub": {
+      "retained_source_XYZ_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "original_embedded_image_streams_preserved": 8,
+      "removed_floor_overlap_triangles": 1448,
+      "removed_roof_fragment_triangles": 3887,
+      "standing_vertical_structure_retained": true,
+      "bank_heading_retained": null,
+      "ply_sha256": "a69203bb925ed3fd096c30452876bf0e20f1adb2c4d1ee853ebec26d72a7a4af",
+      "glb_sha256": "a640ea9aeb97af292eb964cc1d96fe7f1447ca2d3d6ff9893e8354270f69bbff"
+    },
+    "bridge_out1f": {
+      "retained_source_XYZ_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "original_embedded_image_streams_preserved": 2,
+      "removed_floor_overlap_triangles": 0,
+      "removed_roof_fragment_triangles": 0,
+      "standing_vertical_structure_retained": true,
+      "bank_heading_retained": null,
+      "ply_sha256": "fdecabfabfd803c5b95dde5f7b4dc436970badf92f5bd45db008a8104d459da5",
+      "glb_sha256": "05e5d207618451f929190ad55f59758099faff347d6a4a1bbfcc9b6e698947f2"
+    },
+    "outside": {
+      "retained_source_XYZ_exact": true,
+      "actual_GLB_PLY_equal": true,
+      "original_embedded_image_streams_preserved": 18,
+      "removed_floor_overlap_triangles": 0,
+      "removed_roof_fragment_triangles": 0,
+      "standing_vertical_structure_retained": true,
+      "bank_heading_retained": null,
+      "ply_sha256": "83a7e53ec311d093709f2065f169a250983525e56ef9c3f260ad2bce037c2723",
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58"
+    }
+  },
+  "new_plane_geometry": [
+    {
+      "id": "main_2f_bounded_floor_holes",
+      "kind": "floor",
+      "height_m": 2.6,
+      "height_deviation_m": 0.0,
+      "triangles": 2
+    },
+    {
+      "id": "continuous_observed_2f_ceiling",
+      "kind": "ceiling",
+      "height_m": 5.571264266967773,
+      "height_deviation_m": 0.0,
+      "triangles": 47016
+    }
+  ],
+  "ceiling_mask": {
+    "area_m2": 235.08000000000004,
+    "bounded_hole_fill_m2": 1.8400000000000003,
+    "outside_photographed_outer_envelope_cells": 0,
+    "every_ceiling_cell_has_two_actual_triangles": true,
+    "connected_components": 7
+  },
+  "floor_masks": {
+    "main_1f": {
+      "added_area_m2": 0.0,
+      "no_outward_growth_or_protected_opening_fill": true
+    },
+    "main_2f": {
+      "added_area_m2": 0.010000000000000002,
+      "no_outward_growth_or_protected_opening_fill": true
+    }
+  },
+  "fixed_upward_ray_diagnostic": {
+    "before": {
+      "same_selected_XY_rays": 8000,
+      "surface_hit_in_1p5m_fraction": 0.72525,
+      "first_hit_within_2cm_of_display_roof_fraction": 0.082625,
+      "first_hit_height_gap_p90_m": 0.2454046040773392
+    },
+    "after": {
+      "same_selected_XY_rays": 8000,
+      "surface_hit_in_1p5m_fraction": 1.0,
+      "first_hit_within_2cm_of_display_roof_fraction": 0.99375,
+      "first_hit_height_gap_p90_m": 1.7881393432617188e-07
+    }
+  },
+  "audit_source_sha256": "30fc7488db389c1212bce015222e740dd3ec54047f3c2ebadc485391556d2652",
+  "scope": "Actual surface self-consistency and retention checks on the selected observation area. Not surveyed ceiling accuracy, independent SLAM evaluation or navigation approval."
+}

@@ -1,0 +1,93 @@
+{
+  "bundle_manifest_sha256": "442aece905b897f265044d17d2e8da3e7c014fb9a5b9ce5c6056f271cbc20d1d",
+  "signs": [
+    {
+      "id": "lobby_elevator_indicator",
+      "session": "lobby",
+      "node": 485,
+      "sign_z_minmax": 0.7194155503803663,
+      "sign_top_m": 0.8287505418457388,
+      "blocked_samples": 0,
+      "ceiling_blocked_samples": 0,
+      "upper_quarter_ceiling_blocked_samples": 0,
+      "total_samples": 360,
+      "occluders": []
+    },
+    {
+      "id": "lobby_foodmarket_poster",
+      "session": "lobby",
+      "node": 575,
+      "sign_z_minmax": -0.8375103171628009,
+      "sign_top_m": 0.7842748462944502,
+      "blocked_samples": 0,
+      "ceiling_blocked_samples": 0,
+      "upper_quarter_ceiling_blocked_samples": 0,
+      "total_samples": 360,
+      "occluders": []
+    },
+    {
+      "id": "lobby_foodmarket_quote",
+      "session": "lobby",
+      "node": 575,
+      "sign_z_minmax": 0.7696315624014507,
+      "sign_top_m": 1.5375200909504139,
+      "blocked_samples": 34,
+      "ceiling_blocked_samples": 0,
+      "upper_quarter_ceiling_blocked_samples": 0,
+      "total_samples": 360,
+      "occluders": [
+        {
+          "session": "lobby",
+          "hit_z_minmax": [
+            0.7791590632247426,
+            1.1765885062834152
+          ],
+          "horizontal_occluding_samples": 0
+        }
+      ]
+    },
+    {
+      "id": "f2_mens_restroom_sign",
+      "session": "floor2",
+      "node": 14,
+      "sign_z_minmax": 0.20041757456431755,
+      "sign_top_m": 0.4682373471827669,
+      "blocked_samples": 73,
+      "ceiling_blocked_samples": 0,
+      "upper_quarter_ceiling_blocked_samples": 0,
+      "total_samples": 360,
+      "occluders": [
+        {
+          "session": "floor2",
+          "hit_z_minmax": [
+            0.21108445025491596,
+            0.449393267376359
+          ],
+          "horizontal_occluding_samples": 0
+        }
+      ]
+    },
+    {
+      "id": "lobby_shinhan_heading",
+      "session": "lobby",
+      "node": 811,
+      "sign_z_minmax": 1.2273049354553223,
+      "sign_top_m": 1.8836694955825806,
+      "blocked_samples": 2,
+      "ceiling_blocked_samples": 1,
+      "upper_quarter_ceiling_blocked_samples": 1,
+      "total_samples": 360,
+      "occluders": [
+        {
+          "session": "lobby",
+          "hit_z_minmax": [
+            1.6868092857216193,
+            1.7509707498074758
+          ],
+          "horizontal_occluding_samples": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Display-model ray/occlusion diagnostic, not sign OCR or surveyed height."
+}

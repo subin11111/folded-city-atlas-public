@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-18T14:27:17.301447+00:00",
+  "bundle_manifest_sha256": "e63da706e258ce150914e3cac12f38dd5c39dd4beef03b795bd872424404340f",
+  "sessions": {
+    "floor2": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 177,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "lobby": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 181,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_12_sub": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 2,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 14,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_out1f": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 2,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "outside": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 18,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    }
+  },
+  "exact_original_floor_atlas_restoration": false,
+  "audit_source_sha256": "2169ce16e8f9609abcb16b9c52547b79f5a87bd296c821b99f22fa28246aa0b2",
+  "scope": "Explicit photo-derived display material: retain photographed joint bands and finite black-accent locations, limit residual photo illumination contrast and keep real measured stone micro-grain. Broad shadows/glare and low-light colour noise are not retained as floor material. No periodic tile grid, invented marker positions or geometry/pose changes. Material/unknown-region completion is inferred appearance, not exact original floor photography or surveyed tile-layout recovery. Raw photo-roadview and PRIME HALL remain original. Actual rendered visual inspection, not seam scores, determines presentation choice."
+}

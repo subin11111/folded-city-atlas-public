@@ -1,0 +1,486 @@
+{
+  "created_utc": "2026-10-18T07:00:45.364266+00:00",
+  "figures": [
+    {
+      "file": "floor2/f2_storefront_glazing.png",
+      "sha256": "889d51aecd63ce4393d2a0d79112f110381c0f0c931abf620750edeb6330d7d1",
+      "object_id": "f2_storefront_glazing",
+      "session": "floor2",
+      "node": 824,
+      "class": "window",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        382,
+        109,
+        673,
+        719
+      ],
+      "render_hit_fraction_before": 0.9998194619967503,
+      "render_hit_fraction_after": 0.9992778479870013,
+      "newly_hit_rgb_rays": 1,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_plain_wall_completion.png",
+      "sha256": "b1f85655d10cdbf0992f21cbce8d76fdf47cd6660005da0e6871513e33ffc086",
+      "object_id": "f2_plain_wall_completion",
+      "session": "floor2",
+      "node": 876,
+      "class": "wall",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        0,
+        0,
+        686,
+        815
+      ],
+      "render_hit_fraction_before": 0.9886150966936993,
+      "render_hit_fraction_after": 0.9995321272613849,
+      "newly_hit_rgb_rays": 216,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_mens_restroom_door.png",
+      "sha256": "737423c6393ee8f025cf08951d44f32b7fc3164a888e3c57ab6b3a103b8c49bb",
+      "object_id": "f2_mens_restroom_door",
+      "session": "floor2",
+      "node": 14,
+      "class": "door",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        168,
+        0,
+        438,
+        960
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9937515939811272,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_mens_restroom_sign.png",
+      "sha256": "58ab6b156117705d371c2d3d9d2f8c2f1830b55a79bbaa01c5e8e3e634c1e688",
+      "object_id": "f2_mens_restroom_sign",
+      "session": "floor2",
+      "node": 14,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        526,
+        97,
+        661,
+        256
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9762376237623762,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_womens_restroom_sign.png",
+      "sha256": "318688dc46f8f429d662898f80c25179262ae364f70ffea9217a0e52905b3f43",
+      "object_id": "f2_womens_restroom_sign",
+      "session": "floor2",
+      "node": 728,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        418,
+        204,
+        493,
+        301
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9358974358974359,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_cleaning_opening.png",
+      "sha256": "7e9257022022c08acf02f838e0d1e4e4d7e31c55dc7ee53a9998ba2dea6b5b42",
+      "object_id": "f2_cleaning_opening",
+      "session": "floor2",
+      "node": 728,
+      "class": "door",
+      "surface_added": false,
+      "photo_crop_xyxy": [
+        507,
+        64,
+        667,
+        682
+      ],
+      "render_hit_fraction_before": 0.9996385977593061,
+      "render_hit_fraction_after": 0.9996385977593061,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_career_heading.png",
+      "sha256": "c523bac9c9e9eb377a4a25f3e5781fc13f00de86c4094b8a52a93087c6c021df",
+      "object_id": "f2_career_heading",
+      "session": "floor2",
+      "node": 411,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        187,
+        0,
+        539,
+        129
+      ],
+      "render_hit_fraction_before": 0.9946702198534311,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 8,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_counselling_sign.png",
+      "sha256": "c1ecde6b2ba8f556924a2af221986185626b9ac1a3b073f44d5ca4f3909e7dbe",
+      "object_id": "f2_counselling_sign",
+      "session": "floor2",
+      "node": 219,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        277,
+        146,
+        506,
+        330
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_exit_sign.png",
+      "sha256": "92f676163b630332f345954ceb4c878a326e23baf3d4fc8d309effc0e9e6e6ad",
+      "object_id": "f2_exit_sign",
+      "session": "floor2",
+      "node": 219,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        398,
+        605,
+        541,
+        686
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_access_glass_door.png",
+      "sha256": "8d056389a4d5ab714e1e82f14a1e334fb6f9746fb5736d39af725b8fb33ec707",
+      "object_id": "f2_access_glass_door",
+      "session": "floor2",
+      "node": 833,
+      "class": "door",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        324,
+        90,
+        528,
+        649
+      ],
+      "render_hit_fraction_before": 0.9986057859881492,
+      "render_hit_fraction_after": 0.9944231439525967,
+      "newly_hit_rgb_rays": 4,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_access_transom.png",
+      "sha256": "dbcd935fa0c3ee3c737a659b69f7401ef124c9a9ada61eeefdbda1b925d82430",
+      "object_id": "f2_access_transom",
+      "session": "floor2",
+      "node": 833,
+      "class": "window",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        347,
+        0,
+        570,
+        220
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9942816297355254,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_main_glazed_panel.png",
+      "sha256": "a0763968f8baebeada0c684165ee7e3d57a490f60eec662685d99fc786d5bdbf",
+      "object_id": "f2_main_glazed_panel",
+      "session": "floor2",
+      "node": 891,
+      "class": "window",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        195,
+        198,
+        495,
+        680
+      ],
+      "render_hit_fraction_before": 0.9526989426822482,
+      "render_hit_fraction_after": 0.994991652754591,
+      "newly_hit_rgb_rays": 170,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_main_transom.png",
+      "sha256": "3b9b4763696bf67502daae9ffac5b318a81c007d0dbcfc34fbbaabfcba08b08b",
+      "object_id": "f2_main_transom",
+      "session": "floor2",
+      "node": 891,
+      "class": "window",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        231,
+        37,
+        515,
+        309
+      ],
+      "render_hit_fraction_before": 0.7657114127702364,
+      "render_hit_fraction_after": 0.9949723479135244,
+      "newly_hit_rgb_rays": 466,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_central_pier_wall.png",
+      "sha256": "c6b4b423fdac01b23b4c950be0fa464c8b377d11bf0bbc927f987bfb1be90b0d",
+      "object_id": "f2_central_pier_wall",
+      "session": "floor2",
+      "node": 891,
+      "class": "wall",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        352,
+        0,
+        720,
+        877
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9995185827074908,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_room_label.png",
+      "sha256": "9f5a5984a3d7d1f2a9a08fdd573e177e91a2f0f8c67216d1c6da1ffd5a7a7508",
+      "object_id": "f2_room_label",
+      "session": "floor2",
+      "node": 891,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        457,
+        281,
+        574,
+        359
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_room_heading.png",
+      "sha256": "726e9a234bd98c93ffa639ad3306b2afa10d2b1d18d5f0f70bba6670659488a6",
+      "object_id": "f2_room_heading",
+      "session": "floor2",
+      "node": 833,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        554,
+        96,
+        720,
+        249
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9745222929936306,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_fire_equipment_front.png",
+      "sha256": "ff069de5c6318d7891ee57cd5f1dc951108ce616882b34495742d2f97673aba4",
+      "object_id": "f2_fire_equipment_front",
+      "session": "floor2",
+      "node": 865,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        447,
+        295,
+        592,
+        610
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_flat_floor_photo.png",
+      "sha256": "4f0db819f4ad1eaf0651d0efa49be72ef423c2074fca293090618793f53dffa8",
+      "object_id": "f2_flat_floor_photo",
+      "session": "floor2",
+      "node": 876,
+      "class": "floor",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        0,
+        594,
+        696,
+        960
+      ],
+      "render_hit_fraction_before": 0.9783448437317102,
+      "render_hit_fraction_after": 0.9994147255062624,
+      "newly_hit_rgb_rays": 185,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "floor2/f2_flat_ceiling_photo.png",
+      "sha256": "0a2509d525e1312a22261b42d4d8523afd0d1fb3790c495c524a7463a4ec49aa",
+      "object_id": "f2_flat_ceiling_photo",
+      "session": "floor2",
+      "node": 891,
+      "class": "ceiling",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        0,
+        0,
+        381,
+        188
+      ],
+      "render_hit_fraction_before": 0.5489130434782609,
+      "render_hit_fraction_after": 0.9592391304347826,
+      "newly_hit_rgb_rays": 755,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_elevator_door.png",
+      "sha256": "1c1f059ac478da24f6a6757f7eed06724f829f0bef2b3fc57dd6a860e7ea75ce",
+      "object_id": "lobby_elevator_door",
+      "session": "lobby",
+      "node": 485,
+      "class": "door",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        144,
+        142,
+        382,
+        600
+      ],
+      "render_hit_fraction_before": 0.9866162350887402,
+      "render_hit_fraction_after": 0.9997090485888857,
+      "newly_hit_rgb_rays": 45,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_elevator_indicator.png",
+      "sha256": "917a25d1e1c8339cdb8780dc40924d93f8178328a65564c8c72cb5dd2f57fb58",
+      "object_id": "lobby_elevator_indicator",
+      "session": "lobby",
+      "node": 485,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        184,
+        127,
+        308,
+        207
+      ],
+      "render_hit_fraction_before": 0.875968992248062,
+      "render_hit_fraction_after": 0.9767441860465116,
+      "newly_hit_rgb_rays": 13,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_foodmarket_poster.png",
+      "sha256": "b69eccdf04d3e33eb85f7314ca7fefeb62ae15dc4efe7839549cdd3a79516fa7",
+      "object_id": "lobby_foodmarket_poster",
+      "session": "lobby",
+      "node": 575,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        268,
+        70,
+        720,
+        715
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_foodmarket_quote.png",
+      "sha256": "667f2b69a0fddbfbbc1d1698d88a985eaab983b219012b150033461d498cea6f",
+      "object_id": "lobby_foodmarket_quote",
+      "session": "lobby",
+      "node": 575,
+      "class": "sign",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        212,
+        0,
+        720,
+        242
+      ],
+      "render_hit_fraction_before": 1.0,
+      "render_hit_fraction_after": 0.9991757675664538,
+      "newly_hit_rgb_rays": 0,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_entry_glazing.png",
+      "sha256": "479713a37d127250e96d96f90767e371b6626f7e304af3c64b2289b7ebb26a95",
+      "object_id": "lobby_entry_glazing",
+      "session": "lobby",
+      "node": 9,
+      "class": "window",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        46,
+        0,
+        219,
+        740
+      ],
+      "render_hit_fraction_before": 0.9936851601262968,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 28,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    },
+    {
+      "file": "lobby/lobby_service_door.png",
+      "sha256": "04947a1d129e7ce139c177f3e6a3c2b4c62f97ef1035cdf6fa34f0b891a8dda1",
+      "object_id": "lobby_service_door",
+      "session": "lobby",
+      "node": 9,
+      "class": "door",
+      "surface_added": true,
+      "photo_crop_xyxy": [
+        523,
+        63,
+        720,
+        753
+      ],
+      "render_hit_fraction_before": 0.9920854768500198,
+      "render_hit_fraction_after": 1.0,
+      "newly_hit_rgb_rays": 40,
+      "scope": "Actual rendered geometry coverage at reviewed RGB polygons; not independent pose accuracy or semantic ground truth."
+    }
+  ],
+  "completed_sessions": [
+    "floor2",
+    "lobby"
+  ],
+  "bundle_manifest_sha256": "1c44f4473b8b8b9f4d59689c938a94f2420724acf6fc0d0aedfa3a319d7566a8",
+  "renderer_sha256": "758d5944a337c2d614d96daff51e07715fadac430e9c89cb777d758264ba38e3"
+}

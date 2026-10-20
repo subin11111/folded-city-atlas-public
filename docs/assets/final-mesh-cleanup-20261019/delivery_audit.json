@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-19T04:11:52.320194+00:00",
+  "pointers": {
+    "appearance_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/manifest.json",
+      "sha256": "f1ff5ccdb5bf5e24be621d3ab6d5707b7c6091b6eb5c86ca532ec586c0b9f61b"
+    },
+    "appearance_review": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/review.json",
+      "sha256": "58de6cb196386da3e1efbf4513f047d202b69b58f415b67409c8cc741ba7bdc5"
+    },
+    "structural_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/manifest.json",
+      "sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36"
+    },
+    "structural_cleanup": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/cleanup.json",
+      "sha256": "3401738be2437548e473b5e7e6ef4d081ad4d2dec733a52272fd02ba3c7254b8"
+    },
+    "structural_selection_policy": {
+      "path": "/home/subin/folded-city-atlas/config/structural_display_policy.json",
+      "sha256": "aafe4d1879cfd63edb0b01a0e03b53e18f72d15b59e507d9143dc6f84359491d"
+    },
+    "ceiling_completion_policy": {
+      "path": "/home/subin/folded-city-atlas/config/ceiling_completion_policy.json",
+      "sha256": "6d5502e5790b985e0c47e4570e24b7c9148aaa01d4b4b20247859f53566d158e"
+    },
+    "presentation_config": {
+      "path": "/home/subin/folded-city-atlas/config/architectural_connections.json",
+      "sha256": "cb63e4095fb671585759a4ddb88a8942ec212dd4acce0ad97dc407d52b37b3c2"
+    },
+    "presentation_geometry_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/final_geometry_audit.json",
+      "sha256": "3475ecdaf0d6bee5ac08f99d6f68dfeb4ea56c4ca5c1db6029482345dd3ffece"
+    },
+    "roadview_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_roadview_v1/manifest.json",
+      "sha256": "f030034a218e0aaa5ff065d8c77e9e3774a9648920effcbdc9242d8caefd12a5"
+    },
+    "service_slab_config": {
+      "path": "/home/subin/folded-city-atlas/config/verified_service_slabs.json",
+      "sha256": "e91ed842a5943f0599ca3db952a6d71dcf8b3c05fe65d49631d476f704f440ad"
+    },
+    "horizontal_continuity_config": {
+      "path": "/home/subin/folded-city-atlas/config/indoor_horizontal_continuity.json",
+      "sha256": "3f81a9afb08173f82ad8487250c62a119fb04282410b364186552cfc78b4ba08"
+    },
+    "floor_material_config": {
+      "path": "/home/subin/folded-city-atlas/config/joint_preserving_floor_material.json",
+      "sha256": "02e2ed3cafbd04233e302c23f9e64eb968067d169f3cdb998db60ddb5ef5ddae"
+    },
+    "floor_material_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/final_geometry_audit.json",
+      "sha256": "3475ecdaf0d6bee5ac08f99d6f68dfeb4ea56c4ca5c1db6029482345dd3ffece"
+    },
+    "prime_hall_photo_config": {
+      "path": "/home/subin/folded-city-atlas/config/prime_hall_photo_finish.json",
+      "sha256": "cd2f027c32c62479d23f713da6def37579287a25cfed30699199b31736cc48bc"
+    },
+    "edge_finish_config": {
+      "path": "/home/subin/folded-city-atlas/config/display_edge_finish.json",
+      "sha256": "9b133a07d0ecbf9b0c753c900542a2a111596e7d12f0abf10537979b1aeabacc"
+    },
+    "photo_boundary_finish_config": {
+      "path": "/home/subin/folded-city-atlas/config/photo_boundary_finish.json",
+      "sha256": "ae48dde33e5680d74da0c7cf3bd01d4f66ac0286e673b98a36e72570c3908055"
+    },
+    "lower_ceiling_clearance_config": {
+      "path": "/home/subin/folded-city-atlas/config/lower_ceiling_sign_clearance.json",
+      "sha256": "2c5c1ff9e5dc325187458cf75de3f86ac4d673521a666cd2c813d60bc152c35d"
+    },
+    "lower_ceiling_overlap_config": {
+      "path": "/home/subin/folded-city-atlas/config/lower_ceiling_overlap_cleanup_v2.json",
+      "sha256": "f8cb4ef342164e47a936106cfce7a4d81aa7614786777019d54ce1747f53548c"
+    },
+    "ceiling_expansion_config": {
+      "path": "/home/subin/folded-city-atlas/config/ceiling_expansion_and_closure.json",
+      "sha256": "532e9ecc24285b33978f4f2d11ff35f35824f6ccb103a7aa97beb67976490f43"
+    },
+    "ceiling_material_config": {
+      "path": "/home/subin/folded-city-atlas/config/ceiling_material_continuity.json",
+      "sha256": "77bb55d3ccb6641e7804b33d0e8e1ea655abc9195258a38e853e87ab3277b33a"
+    },
+    "ceiling_material_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/final_geometry_audit.json",
+      "sha256": "3475ecdaf0d6bee5ac08f99d6f68dfeb4ea56c4ca5c1db6029482345dd3ffece"
+    },
+    "shadow_lift_config": {
+      "path": "/home/subin/folded-city-atlas/config/display_shadow_colour.json",
+      "sha256": "6cc3a6601d913fa976aa2aaa20124a3ed6a04fddfd63f9f155da33e29f695d04"
+    },
+    "shadow_lift_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/shadow_audit.json",
+      "sha256": "d5c18ce16e358de030db45f69531bcb31207d4d3ee6f52b19f8c50e32411db0b"
+    },
+    "mesh_finish_config": {
+      "path": "/home/subin/folded-city-atlas/config/final_mesh_finish.json",
+      "sha256": "6aa9245511e1d8140e52df3dd5e5abbab234371c8120a615c5b22572964299de"
+    },
+    "reviewed_wall_config": {
+      "path": "/home/subin/folded-city-atlas/config/final_reviewed_wall_patches_wide.json",
+      "sha256": "aa6c3f67564ec5c43c8796508eca8ae8283edb56a5a91c75d6f35b011df940e7"
+    },
+    "semantic_binding_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/semantic_binding_audit.json",
+      "sha256": "ecae45f68e652ea7fb2a2c1d22059cfbf687dbec2c9b820920704abe3b24b8a7"
+    },
+    "final_map_selection": {
+      "path": "/home/subin/folded-city-atlas/config/final_map_selection.json",
+      "sha256": "b1cb7d259c2bfc2fe51d2924b510dadbe30ba93131f98c523f56739856fe5c30"
+    }
+  },
+  "native_loaded": {
+    "loaded_files": [
+      "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/outside/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/lobby/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/bridge_out1f/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/floor2/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/bridge_12_sub/clean_textured.glb"
+    ],
+    "status": "Loaded 5 session(s) | Finished mesh / retained colours",
+    "native_window": true,
+    "selected_map_changed": false,
+    "roadview_nodes": 1199,
+    "time_unix": 1792382270.5522468,
+    "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/manifest.json",
+    "structural_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+    "architectural_presentation": true,
+    "start_view": "stairwall",
+    "ceiling_cutaway": false,
+    "focus_photo": {
+      "session": "lobby",
+      "node": 445
+    },
+    "camera_model_matrix_open3d": [
+      [
+        0.6970275640487671,
+        -0.09217424690723419,
+        -0.7110952734947205,
+        -11.198992729187012
+      ],
+      [
+        -0.7170441150665283,
+        -0.08928551524877548,
+        -0.6912853121757507,
+        13.058971405029297
+      ],
+      [
+        0.00022822635946795344,
+        0.991731584072113,
+        -0.12832748889923096,
+        0.06590265035629272
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "actual_five_session_files_verified": true,
+  "native_render_sha256": "9aea89e8cd9e3e043ab40f386ecffad543fc58865417b39145eb82728f2b41cd",
+  "selected_map_unchanged": true,
+  "source_pose_changes": 0,
+  "viewer_sha256": "f6c2fe6e7c7f86fe68e1771841dde819d0080a5d2ef73213129786c53ff31369",
+  "audit_source_sha256": "0477dfefbdaff7080b84c86ab9baaf543c1a7b0fe123bc324bbf8a637890b610",
+  "scope": "Presentation artifact delivery verification; not surveyed accuracy or navigation approval."
+}

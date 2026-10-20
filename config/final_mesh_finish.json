@@ -1,0 +1,21 @@
+{
+  "source_bundle": "outputs/student_union_shadow_colour_v3",
+  "minimum_fragment_area_m2": 0.02,
+  "maximum_fragment_span_m": 0.45,
+  "semantic_guard_m": 0.10,
+  "duplicate_weld_m": 0.00001,
+  "wall_replacement_distance_m": 0.06,
+  "wall_normal_agreement": 0.96,
+  "wall_plane_p90_m": 0.012,
+  "minimum_wall_chart_area_m2": 0.8,
+  "minimum_wall_chart_faces": 150,
+  "floor_remnant_band_m": 0.16,
+  "roof_remnant_band_m": 0.40,
+  "minimum_horizontal_abs_normal_z": 0.70,
+  "seam_join_distance_m": 0.018,
+  "seam_plane_distance_m": 0.004,
+  "seam_normal_agreement": 0.985,
+  "minimum_triangle_area_fraction": 0.60,
+  "enable_seam_join": true,
+  "scope": "Final display cleanup of the current colour candidate only. Protect photographed semantic objects, stair guards, existing level planes and all cavity skins. Remove bounded tiny unprotected components, verified covered old remnants and exact duplicate triangles. Join only mutual nearest coplanar boundary pairs under 1.8cm with flip rejection. No new large caps, no global smoothing/SLAM change, no texture recolouring, no navigation certification."
+}

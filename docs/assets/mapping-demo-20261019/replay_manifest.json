@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-10-19T04:54:07.628289+00:00",
+  "run_id": "bd5bbbd0-46da-4388-b853-090afbfd69d8",
+  "sessions": {
+    "outside": {
+      "frames": 354,
+      "invalid_poses": [],
+      "invalid_edges": [
+        {
+          "from_id": 349,
+          "to_id": 348,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        }
+      ],
+      "verified_loops": 11
+    },
+    "lobby": {
+      "frames": 958,
+      "invalid_poses": [],
+      "invalid_edges": [
+        {
+          "from_id": 185,
+          "to_id": 184,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 319,
+          "to_id": 318,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 320,
+          "to_id": 318,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 321,
+          "to_id": 318,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 398,
+          "to_id": 397,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 736,
+          "to_id": 735,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        }
+      ],
+      "verified_loops": 36
+    },
+    "bridge_out1f": {
+      "frames": 134,
+      "invalid_poses": [],
+      "invalid_edges": [],
+      "verified_loops": 1
+    },
+    "floor2": {
+      "frames": 1218,
+      "invalid_poses": [],
+      "invalid_edges": [
+        {
+          "from_id": 495,
+          "to_id": 494,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 496,
+          "to_id": 494,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        },
+        {
+          "from_id": 497,
+          "to_id": 494,
+          "type": 1,
+          "reason": "singular_or_invalid_rotation"
+        }
+      ],
+      "verified_loops": 42
+    },
+    "bridge_12_sub": {
+      "frames": 211,
+      "invalid_poses": [],
+      "invalid_edges": [],
+      "verified_loops": 1
+    }
+  },
+  "snapshots": 74,
+  "wall_seconds": 95.36207640299995,
+  "new_live_odometry_estimation": false,
+  "loop_proposals_from_stored_database": true,
+  "loop_geometry_reverified_after_arrival": true,
+  "future_poses_used_in_prefix_solver": false,
+  "final_v9_generated_online": false,
+  "source_map_replaced": false,
+  "nodes": [
+    "/folded_city_demo/capture_db_replay",
+    "/folded_city_demo/rgbd_confidence_filter",
+    "/folded_city_demo/stored_loop_reverification",
+    "/folded_city_demo/incremental_prefix_optimizer",
+    "/folded_city_demo/prefix_cloud_assembler",
+    "/folded_city_demo/evidence_recorder",
+    "/folded_city_demo/offline_final_artifact_loader",
+    "/folded_city_demo/final_reference_recorder"
+  ],
+  "arguments": {
+    "output": "outputs/student_union_slam_replay_v3",
+    "batch": 40,
+    "solve_interval": 160,
+    "max_evaluations": 180,
+    "start_delay": 12.0,
+    "hold": 600.0
+  },
+  "code_sha256": {
+    "src/run_slam_replay.py": "f01bd76df2a3ec15c29000bf9bd0faec66b04b677e64c6edd4a99df703481a78",
+    "src/slam_replay_core.py": "5eb857b8cea503fdca8c8188728e270a9abff675825a66baadb83e3facd9a6e6"
+  }
+}

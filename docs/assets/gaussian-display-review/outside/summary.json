@@ -1,0 +1,179 @@
+{
+  "session": "outside",
+  "gaussians": 160000,
+  "steps": 600,
+  "width": 270,
+  "height": 360,
+  "train_view_ids": [
+    1,
+    8,
+    13,
+    18,
+    23,
+    28,
+    32,
+    43,
+    48,
+    55,
+    60,
+    64,
+    69,
+    74,
+    86,
+    91,
+    96,
+    101,
+    106,
+    111,
+    116,
+    126,
+    132,
+    137,
+    142,
+    148,
+    152,
+    160,
+    174,
+    181,
+    186,
+    190,
+    196,
+    206,
+    211,
+    223,
+    228,
+    233,
+    238,
+    243,
+    249,
+    254,
+    263,
+    268,
+    273,
+    278,
+    284,
+    288,
+    296,
+    310,
+    315,
+    322,
+    326,
+    333,
+    338,
+    343
+  ],
+  "audit_view_ids": [
+    38,
+    81,
+    120,
+    166,
+    217,
+    262,
+    305,
+    354
+  ],
+  "history": [
+    {
+      "step": 1,
+      "training_view": 69,
+      "loss": 0.05709153786301613,
+      "l1": 0.03413170203566551,
+      "coverage_loss": 0.3647758960723877,
+      "depth_l1_clipped_m": 0.23605214059352875
+    },
+    {
+      "step": 101,
+      "training_view": 160,
+      "loss": 0.1084744855761528,
+      "l1": 0.08005233854055405,
+      "coverage_loss": 0.49018633365631104,
+      "depth_l1_clipped_m": 0.1954953670501709
+    },
+    {
+      "step": 201,
+      "training_view": 326,
+      "loss": 0.020138446241617203,
+      "l1": 0.01298094354569912,
+      "coverage_loss": 0.07645648717880249,
+      "depth_l1_clipped_m": 0.16625061631202698
+    },
+    {
+      "step": 301,
+      "training_view": 148,
+      "loss": 0.02880718931555748,
+      "l1": 0.021216798573732376,
+      "coverage_loss": 0.09519826620817184,
+      "depth_l1_clipped_m": 0.14064809679985046
+    },
+    {
+      "step": 401,
+      "training_view": 116,
+      "loss": 0.032021623104810715,
+      "l1": 0.0268674548715353,
+      "coverage_loss": 0.04976591095328331,
+      "depth_l1_clipped_m": 0.13199757039546967
+    },
+    {
+      "step": 501,
+      "training_view": 228,
+      "loss": 0.03509413078427315,
+      "l1": 0.025350362062454224,
+      "coverage_loss": 0.10877147316932678,
+      "depth_l1_clipped_m": 0.21356822550296783
+    },
+    {
+      "step": 600,
+      "training_view": 249,
+      "loss": 0.03109295666217804,
+      "l1": 0.025300027802586555,
+      "coverage_loss": 0.06405037641525269,
+      "depth_l1_clipped_m": 0.12746374309062958
+    }
+  ],
+  "scores": [
+    {
+      "node": 263,
+      "role": "training_RGB",
+      "masked_rgb_psnr_db": 27.005115664561,
+      "masked_rgb_l1": 0.022062426432967186,
+      "mean_alpha_valid_depth": 0.9066413044929504
+    },
+    {
+      "node": 217,
+      "role": "audit_RGB_not_used_in_gradients",
+      "masked_rgb_psnr_db": 22.728980358245213,
+      "masked_rgb_l1": 0.059750065207481384,
+      "mean_alpha_valid_depth": 0.4055830240249634
+    }
+  ],
+  "figures": [
+    {
+      "file": "gaussian_263.png",
+      "sha256": "49b9866be499e88f64d9d8abc1e36e95210fad6b5368d09cc055545a1e0841ad"
+    },
+    {
+      "file": "gaussian_217.png",
+      "sha256": "3759c0f1221ea7efcf4863af3e38a3aa10bbc0c0e085347f2b38f90ef1ef1eae"
+    }
+  ],
+  "centre_position_updates": 0,
+  "camera_pose_updates": 0,
+  "density_control": false,
+  "view_dependent_SH": false,
+  "maximum_allocated_GPU_bytes": 155608064,
+  "seconds": 75.77456423700005,
+  "outputs": {
+    "gaussians.splat": {
+      "bytes": 5120000,
+      "sha256": "2c003da578e189c19968b6e7dcf495d8dedab994e7634ce3c510a1194583d584"
+    },
+    "checkpoint.pt": {
+      "bytes": 8962682,
+      "sha256": "67d3d0da406f0f24779b38ade5993771c8b9153e4180b2f62389a5d9ec37ee98"
+    },
+    "gaussians.ply": {
+      "bytes": 8960362,
+      "sha256": "e262de68b96d7c1ffc6af1e2144ed1f1dfca4f22b8396143f5c82fbedc5b1aaa"
+    }
+  }
+}

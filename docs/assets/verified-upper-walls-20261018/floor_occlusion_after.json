@@ -1,0 +1,12 @@
+{
+  "view_conflict_rays": {
+    "713": 490,
+    "167": 13
+  },
+  "two_view_contradicted_modeled_floor_cells": [],
+  "count": 0,
+  "source_manifest_sha256": "80f0de13eae251a45fda918fb762c580890b5cc0c89852cae6abc0d1f107a2c3",
+  "floor_manifest_sha256": "80f0de13eae251a45fda918fb762c580890b5cc0c89852cae6abc0d1f107a2c3",
+  "audit_source_sha256": "0a3a8f62177a3ed923b4a4d0d9bdcf9c266a2a7b12c45c053e334f6df172dc26",
+  "scope": "Two original opaque-wall photographs + photo-bounded wall display hypothesis, not independent surveyed free-space or a raw-depth-only test."
+}

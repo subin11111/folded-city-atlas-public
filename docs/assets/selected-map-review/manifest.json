@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-17T12:15:32.269141+00:00",
+  "figures": [
+    {
+      "file": "selected_map_sessions.png",
+      "sha256": "c06b7a1469eca4f3426f5e89d599528673984a93bec135b2ac5dbd8fcc9e2460",
+      "synthetic": false
+    },
+    {
+      "file": "selected_map_height.png",
+      "sha256": "4e5a8d9f3d7b5b63e7dd2817617c280dbf155e53a6a1718ca8fcc76858d42008",
+      "synthetic": false
+    },
+    {
+      "file": "selected_map_before_after.png",
+      "sha256": "c9f6b46b897af62be31154b6ec06dae388866c8b69da28ee8487345ee370815e",
+      "synthetic": false
+    },
+    {
+      "file": "connection_audit.png",
+      "sha256": "a366ebe8fc67bffadd0d8b505ea7f4eb5975c7735602b158b9f990358ea70fe0",
+      "synthetic": false
+    }
+  ],
+  "summary_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "output_manifest": "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json",
+  "source_sha256": "b1a4c646ea32f462fd910cc61a83a1037ae5fc1e7306146cba568c4e82905319",
+  "all_inputs_unchanged": true
+}

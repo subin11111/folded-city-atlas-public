@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-18T14:01:13.640253+00:00",
+  "material_bundle_manifest_sha256": "8b793ddf08f2f520f6eb7bc02724fb41d08000945e2c911dcbea1937a077a4c9",
+  "groups": {
+    "lower": {
+      "same_selected_boundary_pixel_pairs": 107,
+      "median_abs_log_luminance_jump_hard_handover": 0.1986138800989976,
+      "median_abs_log_luminance_jump_after_feather": 0.051360883522087564,
+      "p90_hard_handover": 0.6619733171101378,
+      "p90_after_feather": 0.14328747253454377,
+      "same_original_photos_and_scalar_gains": true
+    },
+    "upper": {
+      "same_selected_boundary_pixel_pairs": 701,
+      "median_abs_log_luminance_jump_hard_handover": 0.4272770640140931,
+      "median_abs_log_luminance_jump_after_feather": 0.05524460859399949,
+      "p90_hard_handover": 0.8284555901818496,
+      "p90_after_feather": 0.22798198204211984,
+      "same_original_photos_and_scalar_gains": true
+    }
+  },
+  "audit_source_sha256": "ea1ce67fc1dd6e90d9b4122f4703b41f1ed64aa6acc5d93c1320733f753425d2",
+  "scope": "Same selected supported photo-label boundary pairs, excluding high within-photo gradients and tiny/very large steps. Isolates feather from a hard photo switch using the same photos/gains. Not independent quality validation, all floor boundaries, sensor accuracy or unknown-region completion."
+}

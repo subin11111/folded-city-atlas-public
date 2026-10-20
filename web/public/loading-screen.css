@@ -1,0 +1,45 @@
+.loading-screen{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;background:#f7faf6;color:#063d2a;transition:opacity .38s ease,visibility .38s ease}
+.loading-screen::before{content:"";position:absolute;width:min(640px,100vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#dfeddc80,transparent 68%);pointer-events:none}
+.loading-screen.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.loading-content{position:relative;display:flex;align-items:center;flex-direction:column;text-align:center;padding:32px;max-width:100%}
+.loading-artwork{--fold-duration:3.4s;position:relative;width:clamp(260px,36vw,340px);height:auto;aspect-ratio:1;overflow:visible;filter:drop-shadow(0 24px 26px #063d2a20)}
+/* Rigid paper leaves share the middle panel's vertical hinge edges. */
+.loading-paper{position:absolute;inset:0;perspective:700px;transform-style:preserve-3d;animation:paper-lift var(--fold-duration) ease-in-out infinite}
+.loading-panel,.loading-route-layer{position:absolute;inset:0;width:100%;height:100%}
+.loading-panel{backface-visibility:visible;transform-style:preserve-3d}
+.loading-panel svg{display:block;width:100%;height:100%}
+.loading-map-left,.loading-map-right{animation-duration:var(--fold-duration);animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.4,0,.2,1)}
+.loading-map-left{transform-origin:40.625% 50%;animation-name:unfold-left}
+.loading-map-right{transform-origin:59.375% 50%;animation-name:unfold-right}
+.loading-map-left path{animation:shade-left var(--fold-duration) ease infinite}
+.loading-map-right path{animation:shade-right var(--fold-duration) ease infinite}
+.loading-route-layer{pointer-events:none}
+.loading-arrowhead{animation:route-head var(--fold-duration) ease infinite}
+.loading-route{stroke-dasharray:1;animation:route-draw var(--fold-duration) ease infinite}
+.loading-origin{transform-box:fill-box;transform-origin:center;animation:route-origin var(--fold-duration) ease infinite}
+.loading-name{margin:12px 0 0;font-size:40px;font-weight:750;line-height:1.1;letter-spacing:-2px}
+.loading-name span{color:#17804a}
+.loading-tagline{margin:10px 0 35px;font-size:9px;letter-spacing:2.5px;color:#687c70;font-weight:600}
+.loading-message{font-size:13px;line-height:1.8;margin:0;color:#476652;word-break:keep-all}
+.loading-pulse{display:flex;gap:6px;margin-top:18px}
+.loading-pulse i{width:5px;height:5px;border-radius:50%;background:#17804a;animation:loading-pulse 1.2s ease-in-out infinite}
+.loading-pulse i:nth-child(2){animation-delay:.16s}.loading-pulse i:nth-child(3){animation-delay:.32s}
+.loading-retry{margin-top:20px;border-color:#b9d7c3;color:#006b3f;background:#fff;border-radius:24px;font-size:12px}
+.loading-screen.is-leaving .loading-artwork *,.loading-screen.is-error .loading-artwork *,.loading-screen.is-error .loading-pulse i{animation:none}
+.loading-screen.is-error .loading-pulse{display:none}
+.model-loading{display:flex;align-items:center;gap:14px;max-width:calc(100% - 32px);background:#fffffff2;border:1px solid #e2ebe1;min-width:220px;padding:14px 18px;pointer-events:none}
+.model-loading .loading-artwork{width:46px;height:46px;flex:none;filter:none}
+.model-loading-message{font-size:12px;line-height:1.7;color:#476652}
+/* Outer leaves are 14 units wide, the spine is 12. Normalize only the closed
+   pose so all three silhouettes stack exactly, with a small paper thickness. */
+@keyframes unfold-left{0%,8%,100%{transform:translateZ(.4px) rotateY(180deg) scaleX(.857142857)}30%{transform:translateZ(0) rotateY(-5deg) scaleX(1)}36%,90%{transform:translateZ(0) rotateY(0) scaleX(1)}}
+@keyframes unfold-right{0%,18%,100%{transform:translateZ(-.4px) rotateY(180deg) scaleX(.857142857)}38%{transform:translateZ(0) rotateY(-3deg) scaleX(1)}42%,90%{transform:translateZ(0) rotateY(0) scaleX(1)}}
+@keyframes paper-lift{0%,8%,100%{transform:translateY(8px) rotate(-7deg) scale(.96)}24%{transform:translateY(-7px) rotate(2deg) scale(1.02)}42%,90%{transform:translateY(0) rotate(0) scale(1)}}
+@keyframes shade-left{0%,8%,100%{fill:#3b885a}30%,90%{fill:#57a676}}
+@keyframes shade-right{0%,18%,100%{fill:#65934e}38%,90%{fill:#a2cc80}}
+@keyframes route-draw{0%,60%{stroke-dashoffset:1;opacity:0}61%{opacity:1}75%,88%{stroke-dashoffset:0;opacity:1}90%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes route-origin{0%,45%{opacity:0;transform:scale(.35)}50%{opacity:1;transform:scale(1.35)}54%,88%{opacity:1;transform:scale(1)}90%,100%{opacity:0;transform:scale(1)}}
+@keyframes route-head{0%,75%{opacity:0}79%,88%{opacity:1}90%,100%{opacity:0}}
+@keyframes loading-pulse{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+@media(max-width:650px){.loading-artwork{width:min(260px,70vw);height:auto}.loading-name{font-size:34px}.loading-tagline{font-size:8px;letter-spacing:2px}.model-loading .loading-artwork{width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.loading-screen{transition:none}.loading-artwork *,.loading-pulse i{animation:none!important}.loading-route{stroke-dashoffset:0}.loading-origin{opacity:1}}

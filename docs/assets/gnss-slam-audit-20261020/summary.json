@@ -1,0 +1,524 @@
+{
+  "reference": "web_map_pose_reconstruction_not_independent_ground_truth",
+  "original_selected_pose_csv_available": false,
+  "absolute_survey_rmse": null,
+  "manual_preview_offset_en_m": [
+    2,
+    -2
+  ],
+  "sessions": {
+    "outside": {
+      "label": "실외",
+      "source": "261016-234854-outside.db",
+      "sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+      "nodes": 354,
+      "reference_poses": 353,
+      "valid_gps_rows": 354,
+      "unique_fixes": 338,
+      "duplicate_timestamp_rows": 16,
+      "paired_fixes": 337,
+      "unpaired_fixes": 1,
+      "reported_accuracy_m": {
+        "n": 354,
+        "median": 14.245954563869219,
+        "p90": 14.245954666628599,
+        "max": 20.08242713541415,
+        "rmse": 13.937546662567588
+      },
+      "measurement_age_s": {
+        "n": 354,
+        "median": 0.6059744358062744,
+        "p90": 1.0170374631881713,
+        "max": 5.951123476028442,
+        "rmse": 0.9782380661384138
+      },
+      "raw_residual_m": {
+        "n": 337,
+        "median": 4.360948753619144,
+        "p90": 6.895302861922686,
+        "max": 9.79941153471048,
+        "rmse": 4.729985954201467
+      },
+      "without_preview_offset_residual_m": {
+        "n": 337,
+        "median": 2.8852131753850614,
+        "p90": 4.849101124553246,
+        "max": 8.171970144453919,
+        "rmse": 3.3375766312128565
+      },
+      "median_delta_map_xy_m": [
+        2.198853337583842,
+        2.4744667817520574
+      ],
+      "diagnostic_after_per_session_translation_m": {
+        "n": 337,
+        "median": 2.715844366662028,
+        "p90": 4.7419094652237135,
+        "max": 8.908303634246355,
+        "rmse": 3.288049110223412
+      },
+      "per_session_translation_applied": false,
+      "raw_distance_to_walkable_m": {
+        "n": 0
+      },
+      "reference_distance_to_walkable_m": {
+        "n": 0
+      },
+      "published_photo_checks": 22,
+      "published_photo_max_difference_m": 0.00007087324849769384,
+      "filter_common_epochs": 337,
+      "filter_status_counts": {
+        "initial": 1,
+        "updated": 337
+      },
+      "raw_common_residual_m": {
+        "n": 337,
+        "median": 4.360948753619144,
+        "p90": 6.895302861922685,
+        "max": 9.799411534710478,
+        "rmse": 4.729985954201466
+      },
+      "kalman_residual_m": {
+        "n": 337,
+        "median": 4.697617542918637,
+        "p90": 6.920775454408247,
+        "max": 9.290965263911955,
+        "rmse": 4.8752327731728
+      },
+      "rts_residual_m": {
+        "n": 337,
+        "median": 4.478231552671064,
+        "p90": 6.73155574801138,
+        "max": 8.44415502165893,
+        "rmse": 4.660277022267513
+      },
+      "ui_last_good_residual_m": {
+        "n": 337,
+        "median": 4.697617542918637,
+        "p90": 6.920775454408247,
+        "max": 9.290965263911955,
+        "rmse": 4.8752327731728
+      },
+      "reference_provenance": "DB Admin.opt_poses + portfolio O_FULL gauge + selected rigid placement + keyframe translation interpolation; verified against all 189 web photograph positions; not original selected CSV"
+    },
+    "lobby": {
+      "label": "1층",
+      "source": "261017-000622-1f.db",
+      "sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+      "nodes": 958,
+      "reference_poses": 949,
+      "valid_gps_rows": 956,
+      "unique_fixes": 294,
+      "duplicate_timestamp_rows": 662,
+      "paired_fixes": 294,
+      "unpaired_fixes": 0,
+      "reported_accuracy_m": {
+        "n": 956,
+        "median": 17.973871471294583,
+        "p90": 21.10235352246435,
+        "max": 58.980101679470394,
+        "rmse": 18.74954747045274
+      },
+      "measurement_age_s": {
+        "n": 956,
+        "median": 2.217487335205078,
+        "p90": 4.922865152359009,
+        "max": 7.245297431945801,
+        "rmse": 2.9701362385185783
+      },
+      "raw_residual_m": {
+        "n": 294,
+        "median": 18.180248131948545,
+        "p90": 26.618464632344928,
+        "max": 33.87341786943706,
+        "rmse": 18.859071062302096
+      },
+      "without_preview_offset_residual_m": {
+        "n": 294,
+        "median": 15.927903555704736,
+        "p90": 24.337214716793333,
+        "max": 31.073570428227175,
+        "rmse": 16.893895855950845
+      },
+      "median_delta_map_xy_m": [
+        16.281854126562237,
+        0.1463852239656127
+      ],
+      "diagnostic_after_per_session_translation_m": {
+        "n": 294,
+        "median": 9.174991254276142,
+        "p90": 16.56421187422062,
+        "max": 20.721835127656277,
+        "rmse": 10.625611867275172
+      },
+      "per_session_translation_applied": false,
+      "raw_distance_to_walkable_m": {
+        "n": 293,
+        "median": 0.7512284153321651,
+        "p90": 5.829074017069698,
+        "max": 5.935006616036347,
+        "rmse": 3.6393505422709933
+      },
+      "reference_distance_to_walkable_m": {
+        "n": 293,
+        "median": 0.04781651404374411,
+        "p90": 0.0673474015918139,
+        "max": 0.41004442509158884,
+        "rmse": 0.06536319406144779
+      },
+      "published_photo_checks": 62,
+      "published_photo_max_difference_m": 0.00007840105619576199,
+      "filter_common_epochs": 293,
+      "filter_status_counts": {
+        "initial": 1,
+        "updated": 292,
+        "accuracy": 1
+      },
+      "raw_common_residual_m": {
+        "n": 293,
+        "median": 18.18998351710628,
+        "p90": 26.623592992675952,
+        "max": 33.87341786943706,
+        "rmse": 18.88930326772274
+      },
+      "kalman_residual_m": {
+        "n": 293,
+        "median": 18.189924199970957,
+        "p90": 26.62152782264922,
+        "max": 33.873417882512015,
+        "rmse": 18.883252908960173
+      },
+      "rts_residual_m": {
+        "n": 293,
+        "median": 18.189883014845112,
+        "p90": 26.622816349362154,
+        "max": 33.87341787161674,
+        "rmse": 18.830697965472638
+      },
+      "ui_last_good_residual_m": {
+        "n": 294,
+        "median": 18.18021847291017,
+        "p90": 26.616657657878605,
+        "max": 33.873417882512015,
+        "rmse": 18.85246651702363
+      },
+      "reference_provenance": "DB Admin.opt_poses + portfolio O_FULL gauge + selected rigid placement + keyframe translation interpolation; verified against all 189 web photograph positions; not original selected CSV"
+    },
+    "bridge_out1f": {
+      "label": "실외와 1층 연결",
+      "source": "261017-011331-bridgeout1f.db",
+      "sha256": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+      "nodes": 134,
+      "reference_poses": 134,
+      "valid_gps_rows": 130,
+      "unique_fixes": 74,
+      "duplicate_timestamp_rows": 56,
+      "paired_fixes": 74,
+      "unpaired_fixes": 0,
+      "reported_accuracy_m": {
+        "n": 130,
+        "median": 14.414821092353614,
+        "p90": 19.458545039202928,
+        "max": 32.46596346095408,
+        "rmse": 16.828562808226526
+      },
+      "measurement_age_s": {
+        "n": 130,
+        "median": 0.9781509637832642,
+        "p90": 4.2532168388366705,
+        "max": 5.967249155044556,
+        "rmse": 2.2909583095640524
+      },
+      "raw_residual_m": {
+        "n": 74,
+        "median": 9.990712785158312,
+        "p90": 12.180798358556054,
+        "max": 20.294369584106562,
+        "rmse": 10.552355616858677
+      },
+      "without_preview_offset_residual_m": {
+        "n": 74,
+        "median": 7.954212180678535,
+        "p90": 9.642066946576035,
+        "max": 17.48317473364691,
+        "rmse": 8.42578678420101
+      },
+      "median_delta_map_xy_m": [
+        9.053234503517118,
+        -0.307380760275357
+      ],
+      "diagnostic_after_per_session_translation_m": {
+        "n": 74,
+        "median": 2.2564855001747954,
+        "p90": 9.997176547742612,
+        "max": 13.41509723514843,
+        "rmse": 5.68845786938512
+      },
+      "per_session_translation_applied": false,
+      "raw_distance_to_walkable_m": {
+        "n": 74,
+        "median": 7.2442019931736805,
+        "p90": 8.931346848879592,
+        "max": 10.42408761647706,
+        "rmse": 6.549699114167707
+      },
+      "reference_distance_to_walkable_m": {
+        "n": 74,
+        "median": 0.05669357502261447,
+        "p90": 0.4000873841709801,
+        "max": 1.112141807340888,
+        "rmse": 0.2930191454482391
+      },
+      "published_photo_checks": 12,
+      "published_photo_max_difference_m": 0.00008135114392985081,
+      "filter_common_epochs": 74,
+      "filter_status_counts": {
+        "initial": 1,
+        "updated": 73
+      },
+      "raw_common_residual_m": {
+        "n": 74,
+        "median": 9.990712785158312,
+        "p90": 12.18079835855605,
+        "max": 20.29436958410656,
+        "rmse": 10.552355616858673
+      },
+      "kalman_residual_m": {
+        "n": 74,
+        "median": 10.435155297453168,
+        "p90": 12.496992838633199,
+        "max": 15.704030835795491,
+        "rmse": 10.553060992386863
+      },
+      "rts_residual_m": {
+        "n": 74,
+        "median": 10.066270169500065,
+        "p90": 12.836110371368493,
+        "max": 13.170695229873825,
+        "rmse": 10.310104896524114
+      },
+      "ui_last_good_residual_m": {
+        "n": 74,
+        "median": 10.435155297453168,
+        "p90": 12.496992838633199,
+        "max": 15.704030835795491,
+        "rmse": 10.553060992386863
+      },
+      "reference_provenance": "DB Admin.opt_poses + portfolio O_FULL gauge + selected rigid placement + keyframe translation interpolation; verified against all 189 web photograph positions; not original selected CSV"
+    },
+    "floor2": {
+      "label": "2층과 메인 계단",
+      "source": "261017-013501-2f.db",
+      "sha256": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+      "nodes": 1218,
+      "reference_poses": 1215,
+      "valid_gps_rows": 1216,
+      "unique_fixes": 332,
+      "duplicate_timestamp_rows": 884,
+      "paired_fixes": 332,
+      "unpaired_fixes": 0,
+      "reported_accuracy_m": {
+        "n": 1216,
+        "median": 16.639728071629932,
+        "p90": 19.95912709496395,
+        "max": 32.38879171875835,
+        "rmse": 17.2805552499597
+      },
+      "measurement_age_s": {
+        "n": 1216,
+        "median": 2.3839962482452393,
+        "p90": 4.837374567985535,
+        "max": 9.426970958709717,
+        "rmse": 3.0288589510999797
+      },
+      "raw_residual_m": {
+        "n": 332,
+        "median": 24.361181767759295,
+        "p90": 36.140183882684745,
+        "max": 58.30163869945004,
+        "rmse": 27.006471961955608
+      },
+      "without_preview_offset_residual_m": {
+        "n": 332,
+        "median": 23.151681852819987,
+        "p90": 38.076989315425806,
+        "max": 55.626851854340856,
+        "rmse": 26.67603983820695
+      },
+      "median_delta_map_xy_m": [
+        10.459123926770285,
+        -11.359341485545698
+      ],
+      "diagnostic_after_per_session_translation_m": {
+        "n": 332,
+        "median": 23.971624180620616,
+        "p90": 31.688800432909964,
+        "max": 53.41393260814457,
+        "rmse": 24.35954135854236
+      },
+      "per_session_translation_applied": false,
+      "raw_distance_to_walkable_m": {
+        "n": 292,
+        "median": 10.385192026616402,
+        "p90": 16.196797875476165,
+        "max": 48.92024049874393,
+        "rmse": 12.420772435416165
+      },
+      "reference_distance_to_walkable_m": {
+        "n": 292,
+        "median": 0.04987067085147866,
+        "p90": 0.07572149028960609,
+        "max": 1.4629807732313576,
+        "rmse": 0.19374248379318154
+      },
+      "published_photo_checks": 80,
+      "published_photo_max_difference_m": 0.00007167882461561371,
+      "filter_common_epochs": 332,
+      "filter_status_counts": {
+        "initial": 1,
+        "updated": 328,
+        "speed_gate": 3
+      },
+      "raw_common_residual_m": {
+        "n": 332,
+        "median": 24.36118176775929,
+        "p90": 36.14018388268475,
+        "max": 58.30163869945004,
+        "rmse": 27.00647196195561
+      },
+      "kalman_residual_m": {
+        "n": 332,
+        "median": 24.37822688134529,
+        "p90": 36.59079062855331,
+        "max": 61.09070608060184,
+        "rmse": 27.380089578525684
+      },
+      "rts_residual_m": {
+        "n": 332,
+        "median": 24.370595572333833,
+        "p90": 35.02815160783102,
+        "max": 58.390785251572,
+        "rmse": 26.46753134632516
+      },
+      "ui_last_good_residual_m": {
+        "n": 332,
+        "median": 24.37822688134529,
+        "p90": 36.59079062855331,
+        "max": 61.09070608060184,
+        "rmse": 27.39974225756094
+      },
+      "reference_provenance": "DB Admin.opt_poses + portfolio O_FULL gauge + selected rigid placement + keyframe translation interpolation; verified against all 189 web photograph positions; not original selected CSV"
+    },
+    "bridge_12_sub": {
+      "label": "서브 계단",
+      "source": "261017-013904-bridg12_2.db",
+      "sha256": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+      "nodes": 211,
+      "reference_poses": 211,
+      "valid_gps_rows": 207,
+      "unique_fixes": 61,
+      "duplicate_timestamp_rows": 146,
+      "paired_fixes": 61,
+      "unpaired_fixes": 0,
+      "reported_accuracy_m": {
+        "n": 207,
+        "median": 18.176652629949565,
+        "p90": 21.36498811311779,
+        "max": 34.2278295088123,
+        "rmse": 18.65754399111124
+      },
+      "measurement_age_s": {
+        "n": 207,
+        "median": 2.291433095932007,
+        "p90": 4.701085948944092,
+        "max": 5.62719464302063,
+        "rmse": 2.8827148337667907
+      },
+      "raw_residual_m": {
+        "n": 61,
+        "median": 19.22519188754633,
+        "p90": 52.46600391950709,
+        "max": 55.22792635106083,
+        "rmse": 33.690876684826755
+      },
+      "without_preview_offset_residual_m": {
+        "n": 61,
+        "median": 17.963253764451153,
+        "p90": 54.380377550864615,
+        "max": 57.29146129038356,
+        "rmse": 34.114672526698264
+      },
+      "median_delta_map_xy_m": [
+        15.106118969520594,
+        -6.285545322560269
+      ],
+      "diagnostic_after_per_session_translation_m": {
+        "n": 61,
+        "median": 6.576386502775759,
+        "p90": 50.54019139795696,
+        "max": 54.23389910350592,
+        "rmse": 29.395945026619728
+      },
+      "per_session_translation_applied": false,
+      "raw_distance_to_walkable_m": {
+        "n": 46,
+        "median": 0.744327820585477,
+        "p90": 17.648855610352577,
+        "max": 39.828770935215275,
+        "rmse": 10.711029058319333
+      },
+      "reference_distance_to_walkable_m": {
+        "n": 46,
+        "median": 0.045348819898481704,
+        "p90": 0.08004168123761232,
+        "max": 0.5058488956698551,
+        "rmse": 0.12566665204590002
+      },
+      "published_photo_checks": 13,
+      "published_photo_max_difference_m": 0.00007242823009886744,
+      "filter_common_epochs": 61,
+      "filter_status_counts": {
+        "initial": 1,
+        "updated": 59,
+        "speed_gate": 1
+      },
+      "raw_common_residual_m": {
+        "n": 61,
+        "median": 19.22519188754633,
+        "p90": 52.46600391950709,
+        "max": 55.22792635106083,
+        "rmse": 33.69087668482676
+      },
+      "kalman_residual_m": {
+        "n": 61,
+        "median": 19.225194976617637,
+        "p90": 53.854750662786635,
+        "max": 58.55826557477222,
+        "rmse": 33.61164901544255
+      },
+      "rts_residual_m": {
+        "n": 61,
+        "median": 19.44248403734824,
+        "p90": 52.91774136066706,
+        "max": 56.5787451894741,
+        "rmse": 32.17205779302161
+      },
+      "ui_last_good_residual_m": {
+        "n": 61,
+        "median": 19.225194976617637,
+        "p90": 53.854750662786635,
+        "max": 58.55826557477222,
+        "rmse": 33.63568140689255
+      },
+      "reference_provenance": "DB Admin.opt_poses + portfolio O_FULL gauge + selected rigid placement + keyframe translation interpolation; verified against all 189 web photograph positions; not original selected CSV"
+    }
+  },
+  "coordinate_checks": {
+    "python_vs_production_from_geo_max_m": 1.4187543302624807e-9,
+    "campus_vs_geo_enu_max_m": 0,
+    "current_approximate_inverse_roundtrip_max_m": 0.06629244383796086,
+    "rotation_determinant": 1.0000000000000007,
+    "unit_scale": 1,
+    "preview_offset_length_m": 2.8284271247461903
+  }
+}

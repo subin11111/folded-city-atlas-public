@@ -1,0 +1,12 @@
+{
+  "source_bundle":"outputs/student_union_visual_floor_v10",
+  "comparison_bundle":"outputs/student_union_photo_finish_v9",
+  "material_reconstruction":true,
+  "preserve_joint_bands":true,
+  "detail_radius_m":0.16,
+  "contrast_bounds":[0.65,1.25],
+  "target_linear_luminance":0.20,
+  "grain_source":"outputs/student_union_roadview_v1/floor2/photos/00892.jpg",
+  "grain_crop":[30,770,170,900],
+  "scope":"Explicit photo-derived display material: retain photographed joint bands and finite black-accent locations, limit residual photo illumination contrast and keep real measured stone micro-grain. Broad shadows/glare and low-light colour noise are not retained as floor material. No periodic tile grid, invented marker positions or geometry/pose changes. Material/unknown-region completion is inferred appearance, not exact original floor photography or surveyed tile-layout recovery. Raw photo-roadview and PRIME HALL remain original. Actual rendered visual inspection, not seam scores, determines presentation choice."
+}

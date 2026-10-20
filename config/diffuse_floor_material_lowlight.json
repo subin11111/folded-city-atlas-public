@@ -1,0 +1,13 @@
+{
+  "source_bundle":"outputs/student_union_visual_floor_v10",
+  "comparison_bundle":"outputs/student_union_photo_finish_v9",
+  "illumination_radius_m":0.16,
+  "target_linear_luminance":0.20,
+  "gain_bounds":[0.05,512.0],
+  "radiometric_floor":0.00001,
+  "low_light_denoising":true,
+  "chromaticity_normalization":true,
+  "grain_source":"outputs/student_union_roadview_v1/floor2/photos/00892.jpg",
+  "grain_crop":[30,770,170,900],
+  "scope":"Photo-derived diffuse visual floor material, not calibrated albedo or original lighting. Handle heavily underexposed photographs in linear light, denoise only low-light regions, remove smooth illumination/colour casts, preserve photographed tile/joint/black-accent placement and fine variation. Weak texture uses measured zero-mean stone grain. No tile-layout synthesis, uniform RGB fill or geometry/pose changes. Raw roadview and PRIME HALL source photographs remain untouched. Actual same-camera visual review is required."
+}

@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | Unified 1F-2F presentation",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792327192.275992,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/manifest.json",
+  "structural_manifest_sha256": "daa84193d7b7bd658e6ac12b3288d54fa7b341b538f40b97fd6a5c323cf311b9",
+  "architectural_presentation": true,
+  "start_view": "restroom",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "lobby",
+    "node": 713
+  },
+  "camera_model_matrix_open3d": [
+    [
+      -0.5442206859588623,
+      -0.2062462419271469,
+      -0.8131951093673706,
+      -9.87568473815918
+    ],
+    [
+      -0.8380425572395325,
+      0.08877383172512054,
+      0.538334310054779,
+      -3.715818405151367
+    ],
+    [
+      -0.038838982582092285,
+      0.9744647741317749,
+      -0.22115570306777954,
+      0.21488532423973083
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "created_utc": "2026-10-18T06:58:40.690804+00:00",
+  "objects": [
+    {
+      "id": "f2_storefront_glazing",
+      "session": "floor2",
+      "class": "window",
+      "sampled_polygon_rays": 9490,
+      "own_surface_first_hit_fraction": 0.9971548998946259,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.5582717029172243e-06,
+        -1.0134868169142663e-06,
+        -4.568039903674048e-07
+      ],
+      "actual_semantic_face_start": 1308401,
+      "actual_semantic_face_stop": 1309531
+    },
+    {
+      "id": "f2_plain_wall_completion",
+      "session": "floor2",
+      "class": "wall",
+      "sampled_polygon_rays": 33658,
+      "own_surface_first_hit_fraction": 0.6409768851387486,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -0.1991937020736677,
+        -7.243911515075752e-07,
+        1.9350294322428844e-07
+      ],
+      "actual_semantic_face_start": 1309531,
+      "actual_semantic_face_stop": 1313692
+    },
+    {
+      "id": "f2_mens_restroom_door",
+      "session": "floor2",
+      "class": "door",
+      "sampled_polygon_rays": 13505,
+      "own_surface_first_hit_fraction": 0.9660125879303961,
+      "finite_render_fraction": 0.9991854868567197,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -7.281201088726873e-08,
+        1.259615236559597e-07,
+        3.0847617147333763e-07
+      ],
+      "actual_semantic_face_start": 1313692,
+      "actual_semantic_face_stop": 1315374
+    },
+    {
+      "id": "f2_mens_restroom_sign",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 798,
+      "own_surface_first_hit_fraction": 0.949874686716792,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -2.604889813184741e-07,
+        8.161824693875275e-08,
+        3.58244946929709e-07
+      ],
+      "actual_semantic_face_start": 1315374,
+      "actual_semantic_face_stop": 1315470
+    },
+    {
+      "id": "f2_womens_restroom_sign",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 100,
+      "own_surface_first_hit_fraction": 0.99,
+      "finite_render_fraction": 0.99,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -5.591442258534584e-07,
+        -2.361211244306105e-07,
+        8.0213619479963e-08
+      ],
+      "actual_semantic_face_start": 1315470,
+      "actual_semantic_face_stop": 1315478
+    },
+    {
+      "id": "f2_career_heading",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 2448,
+      "own_surface_first_hit_fraction": 0.9963235294117647,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -8.875354756021636e-07,
+        -2.350782966065168e-07,
+        4.5525128404833054e-07
+      ],
+      "actual_semantic_face_start": 1315478,
+      "actual_semantic_face_stop": 1315762
+    },
+    {
+      "id": "f2_counselling_sign",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 2122,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.1902714656120137e-07,
+        1.5084915128138476e-07,
+        4.4050159433428607e-07
+      ],
+      "actual_semantic_face_start": 1315762,
+      "actual_semantic_face_stop": 1316024
+    },
+    {
+      "id": "f2_exit_sign",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 239,
+      "own_surface_first_hit_fraction": 0.9790794979079498,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.3458354399809025e-07,
+        1.8571688342738923e-07,
+        5.119292438404699e-07
+      ],
+      "actual_semantic_face_start": 1316024,
+      "actual_semantic_face_stop": 1316040
+    },
+    {
+      "id": "f2_access_glass_door",
+      "session": "floor2",
+      "class": "door",
+      "sampled_polygon_rays": 4825,
+      "own_surface_first_hit_fraction": 0.997720207253886,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -7.210758061759742e-08,
+        6.458290213728901e-07,
+        1.3627625230938637e-06
+      ],
+      "actual_semantic_face_start": 1316040,
+      "actual_semantic_face_stop": 1316636
+    },
+    {
+      "id": "f2_access_transom",
+      "session": "floor2",
+      "class": "window",
+      "sampled_polygon_rays": 2322,
+      "own_surface_first_hit_fraction": 0.9991386735572783,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -5.177820039392597e-08,
+        6.178751346119782e-07,
+        1.2093479563102249e-06
+      ],
+      "actual_semantic_face_start": 1316636,
+      "actual_semantic_face_stop": 1316914
+    },
+    {
+      "id": "f2_main_glazed_panel",
+      "session": "floor2",
+      "class": "window",
+      "sampled_polygon_rays": 6116,
+      "own_surface_first_hit_fraction": 0.9978744277305428,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.490180187913026e-06,
+        -5.329479961790895e-07,
+        4.0469886175564795e-07
+      ],
+      "actual_semantic_face_start": 1316914,
+      "actual_semantic_face_stop": 1317672
+    },
+    {
+      "id": "f2_main_transom",
+      "session": "floor2",
+      "class": "window",
+      "sampled_polygon_rays": 3332,
+      "own_surface_first_hit_fraction": 0.9975990396158463,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.3809425395194807e-06,
+        -3.6807225223256523e-07,
+        4.796251511507422e-07
+      ],
+      "actual_semantic_face_start": 1317672,
+      "actual_semantic_face_stop": 1318082
+    },
+    {
+      "id": "f2_central_pier_wall",
+      "session": "floor2",
+      "class": "wall",
+      "sampled_polygon_rays": 17961,
+      "own_surface_first_hit_fraction": 0.9880852959189355,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.013295132246128e-06,
+        -3.7000554398147756e-07,
+        2.4079036808899446e-07
+      ],
+      "actual_semantic_face_start": 1318082,
+      "actual_semantic_face_stop": 1320381
+    },
+    {
+      "id": "f2_room_label",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 181,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -7.228081089216687e-07,
+        -1.3378125629515125e-07,
+        3.401390595847431e-07
+      ],
+      "actual_semantic_face_start": 1320381,
+      "actual_semantic_face_stop": 1320392
+    },
+    {
+      "id": "f2_room_heading",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 1237,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -2.0012980606054495e-07,
+        3.500267879985586e-07,
+        9.35948668612241e-07
+      ],
+      "actual_semantic_face_start": 1320392,
+      "actual_semantic_face_stop": 1320535
+    },
+    {
+      "id": "f2_fire_equipment_front",
+      "session": "floor2",
+      "class": "sign",
+      "sampled_polygon_rays": 2280,
+      "own_surface_first_hit_fraction": 0.9785087719298246,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -7.177312589146112e-07,
+        -2.0340685558117855e-07,
+        2.8386491965903807e-07
+      ],
+      "actual_semantic_face_start": 1320535,
+      "actual_semantic_face_stop": 1320807
+    },
+    {
+      "id": "f2_flat_floor_photo",
+      "session": "floor2",
+      "class": "floor",
+      "sampled_polygon_rays": 14874,
+      "own_surface_first_hit_fraction": 0.9654430549952938,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -2.871106566271209e-07,
+        4.985777124488777e-09,
+        2.660997463266314e-07
+      ],
+      "actual_semantic_face_start": 1320807,
+      "actual_semantic_face_stop": 1322622
+    },
+    {
+      "id": "f2_flat_ceiling_photo",
+      "session": "floor2",
+      "class": "ceiling",
+      "sampled_polygon_rays": 3060,
+      "own_surface_first_hit_fraction": 0.9973856209150327,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -9.016335004830012e-07,
+        -3.255810407942761e-07,
+        2.369522714484873e-07
+      ],
+      "actual_semantic_face_start": 1322622,
+      "actual_semantic_face_stop": 1323013
+    },
+    {
+      "id": "lobby_elevator_door",
+      "session": "lobby",
+      "class": "door",
+      "sampled_polygon_rays": 5842,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -1.2120653458680408e-07,
+        2.8963713294416493e-07,
+        6.962541780453081e-07
+      ],
+      "actual_semantic_face_start": 1108540,
+      "actual_semantic_face_stop": 1109240
+    },
+    {
+      "id": "lobby_elevator_indicator",
+      "session": "lobby",
+      "class": "sign",
+      "sampled_polygon_rays": 173,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -3.2251464876509314e-08,
+        2.4087648409221174e-07,
+        4.943164785053966e-07
+      ],
+      "actual_semantic_face_start": 1109240,
+      "actual_semantic_face_stop": 1109253
+    },
+    {
+      "id": "lobby_foodmarket_poster",
+      "session": "lobby",
+      "class": "sign",
+      "sampled_polygon_rays": 15671,
+      "own_surface_first_hit_fraction": 0.998787569395699,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -2.395808733623994e-07,
+        1.2177141961444704e-08,
+        2.6483965731571857e-07
+      ],
+      "actual_semantic_face_start": 1109253,
+      "actual_semantic_face_stop": 1111179
+    },
+    {
+      "id": "lobby_foodmarket_quote",
+      "session": "lobby",
+      "class": "sign",
+      "sampled_polygon_rays": 8223,
+      "own_surface_first_hit_fraction": 0.9379788398394746,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -3.101359729917874e-07,
+        8.459548617167911e-09,
+        2.5375297232344e-07
+      ],
+      "actual_semantic_face_start": 1111179,
+      "actual_semantic_face_stop": 1112203
+    },
+    {
+      "id": "lobby_entry_glazing",
+      "session": "lobby",
+      "class": "window",
+      "sampled_polygon_rays": 7556,
+      "own_surface_first_hit_fraction": 1.0,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -2.8714443800481604e-07,
+        -5.4655230341538186e-08,
+        1.7174880850845398e-07
+      ],
+      "actual_semantic_face_start": 1112203,
+      "actual_semantic_face_stop": 1113138
+    },
+    {
+      "id": "lobby_service_door",
+      "session": "lobby",
+      "class": "door",
+      "sampled_polygon_rays": 8683,
+      "own_surface_first_hit_fraction": 0.8169987331567431,
+      "finite_render_fraction": 1.0,
+      "first_hit_minus_photo_plane_m_quantiles": [
+        -0.6949736700163507,
+        -1.2962613027411862e-07,
+        2.0632591333225036e-07
+      ],
+      "actual_semantic_face_start": 1113138,
+      "actual_semantic_face_stop": 1114165
+    }
+  ],
+  "manifest_sha256": "1c44f4473b8b8b9f4d59689c938a94f2420724acf6fc0d0aedfa3a319d7566a8",
+  "audit_source_sha256": "be5b396290e846386068914bbdaddaa9f7d335de9b2ad2f532494c61c6be5adb",
+  "scope": "Whether each appended surface is the first geometry hit in its own reference view; not measured pose accuracy."
+}

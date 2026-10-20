@@ -1,0 +1,19 @@
+{
+  "source_bundle": "outputs/student_union_photo_seams_v7",
+  "objects": [
+    {
+      "id": "floor2_prime_hall_complete_fascia",
+      "session": "floor2",
+      "node": 781,
+      "class": "sign",
+      "subtype": "hall_heading",
+      "label": "PRIME HALL — complete photographed heading",
+      "visible_text": "PRIME HALL",
+      "polygon": [[0,193],[719,277],[719,363],[0,314]],
+      "text_polygon": [[125,239],[490,273],[490,335],[125,302]],
+      "plane_support_polygons": [[[0,193],[719,277],[719,630],[0,527]]],
+      "maximum_old_face_plane_distance_m": 0.35,
+      "explanation": "One original photographed black fascia with all nine letters, including H. Full native source crop; no invented font, letter redraw or image generation. Adjacent return walls and ceiling are excluded."
+    }
+  ]
+}

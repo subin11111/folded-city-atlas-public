@@ -1,0 +1,8 @@
+{
+  "source_bundle": "outputs/student_union_lower_ceiling_clearance_v19",
+  "source_mask": "outputs/student_union_service_slabs_v3/lobby/bank_slab_mask.npz",
+  "session": "lobby",
+  "minimum_abs_normal_z": 0.80,
+  "old_height_band_m": 0.22,
+  "scope": "Remove only old near-horizontal bank ceiling fragments below the corrected underside, within the original photographed bank ceiling mask. Keep vertical signs/walls, every floor, all other sessions, photos, pose graphs and corrected existing slab. No new footprint, roof or inferred floor geometry."
+}

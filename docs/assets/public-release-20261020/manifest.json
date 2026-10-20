@@ -1,0 +1,154 @@
+{
+  "capture_date_local": "2026-10-20",
+  "origin": "Local Python server using the production source tree",
+  "desktop_viewport": [
+    814,
+    871
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "navigation": {
+    "goal": "prime_hall",
+    "policy": "shortest",
+    "distance_m": 32.8,
+    "arrived": true,
+    "meaning": "Edited sequence of actual browser screenshots, not a field walk or automatic indoor localization",
+    "frames": 13,
+    "mp4_duration_seconds": 19.5,
+    "camera_path": "Calculated A* route, not the acquisition trajectory"
+  },
+  "sensor_followup": {
+    "duration_seconds": 112,
+    "imu_rows_per_main_stream": 11227,
+    "imu_median_hz": 100.31839333833466,
+    "location_rows": 90,
+    "in_recording_location_rows": 89,
+    "pressure_rows": 101,
+    "relative_floor_rise_m": 4.1828,
+    "reference_map_floor_spacing_m": 4.15,
+    "pdr_ekf_applied": false,
+    "map_registration_changed": false,
+    "source_zip_sha256": "26e85c7bfb8cbbf7986b83d67b3aa249b7332b8224648cd1f6195bb4381f525e"
+  },
+  "assets": [
+    {
+      "file": "01-campus.jpg",
+      "bytes": 109744,
+      "sha256": "6b765c35dcce7f3686950552b1d8aa3b4d6d77730f2cf4405ce8800a07a55d1b",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "02-route-comparison.jpg",
+      "bytes": 69918,
+      "sha256": "72a03a8c619c9d59286454767bf4cae8eb258d99e6e2d6792755ae89d6320e55",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "03-prime-photo.jpg",
+      "bytes": 44002,
+      "sha256": "04241dcb980ba91eaf5a60ff66e9b184a94e28c6e4eb4e753a78b7b572389715",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "04-prime-3d.jpg",
+      "bytes": 57038,
+      "sha256": "df14c8944d4f08bcc6ca688b3b245e041e2820e2b3390fbfc90bd456964c3318",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "05-mobile-route.jpg",
+      "bytes": 44032,
+      "sha256": "e549ba4d81cb655bc143123c8a8a4dc09e895493f3fad31053d90b84bcfd3fb6",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "06-mobile-expanded.jpg",
+      "bytes": 31281,
+      "sha256": "6d1f271e8dfaff6e27c0ecda8ac669bb0087936186f6d4ad7e7b55a4a86c75e7",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "07-mobile-map.jpg",
+      "bytes": 48257,
+      "sha256": "3f3a6cf69789d00ba7057e118e166338a9bab5d6a38d01896870b08fb828e5ac",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "08-measured-gnss.jpg",
+      "bytes": 91376,
+      "sha256": "6b3704032f355a39d5829c8d9c71cf309a0613567a71990ef3105468ceaa22c7",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "navigation-prime.gif",
+      "bytes": 799811,
+      "sha256": "dea4a4a26bd0de57af7a2f861c0e1a8d1444ca06c40745ac6ade1755ec1122ec",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "navigation-prime.mp4",
+      "bytes": 490378,
+      "sha256": "149e05bb4e669fc677f6063070ae0911c49bb9a1fdfe5f0311ae27ef747d1755",
+      "source": "actual browser capture / encoded capture sequence"
+    },
+    {
+      "file": "ransac-image-matches.png",
+      "bytes": 1864956,
+      "sha256": "f938e33830b05506d6c6dba37c879df8b2dd309c3bece615b4542400a0795b61",
+      "source": "final_report_work/figures/review_v7/ransac_image_matches.png"
+    },
+    {
+      "file": "ransac-metric-consensus.png",
+      "bytes": 259489,
+      "sha256": "a8c54266f93245c686781f272cb142e9b99fc030637e90c1829da3c45ace1d6a",
+      "source": "final_report_work/figures/review_v7/ransac_metric_consensus.png"
+    },
+    {
+      "file": "rootsift-descriptor.png",
+      "bytes": 49130,
+      "sha256": "cd17b74f2489a1ba50496be757780b4d05524885994f5aeaa83a4c952e1f6511",
+      "source": "final_report_work/figures/review_v7/rootsift_descriptor.png"
+    },
+    {
+      "file": "sensor-floor-transition.png",
+      "bytes": 157655,
+      "sha256": "6fb0b07bfa81c39aafcf72a928c39bc0f1dcc029add77a41a26a031e5bacf12a",
+      "source": "sensor_logger_work/2026-10-20_105919/02_floor_transition.png"
+    },
+    {
+      "file": "sensor-imu-motion.png",
+      "bytes": 631276,
+      "sha256": "e21d74304e46c54384762222c4933a9ad2cf061451c8385fb17aceec82256c2b",
+      "source": "sensor_logger_work/2026-10-20_105919/04_imu_motion.png"
+    },
+    {
+      "file": "sensor-registration-offset.png",
+      "bytes": 188179,
+      "sha256": "d16c73396d3753446fc1ec68fbc5815d36f4918f2619af8c8907dd5283e1bef5",
+      "source": "sensor_logger_work/2026-10-20_105919/05_registration_offset_comparison.png"
+    },
+    {
+      "file": "sift-preprocessing.png",
+      "bytes": 1514669,
+      "sha256": "97529adbeb6a7d4ed01215eaa48ad5b48d60dc2ce5b89dc160c3848497caecfb",
+      "source": "final_report_work/figures/review_v7/sift_preprocessing.png"
+    },
+    {
+      "file": "11-grounded-indoor.jpg",
+      "bytes": 76739,
+      "sha256": "4a6bff94a8df3100eaa756154d26a4114f8f98b8eb61accdcea4596a085f7327",
+      "capture_date_local": "2026-10-21",
+      "source_base_commit": "2c27db5b0ea73b41d20406e6b8d1af5b26f72316",
+      "source_state": "Working-tree indoor-datum correction on source_base_commit",
+      "viewport": [
+        1280,
+        720
+      ],
+      "meaning": "Same first-floor display translation for all indoor floors and route points; no changes to navigation XYZ"
+    }
+  ],
+  "source_base_commit": "15364ee61c5ee5c987866cb6238516497107a748",
+  "source_state": "Screenshots include local working-tree changes on top of source_base_commit; not an exact deployed commit."
+}

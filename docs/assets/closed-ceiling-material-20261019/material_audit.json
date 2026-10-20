@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-18T16:45:46.669426+00:00",
+  "bundle_manifest_sha256": "08cae78b40020cf112f6277efd73d9e2a8fc748544ce4678d34ae85afd9d8b76",
+  "audit_source_sha256": "02d10dedf22cca31a8407031c9f84f41204f645515edd10ef9ac49ce408f78c8",
+  "sessions": {
+    "floor2": {
+      "all_triangle_XYZ_and_order_exact": true,
+      "PLY_file_exact": true,
+      "original_binary_prefix_exact": true,
+      "original_position_normal_UV_streams_exact": true,
+      "all_existing_floor_primitive_materials_exact": [
+        139,
+        140,
+        146
+      ],
+      "original_sign_and_floor_image_descriptors_exact": true,
+      "only_declared_new_ceiling_materials_and_plain_fascias_changed": true,
+      "matched_original_uniform_fascia_primitives": []
+    },
+    "lobby": {
+      "all_triangle_XYZ_and_order_exact": true,
+      "PLY_file_exact": true,
+      "original_binary_prefix_exact": true,
+      "original_position_normal_UV_streams_exact": true,
+      "all_existing_floor_primitive_materials_exact": [
+        150,
+        157,
+        159
+      ],
+      "original_sign_and_floor_image_descriptors_exact": true,
+      "only_declared_new_ceiling_materials_and_plain_fascias_changed": true,
+      "matched_original_uniform_fascia_primitives": [
+        154,
+        158,
+        160
+      ]
+    },
+    "bridge_12_sub": {
+      "all_triangle_XYZ_and_order_exact": true,
+      "PLY_file_exact": true,
+      "original_binary_prefix_exact": true,
+      "original_position_normal_UV_streams_exact": true,
+      "all_existing_floor_primitive_materials_exact": [
+        1,
+        2
+      ],
+      "original_sign_and_floor_image_descriptors_exact": true,
+      "only_declared_new_ceiling_materials_and_plain_fascias_changed": true,
+      "matched_original_uniform_fascia_primitives": []
+    },
+    "bridge_out1f": {
+      "all_triangle_XYZ_and_order_exact": true,
+      "PLY_file_exact": true,
+      "original_binary_prefix_exact": true,
+      "original_position_normal_UV_streams_exact": true,
+      "all_existing_floor_primitive_materials_exact": [],
+      "original_sign_and_floor_image_descriptors_exact": true,
+      "only_declared_new_ceiling_materials_and_plain_fascias_changed": true,
+      "matched_original_uniform_fascia_primitives": []
+    },
+    "outside": {
+      "all_triangle_XYZ_and_order_exact": true,
+      "PLY_file_exact": true,
+      "original_binary_prefix_exact": true,
+      "original_position_normal_UV_streams_exact": true,
+      "all_existing_floor_primitive_materials_exact": [],
+      "original_sign_and_floor_image_descriptors_exact": true,
+      "only_declared_new_ceiling_materials_and_plain_fascias_changed": true,
+      "matched_original_uniform_fascia_primitives": []
+    }
+  },
+  "floor_texture_changes": 0,
+  "sign_photo_changes": 0,
+  "geometry_changes": 0,
+  "scope": "Material stream preservation, not a numerical substitute for looking at before/after renders."
+}

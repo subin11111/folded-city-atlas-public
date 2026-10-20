@@ -1,0 +1,9 @@
+{
+  "source_bundle": "outputs/student_union_closed_ceiling_material_v5",
+  "lift": 0.18,
+  "knee_linear_luminance": 0.018,
+  "highlight_power": 3.0,
+  "maximum_linear_gain": 8.0,
+  "colour_model": "One common pointwise luminance lift for every active texture and baked vertex colour. Add the luminance increase equally to RGB, preserving absolute linear channel differences rather than amplifying low-light chromatic noise. Preserve alpha, pixel positions and renderer background. No spatial blur, local histogram or generative relighting.",
+  "scope": "Reversible display-only shadow visibility derivative. No pose, mesh, UV, source photograph or navigation changes. Zero-valued colour and unobserved empty space are not reconstructed."
+}

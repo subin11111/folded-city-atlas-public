@@ -1,0 +1,517 @@
+{
+  "figures": [
+    {
+      "file": "bridge_out1f/source_view_pointcloud.png",
+      "sha256": "3c34fcb38c66e29b664d910d2202a60dfa6c7e1dc6587be88cb299e07a4a329a",
+      "session": "bridge_out1f",
+      "method": "pointcloud",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_pointcloud.png",
+      "sha256": "fe735a618b58c3107798a9af3a2709c0d1b30888166bab9343b0c23ee215b15a",
+      "session": "bridge_out1f",
+      "method": "pointcloud",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_tsdf_5cm.png",
+      "sha256": "29f6b1ece6265224dce4ae4f985347044d9c0bc84cb88e07c4531656d1b2862c",
+      "session": "bridge_out1f",
+      "method": "tsdf_5cm",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_tsdf_5cm.png",
+      "sha256": "e5d526654b9c58955cdc6c897da5b551855cf42f2532f4c64a48106baba6d476",
+      "session": "bridge_out1f",
+      "method": "tsdf_5cm",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_tsdf_3cm.png",
+      "sha256": "234387cc317adfa0a2d3c9aba377ff1ac5deacbee71aea398b88e56488fc29f7",
+      "session": "bridge_out1f",
+      "method": "tsdf_3cm",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_tsdf_3cm.png",
+      "sha256": "229895519f2d2439652ffd7b1d1df2d74dea930ec302b707f2e0bc7643fbfe12",
+      "session": "bridge_out1f",
+      "method": "tsdf_3cm",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_ball_pivoting.png",
+      "sha256": "2d8ebc88e787df5961eb268223c17cef971e0a528a355d21b9608b5362bc9863",
+      "session": "bridge_out1f",
+      "method": "ball_pivoting",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_ball_pivoting.png",
+      "sha256": "ac52eb165b996c714aaf72e6c755d1bf9bdbac681f083a7a2b3d101c6c2c32f4",
+      "session": "bridge_out1f",
+      "method": "ball_pivoting",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_photo_textured.png",
+      "sha256": "471a4e4dc9db8901a53564131b5612b09378e8e4f402c13091f16f9604ac4656",
+      "session": "bridge_out1f",
+      "method": "photo_textured",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_photo_textured.png",
+      "sha256": "81a7b938455ecb7bf6cadaaf233e7e4472f62b50e181ed0926254a8c1a4e9886",
+      "session": "bridge_out1f",
+      "method": "photo_textured",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_depth_sheet_textured.png",
+      "sha256": "27e27a7074006e8f97ea0d779b992180cbfaaad2f8dfd88a64afad9e770638b9",
+      "session": "bridge_out1f",
+      "method": "depth_sheet_textured",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "b242ba39491f8ea627c979b697754800dd674ca1f434d737f971fa3ac9491d5c",
+      "session": "bridge_out1f",
+      "method": "depth_sheet_textured",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_hybrid.png",
+      "sha256": "71fcfdeda557b077ea94930f75feaab39dbec82edda6e15aa4db79cc76a829f6",
+      "session": "bridge_out1f",
+      "method": "hybrid",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_hybrid.png",
+      "sha256": "14bca03b1c5b36b278af021ab740782ef04cb9fe049aee80deab69468747cc02",
+      "session": "bridge_out1f",
+      "method": "hybrid",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_comparison.png",
+      "sha256": "26b2784ad0e1981e184be42d5e8fdb5f977a3a04863236aef7c92d428f1822d3",
+      "session": "bridge_out1f",
+      "view_role": "source_view",
+      "camera_node": 80,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_comparison.png",
+      "sha256": "68888a94d234711ceabe2be8ca8d9322e530d3d2da38dad92a00bd515b286ef0",
+      "session": "bridge_out1f",
+      "view_role": "unused_texture_view",
+      "camera_node": 81,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/oblique_comparison.png",
+      "sha256": "3eb6076ae243e7cb06c50375359f7945ffef24af9409fd32b0d9b42efa5221ba",
+      "session": "bridge_out1f",
+      "view_role": "oblique",
+      "synthetic": false
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "figures": [
+    {
+      "file": "bridge_out1f/source_comparison.png",
+      "sha256": "f89ac166467584b920f3dd52f85f7270a614f0c5d28640a7f39618f611472b30",
+      "session": "bridge_out1f",
+      "view": "source",
+      "camera_node": 80,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/audit_comparison.png",
+      "sha256": "a3ad504bc4b79c18d08413630b606a8303b6641a3ec1726eb25720edf469fe2a",
+      "session": "bridge_out1f",
+      "view": "audit",
+      "camera_node": 81,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/oblique_comparison.png",
+      "sha256": "1d9a0865b3faa8e1facb4a926011e47bca5e85bcf148eb7ecb511c3851409dc3",
+      "session": "bridge_out1f",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/source_geometry.png",
+      "sha256": "69a10eda6e32cd8289b5ddf10baa3831a3bb016db7197a5e4b94df1c21304f8e",
+      "session": "bridge_out1f",
+      "view": "source",
+      "camera_node": 80,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_out1f/audit_geometry.png",
+      "sha256": "d0ce6119c0953cbe695e4fbd9ef062e633183eba40d1a2d9f40f626a7c5b8676",
+      "session": "bridge_out1f",
+      "view": "audit",
+      "camera_node": 81,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_out1f/oblique_geometry.png",
+      "sha256": "670861199d6d93cc5a224bbaec3a4e5a75b15a3ba9fdb64f68d67e1234f06ffc",
+      "session": "bridge_out1f",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    }
+  ]
+}

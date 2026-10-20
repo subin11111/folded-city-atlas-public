@@ -1,0 +1,9 @@
+OpenStreetMap-derived source data and local-coordinate derivatives in this
+gallery are copyright OpenStreetMap contributors and available under the
+Open Database License (ODbL) 1.0:
+https://opendatacommons.org/licenses/odbl/1-0/
+https://www.openstreetmap.org/copyright
+
+Original OSM source: osm_source.xml. Source way IDs and tags are preserved.
+Indoor capture imagery is separate material; this notice does not grant
+permission to redistribute those photographs or textures.

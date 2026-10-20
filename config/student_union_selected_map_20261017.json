@@ -1,0 +1,15 @@
+{
+  "version": "student_union_selected_20261017_v1",
+  "status": "USER_DESIGNATED_WORKING_MAP_NOT_SURVEY_VALIDATED",
+  "user_request": "전체적으로 J04를 쓰는 것이 맞아보임. 지금까지 이야기한 거 바탕으로 전체 지도를 확정하고 서로 합쳐 줘",
+  "anchor_session": "floor2",
+  "preserve_selected_internal_geometry": true,
+  "navigation_ready": false,
+  "sessions": {
+    "outside": {"candidate": "J01", "reason": "User preferred J family; J01 has lower fixed-patch P90 within that family. Not a global accuracy winner."},
+    "lobby": {"candidate": "N05", "reason": "Within user shortlist N04/N05/SE3; attitude-regularized SE3 retains stable shape without N06's extra normal-induced changes."},
+    "bridge_out1f": {"candidate": "H03", "reason": "User preferred H02/H03, which have exactly identical exported poses; use DCS-labelled representative."},
+    "floor2": {"candidate": "J04", "reason": "Explicit user choice prioritizing whole-map appearance despite documented 656/1055 finite-patch regression."},
+    "bridge_12_sub": {"candidate": "H03", "reason": "User preferred H02/H03/H04 and NEW SE3; select conservative H03, with better historical training-closure geometry and no added normal deformation."}
+  }
+}

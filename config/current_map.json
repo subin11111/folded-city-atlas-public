@@ -1,0 +1,12 @@
+{
+  "version": "student_union_selected_20261017_v1",
+  "status": "USER_DESIGNATED_WORKING_MAP_NOT_SURVEY_VALIDATED",
+  "manifest": "outputs/student_union_selected_20261017_v1/manifest.json",
+  "manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "selection": "config/student_union_selected_map_20261017.json",
+  "combined_cloud": "outputs/student_union_selected_20261017_v1/combined.ply",
+  "rviz_config": "outputs/student_union_selected_20261017_v1/SELECTED_WORKING_MAP.rviz",
+  "viewer": "scripts/view_current_map.sh",
+  "navigation_ready": false,
+  "historical_outputs_preserved": true
+}

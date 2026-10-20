@@ -1,0 +1,1524 @@
+{
+  "created_kst": "2026-10-17T01:21:12.395133+09:00",
+  "run_directory": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed",
+  "repository_base_commit_before_result_commit": "e193f99280490c517804c4892b9907444e9ad88b",
+  "semantic_masks_by_stage": {
+    "outside": {
+      "optimization": null,
+      "exports": {
+        "raw": null,
+        "app": null,
+        "optimized": null
+      },
+      "overlap": null
+    },
+    "lobby": {
+      "optimization": null,
+      "exports": {
+        "raw": null,
+        "app": null,
+        "optimized": null
+      },
+      "overlap": null
+    }
+  },
+  "semantic_mask_decision": "Disabled. Current reviewed run rejected low-light static pillars, shadows, posters and vending-machine false positives; the masked trial remains in outputs/student_union_20261017.",
+  "verification": {
+    "tests": {
+      "command": "OPENBLAS_NUM_THREADS=1 /usr/bin/python3 -m pytest -q tests",
+      "result": "23 passed in 1.76s",
+      "log": "logs/tests.log"
+    },
+    "python_compile": "Changed processing/visualization scripts passed py_compile; source inventory in artifact_manifest.json",
+    "shell_syntax": "bash -n scripts/process_student_union.sh scripts/view_session.sh passed",
+    "rviz": {
+      "outside": "RViz launched, OpenGL initialized; independent session window left running",
+      "lobby": "Publisher-only smoke test completed; test publisher terminated",
+      "received_cloud_width": {
+        "outside": 634662,
+        "lobby": 1995008
+      },
+      "received_app_path_frame": {
+        "outside": "outside_map",
+        "lobby": "lobby_map"
+      },
+      "subscriber_flags": "--once --qos-durability transient_local --qos-reliability reliable",
+      "cross_session_tf": "Not published",
+      "gui_pixels_automatically_verified": false
+    },
+    "figures": "Both final cloud comparison PNGs inspected; remaining duplicated/thick geometry visible",
+    "app_reference_csv_previous_and_reviewed_sha256": {
+      "outside": "9ab376f50d3f47fffa2021c7dafa93944f91481439e80fa7361682653bfa786c",
+      "lobby": "957c6c4deaf7069b44e6de424eaed7094017c33d7cedf78fe29c7c279e46aa4e"
+    }
+  },
+  "sessions": {
+    "outside": {
+      "input_db": {
+        "file": "261016-234854-outside.db",
+        "bytes": 84443136,
+        "sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91"
+      },
+      "optimization": {
+        "started_utc": "2026-10-16T16:11:41.645853+00:00",
+        "finished_utc": "2026-10-16T16:11:47.513460+00:00",
+        "elapsed_seconds": 5.867607831999976,
+        "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db",
+        "database_open_mode": "read-only",
+        "baseline": "Node.pose (stored ARKit/VIO odometry); app optimized graph is separately benchmarked when supplied",
+        "provenance": {
+          "command": "/usr/bin/python3 src/optimize_session.py data/raw/rtabmap/261016-234854-outside.db --output outputs/student_union_20261017_reviewed/outside --reference-trajectory outputs/student_union_20261017/audit/outside/app_optimized_trajectory.csv",
+          "working_directory": "/home/subin/folded-city-atlas",
+          "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+          "numpy": "1.21.5",
+          "scipy": "1.8.0",
+          "opencv": "4.5.4",
+          "thread_environment": {
+            "OMP_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1",
+            "MKL_NUM_THREADS": null
+          },
+          "source_sha256": {
+            "/home/subin/folded-city-atlas/src/optimize_session.py": "a6da368b4e0607d3f8133b53023302c4631c0ee37300ea993cac55238bde45cc",
+            "/home/subin/folded-city-atlas/src/export_rtabmap_db.py": "743941f629d8fb3073cc7a82bff771f9c94c3540511bd05d385d40f9614552b3"
+          },
+          "database_sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+          "mask_report_sha256": null
+        },
+        "method": "gravity-preserving 4-DoF pose graph; bidirectional trimmed point-to-point ICP loop verification",
+        "parameters": {
+          "db": "data/raw/rtabmap/261016-234854-outside.db",
+          "output": "outputs/student_union_20261017_reviewed/outside",
+          "mask_dir": null,
+          "reference_trajectory": "outputs/student_union_20261017/audit/outside/app_optimized_trajectory.csv",
+          "odom_model_sigma_m": 0.03,
+          "odom_model_sigma_degrees": 0.5,
+          "max_evaluations": 300
+        },
+        "coordinate_convention": "T_w_i maps node i to world; Z_i_j maps node j to i. E=inv(Z_i_j)@inv(T_w_i)@T_w_j; residual=[E.translation,SO3_log(E.rotation)]",
+        "robust_loss": "block Huber delta=3 on each full-covariance-whitened 6D edge; odometry and training loops; not per-scalar Huber",
+        "covariance_model": "Original full matrices retained. Odometry effective covariance = original covariance + diag(model_translation_sigma^2 x3, model_rotation_sigma^2 x3). Verified loops retain original measurement and full covariance; refined ICP transforms are not substituted.",
+        "loop_validation_thresholds": {
+          "minimum_bidirectional_overlap": 0.45,
+          "maximum_bidirectional_rmse_m": 0.075,
+          "maximum_refinement_m": 0.25,
+          "maximum_refinement_degrees": 5,
+          "maximum_cycle_m": 0.1,
+          "maximum_cycle_degrees": 2,
+          "icp_correspondence_m": 0.22,
+          "icp_trim_fraction": 0.8,
+          "overlap_distance_m": 0.15,
+          "icp_max_iterations_per_direction": 20
+        },
+        "total_poses": 354,
+        "odometry_pairs": 352,
+        "stored_valid_loop_pairs": 34,
+        "verified_loop_pairs": 11,
+        "training_loop_pairs": 9,
+        "held_out_loop_pairs": 2,
+        "invalid_link_rows": [
+          {
+            "from_id": 349,
+            "to_id": 348,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          }
+        ],
+        "components": [
+          {
+            "id": 0,
+            "size": 353,
+            "anchor": 1
+          },
+          {
+            "id": 1,
+            "size": 1,
+            "anchor": 349
+          }
+        ],
+        "solver": {
+          "success": true,
+          "status": 2,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 18,
+          "njev": 18,
+          "initial_block_huber_cost": 10.417965828145627,
+          "final_block_huber_cost": 2.4843934028740238,
+          "optimality": 0.000141634842387747,
+          "active_bounds": 0,
+          "component_anchors": [
+            1,
+            349
+          ],
+          "variable_nodes": 352,
+          "accepted_for_output": true,
+          "rejection_reasons": []
+        },
+        "metrics": {
+          "node_pose_baseline": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 7.880198150986508e-07,
+              "translation_p90_m": 1.7537881563779589e-06,
+              "translation_max_m": 3.1509631396812417e-06,
+              "rotation_median_degrees": 1.5311648474137607e-06,
+              "rotation_p90_degrees": 4.832379700058651e-06
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.7051110551390161,
+              "translation_p90_m": 1.3636215559157385,
+              "translation_max_m": 1.8157143183830318,
+              "rotation_median_degrees": 1.8219074683447698,
+              "rotation_p90_degrees": 3.7729709820433603
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 0.9871172021533142,
+              "translation_p90_m": 1.5313586466654774,
+              "translation_max_m": 1.6674190077935183,
+              "rotation_median_degrees": 1.8410775191330369,
+              "rotation_p90_degrees": 2.613637028255227
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.2720057721369552,
+              "clipped_rmse_median_m": 0.188693020682586,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.2474370112945265,
+              "clipped_rmse_median_m": 0.18851070309068962,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.1340157498558149,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "candidate_optimized": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 0.0006646599170626145,
+              "translation_p90_m": 0.004078053425978325,
+              "translation_max_m": 0.00488671256001334,
+              "rotation_median_degrees": 0.010122632239998243,
+              "rotation_p90_degrees": 0.03492728543380262
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.3777988039842917,
+              "translation_p90_m": 0.9640144636783032,
+              "translation_max_m": 1.7809960124547322,
+              "rotation_median_degrees": 1.900794936703505,
+              "rotation_p90_degrees": 3.1696062052470726
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 1.0214041851089308,
+              "translation_p90_m": 1.588552309074375,
+              "translation_max_m": 1.730339340065736,
+              "rotation_median_degrees": 2.1322030690661293,
+              "rotation_p90_degrees": 2.7800286491608466
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.3812576236449261,
+              "clipped_rmse_median_m": 0.16540227368275245,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.5673908370947209,
+              "clipped_rmse_median_m": 0.16411043469401895,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.13355542368341994,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "app_saved_optimized": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 8.001370639707624e-05,
+              "translation_p90_m": 0.0005883626399932939,
+              "translation_max_m": 0.001772230591798578,
+              "rotation_median_degrees": 0.003920463305077182,
+              "rotation_p90_degrees": 0.015837257665852422
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.6475086119368574,
+              "translation_p90_m": 1.2971651200478747,
+              "translation_max_m": 1.8168903062766613,
+              "rotation_median_degrees": 1.7152790126971553,
+              "rotation_p90_degrees": 3.7576615551216923
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 0.9932015055649985,
+              "translation_p90_m": 1.549420280128969,
+              "translation_max_m": 1.6884749737699614,
+              "rotation_median_degrees": 2.0546656643885863,
+              "rotation_p90_degrees": 2.923862728655843
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.3825400435575247,
+              "clipped_rmse_median_m": 0.16594590565332726,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.43067251530576345,
+              "clipped_rmse_median_m": 0.1685853011178973,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.13405604040741795,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          }
+        },
+        "app_saved_solution_comparison": {
+          "held_out_loop_geometry": {
+            "candidate_pairs": 2,
+            "app_pairs": 2,
+            "candidate_minus_app_clipped_rmse_m": -0.0005436319705748038,
+            "candidate_minus_app_overlap": -0.001282419912598587
+          },
+          "all_verified_loop_geometry": {
+            "candidate_pairs": 11,
+            "app_pairs": 11,
+            "candidate_minus_app_clipped_rmse_m": -0.004474866423878343,
+            "candidate_minus_app_overlap": 0.1367183217889575
+          },
+          "adjacent_geometry": {
+            "candidate_pairs": 71,
+            "app_pairs": 71,
+            "candidate_minus_app_clipped_rmse_m": -0.0005006167239980097,
+            "candidate_minus_app_overlap": 0.0
+          },
+          "interpretation": "This candidate is experimental. Acceptance guards compare with Node.pose, not a best-map selection. Positive RMSE difference favors the saved app solution; mixed or small changes do not establish superiority. No automated selection of a universally best solution from this limited internal geometry test."
+        },
+        "output_status": "experimental_candidate_passed_Node_pose_consistency_guards",
+        "best_solution_claim": false,
+        "main_component_export": {
+          "node_count": 353,
+          "raw_trajectory": "raw_main_trajectory.csv",
+          "optimized_trajectory": "optimized_main_trajectory.csv",
+          "excluded_node_ids": [
+            349
+          ],
+          "note": "Full CSVs retain every node; isolated nodes remain exactly at their own raw pose. Main-component CSVs exclude them for map export without arbitrary correction propagation."
+        },
+        "corrections": {
+          "translation_median_m": 0.18856969823426417,
+          "translation_p95_m": 0.5363150977318475,
+          "translation_max_m": 0.6373461419662046,
+          "rotation_max_degrees": 2.187274124754709
+        },
+        "floor_observation_count": 349,
+        "floor_factors": 0,
+        "extrinsic_correction": "none",
+        "gnss_factors": 0,
+        "mask_directory": null,
+        "limitations": [
+          "No independent surveyed ground truth; held-out depth geometry is an internal consistency test.",
+          "4-DoF preserves measured gravity attitude; does not repair roll/pitch bias.",
+          "No global floor-height or normal factor, preserving outdoor slopes/stairs.",
+          "No new visual loop discovery, feature RANSAC, adjacent ICP refinement, GNSS prior, TSDF or cross-session merge in this stage.",
+          "Per-edge covariance is a local tangent approximation; optional odometry model noise is a modeling assumption, not calibrated uncertainty.",
+          "With no mask directory, moving objects have not been semantically removed."
+        ]
+      },
+      "exports": {
+        "raw": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/outside/raw_main_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 353,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            349
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 353,
+          "decoded_depth_frames": 353,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 8983815,
+          "output_points": 689663,
+          "cloud_bounds_min_m": [
+            0.5905910730361938,
+            -14.105057716369629,
+            -1.8328232765197754
+          ],
+          "cloud_bounds_max_m": [
+            22.527544021606445,
+            6.475308895111084,
+            3.3167476654052734
+          ],
+          "cloud_extent_m": [
+            21.936952590942383,
+            20.580366134643555,
+            5.149570941925049
+          ],
+          "trajectory_length_m": 222.73609776500447,
+          "trajectory_extent_m": [
+            18.54612171649933,
+            14.722562789916992,
+            1.4173823595046997
+          ]
+        },
+        "app": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/audit/outside/app_optimized_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 353,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            349
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 353,
+          "decoded_depth_frames": 353,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 8983815,
+          "output_points": 654550,
+          "cloud_bounds_min_m": [
+            0.5999534726142883,
+            -14.118069648742676,
+            -1.6337326765060425
+          ],
+          "cloud_bounds_max_m": [
+            22.52094268798828,
+            6.547225475311279,
+            3.320204257965088
+          ],
+          "cloud_extent_m": [
+            21.920989990234375,
+            20.665294647216797,
+            4.95393705368042
+          ],
+          "trajectory_length_m": 222.73934418770418,
+          "trajectory_extent_m": [
+            18.547165781259537,
+            14.752211570739746,
+            1.2229773849248886
+          ]
+        },
+        "optimized": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/outside/optimized_main_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 353,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            349
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 353,
+          "decoded_depth_frames": 353,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 8983815,
+          "output_points": 634662,
+          "cloud_bounds_min_m": [
+            0.5905871391296387,
+            -14.197291374206543,
+            -1.8328241109848022
+          ],
+          "cloud_bounds_max_m": [
+            22.563186645507812,
+            6.604844093322754,
+            3.118619680404663
+          ],
+          "cloud_extent_m": [
+            21.972599029541016,
+            20.802135467529297,
+            4.951443672180176
+          ],
+          "trajectory_length_m": 222.7620491371245,
+          "trajectory_extent_m": [
+            18.64209484773247,
+            14.750925272176097,
+            1.1920224891829123
+          ]
+        }
+      },
+      "stored_covariance_ablation": {
+        "parameters": {
+          "db": "data/raw/rtabmap/261016-234854-outside.db",
+          "output": "outputs/student_union_20261017_reviewed/outside/stored_covariance_baseline",
+          "mask_dir": null,
+          "reference_trajectory": "outputs/student_union_20261017/audit/outside/app_optimized_trajectory.csv",
+          "odom_model_sigma_m": 0.0,
+          "odom_model_sigma_degrees": 0.0,
+          "max_evaluations": 300
+        },
+        "solver": {
+          "success": true,
+          "status": 2,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 16,
+          "njev": 16,
+          "initial_block_huber_cost": 10.41799175700942,
+          "final_block_huber_cost": 9.734541331161104,
+          "optimality": 0.0024304113784293225,
+          "active_bounds": 0,
+          "component_anchors": [
+            1,
+            349
+          ],
+          "variable_nodes": 352,
+          "accepted_for_output": true,
+          "rejection_reasons": []
+        },
+        "metrics": {
+          "node_pose_baseline": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 7.880198150986508e-07,
+              "translation_p90_m": 1.7537881563779589e-06,
+              "translation_max_m": 3.1509631396812417e-06,
+              "rotation_median_degrees": 1.5311648474137607e-06,
+              "rotation_p90_degrees": 4.832379700058651e-06
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.7051110551390161,
+              "translation_p90_m": 1.3636215559157385,
+              "translation_max_m": 1.8157143183830318,
+              "rotation_median_degrees": 1.8219074683447698,
+              "rotation_p90_degrees": 3.7729709820433603
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 0.9871172021533142,
+              "translation_p90_m": 1.5313586466654774,
+              "translation_max_m": 1.6674190077935183,
+              "rotation_median_degrees": 1.8410775191330369,
+              "rotation_p90_degrees": 2.613637028255227
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.2720057721369552,
+              "clipped_rmse_median_m": 0.188693020682586,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.2474370112945265,
+              "clipped_rmse_median_m": 0.18851070309068962,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.1340157498558149,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "candidate_optimized": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 1.3196417301148383e-05,
+              "translation_p90_m": 0.0005588377143263504,
+              "translation_max_m": 0.00113985170189382,
+              "rotation_median_degrees": 4.7461261861098084e-05,
+              "rotation_p90_degrees": 0.00018331083455876485
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.6966032086057828,
+              "translation_p90_m": 1.3471139323220915,
+              "translation_max_m": 1.8156094954694506,
+              "rotation_median_degrees": 1.8079413405721618,
+              "rotation_p90_degrees": 3.771457922723277
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 0.9864982917432359,
+              "translation_p90_m": 1.5352971975514262,
+              "translation_max_m": 1.6724969240034737,
+              "rotation_median_degrees": 1.8431898466750443,
+              "rotation_p90_degrees": 2.6152392938881377
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.31304722878066094,
+              "clipped_rmse_median_m": 0.1848058842049275,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.25291275930662116,
+              "clipped_rmse_median_m": 0.18135104244179207,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.1340026834728128,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "app_saved_optimized": {
+            "odometry": {
+              "count": 352,
+              "translation_median_m": 8.001370639707624e-05,
+              "translation_p90_m": 0.0005883626399932939,
+              "translation_max_m": 0.001772230591798578,
+              "rotation_median_degrees": 0.003920463305077182,
+              "rotation_p90_degrees": 0.015837257665852422
+            },
+            "training_loops": {
+              "count": 9,
+              "translation_median_m": 0.6475086119368574,
+              "translation_p90_m": 1.2971651200478747,
+              "translation_max_m": 1.8168903062766613,
+              "rotation_median_degrees": 1.7152790126971553,
+              "rotation_p90_degrees": 3.7576615551216923
+            },
+            "held_out_loops": {
+              "count": 2,
+              "translation_median_m": 0.9932015055649985,
+              "translation_p90_m": 1.549420280128969,
+              "translation_max_m": 1.6884749737699614,
+              "rotation_median_degrees": 2.0546656643885863,
+              "rotation_p90_degrees": 2.923862728655843
+            },
+            "held_out_loop_geometry": {
+              "count": 2,
+              "overlap_median": 0.3825400435575247,
+              "clipped_rmse_median_m": 0.16594590565332726,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 11,
+              "overlap_median": 0.43067251530576345,
+              "clipped_rmse_median_m": 0.1685853011178973,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 71,
+              "overlap_median": 0.712790070156503,
+              "clipped_rmse_median_m": 0.13405604040741795,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          }
+        },
+        "corrections": {
+          "translation_median_m": 0.01324064390111585,
+          "translation_p95_m": 0.02673188589133565,
+          "translation_max_m": 0.027532310880780696,
+          "rotation_max_degrees": 0.01569388694017301
+        }
+      }
+    },
+    "lobby": {
+      "input_db": {
+        "file": "261017-000622-1f.db",
+        "bytes": 227119104,
+        "sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c"
+      },
+      "optimization": {
+        "started_utc": "2026-10-16T16:11:41.645793+00:00",
+        "finished_utc": "2026-10-16T16:11:59.344388+00:00",
+        "elapsed_seconds": 17.698595716,
+        "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db",
+        "database_open_mode": "read-only",
+        "baseline": "Node.pose (stored ARKit/VIO odometry); app optimized graph is separately benchmarked when supplied",
+        "provenance": {
+          "command": "/usr/bin/python3 src/optimize_session.py data/raw/rtabmap/261017-000622-1f.db --output outputs/student_union_20261017_reviewed/lobby --reference-trajectory outputs/student_union_20261017/audit/lobby/app_optimized_trajectory.csv",
+          "working_directory": "/home/subin/folded-city-atlas",
+          "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+          "numpy": "1.21.5",
+          "scipy": "1.8.0",
+          "opencv": "4.5.4",
+          "thread_environment": {
+            "OMP_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1",
+            "MKL_NUM_THREADS": null
+          },
+          "source_sha256": {
+            "/home/subin/folded-city-atlas/src/optimize_session.py": "a6da368b4e0607d3f8133b53023302c4631c0ee37300ea993cac55238bde45cc",
+            "/home/subin/folded-city-atlas/src/export_rtabmap_db.py": "743941f629d8fb3073cc7a82bff771f9c94c3540511bd05d385d40f9614552b3"
+          },
+          "database_sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+          "mask_report_sha256": null
+        },
+        "method": "gravity-preserving 4-DoF pose graph; bidirectional trimmed point-to-point ICP loop verification",
+        "parameters": {
+          "db": "data/raw/rtabmap/261017-000622-1f.db",
+          "output": "outputs/student_union_20261017_reviewed/lobby",
+          "mask_dir": null,
+          "reference_trajectory": "outputs/student_union_20261017/audit/lobby/app_optimized_trajectory.csv",
+          "odom_model_sigma_m": 0.03,
+          "odom_model_sigma_degrees": 0.5,
+          "max_evaluations": 300
+        },
+        "coordinate_convention": "T_w_i maps node i to world; Z_i_j maps node j to i. E=inv(Z_i_j)@inv(T_w_i)@T_w_j; residual=[E.translation,SO3_log(E.rotation)]",
+        "robust_loss": "block Huber delta=3 on each full-covariance-whitened 6D edge; odometry and training loops; not per-scalar Huber",
+        "covariance_model": "Original full matrices retained. Odometry effective covariance = original covariance + diag(model_translation_sigma^2 x3, model_rotation_sigma^2 x3). Verified loops retain original measurement and full covariance; refined ICP transforms are not substituted.",
+        "loop_validation_thresholds": {
+          "minimum_bidirectional_overlap": 0.45,
+          "maximum_bidirectional_rmse_m": 0.075,
+          "maximum_refinement_m": 0.25,
+          "maximum_refinement_degrees": 5,
+          "maximum_cycle_m": 0.1,
+          "maximum_cycle_degrees": 2,
+          "icp_correspondence_m": 0.22,
+          "icp_trim_fraction": 0.8,
+          "overlap_distance_m": 0.15,
+          "icp_max_iterations_per_direction": 20
+        },
+        "total_poses": 958,
+        "odometry_pairs": 948,
+        "stored_valid_loop_pairs": 60,
+        "verified_loop_pairs": 36,
+        "training_loop_pairs": 29,
+        "held_out_loop_pairs": 7,
+        "invalid_link_rows": [
+          {
+            "from_id": 185,
+            "to_id": 184,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          },
+          {
+            "from_id": 319,
+            "to_id": 318,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          },
+          {
+            "from_id": 320,
+            "to_id": 318,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          },
+          {
+            "from_id": 321,
+            "to_id": 318,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          },
+          {
+            "from_id": 398,
+            "to_id": 397,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          },
+          {
+            "from_id": 736,
+            "to_id": 735,
+            "type": 1,
+            "reason": "singular_or_invalid_rotation"
+          }
+        ],
+        "components": [
+          {
+            "id": 0,
+            "size": 949,
+            "anchor": 1
+          },
+          {
+            "id": 1,
+            "size": 1,
+            "anchor": 175
+          },
+          {
+            "id": 2,
+            "size": 1,
+            "anchor": 185
+          },
+          {
+            "id": 3,
+            "size": 1,
+            "anchor": 319
+          },
+          {
+            "id": 4,
+            "size": 1,
+            "anchor": 320
+          },
+          {
+            "id": 5,
+            "size": 1,
+            "anchor": 321
+          },
+          {
+            "id": 6,
+            "size": 1,
+            "anchor": 398
+          },
+          {
+            "id": 7,
+            "size": 1,
+            "anchor": 727
+          },
+          {
+            "id": 8,
+            "size": 1,
+            "anchor": 736
+          },
+          {
+            "id": 9,
+            "size": 1,
+            "anchor": 904
+          }
+        ],
+        "solver": {
+          "success": true,
+          "status": 2,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 63,
+          "njev": 63,
+          "initial_block_huber_cost": 20.841793375235568,
+          "final_block_huber_cost": 6.8387826292334175,
+          "optimality": 0.0011549655093174777,
+          "active_bounds": 0,
+          "component_anchors": [
+            1,
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "variable_nodes": 948,
+          "accepted_for_output": true,
+          "rejection_reasons": []
+        },
+        "metrics": {
+          "node_pose_baseline": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 7.222929845572734e-07,
+              "translation_p90_m": 1.911145145883389e-06,
+              "translation_max_m": 5.161633368344737e-06,
+              "rotation_median_degrees": 1.4999282835711226e-06,
+              "rotation_p90_degrees": 5.000922383040371e-06
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.19936427265683063,
+              "translation_p90_m": 0.721858119721226,
+              "translation_max_m": 1.0552784507775987,
+              "rotation_median_degrees": 1.1244966926515392,
+              "rotation_p90_degrees": 4.005925946743818
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.25756522469357207,
+              "translation_p90_m": 1.7541905206366781,
+              "translation_max_m": 2.7189941889920317,
+              "rotation_median_degrees": 1.619765447313027,
+              "rotation_p90_degrees": 8.016654609539692
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.552862981463898,
+              "clipped_rmse_median_m": 0.1661974086152362,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5508685327039677,
+              "clipped_rmse_median_m": 0.1572089692601558,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.13406788377122564,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "candidate_optimized": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 0.001211905832729951,
+              "translation_p90_m": 0.003126417760281099,
+              "translation_max_m": 0.013766973257688575,
+              "rotation_median_degrees": 0.006028608603766788,
+              "rotation_p90_degrees": 0.034463250138649475
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.0655955441996102,
+              "translation_p90_m": 0.5518883893585927,
+              "translation_max_m": 0.5995476747497558,
+              "rotation_median_degrees": 0.7779470024850341,
+              "rotation_p90_degrees": 1.7506736001792382
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.19075471910227487,
+              "translation_p90_m": 1.3810952095083535,
+              "translation_max_m": 2.5165715173073053,
+              "rotation_median_degrees": 1.0982440196856562,
+              "rotation_p90_degrees": 6.562953833854227
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.5488740839440374,
+              "clipped_rmse_median_m": 0.1660161234564789,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5681422969952536,
+              "clipped_rmse_median_m": 0.15090610920154124,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.13396572206490587,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "app_saved_optimized": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 7.511171921971364e-05,
+              "translation_p90_m": 0.00037555452322130466,
+              "translation_max_m": 0.00375882562954636,
+              "rotation_median_degrees": 0.002891521815018706,
+              "rotation_p90_degrees": 0.014944886918289912
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.16586387316517218,
+              "translation_p90_m": 0.7138452436099701,
+              "translation_max_m": 0.7897983893608679,
+              "rotation_median_degrees": 1.096298470057654,
+              "rotation_p90_degrees": 3.99200183606217
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.20084020639908676,
+              "translation_p90_m": 1.5529927958833363,
+              "translation_max_m": 2.6831752672349927,
+              "rotation_median_degrees": 1.676712127242182,
+              "rotation_p90_degrees": 7.998484118035021
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.5542642305916496,
+              "clipped_rmse_median_m": 0.15907052151683101,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5454247982226541,
+              "clipped_rmse_median_m": 0.1536638525485663,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.1340873513713357,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          }
+        },
+        "app_saved_solution_comparison": {
+          "held_out_loop_geometry": {
+            "candidate_pairs": 7,
+            "app_pairs": 7,
+            "candidate_minus_app_clipped_rmse_m": 0.006945601939647883,
+            "candidate_minus_app_overlap": -0.005390146647612282
+          },
+          "all_verified_loop_geometry": {
+            "candidate_pairs": 36,
+            "app_pairs": 36,
+            "candidate_minus_app_clipped_rmse_m": -0.0027577433470250545,
+            "candidate_minus_app_overlap": 0.022717498772599543
+          },
+          "adjacent_geometry": {
+            "candidate_pairs": 64,
+            "app_pairs": 64,
+            "candidate_minus_app_clipped_rmse_m": -0.00012162930642983794,
+            "candidate_minus_app_overlap": 0.0
+          },
+          "interpretation": "This candidate is experimental. Acceptance guards compare with Node.pose, not a best-map selection. Positive RMSE difference favors the saved app solution; mixed or small changes do not establish superiority. No automated selection of a universally best solution from this limited internal geometry test."
+        },
+        "output_status": "experimental_candidate_passed_Node_pose_consistency_guards",
+        "best_solution_claim": false,
+        "main_component_export": {
+          "node_count": 949,
+          "raw_trajectory": "raw_main_trajectory.csv",
+          "optimized_trajectory": "optimized_main_trajectory.csv",
+          "excluded_node_ids": [
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "note": "Full CSVs retain every node; isolated nodes remain exactly at their own raw pose. Main-component CSVs exclude them for map export without arbitrary correction propagation."
+        },
+        "corrections": {
+          "translation_median_m": 0.43408639176774744,
+          "translation_p95_m": 0.7093884181174761,
+          "translation_max_m": 0.9176506642591731,
+          "rotation_max_degrees": 4.817376193319565
+        },
+        "floor_observation_count": 942,
+        "floor_factors": 0,
+        "extrinsic_correction": "none",
+        "gnss_factors": 0,
+        "mask_directory": null,
+        "limitations": [
+          "No independent surveyed ground truth; held-out depth geometry is an internal consistency test.",
+          "4-DoF preserves measured gravity attitude; does not repair roll/pitch bias.",
+          "No global floor-height or normal factor, preserving outdoor slopes/stairs.",
+          "No new visual loop discovery, feature RANSAC, adjacent ICP refinement, GNSS prior, TSDF or cross-session merge in this stage.",
+          "Per-edge covariance is a local tangent approximation; optional odometry model noise is a modeling assumption, not calibrated uncertainty.",
+          "With no mask directory, moving objects have not been semantically removed."
+        ]
+      },
+      "exports": {
+        "raw": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/lobby/raw_main_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 949,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 949,
+          "decoded_depth_frames": 949,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 27862918,
+          "output_points": 2060669,
+          "cloud_bounds_min_m": [
+            -29.450204849243164,
+            -28.722217559814453,
+            -1.9119857549667358
+          ],
+          "cloud_bounds_max_m": [
+            4.730836391448975,
+            18.82036590576172,
+            4.81175422668457
+          ],
+          "cloud_extent_m": [
+            34.1810417175293,
+            47.54258346557617,
+            6.723740100860596
+          ],
+          "trajectory_length_m": 444.23957860308457,
+          "trajectory_extent_m": [
+            27.202553153038025,
+            40.82463550567627,
+            1.7863910272717476
+          ]
+        },
+        "app": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/audit/lobby/app_optimized_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 949,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 949,
+          "decoded_depth_frames": 949,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 27862918,
+          "output_points": 1991172,
+          "cloud_bounds_min_m": [
+            -29.117341995239258,
+            -28.920846939086914,
+            -1.378899335861206
+          ],
+          "cloud_bounds_max_m": [
+            4.659825801849365,
+            18.814599990844727,
+            4.920195579528809
+          ],
+          "cloud_extent_m": [
+            33.77716827392578,
+            47.73544692993164,
+            6.299095153808594
+          ],
+          "trajectory_length_m": 444.2433609722467,
+          "trajectory_extent_m": [
+            26.890653014183044,
+            40.963735580444336,
+            1.3203007280826569
+          ]
+        },
+        "optimized": {
+          "source_database": "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db",
+          "database_open_mode": "read-only",
+          "pose_source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_reviewed/lobby/optimized_main_trajectory.csv",
+          "local_correction_source": "identity",
+          "total_pose_frames": 949,
+          "missing_pose_policy": "skip",
+          "skipped_missing_pose_ids": [
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "mask_directory": null,
+          "masked_valid_depth_points": 0,
+          "selected_depth_frames": 949,
+          "decoded_depth_frames": 949,
+          "frame_stride": 1,
+          "pixel_stride": 1,
+          "confidence_threshold": 50,
+          "depth_range_m": [
+            0.25,
+            4.0
+          ],
+          "voxel_size_m": 0.05,
+          "valid_input_points": 27862918,
+          "output_points": 1995008,
+          "cloud_bounds_min_m": [
+            -29.595739364624023,
+            -28.640972137451172,
+            -1.9119023084640503
+          ],
+          "cloud_bounds_max_m": [
+            4.730818748474121,
+            18.754981994628906,
+            4.417856216430664
+          ],
+          "cloud_extent_m": [
+            34.32655715942383,
+            47.39595413208008,
+            6.329758644104004
+          ],
+          "trajectory_length_m": 444.2124949460566,
+          "trajectory_extent_m": [
+            27.260034477676545,
+            40.773729238919366,
+            1.4363048206237503
+          ]
+        }
+      },
+      "stored_covariance_ablation": {
+        "parameters": {
+          "db": "data/raw/rtabmap/261017-000622-1f.db",
+          "output": "outputs/student_union_20261017_reviewed/lobby/stored_covariance_baseline",
+          "mask_dir": null,
+          "reference_trajectory": "outputs/student_union_20261017/audit/lobby/app_optimized_trajectory.csv",
+          "odom_model_sigma_m": 0.0,
+          "odom_model_sigma_degrees": 0.0,
+          "max_evaluations": 300
+        },
+        "solver": {
+          "success": true,
+          "status": 2,
+          "message": "`ftol` termination condition is satisfied.",
+          "nfev": 28,
+          "njev": 28,
+          "initial_block_huber_cost": 20.841870947748568,
+          "final_block_huber_cost": 19.602611422573972,
+          "optimality": 0.02586885371512753,
+          "active_bounds": 0,
+          "component_anchors": [
+            1,
+            175,
+            185,
+            319,
+            320,
+            321,
+            398,
+            727,
+            736,
+            904
+          ],
+          "variable_nodes": 948,
+          "accepted_for_output": true,
+          "rejection_reasons": []
+        },
+        "metrics": {
+          "node_pose_baseline": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 7.222929845572734e-07,
+              "translation_p90_m": 1.911145145883389e-06,
+              "translation_max_m": 5.161633368344737e-06,
+              "rotation_median_degrees": 1.4999282835711226e-06,
+              "rotation_p90_degrees": 5.000922383040371e-06
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.19936427265683063,
+              "translation_p90_m": 0.721858119721226,
+              "translation_max_m": 1.0552784507775987,
+              "rotation_median_degrees": 1.1244966926515392,
+              "rotation_p90_degrees": 4.005925946743818
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.25756522469357207,
+              "translation_p90_m": 1.7541905206366781,
+              "translation_max_m": 2.7189941889920317,
+              "rotation_median_degrees": 1.619765447313027,
+              "rotation_p90_degrees": 8.016654609539692
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.552862981463898,
+              "clipped_rmse_median_m": 0.1661974086152362,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5508685327039677,
+              "clipped_rmse_median_m": 0.1572089692601558,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.13406788377122564,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "candidate_optimized": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 2.3237886708786503e-05,
+              "translation_p90_m": 0.00024253922068476338,
+              "translation_max_m": 0.0022066441057118345,
+              "rotation_median_degrees": 4.1271640692541445e-05,
+              "rotation_p90_degrees": 0.000241474062283379
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.17415277006911692,
+              "translation_p90_m": 0.7172648816562675,
+              "translation_max_m": 1.0304298185956502,
+              "rotation_median_degrees": 1.124187391957104,
+              "rotation_p90_degrees": 3.9599874759200686
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.24443002102692357,
+              "translation_p90_m": 1.7371626031594432,
+              "translation_max_m": 2.7126865028656777,
+              "rotation_median_degrees": 1.6162354945860498,
+              "rotation_p90_degrees": 7.989831729878327
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.5502209522543775,
+              "clipped_rmse_median_m": 0.16617551030513858,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5501511012352343,
+              "clipped_rmse_median_m": 0.15719466955012584,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.13406975889219924,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          },
+          "app_saved_optimized": {
+            "odometry": {
+              "count": 948,
+              "translation_median_m": 7.511171921971364e-05,
+              "translation_p90_m": 0.00037555452322130466,
+              "translation_max_m": 0.00375882562954636,
+              "rotation_median_degrees": 0.002891521815018706,
+              "rotation_p90_degrees": 0.014944886918289912
+            },
+            "training_loops": {
+              "count": 29,
+              "translation_median_m": 0.16586387316517218,
+              "translation_p90_m": 0.7138452436099701,
+              "translation_max_m": 0.7897983893608679,
+              "rotation_median_degrees": 1.096298470057654,
+              "rotation_p90_degrees": 3.99200183606217
+            },
+            "held_out_loops": {
+              "count": 7,
+              "translation_median_m": 0.20084020639908676,
+              "translation_p90_m": 1.5529927958833363,
+              "translation_max_m": 2.6831752672349927,
+              "rotation_median_degrees": 1.676712127242182,
+              "rotation_p90_degrees": 7.998484118035021
+            },
+            "held_out_loop_geometry": {
+              "count": 7,
+              "overlap_median": 0.5542642305916496,
+              "clipped_rmse_median_m": 0.15907052151683101,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "all_verified_loop_geometry": {
+              "count": 36,
+              "overlap_median": 0.5454247982226541,
+              "clipped_rmse_median_m": 0.1536638525485663,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            },
+            "adjacent_geometry": {
+              "count": 64,
+              "overlap_median": 0.6916625870384783,
+              "clipped_rmse_median_m": 0.1340873513713357,
+              "threshold_m": 0.2,
+              "note": "Held-out voxel samples; geometry is not surveyed ground truth."
+            }
+          }
+        },
+        "corrections": {
+          "translation_median_m": 0.02228494868971634,
+          "translation_p95_m": 0.0382837737928712,
+          "translation_max_m": 0.03895345213542429,
+          "rotation_max_degrees": 0.0375796928063445
+        }
+      }
+    }
+  },
+  "cross_session": {
+    "status": "unmerged_insufficient_verified_overlap",
+    "parameters": {
+      "seed": 20261017,
+      "retrieval_max_side": 480,
+      "retrieval_features": 600,
+      "retrieval_index_features_per_frame": 300,
+      "retrieval_neighbors": 8,
+      "candidate_limit": 240,
+      "candidate_temporal_nms_s": 3.0,
+      "verification_features": 2500,
+      "lowe_ratio": 0.75,
+      "sift_octave_layers": 3,
+      "sift_contrast_threshold": 0.04,
+      "sift_edge_threshold": 10,
+      "sift_sigma": 1.6,
+      "flann_trees": 5,
+      "flann_checks": 96,
+      "retrieval_top_per_outside_frame": 3,
+      "minimum_mutual_matches": 20,
+      "minimum_depth_matches": 20,
+      "min_depth_m": 0.25,
+      "max_depth_m": 5.0,
+      "min_confidence": 50,
+      "depth_patch_range_m": 0.12,
+      "ransac_iterations": 2500,
+      "depth_patch_side_pixels": 3,
+      "minimum_valid_patch_pixels": 5,
+      "minimum_ransac_triangle_cross_norm_m2": 0.002,
+      "ransac_threshold_m": 0.08,
+      "minimum_train_inliers": 12,
+      "minimum_train_inlier_ratio": 0.4,
+      "heldout_fraction": 0.25,
+      "minimum_heldout_inliers": 5,
+      "minimum_heldout_inlier_ratio": 0.5,
+      "maximum_heldout_rmse_m": 0.07,
+      "minimum_image_hull_fraction": 0.04,
+      "minimum_3d_second_std_m": 0.15,
+      "minimum_3d_third_std_m": 0.025,
+      "maximum_3d_condition": 80.0,
+      "voxel_m": 0.05,
+      "icp_iterations": 30,
+      "icp_correspondence_m": 0.15,
+      "icp_trim_percentile": 80,
+      "minimum_symmetric_overlap": 0.4,
+      "cloud_pixel_stride": 2,
+      "icp_minimum_correspondences": 50,
+      "icp_stop_translation_m": 1e-05,
+      "icp_stop_rotation_rad": 1e-05,
+      "icp_overlap_distance_m": 0.15,
+      "maximum_icp_rmse_m": 0.07,
+      "maximum_icp_delta_m": 0.15,
+      "maximum_icp_delta_deg": 5.0,
+      "maximum_gravity_disagreement_deg": 10.0,
+      "minimum_independent_links": 3,
+      "independent_time_s": 8.0,
+      "independent_position_m": 0.75,
+      "session_consistency_m": 0.35,
+      "session_consistency_deg": 5.0
+    },
+    "node_counts": {
+      "outside": 354,
+      "lobby": 958
+    },
+    "verified_candidate_count": 240,
+    "accepted_pair_count": 0,
+    "rejection_counts": {
+      "too_few_mutual_visual_matches": 237,
+      "too_few_valid_depth_matches": 3
+    },
+    "independent_consistent_link_count": 0,
+    "retrieval_candidate_count": 1062,
+    "retrieval_index_descriptor_count": 166262,
+    "stage_execution_counts": {
+      "appearance_retrieval_frames": 1312,
+      "mutual_descriptor_verification_pairs": 240,
+      "depth_unprojection_pairs": 3,
+      "ransac_pairs": 0,
+      "icp_pairs": 0,
+      "heldout_correspondence_validation_pairs": 0
+    },
+    "command": "/usr/bin/python3 src/check_session_overlap.py --outside-db data/raw/rtabmap/261016-234854-outside.db --lobby-db data/raw/rtabmap/261017-000622-1f.db --output outputs/student_union_20261017_reviewed/cross_session --outside-poses outputs/student_union_20261017_reviewed/outside/optimized_main_trajectory.csv --lobby-poses outputs/student_union_20261017_reviewed/lobby/optimized_main_trajectory.csv --candidate-limit 240",
+    "source_code_sha256": "91aa27df5a539c14e1c7e03f7fa83fd68439845f376964727a899916a10d4c2a",
+    "library_versions": {
+      "opencv": "4.5.4",
+      "numpy": "1.21.5"
+    },
+    "pair_results_reused": false,
+    "pair_verification_source_sha256": "91aa27df5a539c14e1c7e03f7fa83fd68439845f376964727a899916a10d4c2a",
+    "semantic_mask_fingerprints": {
+      "outside": null,
+      "lobby": null
+    },
+    "algorithms": [
+      "all-frame RootSIFT descriptor retrieval, FLANN randomized KD trees, weighted frame votes",
+      "mutual nearest-neighbor Lowe-ratio RootSIFT verification",
+      "confidence-gated metric RGB-D unprojection with calibrated optical-to-node transform",
+      "seeded 3D RANSAC SE(3), SVD/Kabsch refit, reflection correction",
+      "training-inlier 3D singular values and RGB convex-hull coverage degeneracy checks",
+      "trimmed point-to-point local ICP, symmetric nearest-neighbor overlap and RMSE",
+      "held-out feature correspondence residual checks after ICP",
+      "gravity and independently separated cross-session transform consensus"
+    ],
+    "limitations": [
+      "Retrieval is appearance-ranked and candidate-limited: rejection does not prove no physical overlap.",
+      "A single planar surface is deliberately insufficient even with visual texture.",
+      "Semantic exclusion masks are used only if paths are recorded; moving/static object labels can be imperfect.",
+      "Held-out feature matches are excluded from RANSAC but their pixels may occur in dense ICP clouds.",
+      "GNSS is not used as evidence for session connection.",
+      "No map merge or joint optimization is performed by this audit."
+    ]
+  },
+  "not_performed": [
+    "GNSS pose priors",
+    "floor flattening",
+    "extrinsic recalibration",
+    "joint graph/map merge if overlap rejected",
+    "TSDF meshing and route generation deferred; this run evaluates session registration and clouds"
+  ]
+}

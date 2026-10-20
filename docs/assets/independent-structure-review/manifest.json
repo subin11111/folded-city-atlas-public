@@ -1,0 +1,240 @@
+{
+  "created_utc": "2026-10-17T06:57:32.414470+00:00",
+  "source_sha256": "aa0a3a2f2098d092957677a155fef673e9225eeb10ce19a49cf019b7028a4a4a",
+  "figures": [
+    {
+      "file": "outside_clouds.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/outside_clouds.png",
+      "sha256": "8b61fa64359da67e918c3f3bc5e0cb46b438b0e7974376a80fdee867fbf25f6b",
+      "size_pixels": [
+        2080,
+        1600
+      ],
+      "caption": "outside: selected incumbent and independent candidate; identical A/B frames and plotting limits.",
+      "synthetic": false
+    },
+    {
+      "file": "lobby_clouds.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/lobby_clouds.png",
+      "sha256": "5afc952f95e191a4bf1b346171b657fc0babb01b35b9845ed59ee5baa301adc5",
+      "size_pixels": [
+        2080,
+        1600
+      ],
+      "caption": "lobby: selected incumbent and independent candidate; identical A/B frames and plotting limits.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f_clouds.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/bridge_out1f_clouds.png",
+      "sha256": "3e1b7484e85f04c04ee899a209ec2d12b08c4c0ac96e834410699f2cab93180a",
+      "size_pixels": [
+        2080,
+        1600
+      ],
+      "caption": "bridge_out1f: selected incumbent and independent candidate; identical A/B frames and plotting limits.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_clouds.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/floor2_clouds.png",
+      "sha256": "78e586b4893bf305c3b0773c52ebaf4578a78fb20015921382e8202f792e9c49",
+      "size_pixels": [
+        2080,
+        1600
+      ],
+      "caption": "floor2: selected incumbent and independent candidate; identical A/B frames and plotting limits.",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub_clouds.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/bridge_12_sub_clouds.png",
+      "sha256": "19b33f16fa9b1889d687e7cf46bdbce3489ef6b5cf4730910dd5058fa4a4c4a6",
+      "size_pixels": [
+        2080,
+        1600
+      ],
+      "caption": "bridge_12_sub: selected incumbent and independent candidate; identical A/B frames and plotting limits.",
+      "synthetic": false
+    },
+    {
+      "file": "independent_fixed_patches.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/figures/fixed_patch_summary.png",
+      "sha256": "aaeaabb7793565998b0b8d27df8d13d3256cbde6e9bf6062f65aed990358797a",
+      "size_pixels": [
+        2880,
+        900
+      ],
+      "caption": "Three independent session portfolios on frozen historical finite patches; bridges have no matching patch inventory.",
+      "synthetic": false
+    },
+    {
+      "file": "directional_comparison.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/directional_diagnostics/directional_comparison.png",
+      "sha256": "6ba07e84862d4c7d4b1f6aec7b40f81e1c01b8465955cba07da51ef6704d6788",
+      "size_pixels": [
+        2160,
+        900
+      ],
+      "caption": "Same wall/floor patch observations; structure_joint fits these planes, so this is training/development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "horizontal_same_samples.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/directional_diagnostics/horizontal_same_samples.png",
+      "sha256": "1c8a7971c61d739857e1218cbf4862600acef48876fe33031ad1634173ab7b4e",
+      "size_pixels": [
+        4180,
+        1628
+      ],
+      "caption": "Same wall/floor patch observations; structure_joint fits these planes, so this is training/development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "wall_same_samples.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/directional_diagnostics/wall_same_samples.png",
+      "sha256": "019441364f0e63b50a1626afe49f96a6fca696192f65cc7bcf1e5d1148d9876f",
+      "size_pixels": [
+        4180,
+        1628
+      ],
+      "caption": "Same wall/floor patch observations; structure_joint fits these planes, so this is training/development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "doorway_train_tracked_reprojection.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/manual_structure_soft_v2/lobby_39__bridge_out1f_79/train_tracked_reprojection.png",
+      "sha256": "c6e40016b1b996d5e3055215e24babdc88c194a86125e573ac52019fe4f3de18",
+      "size_pixels": [
+        1860,
+        1200
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "doorway_test_tracked_reprojection.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/manual_structure_soft_v2/lobby_39__bridge_out1f_79/test_tracked_reprojection.png",
+      "sha256": "720a874b91010e631bbf967bb1598287e453fe01c42063c51ac6a55b2f2bcd57",
+      "size_pixels": [
+        465,
+        1200
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "doorway_withheld_doorway_cloud.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/manual_structure_soft_v2/lobby_39__bridge_out1f_79/withheld_doorway_cloud.png",
+      "sha256": "0eca58158db92e09857a198faf0530769b9e64c276206be0ceb35b8ce3eacc1d",
+      "size_pixels": [
+        1792,
+        1440
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_structure_train_tracked_reprojection.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/floor2_structure_planes_v4/floor2_548__floor2_981/train_tracked_reprojection.png",
+      "sha256": "76b91e9f140a79e485930f2b2e97f66264aab529eef8d4aa32312f9c03acdf79",
+      "size_pixels": [
+        1395,
+        1200
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_structure_test_tracked_reprojection.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/floor2_structure_planes_v4/floor2_548__floor2_981/test_tracked_reprojection.png",
+      "sha256": "8f9d8602414cb601915a5b0767cc444f388f3dec5cbdc0c8b8d4bce3a0d1e8ad",
+      "size_pixels": [
+        465,
+        1200
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "floor2_structure_withheld_doorway_cloud.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/floor2_structure_planes_v4/floor2_548__floor2_981/withheld_doorway_cloud.png",
+      "sha256": "6a03e269106c83da5b6215adea7a84864b56675e920c391c8fe3336f8a21d36b",
+      "size_pixels": [
+        1792,
+        1440
+      ],
+      "caption": "Actual RGB or depth observations. Train is fitted; test uses separate frames but remains correlated development evidence.",
+      "synthetic": false
+    },
+    {
+      "file": "integrated_common_support_all_stages.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration_evaluation/figures/common_support_all_stages.png",
+      "sha256": "c1b54095eab70b93f45b7802ced62e2a0fbc81948e1db46d61563e6397b9e1af",
+      "size_pixels": [
+        2210,
+        1360
+      ],
+      "caption": "Full floor2 frame graph after ONE weak structure factor; remaining defects are preserved.",
+      "synthetic": false
+    },
+    {
+      "file": "integrated_floor2_548_981_wall_0_0.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration_evaluation/figures/floor2_548_981_wall_0_0.png",
+      "sha256": "a5f942244b4b7bf402de5d9a8432b9578b482f431f866fabdf093847b4b00ba4",
+      "size_pixels": [
+        4180,
+        1628
+      ],
+      "caption": "Full floor2 frame graph after ONE weak structure factor; remaining defects are preserved.",
+      "synthetic": false
+    },
+    {
+      "file": "integrated_floor2_656_1055_wall_0_1.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration_evaluation/figures/floor2_656_1055_wall_0_1.png",
+      "sha256": "6a3ed991894b46cc32cac954ee14efd87823a1c46f6176b4a1943d25e616f242",
+      "size_pixels": [
+        4180,
+        1628
+      ],
+      "caption": "Full floor2 frame graph after ONE weak structure factor; remaining defects are preserved.",
+      "synthetic": false
+    },
+    {
+      "file": "integrated_upper_corridor_time_windows_xy.png",
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/structure_integration_evaluation/figures/upper_corridor_time_windows_xy.png",
+      "sha256": "4da5424f75959cbbdd5966ce8c009e9b4630084de5b819796377df68275905a9",
+      "size_pixels": [
+        3080,
+        1400
+      ],
+      "caption": "Full floor2 frame graph after ONE weak structure factor; remaining defects are preserved.",
+      "synthetic": false
+    },
+    {
+      "file": "integrated_dense_cloud.png",
+      "sha256": "fe0ff4b94636ade4b046828066cb85f2f5c2239fd44c8187a1c89114b85f415e",
+      "source_clouds": [
+        {
+          "path": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/floor2/selected/cloud.ply",
+          "sha256": "1936f009a72ec986addd3226a33750f20d560aa0d85eda9542655cd64c1cf774"
+        },
+        {
+          "path": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/clouds/floor2/weak_structure/cloud.ply",
+          "sha256": "147a90ee854920494945b59c898c02667bef59af6fd1eb37210d2f124af3ac63"
+        }
+      ],
+      "synthetic": false,
+      "caption": "Actual dense RGB-D reconstruction; identical source frames; common view bounds."
+    },
+    {
+      "file": "depth_threshold_sweep.png",
+      "sha256": "840eb5f8ed93bded36399c5521c5d221dfdc500e2df45bb468cd9628ced4264a",
+      "synthetic": false,
+      "source": "/home/subin/folded-city-atlas/outputs/student_union_20261017_independent_v1/manual_structure_soft_v2/lobby_39__bridge_out1f_79/report.json"
+    }
+  ],
+  "summary_sha256": "4b822b30f8192ee45a98a957f46e3fa1cc0ac359a0c1f8ff6a5d4e6ee3081bd3",
+  "accepted": false,
+  "navigation": false
+}

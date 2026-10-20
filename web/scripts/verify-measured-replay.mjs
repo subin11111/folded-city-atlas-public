@@ -1,0 +1,48 @@
+import fs from 'node:fs/promises';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const require=createRequire(import.meta.url),{chromium}=require(require.resolve('playwright',{paths:[process.env.PLAYWRIGHT_NODE_MODULES]}));
+const base=process.env.GNSS_TEST_URL||'http://127.0.0.1:8775',out=new URL('../../docs/assets/measured-campus-replay-20261020/',import.meta.url);
+await fs.mkdir(new URL('frames/',out),{recursive:true});
+const browser=await chromium.launch({headless:true,channel:'msedge'}),page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.goto(`${base}/?recording=outside`);await page.waitForFunction(()=>window.foldedCity?.location.state.recording?.session==='outside');
+await page.locator('#loadingScreen').waitFor({state:'hidden'});
+assert.match(await page.locator('#recordingSource').innerText(),/261016-234854-outside\.db/);
+const first=await page.evaluate(()=>window.foldedCity.location.state.replayIndex);await page.waitForTimeout(650);
+assert.ok(await page.evaluate(()=>window.foldedCity.location.state.replayIndex)>first);
+const sessions={};
+for(const id of ['outside','lobby','bridge_out1f','floor2','bridge_12_sub']){
+ await page.evaluate(async id=>{const fc=window.foldedCity;await fc.location.startRecorded(id);fc.location.seek(id==='outside'?120:30);},id);
+ const info=await page.evaluate(()=>{const fc=window.foldedCity,s=fc.location.state;return {mode:s.mode,source:s.recording,rows:s.records.length,raw:s.raw[0],position:s.fix.position,route:s.route,tracks:fc.state.three.stats().locationTracks};});
+ assert.equal(info.mode,'log');assert.equal(info.source.session,id);assert.equal(info.route,null);
+ assert.ok(info.tracks.some(t=>t.kind==='raw-recording'&&t.points===info.rows));
+ assert.ok(info.tracks.some(t=>t.kind==='filtered-recording'&&t.points>1));sessions[id]=info;
+ await page.screenshot({path:fileURLToPath(new URL(`${id}.png`,out))});
+}
+await page.evaluate(async()=>{const fc=window.foldedCity;await fc.location.startRecorded('outside');fc.location.seek(120);});
+assert.equal(await page.locator('#pauseMeasuredReplay').innerText(),'재생');
+await page.locator('#pauseMeasuredReplay').click();await page.waitForTimeout(600);await page.locator('#pauseMeasuredReplay').click();
+assert.ok(await page.evaluate(()=>window.foldedCity.location.state.replayIndex)>120);
+await page.locator('#measuredReplayProgress').fill('50');await page.locator('#measuredReplayProgress').dispatchEvent('input');
+assert.equal(await page.evaluate(()=>window.foldedCity.location.state.recording.session),'outside');
+await page.locator('#evidenceButton').click();await page.locator('#projectInfo summary').first().click();
+assert.equal(await page.locator('#syntheticGnssTools').getAttribute('open'),null);
+assert.equal(await page.locator('#startGnssDemo').isVisible(),false);
+assert.equal(await page.locator('#startRecordedGnss').isVisible(),true);
+await page.locator('#startRecordedGnss').scrollIntoViewIfNeeded();
+await page.screenshot({path:fileURLToPath(new URL('recording-menu.png',out))});
+const download=page.waitForEvent('download');await page.locator('#exportGnssLog').click();const exportFile=await download;
+const exportPath=fileURLToPath(new URL('recorded-browser-export.json',out));await exportFile.saveAs(exportPath);
+const exported=JSON.parse(await fs.readFile(exportPath,'utf8'));assert.equal(exported.simulated,false);assert.equal(exported.recording.source,'261016-234854-outside.db');assert.equal(exported.recording.sha256,sessions.outside.source.sha256);
+await page.locator('#evidenceDialog .dialog-close').click();
+await page.setViewportSize({width:390,height:844});
+await page.evaluate(()=>window.foldedCity.location.seek(120));await page.waitForTimeout(200);
+await page.screenshot({path:fileURLToPath(new URL('mobile.png',out)),fullPage:true});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+await page.setViewportSize({width:1200,height:850});
+await page.evaluate(()=>{const loc=window.foldedCity.location;loc.state.follow=true;loc.seek(0);loc.state.follow=false;});
+for(let i=0;i<24;i++){await page.evaluate(index=>window.foldedCity.location.seek(index),Math.round(i*337/23));await page.screenshot({path:fileURLToPath(new URL(`frames/${String(i).padStart(3,'0')}.png`,out))});}
+assert.deepEqual(errors,[]);
+const report={passed:true,input:'five original measured iOS/RTAB-Map GPS recordings; no synthetic data',sessions,checks:['direct measured replay link','five original DB identities','measured playback advances','seek preserves source metadata','original and filtered tracks in 3D','no OSM planned route while viewing collected track','synthetic test collapsed separately','original DB identity retained in export','mobile layout'],errors,filter_settings_changed:false,coordinates_snapped_to_entrance:false};
+await fs.writeFile(new URL('verification.json',out),JSON.stringify(report,null,2)+'\n');await browser.close();console.log(JSON.stringify({passed:true,checks:report.checks,errors},null,2));

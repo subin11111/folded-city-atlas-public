@@ -1,0 +1,18 @@
+{
+  "status": "EXPERIMENTAL_COMPARISON_ONLY_WITH_REMAINING_LOCAL_REGRESSIONS",
+  "session": "floor2",
+  "candidate": "Z02",
+  "source_candidate": "J04",
+  "source_selected_map_replaced": false,
+  "xy_and_all_rotations_fixed": true,
+  "other_four_sessions_changed": false,
+  "optimization_report": "outputs/student_union_floor2_z_only_v1/report.json",
+  "optimization_report_sha256": "e9b0a35f8601baca839de2331aa2c547d53731a70a60e113feebd671dd85152d",
+  "trajectory": "outputs/student_union_floor2_z_only_v1/Z02.csv",
+  "trajectory_sha256": "7889bb017a33a3c0e9b345462e418218013856f3ecb403b3f9b572dbdb4e4d75",
+  "reconstruction_manifest": "outputs/student_union_floor2_z_rebuild_v1/manifest.json",
+  "reconstruction_manifest_sha256": "b22faa81ecb70183980242d47f74c550a4c46525e8f5071c10fdf497c939ead4",
+  "viewer": "scripts/view_z_only_candidate.sh",
+  "navigation_ready": false,
+  "remaining_limits": "Same-floor centre P10-P90 11.81cm, full range 29.52cm; fixed attachment 553 remains an outlier. Some original depth views regress. No automatic map promotion."
+}

@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-19T00:13:54.080426+00:00",
+  "bundle_manifest_sha256": "a260a27f8f14f2f76c8bf08109491ee5d8da72aa32f5587f9f25c5fb593daa39",
+  "audit_source_sha256": "4c05d80ea4ad3f4d35602466acb3641a19366a9cef4283a7772563f0f7563c0d",
+  "sessions": {
+    "floor2": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 779712,
+      "active_images_checked": 146,
+      "baked_colour_primitives_checked": 3,
+      "image_size_and_alpha_exact": true,
+      "all_surface_colours_only_brighten_and_black_zero_is_preserved": true
+    },
+    "lobby": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 760667,
+      "active_images_checked": 158,
+      "baked_colour_primitives_checked": 6,
+      "image_size_and_alpha_exact": true,
+      "all_surface_colours_only_brighten_and_black_zero_is_preserved": true
+    },
+    "bridge_12_sub": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 276424,
+      "active_images_checked": 2,
+      "baked_colour_primitives_checked": 2,
+      "image_size_and_alpha_exact": true,
+      "all_surface_colours_only_brighten_and_black_zero_is_preserved": true
+    },
+    "bridge_out1f": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 129944,
+      "active_images_checked": 1,
+      "baked_colour_primitives_checked": 1,
+      "image_size_and_alpha_exact": true,
+      "all_surface_colours_only_brighten_and_black_zero_is_preserved": true
+    },
+    "outside": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 272119,
+      "active_images_checked": 18,
+      "baked_colour_primitives_checked": 2,
+      "image_size_and_alpha_exact": true,
+      "all_surface_colours_only_brighten_and_black_zero_is_preserved": true
+    }
+  },
+  "geometry_changes": 0,
+  "pose_changes": 0,
+  "UV_changes": 0,
+  "original_photo_pack_manifest_sha256": "f030034a218e0aaa5ff065d8c77e9e3774a9648920effcbdc9242d8caefd12a5",
+  "original_photo_pack_rewritten": false,
+  "selected_map_unchanged": true,
+  "active_display_colour_changes": true,
+  "source_sign_and_floor_photos_retained_in_binary_prefix": true,
+  "navigation_exported": false,
+  "scope": "Visibility tone derivative only, not texture relighting, recovered clipped detail, observed missing surfaces or navigation approval."
+}

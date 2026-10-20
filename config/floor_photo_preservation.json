@@ -1,0 +1,13 @@
+{
+  "source_bundle": "outputs/student_union_continuous_horizontals_v1",
+  "previous_material_bundle": "outputs/student_union_continuous_horizontals_v5",
+  "strategy": "original_floor_atlas_exact_restore",
+  "charts": [
+    {"id": "lobby_floor_1f", "session": "lobby"},
+    {"id": "floor2_floor_1f", "session": "floor2"},
+    {"id": "floor2_floor_2f", "session": "floor2"},
+    {"id": "sub_floor_1f", "session": "bridge_12_sub"},
+    {"id": "sub_floor_2f", "session": "bridge_12_sub"}
+  ],
+  "scope": "Retract uniform-colour floor materials. Restore the exact photographic floor atlases from before the rejected normalization; no mean-colour replacement, desaturation, local contrast removal or synthetic tile pattern. Keep the completed ceiling/floor geometry unchanged. Existing atlas lighting seams and unobserved-texture limitations remain."
+}

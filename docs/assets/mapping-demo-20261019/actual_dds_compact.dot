@@ -1,0 +1,22 @@
+digraph DDS {rankdir=TB;bgcolor="#eef4f0";nodesep=.22;ranksep=.45;
+node [shape=box,style="rounded,filled",fillcolor="white",fontname="DejaVu Sans",fontsize=18,margin=".15,.12"];
+edge [color="#4c7468",arrowsize=.8];
+"capture_db_replay" [label="Capture DB replay"];
+"rgbd_confidence_filter" [label="RGB-D confidence filter"];
+"stored_loop_reverification" [label="Stored loop re-verification"];
+"incremental_prefix_optimizer" [label="Incremental prefix optimizer"];
+"prefix_cloud_assembler" [label="Prefix cloud assembler"];
+"evidence_recorder" [label="Evidence recorder"];
+"offline_final_artifact_loader" [label="OFFLINE artifact loader"];
+"final_reference_recorder" [label="Final reference recorder"];
+"rviz" [label="RViz"];
+"capture_db_replay" -> "offline_final_artifact_loader";
+"capture_db_replay" -> "rgbd_confidence_filter";
+"evidence_recorder" -> "capture_db_replay" [constraint=false,style=dashed];
+"incremental_prefix_optimizer" -> "prefix_cloud_assembler";
+"offline_final_artifact_loader" -> "final_reference_recorder";
+"prefix_cloud_assembler" -> "evidence_recorder";
+"prefix_cloud_assembler" -> "rviz";
+"rgbd_confidence_filter" -> "stored_loop_reverification";
+"stored_loop_reverification" -> "incremental_prefix_optimizer";
+}

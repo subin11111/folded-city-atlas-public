@@ -1,0 +1,38 @@
+{
+  "documentation_date_kst": "2026-10-20",
+  "web_source_commit": "dc45c6a84bb8af2c10d9d35c9a1ca809be0ccdc3",
+  "capture_source": "https://folded-city-atlas-subin11111s-projects.vercel.app/",
+  "captures": {
+    "count": 16,
+    "format": "JPEG",
+    "actual_browser_screenshots": true,
+    "generated_images": false,
+    "post_capture_image_editing": false,
+    "viewport_sizes": [[1280, 720], [1265, 712], [848, 871]]
+  },
+  "documentation_check": {
+    "documents": 3,
+    "relative_links_checked": 82,
+    "missing_relative_targets": [],
+    "relative_target_validation": "local files plus HEAD tracked paths for sparse-checkout research evidence",
+    "all_16_captures_linked": true,
+    "history_archive_bytes_equal_to_HEAD_README": true,
+    "history_git_blob": "302dcd2e69586fd7b3cbf96ebd9b9850eabd75ce",
+    "git_diff_check": "PASS"
+  },
+  "web_checks": {
+    "preflight": "PASS",
+    "static_files": 8901,
+    "static_bytes": 872357112,
+    "node_tests_passed": 9,
+    "python_tests_passed": 29,
+    "total_tests_passed": 38,
+    "field_walkability_validated": false,
+    "realtime_positioning_validated": false
+  },
+  "publication": {
+    "documentation_committed": false,
+    "documentation_pushed": false,
+    "note": "This records local documentation preparation, not a new deployment."
+  }
+}

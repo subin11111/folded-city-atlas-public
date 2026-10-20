@@ -1,0 +1,455 @@
+{
+  "created_utc": "2026-10-18T05:26:49.294137+00:00",
+  "sessions": {
+    "outside": {
+      "triangles": 272119,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58",
+      "ply_sha256": "168bd83f179cd5f3131d0b86c06f7c4285602bb44ed61a40b2453d815f22b3c8",
+      "heightfields": [
+        {
+          "level_mode_m": -2.0829880666732783,
+          "nonoverlapping_height_band_m": [
+            -2.8829880666732786,
+            -1.2829880666732778
+          ],
+          "cells": 5039,
+          "area_xy_m2": 50.39000000000001,
+          "guarded_discontinuity_samples": 11323,
+          "maximum_measured_height_motion_m": 0.06000000000000005,
+          "measured_height_motion_limit_m": 0.06,
+          "plane_prior": [],
+          "height_span_m": 1.2357578171151025
+        }
+      ]
+    },
+    "lobby": {
+      "triangles": 1124733,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "02cc4e72b4abc146f4d24c74fcfc7e4495becb4171ed5d1f9408bdc1c11df353",
+      "ply_sha256": "3ae37f00032a79f54e47fea419a243ecede322b282501a28c0943735f8d6c195",
+      "heightfields": [
+        {
+          "level_mode_m": -1.413698711395263,
+          "nonoverlapping_height_band_m": [
+            -2.153698711395263,
+            -0.6736987113952628
+          ],
+          "cells": 12601,
+          "area_xy_m2": 126.01000000000002,
+          "guarded_discontinuity_samples": 31478,
+          "maximum_measured_height_motion_m": 0.1650014324492841,
+          "measured_height_motion_limit_m": 0.24,
+          "plane_prior": [
+            {
+              "area_xy_m2": 63.050000000000004,
+              "fit_residual_p90_m": 0.09408549248753958,
+              "slope_deg": 0.1472116260462598,
+              "accepted": true,
+              "maximum_height_change_m": 0.1458428177694398,
+              "median_plane_distance_before_m": 0.027464246048465535,
+              "median_plane_distance_after_m": 0.0044219580829834015
+            },
+            {
+              "area_xy_m2": 15.130000000000003,
+              "fit_residual_p90_m": 0.04883854659810222,
+              "slope_deg": 1.655861602440844,
+              "accepted": true,
+              "maximum_height_change_m": 0.14429835450666365,
+              "median_plane_distance_before_m": 0.017376333178573677,
+              "median_plane_distance_after_m": 0.005506856014659611
+            },
+            {
+              "area_xy_m2": 14.71,
+              "fit_residual_p90_m": 0.04946571923559118,
+              "slope_deg": 1.8086410296463598,
+              "accepted": true,
+              "maximum_height_change_m": 0.10076458523345369,
+              "median_plane_distance_before_m": 0.02464495679074785,
+              "median_plane_distance_after_m": 0.003752085054259835
+            },
+            {
+              "area_xy_m2": 7.6800000000000015,
+              "fit_residual_p90_m": 0.04446056763680851,
+              "slope_deg": 2.3504428839270526,
+              "accepted": true,
+              "maximum_height_change_m": 0.04943846812087188,
+              "median_plane_distance_before_m": 0.0192830725989509,
+              "median_plane_distance_after_m": 0.010254658142518247
+            },
+            {
+              "area_xy_m2": 5.9,
+              "fit_residual_p90_m": 0.06799598438006932,
+              "slope_deg": 0.9022442739296268,
+              "accepted": true,
+              "maximum_height_change_m": 0.08246684542308068,
+              "median_plane_distance_before_m": 0.022316500720701127,
+              "median_plane_distance_after_m": 0.014922568281604764
+            },
+            {
+              "area_xy_m2": 5.680000000000001,
+              "fit_residual_p90_m": 0.03247524820496422,
+              "slope_deg": 0.7508538776653222,
+              "accepted": true,
+              "maximum_height_change_m": 0.052985340155698564,
+              "median_plane_distance_before_m": 0.015300688113208616,
+              "median_plane_distance_after_m": 0.006869002287032244
+            },
+            {
+              "area_xy_m2": 7.810000000000001,
+              "fit_residual_p90_m": 0.09768880730887552,
+              "slope_deg": 2.9477248498964723,
+              "accepted": true,
+              "maximum_height_change_m": 0.11039907878645085,
+              "median_plane_distance_before_m": 0.02328838738957284,
+              "median_plane_distance_after_m": 0.008612328042961304
+            },
+            {
+              "area_xy_m2": 11.230000000000002,
+              "fit_residual_p90_m": 0.07036026095610853,
+              "slope_deg": 2.4108193893786236,
+              "accepted": true,
+              "maximum_height_change_m": 0.10471246281842424,
+              "median_plane_distance_before_m": 0.028217992204375486,
+              "median_plane_distance_after_m": 0.011493079479589996
+            },
+            {
+              "area_xy_m2": 8.430000000000001,
+              "fit_residual_p90_m": 0.050526129539215696,
+              "slope_deg": 0.667103760989773,
+              "accepted": true,
+              "maximum_height_change_m": 0.06621125600889458,
+              "median_plane_distance_before_m": 0.019305721425754596,
+              "median_plane_distance_after_m": 0.010388599632074946
+            }
+          ],
+          "height_span_m": 0.8777056706300443
+        },
+        {
+          "level_mode_m": 1.6463012886047397,
+          "nonoverlapping_height_band_m": [
+            1.1463012886047397,
+            2.1463012886047395
+          ],
+          "cells": 6274,
+          "area_xy_m2": 62.74000000000001,
+          "guarded_discontinuity_samples": 28102,
+          "maximum_measured_height_motion_m": 0.14848578583763006,
+          "measured_height_motion_limit_m": 0.24,
+          "plane_prior": [
+            {
+              "area_xy_m2": 14.41,
+              "fit_residual_p90_m": 0.08090938682784521,
+              "slope_deg": 1.4687098217798953,
+              "accepted": true,
+              "maximum_height_change_m": 0.10368752898775616,
+              "median_plane_distance_before_m": 0.023555407255470895,
+              "median_plane_distance_after_m": 0.0060586823434642945
+            },
+            {
+              "area_xy_m2": 15.760000000000003,
+              "fit_residual_p90_m": 0.0722692353547697,
+              "slope_deg": 2.003915255191739,
+              "accepted": true,
+              "maximum_height_change_m": 0.09715035977110616,
+              "median_plane_distance_before_m": 0.026121354100200667,
+              "median_plane_distance_after_m": 0.00546040008447668
+            },
+            {
+              "area_xy_m2": 25.370000000000005,
+              "fit_residual_p90_m": 0.0698619182635285,
+              "slope_deg": 2.0372797891701935,
+              "accepted": true,
+              "maximum_height_change_m": 0.07508937275183086,
+              "median_plane_distance_before_m": 0.02531469143132581,
+              "median_plane_distance_after_m": 0.00334200817402186
+            },
+            {
+              "area_xy_m2": 5.0,
+              "fit_residual_p90_m": 0.04811727961965909,
+              "slope_deg": 5.527202263170537,
+              "accepted": true,
+              "maximum_height_change_m": 0.07630659385702293,
+              "median_plane_distance_before_m": 0.020897182616733345,
+              "median_plane_distance_after_m": 0.009987290618491462
+            }
+          ],
+          "height_span_m": 0.7033643204084279
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "triangles": 98179,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "dc3580b59f9387545e4cb4c0f4a84ae48524c22a02fc132bc264b7ec08c1705a",
+      "ply_sha256": "fd18d27fdad3e3d410707eba30fd611be64af3660af4ca942bb656c7cdb454a9",
+      "heightfields": [
+        {
+          "level_mode_m": -1.697369146347045,
+          "nonoverlapping_height_band_m": [
+            -2.197369146347045,
+            -1.197369146347045
+          ],
+          "cells": 4082,
+          "area_xy_m2": 40.82000000000001,
+          "guarded_discontinuity_samples": 3372,
+          "maximum_measured_height_motion_m": 0.06000000000000005,
+          "measured_height_motion_limit_m": 0.06,
+          "plane_prior": [],
+          "height_span_m": 0.428571286201477
+        }
+      ]
+    },
+    "floor2": {
+      "triangles": 1340536,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "e3542f75b3abbcb96e1f4b25f5f74d321bee13b17adb9ff64dc6320a662e0009",
+      "ply_sha256": "68b0e59474a93d0d11cf3f63f1bb3468d586720f6dbc916e6b31e50f642cf33c",
+      "heightfields": [
+        {
+          "level_mode_m": -1.5519841003417965,
+          "nonoverlapping_height_band_m": [
+            -2.0519841003417962,
+            -1.0519841003417965
+          ],
+          "cells": 1707,
+          "area_xy_m2": 17.070000000000004,
+          "guarded_discontinuity_samples": 3380,
+          "maximum_measured_height_motion_m": 0.18309741056579076,
+          "measured_height_motion_limit_m": 0.24,
+          "plane_prior": [
+            {
+              "area_xy_m2": 20.360000000000003,
+              "fit_residual_p90_m": 0.08613398318157461,
+              "slope_deg": 2.185564008997652,
+              "accepted": true,
+              "maximum_height_change_m": 0.1588908153142798,
+              "median_plane_distance_before_m": 0.03169049835068538,
+              "median_plane_distance_after_m": 0.008277843207428637
+            }
+          ],
+          "height_span_m": 0.3057168283055385
+        },
+        {
+          "level_mode_m": 2.4680158996582073,
+          "nonoverlapping_height_band_m": [
+            1.9680158996582073,
+            2.9680158996582073
+          ],
+          "cells": 11685,
+          "area_xy_m2": 116.85000000000001,
+          "guarded_discontinuity_samples": 27083,
+          "maximum_measured_height_motion_m": 0.16159244123693384,
+          "measured_height_motion_limit_m": 0.24,
+          "plane_prior": [
+            {
+              "area_xy_m2": 55.160000000000004,
+              "fit_residual_p90_m": 0.07647405622232406,
+              "slope_deg": 0.38790563508133974,
+              "accepted": true,
+              "maximum_height_change_m": 0.11627782424142506,
+              "median_plane_distance_before_m": 0.03228051733672199,
+              "median_plane_distance_after_m": 0.009165810866593516
+            },
+            {
+              "area_xy_m2": 35.93,
+              "fit_residual_p90_m": 0.041408969459059634,
+              "slope_deg": 0.6684331719433778,
+              "accepted": true,
+              "maximum_height_change_m": 0.07052848224552025,
+              "median_plane_distance_before_m": 0.013470925667571354,
+              "median_plane_distance_after_m": 0.0034671639388048625
+            },
+            {
+              "area_xy_m2": 6.210000000000001,
+              "fit_residual_p90_m": 0.052025473698229074,
+              "slope_deg": 3.21323179318264,
+              "accepted": true,
+              "maximum_height_change_m": 0.11086993481901539,
+              "median_plane_distance_before_m": 0.014617658591262295,
+              "median_plane_distance_after_m": 0.00820811893700002
+            },
+            {
+              "area_xy_m2": 21.110000000000003,
+              "fit_residual_p90_m": 0.06419202525560674,
+              "slope_deg": 0.9093202085596369,
+              "accepted": true,
+              "maximum_height_change_m": 0.08248528712961911,
+              "median_plane_distance_before_m": 0.025357872040309815,
+              "median_plane_distance_after_m": 0.006560654087153672
+            },
+            {
+              "area_xy_m2": 10.15,
+              "fit_residual_p90_m": 0.05643704466423137,
+              "slope_deg": 2.3193594019284784,
+              "accepted": true,
+              "maximum_height_change_m": 0.10159244123693395,
+              "median_plane_distance_before_m": 0.02177924023464195,
+              "median_plane_distance_after_m": 0.009883332287426772
+            }
+          ],
+          "height_span_m": 0.6653139852965824
+        },
+        {
+          "level_mode_m": 5.40801589965821,
+          "nonoverlapping_height_band_m": [
+            4.90801589965821,
+            5.90801589965821
+          ],
+          "cells": 6273,
+          "area_xy_m2": 62.73000000000001,
+          "guarded_discontinuity_samples": 36179,
+          "maximum_measured_height_motion_m": 0.17336892021454364,
+          "measured_height_motion_limit_m": 0.24,
+          "plane_prior": [
+            {
+              "area_xy_m2": 21.8,
+              "fit_residual_p90_m": 0.08741526112158411,
+              "slope_deg": 0.5838339891226999,
+              "accepted": true,
+              "maximum_height_change_m": 0.12879059400414902,
+              "median_plane_distance_before_m": 0.03267900057797002,
+              "median_plane_distance_after_m": 0.012491433963674137
+            },
+            {
+              "area_xy_m2": 5.990000000000001,
+              "fit_residual_p90_m": 0.038424160782782324,
+              "slope_deg": 5.28112620986789,
+              "accepted": true,
+              "maximum_height_change_m": 0.10390523713046113,
+              "median_plane_distance_before_m": 0.013089728824315472,
+              "median_plane_distance_after_m": 0.0050234752962525775
+            },
+            {
+              "area_xy_m2": 7.490000000000001,
+              "fit_residual_p90_m": 0.1164991223003341,
+              "slope_deg": 0.55675151416715,
+              "accepted": true,
+              "maximum_height_change_m": 0.09706853828321317,
+              "median_plane_distance_before_m": 0.04720713329099979,
+              "median_plane_distance_after_m": 0.02403168297594327
+            },
+            {
+              "area_xy_m2": 9.510000000000002,
+              "fit_residual_p90_m": 0.08068155698998769,
+              "slope_deg": 4.152874483108545,
+              "accepted": true,
+              "maximum_height_change_m": 0.17400678617556656,
+              "median_plane_distance_before_m": 0.022954506416052567,
+              "median_plane_distance_after_m": 0.00951625736953865
+            },
+            {
+              "area_xy_m2": 9.880000000000003,
+              "fit_residual_p90_m": 0.16439664636432613,
+              "slope_deg": 2.756430057743709,
+              "accepted": false
+            },
+            {
+              "area_xy_m2": 8.870000000000001,
+              "fit_residual_p90_m": 0.05987351393639918,
+              "slope_deg": 3.97552635283572,
+              "accepted": true,
+              "maximum_height_change_m": 0.1451356406676365,
+              "median_plane_distance_before_m": 0.02016245504739267,
+              "median_plane_distance_after_m": 0.006977954864805014
+            }
+          ],
+          "height_span_m": 0.738037535727269
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "triangles": 205109,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "80b2f9a567eeaf42e401a64f7fb08385b570082aa59bc1f15b8cceedb8b0737d",
+      "ply_sha256": "09d01f3b56524034efcb8549bf0425df50b1a794840a3ee58be209747a544f31",
+      "heightfields": [
+        {
+          "level_mode_m": -1.3654359865188594,
+          "nonoverlapping_height_band_m": [
+            -1.8654359865188594,
+            -0.8654359865188594
+          ],
+          "cells": 956,
+          "area_xy_m2": 9.56,
+          "guarded_discontinuity_samples": 3324,
+          "maximum_measured_height_motion_m": 0.06000000000000005,
+          "measured_height_motion_limit_m": 0.06,
+          "plane_prior": [],
+          "height_span_m": 0.45761034886042284
+        },
+        {
+          "level_mode_m": 2.834564013481144,
+          "nonoverlapping_height_band_m": [
+            2.334564013481144,
+            3.334564013481144
+          ],
+          "cells": 1472,
+          "area_xy_m2": 14.720000000000002,
+          "guarded_discontinuity_samples": 2026,
+          "maximum_measured_height_motion_m": 0.06000000000000005,
+          "measured_height_motion_limit_m": 0.06,
+          "plane_prior": [],
+          "height_span_m": 0.4048519531885786
+        }
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/src/refine_structural_heightfields.py": "7b9669d2c53d417ac18d6bde5cca45d9b3ebf90fe8d45ff9e2ca31a6bf36545a",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "outputs/student_union_structural_strong_walls_v2/manifest.json": "a05e9b7bbff8982db1c6eb1d89f7593fe455367fab87159be0780fbc6a38df13",
+    "/home/subin/folded-city-atlas/src/clean_structural_fragments.py": "5b91a3953c0ef7fa92490068e5a2b80ed54e283095915633e2aa725680cbaaa2",
+    "/home/subin/folded-city-atlas/src/rebuild_structural_display.py": "7a59667d2e9de65b992b70d8e76bf3a7c1a74633176e009be398d2ab9b9be8fd",
+    "/home/subin/folded-city-atlas/src/repair_visual_appearance.py": "4a6be51f0ee3d32d00355aad24636d2c94d7cda26366bb58358e4a89a21152c5",
+    "/home/subin/folded-city-atlas/src/structural_prior_profiles.py": "fce54032469ae7bfe9746db0a83f70d884d8a1f344fb0cb6bbc34246428cd415",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "outputs/student_union_structural_strong_walls_v2/floor2/structural.ply": "a40a1c58476e027093e81e165996b7373bff5bbd505ae6ff28ea11eac09c9c59",
+    "outputs/student_union_structural_strong_walls_v2/floor2/structural_textured.glb": "1540cebd9ec59da4d16995aabbf244398ec3e88a5db943af1491fa2e5b09d07a",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+    "outputs/student_union_structural_strong_walls_v2/lobby/structural.ply": "a296d13cb279bd9c13ee079ddc341cdf6f6bc78a47b272bbd6834352b06cc337",
+    "outputs/student_union_structural_strong_walls_v2/lobby/structural_textured.glb": "9abb73793f84d3e612fb6d4a8f21929c144dcffe47e8a259d42bd615dcfd0db5",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside.ply": "01f23defd8ead99c56cc545640650a86ac0d7d78d4840fecd1c74c2aabfd9358",
+    "outputs/student_union_structural_strong_walls_v2/outside/structural.ply": "de748a338b5ecd68880f074b2e39668ee2915a715cf563540f824cf411280418",
+    "outputs/student_union_structural_strong_walls_v2/outside/structural_textured.glb": "486852fde1016d7bc41d5fad0f3e4016ad6edd832ff85fe4b84671f8b228feb3",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f.ply": "893ffff7ec451076bb0150f76da724c1122a3501c1dd1a0a9ebcb3569364640f",
+    "outputs/student_union_structural_strong_walls_v2/bridge_out1f/structural.ply": "6d29671a79c534f5f582e08224c09484268d1dfd2009da442bf873e81afde267",
+    "outputs/student_union_structural_strong_walls_v2/bridge_out1f/structural_textured.glb": "57eb4f530d34d843d34b8ea20073a6c8a11099f282eddb59a05053aa9244c6bc",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub.ply": "8215a179bb1f40a5c0576ce0f14fe6b19003153215ddcff19a3ad88b384d0687",
+    "outputs/student_union_structural_strong_walls_v2/bridge_12_sub/structural.ply": "9f0cd78a4552d4555b9689b74452569f427bfe9e7fdb4c6711143ba23253a3a4",
+    "outputs/student_union_structural_strong_walls_v2/bridge_12_sub/structural_textured.glb": "71d58cf5ac1ab3acef050e903bccbe9dee8fd95ad3ea3445e85848d39289cfc8"
+  },
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "raw_databases_unchanged": true,
+  "pose_changes": 0,
+  "modeled_display_geometry_changes": true,
+  "navigation_ready": false,
+  "manifest_sha256": "ededb3b2bb515a6816232bab2ab888097e308f8dd3a62ccbd4714a2abaff1099",
+  "cleanup_sha256": "4bb914d3dd1557640430c003fe2cd411a6b032a4abc6220c8ec6b4d4926c51ad",
+  "audit_source_sha256": "225d4262666edc3c21f03014a1c8b4f7511ef748757b2523cb5736691374cd8a",
+  "native_selected_view": {
+    "loaded": {
+      "loaded_files": [
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/outside/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/lobby/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_out1f/balanced_only.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_strong_floors_v1/floor2/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_12_sub/balanced_only.glb"
+      ],
+      "status": "Loaded 5 session(s) | Strong structure / bridges protected",
+      "native_window": true,
+      "selected_map_changed": false,
+      "roadview_nodes": 1199,
+      "time_unix": 1792301185.3397777
+    },
+    "scene_render_sha256": "c5beaa79f4835f189be4e2490eed38a362a7b3e0373a834ea6f22d539f27430d",
+    "scene_render": "selected_overview.png",
+    "scope": "Native scene render callback, not a desktop screenshot",
+    "selection_policy_sha256": "4d9aa908ba8cdea1b31fccd1b744dbc5aa399561be2cecf28f47a4a56e582f78"
+  }
+}

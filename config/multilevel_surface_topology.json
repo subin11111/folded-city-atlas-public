@@ -1,0 +1,32 @@
+{
+  "source_bundle": "outputs/student_union_flat_horizontal_v3",
+  "topology_audit": "outputs/student_union_topology_audit_v1/multilevel_rasters.npz",
+  "atrium_review": {
+    "method": "Assistant visual review of original perspective RGB plus upper-floor support topology, not surveyed boundaries or automatic semantic detection.",
+    "component": "largest_connected_possible_double_height_component",
+    "source_photos": {"lobby": [510,512,516,579], "floor2": [284,445,512,593,599,1050,1066]},
+    "note": "These photos show an open double-height lobby and upper balcony/rail. Low ceilings and upper-floor fill must not close the central void. The high roof is not removed. Small unrelated envelope gaps are not labeled atria."
+  },
+  "anchor_spacing_m": 2.0,
+  "anchor_neighbour_radius_m": 2.3,
+  "source_raster_cell_m": 0.2,
+  "local_plane_huber_m": 0.06,
+  "local_plane_slope_limit_deg": 4.0,
+  "low_ceiling_maximum_gap_fill_m": 0.80,
+  "layer_groups": {
+    "lobby_floor_1f": "main_floor_1f",
+    "floor2_floor_1f": "main_floor_1f",
+    "bridge_out_floor_1f": "entry_floor_local",
+    "sub_floor_1f": "sub_floor_1f_existing_offset_retained",
+    "floor2_floor_2f": "shared_upper_floor",
+    "sub_floor_2f": "shared_upper_floor",
+    "lobby_ceiling_1f": "main_lower_ceiling",
+    "floor2_ceiling_1f": "main_lower_ceiling",
+    "sub_ceiling_1f": "sub_lower_ceiling_local",
+    "floor2_ceiling_2f": "shared_upper_roof",
+    "sub_ceiling_2f": "shared_upper_roof"
+  },
+  "void_excluded_layers": ["lobby_ceiling_1f","floor2_ceiling_1f","sub_ceiling_1f","floor2_floor_2f","sub_floor_2f"],
+  "low_ceiling_layers": ["lobby_ceiling_1f","floor2_ceiling_1f","sub_ceiling_1f"],
+  "scope": "Continuous piecewise-planar display sheets anchored to pre-flat source heights, shared same-level anchors and reviewed atrium void. No whole-session translation, pose graph change, or invented floor-to-ceiling thickness."
+}

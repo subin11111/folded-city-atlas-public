@@ -1,0 +1,14 @@
+{
+  "source_bundle": "outputs/student_union_joint_material_v15",
+  "iterations": 4,
+  "boundary_step": 0.35,
+  "maximum_total_motion_m": 0.05,
+  "maximum_boundary_leg_m": 0.30,
+  "minimum_normal_coherence": 0.95,
+  "semantic_guard_m": 0.08,
+  "texture_sigma_px": 0.75,
+  "texture_edge_blend": 0.35,
+  "maximum_texture_linear_change": 0.035,
+  "maximum_texture_srgb_change": 16,
+  "scope": "Presentation-only edge finish of user-preferred v15. Trim only small convex mesh boundary teeth; entire horizontal faces including their XY contours, interior vertices, strong geometric creases, semantic signs/doors/glazing and stair guards stay fixed. Freezing horizontal contours avoids the newly visible floor cracks in rejected v16. No added faces, hole caps, pose optimization or floor/ceiling level changes. Texture correction is a narrow high-gradient antialiasing band with bounded changes; source semantic photo images and overall v15 material/lighting remain preserved. Acceptance requires actual same-camera rendered visual review."
+}

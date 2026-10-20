@@ -1,0 +1,209 @@
+{
+  "created_utc": "2026-10-18T05:03:38.382237+00:00",
+  "sessions": {
+    "outside": {
+      "triangles": 272119,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "bfdb7c99cdb39213e1052291582a7f90f78bd88bc4b378e989a1f87b7dc1fd58",
+      "ply_sha256": "168bd83f179cd5f3131d0b86c06f7c4285602bb44ed61a40b2453d815f22b3c8",
+      "heightfields": [
+        {
+          "level_mode_m": -2.0829880666732783,
+          "nonoverlapping_height_band_m": [
+            -2.8829880666732786,
+            -1.2829880666732778
+          ],
+          "cells": 5039,
+          "area_xy_m2": 50.39000000000001,
+          "guarded_discontinuity_samples": 11323,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 1.2357578171151025
+        }
+      ]
+    },
+    "lobby": {
+      "triangles": 1160489,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "2f912df8e9e4ba1131a8dadce9d5f59e32f5199c6f328c80a8f3a0a218e02c52",
+      "ply_sha256": "76fbc736fdfb99a717491bd7ade20e9677b0be34f6331336068549d034c3f36c",
+      "heightfields": [
+        {
+          "level_mode_m": -1.413698711395263,
+          "nonoverlapping_height_band_m": [
+            -2.153698711395263,
+            -0.6736987113952628
+          ],
+          "cells": 12601,
+          "area_xy_m2": 126.01000000000002,
+          "guarded_discontinuity_samples": 31478,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.9319677052887847
+        },
+        {
+          "level_mode_m": 1.6463012886047397,
+          "nonoverlapping_height_band_m": [
+            1.1463012886047397,
+            2.1463012886047395
+          ],
+          "cells": 6274,
+          "area_xy_m2": 62.74000000000001,
+          "guarded_discontinuity_samples": 28102,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.7557822167873383
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "triangles": 98179,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "dc3580b59f9387545e4cb4c0f4a84ae48524c22a02fc132bc264b7ec08c1705a",
+      "ply_sha256": "fd18d27fdad3e3d410707eba30fd611be64af3660af4ca942bb656c7cdb454a9",
+      "heightfields": [
+        {
+          "level_mode_m": -1.697369146347045,
+          "nonoverlapping_height_band_m": [
+            -2.197369146347045,
+            -1.197369146347045
+          ],
+          "cells": 4082,
+          "area_xy_m2": 40.82000000000001,
+          "guarded_discontinuity_samples": 3372,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.428571286201477
+        }
+      ]
+    },
+    "floor2": {
+      "triangles": 1422179,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "ff43b898791fc69232f2876326d3dc88f87bfc8f47b335b2c64541336765a63a",
+      "ply_sha256": "6c027320638909a9d8bd94237a86fcea77eb3da3488493b06a4d24fc38d82793",
+      "heightfields": [
+        {
+          "level_mode_m": -1.5519841003417965,
+          "nonoverlapping_height_band_m": [
+            -2.0519841003417962,
+            -1.0519841003417965
+          ],
+          "cells": 1707,
+          "area_xy_m2": 17.070000000000004,
+          "guarded_discontinuity_samples": 3380,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.36398142814636225
+        },
+        {
+          "level_mode_m": 2.4680158996582073,
+          "nonoverlapping_height_band_m": [
+            1.9680158996582073,
+            2.9680158996582073
+          ],
+          "cells": 11685,
+          "area_xy_m2": 116.85000000000001,
+          "guarded_discontinuity_samples": 27083,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.7175037066141767
+        },
+        {
+          "level_mode_m": 5.40801589965821,
+          "nonoverlapping_height_band_m": [
+            4.90801589965821,
+            5.90801589965821
+          ],
+          "cells": 6273,
+          "area_xy_m2": 62.73000000000001,
+          "guarded_discontinuity_samples": 36179,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.7746915817260742
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "triangles": 205109,
+      "GLB_PLY_triangle_coordinates_equal_float32": true,
+      "glb_sha256": "80b2f9a567eeaf42e401a64f7fb08385b570082aa59bc1f15b8cceedb8b0737d",
+      "ply_sha256": "09d01f3b56524034efcb8549bf0425df50b1a794840a3ee58be209747a544f31",
+      "heightfields": [
+        {
+          "level_mode_m": -1.3654359865188594,
+          "nonoverlapping_height_band_m": [
+            -1.8654359865188594,
+            -0.8654359865188594
+          ],
+          "cells": 956,
+          "area_xy_m2": 9.56,
+          "guarded_discontinuity_samples": 3324,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.45761034886042284
+        },
+        {
+          "level_mode_m": 2.834564013481144,
+          "nonoverlapping_height_band_m": [
+            2.334564013481144,
+            3.334564013481144
+          ],
+          "cells": 1472,
+          "area_xy_m2": 14.720000000000002,
+          "guarded_discontinuity_samples": 2026,
+          "maximum_measured_height_motion_m": 0.06,
+          "height_span_m": 0.4048519531885786
+        }
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/src/refine_structural_heightfields.py": "86d0f56faa5b5c7a45695fe075583eb1a5af36339344ce71a9854dedc45b8da7",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "outputs/student_union_structural_v2/manifest.json": "a28601051ef1372bf53b6e32607f999c1ca0b83c206e5629b0ec5be4622fdfdd",
+    "/home/subin/folded-city-atlas/src/clean_structural_fragments.py": "5b91a3953c0ef7fa92490068e5a2b80ed54e283095915633e2aa725680cbaaa2",
+    "/home/subin/folded-city-atlas/src/rebuild_structural_display.py": "c42e5a787a22e05de3c7a385ac54955f4ea7766237ba911fb0bf3e53161708b1",
+    "/home/subin/folded-city-atlas/src/repair_visual_appearance.py": "4a6be51f0ee3d32d00355aad24636d2c94d7cda26366bb58358e4a89a21152c5",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "outputs/student_union_structural_v2/floor2/structural.ply": "7ab190bedad892f234a295294168418e7775d7d84cab8f902fae6e36dd66a250",
+    "outputs/student_union_structural_v2/floor2/structural_textured.glb": "e4ebc4a6ab09ca5d6160bce14da91375467e2be4d7090d44842b943b2c685a90",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside.ply": "01f23defd8ead99c56cc545640650a86ac0d7d78d4840fecd1c74c2aabfd9358",
+    "outputs/student_union_structural_v2/outside/structural.ply": "de748a338b5ecd68880f074b2e39668ee2915a715cf563540f824cf411280418",
+    "outputs/student_union_structural_v2/outside/structural_textured.glb": "486852fde1016d7bc41d5fad0f3e4016ad6edd832ff85fe4b84671f8b228feb3",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+    "outputs/student_union_structural_v2/lobby/structural.ply": "778ad417cf9cbdfb213839b57a76847f0acfcf31081a94a2b4a07c1a438f9e0a",
+    "outputs/student_union_structural_v2/lobby/structural_textured.glb": "9a3bccf2d318ba933a38106ac06f686da0e8dba4ba06f7adbdbb3a9c8745bdc7",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f.ply": "893ffff7ec451076bb0150f76da724c1122a3501c1dd1a0a9ebcb3569364640f",
+    "outputs/student_union_structural_v2/bridge_out1f/structural.ply": "6d29671a79c534f5f582e08224c09484268d1dfd2009da442bf873e81afde267",
+    "outputs/student_union_structural_v2/bridge_out1f/structural_textured.glb": "57eb4f530d34d843d34b8ea20073a6c8a11099f282eddb59a05053aa9244c6bc",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub.ply": "8215a179bb1f40a5c0576ce0f14fe6b19003153215ddcff19a3ad88b384d0687",
+    "outputs/student_union_structural_v2/bridge_12_sub/structural.ply": "9f0cd78a4552d4555b9689b74452569f427bfe9e7fdb4c6711143ba23253a3a4",
+    "outputs/student_union_structural_v2/bridge_12_sub/structural_textured.glb": "71d58cf5ac1ab3acef050e903bccbe9dee8fd95ad3ea3445e85848d39289cfc8"
+  },
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "raw_databases_unchanged": true,
+  "pose_changes": 0,
+  "modeled_display_geometry_changes": true,
+  "navigation_ready": false,
+  "manifest_sha256": "4c0f1b4ada0f87b44d6c4ee4d8449f17f826e460b5649369d5a4d7d394edb851",
+  "cleanup_sha256": "868acbddb47f2c4cf53842a9aa220e19faea40102d0a232ed774c6fc2521dc70",
+  "audit_source_sha256": "225d4262666edc3c21f03014a1c8b4f7511ef748757b2523cb5736691374cd8a",
+  "native_selected_view": {
+    "loaded": {
+      "loaded_files": [
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_floors_v4/outside/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_floors_v4/lobby/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_out1f/balanced_only.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_structural_floors_v4/floor2/clean_textured.glb",
+        "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/bridge_12_sub/balanced_only.glb"
+      ],
+      "status": "Loaded 5 session(s) | Selected repair / bridges protected",
+      "native_window": true,
+      "selected_map_changed": false,
+      "roadview_nodes": 1199,
+      "time_unix": 1792299676.9659162
+    },
+    "scene_render_sha256": "1ad548c1cb3eebaad972e0042d21b59ce252bda6a294bb21e25247cd93336e7b",
+    "scene_render": "selected_overview.png",
+    "scope": "Native scene render callback, not a desktop screenshot",
+    "selection_policy_sha256": "9921bdb63dfb11a068e334603819e9dc6b99a4973a8a46a80318996590e7a1e4"
+  }
+}

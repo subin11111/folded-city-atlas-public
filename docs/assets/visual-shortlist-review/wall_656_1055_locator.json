@@ -1,0 +1,24 @@
+{
+  "input_hashes": {
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_added_reviewed/floor2/raw_main_trajectory.csv": "21516f6b7b069d21536b8d13ecd55c8e0b9e9a2e1a4ace1714ad316d4f0caf52",
+    "/home/subin/folded-city-atlas/docs/assets/session-portfolios/floor2/summary.json": "2e38a9df34f87081c4fbfe6b28f1f8387fcbe3e76b7598dbf43ea7b6185efdf6",
+    "/home/subin/folded-city-atlas/src/locate_shortlist_wall_patch.py": "80b012d5885c7b9f6d396dd4023baa66fddf717fa4c0393e6c3d466465f0e022",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/poses/H00.csv": "15f8966d845cda26a7fe2b04d6f304d6f00261fc716a303f3cbb022300c051e0",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/poses/J04.csv": "21a13eff467c06df44d08b0f4caa954cb32dd524c85b9a5675bb292e4def45d7",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/clouds/H00.ply": "ba61c79f0051c1ecb3ecd52d917f8b1f4a273ea27d957a075d71fb951a036f55",
+    "/home/subin/folded-city-atlas/outputs/student_union_20261017_session_portfolios_v1/floor2/clouds/J04.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6"
+  },
+  "figure_sha256": "d0ca9b70638a1f85dbd0f671be54454fd10b6f124f23ba6fc0f9da345f6c555e",
+  "frames": [
+    656,
+    1055
+  ],
+  "planes": [
+    0,
+    1
+  ],
+  "source_inputs_unchanged": true,
+  "same_physical_surface_independently_confirmed": false,
+  "note": "Historical tentative correspondence; this figure locates the exact tested points, not surveyed truth."
+}

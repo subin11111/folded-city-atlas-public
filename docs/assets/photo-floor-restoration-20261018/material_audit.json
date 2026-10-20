@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-18T13:40:18.536133+00:00",
+  "bundle_manifest_sha256": "d1ea10396eba7d961d295e6b0962f8fc8e9fa16a3ae552582ccbbddeb52abf33",
+  "sessions": {
+    "lobby": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 172,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "floor2": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 167,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_12_sub": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 2,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 8,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_out1f": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 2,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "outside": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 18,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    }
+  },
+  "exact_original_floor_atlas_restoration": true,
+  "audit_source_sha256": "3002bb5dbd64f526725173c617a9a3ef5d52854c378e015650cb88c6e3d6ffb3",
+  "scope": "Retract uniform-colour floor materials. Restore the exact photographic floor atlases from before the rejected normalization; no mean-colour replacement, desaturation, local contrast removal or synthetic tile pattern. Keep the completed ceiling/floor geometry unchanged. Existing atlas lighting seams and unobserved-texture limitations remain."
+}

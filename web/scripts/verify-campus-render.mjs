@@ -1,0 +1,61 @@
+import fs from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const require=createRequire(import.meta.url),{chromium}=require(require.resolve('playwright',{paths:[process.env.PLAYWRIGHT_NODE_MODULES]}));
+const root=fileURLToPath(new URL('../../',import.meta.url)),out=new URL('../../docs/assets/campus-render-20261020/',import.meta.url);
+const base=process.env.CAMPUS_TEST_URL||'http://127.0.0.1:8775';
+await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({headless:true,channel:'msedge'}),errors=[],requests=[];
+const oldScene=execFileSync('git',['show','2dfbe92:web/public/campus-scene.js'],{cwd:root,encoding:'utf8'});
+// Add only a camera hook to the historical renderer; geometry and materials remain historical.
+const instrumented=oldScene.replace('    stats(){return',"    campusView(target,offsetEN){changeMode('campus');animation=null;controls.target.set(...target);camera.position.copy(controls.target).add(new THREE.Vector3(...frame.vectorFromEN(...offsetEN)));controls.update();},\n    stats(){return");
+let afterPage;
+for(const before of [true,false]){
+  const page=await browser.newPage({viewport:{width:1440,height:1000}});
+  page.on('pageerror',e=>errors.push(e.message));
+  page.on('response',r=>{if(r.url().includes('/api/')||/campus-(terrain|appearance)/.test(r.url()))requests.push({path:new URL(r.url()).pathname,status:r.status()});});
+  if(before)await page.route('**/campus-scene.js*',route=>route.fulfill({status:200,contentType:'application/javascript',body:instrumented}));
+  await page.goto(base);await page.waitForFunction(()=>window.foldedCity?.state?.three);
+  await page.locator('#loadingScreen').waitFor({state:'hidden'});
+  const tag=before?'before':'after';
+  await page.screenshot({path:fileURLToPath(new URL(`${tag}-overview.png`,out))});
+  await page.evaluate(async()=>{
+    const {createCampusFrame,ringCentre}=await import('/campus-data.js'),fc=window.foldedCity,f=createCampusFrame(fc.campus,(await(await fetch('/data/map.json')).json()));
+    const target=f.toLocal(ringCentre(f.student.o),f.student.g+7);
+    fc.state.three.campusView(target,[-175,-145,85]);
+  });
+  await page.waitForTimeout(250);
+  await page.screenshot({path:fileURLToPath(new URL(`${tag}-lake.png`,out))});
+  if(before)await page.close();else afterPage=page;
+}
+const page=afterPage,stats=await page.evaluate(()=>window.foldedCity.state.three.stats());
+assert.equal(stats.terrain.rawMaxStep,62);assert.ok(stats.terrain.displayMaxStep<=1.750001);
+assert.equal(stats.registrationScale,1);assert.equal(stats.buildings,48);
+assert.equal(new Set(stats.appearances.map(s=>s.style)).size,4);
+// Replay actual measured outside GNSS, then verify the registered entrance tour.
+await page.evaluate(async()=>{const fc=window.foldedCity,log=await(await fetch('/data/gnss_outside_recorded.json')).json();await fc.location.startReplay(log.records,'log');});
+const start=await page.evaluate(()=>window.foldedCity.location.state.replayIndex);
+await page.waitForTimeout(1100);const end=await page.evaluate(()=>window.foldedCity.location.state.replayIndex);
+assert.ok(end>start);
+await page.evaluate(()=>{window.foldedCity.location.seek(120);window.foldedCity.location.state.follow=false;});
+await page.screenshot({path:fileURLToPath(new URL('outside-replay.png',out))});
+await page.evaluate(()=>window.foldedCity.location.stop());
+await page.locator('#toast').waitFor({state:'hidden',timeout:6000});
+await page.evaluate(()=>window.foldedCity.state.three.selectBuilding('way/367253036'));
+await page.waitForFunction(()=>document.querySelector('#photoStage')?.dataset.photoId&&document.querySelector('#photoStage')?.dataset.loading==='false');
+const entrance=await page.evaluate(()=>({photo:document.querySelector('#photoStage').dataset.photoId,location:document.querySelector('#walkLocation').textContent}));
+await page.waitForTimeout(1200);await page.screenshot({path:fileURLToPath(new URL('entrance.png',out))});
+await page.locator('#walkOptions button.recommended').click();
+await page.waitForFunction(()=>!document.querySelector('#walkOptions button.recommended')?.disabled);
+const movement=await page.locator('#walkRemaining').innerText();
+await page.screenshot({path:fileURLToPath(new URL('entrance-next.png',out))});
+await page.locator('#walkExit').click();
+await page.setViewportSize({width:390,height:844});await page.locator('#campusHome').click();
+await page.waitForTimeout(1200);await page.screenshot({path:fileURLToPath(new URL('mobile.png',out)),fullPage:true});
+assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+assert.deepEqual(errors,[]);assert.ok(requests.every(r=>r.status===200));
+const report={passed:true,checks:['same-camera historical and current render','continuous display terrain and lake boundary','evidence-informed materials','measured outdoor GNSS playback advances','building selection opens registered entrance photo','recommended shortest-path move','mobile overflow'],stats,entrance,movement,replay:{start,end},errors,requests,surveyed_entrance_alignment:false};
+await fs.writeFile(new URL('verification.json',out),JSON.stringify(report,null,2)+'\n');
+await browser.close();console.log(JSON.stringify(report,null,2));

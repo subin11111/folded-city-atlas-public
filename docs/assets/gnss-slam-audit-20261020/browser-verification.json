@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "session_counts": {
+    "outside": 338,
+    "lobby": 294,
+    "bridge_out1f": 74,
+    "floor2": 332,
+    "bridge_12_sub": 61
+  },
+  "checks": [
+    "five measured session selectors",
+    "local XY and global ENU display",
+    "paired coordinates and discrepancies rendered",
+    "timeline and playback",
+    "390px mobile no horizontal overflow"
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "/data/gnss_slam_comparison.json",
+      "status": 200
+    },
+    {
+      "url": "/data/navigation.json",
+      "status": 200
+    },
+    {
+      "url": "/data/map.json",
+      "status": 200
+    },
+    {
+      "url": "/data/campus_source.json",
+      "status": 200
+    }
+  ],
+  "live_phone_field_test": false,
+  "reference": "reconstructed web-map positions, not survey ground truth"
+}

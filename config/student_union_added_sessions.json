@@ -1,0 +1,17 @@
+{
+  "description": "Independent reoptimization of three newly recorded Student Union sessions; no cross-session registration",
+  "sessions": {
+    "bridge_out1f": {
+      "database": "data/raw/rtabmap/261017-011331-bridgeout1f.db",
+      "description_ko": "1층 로비와 바깥을 연결하는 세션"
+    },
+    "floor2": {
+      "database": "data/raw/rtabmap/261017-013501-2f.db",
+      "description_ko": "1층 로비 일부, 1층–2층 메인 계단, 2층 전체"
+    },
+    "bridge_12_sub": {
+      "database": "data/raw/rtabmap/261017-013904-bridg12_2.db",
+      "description_ko": "1층–2층 서브 계단, 1·2층 엘리베이터 문 앞과 계단 앞쪽 연결 구간"
+    }
+  }
+}

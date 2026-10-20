@@ -1,0 +1,15 @@
+{
+  "source_bundle": "outputs/student_union_continuous_horizontals_v1",
+  "target_linear_luminance": 0.28,
+  "log_detail_bounds": [-2.3, 0.65],
+  "lighting_radius_m": 0.5,
+  "photo_edge_feather_m": 0.35,
+  "charts": [
+    {"id":"lobby_floor_1f","session":"lobby"},
+    {"id":"floor2_floor_1f","session":"floor2"},
+    {"id":"floor2_floor_2f","session":"floor2"},
+    {"id":"sub_floor_1f","session":"bridge_12_sub"},
+    {"id":"sub_floor_2f","session":"bridge_12_sub"}
+  ],
+  "scope":"Retain verified original-photo floor details, level low-frequency exposure, and replace unreliable stretched fallback colours with a smooth colour derived from measured floor photographs. No generated tile pattern, changed geometry, walls/signs, poses or outdoor material. Original embedded images remain in each GLB; only matching floor material references change."
+}

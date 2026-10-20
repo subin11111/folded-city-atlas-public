@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-10-18T07:20:55.428084+00:00",
+  "sessions": {
+    "lobby": {
+      "actual_GLB_PLY_equal_float32": true,
+      "all_unselected_source_coordinates_retained": true,
+      "protected_source_triangles": 379599,
+      "all_protected_source_coordinates_retained": true,
+      "removed_source_faces": 687161,
+      "planes": [
+        {
+          "id": "lobby_floor_1f",
+          "kind": "floor",
+          "height_m": -1.636272425559606,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 4.8603159275018015e-09,
+          "area_xy_m2": 504.93994140625,
+          "model_inferred_area_m2": 50.92000000000001,
+          "triangles": 100988,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.2797763261809469
+        },
+        {
+          "id": "lobby_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.6599834629025738,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 5.283686710377822e-08,
+          "area_xy_m2": 441.760009765625,
+          "model_inferred_area_m2": 259.08000000000004,
+          "triangles": 88352,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.20344903125304253
+        }
+      ],
+      "historical_protected_main_stairs": null,
+      "standing_vertical_structure_faces_retained": 379586,
+      "steep_short_horizontal_layer_shards_removed": 26225,
+      "outside_geometry_exactly_preserved": null
+    },
+    "floor2": {
+      "actual_GLB_PLY_equal_float32": true,
+      "all_unselected_source_coordinates_retained": true,
+      "protected_source_triangles": 516944,
+      "all_protected_source_coordinates_retained": true,
+      "removed_source_faces": 785327,
+      "planes": [
+        {
+          "id": "floor2_floor_1f",
+          "kind": "floor",
+          "height_m": -1.5998075386765134,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 3.783727997586084e-08,
+          "area_xy_m2": 65.33000183105469,
+          "model_inferred_area_m2": 10.360000000000001,
+          "triangles": 13066,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.5553535894688505
+        },
+        {
+          "id": "floor2_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.5530775879569934,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 9.412376655859589e-09,
+          "area_xy_m2": 30.34000015258789,
+          "model_inferred_area_m2": 20.290000000000003,
+          "triangles": 6068,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.23877307185234015
+        },
+        {
+          "id": "floor2_floor_2f",
+          "kind": "floor",
+          "height_m": 2.490410295659016,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 3.225236078208127e-08,
+          "area_xy_m2": 435.10003662109375,
+          "model_inferred_area_m2": 39.52000000000001,
+          "triangles": 87020,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.3650108878020919
+        },
+        {
+          "id": "floor2_ceiling_2f",
+          "kind": "ceiling",
+          "height_m": 5.415130286347697,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 1.4795048031146507e-07,
+          "area_xy_m2": 463.3999938964844,
+          "model_inferred_area_m2": 187.9,
+          "triangles": 92680,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.19518756393489323
+        }
+      ],
+      "historical_protected_main_stairs": {
+        "triangles": 119099,
+        "all_coordinates_retained": true
+      },
+      "standing_vertical_structure_faces_retained": 456921,
+      "steep_short_horizontal_layer_shards_removed": 35257,
+      "outside_geometry_exactly_preserved": null
+    },
+    "bridge_12_sub": {
+      "actual_GLB_PLY_equal_float32": true,
+      "all_unselected_source_coordinates_retained": true,
+      "protected_source_triangles": 225814,
+      "all_protected_source_coordinates_retained": true,
+      "removed_source_faces": 107614,
+      "planes": [
+        {
+          "id": "sub_floor_1f",
+          "kind": "floor",
+          "height_m": -1.3729515447050549,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 3.7136695496542416e-08,
+          "area_xy_m2": 52.39999771118164,
+          "model_inferred_area_m2": 9.850000000000001,
+          "triangles": 10480,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.6707895992366413
+        },
+        {
+          "id": "sub_ceiling_1f",
+          "kind": "ceiling",
+          "height_m": 1.1143848450297325,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 4.457292868131901e-08,
+          "area_xy_m2": 56.80000686645508,
+          "model_inferred_area_m2": 44.43000000000001,
+          "triangles": 11360,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.1027068661971831
+        },
+        {
+          "id": "sub_floor_2f",
+          "kind": "floor",
+          "height_m": 2.810284618408088,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 3.845099794119733e-09,
+          "area_xy_m2": 42.619998931884766,
+          "model_inferred_area_m2": 9.600000000000001,
+          "triangles": 8524,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.6432572735804787
+        },
+        {
+          "id": "sub_ceiling_2f",
+          "kind": "ceiling",
+          "height_m": 5.822988108945386,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 7.565070792026063e-08,
+          "area_xy_m2": 44.709999084472656,
+          "model_inferred_area_m2": 26.82,
+          "triangles": 8942,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.2757772310445091
+        }
+      ],
+      "historical_protected_main_stairs": null,
+      "standing_vertical_structure_faces_retained": 191733,
+      "steep_short_horizontal_layer_shards_removed": 3013,
+      "outside_geometry_exactly_preserved": null
+    },
+    "bridge_out1f": {
+      "actual_GLB_PLY_equal_float32": true,
+      "all_unselected_source_coordinates_retained": true,
+      "protected_source_triangles": 77162,
+      "all_protected_source_coordinates_retained": true,
+      "removed_source_faces": 77267,
+      "planes": [
+        {
+          "id": "bridge_out_floor_1f",
+          "kind": "floor",
+          "height_m": -1.7637841005316914,
+          "actual_triangle_height_span_m": 0.0,
+          "maximum_deviation_from_declared_plane_m": 4.959022414929848e-08,
+          "area_xy_m2": 65.52999877929688,
+          "model_inferred_area_m2": 6.030000000000001,
+          "triangles": 13106,
+          "free_space_violations": 0,
+          "stair_guard_violations": 0,
+          "photo_fraction_on_sheet": 0.7416259728368686
+        }
+      ],
+      "historical_protected_main_stairs": null,
+      "standing_vertical_structure_faces_retained": 77162,
+      "steep_short_horizontal_layer_shards_removed": 2436,
+      "outside_geometry_exactly_preserved": null
+    },
+    "outside": {
+      "actual_GLB_PLY_equal_float32": true,
+      "all_unselected_source_coordinates_retained": true,
+      "protected_source_triangles": 84802,
+      "all_protected_source_coordinates_retained": true,
+      "removed_source_faces": 0,
+      "planes": [],
+      "historical_protected_main_stairs": null,
+      "standing_vertical_structure_faces_retained": 84802,
+      "steep_short_horizontal_layer_shards_removed": 0,
+      "outside_geometry_exactly_preserved": true
+    }
+  },
+  "manifest_sha256": "f297f9d281a69f9573676cc933f3017d904c08959663ce975e956f697339dbbb",
+  "audit_source_sha256": "e967b03baf55a4eb198004b2ed151b31e1bbfdceaa2706944249e0a1b2e598f8",
+  "pose_changes": 0,
+  "navigation_ready": false,
+  "scope": "Display-sheet planarity, area, guard and exact-coordinate preservation; not surveyed accuracy."
+}

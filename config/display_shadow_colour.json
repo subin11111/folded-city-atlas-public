@@ -1,0 +1,15 @@
+{
+  "method": "colour_preserving_denoised",
+  "source_bundle": "outputs/student_union_closed_ceiling_material_v5",
+  "maximum_extra_gain": 1.6,
+  "shadow_end_linear": 0.2,
+  "noise_floor_linear": 0.004,
+  "maximum_linear_gain": 2.2,
+  "denoise_end_linear": 0.08,
+  "luma_denoise_strength": 0.35,
+  "chroma_denoise_strength": 0.75,
+  "maximum_denoise_srgb_steps": 6.0,
+  "edge_protection_srgb_steps": 12.0,
+  "colour_model": "Start from approved v5, not the rejected neutral v2. Weak common multiplicative gain retains colour ratios after bounded, shadow-only edge-aware Y/Cr/Cb denoising. No neutral grey addition, global saturation correction, CLAHE or invented detail. Highlights, source photos, geometry, alpha and pure black remain unchanged.",
+  "scope": "REVIEW CANDIDATE: reversible low-strength display shadow correction. Small dark texture filtering can remove genuine fine detail; visual review is required. Geometry artifacts, missing surfaces and clipped detail are not repaired. Not navigation."
+}

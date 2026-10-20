@@ -1,0 +1,201 @@
+{
+  "created_utc": "2026-10-18T10:41:07.289942+00:00",
+  "sessions": {
+    "lobby": {
+      "GLB_PLY_equal_float32": true,
+      "retained_original_prefix_faces": 427004,
+      "retained_prefix_coordinates_exact": true,
+      "all_mapped_vertical_semantics_and_original_RGB_retained": true,
+      "planes": [
+        {
+          "id": "lobby_floor_1f",
+          "triangles": 100988,
+          "height_span_m": 0.8660054206848145,
+          "maximum_slope_deg": 4.000135898590088,
+          "anchor_error_max_m": 1.3143190513709158e-07,
+          "area_xy_m2": 504.93994140625,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.1744523034027576,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "lobby_ceiling_1f",
+          "triangles": 56756,
+          "height_span_m": 0.6431066989898682,
+          "maximum_slope_deg": 4.0001091957092285,
+          "anchor_error_max_m": 1.3332496995310805e-07,
+          "area_xy_m2": 283.780029296875,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.15570165554835122,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        }
+      ],
+      "outside_exactly_unchanged": null
+    },
+    "floor2": {
+      "GLB_PLY_equal_float32": true,
+      "retained_original_prefix_faces": 537686,
+      "retained_prefix_coordinates_exact": true,
+      "all_mapped_vertical_semantics_and_original_RGB_retained": true,
+      "planes": [
+        {
+          "id": "floor2_floor_1f",
+          "triangles": 12452,
+          "height_span_m": 0.39576423168182373,
+          "maximum_slope_deg": 4.000078201293945,
+          "anchor_error_max_m": 8.06334821135124e-08,
+          "area_xy_m2": 62.26000213623047,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.28558790654406874,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "floor2_ceiling_1f",
+          "triangles": 3756,
+          "height_span_m": 0.1587456464767456,
+          "maximum_slope_deg": 3.800651788711548,
+          "anchor_error_max_m": 7.869347129485504e-08,
+          "area_xy_m2": 18.780000686645508,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.08192935846189928,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "floor2_floor_2f",
+          "triangles": 86868,
+          "height_span_m": 0.5964081287384033,
+          "maximum_slope_deg": 4.00016450881958,
+          "anchor_error_max_m": 1.9854886090797663e-07,
+          "area_xy_m2": 434.34002685546875,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.15842372068019808,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "floor2_ceiling_2f",
+          "triangles": 92680,
+          "height_span_m": 0.7037019729614258,
+          "maximum_slope_deg": 4.000338554382324,
+          "anchor_error_max_m": 3.069636598240777e-07,
+          "area_xy_m2": 463.3999938964844,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.18367023228634538,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        }
+      ],
+      "outside_exactly_unchanged": null
+    },
+    "bridge_12_sub": {
+      "GLB_PLY_equal_float32": true,
+      "retained_original_prefix_faces": 243517,
+      "retained_prefix_coordinates_exact": true,
+      "all_mapped_vertical_semantics_and_original_RGB_retained": true,
+      "planes": [
+        {
+          "id": "sub_floor_1f",
+          "triangles": 10166,
+          "height_span_m": 0.31262481212615967,
+          "maximum_slope_deg": 4.000071048736572,
+          "anchor_error_max_m": 9.420369218027247e-08,
+          "area_xy_m2": 50.82999801635742,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.20253646969227473,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "sub_ceiling_1f",
+          "triangles": 6152,
+          "height_span_m": 0.3272373676300049,
+          "maximum_slope_deg": 4.000089645385742,
+          "anchor_error_max_m": 1.0446194709246015e-07,
+          "area_xy_m2": 30.760000228881836,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.23644729466730707,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "sub_floor_2f",
+          "triangles": 8412,
+          "height_span_m": 0.37814927101135254,
+          "maximum_slope_deg": 4.000041484832764,
+          "anchor_error_max_m": 1.699284841727433e-07,
+          "area_xy_m2": 42.05999755859375,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.16567724167650874,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        },
+        {
+          "id": "sub_ceiling_2f",
+          "triangles": 8942,
+          "height_span_m": 0.43348217010498047,
+          "maximum_slope_deg": 4.000345706939697,
+          "anchor_error_max_m": 2.897389368428094e-07,
+          "area_xy_m2": 44.709999084472656,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.26230693645385206,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        }
+      ],
+      "outside_exactly_unchanged": null
+    },
+    "bridge_out1f": {
+      "GLB_PLY_equal_float32": true,
+      "retained_original_prefix_faces": 116838,
+      "retained_prefix_coordinates_exact": true,
+      "all_mapped_vertical_semantics_and_original_RGB_retained": true,
+      "planes": [
+        {
+          "id": "bridge_out_floor_1f",
+          "triangles": 13106,
+          "height_span_m": 0.2029261589050293,
+          "maximum_slope_deg": 4.000084400177002,
+          "anchor_error_max_m": 7.060020590365923e-08,
+          "area_xy_m2": 65.52999877929688,
+          "atrium_covered_cells": 0,
+          "protected_stair_vertices": 0,
+          "source_fit_p90_m": 0.11907075541824141,
+          "scope": "Fit residual, NOT held-out or surveyed accuracy."
+        }
+      ],
+      "outside_exactly_unchanged": null
+    },
+    "outside": {
+      "GLB_PLY_equal_float32": true,
+      "retained_original_prefix_faces": 272119,
+      "retained_prefix_coordinates_exact": true,
+      "all_mapped_vertical_semantics_and_original_RGB_retained": true,
+      "planes": [],
+      "outside_exactly_unchanged": true
+    }
+  },
+  "comparisons": {
+    "upper_floor_main_vs_sub": {
+      "shared_model_gap_at_same_XY": {
+        "samples": 3826,
+        "median_m": 0.0,
+        "p10_m": 0.0,
+        "p90_m": 0.0,
+        "median_absolute_m": 0.0
+      },
+      "maximum_absolute_model_gap_m": 0.0,
+      "previous_independent_constant_gap_m": 0.3198743227490719,
+      "scope": "Equality is enforced by construction at common XY; NOT independent accuracy or a new pose registration result."
+    }
+  },
+  "atrium_removed_from_lower_ceilings_m2_sum_overlapping_sessions": 92.65000000000002,
+  "pose_changes": 0,
+  "navigation_ready": false,
+  "manifest_sha256": "acccd7a7fa5327720dd741f6c7ecd304ca2c68925a1bb8f7b0c82e61c0be4495",
+  "audit_source_sha256": "2ed60b961dd812157e709118779b1672f602d7180319156cdae4ee4454794730",
+  "scope": "Modeled display topology and exact source preservation; no automatic surveyed building model."
+}

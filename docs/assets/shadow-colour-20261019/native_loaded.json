@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | REVIEW: retained colour / mild shadow lift",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792369631.8942337,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_shadow_colour_v3/manifest.json",
+  "structural_manifest_sha256": "c7c826887024a32124430337c6c4dae794a1fcc2f92c67a76b0fb591d71bc255",
+  "architectural_presentation": true,
+  "start_view": "bank",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "lobby",
+    "node": 811
+  },
+  "camera_model_matrix_open3d": [
+    [
+      -0.7996596097946167,
+      -0.07437151670455933,
+      -0.5958296656608582,
+      -22.823368072509766
+    ],
+    [
+      -0.5968533158302307,
+      -0.01004757359623909,
+      0.8022874593734741,
+      -17.559324264526367
+    ],
+    [
+      -0.06565398722887039,
+      0.9971797466278076,
+      -0.03635424003005028,
+      0.34400585293769836
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "figures": [
+    {
+      "file": "pose_equivalence.png",
+      "sha256": "259d329022b26387e6bd3678f1ea291ef0f57ca1fb0b3aa7baf321b828cba17c",
+      "caption": "All differences use identical A/B frame support and existing common display gauge. Same input rays and 5cm voxels can still have sampling/voxel-boundary display differences.",
+      "synthetic": false
+    },
+    {
+      "file": "substairs_training_closure.png",
+      "sha256": "9b912a419de67b927f148c7d51dfd9547ceae4d6566f5260c015d271bf64a883",
+      "caption": "Unfiltered original test voxels of an existing TRAIN factor; correlated same-sensor geometry, not an independent reserved region.",
+      "synthetic": false
+    }
+  ],
+  "supplement_sha256": "4cfd4e76b8c51f1c1b8b678d071d507cf816327dbb23179088c0bd803790cb91",
+  "synthetic": false,
+  "default_map_modified": false
+}

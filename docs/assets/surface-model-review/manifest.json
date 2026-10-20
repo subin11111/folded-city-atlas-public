@@ -1,0 +1,5491 @@
+{
+  "created_utc": "2026-10-17T12:56:11.599479+00:00",
+  "source_run": "/home/subin/folded-city-atlas/outputs/student_union_surface_portfolio_v1",
+  "display_layers": "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1",
+  "source_sha256": "b6a7996c7f0d01fbc5d30fbc4af4ce2a0152a1bffe09c3a0a9c1733f32339d29",
+  "selected_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "figures": [
+    {
+      "file": "outside/source_view_pointcloud.png",
+      "sha256": "f0bbbbef6845ee7f220cfd77fb0a3a80818da9ec0091acb80af58900125724e1",
+      "session": "outside",
+      "method": "pointcloud",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_pointcloud.png",
+      "sha256": "139af731f047062ea679e1f07ab1ad5dbf149476cfdfa60b397e8f86c260f99f",
+      "session": "outside",
+      "method": "pointcloud",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_tsdf_5cm.png",
+      "sha256": "d1512751f8d7581510b4e6d0cce17153797b868dcca56d79851a05ec3191c795",
+      "session": "outside",
+      "method": "tsdf_5cm",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_tsdf_5cm.png",
+      "sha256": "992eeaff15730ab07ed61d0497bbf4f71c1e0be061e6117beae336aa660a1cc7",
+      "session": "outside",
+      "method": "tsdf_5cm",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_tsdf_3cm.png",
+      "sha256": "9c3372726c767456663ee37f410d506dbfcc1bc451545c2542b39a2dfe37b9e1",
+      "session": "outside",
+      "method": "tsdf_3cm",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_tsdf_3cm.png",
+      "sha256": "b7c360a83c2d75bd76ac768b351019f244831517c09b6a8d41eca1c1f5c17076",
+      "session": "outside",
+      "method": "tsdf_3cm",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_ball_pivoting.png",
+      "sha256": "e23b70fec9ea5f90b340b1119c809e5d032548bc645f54abc4510240e8dbbf99",
+      "session": "outside",
+      "method": "ball_pivoting",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_ball_pivoting.png",
+      "sha256": "52c9e456f8e96f4239e6eb234227dd4551f65fdad02909f1d9f86a0b02c55769",
+      "session": "outside",
+      "method": "ball_pivoting",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_photo_textured.png",
+      "sha256": "cf7f217821c4926fdd2942b99ae5ba4cf016ba57aa1dc073f7e521041881ac2d",
+      "session": "outside",
+      "method": "photo_textured",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_photo_textured.png",
+      "sha256": "c8cf07ab6ecb2c7f78c7ed4efcb57227d08fd181761e25b3f26c3cf137f5d02e",
+      "session": "outside",
+      "method": "photo_textured",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_depth_sheet_textured.png",
+      "sha256": "2fb85b0c6965b44b1b014d589a72d3cd9d6e4bfc8b867a79aa29c09dc59cec4d",
+      "session": "outside",
+      "method": "depth_sheet_textured",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "5eaa9365121dac6106dcaf97359b6a66e3ed2316a7deb18b07b4e11a51223747",
+      "session": "outside",
+      "method": "depth_sheet_textured",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_hybrid.png",
+      "sha256": "b2ffd4c0421edd50cb26bba14252137bb142caae151d04c355943665d68b5df0",
+      "session": "outside",
+      "method": "hybrid",
+      "camera_node": 263,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_hybrid.png",
+      "sha256": "8680418f04f56bb0c6a1976a224ba71ce76f24aade1d75b56df96e352ddf9fc5",
+      "session": "outside",
+      "method": "hybrid",
+      "camera_node": 264,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.6319659383746459,
+          0.17398607275020517,
+          -0.7552138222246774,
+          3.7448537194643468
+        ],
+        [
+          0.7743091254524042,
+          0.1827778616795505,
+          -0.6058366954808647,
+          -0.4612707535150199
+        ],
+        [
+          0.03262927204205427,
+          -0.9676371099777162,
+          -0.2502283348228723,
+          -0.17335609186815062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "outside/source_view_comparison.png",
+      "sha256": "61b576795c1d9a033059fabf8087fb1cbaee9f7a750b272bb3832d633692b056",
+      "session": "outside",
+      "view_role": "source_view",
+      "camera_node": 263,
+      "synthetic": false
+    },
+    {
+      "file": "outside/unused_texture_view_comparison.png",
+      "sha256": "36d2d453f84ab657a607383f8a31d7a34d219e8d3c9248470d2b4bf5cf37a3ab",
+      "session": "outside",
+      "view_role": "unused_texture_view",
+      "camera_node": 264,
+      "synthetic": false
+    },
+    {
+      "file": "outside/oblique_comparison.png",
+      "sha256": "176491f3a3d2cc6cdef2dfc9dd7ea2c575300a7ad150bcf9a7e15339b9e34728",
+      "session": "outside",
+      "view_role": "oblique",
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_pointcloud.png",
+      "sha256": "63a36cc869cf696ba5eb951a48d540d08fa55335e0d40c04f840cb3dca524b0c",
+      "session": "lobby",
+      "method": "pointcloud",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_pointcloud.png",
+      "sha256": "cff1e1c710b2a66344a894d8b2879df946543bab883ff7580e9669afa1174d9e",
+      "session": "lobby",
+      "method": "pointcloud",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_tsdf_5cm.png",
+      "sha256": "e13097469f16d1f26a32b03e6d31831f1b88e914eab3d0a275399efde3d2fe58",
+      "session": "lobby",
+      "method": "tsdf_5cm",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_tsdf_5cm.png",
+      "sha256": "75864096bbf27852c5b4eced70ddb448edb4903be652a3698e5fa4ddcc2fe15f",
+      "session": "lobby",
+      "method": "tsdf_5cm",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_tsdf_3cm.png",
+      "sha256": "eabdbe2d4475630c51430bfe4319aada758a9264fcc9a99beaa0e0a7e853d2e0",
+      "session": "lobby",
+      "method": "tsdf_3cm",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_tsdf_3cm.png",
+      "sha256": "06e23e5413d585b1a74011a7892bf4836dfedfd1a4d8d6931246e610ef881e68",
+      "session": "lobby",
+      "method": "tsdf_3cm",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_ball_pivoting.png",
+      "sha256": "f9f47967636680c645954f5fbba29b4690ef03606c85f8d2889a3979384ce77d",
+      "session": "lobby",
+      "method": "ball_pivoting",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_ball_pivoting.png",
+      "sha256": "691c76dabec030c454ce7275e2c14ce1705ceec15ffa1e2772bea7f128efcf6a",
+      "session": "lobby",
+      "method": "ball_pivoting",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_photo_textured.png",
+      "sha256": "d9a0626a01bbc9ed7b5acc1aa5d70956f2dffcec7ea839103edb4de1afd2de47",
+      "session": "lobby",
+      "method": "photo_textured",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_photo_textured.png",
+      "sha256": "d33b535ba7dd8b00a2fa4e6213c9e1d345159de70c780059f0d461e439dbee59",
+      "session": "lobby",
+      "method": "photo_textured",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_depth_sheet_textured.png",
+      "sha256": "e4d53ed6a27dad4a3ba1ebf4e760a9dfee24e87f1bc2f4c6d52bf881c1645a44",
+      "session": "lobby",
+      "method": "depth_sheet_textured",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "9507164999e9febd703f092fa0df027024dc2b2c7415c6a125b9b43cb2ab39cc",
+      "session": "lobby",
+      "method": "depth_sheet_textured",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_hybrid.png",
+      "sha256": "4b032637f126b81a31594a0a64a1b23d24734d605fef2068da8cb9431fa4d5d4",
+      "session": "lobby",
+      "method": "hybrid",
+      "camera_node": 39,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_hybrid.png",
+      "sha256": "9e6b8d7dd0347f694a3676a1c5264dc89d46faa610b180d5798a9c0886106a60",
+      "session": "lobby",
+      "method": "hybrid",
+      "camera_node": 38,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.8391012911209282,
+          -0.04282860164491922,
+          0.542286999616598,
+          -0.43186614143204893
+        ],
+        [
+          -0.5436499453679697,
+          0.10050542404339305,
+          -0.8332727173349789,
+          0.5270503176525831
+        ],
+        [
+          -0.01881484943343019,
+          -0.9940145106869487,
+          -0.10761796787997792,
+          -0.1694162890604956
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "lobby/source_view_comparison.png",
+      "sha256": "baa57e1f7721581fe7075ff64beeeeb88a74033d81166d2fe7fc1ea7a9f9da81",
+      "session": "lobby",
+      "view_role": "source_view",
+      "camera_node": 39,
+      "synthetic": false
+    },
+    {
+      "file": "lobby/unused_texture_view_comparison.png",
+      "sha256": "b5175d41938a293598f306369e57125c02864f033a1d4758eea19c7db188c350",
+      "session": "lobby",
+      "view_role": "unused_texture_view",
+      "camera_node": 38,
+      "synthetic": false
+    },
+    {
+      "file": "lobby/oblique_comparison.png",
+      "sha256": "4654983811c493b29d349dba18b108fbdcff848bb35f281095a58bcc6acaaeb8",
+      "session": "lobby",
+      "view_role": "oblique",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_pointcloud.png",
+      "sha256": "3c34fcb38c66e29b664d910d2202a60dfa6c7e1dc6587be88cb299e07a4a329a",
+      "session": "bridge_out1f",
+      "method": "pointcloud",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_pointcloud.png",
+      "sha256": "fe735a618b58c3107798a9af3a2709c0d1b30888166bab9343b0c23ee215b15a",
+      "session": "bridge_out1f",
+      "method": "pointcloud",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_tsdf_5cm.png",
+      "sha256": "29f6b1ece6265224dce4ae4f985347044d9c0bc84cb88e07c4531656d1b2862c",
+      "session": "bridge_out1f",
+      "method": "tsdf_5cm",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_tsdf_5cm.png",
+      "sha256": "e5d526654b9c58955cdc6c897da5b551855cf42f2532f4c64a48106baba6d476",
+      "session": "bridge_out1f",
+      "method": "tsdf_5cm",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_tsdf_3cm.png",
+      "sha256": "234387cc317adfa0a2d3c9aba377ff1ac5deacbee71aea398b88e56488fc29f7",
+      "session": "bridge_out1f",
+      "method": "tsdf_3cm",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_tsdf_3cm.png",
+      "sha256": "229895519f2d2439652ffd7b1d1df2d74dea930ec302b707f2e0bc7643fbfe12",
+      "session": "bridge_out1f",
+      "method": "tsdf_3cm",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_ball_pivoting.png",
+      "sha256": "2d8ebc88e787df5961eb268223c17cef971e0a528a355d21b9608b5362bc9863",
+      "session": "bridge_out1f",
+      "method": "ball_pivoting",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_ball_pivoting.png",
+      "sha256": "ac52eb165b996c714aaf72e6c755d1bf9bdbac681f083a7a2b3d101c6c2c32f4",
+      "session": "bridge_out1f",
+      "method": "ball_pivoting",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_photo_textured.png",
+      "sha256": "471a4e4dc9db8901a53564131b5612b09378e8e4f402c13091f16f9604ac4656",
+      "session": "bridge_out1f",
+      "method": "photo_textured",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_photo_textured.png",
+      "sha256": "81a7b938455ecb7bf6cadaaf233e7e4472f62b50e181ed0926254a8c1a4e9886",
+      "session": "bridge_out1f",
+      "method": "photo_textured",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_depth_sheet_textured.png",
+      "sha256": "27e27a7074006e8f97ea0d779b992180cbfaaad2f8dfd88a64afad9e770638b9",
+      "session": "bridge_out1f",
+      "method": "depth_sheet_textured",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "b242ba39491f8ea627c979b697754800dd674ca1f434d737f971fa3ac9491d5c",
+      "session": "bridge_out1f",
+      "method": "depth_sheet_textured",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_hybrid.png",
+      "sha256": "71fcfdeda557b077ea94930f75feaab39dbec82edda6e15aa4db79cc76a829f6",
+      "session": "bridge_out1f",
+      "method": "hybrid",
+      "camera_node": 80,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_hybrid.png",
+      "sha256": "14bca03b1c5b36b278af021ab740782ef04cb9fe049aee80deab69468747cc02",
+      "session": "bridge_out1f",
+      "method": "hybrid",
+      "camera_node": 81,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.7344354107458814,
+          -0.16331782352068105,
+          0.6587354487455167,
+          0.7324105730616404
+        ],
+        [
+          -0.6745698406515871,
+          0.06902140352647869,
+          -0.7349772643287407,
+          -0.7134127553621168
+        ],
+        [
+          0.07456806249614074,
+          -0.9841563957079777,
+          -0.16086102046328968,
+          -0.19312550017560898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/source_view_comparison.png",
+      "sha256": "26b2784ad0e1981e184be42d5e8fdb5f977a3a04863236aef7c92d428f1822d3",
+      "session": "bridge_out1f",
+      "view_role": "source_view",
+      "camera_node": 80,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/unused_texture_view_comparison.png",
+      "sha256": "68888a94d234711ceabe2be8ca8d9322e530d3d2da38dad92a00bd515b286ef0",
+      "session": "bridge_out1f",
+      "view_role": "unused_texture_view",
+      "camera_node": 81,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_out1f/oblique_comparison.png",
+      "sha256": "3eb6076ae243e7cb06c50375359f7945ffef24af9409fd32b0d9b42efa5221ba",
+      "session": "bridge_out1f",
+      "view_role": "oblique",
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_pointcloud.png",
+      "sha256": "4b57cca80622dc4a6849fb6cac4980ccd8074bd912b754e5c2fa3943f8d3b853",
+      "session": "floor2",
+      "method": "pointcloud",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_pointcloud.png",
+      "sha256": "84dc42e5af342cf146760c242138181d868b358b51d9dcacc1fe5e82e3afda9b",
+      "session": "floor2",
+      "method": "pointcloud",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_pointcloud.png",
+      "sha256": "9d655b753a099913b7ff430db017d64f872b66e0dfc4badc39041d4b06b5170f",
+      "session": "floor2",
+      "method": "pointcloud",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_tsdf_5cm.png",
+      "sha256": "f28d0492957a6a06c5ec80f314dba4cf1c0621c15746d0bc5f6aa3a3d3780ee2",
+      "session": "floor2",
+      "method": "tsdf_5cm",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_tsdf_5cm.png",
+      "sha256": "144cd254777411c44cb0c330aae785c1ac764eaf75bd3e69b8989c994e3c1fa6",
+      "session": "floor2",
+      "method": "tsdf_5cm",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_tsdf_5cm.png",
+      "sha256": "a67f5c8f66a8d8aab54b6bfca5423833242fcad940da63203b2efa0575aa238f",
+      "session": "floor2",
+      "method": "tsdf_5cm",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_tsdf_3cm.png",
+      "sha256": "a8285fe70927656d94143759e32a4b6580193cbc1e6ab6ba7e77769c6bbba871",
+      "session": "floor2",
+      "method": "tsdf_3cm",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_tsdf_3cm.png",
+      "sha256": "edf0eae76833b14bb9cfe96bde4c4b5346083be4527ae5c5f25a5b57e0751ea3",
+      "session": "floor2",
+      "method": "tsdf_3cm",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_tsdf_3cm.png",
+      "sha256": "571ca8fef5be4bf0bb190564584af7200e45a987f2c1c92b4535bd23fb8848f7",
+      "session": "floor2",
+      "method": "tsdf_3cm",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_ball_pivoting.png",
+      "sha256": "5740317ce19f44810e530a4aa54488b07f692dadc429eadfb759451311d70b20",
+      "session": "floor2",
+      "method": "ball_pivoting",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_ball_pivoting.png",
+      "sha256": "0f03946831e0dbe76975d5e4e3196f3dd23271d9707328a89c32ccfad86b8d33",
+      "session": "floor2",
+      "method": "ball_pivoting",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_ball_pivoting.png",
+      "sha256": "b04ca58e50dccbbb13d8e5f7856c8c31e0ea281c75cbc3103070e1adedf5b7ca",
+      "session": "floor2",
+      "method": "ball_pivoting",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_photo_textured.png",
+      "sha256": "47dec948a7de2d721974c9c0122070df5a06259983f15f3849014e3154a77503",
+      "session": "floor2",
+      "method": "photo_textured",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_photo_textured.png",
+      "sha256": "649f7ed283e74e52e914b683d9b6735c7917849bf3747ed98d73952bc8fe25e1",
+      "session": "floor2",
+      "method": "photo_textured",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_photo_textured.png",
+      "sha256": "4fc2e86e762d509b91dd29f666ccf5f7163d31ddac430a8e6d3b4401bee8ba34",
+      "session": "floor2",
+      "method": "photo_textured",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_depth_sheet_textured.png",
+      "sha256": "97b2e865d964e6f13d64297008e2878a3e055ecf4a4dfddb7337300b4d3f5d5e",
+      "session": "floor2",
+      "method": "depth_sheet_textured",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "07b9aeb6541970eff06f23f3cd1d40dee183411c320aa1d658d86bf00a4cff2a",
+      "session": "floor2",
+      "method": "depth_sheet_textured",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_depth_sheet_textured.png",
+      "sha256": "8e07a15e336d9720a968019e2b702a4db703b4dca7bcac701b0b0fa1dbe38afa",
+      "session": "floor2",
+      "method": "depth_sheet_textured",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_hybrid.png",
+      "sha256": "a4723192e43180b75a3004310c5f177dd83bfe2d5a3eb8686fbd3220763f15a9",
+      "session": "floor2",
+      "method": "hybrid",
+      "camera_node": 1055,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_hybrid.png",
+      "sha256": "62b860cc3e00e5c1b5d86e6b82260a8bba89e0368753e27a5b0b61a3c991177a",
+      "session": "floor2",
+      "method": "hybrid",
+      "camera_node": 1054,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          -0.9656180047002849,
+          -0.07496979746935292,
+          0.24892117796303942,
+          -16.714983548202706
+        ],
+        [
+          -0.25710453699601066,
+          0.13373707630563603,
+          -0.9570850415842684,
+          -8.401654093518589
+        ],
+        [
+          0.038462507371664456,
+          -0.9881773123917792,
+          -0.1484139776292642,
+          4.172655095218
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_hybrid.png",
+      "sha256": "151d1330071ec768dbc3a0bb89b51e6facdf6ddcdb2d13ed7c816d59837a81ac",
+      "session": "floor2",
+      "method": "hybrid",
+      "camera_node": 1078,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "floor2/source_view_comparison.png",
+      "sha256": "af7e4dc9a383cee857bd619e8ab155a43f3775dcb086d8744d6abe3cc12ef90b",
+      "session": "floor2",
+      "view_role": "source_view",
+      "camera_node": 1055,
+      "synthetic": false
+    },
+    {
+      "file": "floor2/unused_texture_view_comparison.png",
+      "sha256": "1ab49370591c5d0aff576deab7716213a183873c33a11bef91479c9488cc6d3a",
+      "session": "floor2",
+      "view_role": "unused_texture_view",
+      "camera_node": 1054,
+      "synthetic": false
+    },
+    {
+      "file": "floor2/stairs_view_comparison.png",
+      "sha256": "3502de6432404657e1b555dda232344f677dc0028a73cb753e912123e8ceb6db",
+      "session": "floor2",
+      "view_role": "stairs_view",
+      "camera_node": 1078,
+      "synthetic": false
+    },
+    {
+      "file": "floor2/oblique_comparison.png",
+      "sha256": "30674694d2f8ad68d4891976696c52918706ee3cc5b725599732e0b919951283",
+      "session": "floor2",
+      "view_role": "oblique",
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_pointcloud.png",
+      "sha256": "029eb3265a9b00b225c36ace1c5d74e116130525f8710b4ae487afb0c3ebdab2",
+      "session": "bridge_12_sub",
+      "method": "pointcloud",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_pointcloud.png",
+      "sha256": "5ee377386ece799d28dc82677ea394c339089d5ea562b8628993db9c363b95f2",
+      "session": "bridge_12_sub",
+      "method": "pointcloud",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_pointcloud.png",
+      "sha256": "05a29827472e40f37dd113163f3fb6b33dbb8823f2606d826ce25bddddb8ee54",
+      "session": "bridge_12_sub",
+      "method": "pointcloud",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_tsdf_5cm.png",
+      "sha256": "3b507e3a25ff21ef17bd5661e6867e8b0193ce4c151bab8ca88324724a723051",
+      "session": "bridge_12_sub",
+      "method": "tsdf_5cm",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_tsdf_5cm.png",
+      "sha256": "97b0c8b0015805efd8ac50cfc5481b46c48b3fd8d4881745265cde7bf88f053c",
+      "session": "bridge_12_sub",
+      "method": "tsdf_5cm",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_tsdf_5cm.png",
+      "sha256": "810b88fc249fb862cae89b81573f71893de65c3d3ce08cf653407fa920c6ac85",
+      "session": "bridge_12_sub",
+      "method": "tsdf_5cm",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_tsdf_3cm.png",
+      "sha256": "da74eb75ff72dee90c3357709d71fdcabd532b33ca8ac8de1cf8abb49af21228",
+      "session": "bridge_12_sub",
+      "method": "tsdf_3cm",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_tsdf_3cm.png",
+      "sha256": "21dd073e744e5a8dca6d29270190ed4628b42cebe12036ae26b391fd4a50ef82",
+      "session": "bridge_12_sub",
+      "method": "tsdf_3cm",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_tsdf_3cm.png",
+      "sha256": "057a41a7471dc19a5c7bada44ec3ee499064bc3c5ccc611d6a37aab9a397d98e",
+      "session": "bridge_12_sub",
+      "method": "tsdf_3cm",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_ball_pivoting.png",
+      "sha256": "fe9b0f01babd78fb497ca034e0b09a809012afe785f6e6817e337488bc442718",
+      "session": "bridge_12_sub",
+      "method": "ball_pivoting",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_ball_pivoting.png",
+      "sha256": "44f47b66565a30f525d855c5b2dec106e729a638032f209f0c0e1dbaadb1f0f6",
+      "session": "bridge_12_sub",
+      "method": "ball_pivoting",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_ball_pivoting.png",
+      "sha256": "e68d70cc5fa10ef4e65a27c98f61108446f85bd0bfd05b37e481b24434241d4f",
+      "session": "bridge_12_sub",
+      "method": "ball_pivoting",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_photo_textured.png",
+      "sha256": "ab31a40e3968b7b7abc55f8e7000d8837318200ac2af506e96e534c7057f743d",
+      "session": "bridge_12_sub",
+      "method": "photo_textured",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_photo_textured.png",
+      "sha256": "1d2408bb2c0e957b005bf114def2499739e2be30f9799cc509b9fa8b03548134",
+      "session": "bridge_12_sub",
+      "method": "photo_textured",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_photo_textured.png",
+      "sha256": "e3d72bc9e5be7258be1fce8743f1088a0e19a4bad5ae6f10e4e8807cdb428d83",
+      "session": "bridge_12_sub",
+      "method": "photo_textured",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_depth_sheet_textured.png",
+      "sha256": "6e637239d0772e7639dc6a454e36469aa46b9a126a62950d353409f109c8389c",
+      "session": "bridge_12_sub",
+      "method": "depth_sheet_textured",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_depth_sheet_textured.png",
+      "sha256": "8191f0d52836aba2889c3aa524c08e9bcb6169dfc51bf336cdd378549264dc46",
+      "session": "bridge_12_sub",
+      "method": "depth_sheet_textured",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_depth_sheet_textured.png",
+      "sha256": "b9419e40e01eaae5b18f31f3552d7cd6b6f7e773de4f5a161df38da268e33fc6",
+      "session": "bridge_12_sub",
+      "method": "depth_sheet_textured",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_hybrid.png",
+      "sha256": "6da6872bb087f30f762909aa6b11ddb6bb966a7488978c74185640921645cba7",
+      "session": "bridge_12_sub",
+      "method": "hybrid",
+      "camera_node": 159,
+      "view_role": "source_view",
+      "camera_matrix": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_hybrid.png",
+      "sha256": "9b29f2d23fe1a6abeec78933e4a9555dc8d6a7b6be4a4e5a48196663bca2cddf",
+      "session": "bridge_12_sub",
+      "method": "hybrid",
+      "camera_node": 157,
+      "view_role": "unused_texture_view",
+      "camera_matrix": [
+        [
+          0.5623334376042225,
+          0.176986791272467,
+          -0.807748254807728,
+          -13.914276091380986
+        ],
+        [
+          0.8219343753313504,
+          -0.012629006423973611,
+          0.5694421885680634,
+          10.31610770480463
+        ],
+        [
+          0.0905827026506066,
+          -0.9841324406547294,
+          -0.15257322554266,
+          4.446647579692954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_hybrid.png",
+      "sha256": "674e5568fe4f9b27c9a39d908f86b41c268c24a9a5e3eb11547ca26108ea58b3",
+      "session": "bridge_12_sub",
+      "method": "hybrid",
+      "camera_node": 108,
+      "view_role": "stairs_view",
+      "camera_matrix": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/source_view_comparison.png",
+      "sha256": "8502724eddd87b190562d3edf05e5d7f33dbe77f6bc67ad258d4ee396659cefa",
+      "session": "bridge_12_sub",
+      "view_role": "source_view",
+      "camera_node": 159,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/unused_texture_view_comparison.png",
+      "sha256": "645d1e72f0861a48e6e0e2c3cdb4a065da1400c20800bd5ad3964719f2e036af",
+      "session": "bridge_12_sub",
+      "view_role": "unused_texture_view",
+      "camera_node": 157,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/stairs_view_comparison.png",
+      "sha256": "4d19f4f3720f53db4cc96e5295c0e21cf1eaaf9bc6e3d165e5eee39f574f60ef",
+      "session": "bridge_12_sub",
+      "view_role": "stairs_view",
+      "camera_node": 108,
+      "synthetic": false
+    },
+    {
+      "file": "bridge_12_sub/oblique_comparison.png",
+      "sha256": "0b07fc676db0f38a57cc4f0287e867019040e6c3acd752199de7547caa29f8b3",
+      "session": "bridge_12_sub",
+      "view_role": "oblique",
+      "synthetic": false
+    }
+  ],
+  "sessions": {
+    "outside": {
+      "session": "outside",
+      "candidate": "J01",
+      "selected_frames": 305,
+      "valid_depth_samples_integrated_per_variant": 7867441,
+      "texture_frames": 64,
+      "preprocessing": {
+        "name": "outdoor_coverage",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.15,
+        "edge_gate": 0.0
+      },
+      "models": {
+        "tsdf_5cm": {
+          "vertices": 286444,
+          "triangles": 536671,
+          "surface_area_m2": 481.3798781097879,
+          "boundary_edges": 36291,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.4875833333333333,
+          "reference_points_within_10cm": 0.7084166666666667,
+          "reference_to_surface_median_m": 0.0518493726849556,
+          "reference_to_surface_p90_m": 0.205643503367901,
+          "surface_samples_farther_than_10cm_from_reference": 0.007666666666666666,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "tsdf_3cm": {
+          "vertices": 880325,
+          "triangles": 1611984,
+          "surface_area_m2": 498.8851843292601,
+          "boundary_edges": 139728,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.4925833333333333,
+          "reference_points_within_10cm": 0.6590833333333334,
+          "reference_to_surface_median_m": 0.051288239657878876,
+          "reference_to_surface_p90_m": 0.2270336017012596,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "ball_pivoting": {
+          "vertices": 154146,
+          "triangles": 278916,
+          "surface_area_m2": 432.008265913077,
+          "boundary_edges": 32920,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.466,
+          "reference_points_within_10cm": 0.6818333333333333,
+          "reference_to_surface_median_m": 0.05686197802424431,
+          "reference_to_surface_p90_m": 0.18867860287427904,
+          "surface_samples_farther_than_10cm_from_reference": 8.333333333333333e-05,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 48160136,
+          "triangles": 180000,
+          "textured_faces": 77167,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          8,
+          13,
+          18,
+          23,
+          28,
+          32,
+          38,
+          43,
+          48,
+          55,
+          60,
+          64,
+          69,
+          74,
+          81,
+          86,
+          91,
+          96,
+          101,
+          106,
+          111,
+          116,
+          120,
+          126,
+          132,
+          137,
+          142,
+          148,
+          152,
+          160,
+          166,
+          174,
+          181,
+          186,
+          190,
+          196,
+          206,
+          211,
+          217,
+          223,
+          228,
+          233,
+          238,
+          243,
+          249,
+          254,
+          262,
+          263,
+          268,
+          273,
+          278,
+          284,
+          288,
+          296,
+          305,
+          310,
+          315,
+          322,
+          326,
+          333,
+          338,
+          343,
+          354
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.42870555555555556,
+        "unassigned_face_fraction": 0.5712944444444444,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "presentation_max_triangles": 180000,
+      "presentation_simplification_scope": "Quadric-decimated DISPLAY mesh; un-decimated TSDF/BPA PLYs retained. Texture/3cm display use identical decimated geometry.",
+      "detail_overlay_points": 43472,
+      "detail_overlay_scope": "Image/depth-edge candidates with valid depth and 2.5-25cm fine-mesh discrepancy; NOT semantic signs",
+      "pose_changes": 0,
+      "cross_session_fusion": false,
+      "gaussian_training_executed": false,
+      "source_inputs": {
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside_trajectory.csv": "f2af5d9c5a222478897e17338de5050af4c2acf20ae0c8f4b5489ecf772f1948",
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside.ply": "01f23defd8ead99c56cc545640650a86ac0d7d78d4840fecd1c74c2aabfd9358",
+        "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91"
+      },
+      "seconds": 125.71166611299986,
+      "outputs": {
+        "tsdf_5cm.glb": {
+          "bytes": 19441172,
+          "sha256": "87ca8e5bf2d48e872280c2925e844980f5878fe9369b7a9940504f50ea5fbd88"
+        },
+        "ball_pivoting_display.ply": {
+          "bytes": 7627228,
+          "sha256": "23fbb8f15bfadde9cb6b5af18d8253b35f0e8095c46b64abf4ecd9147e806984"
+        },
+        "detail_overlay.ply": {
+          "bytes": 652301,
+          "sha256": "84dd196730e71f8e6d97d9c067eb5b0104ef46410c60574f2542adad626e7945"
+        },
+        "atlas_01.png": {
+          "bytes": 9053450,
+          "sha256": "e3c3b6fb676dff7e8c9104e38d54a1e9c452f2472d2abdca7020b073a52a4729"
+        },
+        "texture_frame_assignment.npy": {
+          "bytes": 720128,
+          "sha256": "206a8b38304dd1f566b1ac54927e54b097fe104f6411785c6922120ba20ffbfc"
+        },
+        "tsdf_3cm.glb": {
+          "bytes": 19441176,
+          "sha256": "bef45a1df254f789055edfd92d9dfb193260f861e4dc40e07cdc2e11baf57330"
+        },
+        "tsdf_5cm.ply": {
+          "bytes": 21585693,
+          "sha256": "46c0a7c7de0ba711c850b434be58267f840456337e82900c801d94cc0e2420bf"
+        },
+        "ball_pivoting.glb": {
+          "bytes": 19441108,
+          "sha256": "e453429ea17f7014b18717a5ece9dee56deb2362ad423a6cc8bd17fae99742af"
+        },
+        "tsdf_3cm_display.ply": {
+          "bytes": 7236733,
+          "sha256": "52efab77d26a6fd96f272b08f2f14c3cb16c1234da31e31fa352e80379fc593e"
+        },
+        "atlas_02.png": {
+          "bytes": 9316392,
+          "sha256": "18e91b7bcfb8021fdedb21ed174c778e20f3f8206fa7563473d80c0e84272ec2"
+        },
+        "tsdf_5cm_display.ply": {
+          "bytes": 7318078,
+          "sha256": "8b2fcf6cbe15271519a861eeaff785abb3c1be1ea193db060c9deaa079e123ba"
+        },
+        "atlas_00.png": {
+          "bytes": 9511894,
+          "sha256": "6a6089be052dfb88c1d0b8baa9043f6372efaf495d5c25e103a9b4275ea5530c"
+        },
+        "ball_pivoting.ply": {
+          "bytes": 11487680,
+          "sha256": "e2fd3d255dd623fd55822e56086537202640a22e257863650e3fa182833f3002"
+        },
+        "photo_textured.glb": {
+          "bytes": 48160136,
+          "sha256": "722d8c7e29a1e987a297cc970ed98528b5f0f19bf78f0c94818eb553a2705e19"
+        },
+        "atlas_03.png": {
+          "bytes": 1759185,
+          "sha256": "7163b437751cfd82143cf47fb56df421efd8c6e2c2603af9dc2f5c3e9c51e916"
+        },
+        "tsdf_3cm.ply": {
+          "bytes": 65852694,
+          "sha256": "bbcd136ac45f943bf08cb8d7ff3ee34734293f96a34f6ae251380abd97a4cde9"
+        },
+        "calibrated_views/00181.png": {
+          "bytes": 404853,
+          "sha256": "e0d197b8cb54d7dad882754233178f85bd1eac5160dd25e2748c279e7f9325e7"
+        },
+        "calibrated_views/00315.png": {
+          "bytes": 337399,
+          "sha256": "67720cdaa5b7aa08f6cdafe7a705ff1a75bd4319ed7d3abc5aa6c334ab472137"
+        },
+        "calibrated_views/00013.png": {
+          "bytes": 518309,
+          "sha256": "137094bc89e834c0fab4ee80ebcb867aaf0c72bc7e15f81ed99a90909478678d"
+        },
+        "calibrated_views/00206.png": {
+          "bytes": 549842,
+          "sha256": "7e81a64fed64f05adc367ff462dab6d159eef5907fdc896c035ab9d3d7351a3d"
+        },
+        "calibrated_views/00238.png": {
+          "bytes": 485782,
+          "sha256": "9e66f1795f65ab7f7b92ddf912a1004f90f3091d1dbbdc14290fc9abcdd836b4"
+        },
+        "calibrated_views/00096.png": {
+          "bytes": 485596,
+          "sha256": "a73fc43f6511c5f51ca5d37e0923809b9653ada5a1b774501f12060ee18fca41"
+        },
+        "calibrated_views/00055.png": {
+          "bytes": 532581,
+          "sha256": "1567e227c461e9564e09fcd978b843d6f306d6e00e60e5a59a33b5fdc9dff64a"
+        },
+        "calibrated_views/00196.png": {
+          "bytes": 416937,
+          "sha256": "45b7f8239b3ffb0d2555df11ac54ae88eaca8678504e3d65bb6fe97f6bc4235d"
+        },
+        "calibrated_views/00060.png": {
+          "bytes": 472927,
+          "sha256": "0430ea9d34b4b1ab90b2718e5b31f668966ca361b1a9baa17a24f4a9ac1d7d7f"
+        },
+        "calibrated_views/00008.png": {
+          "bytes": 593308,
+          "sha256": "276969b009a13bc1b452fdcfabbe4b845947a535eabc8a5c8f7ec5813e3f2caa"
+        },
+        "calibrated_views/00166.png": {
+          "bytes": 487102,
+          "sha256": "6b1a92a1a41ddb3cd6e1a25226c76c3dbcaca9b15c809d41094643771e1c1d7b"
+        },
+        "calibrated_views/00268.png": {
+          "bytes": 474967,
+          "sha256": "5e1fa6b66743fda6df578f3b90f571544008d63cb613bfec1c6623733865e346"
+        },
+        "calibrated_views/00305.png": {
+          "bytes": 401237,
+          "sha256": "604d828c536bc429295bfeffc72ed1066844499f68aaa230ba997fa7188ed531"
+        },
+        "calibrated_views/00120.png": {
+          "bytes": 342223,
+          "sha256": "e3791b1dce2be4ba0a0649ebe8900fcb97db9b93c8365b45fea5fae8652bbd30"
+        },
+        "calibrated_views/00152.png": {
+          "bytes": 375361,
+          "sha256": "7e46fcce544bed111f57bed067402812187b52b1a06017732016559527946d77"
+        },
+        "calibrated_views/00338.png": {
+          "bytes": 427503,
+          "sha256": "52c60f8490900119157c59b035998b51c13d7beb2d3039ee9b4775b6265d955c"
+        },
+        "calibrated_views/00174.png": {
+          "bytes": 507340,
+          "sha256": "4536f60a8216edccc2ac37196d4409a69a3bb9ad6934da08d403ad1e1ec22344"
+        },
+        "calibrated_views/00101.png": {
+          "bytes": 501456,
+          "sha256": "b82645be20bcabfa1dc4771f980f5137555a73b334069c10e25434ac8f7bb4e3"
+        },
+        "calibrated_views/00263.png": {
+          "bytes": 439744,
+          "sha256": "afaf3ae3a8f1669c81b09069f6050c40961f11bcd36f223d7a7fb1922912368a"
+        },
+        "calibrated_views/00043.png": {
+          "bytes": 398490,
+          "sha256": "bd792377be77858c97f8dcd93fe984579300e68304daeff0b7b3c0800cfb47da"
+        },
+        "calibrated_views/00081.png": {
+          "bytes": 474481,
+          "sha256": "ef0ceb6f8d26372c7856b5e212cbbff08c5c32655f1094d5c2af87cb5d8a8534"
+        },
+        "calibrated_views/00326.png": {
+          "bytes": 415002,
+          "sha256": "8f16e461a5694787ff52b614aa6b632d109a8c111279faf83db84a3570160cf2"
+        },
+        "calibrated_views/00038.png": {
+          "bytes": 390106,
+          "sha256": "f90d0972fdd04b241b7ee016325276b772e5563f83003c107dda81a33188e35c"
+        },
+        "calibrated_views/00064.png": {
+          "bytes": 482023,
+          "sha256": "1971484ed7252fd7d73d6ea4c8adb10b31892bc704a321c477bef5ac13da6709"
+        },
+        "calibrated_views/00211.png": {
+          "bytes": 507201,
+          "sha256": "6d11fc475db7ff40df29c1598545326a77e3f68a060c0f49887720ba84320276"
+        },
+        "calibrated_views/00233.png": {
+          "bytes": 614655,
+          "sha256": "6bd1f9a759c5a3c06e06adb0678906c34a049afa26e2d497658a0b053e1d523b"
+        },
+        "calibrated_views/00091.png": {
+          "bytes": 421734,
+          "sha256": "654167a922326dd841192a360b538b534ad6afaf98e5fa6780bf7f8f92a0bc79"
+        },
+        "calibrated_views/00262.png": {
+          "bytes": 411062,
+          "sha256": "1aa9bcc0588df432d8f98fdbd40829397b2b6b05be7e35c368b6832b0e377890"
+        },
+        "calibrated_views/00310.png": {
+          "bytes": 325696,
+          "sha256": "5f79c35dea0575658db6436f399fd2ed008e2bbf1febec1ddb2c556cf042a1c8"
+        },
+        "calibrated_views/transforms.json": {
+          "bytes": 60324,
+          "sha256": "719a9a8ad9dcf75919dc2f218febc5eb811b966bd792f7c3ea5761f7e9b62a2f"
+        },
+        "calibrated_views/00217.png": {
+          "bytes": 452213,
+          "sha256": "bc0d72b0f33c7652d59bdf3be8beba6fce59be80d1d4a554d171bbb9ec39e390"
+        },
+        "calibrated_views/00223.png": {
+          "bytes": 473058,
+          "sha256": "c1bdfb36e6cf7847161a8e651e667d20e6193f97c9a38c80ff50ae7849cbcd0c"
+        },
+        "calibrated_views/00132.png": {
+          "bytes": 476141,
+          "sha256": "265063bb490c5944fdac6826e70786c2a86302e4533aea5b4122e2aa9d83720a"
+        },
+        "calibrated_views/00001.png": {
+          "bytes": 593335,
+          "sha256": "76eee1090ecbb31c39646735a6f20f387e6155cf6dd1d9f21a5a93b42b317b68"
+        },
+        "calibrated_views/00086.png": {
+          "bytes": 395031,
+          "sha256": "fd5c3c362535e1f64cf64300e393aae4be1b223ad8022ee2826ef30044046a89"
+        },
+        "calibrated_views/00343.png": {
+          "bytes": 416190,
+          "sha256": "5c6dc1a002cfb34ea8f3da78fd2b853f56ccaa0a506396698113ca9d114a9d79"
+        },
+        "calibrated_views/00243.png": {
+          "bytes": 488384,
+          "sha256": "a2748cca67d98dea68c8ad11f10f0c585623f87555dd306e2635333c6bcce7c2"
+        },
+        "calibrated_views/00116.png": {
+          "bytes": 362661,
+          "sha256": "057dae34d9fdba24338624f3527650364f6604b401f26bc180e8bdc73002bbba"
+        },
+        "calibrated_views/00028.png": {
+          "bytes": 397003,
+          "sha256": "38ea545e0ee9c867f2cab89e9876377f5b938fd8f68325cdbb915c881ade6c08"
+        },
+        "calibrated_views/00296.png": {
+          "bytes": 462365,
+          "sha256": "6ef1a5ba72ab8f5bccb764ed02c8c4d2a7c414d952a681c06548b77020370782"
+        },
+        "calibrated_views/00354.png": {
+          "bytes": 382288,
+          "sha256": "5c5be7e812d3e5e39b773da9ac87ce0798ba398c296fbbf50b41d802eef48122"
+        },
+        "calibrated_views/00273.png": {
+          "bytes": 461703,
+          "sha256": "d4407fe400acfb6e2d39ed5074d2f098b195d032020a33bfdf0f8049d6cc269e"
+        },
+        "calibrated_views/00249.png": {
+          "bytes": 422364,
+          "sha256": "569beef37054dbe565c6ba11e70dd2e5210b66a421dbe759b34fccd0ec287177"
+        },
+        "calibrated_views/00254.png": {
+          "bytes": 501884,
+          "sha256": "d93400169ff0bd7548c973b08ee3a0cf491dec8d9da2bb7cf8384944d062cdab"
+        },
+        "calibrated_views/00048.png": {
+          "bytes": 389658,
+          "sha256": "3618ee5e9df4910aa1b2cdb866d054a3718726aeb17a8bf3704d0cf4b941dc0b"
+        },
+        "calibrated_views/00142.png": {
+          "bytes": 366606,
+          "sha256": "a1492e4010ffe995487c4ec21740f26b3835b1186d327f9881db4503fad8b92f"
+        },
+        "calibrated_views/00023.png": {
+          "bytes": 471249,
+          "sha256": "a244d9078a9ab1bec5e1e77b76f336acd99d95fe7a8e8a3a94561f267e2412ce"
+        },
+        "calibrated_views/00190.png": {
+          "bytes": 425058,
+          "sha256": "04c4ba98ee1497f99dfc8ce7646e5a28d112eba4c93906a44fff546e3ee82fc7"
+        },
+        "calibrated_views/00160.png": {
+          "bytes": 480903,
+          "sha256": "6c67e266314591fd5249dc020d836e2e36c898c233bf1b7d7672b3da9dc7bbfa"
+        },
+        "calibrated_views/00069.png": {
+          "bytes": 460098,
+          "sha256": "b706a2ee2da375a8750f1cf6d9f5cfc57e116a2b2167705d22d1850b906e53aa"
+        },
+        "calibrated_views/00228.png": {
+          "bytes": 593081,
+          "sha256": "ce2f9d03eda1a40f7ddf258285d4bd267127844d16a149b029d72185e1ead05e"
+        },
+        "calibrated_views/00018.png": {
+          "bytes": 572571,
+          "sha256": "f294f00b6462febd76142c7533646278e9a6fd11274cd757dc5e2b5c23d635f6"
+        },
+        "calibrated_views/00333.png": {
+          "bytes": 423321,
+          "sha256": "be75473b304fc7e9d8e7f759b29a0ccdff962e67184513f59ca90975a3c3f63e"
+        },
+        "calibrated_views/00278.png": {
+          "bytes": 514359,
+          "sha256": "7677dfa30214af5c5b4d1e266de01278d6893c05610b76489341f7581ccd2304"
+        },
+        "calibrated_views/00137.png": {
+          "bytes": 463419,
+          "sha256": "e11b894a769c3651e2909c9403ddfb0165c9739f63f45d04fc83901acba59682"
+        },
+        "calibrated_views/00126.png": {
+          "bytes": 448949,
+          "sha256": "fc3e4ba5330307f85bd8030e4c9dc6432e1038ebd03e1a76b63116bb18eea3c0"
+        },
+        "calibrated_views/00288.png": {
+          "bytes": 459936,
+          "sha256": "daec41416550ead6b9e7af50e1c24ca6359083ade7ee9b2bec32d1cc9559575a"
+        },
+        "calibrated_views/00106.png": {
+          "bytes": 472039,
+          "sha256": "258711d849cd0f103ec09392702b058e7f05fcbbcf11c9d3324ff326be3b94a6"
+        },
+        "calibrated_views/00148.png": {
+          "bytes": 413561,
+          "sha256": "d8c3b29fe35b0fdc5571c61afc141bb15f676c691ae585a024b40092c425af52"
+        },
+        "calibrated_views/00284.png": {
+          "bytes": 410592,
+          "sha256": "5eebee4627ee1219d7bf4e63873e465b1fd9dc6ae83be37f93137a885b4cea95"
+        },
+        "calibrated_views/00032.png": {
+          "bytes": 352387,
+          "sha256": "28b8311216a118e66d3b467e71f3bc2ac91dd7e158baaf3a38c406a37132094f"
+        },
+        "calibrated_views/00186.png": {
+          "bytes": 398830,
+          "sha256": "7fb48c899af8ff8603c6897dfdd8165e8cc36ba897a93f1f2c815d607d445bda"
+        },
+        "calibrated_views/00074.png": {
+          "bytes": 410029,
+          "sha256": "b3d10302fe895a30c402cacf692486b836cf4ef67f69f52d781c33ecd7205dd7"
+        },
+        "calibrated_views/00111.png": {
+          "bytes": 464119,
+          "sha256": "414ddc63a5e0d8251358cff85ff32369ca57a54651c7f37e1499cf5213078653"
+        },
+        "calibrated_views/00322.png": {
+          "bytes": 414323,
+          "sha256": "c019ffa98db92449d68886316b4c7f855a531fa91da25e8ba0af701625342bb5"
+        }
+      }
+    },
+    "lobby": {
+      "session": "lobby",
+      "candidate": "N05",
+      "selected_frames": 800,
+      "valid_depth_samples_integrated_per_variant": 23738441,
+      "texture_frames": 80,
+      "preprocessing": {
+        "name": "lobby_conservative",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.15,
+        "edge_gate": 0.0
+      },
+      "models": {
+        "tsdf_5cm": {
+          "vertices": 878048,
+          "triangles": 1649386,
+          "surface_area_m2": 1492.7157951206532,
+          "boundary_edges": 109417,
+          "nonmanifold_edges": 1,
+          "reference_points_within_5cm": 0.5460833333333334,
+          "reference_points_within_10cm": 0.7595833333333334,
+          "reference_to_surface_median_m": 0.04340821132063866,
+          "reference_to_surface_p90_m": 0.19570103436708455,
+          "surface_samples_farther_than_10cm_from_reference": 0.005916666666666666,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "tsdf_3cm": {
+          "vertices": 2925540,
+          "triangles": 5426312,
+          "surface_area_m2": 1694.438815267706,
+          "boundary_edges": 405204,
+          "nonmanifold_edges": 10,
+          "reference_points_within_5cm": 0.5815833333333333,
+          "reference_points_within_10cm": 0.75,
+          "reference_to_surface_median_m": 0.03568573296070099,
+          "reference_to_surface_p90_m": 0.18885774612426762,
+          "surface_samples_farther_than_10cm_from_reference": 0.00016666666666666666,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "ball_pivoting": {
+          "vertices": 503504,
+          "triangles": 903596,
+          "surface_area_m2": 1404.0063932385935,
+          "boundary_edges": 115376,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.5075833333333334,
+          "reference_points_within_10cm": 0.735,
+          "reference_to_surface_median_m": 0.04862163960933685,
+          "reference_to_surface_p90_m": 0.16223881095647813,
+          "surface_samples_farther_than_10cm_from_reference": 8.333333333333333e-05,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 53706464,
+          "triangles": 179999,
+          "textured_faces": 44537,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          21,
+          35,
+          39,
+          49,
+          60,
+          73,
+          85,
+          95,
+          105,
+          116,
+          130,
+          144,
+          154,
+          165,
+          176,
+          187,
+          197,
+          207,
+          219,
+          229,
+          241,
+          251,
+          261,
+          273,
+          284,
+          294,
+          305,
+          316,
+          329,
+          337,
+          339,
+          350,
+          361,
+          372,
+          382,
+          394,
+          406,
+          422,
+          433,
+          444,
+          464,
+          476,
+          493,
+          507,
+          519,
+          532,
+          542,
+          554,
+          565,
+          579,
+          590,
+          603,
+          614,
+          630,
+          640,
+          653,
+          670,
+          682,
+          695,
+          705,
+          719,
+          730,
+          743,
+          753,
+          766,
+          777,
+          788,
+          801,
+          811,
+          821,
+          836,
+          847,
+          862,
+          878,
+          888,
+          903,
+          915,
+          925,
+          958
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.24742915238417992,
+        "unassigned_face_fraction": 0.75257084761582,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "presentation_max_triangles": 180000,
+      "presentation_simplification_scope": "Quadric-decimated DISPLAY mesh; un-decimated TSDF/BPA PLYs retained. Texture/3cm display use identical decimated geometry.",
+      "detail_overlay_points": 56712,
+      "detail_overlay_scope": "Image/depth-edge candidates with valid depth and 2.5-25cm fine-mesh discrepancy; NOT semantic signs",
+      "pose_changes": 0,
+      "cross_session_fusion": false,
+      "gaussian_training_executed": false,
+      "source_inputs": {
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+        "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c"
+      },
+      "seconds": 389.1405053389999,
+      "outputs": {
+        "tsdf_5cm.glb": {
+          "bytes": 19441144,
+          "sha256": "f8119804f124b0556b551a4b363bd99a199161a5c4d05b528eee4f8a65a3eb8d"
+        },
+        "ball_pivoting_display.ply": {
+          "bytes": 8325112,
+          "sha256": "05a06081dfa88924a9241c2766252787e9e1f0a2deeb20976f93897b49c39fa2"
+        },
+        "detail_overlay.ply": {
+          "bytes": 850901,
+          "sha256": "931a3ab82862c2e6a75a0ea8e38f5bed5c592e7036b2950dddb726e8bb6f3c05"
+        },
+        "atlas_01.png": {
+          "bytes": 8704322,
+          "sha256": "c691beec6b76c9fd93ecb4ec4995db30cdddc87617ef6552ad638fa756292b1d"
+        },
+        "texture_frame_assignment.npy": {
+          "bytes": 720124,
+          "sha256": "525b967e0e114357012ff9952d43142b20ca521c1d55d3e273d1f5317844f0bb"
+        },
+        "tsdf_3cm.glb": {
+          "bytes": 19441008,
+          "sha256": "a45185c0a54f009245cf36a0c01c8facfc22057946e7d54e2b98ebf2fac60d21"
+        },
+        "tsdf_5cm.ply": {
+          "bytes": 66222793,
+          "sha256": "edc4d370e806223662bf0856c968611a2acf374a9d6c7c25a67e61c174677b42"
+        },
+        "ball_pivoting.glb": {
+          "bytes": 19441112,
+          "sha256": "96b3edb68f4b2d35a4506e38da7a2382c086bbeb16373e82fb9c510fd6edc3ee"
+        },
+        "tsdf_3cm_display.ply": {
+          "bytes": 6490131,
+          "sha256": "69454cc0b29db539bcee2613b26a18bfe63d32f746b2d64a5f24b77d157d1fa1"
+        },
+        "atlas_02.png": {
+          "bytes": 7086925,
+          "sha256": "206b276da7908758368d925f5f9e084be133bb4eec04585dc14dbc6ca4f9f273"
+        },
+        "tsdf_5cm_display.ply": {
+          "bytes": 7270546,
+          "sha256": "42c9a17655614ce7dfe40bc3d29b1c09f94953f6bd0312d41958bce090c3a025"
+        },
+        "atlas_00.png": {
+          "bytes": 9578527,
+          "sha256": "747881eda2dbe90423e9d0517ed5189d070d8ded4ba295506e30e334da2f0ebf"
+        },
+        "ball_pivoting.ply": {
+          "bytes": 37425778,
+          "sha256": "cb5e4863ed52b6f0ceb467fbbce2ee42aab3c785e42c4cb96008a267c1086afe"
+        },
+        "photo_textured.glb": {
+          "bytes": 53706464,
+          "sha256": "d691ebcfd8f0628834a32225b23820b8accaf4278e2d48f515797026cf149775"
+        },
+        "atlas_03.png": {
+          "bytes": 9425906,
+          "sha256": "db546c0045c75b9bdb9ccf43fa54893ff8ac17017329fce053b01d0a7afd1678"
+        },
+        "tsdf_3cm.ply": {
+          "bytes": 219744924,
+          "sha256": "17c3d4fb2c160f02d359f2309815681f9af6ab105e613f450be8556d89f61149"
+        },
+        "calibrated_views/00579.png": {
+          "bytes": 340502,
+          "sha256": "11c288617deb990070e3ad827297922850b63ab15d039da669c953a69fe91258"
+        },
+        "calibrated_views/00361.png": {
+          "bytes": 367053,
+          "sha256": "2ff546ac987177a02ccb2810ffb6a81cb87042599fb70d47d4671f3cc4cf54ac"
+        },
+        "calibrated_views/00294.png": {
+          "bytes": 392343,
+          "sha256": "5ea056dfe6d1f8067c59c43fc9b53c0b02ebe0cbf4b847d6c4be39a913d9f014"
+        },
+        "calibrated_views/00372.png": {
+          "bytes": 385277,
+          "sha256": "2bd73baf74b59046411d7cac3101d0995126716e5970805b4bdf67b72173d78c"
+        },
+        "calibrated_views/00021.png": {
+          "bytes": 542740,
+          "sha256": "05deeaafde9fd5a89fba0bd9d2b7a20092b69c6c6e96b0b17c71d229c827adce"
+        },
+        "calibrated_views/00350.png": {
+          "bytes": 364966,
+          "sha256": "66b36633e1cb444383e7531a0ded9e54fbc9732f626072d335e8f47638c5654a"
+        },
+        "calibrated_views/00154.png": {
+          "bytes": 439186,
+          "sha256": "372f879e03a4b01967f8b676773f4a2099e956ebf1871ae7b8d99569a5df9273"
+        },
+        "calibrated_views/00640.png": {
+          "bytes": 441185,
+          "sha256": "fb90f9145d41ce933a68f2bbe32877ca7c9b866f1f6050b72ef937858d08578e"
+        },
+        "calibrated_views/00422.png": {
+          "bytes": 285925,
+          "sha256": "4c1de190aae21ad9386df461896c9dc8feda80d8d90fc16657fdf7da01c35120"
+        },
+        "calibrated_views/00060.png": {
+          "bytes": 436624,
+          "sha256": "a41e96501ef2fcc1399edc85b79345eeb028296b7461acd37539a9d489c40ee9"
+        },
+        "calibrated_views/00695.png": {
+          "bytes": 415409,
+          "sha256": "462a832efb3b99ddae3bf7c859268c5e713def2ba030cd1122a61a7735368223"
+        },
+        "calibrated_views/00821.png": {
+          "bytes": 512920,
+          "sha256": "898a813a86406caad25bf079b0626f974349f90b840e3815b3978ebe4a309a1a"
+        },
+        "calibrated_views/00925.png": {
+          "bytes": 443890,
+          "sha256": "b3a1ba8e72b306f924658ca6381bca63d73730fa83626de7519780fd327c181d"
+        },
+        "calibrated_views/00305.png": {
+          "bytes": 362917,
+          "sha256": "d951b8b4f8c26899cb2d0c22e70b1b8abd816724996871794f418f49ab2f8103"
+        },
+        "calibrated_views/00229.png": {
+          "bytes": 459731,
+          "sha256": "268fb344cfcaf224620043b175feb6ce78b39247447ffba4992b7270f93753f6"
+        },
+        "calibrated_views/00614.png": {
+          "bytes": 395912,
+          "sha256": "9a1c288c0f4459bb6336022f4a78a145bdeebe0dccf8d71a23156a95c4439b07"
+        },
+        "calibrated_views/00187.png": {
+          "bytes": 478248,
+          "sha256": "a98bbd49d928025c6db07b2cedb32ed7312598d84e8ebc56ca97b3eb79401e20"
+        },
+        "calibrated_views/00653.png": {
+          "bytes": 202854,
+          "sha256": "121560fb705d1f7af32934710147d77117b74142631e6b314ab081af54a9a44f"
+        },
+        "calibrated_views/00105.png": {
+          "bytes": 456111,
+          "sha256": "a8cdef4fbe8582d44b85c49477315f7b6a7373006604215df1104de4cb04028a"
+        },
+        "calibrated_views/00144.png": {
+          "bytes": 492038,
+          "sha256": "f18bd059bf8d7a97db8798c5207c05dde46ba956d3c06b7792e3ddc1a0a436a9"
+        },
+        "calibrated_views/00532.png": {
+          "bytes": 335737,
+          "sha256": "29ca34ef7d9bb2843045bddb5a8718f2fdbb72deeb00c124c9be821ff506944b"
+        },
+        "calibrated_views/00207.png": {
+          "bytes": 463357,
+          "sha256": "84158dc080662595c67bf0de7554812a3ea49e17030f923c64490af69cd7d40a"
+        },
+        "calibrated_views/00878.png": {
+          "bytes": 535489,
+          "sha256": "54dc2c74c0c84aa9bf8d23ca32a619dc7183b236857e1eb193dff9f57172decd"
+        },
+        "calibrated_views/00565.png": {
+          "bytes": 398698,
+          "sha256": "7c1c773dabe17abf809e20e1f1c01e5d25db050e273eb973a4fe3213bf469ac9"
+        },
+        "calibrated_views/00339.png": {
+          "bytes": 336367,
+          "sha256": "f3efd4690f24a9f0217c44d5785c370bcbc4b9958d30163b0e3c43b70ed6baa2"
+        },
+        "calibrated_views/00316.png": {
+          "bytes": 580146,
+          "sha256": "d4b9e1526e93ca2eeaa5c2db091d727ed8544ae1cdd2fb9acd59f5e2794900bb"
+        },
+        "calibrated_views/00777.png": {
+          "bytes": 386308,
+          "sha256": "9b96d7dab36a65f6e7ab53c76a5461017fbc7041c89f58ce0b42dfdd283d2c63"
+        },
+        "calibrated_views/00670.png": {
+          "bytes": 244734,
+          "sha256": "05474553e27b9e1b3c3411f917f38f3c5e7930f254e2859ad0ed36eec4908108"
+        },
+        "calibrated_views/00039.png": {
+          "bytes": 419234,
+          "sha256": "765f547142c4fe114c8186798410cc612fd720f4feea93b138a3ca436a580e30"
+        },
+        "calibrated_views/00958.png": {
+          "bytes": 548650,
+          "sha256": "255ab3060571dadcf68fbfd32e3dd4a320a881a0c9a61b87ee33c947a12dc949"
+        },
+        "calibrated_views/transforms.json": {
+          "bytes": 75531,
+          "sha256": "9a074c6cbe92de9f2a28c1c53c90b3d4fb1c2f3a8b6711cca4d15f094344d509"
+        },
+        "calibrated_views/00603.png": {
+          "bytes": 198744,
+          "sha256": "e73ef7aacb92b50add618c7eda058cb6ba1ca085eadeed5a23554865484e669e"
+        },
+        "calibrated_views/00337.png": {
+          "bytes": 354888,
+          "sha256": "a584542468cf334a44b65b294380a52bc759d51581d006e630d36665106bdc1e"
+        },
+        "calibrated_views/00519.png": {
+          "bytes": 395470,
+          "sha256": "d78143b99291db9996414491305f2365d70a117f2ba04374cf356c20d66cec2a"
+        },
+        "calibrated_views/00630.png": {
+          "bytes": 217832,
+          "sha256": "bd86c3d5878023e952c1cdcb6ca70323dbd1a8abb52ac62ccb54146afecf5aa8"
+        },
+        "calibrated_views/00261.png": {
+          "bytes": 507375,
+          "sha256": "c41cd66169ccb006e50ca1f29dee94fb5bb42636d0649753c6bcf56ef068e6ed"
+        },
+        "calibrated_views/00001.png": {
+          "bytes": 410590,
+          "sha256": "32e313e634232602ccaf7319c79cd8327ac8f0c5ec31e0f144de4ffa84c0d62e"
+        },
+        "calibrated_views/00590.png": {
+          "bytes": 171522,
+          "sha256": "56fa95ab1820b4d5bba3b8628f921b6d7eee4f12aa6f6ecad4c0610c58854ae1"
+        },
+        "calibrated_views/00406.png": {
+          "bytes": 321925,
+          "sha256": "e9423c5a008784c5d50aef5f238aba3da17574b7a606045f1b4460546ebe9656"
+        },
+        "calibrated_views/00165.png": {
+          "bytes": 434028,
+          "sha256": "b96c84dc8d90087e0956044d0cf7ee7e853e20c4512b8e16bf49db2bea1362c8"
+        },
+        "calibrated_views/00753.png": {
+          "bytes": 353835,
+          "sha256": "55ef5ba441feb1b5a5a6fc9670e0e2f15e5b985ddd0161c2ea34c4b9651ffb1f"
+        },
+        "calibrated_views/00116.png": {
+          "bytes": 426593,
+          "sha256": "088bcb2838c630401ff2c201442338a86a2dfeef3247c9eee60cb9ab3c98a717"
+        },
+        "calibrated_views/00433.png": {
+          "bytes": 526989,
+          "sha256": "c5259d23063ff58ab0ffc128c13fe2b620c0462bda8a85020c5bfc401d042493"
+        },
+        "calibrated_views/00464.png": {
+          "bytes": 404677,
+          "sha256": "6e083e22145a48c8a880af58b5752d04388ee827e7ad9b313d024ef773b3da71"
+        },
+        "calibrated_views/00273.png": {
+          "bytes": 517404,
+          "sha256": "cca98be3ffe22709edaa2bfbc47c1f55db9f53d0290741006bbcbae32b1475df"
+        },
+        "calibrated_views/00915.png": {
+          "bytes": 474246,
+          "sha256": "be70985e32eddea8cc55f4c03cc665325c709ec3aab655fd72f94d6a823a4af2"
+        },
+        "calibrated_views/00903.png": {
+          "bytes": 171416,
+          "sha256": "740286555153c6058291177350958b19140de455773d69d56ea38249f4ca2f53"
+        },
+        "calibrated_views/00811.png": {
+          "bytes": 647013,
+          "sha256": "b76cac0132bbc2f615bc79d58f75dee3ee1f8a9171bb319390781690386e83e0"
+        },
+        "calibrated_views/00329.png": {
+          "bytes": 337047,
+          "sha256": "277d03d38632dab5f3fc8fb1625de10acfaf2dff89f066e5636764aede9e51da"
+        },
+        "calibrated_views/00862.png": {
+          "bytes": 546789,
+          "sha256": "98f138133ae460c52062fcfd8b5b49ab30d83cdbb25fb21b4bd8202b317fdb95"
+        },
+        "calibrated_views/00095.png": {
+          "bytes": 442786,
+          "sha256": "3da20fd4225e3b219c7636a75ff8416f70a34fc3adff657861c3f22919124b75"
+        },
+        "calibrated_views/00049.png": {
+          "bytes": 540261,
+          "sha256": "1899e43b57fba8810a609725d74701acce0f282520e01909deaacde37022baa2"
+        },
+        "calibrated_views/00801.png": {
+          "bytes": 414354,
+          "sha256": "0fd93e5bad92b56f0d12ac9cc57cf224e0fe77b17f1b4a84b7f11eb19709e5d6"
+        },
+        "calibrated_views/00476.png": {
+          "bytes": 309691,
+          "sha256": "ee204a8d13e23768a6fa16affa49861981f30865e980beb08a1566e204260995"
+        },
+        "calibrated_views/00219.png": {
+          "bytes": 563739,
+          "sha256": "2130d67386306173d9372351c81752e71d5b50fd96cb461df11f802589502e8e"
+        },
+        "calibrated_views/00542.png": {
+          "bytes": 439588,
+          "sha256": "3bb3b35bf1867f2151e592555ec43400b0e1c976656ecc8c29708ae3acf66b4c"
+        },
+        "calibrated_views/00788.png": {
+          "bytes": 378871,
+          "sha256": "1fd7c444d9d18d4f0b56672bf10377b708ad17bd190f2cf8cac57b2e3bb644df"
+        },
+        "calibrated_views/00444.png": {
+          "bytes": 342214,
+          "sha256": "2197f56e8084cec35bb29a2355a08fa776515c1e56529ee1c32d031caf01de2d"
+        },
+        "calibrated_views/00682.png": {
+          "bytes": 241516,
+          "sha256": "934730258fa659a49d8698cf7bb09ebf0867bf3ed5722d99ff08b30e0ff50604"
+        },
+        "calibrated_views/00743.png": {
+          "bytes": 372290,
+          "sha256": "97ad2c9db8ed3ca1e1c34b2f9fac942aab4afbcd083f9b147ba281b5b9b82bde"
+        },
+        "calibrated_views/00085.png": {
+          "bytes": 423873,
+          "sha256": "a1836ac1b35f730525a6f10a7f40cfda5ac9037c62838ea99d3aada7018d240a"
+        },
+        "calibrated_views/00493.png": {
+          "bytes": 405795,
+          "sha256": "837e31ac4254b79fe3c4b7b7c6a4679e4a12d5e3010d30742c56eed5b8dc1ca3"
+        },
+        "calibrated_views/00766.png": {
+          "bytes": 384676,
+          "sha256": "ef74ef0336f03dc04836f4fec72e9af056fbf475701906e9834ae1acb481fbe9"
+        },
+        "calibrated_views/00176.png": {
+          "bytes": 488780,
+          "sha256": "abe952ece8cfe1d15d5ee2e96dff22a4d019779883add344442bea2487bd430c"
+        },
+        "calibrated_views/00836.png": {
+          "bytes": 618893,
+          "sha256": "d53fcd8d767f30d4307bfb332cf43d00fa7f1cad8adddf51d71df9f9784b6487"
+        },
+        "calibrated_views/00035.png": {
+          "bytes": 467919,
+          "sha256": "15ad3013efe0b650580b6c06c3ca0134f0005aee8b1e0940ee33d974d251ee99"
+        },
+        "calibrated_views/00073.png": {
+          "bytes": 439203,
+          "sha256": "827366a799262e84c93cfb0e15baf3e54309d639b79fc5fea89c6307e7481ac0"
+        },
+        "calibrated_views/00130.png": {
+          "bytes": 542600,
+          "sha256": "7229b034550c8fd1f3c3b90d26ec56cbf66846761634f8a86498888e02d685c7"
+        },
+        "calibrated_views/00197.png": {
+          "bytes": 458015,
+          "sha256": "99b28c6373c2719ff6874699c3ce97654699c1829657cb66ff369bef416cd001"
+        },
+        "calibrated_views/00394.png": {
+          "bytes": 621967,
+          "sha256": "734fbaae6f0e1d8e44791c9aebe68c400b52ce85dfbb04896cd64bb8a0d2b5b5"
+        },
+        "calibrated_views/00554.png": {
+          "bytes": 447225,
+          "sha256": "db05b2f964e87dab1336040060f84e14c3405551d0c287c9932ed58eb6d84580"
+        },
+        "calibrated_views/00719.png": {
+          "bytes": 470992,
+          "sha256": "88021532d40bcacea2498258a385a181c41f9c8144399ac0ebf500e6a60a06c0"
+        },
+        "calibrated_views/00382.png": {
+          "bytes": 483588,
+          "sha256": "3fcaf3da0e9dd86cc78e088391348ae0a3a0be7ca279690bd051066105c1eb4a"
+        },
+        "calibrated_views/00284.png": {
+          "bytes": 384179,
+          "sha256": "8273cc2c6d658652162e65cc6595dedfa8a79e64ab0207a7f5d4651051dadc86"
+        },
+        "calibrated_views/00241.png": {
+          "bytes": 422716,
+          "sha256": "bf54e944be5d8278aedd4363c01466e2ef2a9270e5620939d0632fd048418e16"
+        },
+        "calibrated_views/00251.png": {
+          "bytes": 468366,
+          "sha256": "bad45c47e8cd9e31e9a7a3732724d639bd2b6852889a807f5a431173f38755e8"
+        },
+        "calibrated_views/00888.png": {
+          "bytes": 329276,
+          "sha256": "d0ef17bf6a3ece8886b144dd8c442cda44e57b958fed21dda6e01caa6d5c4242"
+        },
+        "calibrated_views/00705.png": {
+          "bytes": 514396,
+          "sha256": "839afafcc079cf684af105b2ec099221d18735ce35484ea3110f3682a51199f1"
+        },
+        "calibrated_views/00847.png": {
+          "bytes": 607147,
+          "sha256": "670e913bad1f131d70e30da2c5dc6253d60dd15bfea2d3b3e9528f58f659a89e"
+        },
+        "calibrated_views/00507.png": {
+          "bytes": 530660,
+          "sha256": "c10f66d60e38495bdb2ebdb8423dabb3f156abae17894aeb3626ecc233de92b1"
+        },
+        "calibrated_views/00730.png": {
+          "bytes": 453237,
+          "sha256": "6b1b547218e6b251044f0e1b504055d7f98d0c8f17a9dcb6ae718f8a9e257b0c"
+        }
+      }
+    },
+    "bridge_out1f": {
+      "session": "bridge_out1f",
+      "candidate": "H03",
+      "selected_frames": 86,
+      "valid_depth_samples_integrated_per_variant": 2644462,
+      "texture_frames": 32,
+      "preprocessing": {
+        "name": "transition_coverage",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.18,
+        "edge_gate": 0.0
+      },
+      "models": {
+        "tsdf_5cm": {
+          "vertices": 104858,
+          "triangles": 196635,
+          "surface_area_m2": 176.90790593145232,
+          "boundary_edges": 13449,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.6203333333333333,
+          "reference_points_within_10cm": 0.8435,
+          "reference_to_surface_median_m": 0.0365629680454731,
+          "reference_to_surface_p90_m": 0.13291219919919972,
+          "surface_samples_farther_than_10cm_from_reference": 0.006666666666666667,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "tsdf_3cm": {
+          "vertices": 335516,
+          "triangles": 626966,
+          "surface_area_m2": 196.8125030669155,
+          "boundary_edges": 43706,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.6650833333333334,
+          "reference_points_within_10cm": 0.8298333333333333,
+          "reference_to_surface_median_m": 0.028965994715690613,
+          "reference_to_surface_p90_m": 0.13769195675849916,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "ball_pivoting": {
+          "vertices": 62604,
+          "triangles": 114333,
+          "surface_area_m2": 169.37754603213213,
+          "boundary_edges": 11745,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.57325,
+          "reference_points_within_10cm": 0.7989166666666667,
+          "reference_to_surface_median_m": 0.03649073839187622,
+          "reference_to_surface_p90_m": 0.136985282599926,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 32130500,
+          "triangles": 179999,
+          "textured_faces": 104739,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 2,
+        "camera_frames": [
+          1,
+          5,
+          8,
+          14,
+          17,
+          20,
+          29,
+          32,
+          36,
+          39,
+          44,
+          47,
+          51,
+          55,
+          61,
+          66,
+          68,
+          71,
+          74,
+          80,
+          82,
+          90,
+          95,
+          99,
+          101,
+          108,
+          111,
+          116,
+          117,
+          118,
+          121,
+          134
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5818865660364779,
+        "unassigned_face_fraction": 0.418113433963522,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "presentation_max_triangles": 180000,
+      "presentation_simplification_scope": "Quadric-decimated DISPLAY mesh; un-decimated TSDF/BPA PLYs retained. Texture/3cm display use identical decimated geometry.",
+      "detail_overlay_points": 10361,
+      "detail_overlay_scope": "Image/depth-edge candidates with valid depth and 2.5-25cm fine-mesh discrepancy; NOT semantic signs",
+      "pose_changes": 0,
+      "cross_session_fusion": false,
+      "gaussian_training_executed": false,
+      "source_inputs": {
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f_trajectory.csv": "eb4dceda80b371ed938a94fdb69413a2cae0ab7c0927064efeb7caee3f2b35a5",
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f.ply": "893ffff7ec451076bb0150f76da724c1122a3501c1dd1a0a9ebcb3569364640f",
+        "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b"
+      },
+      "seconds": 32.55739493600049,
+      "outputs": {
+        "tsdf_5cm.glb": {
+          "bytes": 19441116,
+          "sha256": "6c39103f5dc13f58b2179aee8976072461ae306e15fa5c7b7f801ce84e5b1f20"
+        },
+        "ball_pivoting_display.ply": {
+          "bytes": 4679458,
+          "sha256": "c9e616b393a8bfdb1e330452d05200294388a4ebe4bb08b6a9ef32875fa7d0a8"
+        },
+        "detail_overlay.ply": {
+          "bytes": 155636,
+          "sha256": "3fd693b58151abc898f42bcd7aa532bde9d728364b41e63e3ecad7c855d1ded5"
+        },
+        "atlas_01.png": {
+          "bytes": 5143234,
+          "sha256": "0c797970eea88856f7e200e9a6363afdc4fcc2a36d5e9f3dd8383e6d0c537934"
+        },
+        "texture_frame_assignment.npy": {
+          "bytes": 720124,
+          "sha256": "e9201603be9a248f8a1b5dd07bddd0b7b24b3c53dd61ee4317df4cc6998dcc52"
+        },
+        "tsdf_3cm.glb": {
+          "bytes": 19441020,
+          "sha256": "8324a9db1878a0b5076f4f70d2ab5a28800fbbbd3aab1d8f9c29319c24a7da41"
+        },
+        "tsdf_5cm.ply": {
+          "bytes": 7904339,
+          "sha256": "4fdd41c2c23a36bdba10542e32318cfb18a1cd828067f34ff9bbb9a99df2eb21"
+        },
+        "ball_pivoting.glb": {
+          "bytes": 12349164,
+          "sha256": "094d1b24c291283df7d377402a987cfc4194815c372c480fb9e2d086960349c5"
+        },
+        "tsdf_3cm_display.ply": {
+          "bytes": 7337649,
+          "sha256": "afc25d7192a13ad1ccfebfd988a7dbbc137b238b6122c82d75a338ace266234c"
+        },
+        "tsdf_5cm_display.ply": {
+          "bytes": 7241221,
+          "sha256": "3f1f041e46c236335f2bd99341d61a614ee04b1759338ab367d6476f5a461f1a"
+        },
+        "atlas_00.png": {
+          "bytes": 8801121,
+          "sha256": "3bb5010d73d7de2ebbda8d9e3129e065c9f81d4cf85dfa7c283592f423a9bca5"
+        },
+        "ball_pivoting.ply": {
+          "bytes": 4679458,
+          "sha256": "c9e616b393a8bfdb1e330452d05200294388a4ebe4bb08b6a9ef32875fa7d0a8"
+        },
+        "photo_textured.glb": {
+          "bytes": 32130500,
+          "sha256": "56301f3b287e1a31f301b1c8b43279964081917b22e0083a913d861c58a79797"
+        },
+        "tsdf_3cm.ply": {
+          "bytes": 25262200,
+          "sha256": "f4429549060dc050dbc70d14296a9a8b116619ebd4c48c451f41f50d4fd91de0"
+        },
+        "calibrated_views/00055.png": {
+          "bytes": 409793,
+          "sha256": "2df2e59ca713f492ce2451ecb427f203b702b1ce55d217ac9a00700b8aee8059"
+        },
+        "calibrated_views/00090.png": {
+          "bytes": 367678,
+          "sha256": "ab4e16d57ace3cb1bffe8d4290784cf52929a2ed04c349f74f0e87531cd10165"
+        },
+        "calibrated_views/00008.png": {
+          "bytes": 477042,
+          "sha256": "7325fc8377a662b91575a169f791078b96be1c0a66dcc42c678c5d74567217f6"
+        },
+        "calibrated_views/00047.png": {
+          "bytes": 396742,
+          "sha256": "2cb0d4c57789f758543e9b06cae3c79440fc04d2b9396ea4b6e5f8cecbd2ae54"
+        },
+        "calibrated_views/00082.png": {
+          "bytes": 377060,
+          "sha256": "8fc453f1da5cb2484b422e7217143d8c855fa0a050e565c8a0f7ba805dd7e778"
+        },
+        "calibrated_views/00044.png": {
+          "bytes": 368047,
+          "sha256": "728f3f1da34e5d65de81ade570228cb191f9251b9cf8f5a033d126ca5fb01eca"
+        },
+        "calibrated_views/00020.png": {
+          "bytes": 472539,
+          "sha256": "47eac4b0acdb19474b49a8c8457f9d27970cf79af93ffaff9b3b0b0672146270"
+        },
+        "calibrated_views/00101.png": {
+          "bytes": 410449,
+          "sha256": "337250b63b655e6b3e0c82c522c7db4435f200b64c40e958b9c08a7be1a6a5c7"
+        },
+        "calibrated_views/00068.png": {
+          "bytes": 483573,
+          "sha256": "e3be074b6e83d8d8de4907f7f6722455097a646219445cea8cab85d168859e93"
+        },
+        "calibrated_views/00039.png": {
+          "bytes": 529748,
+          "sha256": "8a15e74029b204cf43b7ce2f0b123d957c963c82bc61c93b0396ac80dc1aa9cf"
+        },
+        "calibrated_views/00118.png": {
+          "bytes": 448478,
+          "sha256": "a453d386a2518c3a9caa3551047094b1f50e8671da858ef2888209fa3114de9a"
+        },
+        "calibrated_views/00036.png": {
+          "bytes": 535280,
+          "sha256": "64d0876a484ae7ad57a7daf1766b9e4b551aff37102ba2e5b1c78b2ae0746c18"
+        },
+        "calibrated_views/transforms.json": {
+          "bytes": 30243,
+          "sha256": "ddd045d0be86745876049af347e96b5a6a20bf71cca87d02daa7ccf4b4869937"
+        },
+        "calibrated_views/00134.png": {
+          "bytes": 422253,
+          "sha256": "553957e88066dc56cdec3728bef30424b7e295a80c993e5ab7b3464507f608fe"
+        },
+        "calibrated_views/00061.png": {
+          "bytes": 455550,
+          "sha256": "9d2260fbe7971479ba8e602fe5d4759aaf81d46dc095ec8a9dfcf69855d1859a"
+        },
+        "calibrated_views/00001.png": {
+          "bytes": 402525,
+          "sha256": "c3ba18bb5057cd828013d93dccb5044a268178442b3084e7d1356ae2ee1dfef9"
+        },
+        "calibrated_views/00017.png": {
+          "bytes": 341632,
+          "sha256": "5b95ed72965b0edb3a9dd5662c949b2c8c060f79e67f3e332e08df32ccc4b627"
+        },
+        "calibrated_views/00066.png": {
+          "bytes": 414153,
+          "sha256": "398290e6f6980f91223119bbd12b200911d148cb6451d20e402eb2cd6d9188f3"
+        },
+        "calibrated_views/00116.png": {
+          "bytes": 385213,
+          "sha256": "f51be4b755ad86327ed87bab641af87e40509d0d32713fe3e2b5c73ac312852a"
+        },
+        "calibrated_views/00108.png": {
+          "bytes": 395641,
+          "sha256": "28c894c5c1af8b021bf90e80d64e34b859831dc6dde46200817482788ba6b141"
+        },
+        "calibrated_views/00071.png": {
+          "bytes": 471310,
+          "sha256": "7712d7677729cc6f097f720d0822bf6b5327b1bc5a8fa6d861408722c1ac1dd8"
+        },
+        "calibrated_views/00095.png": {
+          "bytes": 459095,
+          "sha256": "406a3abf6059e9922487f52939d866087a6fd1e634c61df7091f83b55d8a6b86"
+        },
+        "calibrated_views/00099.png": {
+          "bytes": 523226,
+          "sha256": "41df23387058cab9fffb89ad2efa6d1c985b435dfcafaacc90595a7e6360e46e"
+        },
+        "calibrated_views/00051.png": {
+          "bytes": 473527,
+          "sha256": "f99249ec1b34f6c0296a4cde8b708fbd5709a0b93eca10f8cd77c1741ad1af77"
+        },
+        "calibrated_views/00014.png": {
+          "bytes": 450769,
+          "sha256": "b46b122bda28e1ee30e194841c1efefa28d10cfd12457cc45b46c4e18046451c"
+        },
+        "calibrated_views/00121.png": {
+          "bytes": 430428,
+          "sha256": "34a136b85a8656cc865be98b1ae5bb846a7df76e20fb0f5c0ed7a37c816f2a36"
+        },
+        "calibrated_views/00005.png": {
+          "bytes": 523489,
+          "sha256": "1bd01b6a25f63d254039a9d0703ba52de33a4cac927f2d9d950f98689061fa47"
+        },
+        "calibrated_views/00029.png": {
+          "bytes": 271909,
+          "sha256": "83d8686d1fd9c96be09f130236b35e9593f21d46096a071eb80c93373d4689f5"
+        },
+        "calibrated_views/00080.png": {
+          "bytes": 331751,
+          "sha256": "ceda53ef2be9d2caaba65d0eef8d31e9dc7e714a7f50128a4fecd60222d6a29e"
+        },
+        "calibrated_views/00032.png": {
+          "bytes": 448153,
+          "sha256": "7955e3342db9a2dacca0f728719904a2097f918ea7e16e15a330cb843fb1b540"
+        },
+        "calibrated_views/00117.png": {
+          "bytes": 430499,
+          "sha256": "c2f54eb46bec3916e741db754d0b048644b7085ec53bda27f51ee8570fb53cd9"
+        },
+        "calibrated_views/00074.png": {
+          "bytes": 332426,
+          "sha256": "d85e3b20d59903b177d6f199c8caf8fc599a3ac0ee97e08d0024b5c9b00514b4"
+        },
+        "calibrated_views/00111.png": {
+          "bytes": 304057,
+          "sha256": "06fadb5b7f8b62719a9d0c07d0b833f957a568fb67a3c06712e877feb9a56c75"
+        }
+      }
+    },
+    "floor2": {
+      "session": "floor2",
+      "candidate": "J04",
+      "selected_frames": 925,
+      "valid_depth_samples_integrated_per_variant": 28595643,
+      "texture_frames": 96,
+      "preprocessing": {
+        "name": "corridor_boundary",
+        "confidence": 50,
+        "max_depth": 4.0,
+        "median_gate": 0.1,
+        "edge_gate": 0.2
+      },
+      "models": {
+        "tsdf_5cm": {
+          "vertices": 1056727,
+          "triangles": 1984285,
+          "surface_area_m2": 1780.3294516871995,
+          "boundary_edges": 129289,
+          "nonmanifold_edges": 4,
+          "reference_points_within_5cm": 0.51875,
+          "reference_points_within_10cm": 0.7264166666666667,
+          "reference_to_surface_median_m": 0.047227777540683746,
+          "reference_to_surface_p90_m": 0.20865328460931779,
+          "surface_samples_farther_than_10cm_from_reference": 0.007583333333333333,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "tsdf_3cm": {
+          "vertices": 3416027,
+          "triangles": 6330492,
+          "surface_area_m2": 1974.4753267806868,
+          "boundary_edges": 470143,
+          "nonmanifold_edges": 9,
+          "reference_points_within_5cm": 0.558,
+          "reference_points_within_10cm": 0.7128333333333333,
+          "reference_to_surface_median_m": 0.03902698680758476,
+          "reference_to_surface_p90_m": 0.19730569273233414,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "ball_pivoting": {
+          "vertices": 606627,
+          "triangles": 1090002,
+          "surface_area_m2": 1698.394013476506,
+          "boundary_edges": 138262,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.49466666666666664,
+          "reference_points_within_10cm": 0.6985,
+          "reference_to_surface_median_m": 0.05114968121051788,
+          "reference_to_surface_p90_m": 0.18187431842088703,
+          "surface_samples_farther_than_10cm_from_reference": 0.00016666666666666666,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 61414044,
+          "triangles": 179999,
+          "textured_faces": 50408,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 5,
+        "camera_frames": [
+          1,
+          10,
+          20,
+          39,
+          52,
+          66,
+          80,
+          94,
+          105,
+          119,
+          134,
+          148,
+          161,
+          173,
+          183,
+          198,
+          208,
+          220,
+          233,
+          244,
+          257,
+          267,
+          276,
+          286,
+          300,
+          319,
+          328,
+          338,
+          357,
+          388,
+          398,
+          408,
+          422,
+          434,
+          448,
+          460,
+          473,
+          483,
+          500,
+          512,
+          524,
+          535,
+          552,
+          565,
+          574,
+          589,
+          614,
+          623,
+          634,
+          646,
+          656,
+          666,
+          676,
+          686,
+          698,
+          708,
+          720,
+          731,
+          746,
+          759,
+          771,
+          782,
+          791,
+          805,
+          818,
+          829,
+          842,
+          852,
+          864,
+          876,
+          886,
+          896,
+          906,
+          915,
+          925,
+          936,
+          949,
+          963,
+          973,
+          981,
+          984,
+          1017,
+          1033,
+          1047,
+          1055,
+          1063,
+          1075,
+          1088,
+          1098,
+          1110,
+          1128,
+          1150,
+          1164,
+          1180,
+          1194,
+          1218
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.280046000255557,
+        "unassigned_face_fraction": 0.7199539997444431,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "presentation_max_triangles": 180000,
+      "presentation_simplification_scope": "Quadric-decimated DISPLAY mesh; un-decimated TSDF/BPA PLYs retained. Texture/3cm display use identical decimated geometry.",
+      "detail_overlay_points": 76171,
+      "detail_overlay_scope": "Image/depth-edge candidates with valid depth and 2.5-25cm fine-mesh discrepancy; NOT semantic signs",
+      "pose_changes": 0,
+      "cross_session_fusion": false,
+      "gaussian_training_executed": false,
+      "source_inputs": {
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+        "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e"
+      },
+      "seconds": 500.86845866300064,
+      "outputs": {
+        "tsdf_5cm.glb": {
+          "bytes": 19441120,
+          "sha256": "8bac7f58bc8088859c01eb907d2a3bd7d18952476d23f96170a7c7a19c7babad"
+        },
+        "ball_pivoting_display.ply": {
+          "bytes": 8400770,
+          "sha256": "1c2d51a68f27eeda43c0a4d2a70c070176e887d04ded1d5608bff2009b10116f"
+        },
+        "detail_overlay.ply": {
+          "bytes": 1142786,
+          "sha256": "93b4dcd45fff39b53267997ee635ad21fb5dd102a2076a14dd444a5e94eb855d"
+        },
+        "atlas_01.png": {
+          "bytes": 9805785,
+          "sha256": "9716d12a453b5b6977eb6e624e404e7c6be8c96b7f89bb11137fcf09a03fe6dc"
+        },
+        "texture_frame_assignment.npy": {
+          "bytes": 720124,
+          "sha256": "4f158d90b785820d45e3531e9af1fe26654af1f937b0fe178bd175832d672a61"
+        },
+        "tsdf_3cm.glb": {
+          "bytes": 19441024,
+          "sha256": "a57c77d393024cf2efdd4ae0c241f200dfc705f95f9b8cc7ca07ae537218a04e"
+        },
+        "tsdf_5cm.ply": {
+          "bytes": 79689110,
+          "sha256": "7a0e57c67ce2618be8a4b5973fccb7a11553a67d08015611edcab288eb7cb7b4"
+        },
+        "ball_pivoting.glb": {
+          "bytes": 19440884,
+          "sha256": "1c339bc9b92d4830a138f4fcc7a8049388fa775fe8b984b9399ec42d90d35595"
+        },
+        "tsdf_3cm_display.ply": {
+          "bytes": 6333102,
+          "sha256": "4952e6b62dcc01fdfdfb913b53734c3c0d21c21c17f027510ddc5bb5c0c2792f"
+        },
+        "atlas_02.png": {
+          "bytes": 8901572,
+          "sha256": "852158477050c46e3783f300a8b47bf87fa9347387f3f01a431ef2932f012617"
+        },
+        "atlas_04.png": {
+          "bytes": 6294527,
+          "sha256": "21fdaa05e30a320572534c4d80663b25bae19fc030372b10e7f638132600edac"
+        },
+        "tsdf_5cm_display.ply": {
+          "bytes": 7169158,
+          "sha256": "fbd9b0ba0e97cc3d8ba841d12b3abe6d48a2d635d32dfbbc171afeeb5f04a969"
+        },
+        "atlas_00.png": {
+          "bytes": 7522596,
+          "sha256": "26cd6bac714fdbe143bdc8c08154c10f582e83d7ce5d7c6ebb49f5e40e03e5b7"
+        },
+        "ball_pivoting.ply": {
+          "bytes": 45108330,
+          "sha256": "43853d7f336b43bb1598c3879154c06585ad5171861df4de78031702c4c52907"
+        },
+        "photo_textured.glb": {
+          "bytes": 61414044,
+          "sha256": "942ea090c1aae07e85cc1092d15c2373c266cd194962ceafef01511c68aad46d"
+        },
+        "atlas_03.png": {
+          "bytes": 10048215,
+          "sha256": "b4c593ad6d76ab4c04c5a0918bd41063aa3c4720d9a42b504908649f08371661"
+        },
+        "tsdf_3cm.ply": {
+          "bytes": 256514101,
+          "sha256": "2b8fc703684042a4cebbcaa455b99eea7656af8d6f058cc2144f97525bea6668"
+        },
+        "calibrated_views/01164.png": {
+          "bytes": 334779,
+          "sha256": "302a68d0209ef9cd51c4ce19fa1fdf915f62c75abfe6941655e879c16a148754"
+        },
+        "calibrated_views/00886.png": {
+          "bytes": 629667,
+          "sha256": "9d64344146d8e857f68028834e61094a617bf3a4f08fc29351c4caf69a978a80"
+        },
+        "calibrated_views/01128.png": {
+          "bytes": 318258,
+          "sha256": "7d84ae97a5e90707dc88098c38367565e6c7623404247700794f81586f593008"
+        },
+        "calibrated_views/00708.png": {
+          "bytes": 757790,
+          "sha256": "50dd64ebe0275a2fda6f78dc145b78b66987cfbe138ce9b6f7b85a314e71fc6b"
+        },
+        "calibrated_views/01047.png": {
+          "bytes": 384023,
+          "sha256": "3c01a50b6a57fb5162d541a337d2106d1c9fa55ad6fd12e2543bca729cdf5393"
+        },
+        "calibrated_views/00524.png": {
+          "bytes": 345718,
+          "sha256": "89ea01a4c9d42b0b7e6e444ec244463c0b5cd54962a1d2553c2d47dbc3d92359"
+        },
+        "calibrated_views/00984.png": {
+          "bytes": 426052,
+          "sha256": "6eaef7b35bb4970fa8a28a138e2d83288694ae644bae991bb5aca6f458d1c959"
+        },
+        "calibrated_views/00119.png": {
+          "bytes": 271485,
+          "sha256": "5bc11b24f0db182d4c003f874506658fa3f6f9d7d3ac4d5990e9843c341a6863"
+        },
+        "calibrated_views/00208.png": {
+          "bytes": 272195,
+          "sha256": "2dfc4cee220d775ef3bf0a1c781cded2954446c7580ccf867b1f2cbb7e11ac7a"
+        },
+        "calibrated_views/00646.png": {
+          "bytes": 502399,
+          "sha256": "7d0b2f0e85e6d884b86ad53d87270190be84109a8d032dee8dda8aa0bd608ec0"
+        },
+        "calibrated_views/00161.png": {
+          "bytes": 652870,
+          "sha256": "3dff51df5021912cece225caab35d66e8a76db994575ce621edb1f454dba6e78"
+        },
+        "calibrated_views/00276.png": {
+          "bytes": 618957,
+          "sha256": "a86d27cfa3f455d0f37cbd761d79001c187a14b0baccf8ff44bea1af3a215c60"
+        },
+        "calibrated_views/00422.png": {
+          "bytes": 390644,
+          "sha256": "3af8c3591065d3186370f1952e6c41cf65325018eb387b7168a926def95f91cb"
+        },
+        "calibrated_views/00483.png": {
+          "bytes": 195854,
+          "sha256": "4b5f2e3768d9ce80c30ca26712bd0109039e08051334fbe74e65dfa89ee35e08"
+        },
+        "calibrated_views/00963.png": {
+          "bytes": 392289,
+          "sha256": "6ff54cbe93c2a33c25da6538b7a54a469e47363ad590fa5acf4c794b080cd25b"
+        },
+        "calibrated_views/00906.png": {
+          "bytes": 573474,
+          "sha256": "13715ba28990dd5ce8a88cbabf93479dfdf542c55e2391acba0c8a7f45b8c1bb"
+        },
+        "calibrated_views/00771.png": {
+          "bytes": 528644,
+          "sha256": "af3e8704f8e80e2fdebb07cc1792984564a289a1e3b733fad27f2742968b88f6"
+        },
+        "calibrated_views/00720.png": {
+          "bytes": 749433,
+          "sha256": "9e60a9dd4b818077d6b30d97db86d643829412744699c62e3a13772fa3a6b873"
+        },
+        "calibrated_views/00094.png": {
+          "bytes": 412284,
+          "sha256": "5782027ec332d81817b4983d6832778798bc52b282e89596435a14db2e461f7b"
+        },
+        "calibrated_views/00319.png": {
+          "bytes": 788089,
+          "sha256": "cbae52041721b5bc53833a45abf6f5c8312950d8c08ede513adffa8221b02daa"
+        },
+        "calibrated_views/00925.png": {
+          "bytes": 427068,
+          "sha256": "031116489fcd10c4f254a2c78920827c074a90fef5ef367d39dceb77237f0434"
+        },
+        "calibrated_views/00614.png": {
+          "bytes": 310692,
+          "sha256": "94147eb5e1d797f1753a1cf5c9ed701879c4fac042d5dd876159db908e96b0ee"
+        },
+        "calibrated_views/00105.png": {
+          "bytes": 172294,
+          "sha256": "e6eb010cbc5cd98081ba87c131f0557be773457a0d9a50242f69698b405e5544"
+        },
+        "calibrated_views/00020.png": {
+          "bytes": 414383,
+          "sha256": "1cf241122ea73a9d8ac5252b31f53a00c27f7d0e5dc9e1493adb4cc6b6fddeb1"
+        },
+        "calibrated_views/00623.png": {
+          "bytes": 337243,
+          "sha256": "16f5a738182124c3fefb12223c108cdfe0d761fc062cd1a4e375aa214271b9b1"
+        },
+        "calibrated_views/00656.png": {
+          "bytes": 468362,
+          "sha256": "7ec0a24331f0bcb31342da6d281f955f74c9e5946ce3436b7fec0a11c728ff01"
+        },
+        "calibrated_views/00500.png": {
+          "bytes": 453803,
+          "sha256": "8e64bfb04029fef695a2676e7e8422766faea32e5c44e8b892fce0874a3b8ec0"
+        },
+        "calibrated_views/00388.png": {
+          "bytes": 352135,
+          "sha256": "d0fe49b9760af60a842339a31b66f368b3a447a79296c9089f80bd111ee27614"
+        },
+        "calibrated_views/00805.png": {
+          "bytes": 608354,
+          "sha256": "5fd9b4e57b4c8cfbadbdde3301cb1d336fdb7904d3ce71f4c93a29df880709cd"
+        },
+        "calibrated_views/00791.png": {
+          "bytes": 615815,
+          "sha256": "d16c6dbf7edab29f567b5f5c60f48cae0114768469b3002303cadc5fa138d090"
+        },
+        "calibrated_views/00357.png": {
+          "bytes": 330222,
+          "sha256": "3186383b2289271e13c4ce5ac077efe7e4ab69542383c67dd7f9e5b5d2eb8d59"
+        },
+        "calibrated_views/00338.png": {
+          "bytes": 352195,
+          "sha256": "cb200bf329de67bbbfa373ffe86789e1746d363d5a2510cbb4137a662ef0326e"
+        },
+        "calibrated_views/00267.png": {
+          "bytes": 761548,
+          "sha256": "b017a66505b7633b4084e77ce4f481a344d8ef28d5f92f3a8ff4b3427a9f4c89"
+        },
+        "calibrated_views/00286.png": {
+          "bytes": 447608,
+          "sha256": "6d9b84f8e7a19de31ab71f5b4f8909735bb2a4ff9749c35b3286e82e40e6f473"
+        },
+        "calibrated_views/00512.png": {
+          "bytes": 467082,
+          "sha256": "b62d323d1cd6b76cd39d1ad75c1ac7a2d2fd231c79f90136bd06bfde055fc1b2"
+        },
+        "calibrated_views/00565.png": {
+          "bytes": 447650,
+          "sha256": "a6e84e27d680adbf1e29348170a6546e149277dc117a3cca6ec7565c5e779978"
+        },
+        "calibrated_views/01063.png": {
+          "bytes": 260002,
+          "sha256": "bb085686ef8cb7468097ada0c0084cb61a925cb83415979b21efd4feb1dd2e09"
+        },
+        "calibrated_views/00448.png": {
+          "bytes": 511568,
+          "sha256": "b1366770c1dea70749762985a7fddd649d682198eeb6904d21c51065623a765e"
+        },
+        "calibrated_views/01180.png": {
+          "bytes": 354073,
+          "sha256": "dececf1669c86944e3c6ad328607b8882cf28b213396abb03cb2430530dafab9"
+        },
+        "calibrated_views/00864.png": {
+          "bytes": 486532,
+          "sha256": "5e6458719ae726d1bff7d105096890d47982e2c571a9214b9e614dbd423e5370"
+        },
+        "calibrated_views/00473.png": {
+          "bytes": 294509,
+          "sha256": "b7554b37be03e5eb87719e07268c201b0c4fcd3c422381476cff3a58fb6fc897"
+        },
+        "calibrated_views/00973.png": {
+          "bytes": 370181,
+          "sha256": "e8e3ff847c6e600b2c75990f7ade52f5781eb787d08eafea9b4a3c1bc9241017"
+        },
+        "calibrated_views/00233.png": {
+          "bytes": 519966,
+          "sha256": "93199ac8543d6ed9c0c765eba74531a1b5b407b54a8bf1416b8b6ae7f0c74fc5"
+        },
+        "calibrated_views/00896.png": {
+          "bytes": 656124,
+          "sha256": "89a4274c3ee114d7cf5857364e10e018c4b1f7dffd7cab54df1f4800992d062b"
+        },
+        "calibrated_views/00039.png": {
+          "bytes": 496134,
+          "sha256": "a62167cd939dd22c079a2252c31ccff231c8e6d5468349631d5baad106906e1b"
+        },
+        "calibrated_views/01194.png": {
+          "bytes": 440533,
+          "sha256": "7baf430f8820356e1446485eaa5e07ab49a6e27b62aaca80c5e4e9c54a6c2eba"
+        },
+        "calibrated_views/00535.png": {
+          "bytes": 260801,
+          "sha256": "4b23e0b500c7006b4478ddcaa5694f50fdc1cc1eb47e97191ede9a169de74fbf"
+        },
+        "calibrated_views/transforms.json": {
+          "bytes": 90393,
+          "sha256": "bf6613246e61d3912b4a70389d83d4b82c5c56e2da173df6af4dad1d1c7a6e86"
+        },
+        "calibrated_views/00134.png": {
+          "bytes": 227171,
+          "sha256": "e71a9785a057031af20adb5cb325b5c065da8b80bc12765b017f549cef1bf8f7"
+        },
+        "calibrated_views/00244.png": {
+          "bytes": 348120,
+          "sha256": "76c522c860195f33c94916e0b1417818408418e3772faf807c45368d428e0c8a"
+        },
+        "calibrated_views/00698.png": {
+          "bytes": 498474,
+          "sha256": "510fc5bc6288fe7379c4db336c54178582e1f93042648ed487e17f4610f92cf4"
+        },
+        "calibrated_views/00257.png": {
+          "bytes": 503705,
+          "sha256": "0bf183e02571d6bd7f6543bd458f6da0ccaa464b8fc606365f8a12f51d1a198d"
+        },
+        "calibrated_views/00676.png": {
+          "bytes": 418443,
+          "sha256": "78a3cec566aa6acfcdbdc0d46e7d978fad25f33948c96d824acc62c0ff528fdd"
+        },
+        "calibrated_views/00001.png": {
+          "bytes": 473595,
+          "sha256": "2bd311ad334b9d03fdcc5de2d7c77ea14ddbd8130871c39f0e780b940d591149"
+        },
+        "calibrated_views/00876.png": {
+          "bytes": 537663,
+          "sha256": "51f99141a189cf0e3b0f3e3a8f959e5407dc26cb50f36534d5ecc4b49714d18d"
+        },
+        "calibrated_views/00852.png": {
+          "bytes": 320954,
+          "sha256": "8e6f4c34f2dcf205025c228ae7acf09e45a63a0a0c980a0d0a908708418f0a29"
+        },
+        "calibrated_views/00198.png": {
+          "bytes": 293531,
+          "sha256": "07f9ae451f22a5d66eb4a04c0e84f21c835d2fd28705e7365426355fcbbb8511"
+        },
+        "calibrated_views/01088.png": {
+          "bytes": 324170,
+          "sha256": "f48a0cfa02d2bb791946971220deae104b57fdc5229870ffcab15383b5359a3e"
+        },
+        "calibrated_views/00328.png": {
+          "bytes": 468880,
+          "sha256": "58deaf53222b788833d98f870d7ee0fab61c059d7f2309eae2e5bc2ccb2f8b1a"
+        },
+        "calibrated_views/00010.png": {
+          "bytes": 457736,
+          "sha256": "352a300707a08f1258a1d9436340ebfa828cc7d4d77acb8dcbc018ef73632552"
+        },
+        "calibrated_views/01150.png": {
+          "bytes": 297429,
+          "sha256": "c72b89502a8e04b75d6a22f1847a3da7b988209dde1d3da912efab86a65b4f19"
+        },
+        "calibrated_views/00460.png": {
+          "bytes": 420639,
+          "sha256": "9e175cbbc0edace79a31a34218054374244fe73034f4fc5bf729fd1714491a48"
+        },
+        "calibrated_views/00183.png": {
+          "bytes": 425282,
+          "sha256": "3b4df55eb103a05ea6cf92271821c30a17e20bd096e10f82d807583901bcaa19"
+        },
+        "calibrated_views/00731.png": {
+          "bytes": 439411,
+          "sha256": "8aa6f003dff038394de7c28de4cd96a92e24c05c64bfcadd2d61a7ee7e4b0a74"
+        },
+        "calibrated_views/00066.png": {
+          "bytes": 281636,
+          "sha256": "fbc3ccf31233add314648a9bf469ce1ac180e85f30ea508d635c00dad8e03d29"
+        },
+        "calibrated_views/00052.png": {
+          "bytes": 369085,
+          "sha256": "bad6360066ccbcbef312fe3ef335e0802a9936b1511e650dd128f1f53ae4b3a8"
+        },
+        "calibrated_views/00818.png": {
+          "bytes": 540456,
+          "sha256": "7afb01a5aef89a442417ec3658a464541d52455b60dc7dc3ab18141c72eccaae"
+        },
+        "calibrated_views/00398.png": {
+          "bytes": 401123,
+          "sha256": "b1220f7d028c15a299cfa20d6ac11552f2fde09ead6f8447abb2c08060af2d1a"
+        },
+        "calibrated_views/00408.png": {
+          "bytes": 430230,
+          "sha256": "c7e9ec53d45770489778e522898797918634c525241bb53de076f36037817cc3"
+        },
+        "calibrated_views/00666.png": {
+          "bytes": 438931,
+          "sha256": "e172634f08e86bd2b3a7570d3a32ad312af4e07438baad6a95767f496e5fa949"
+        },
+        "calibrated_views/00915.png": {
+          "bytes": 403950,
+          "sha256": "1941c846fcab34e42ecd33f4f3253a834b1b5078f47cb07ac31b538fa5baa1db"
+        },
+        "calibrated_views/00829.png": {
+          "bytes": 546645,
+          "sha256": "669ee952645f3ea78c3da3c91666705c38c3adad22cbee875ba3109d757cfc7c"
+        },
+        "calibrated_views/00842.png": {
+          "bytes": 526639,
+          "sha256": "9c9e6b95dea4a9f7b12a171c1212a61768c52c707aa46a828b57123e103ef32f"
+        },
+        "calibrated_views/01017.png": {
+          "bytes": 475095,
+          "sha256": "1f3b40a5037d7d54a475770b564ed0dca8e5e643a53f2903ac84d41667eef618"
+        },
+        "calibrated_views/00782.png": {
+          "bytes": 343546,
+          "sha256": "3a75d8a5989d766eacaa77141eab6b7e0549af1f6dae63b25ed0a1fef7ee2fd0"
+        },
+        "calibrated_views/00759.png": {
+          "bytes": 461055,
+          "sha256": "b527093dfd17f88fbef567a87925048100f84fdb8244ebb2e79e8f7c282a702a"
+        },
+        "calibrated_views/01218.png": {
+          "bytes": 406261,
+          "sha256": "0abea86686ff41a01232675dce9da876c64b1178cd86a9f95df0ee2396142004"
+        },
+        "calibrated_views/01033.png": {
+          "bytes": 456265,
+          "sha256": "63f4ca99b64179fa92fa7cf429273d74b15cb0923d3767e9dfc4bc71f08febb7"
+        },
+        "calibrated_views/00686.png": {
+          "bytes": 394543,
+          "sha256": "898b7d58da438f61cc84d2e6f268d69891997d77559d2d26db469e44a0946676"
+        },
+        "calibrated_views/00981.png": {
+          "bytes": 415458,
+          "sha256": "aec89d99ef3cc2aff7c099209b93ce04b1e6eaf847b75131363d68227b410d51"
+        },
+        "calibrated_views/00936.png": {
+          "bytes": 389790,
+          "sha256": "a76b56c77eda5921dcd504ab6295a7696a4f481418f9176f17143df2fbba8e32"
+        },
+        "calibrated_views/00949.png": {
+          "bytes": 401513,
+          "sha256": "324b00adbdf42503dcf99f43f3ea02032b4f09398bd5e6390fea8e7d30a44514"
+        },
+        "calibrated_views/01075.png": {
+          "bytes": 244180,
+          "sha256": "d27e9b803c7a08c4e27e39e5dc16a4178561afcdca0e6593e0eea89e5650a08c"
+        },
+        "calibrated_views/01098.png": {
+          "bytes": 371655,
+          "sha256": "aee945d8660c10b1b98807169bc0d67c126baa508a935992f5a046d8530e32a6"
+        },
+        "calibrated_views/00589.png": {
+          "bytes": 381796,
+          "sha256": "7a1b3f72ffa2f2d11f456207a2843802e33d7d80d249655c9abb6b31cd019de4"
+        },
+        "calibrated_views/00080.png": {
+          "bytes": 230322,
+          "sha256": "db6bcd9ae9bfc0f85e26819005c790b344a6687e8a275cf019d9939d6ec72b19"
+        },
+        "calibrated_views/01110.png": {
+          "bytes": 503840,
+          "sha256": "0b45b5c720f0cadf3a2f7f4c94ed554b2923d07d5aee35fd2a7dcab2729e5de5"
+        },
+        "calibrated_views/00300.png": {
+          "bytes": 618172,
+          "sha256": "e7680eab93218ef6dcf89464fee63f4ddfbe76093cf51e55de7c8e87bddc3e83"
+        },
+        "calibrated_views/01055.png": {
+          "bytes": 472214,
+          "sha256": "514d9b94a29ee22ea80b6b1a5e9fead3b28e670b5b8630d7ce1671ad8fb4aa7c"
+        },
+        "calibrated_views/00746.png": {
+          "bytes": 403079,
+          "sha256": "3d3f03bdb93887202a5765f4b4c5a70cacd820e6d23f19f07224a6d8bb3a336d"
+        },
+        "calibrated_views/00148.png": {
+          "bytes": 217308,
+          "sha256": "884265cd561376ca063cd11a9b0e73bceff1767551be7060ca69a50840dbce41"
+        },
+        "calibrated_views/00634.png": {
+          "bytes": 318420,
+          "sha256": "4df3be1ba39256d6a7906f222470a72266bedf48a079ad4554af60bde9f27daf"
+        },
+        "calibrated_views/00552.png": {
+          "bytes": 386936,
+          "sha256": "28641f0ff0d9d0d0e6c82d74f88d087667c98b1c60a18f09c88c26c85323287f"
+        },
+        "calibrated_views/00574.png": {
+          "bytes": 243197,
+          "sha256": "5d79dbc0863c31102eb08009b8d8ff8b36127e7d14cd728ee9bf1a79330af25e"
+        },
+        "calibrated_views/00220.png": {
+          "bytes": 484598,
+          "sha256": "31df6e0ad401e7d00c210d0f27595163902bd7b71052c7622037d5de3e792f54"
+        },
+        "calibrated_views/00434.png": {
+          "bytes": 444174,
+          "sha256": "69f1e0a39dffde816e531f18ad0d7f94ff7957b41ab7f058adf764ac2b696632"
+        },
+        "calibrated_views/00173.png": {
+          "bytes": 216784,
+          "sha256": "395399287f0df5e434fc497773f9f14b1188826639dda4e9fecd3e408ca14291"
+        }
+      }
+    },
+    "bridge_12_sub": {
+      "session": "bridge_12_sub",
+      "candidate": "H03",
+      "selected_frames": 135,
+      "valid_depth_samples_integrated_per_variant": 4417241,
+      "texture_frames": 48,
+      "preprocessing": {
+        "name": "stairs_preserve_edges",
+        "confidence": 50,
+        "max_depth": 3.5,
+        "median_gate": 0.22,
+        "edge_gate": 0.0
+      },
+      "models": {
+        "tsdf_5cm": {
+          "vertices": 190104,
+          "triangles": 355102,
+          "surface_area_m2": 319.266909109048,
+          "boundary_edges": 25690,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.6696666666666666,
+          "reference_points_within_10cm": 0.86325,
+          "reference_to_surface_median_m": 0.02962857484817505,
+          "reference_to_surface_p90_m": 0.12149908095598223,
+          "surface_samples_farther_than_10cm_from_reference": 0.005666666666666667,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "tsdf_3cm": {
+          "vertices": 592132,
+          "triangles": 1106032,
+          "surface_area_m2": 352.48544191561876,
+          "boundary_edges": 76380,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.7255833333333334,
+          "reference_points_within_10cm": 0.85575,
+          "reference_to_surface_median_m": 0.02181629091501236,
+          "reference_to_surface_p90_m": 0.12899968922138216,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        },
+        "ball_pivoting": {
+          "vertices": 125316,
+          "triangles": 227538,
+          "surface_area_m2": 317.09945861822285,
+          "boundary_edges": 25498,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.6516666666666666,
+          "reference_points_within_10cm": 0.8481666666666666,
+          "reference_to_surface_median_m": 0.018422488123178482,
+          "reference_to_surface_p90_m": 0.11884974688291552,
+          "surface_samples_farther_than_10cm_from_reference": 8.333333333333333e-05,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 36367140,
+          "triangles": 179999,
+          "textured_faces": 96140,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 3,
+        "camera_frames": [
+          1,
+          5,
+          9,
+          13,
+          16,
+          19,
+          24,
+          26,
+          29,
+          34,
+          40,
+          47,
+          56,
+          60,
+          62,
+          69,
+          75,
+          79,
+          82,
+          85,
+          88,
+          91,
+          94,
+          97,
+          104,
+          107,
+          117,
+          123,
+          126,
+          130,
+          143,
+          146,
+          153,
+          158,
+          159,
+          160,
+          166,
+          170,
+          175,
+          178,
+          181,
+          186,
+          188,
+          193,
+          196,
+          200,
+          204,
+          211
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5341140784115467,
+        "unassigned_face_fraction": 0.46588592158845327,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "presentation_max_triangles": 180000,
+      "presentation_simplification_scope": "Quadric-decimated DISPLAY mesh; un-decimated TSDF/BPA PLYs retained. Texture/3cm display use identical decimated geometry.",
+      "detail_overlay_points": 12199,
+      "detail_overlay_scope": "Image/depth-edge candidates with valid depth and 2.5-25cm fine-mesh discrepancy; NOT semantic signs",
+      "pose_changes": 0,
+      "cross_session_fusion": false,
+      "gaussian_training_executed": false,
+      "source_inputs": {
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub_trajectory.csv": "917acabc8b558247908bf0d4646461ee6cd47b75d89f0e07c10217427f066582",
+        "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub.ply": "8215a179bb1f40a5c0576ce0f14fe6b19003153215ddcff19a3ad88b384d0687",
+        "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5"
+      },
+      "seconds": 65.47453639600008,
+      "outputs": {
+        "tsdf_5cm.glb": {
+          "bytes": 19441008,
+          "sha256": "4be3c19a2ce5ff204335b5fa2ce7e0bc3c3431b051d1fad725707ee3a3c29999"
+        },
+        "ball_pivoting_display.ply": {
+          "bytes": 7495304,
+          "sha256": "cc659a98dfcbbedfab136297eb2ca5b2ee8f3fa7a3a49ab648285ae476fdc682"
+        },
+        "detail_overlay.ply": {
+          "bytes": 183206,
+          "sha256": "965da48d88dd5d63bde6c8945fd9eaf3128fb67be3ee45baf064153758558c95"
+        },
+        "atlas_01.png": {
+          "bytes": 6197543,
+          "sha256": "2a06309185c539e874ad63fa44ef93ae3b6d381cb7b6858ce279d7975ab4065a"
+        },
+        "texture_frame_assignment.npy": {
+          "bytes": 720124,
+          "sha256": "4d6e088b3c33944068619175bd03c03428d3dcc3933d0ae9af37042ccbe3c690"
+        },
+        "tsdf_3cm.glb": {
+          "bytes": 19441008,
+          "sha256": "31a95a078828a4377600699cf2ccfdebc836505f5617fa40d5dbf860234c61d7"
+        },
+        "tsdf_5cm.ply": {
+          "bytes": 14311956,
+          "sha256": "cd3fcc72aca519a8fcb49e7cd4db2bc1f1a81d27b650411e221f7364385b54a9"
+        },
+        "ball_pivoting.glb": {
+          "bytes": 19441204,
+          "sha256": "6307a84f6f1496a5762c3a3ecd71e3d88be62abaa6702c7081477336a18c24af"
+        },
+        "tsdf_3cm_display.ply": {
+          "bytes": 7379010,
+          "sha256": "93ec3621ee3526127fb696e7ccf9f6e19dc9de172536da0e2a0b40510133f877"
+        },
+        "atlas_02.png": {
+          "bytes": 3512136,
+          "sha256": "0dff1f2251a984d8e0cc4d444b7fafc79abfa1a0d5734e79a6b474d144b96a41"
+        },
+        "tsdf_5cm_display.ply": {
+          "bytes": 7347747,
+          "sha256": "645d2e6e8f3a4b07e83300472f7871b5ea6ff4a0b62b761f70b34430d36cc3fc"
+        },
+        "atlas_00.png": {
+          "bytes": 8367203,
+          "sha256": "50794731b6860a3a24de17c2a003348accb77099e6da96561bf82fbcd33ec07e"
+        },
+        "ball_pivoting.ply": {
+          "bytes": 9349436,
+          "sha256": "d125d15d3f5e152310636ed795885635fbc498e9a520774858c0f319bfa73b04"
+        },
+        "photo_textured.glb": {
+          "bytes": 36367140,
+          "sha256": "aef69433935bcdee6e8deb97cbfe4f173e78c854bf621fd4ba552c68bfce6eb9"
+        },
+        "tsdf_3cm.ply": {
+          "bytes": 44577475,
+          "sha256": "0ee9a10e6efe9141482fa6bb6bfe16015ae762f4de315b841e34ccb5e6418d4d"
+        },
+        "calibrated_views/00181.png": {
+          "bytes": 332283,
+          "sha256": "00d44ca013621c9e095372a41242d5c446afa2b54b886506242cdcebb3c547c1"
+        },
+        "calibrated_views/00062.png": {
+          "bytes": 336095,
+          "sha256": "e283e4a272d651fd269c18891bda1d663b968632d22419bb60fc00af5e98befc"
+        },
+        "calibrated_views/00034.png": {
+          "bytes": 264674,
+          "sha256": "c889f4a087df5e900b5f5d1e7da665e6b1ac61caa1b756795e23eab7959269f4"
+        },
+        "calibrated_views/00143.png": {
+          "bytes": 360413,
+          "sha256": "87ae0456197b961a07cbd747b35680611794378edf240b3baa9224192f9d8864"
+        },
+        "calibrated_views/00013.png": {
+          "bytes": 560744,
+          "sha256": "b238495ea5023615a0b55ef07502cbea14dadacf5e37482f2b102c6fa30236a9"
+        },
+        "calibrated_views/00159.png": {
+          "bytes": 318252,
+          "sha256": "26ca8b302693f000b47c953bdd57cedb75d5c4b31fbe951bce9260b1583de6a8"
+        },
+        "calibrated_views/00088.png": {
+          "bytes": 397161,
+          "sha256": "156dde3aee07d8252a4b80d30986702eae287386423ea53f199d86c1dbd44ed2"
+        },
+        "calibrated_views/00026.png": {
+          "bytes": 348703,
+          "sha256": "a09965a0bfa4d81d546c88723a088455e99d65e61dcb9050ce69b9780c48d68a"
+        },
+        "calibrated_views/00196.png": {
+          "bytes": 428385,
+          "sha256": "d9c1b863d5d376b63a1fdcf605e6e73ee36fd0b2caec41f090f32e97dfdd409b"
+        },
+        "calibrated_views/00079.png": {
+          "bytes": 315131,
+          "sha256": "900d976304679e2f2b1a09f1e9b48f8b372833037ebd03ae5f2d0e2429f8a4e6"
+        },
+        "calibrated_views/00060.png": {
+          "bytes": 325263,
+          "sha256": "efee0ce837236c5386f745c101f490464dbd3658167c0d7c0439fd8d80d49a2d"
+        },
+        "calibrated_views/00166.png": {
+          "bytes": 440408,
+          "sha256": "6f07731bff70123d4e87c53d2f6a7e26c757bc230513df04473963e7e8c85f27"
+        },
+        "calibrated_views/00170.png": {
+          "bytes": 369479,
+          "sha256": "d41ca7dd905860970332ca2e4954af9b2ed8fdb93e9c5797b40bc368c20a73c9"
+        },
+        "calibrated_views/00094.png": {
+          "bytes": 198293,
+          "sha256": "bffba6ed8e752d7df56cfbfc5ce92061e86ce120275830bf41de1202f211cea6"
+        },
+        "calibrated_views/00047.png": {
+          "bytes": 311099,
+          "sha256": "b0f69e0b0ce34c4c6d19d571013b844b30efd1dff9ad3a47c1bb89a3d96d960f"
+        },
+        "calibrated_views/00082.png": {
+          "bytes": 407808,
+          "sha256": "915043ab0d5a5b6c43049ae6470457727a4f7b03c3f73a1739be2b1298f6abcd"
+        },
+        "calibrated_views/00104.png": {
+          "bytes": 244012,
+          "sha256": "1750e6f6420aeb1155984695e017dfc97e7275b34be35b0e9be2b2ddfabd69c4"
+        },
+        "calibrated_views/00211.png": {
+          "bytes": 558367,
+          "sha256": "794a8a2350f3579b45ccf81c82f890ebd84ff8e882d026925f43043044043bea"
+        },
+        "calibrated_views/00091.png": {
+          "bytes": 330811,
+          "sha256": "6486316978d94c4931c263b4bc89befeafe5584295f7f8c7bb788ca5b0e3f8a7"
+        },
+        "calibrated_views/00188.png": {
+          "bytes": 284830,
+          "sha256": "9af791b47dc9130f38cbcb47ba5fa10eb09aa98a18e87d0298340b4b8a7ac190"
+        },
+        "calibrated_views/transforms.json": {
+          "bytes": 45267,
+          "sha256": "7f445433d7e6744508a9d052f864bba4edb60c0193c81ce42d17d488bfe66fd0"
+        },
+        "calibrated_views/00123.png": {
+          "bytes": 139875,
+          "sha256": "8a60b9204ccc42015691a2e43930027ee305e710c86a2f427a4e63e655f44ad9"
+        },
+        "calibrated_views/00001.png": {
+          "bytes": 447081,
+          "sha256": "46be6c66577ddf56bc150c9276a6df0291165be169be093baa5c10cbbddf4a83"
+        },
+        "calibrated_views/00019.png": {
+          "bytes": 464912,
+          "sha256": "f13dfc9bfce64e03bd4cc00fa421b62cdd51c4920726a2d26c952aa0e9d3a470"
+        },
+        "calibrated_views/00097.png": {
+          "bytes": 231577,
+          "sha256": "3c125282a17b30ca1ec91165409b1c05b4745d3d5e91f6bdc901115a91140524"
+        },
+        "calibrated_views/00016.png": {
+          "bytes": 457840,
+          "sha256": "c1651e5ce7d8a97c9831d636fee3686b16c522ebaee845a1a6ce9afaeae4f5da"
+        },
+        "calibrated_views/00178.png": {
+          "bytes": 305867,
+          "sha256": "2bdd3cdc89361836ce7c3f6173aad2fde27659a518e4f9b978c058697c990f13"
+        },
+        "calibrated_views/00153.png": {
+          "bytes": 428472,
+          "sha256": "c11fd8ad351974791bc6f4d4e9a1a50d32017b59ea73d30b6876f4ba0a603333"
+        },
+        "calibrated_views/00056.png": {
+          "bytes": 377259,
+          "sha256": "25b5120c888432723f97906745caefe1029eddd4e4843645ee74f54877d36183"
+        },
+        "calibrated_views/00009.png": {
+          "bytes": 597405,
+          "sha256": "8a5c5bbf48179f35fda7ac71acc2c09e0272535ee2847e878238db3e5c1284bc"
+        },
+        "calibrated_views/00024.png": {
+          "bytes": 324244,
+          "sha256": "41815e1273209953c21f6e5fa78e2c926e606412ed90e1737149435485b3cc95"
+        },
+        "calibrated_views/00075.png": {
+          "bytes": 609818,
+          "sha256": "7dd06b4db5d41b556c41f862c538a390b00aae23324e1b92e53915e4279f2341"
+        },
+        "calibrated_views/00146.png": {
+          "bytes": 374222,
+          "sha256": "52833ab1bce488dd165fe37c372dcd3d56bdd591c78fb3180490c09606c5a40c"
+        },
+        "calibrated_views/00160.png": {
+          "bytes": 324925,
+          "sha256": "0d3707201076412a14f88f4fc5c0e0c0444dd015c7508e5bccafaa6b415c7c64"
+        },
+        "calibrated_views/00069.png": {
+          "bytes": 370343,
+          "sha256": "a015c7378fe7b4c26d5a4266c38a71ecc0f899bf51029bf71e30f93ea1d30fa7"
+        },
+        "calibrated_views/00193.png": {
+          "bytes": 420148,
+          "sha256": "799f4ddb3337168335430d55cb2faa4d52c76566ea48d18bc6ef46a04483dfdf"
+        },
+        "calibrated_views/00158.png": {
+          "bytes": 337996,
+          "sha256": "2463aaf203d5b902c1cbc771463ad3f423280cecc8b8f7b91b57c99c2b4d124a"
+        },
+        "calibrated_views/00175.png": {
+          "bytes": 309919,
+          "sha256": "127d3192ad80638635f8d3293624854a40358c6d3f88ef2b4b0f7cc5cda44842"
+        },
+        "calibrated_views/00085.png": {
+          "bytes": 433799,
+          "sha256": "338247f319bda931d607699f742704e57da8eb3f4e1f597326ff08add23b3cfd"
+        },
+        "calibrated_views/00040.png": {
+          "bytes": 443843,
+          "sha256": "c61d2e38d85f4249776d45e182c5c7cc5e0b08612d9bfcb26e5c1c85793b3c14"
+        },
+        "calibrated_views/00005.png": {
+          "bytes": 436889,
+          "sha256": "46b1688bd9934feb8cb48b8f451c09411609e0045b9c32968f4197b4835aa761"
+        },
+        "calibrated_views/00029.png": {
+          "bytes": 301723,
+          "sha256": "f373df344ec0f16487cfa1a682a070cf254fa5f4c512f939f6c53154cba77f05"
+        },
+        "calibrated_views/00126.png": {
+          "bytes": 189874,
+          "sha256": "ba82261b090aaf48b04223a1786030e0175dd48b5ec5446c4e038e0b786b5004"
+        },
+        "calibrated_views/00200.png": {
+          "bytes": 435285,
+          "sha256": "de8b4cea0b3ca610b0e55fe3317f7626103b2543912dba28485109a6324abc0b"
+        },
+        "calibrated_views/00130.png": {
+          "bytes": 253574,
+          "sha256": "7b9c99787039ac8ca4484924499c9f3d605da507be7aebf944d24cde3a9d99ee"
+        },
+        "calibrated_views/00204.png": {
+          "bytes": 565613,
+          "sha256": "b6b9984e1ff126d24ea1f14f6b57ec63191b83366f71b1799144b770f605beb9"
+        },
+        "calibrated_views/00186.png": {
+          "bytes": 328378,
+          "sha256": "aa265ab87aa609d45141a1d47566f8f26c602278a34d46a933f76f6b5befa0b8"
+        },
+        "calibrated_views/00117.png": {
+          "bytes": 169111,
+          "sha256": "e587f7f81531b3cc50462e42771774f718ceb6498bf0a415a283553aa3beeb13"
+        },
+        "calibrated_views/00107.png": {
+          "bytes": 304836,
+          "sha256": "34430136e19914b8798b9cabac76713695f9d1581a76982aeb06ef15287f07f2"
+        }
+      }
+    }
+  },
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "render_settings": {
+    "width": 540,
+    "height": 720,
+    "source_RGB_resized_for_contact_sheet_only": true,
+    "texture_atlas_uses_native_RGB": true,
+    "tone_mapping": "LINEAR",
+    "shader": "defaultUnlit",
+    "point_sizes_px": {
+      "reference": 3.0,
+      "detail": 2.0
+    },
+    "point_colours_are_sRGB": true,
+    "vertex_colour_check": "Synthetic sRGB=0.5 patch: flag false rendered188, flag true126; point flag true used for fair colour comparison."
+  },
+  "limitations": [
+    "Source view is an upper-bound appearance check, not heldout.",
+    "Unused-texture view is same capture/pose chain, not fresh independent accuracy.",
+    "No OCR or surveyed dimensions; legibility remains a human comparison.",
+    "Quadric simplification applies to display copies, full-resolution surface PLYs remain unchanged."
+  ]
+}

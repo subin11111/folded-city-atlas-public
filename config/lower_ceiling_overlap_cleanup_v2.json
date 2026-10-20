@@ -1,0 +1,9 @@
+{
+  "source_bundle": "outputs/student_union_lower_ceiling_clearance_v19",
+  "source_mask": "outputs/student_union_service_slabs_v3/lobby/bank_slab_mask.npz",
+  "session": "lobby",
+  "minimum_abs_normal_z": 0.80,
+  "old_height_band_m": 0.22,
+  "sign_ray_cleanup": {"id":"lobby_shinhan_heading", "views":[811,820,808], "maximum_plane_distance_m":0.35},
+  "scope": "Local old bank ceiling overlap cleanup plus finite original-sign photo-prism cleanup from three existing views. Preserve all semantic-photo primitives. Remove only non-semantic fragments actually intersecting sign rays ahead of its plane and within 35cm of that finite facade. No new geometry, source pose change, floor/2F movement or global 1F ceiling raise."
+}

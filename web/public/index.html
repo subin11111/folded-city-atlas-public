@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="캠퍼스에서 건물 안 목적지까지. 사진으로 둘러보고, 층을 넘어 길을 찾아보세요.">
+  <title>Folded City · 공간을 잇는 지도</title>
+  <link rel="icon" type="image/svg+xml" href="/brand/mark.svg?v=fold-aligned-1">
+  <link rel="stylesheet" href="/vendor/maplibre/maplibre-gl.css">
+  <link rel="stylesheet" href="/app.css?v=ku-green-1">
+  <link rel="stylesheet" href="/photo-view.css">
+  <link rel="stylesheet" href="/route-options.css">
+  <link rel="stylesheet" href="/brand.css?v=ku-green-1">
+  <link rel="stylesheet" href="/loading-screen.css?v=paper-1">
+  <link rel="stylesheet" href="/product-shell.css?v=1">
+  <link rel="stylesheet" href="/journey-shell.css?v=3">
+  <link rel="stylesheet" href="/location.css?v=measured-2">
+  <link rel="stylesheet" href="/world-map.css?v=1">
+  <style>#mapSvg{user-select:none}</style>
+  <script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body>
+  <section class="loading-screen" id="loadingScreen" role="status" aria-live="polite" aria-label="지도 불러오는 중">
+    <div class="loading-content">
+      <div class="loading-artwork" id="loadingArtwork" aria-hidden="true">
+        <div class="loading-paper">
+          <div class="loading-panel loading-map-middle"><svg viewBox="0 0 64 64" fill="none"><path d="m26 13 12 7v31l-12-7V13Z" fill="#17804A"/></svg></div>
+          <div class="loading-panel loading-map-left"><svg viewBox="0 0 64 64" fill="none"><path d="m12 20 14-7v31l-14 7V20Z" fill="#57A676"/></svg></div>
+          <div class="loading-panel loading-map-right"><svg viewBox="0 0 64 64" fill="none"><path d="m38 20 14-7v31l-14 7V20Z" fill="#A2CC80"/></svg></div>
+          <svg class="loading-route-layer" viewBox="0 0 64 64" fill="none">
+            <g class="loading-arrow" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path class="loading-route" pathLength="1" d="M19 40V29L26 25.5L38 32.5L45 25.5"/>
+              <path class="loading-arrowhead" d="M38 25.5H45V32.5"/>
+              <circle class="loading-origin" cx="19" cy="40" r="2.5" fill="#fff" stroke="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <p class="loading-name">Folded City<span>.</span></p>
+      <p class="loading-tagline">BEYOND THE FLAT MAP</p>
+      <p class="loading-message" id="loadingMessage">공간을 펼치고, 길을 연결하고 있어요.</p>
+      <div class="loading-pulse" aria-hidden="true"><i></i><i></i><i></i></div>
+      <button class="loading-retry" id="loadingRetry" hidden>다시 불러오기 ↗</button>
+    </div>
+  </section>
+  <header class="topbar"><a class="brand" href="/" aria-label="Folded City 홈"><img class="brand-mark" src="/brand/mark.svg?v=fold-aligned-1" alt="" width="44" height="44"><span class="brand-wordmark"><span class="brand-name">Folded City<span class="brand-dot">.</span></span><span class="brand-tagline">BEYOND THE FLAT MAP</span></span></a><div class="site-context"><span class="context-dot" aria-hidden="true"></span>건국대학교 <span>／</span> 서울캠퍼스</div><button id="evidenceButton" class="menu-button" aria-haspopup="dialog" aria-controls="evidenceDialog" aria-expanded="false"><span aria-hidden="true">☰</span> 메뉴</button></header>
+  <main class="workspace">
+    <aside class="sidebar">
+      <div id="sheetGrip" class="sheet-grip" role="slider" tabindex="0" aria-label="장소 목록 크기 조절" aria-valuemin="0" aria-valuemax="2" aria-valuenow="1" aria-valuetext="중간 높이" aria-controls="sheetScroll"><span class="sheet-grip-bar" aria-hidden="true"></span><span class="sheet-collapsed-label">목적지 찾기 <span aria-hidden="true">⌃</span></span></div>
+      <div id="sheetScroll" class="sheet-scroll">
+      <section class="search-box"><p class="sidebar-greeting">어디로 갈까요?</p><label class="sr-only" for="search">장소 검색</label><div class="search-input"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="search" placeholder="건물 또는 목적지 검색" autocomplete="off" enterkeyhint="search"><kbd>Ctrl K</kbd></div></section>
+      <section id="placesPanel" aria-labelledby="resultsHeading">
+      <section class="place-card"><div class="place-photo"><img src="/photos_corrected/outside_263.jpg" alt="실제 촬영한 제1학생회관 입구"></div><div class="place-content"><p class="eyebrow">실내지도 이용 가능</p><h1>제1학생회관</h1><button id="walkStart">입구에서 시작 <span aria-hidden="true">↗</span></button></div></section>
+      <div class="places-heading"><h2 id="resultsHeading">학생회관의 장소</h2><span id="resultsCount"></span></div><div id="results" class="results"></div>
+      <div class="coverage"><span>캠퍼스 건물 <b id="campusCount">—</b>동</span><span>실내 길찾기 · 학생회관</span></div>
+      </section>
+      <section id="journeyPanel" aria-label="선택한 목적지와 경로" hidden>
+      <button id="changePlace" class="change-place">← 다른 장소 선택</button>
+      <div class="destination-preview" id="destinationPreview"></div>
+      <section class="route-result" id="routeResult" aria-live="polite"><p class="empty-note">목적지를 선택하면 경로를 계산합니다.</p></section>
+      <details class="route-settings" id="routeSettings"><summary>출발지·이동 방식 변경 <span aria-hidden="true">⌄</span></summary><section class="route-form">
+        <label for="start">출발</label><select id="start" aria-label="출발 장소"></select>
+        <label for="destination">도착</label><select id="destination" aria-label="도착 장소"></select>
+        <label for="routePolicy">이동 방식</label><select id="routePolicy" aria-label="이동 방식">
+          <option value="shortest">가장 짧은 길</option>
+          <option value="main_stairs">메인 계단으로</option>
+          <option value="sub_stairs">오른쪽 서브계단으로</option>
+          <option value="elevator">엘리베이터로 · 이용 확인 필요</option>
+        </select>
+        <p class="route-policy-note" id="policyNote">실제 개방 여부와 현장 안내를 확인해 주세요.</p>
+        <button class="primary" id="routeButton">경로 찾기 <span>→</span></button>
+      </section></details>
+      </section>
+      <div class="sidebar-foot"><span>길은 건물 앞에서 끝나지 않으니까.</span><span>FOLDED CITY</span></div>
+      </div>
+    </aside>
+    <section class="map-shell" aria-label="지도">
+      <div class="map-toolbar"><div class="view-switch" aria-label="지도 표시 방식"><button class="active" data-view="3d">3D 지도</button><button data-view="2d">실내 평면</button></div></div>
+      <nav class="scene-nav" aria-label="공간 이동"><button id="campusHome" class="active">캠퍼스 전체</button><span>›</span><button id="indoorHome">학생회관 실내</button><button id="topView" title="현재 공간을 위에서 보기">위에서 보기 ↓</button></nav>
+      <div id="map2d"><svg id="mapSvg" role="img" aria-label="학생회관 실내외 지도" viewBox="-42 -27 70 65"><defs><pattern id="grid" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M 5 0 L 0 0 0 5" fill="none" stroke="#dce2da" stroke-width=".035"/></pattern></defs><rect x="-2000" y="-2000" width="4000" height="4000" fill="#f1f3ee"/><rect x="-2000" y="-2000" width="4000" height="4000" fill="url(#grid)"/><g id="osmLayer"></g><g id="floorLayer"></g><g id="routeLayer"></g><g id="placesLayer"></g><g id="replayLayer"></g></svg></div>
+      <div id="map3d" hidden><div id="threeCanvas"></div><div class="model-loading" id="modelLoading">3D 공간을 준비하고 있습니다…</div><section id="photoStage" class="photo-stage fill" hidden aria-label="사진으로 공간 둘러보기"><div id="photoBackdrop" class="photo-backdrop"></div><div class="photo-images"><img id="photoViewA" alt="주변 위치에서 실제 촬영한 공간"><img id="photoViewB" alt="주변 위치에서 실제 촬영한 공간"></div><div id="photoUnavailable" class="photo-unavailable" hidden><strong>아직 사진이 없는 방향이에요.</strong><p>가까운 촬영 방향을 보거나 3D 지도로 확인해 주세요.</p><button id="photoNearestDirection">가까운 촬영 방향 보기</button><button id="photoFallback3D">3D로 확인하기</button></div></section></div>
+      <div class="map-label"><span class="eyebrow">KONKUK UNIVERSITY</span><strong id="mapTitle">건국대학교 서울캠퍼스</strong><span id="floorDescription">건물·도로·실내지도 연결</span></div>
+      <div class="floor-control" id="floorControls" aria-label="층 선택" hidden><span>층</span><button data-level="all" class="active">전체</button><button data-level="2">2F</button><button data-level="1">1F</button><button data-level="outside">실외</button></div>
+      <section class="building-card" id="buildingCard" aria-live="polite" hidden><span class="eyebrow">캠퍼스의 장소</span><h2 id="buildingName"></h2><p id="buildingDetail"></p><button id="buildingAction" hidden>입구에서 둘러보기 →</button></section>
+      <div class="map-controls"><button id="zoomIn" aria-label="확대">＋</button><button id="zoomOut" aria-label="축소">−</button><button id="resetView" aria-label="지도 전체 보기">⌖</button></div>
+      <div class="route-player" id="routePlayer" hidden><button id="playButton" aria-label="경로 재생">▶</button><div><strong>경로 따라보기</strong><span id="playProgress">출발 → 프라임홀</span></div><input type="range" id="routeProgress" min="0" max="100" value="0" aria-label="경로 진행 위치"><button id="routePhoto">사진 보기 ↗</button></div>
+      <section id="walkHUD" class="walk-hud" hidden aria-label="사람 시점 탐색">
+        <div class="walk-topbar"><button id="walkExit" class="icon-button" aria-label="3D 전체 지도로 돌아가기"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button><div class="walk-heading"><small id="walkLocation">제1학생회관 · 입구 앞</small><strong id="walkGoal">PRIME HALL</strong></div><span id="walkFloor">1F</span><button id="walkSettingsToggle" class="icon-button" aria-label="보기 설정" aria-expanded="false" aria-controls="walkSettings"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button></div>
+        <section id="walkSettings" class="walk-settings" aria-label="안내 보기 설정" hidden><div class="walk-settings-heading"><strong>보기 설정</strong><button id="walkSettingsClose" class="icon-button" aria-label="보기 설정 닫기">×</button></div><div class="walk-view-tools"><button id="walkViewToggle">3D 공간 보기</button><button id="walkPhotoButton" disabled>사진 크게 보기</button><button id="photoFit" aria-pressed="true">원본 비율 보기</button><button id="photoBrightness" aria-pressed="true">밝게 보기 켬</button></div><p id="walkHelp">드래그로 둘러보고, 화살표로 이동하세요.</p><p id="photoSourceInfo" class="walk-photo-source" aria-live="polite"></p><p class="walk-safety-note">실제 촬영 사진을 이용한 가상 탐색입니다. 현장 안내와 개방 여부를 확인해 주세요.</p></section>
+        <div id="walkPhotoPanel" class="walk-photo-panel" hidden><img id="walkPhotoImage" alt="이 지점 주변의 실제 촬영 사진"><p id="walkPhotoCaption"></p><button id="walkPhotoClose">3D 시점으로 돌아가기</button></div>
+        <div class="walk-bottom-sheet"><div class="walk-progress"><span id="walkViewDescription">사진으로 둘러보기</span><b id="walkRemaining"></b></div><p id="walkInstruction" aria-live="polite">이동할 방향을 선택하세요</p><div id="walkOptions"></div><details id="walkOtherDirections" class="walk-other-directions"><summary>다른 방향으로 이동 <span aria-hidden="true">⌄</span></summary><div id="walkSecondaryOptions"></div></details><div class="walk-actions"><button id="walkHistory" aria-label="이전 지점으로 돌아가기" disabled><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9h9a5 5 0 0 1 0 10M5 9l4-4M5 9l4 4"/></svg><span>이전</span></button><button id="walkMapToggle" aria-expanded="false" aria-controls="walkMapPanel"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5Zm6-2v16m6-14v16"/></svg><span>미니맵</span></button><div class="walk-turn-controls"><button id="lookLeft" class="icon-button" aria-label="왼쪽으로 둘러보기"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button><span>둘러보기</span><button id="lookRight" class="icon-button" aria-label="오른쪽으로 둘러보기"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></svg></button></div></div></div>
+        <section id="walkMapPanel" class="walk-map-panel" aria-label="현재 탐색 위치" hidden><div><strong>둘러보는 위치 <span id="walkMiniFloor">1F</span></strong><button id="walkMapClose" class="icon-button" aria-label="미니맵 닫기">×</button></div><svg id="walkMiniMap" role="img" aria-label="둘러보고 있는 지도 위치"></svg></section>
+      </section>
+      <div class="map-attribution"><span><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a> · <a href="https://openfreemap.org/" target="_blank" rel="noreferrer">OpenFreeMap</a> · <a href="https://openmaptiles.org/" target="_blank" rel="noreferrer">© OpenMapTiles</a> · <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">AWS Terrain</a> · Folded City</span></div>
+    </section>
+  </main>
+  <dialog id="photoDialog" aria-labelledby="photoTitle"><button class="dialog-close" aria-label="닫기">×</button><div class="photo-body"><img id="photoImage" alt="해당 위치에서 실제 촬영한 사진"><div><p class="eyebrow">사진으로 만나는 공간</p><h2 id="photoTitle"></h2><p id="photoCaption"></p><div class="photo-nav"><button id="previousPhoto">← 이전 사진</button><button id="nextPhoto">다음 사진 →</button></div></div></div></dialog>
+  <dialog id="evidenceDialog" class="menu-drawer" aria-labelledby="menuTitle"><button class="dialog-close" aria-label="메뉴 닫기">×</button><div class="evidence-body"><p class="eyebrow">FOLDED CITY</p><h2 id="menuTitle">메뉴</h2><nav class="menu-shortcuts" aria-label="빠른 이동"><button id="menuSearch">장소 검색·길찾기 <span>→</span></button><a href="/research.html">그림으로 보는 연구 <span>↗</span></a></nav><details class="project-info" id="projectInfo"><summary><span><strong>프로젝트 정보</strong><small>연구 · 데이터 · 검사 도구</small></span><span aria-hidden="true">＋</span></summary><div class="project-intro"><h3>도시는 더 이상 평면이 아니다.</h3><p>다중센서 융합 SLAM 기반 실내외 연속 측위 및 3차원 경로 탐색을 위한 연구 프로토타입입니다. 사진 탐색은 가상 이동이며, 내 위치 기능은 휴대폰의 실외 수신 위치와 헤딩을 별도로 표시합니다. 실내 층과 호실은 자동 추정하지 않습니다.</p><p>보행면·출입문·계단은 현장 통행 검증 전입니다. 실제 개방 여부와 안내를 우선해 주세요.</p></div><section class="project-section"><h3>현재 화면</h3><p id="sceneBadge">공개 데이터 기반 3D 캠퍼스</p><p id="currentViewDetails">사진 탐색을 시작하면 촬영 자료와 대응 정보를 표시합니다.</p><p id="currentRouteDetails">경로를 선택하면 계산 방식과 검증 상태를 표시합니다.</p></section><details class="route-options"><summary>연구용 경로 검증 설정</summary><label><input type="checkbox" id="avoidStairs">계단 제외 · 엘리베이터 후보 사용</label><label><input type="checkbox" id="verifiedOnly">현장 검증된 연결만 사용</label><p>검증된 연결이 아직 없어 일부 경로가 표시되지 않을 수 있습니다.</p></details><div id="evidenceContent"></div></details><p class="menu-footer">공간을 펼치고, 길을 연결합니다.</p></div></dialog>
+  <div id="toast" role="status"></div>
+  <noscript><style>.loading-screen{display:none}</style><p>지도를 보려면 브라우저의 자바스크립트를 켜 주세요.</p></noscript>
+  <script type="module" src="/bootstrap.js?v=indoor-datum-1"></script>
+</body></html>

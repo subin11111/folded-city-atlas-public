@@ -1,0 +1,56 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 100
+      Color: 80; 87; 98
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Recorded RGB-D prefix (NOT final v9)
+      Enabled: true
+      Topic:
+        Value: /folded_city_demo/map_cloud
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Color Transformer: RGB8
+      Position Transformer: XYZ
+      Size (Pixels): 2
+      Style: Points
+      Queue Size: 2
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Replay scope
+      Enabled: true
+      Topic:
+        Value: /folded_city_demo/scope
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+  Global Options:
+    Fixed Frame: recorded_session_local
+    Background Color: 18; 23; 31
+    Frame Rate: 20
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      Distance: 45
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.8
+      Yaw: 0.7
+Window Geometry:
+  Width: 1280
+  Height: 850

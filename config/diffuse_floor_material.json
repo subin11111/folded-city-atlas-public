@@ -1,0 +1,11 @@
+{
+  "source_bundle":"outputs/student_union_visual_floor_v10",
+  "comparison_bundle":"outputs/student_union_photo_finish_v9",
+  "illumination_radius_m":0.16,
+  "target_linear_luminance":0.20,
+  "gain_bounds":[0.18,5.0],
+  "chromaticity_normalization":true,
+  "grain_source":"outputs/student_union_roadview_v1/floor2/photos/00892.jpg",
+  "grain_crop":[30,770,170,900],
+  "scope":"Photo-derived diffuse visual floor material, not original lighting or calibrated albedo. Remove broad exposure and colour-cast patches while retaining photographed tile joints, black accents, spatial texture and high-frequency colour detail. Micro-grain completion uses a real stone crop; original tile locations are not synthesized. No uniform RGB paint. Original roadview, walls/signs, source poses and geometry unchanged. Select by direct rendered visual review, not boundary statistics."
+}

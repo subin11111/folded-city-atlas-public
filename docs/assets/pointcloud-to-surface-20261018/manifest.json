@@ -1,0 +1,725 @@
+{
+  "created_utc": "2026-10-18T02:34:47.888124+00:00",
+  "figures": [
+    {
+      "file": "all/oblique_pointcloud.png",
+      "sha256": "a37f1227caad30664a4a5cc5b1d2a88bf7360636feaca8805de683159dfd8b0f",
+      "scope": "all",
+      "view": "oblique",
+      "stage": "pointcloud"
+    },
+    {
+      "file": "all/top_pointcloud.png",
+      "sha256": "de8e34765bb6fef004372d1a20c473821df3fe37b6847e1cc4a40d52df216e4a",
+      "scope": "all",
+      "view": "top",
+      "stage": "pointcloud"
+    },
+    {
+      "file": "all/oblique_surface.png",
+      "sha256": "9586a0cd48ab9ff18e80f1b3adf6762adbb7d9dab505f673e03476d6400a4031",
+      "scope": "all",
+      "view": "oblique",
+      "stage": "surface"
+    },
+    {
+      "file": "all/top_surface.png",
+      "sha256": "267e305aa118638a389dff6862c011dfab3de29eaf5d2ae4ad2f291d1857333a",
+      "scope": "all",
+      "view": "top",
+      "stage": "surface"
+    },
+    {
+      "file": "all/oblique_textured.png",
+      "sha256": "f0d6a97f996269c709d64efa1f0f6607fd93a39861f9caa50334eb3e5714ca1a",
+      "scope": "all",
+      "view": "oblique",
+      "stage": "textured"
+    },
+    {
+      "file": "all/top_textured.png",
+      "sha256": "abaa683a93e1e7c2dd3cca531f196f75bac82203d4c7b0cf7a1d84134ceb62ba",
+      "scope": "all",
+      "view": "top",
+      "stage": "textured"
+    },
+    {
+      "file": "all/oblique_progression.png",
+      "sha256": "e304b49f6a2a68b6cc2dc3d954956c4f0c6f4a54100dcf724b8af9c786ce4791",
+      "scope": "all",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "all/top_progression.png",
+      "sha256": "cb59d21ef932d8ee88f7f6c60c82d4d50e86cd288d58fb6ad5555b7038fb9b7e",
+      "scope": "all",
+      "view": "top",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "outside/oblique_progression.png",
+      "sha256": "13eca9a45cac6010342fd79f960fc6a67d7708cf363d528548460989c7e0963f",
+      "scope": "outside",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "outside/source_progression.png",
+      "sha256": "eed20afbce8400d33e6d1c930944f51f6814f17ee861e35675474d02bf1b40ca",
+      "scope": "outside",
+      "view": "source",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "lobby/oblique_progression.png",
+      "sha256": "6be029a81b9031afa7f770c1798bde204a26449851e11753a81fd011a2af139c",
+      "scope": "lobby",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "lobby/source_progression.png",
+      "sha256": "015de5e7e340a962ecd7786e00672c8f43ccf0bafb89faac6e6834cc422bbaa9",
+      "scope": "lobby",
+      "view": "source",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "bridge_out1f/oblique_progression.png",
+      "sha256": "b73b0f2f7b9c5a4d754711a833ef32845670c099e9c617390ac677f4565799c0",
+      "scope": "bridge_out1f",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "bridge_out1f/source_progression.png",
+      "sha256": "8dbb3e9e3babc8fe74846346df8da8be8f0754f758561bc641e22abe3d22f7d3",
+      "scope": "bridge_out1f",
+      "view": "source",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "floor2/oblique_progression.png",
+      "sha256": "ccb0dc11d6c63ee08d8183280ba209bd5cea56f3fb35336c96f4137173a74e7a",
+      "scope": "floor2",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "floor2/source_progression.png",
+      "sha256": "a355e28acab911b4867c40dcb6a62d857c169315098a2bf9b7b3b4d59bd4b042",
+      "scope": "floor2",
+      "view": "source",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "floor2/stairs_progression.png",
+      "sha256": "af9dc91d19d61199267b4a63bfc474069da7693e7d14615b2c6cba8ae2f0b5e9",
+      "scope": "floor2",
+      "view": "stairs",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "bridge_12_sub/oblique_progression.png",
+      "sha256": "53284a5eb5a5e91564b047deb944493d6a95bea6adbea54aebb2c4c0fa71758c",
+      "scope": "bridge_12_sub",
+      "view": "oblique",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "bridge_12_sub/source_progression.png",
+      "sha256": "744a2ece61d49dc0a20f9637b7127881c99bd9d1008de87309ce9c74eec34ffc",
+      "scope": "bridge_12_sub",
+      "view": "source",
+      "stage": "three_stage_comparison"
+    },
+    {
+      "file": "bridge_12_sub/stairs_progression.png",
+      "sha256": "d3766bca8d6a26c5dc01416b0c78ff1ac04e83af5afb76628c5fbe2acda5a407",
+      "scope": "bridge_12_sub",
+      "view": "stairs",
+      "stage": "three_stage_comparison"
+    }
+  ],
+  "cameras": {
+    "all/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        -7.6981048583984375,
+        -4.331602096557617,
+        1.806395411491394
+      ],
+      "eye": [
+        22.378028122561133,
+        -43.00091592921993,
+        36.17911881830234
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "all/top": {
+      "type": "fixed_overview",
+      "centre": [
+        -7.6981048583984375,
+        -4.331602096557617,
+        1.806395411491394
+      ],
+      "eye": [
+        -7.6981048583984375,
+        -4.331602096557617,
+        60.711264153002084
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "outside/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        5.643164396286011,
+        5.089619874954224,
+        -0.45577704906463623
+      ],
+      "eye": [
+        19.154729110570166,
+        -12.282391900553979,
+        14.986011195831544
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "outside/source": {
+      "type": "calibrated_source",
+      "node": 263,
+      "K": [
+        [
+          501.460693359375,
+          0.0,
+          448.8954620361328
+        ],
+        [
+          0.0,
+          501.460693359375,
+          361.96783447265625
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          -0.8831712623598492,
+          0.09479016192019842,
+          -0.4593728264171685,
+          3.4374073730795227
+        ],
+        [
+          0.4688622813236436,
+          0.1506351530802913,
+          -0.8703319195674014,
+          0.11190834015591788
+        ],
+        [
+          -0.013301162066026558,
+          -0.9840347314484561,
+          -0.1774801243808231,
+          -0.19470865921397582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "lobby/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        -12.896348595619202,
+        -5.016541481018066,
+        0.6949985027313232
+      ],
+      "eye": [
+        11.431006013679877,
+        -36.29456883583117,
+        28.497689484787415
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "lobby/source": {
+      "type": "calibrated_source",
+      "node": 39,
+      "K": [
+        [
+          501.40374755859375,
+          0.0,
+          448.63533782958984
+        ],
+        [
+          0.0,
+          501.40374755859375,
+          361.91809844970703
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          -0.879352013239928,
+          -0.06206911006673756,
+          0.47211005039381215,
+          0.0007562203049192306
+        ],
+        [
+          -0.47598380999047846,
+          0.14248904711777352,
+          -0.8678342758661319,
+          -0.013416134253410983
+        ],
+        [
+          -0.013404769913783553,
+          -0.9878485581627415,
+          -0.15484188182680478,
+          -0.1846971732670979
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "bridge_out1f/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        0.8880155086517334,
+        0.1327366828918457,
+        -0.33074307441711426
+      ],
+      "eye": [
+        8.70202214116697,
+        -9.913843273199173,
+        8.599550219886014
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "bridge_out1f/source": {
+      "type": "calibrated_source",
+      "node": 80,
+      "K": [
+        [
+          501.83033752441406,
+          0.0,
+          449.6781005859375
+        ],
+        [
+          0.0,
+          501.83033752441406,
+          361.9673080444336
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          -0.9783406058408651,
+          -0.024196795102477957,
+          0.2055833372001148,
+          0.4089269044285426
+        ],
+        [
+          -0.20653710876282833,
+          0.1806377661111465,
+          -0.9616197645908278,
+          -0.5752847582668595
+        ],
+        [
+          -0.013867951738743072,
+          -0.983252251153466,
+          -0.18172275100424884,
+          -0.1902292205787417
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "floor2/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        -16.655974201858044,
+        -5.228985786437988,
+        2.1290476322174072
+      ],
+      "eye": [
+        6.5670921765046835,
+        -35.08721398719007,
+        28.66969492177481
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "floor2/source": {
+      "type": "calibrated_source",
+      "node": 1055,
+      "K": [
+        [
+          504.9470672607422,
+          0.0,
+          449.15320587158203
+        ],
+        [
+          0.0,
+          504.9470672607422,
+          362.0750427246094
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          -0.9967691444839816,
+          -0.008676766805265678,
+          -0.07985102883534897,
+          -16.71472375503604
+        ],
+        [
+          0.07385624248520528,
+          0.29175654701858283,
+          -0.9536370719595386,
+          -8.775791388944091
+        ],
+        [
+          0.03157160859452228,
+          -0.956453505313675,
+          -0.2901730287207652,
+          4.104282478188134
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "floor2/stairs": {
+      "type": "calibrated_source",
+      "node": 1078,
+      "K": [
+        [
+          505.7969055175781,
+          0.0,
+          449.59149169921875
+        ],
+        [
+          0.0,
+          505.7969055175781,
+          361.3585968017578
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          0.206073913807629,
+          -0.660739514801374,
+          0.7217735844504514,
+          -12.47207049201421
+        ],
+        [
+          -0.9779511314462827,
+          -0.1645750218582145,
+          0.12855719158658716,
+          -10.334297192168089
+        ],
+        [
+          0.033843241120626644,
+          -0.7323515771797232,
+          -0.6800854208844094,
+          2.1791406187660165
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "bridge_12_sub/oblique": {
+      "type": "fixed_overview",
+      "centre": [
+        -11.900163412094116,
+        11.817010164260864,
+        2.3463818430900574
+      ],
+      "eye": [
+        -2.5374840505892458,
+        -0.2207204433882577,
+        13.046586827667053
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "vertical_fov_degrees": 55.0,
+      "width": 900,
+      "height": 720
+    },
+    "bridge_12_sub/source": {
+      "type": "calibrated_source",
+      "node": 159,
+      "K": [
+        [
+          504.94935607910156,
+          0.0,
+          449.4613265991211
+        ],
+        [
+          0.0,
+          504.94935607910156,
+          362.0669631958008
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          -0.011914987211116706,
+          0.013154915498630362,
+          -0.999842594640366,
+          -15.248062553879102
+        ],
+        [
+          0.9998856038726534,
+          0.009486695570145448,
+          -0.011790921808434744,
+          10.150190685512465
+        ],
+        [
+          0.009330094671874997,
+          -0.9998687052021373,
+          -0.013266443545136964,
+          4.472664879830526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    },
+    "bridge_12_sub/stairs": {
+      "type": "calibrated_source",
+      "node": 108,
+      "K": [
+        [
+          506.8633575439453,
+          0.0,
+          449.4561538696289
+        ],
+        [
+          0.0,
+          506.8633575439453,
+          361.5797653198242
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_optical": [
+        [
+          0.4306170314711962,
+          0.460134996599891,
+          -0.7764310693399126,
+          -11.29190502612018
+        ],
+        [
+          0.89917424220165,
+          -0.14455194831117282,
+          0.413026007307071,
+          17.527217592516784
+        ],
+        [
+          0.0778131915977703,
+          -0.8760028515825037,
+          -0.475987972821024,
+          1.9557794293238993
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "width": 900,
+      "height": 720,
+      "viewport_policy": "Preserve native RGB pixel aspect/focal ratio; expand viewport horizontally, no anisotropic image stretching"
+    }
+  },
+  "inputs_sha256": {
+    "/home/subin/folded-city-atlas/config/current_map.json": "65b363cab0c970dd3b4ffe432f20bf2448059ee8a325c412cca77c403b7ec97e",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/manifest.json": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+    "/home/subin/folded-city-atlas/config/current_display.json": "5dad9a612aecb295c763af94259b5c7f9919463fa748106509280f9ac31b0718",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/manifest.json": "5c03b90ad58d485e7c0519d6abdc6c0414054f22da1cfe30e9987c4fb659ca74",
+    "/home/subin/folded-city-atlas/src/save_pointcloud_surface_progression.py": "2d03e61235956fb25497bc7cabc9d307bebd1f1f81b8b6bb6dfbcef7d4537741",
+    "/home/subin/folded-city-atlas/src/surface_model_utils.py": "1c4bfe269991ca77f172afb600d6d1232a8ee8839b5b5158328c2205710423e3",
+    "/home/subin/folded-city-atlas/src/export_rtabmap_db.py": "743941f629d8fb3073cc7a82bff771f9c94c3540511bd05d385d40f9614552b3",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/combined.ply": "48a8debb47f1b2391f3ec314cff9e9310e0ebda2a9554d781210cd4c35224ea1",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/outside/preserved_geometry.ply": "683fe22263f80c1fe35160d389477737dd27de40f9de3f5223c3c4fd319d8032",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/lobby/preserved_geometry.ply": "3b179eca08b66a809e7d9985a9e7cfee40d08f6ef682b657672b4b6ba00f435d",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_out1f/preserved_geometry.ply": "3c7497e913523c4d4c7202453785e31228a396bba716dc6b71f160050b09734f",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/floor2/preserved_geometry.ply": "2e7dda5d717a834b4a49c05b671a1245d0899f78c8ea5941a34de26b522c797a",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_12_sub/preserved_geometry.ply": "f2276a1639cce1b567efb13c33f3db0a5da48b5a7345e63112803428449155ad",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/outside/preserved_textured.glb": "abbc18148729082ad771131a1f27e534b5cb173642287d659001ae2d2d60f68b",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/lobby/preserved_textured.glb": "4f00736838afde78afb6778ad94a4ca66b295358b3c0810ccc4034e23bcd50d9",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_out1f/preserved_textured.glb": "20edad5fa17ab3c8358f4492b87fa48bb7203ded510a64400334dacb9e34e6e7",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/floor2/preserved_textured.glb": "0a3e050fd2d1d371bbec83a82f7278cb818f9b7f9d12b112d1d7f8958a8caf06",
+    "/home/subin/folded-city-atlas/outputs/student_union_preserved_display_v1/bridge_12_sub/preserved_textured.glb": "cf08de7c37fc1960434c159a18081ca2be583606a984362605a147dab6039db9",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside_trajectory.csv": "f2af5d9c5a222478897e17338de5050af4c2acf20ae0c8f4b5489ecf772f1948",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261016-234854-outside.db": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/outside.ply": "01f23defd8ead99c56cc545640650a86ac0d7d78d4840fecd1c74c2aabfd9358",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby_trajectory.csv": "5f7680f34340a472cdb92b213520e138d28d163a127f31b4158e3776cddeb266",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-000622-1f.db": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/lobby.ply": "1fef3aa49eb40b8527c54ae8cf92fb753a9bfc67ac1f096c1541d8b03fbb41c4",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f_trajectory.csv": "eb4dceda80b371ed938a94fdb69413a2cae0ab7c0927064efeb7caee3f2b35a5",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-011331-bridgeout1f.db": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_out1f.ply": "893ffff7ec451076bb0150f76da724c1122a3501c1dd1a0a9ebcb3569364640f",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2_trajectory.csv": "bb4c300c4aeb4c18ffe8ad162544102ec23ede0cc355855bbad281068ad961c0",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013501-2f.db": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/floor2.ply": "4718d60de52bb8a92faf2d8f48935d6325760d1a38255cb1a1a1a8ec02c30db6",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub_trajectory.csv": "917acabc8b558247908bf0d4646461ee6cd47b75d89f0e07c10217427f066582",
+    "/home/subin/folded-city-atlas/data/raw/rtabmap/261017-013904-bridg12_2.db": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+    "/home/subin/folded-city-atlas/outputs/student_union_selected_20261017_v1/bridge_12_sub.ply": "8215a179bb1f40a5c0576ce0f14fe6b19003153215ddcff19a3ad88b384d0687"
+  },
+  "all_original_inputs_unchanged": true,
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "selected_map_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "display_manifest_sha256": "5c03b90ad58d485e7c0519d6abdc6c0414054f22da1cfe30e9987c4fb659ca74",
+  "stages": [
+    "Selected optimized point cloud",
+    "Full 5cm TSDF display in neutral grey",
+    "Same surface with depth-checked native RGB texture"
+  ],
+  "sessions": {
+    "outside": {
+      "candidate": "J01",
+      "points": 464565,
+      "surface_triangles": 526730
+    },
+    "lobby": {
+      "candidate": "N05",
+      "points": 1430215,
+      "surface_triangles": 1626810
+    },
+    "bridge_out1f": {
+      "candidate": "H03",
+      "points": 153559,
+      "surface_triangles": 194105
+    },
+    "floor2": {
+      "candidate": "J04",
+      "points": 1754344,
+      "surface_triangles": 1950311
+    },
+    "bridge_12_sub": {
+      "candidate": "H03",
+      "points": 261829,
+      "surface_triangles": 351131
+    }
+  },
+  "limitations": [
+    "Actual model renders, not screenshots of native RViz/Open3D window chrome.",
+    "Point shader and grey surface lighting differ intentionally; cameras/world bounds are identical.",
+    "Selected point cloud -> existing full 5cm TSDF derivative, not raw -> newly optimized mapping.",
+    "Steps 2/3 use the same retained triangle geometry; step 3 only changes appearance.",
+    "Source photograph views may supply the texture; not independent validation.",
+    "Holes and existing registration errors remain; no hole filling or image generation.",
+    "Initial dual-renderer attempt completed PNGs but aborted on Filament teardown; retained under outputs/pointcloud_to_surface_render_attempt1. Final uses one renderer."
+  ]
+}

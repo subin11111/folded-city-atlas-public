@@ -1,0 +1,12 @@
+{
+  "status": "GEOMETRY_PRESERVING_DISPLAY_NOT_NAVIGATION_APPROVAL",
+  "manifest": "outputs/student_union_preserved_display_v1/manifest.json",
+  "manifest_sha256": "5c03b90ad58d485e7c0519d6abdc6c0414054f22da1cfe30e9987c4fb659ca74",
+  "selected_map_manifest_sha256": "98cf1d77aa5ca3c82f9653ffcb4ee86d6f40ac4d8953f1c1171b0dfa307090b1",
+  "default_method": "preserved",
+  "default_session": "all",
+  "viewer": "scripts/view_display_map.sh",
+  "local_url": "http://127.0.0.1:8766/",
+  "navigation_ready": false,
+  "selected_map_replaced": false
+}

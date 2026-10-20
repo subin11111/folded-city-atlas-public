@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | Closed floor slabs + bank heading",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792328436.4977796,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_service_slabs_v3/manifest.json",
+  "structural_manifest_sha256": "5f6de8f4b0056d1359547f485712b9bb4b6d1dd6d2ea59740386a17c2b2df93d",
+  "architectural_presentation": true,
+  "start_view": "bank",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "lobby",
+    "node": 811
+  },
+  "camera_model_matrix_open3d": [
+    [
+      -0.799659788608551,
+      -0.1966264545917511,
+      -0.5673467516899109,
+      -22.823368072509766
+    ],
+    [
+      -0.5968533158302307,
+      0.15697704255580902,
+      0.7868445515632629,
+      -17.559324264526367
+    ],
+    [
+      -0.06565403938293457,
+      0.9678307771682739,
+      -0.24288535118103027,
+      0.34400585293769836
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

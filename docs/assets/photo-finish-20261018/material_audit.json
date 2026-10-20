@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-18T13:53:21.620218+00:00",
+  "bundle_manifest_sha256": "8b793ddf08f2f520f6eb7bc02724fb41d08000945e2c911dcbea1937a077a4c9",
+  "sessions": {
+    "lobby": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 175,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "floor2": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 3,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 170,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_12_sub": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 2,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 10,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "bridge_out1f": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 2,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    },
+    "outside": {
+      "only_matching_floor_materials_changed": true,
+      "changed_floor_primitives": 0,
+      "original_binary_prefix_unchanged": true,
+      "original_image_streams_preserved": 18,
+      "position_normal_UV_accessors_unchanged": true,
+      "PLY_geometry_file_unchanged": true,
+      "GLB_header_chunk_lengths_and_alignment_valid": true
+    }
+  },
+  "exact_original_floor_atlas_restoration": false,
+  "audit_source_sha256": "2169ce16e8f9609abcb16b9c52547b79f5a87bd296c821b99f22fa28246aa0b2",
+  "scope": "Reproject actual RGB-D floor photographs on existing source-height anchors. Shared floor photo selection, bounded scalar exposure gains and multiband boundary blending. Retain original fallback texture where no valid photograph exists; never use mean-colour flooring or invent tile layouts. Geometry and source poses unchanged."
+}

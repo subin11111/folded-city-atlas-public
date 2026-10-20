@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Folded City — 공간을 잇는 지도</title>
+  <rect width="64" height="64" rx="17" fill="#063D2A"/>
+  <path d="m26 13 12 7v31l-12-7V13Z" fill="#17804A"/>
+  <path d="m12 20 14-7v31l-14 7V20Z" fill="#57A676"/>
+  <path d="m38 20 14-7v31l-14 7V20Z" fill="#A2CC80"/>
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 40V29L26 25.5L38 32.5L45 25.5"/>
+          <path d="M38 25.5H45V32.5"/>
+          <circle cx="19" cy="40" r="2.5" fill="#fff" stroke="none"/>
+        </g>
+</svg>

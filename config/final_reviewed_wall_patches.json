@@ -1,0 +1,14 @@
+{
+  "source_bundle": "outputs/student_union_final_mesh_v3",
+  "session": "lobby",
+  "node": 445,
+  "maximum_plane_distance_m": 0.18,
+  "minimum_normal_agreement": 0.80,
+  "minimum_inlier_fraction": 0.90,
+  "maximum_depth_plane_p90_m": 0.025,
+  "regions": [
+    {"id":"final_main_stair_side_wall", "label":"Main stair side wall / original photo 445", "class":"wall", "polygon":[[320,10],[490,10],[490,785],[410,920],[315,710]], "protect_photo_polygons":[[[300,555],[365,605],[365,675],[300,640]]], "evidence":"Original lobby445: observed planar main stair side wall only, excluding the left doorway and steps; source depth p90 < 1cm. Preserve the physical handrail band."},
+    {"id":"final_main_stair_return_wall", "label":"Main stair return wall / original photo 445", "class":"wall", "polygon":[[515,240],[709,310],[709,945],[550,945],[515,800]], "protect_photo_polygons":[], "evidence":"Original lobby445: return wall to the right of the real corner; do not project one plane across that corner or into the upper recess."}
+  ],
+  "scope":"Two explicitly visually reviewed, source-photo-bounded wall replacements after global fragment cleanup. No stair tread/door/ceiling reconstruction, no whole-building extrapolation, no pose or height change. Native source photographs remain unchanged."
+}

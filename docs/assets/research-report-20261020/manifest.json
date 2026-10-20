@@ -1,0 +1,66 @@
+{
+  "created_date": "2026-10-20",
+  "assets": [
+    {
+      "file": "design_process.png",
+      "sha256": "1f73658e4d4beb452548e2b882b3c87d06be5248ef282e551c10693cd45ab290",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "destinations.png",
+      "sha256": "440d0e86f18780d640378d0ea511535c7364703692eab593c3002c7ca55e51c2",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "gnss_accuracy.png",
+      "sha256": "b4025c8b03a32dd153c0148937ea56f9a1f5e5d2a6f147089697902fb60a5a86",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "navigation_3d.png",
+      "sha256": "6ec7a8a95a641ab190e59957615b276f87b41db7f5e10ce25c2d7ff1dbbe6d93",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "navigation_grid.png",
+      "sha256": "a55f0d1f7adb280643a3a0a4bc3bb3575867cfcb04fcb8d58dcc61be8dc0a8e6",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "rgb_depth.png",
+      "sha256": "360f63a8c8ab022cd8faafd03003350c6812d4314ef8cbc0fd94b9b3d8b8d188",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "route_distances.png",
+      "sha256": "8eb45caa147e39f476380c6cccec2bbfd0611ceb23c749babd439cfd31da0f9a",
+      "source": "Folded City final report figure",
+      "generated_scene": false
+    },
+    {
+      "file": "loading-animation.gif",
+      "sha256": "130e46fb1f8af84416771a68bbae1ffecdd09798f4268484602aaea25bf25dbd",
+      "source": "Browser capture of the existing loading HTML and CSS",
+      "source_files": [
+        "web/public/index.html",
+        "web/public/loading-screen.css"
+      ],
+      "frames": 68,
+      "frame_duration_ms": 50,
+      "duration_seconds": 3.4,
+      "generated_scene": false
+    }
+  ],
+  "inputs": [
+    "RTAB-Map source RGB-D and Node GPS fields",
+    "web/public/data/navigation.json",
+    "web/public/data/catalog.json"
+  ],
+  "note": "Charts depict actual observations or calculated model routes. design_process is a technical schematic."
+}

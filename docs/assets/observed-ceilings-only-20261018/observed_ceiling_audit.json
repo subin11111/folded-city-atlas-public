@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-18T10:51:21.421594+00:00",
+  "sessions": {
+    "lobby": {
+      "all_existing_floor_wall_stair_coordinates_unchanged": true,
+      "actual_GLB_PLY_equal": true,
+      "all_residual_ceiling_band_horizontal_faces_are_original_TSDF_subset": true,
+      "residual_observed_ceiling_band_faces": 6,
+      "restored_original_TSDF_faces": 151887,
+      "removed_modeled_ceiling_faces": 56756,
+      "ceiling_height_estimates_created": 0,
+      "restoration_vertex_displacement_m": 0.0,
+      "new_inferred_ceiling_triangles": 0
+    },
+    "floor2": {
+      "all_existing_floor_wall_stair_coordinates_unchanged": true,
+      "actual_GLB_PLY_equal": true,
+      "all_residual_ceiling_band_horizontal_faces_are_original_TSDF_subset": true,
+      "residual_observed_ceiling_band_faces": 4579,
+      "restored_original_TSDF_faces": 275540,
+      "removed_modeled_ceiling_faces": 96436,
+      "ceiling_height_estimates_created": 0,
+      "restoration_vertex_displacement_m": 0.0,
+      "new_inferred_ceiling_triangles": 0
+    },
+    "bridge_12_sub": {
+      "all_existing_floor_wall_stair_coordinates_unchanged": true,
+      "actual_GLB_PLY_equal": true,
+      "all_residual_ceiling_band_horizontal_faces_are_original_TSDF_subset": true,
+      "residual_observed_ceiling_band_faces": 6697,
+      "restored_original_TSDF_faces": 19664,
+      "removed_modeled_ceiling_faces": 15094,
+      "ceiling_height_estimates_created": 0,
+      "restoration_vertex_displacement_m": 0.0,
+      "new_inferred_ceiling_triangles": 0
+    },
+    "bridge_out1f": {
+      "all_existing_floor_wall_stair_coordinates_unchanged": true,
+      "actual_GLB_PLY_equal": true,
+      "all_residual_ceiling_band_horizontal_faces_are_original_TSDF_subset": true,
+      "residual_observed_ceiling_band_faces": 0,
+      "restored_original_TSDF_faces": 0,
+      "removed_modeled_ceiling_faces": 0,
+      "ceiling_height_estimates_created": 0,
+      "restoration_vertex_displacement_m": 0.0,
+      "new_inferred_ceiling_triangles": 0
+    },
+    "outside": {
+      "all_existing_floor_wall_stair_coordinates_unchanged": true,
+      "actual_GLB_PLY_equal": true,
+      "all_residual_ceiling_band_horizontal_faces_are_original_TSDF_subset": true,
+      "residual_observed_ceiling_band_faces": 0,
+      "restored_original_TSDF_faces": 0,
+      "removed_modeled_ceiling_faces": 0,
+      "ceiling_height_estimates_created": 0,
+      "restoration_vertex_displacement_m": 0.0,
+      "new_inferred_ceiling_triangles": 0
+    }
+  },
+  "manifest_sha256": "027330f5e5d18970b8795d6d43019cea115c795b2f0701d423dd84b2163c7ba5",
+  "audit_source_sha256": "f491643c5079357d7ee3495d8160e618f48b541f7c4418eb45a3ed48c174ecfe",
+  "scope": "Exact existing depth-based TSDF triangle subsets only, not surveyed truth; no arbitrary ceiling completion or height."
+}

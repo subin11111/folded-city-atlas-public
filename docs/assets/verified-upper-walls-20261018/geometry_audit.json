@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-10-18T11:26:51.909417+00:00",
+  "sessions": {
+    "lobby": {
+      "all_nonwithdrawn_original_coordinates_order_retained": true,
+      "original_faces": 679879,
+      "withdrawn_modeled_floor_faces": 0,
+      "all_original_wall_and_stair_coordinates_retained": true,
+      "actual_GLB_PLY_equal": true,
+      "pose_changes": 0,
+      "regions": [
+        {
+          "id": "restroom_interfloor_fascia",
+          "accepted": true,
+          "actual_triangles": 1329,
+          "area_m2": 3.312693264369848,
+          "all_centroids_inside_reviewed_photo": true,
+          "height_min_m": 1.634312391281128,
+          "height_max_m": 3.4655799865722656
+        },
+        {
+          "id": "restroom_interfloor_left_panel",
+          "accepted": true,
+          "actual_triangles": 954,
+          "area_m2": 8.470505469051897,
+          "all_centroids_inside_reviewed_photo": true,
+          "height_min_m": 1.5466678142547607,
+          "height_max_m": 3.4628207683563232
+        }
+      ]
+    },
+    "floor2": {
+      "all_nonwithdrawn_original_coordinates_order_retained": true,
+      "original_faces": 912546,
+      "withdrawn_modeled_floor_faces": 144,
+      "all_original_wall_and_stair_coordinates_retained": true,
+      "actual_GLB_PLY_equal": true,
+      "pose_changes": 0,
+      "regions": [
+        {
+          "id": "restroom_upper_wall_to_junction",
+          "accepted": true,
+          "actual_triangles": 948,
+          "area_m2": 1.8338925895814338,
+          "all_centroids_inside_reviewed_photo": true,
+          "height_min_m": 4.833446502685547,
+          "height_max_m": 5.549874782562256
+        },
+        {
+          "id": "restroom_portal_upper_wall",
+          "accepted": false,
+          "reason": "Original depth does not establish a coherent physical plane"
+        },
+        {
+          "id": "restroom_local_ceiling_at_verified_joint",
+          "accepted": true,
+          "actual_triangles": 529,
+          "area_m2": 0.9698937723205028,
+          "all_centroids_inside_reviewed_photo": true,
+          "height_min_m": 5.540626049041748,
+          "height_max_m": 5.548036098480225,
+          "joint_residual_construction_m": [
+            1.13125126888821e-06,
+            9.649652544592609e-07,
+            8.367441361838146e-07
+          ],
+          "scope": "Shared line is imposed by construction; not independent alignment accuracy."
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "all_nonwithdrawn_original_coordinates_order_retained": true,
+      "original_faces": 281759,
+      "withdrawn_modeled_floor_faces": 0,
+      "all_original_wall_and_stair_coordinates_retained": true,
+      "actual_GLB_PLY_equal": true,
+      "pose_changes": 0,
+      "regions": []
+    },
+    "bridge_out1f": {
+      "all_nonwithdrawn_original_coordinates_order_retained": true,
+      "original_faces": 129944,
+      "withdrawn_modeled_floor_faces": 0,
+      "all_original_wall_and_stair_coordinates_retained": true,
+      "actual_GLB_PLY_equal": true,
+      "pose_changes": 0,
+      "regions": []
+    },
+    "outside": {
+      "all_nonwithdrawn_original_coordinates_order_retained": true,
+      "original_faces": 272119,
+      "withdrawn_modeled_floor_faces": 0,
+      "all_original_wall_and_stair_coordinates_retained": true,
+      "actual_GLB_PLY_equal": true,
+      "pose_changes": 0,
+      "regions": []
+    }
+  },
+  "manifest_sha256": "80f0de13eae251a45fda918fb762c580890b5cc0c89852cae6abc0d1f107a2c3",
+  "audit_source_sha256": "02ed94306b161ccc3df36bc578754baacd76e177fce330e133973a03d7995f99",
+  "scope": "Original geometry preservation and bounded display model; no surveyed accuracy, whole-building completion or floor-height correction claimed."
+}

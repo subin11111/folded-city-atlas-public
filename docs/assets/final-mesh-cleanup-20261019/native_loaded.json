@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | Finished mesh / retained colours",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792382270.5522468,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_final_mesh_v9/manifest.json",
+  "structural_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "architectural_presentation": true,
+  "start_view": "stairwall",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "lobby",
+    "node": 445
+  },
+  "camera_model_matrix_open3d": [
+    [
+      0.6970275640487671,
+      -0.09217424690723419,
+      -0.7110952734947205,
+      -11.198992729187012
+    ],
+    [
+      -0.7170441150665283,
+      -0.08928551524877548,
+      -0.6912853121757507,
+      13.058971405029297
+    ],
+    [
+      0.00022822635946795344,
+      0.991731584072113,
+      -0.12832748889923096,
+      0.06590265035629272
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

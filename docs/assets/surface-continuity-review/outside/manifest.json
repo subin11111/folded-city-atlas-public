@@ -1,0 +1,55 @@
+{
+  "figures": [
+    {
+      "file": "outside/source_comparison.png",
+      "sha256": "a5762cb0ecbdd7fcd10dbc17069c4ee9af0b2cfd79edeedc321f2da84860a855",
+      "session": "outside",
+      "view": "source",
+      "camera_node": 263,
+      "actual_data": true
+    },
+    {
+      "file": "outside/audit_comparison.png",
+      "sha256": "0cb3ef1315a7c0f3f7543aa1ba3e7fa5f7482e75d6e9d958c7d3b33bd5accc6a",
+      "session": "outside",
+      "view": "audit",
+      "camera_node": 264,
+      "actual_data": true
+    },
+    {
+      "file": "outside/oblique_comparison.png",
+      "sha256": "e5b159a228f419b3a33df25848e8144e9284b82408bffa8e259941c176808218",
+      "session": "outside",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "outside/source_geometry.png",
+      "sha256": "e5e40bf256a925b7dff7309e4047b21da14250af71dfeb541c1202f873fb4f83",
+      "session": "outside",
+      "view": "source",
+      "camera_node": 263,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "outside/audit_geometry.png",
+      "sha256": "962c95cc0d34c87dcd1c87d3c525f6fe978094bf269f1e9757131e6d43c23be2",
+      "session": "outside",
+      "view": "audit",
+      "camera_node": 264,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "outside/oblique_geometry.png",
+      "sha256": "883ea9e63ddea52b9624c112ea2efc5f530524e9ba592b64b3fa293b335324d9",
+      "session": "outside",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    }
+  ]
+}

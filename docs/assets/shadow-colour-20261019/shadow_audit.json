@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-10-19T00:25:12.438155+00:00",
+  "bundle_manifest_sha256": "c7c826887024a32124430337c6c4dae794a1fcc2f92c67a76b0fb591d71bc255",
+  "audit_source_sha256": "d0ad7e044d4cc7a0a4f4a5ebd29752c5bc4767f44776590995adb15282e0ea6a",
+  "sessions": {
+    "floor2": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 779712,
+      "active_images_checked": 146,
+      "baked_colour_primitives_checked": 3,
+      "image_size_and_alpha_exact": true,
+      "black_zero_is_preserved": true,
+      "colour_method": "bounded_shadow_denoise_then_weak_ratio_gain",
+      "highlight_colours_exact": true,
+      "spatial_filter_changes_allowed": true
+    },
+    "lobby": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 760667,
+      "active_images_checked": 158,
+      "baked_colour_primitives_checked": 6,
+      "image_size_and_alpha_exact": true,
+      "black_zero_is_preserved": true,
+      "colour_method": "bounded_shadow_denoise_then_weak_ratio_gain",
+      "highlight_colours_exact": true,
+      "spatial_filter_changes_allowed": true
+    },
+    "bridge_12_sub": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 276424,
+      "active_images_checked": 2,
+      "baked_colour_primitives_checked": 2,
+      "image_size_and_alpha_exact": true,
+      "black_zero_is_preserved": true,
+      "colour_method": "bounded_shadow_denoise_then_weak_ratio_gain",
+      "highlight_colours_exact": true,
+      "spatial_filter_changes_allowed": true
+    },
+    "bridge_out1f": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 129944,
+      "active_images_checked": 1,
+      "baked_colour_primitives_checked": 1,
+      "image_size_and_alpha_exact": true,
+      "black_zero_is_preserved": true,
+      "colour_method": "bounded_shadow_denoise_then_weak_ratio_gain",
+      "highlight_colours_exact": true,
+      "spatial_filter_changes_allowed": true
+    },
+    "outside": {
+      "PLY_sha256_exact": true,
+      "original_binary_prefix_exact": true,
+      "position_normal_UV_indices_material_assignments_exact": true,
+      "triangle_count": 272119,
+      "active_images_checked": 18,
+      "baked_colour_primitives_checked": 2,
+      "image_size_and_alpha_exact": true,
+      "black_zero_is_preserved": true,
+      "colour_method": "bounded_shadow_denoise_then_weak_ratio_gain",
+      "highlight_colours_exact": true,
+      "spatial_filter_changes_allowed": true
+    }
+  },
+  "geometry_changes": 0,
+  "pose_changes": 0,
+  "UV_changes": 0,
+  "original_photo_pack_manifest_sha256": "f030034a218e0aaa5ff065d8c77e9e3774a9648920effcbdc9242d8caefd12a5",
+  "original_photo_pack_rewritten": false,
+  "selected_map_unchanged": true,
+  "active_display_colour_changes": true,
+  "source_sign_and_floor_photos_retained_in_binary_prefix": true,
+  "navigation_exported": false,
+  "method": "colour_preserving_denoised",
+  "scope": "Display colour derivative only. Shadow textures can be filtered in colour-preserving mode; fine-detail/noise tradeoff requires visual review. Not recovered illumination, clipped detail, missing surfaces or navigation approval."
+}

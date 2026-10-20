@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-10-18T12:40:53.930594+00:00",
+  "pointers": {
+    "appearance_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/manifest.json",
+      "sha256": "f1ff5ccdb5bf5e24be621d3ab6d5707b7c6091b6eb5c86ca532ec586c0b9f61b"
+    },
+    "appearance_review": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_appearance_v2/review.json",
+      "sha256": "58de6cb196386da3e1efbf4513f047d202b69b58f415b67409c8cc741ba7bdc5"
+    },
+    "structural_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/manifest.json",
+      "sha256": "daa84193d7b7bd658e6ac12b3288d54fa7b341b538f40b97fd6a5c323cf311b9"
+    },
+    "structural_cleanup": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/cleanup.json",
+      "sha256": "b415ebf7cacc34b27e586d8840913f66269302132d9591ea818ad6e2a1d1e36e"
+    },
+    "structural_selection_policy": {
+      "path": "/home/subin/folded-city-atlas/config/structural_display_policy.json",
+      "sha256": "51774b176de0104a3c65f91a59f19a3745e9b66de87f75c2110c24eb05907f42"
+    },
+    "ceiling_completion_policy": {
+      "path": "/home/subin/folded-city-atlas/config/ceiling_completion_policy.json",
+      "sha256": "51b0190d625f4e5ed9f47578d38cc5dd113da67d5dce47836792534402a61337"
+    },
+    "presentation_config": {
+      "path": "/home/subin/folded-city-atlas/config/architectural_connections.json",
+      "sha256": "cb63e4095fb671585759a4ddb88a8942ec212dd4acce0ad97dc407d52b37b3c2"
+    },
+    "presentation_geometry_audit": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/geometry_audit.json",
+      "sha256": "cea72d4998b18e8ce0164d9f34f4b05a0f78fe404680088fddb78999e43679d8"
+    },
+    "roadview_manifest": {
+      "path": "/home/subin/folded-city-atlas/outputs/student_union_roadview_v1/manifest.json",
+      "sha256": "f030034a218e0aaa5ff065d8c77e9e3774a9648920effcbdc9242d8caefd12a5"
+    }
+  },
+  "native_loaded": {
+    "loaded_files": [
+      "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/outside/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/lobby/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/bridge_out1f/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/floor2/clean_textured.glb",
+      "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/bridge_12_sub/clean_textured.glb"
+    ],
+    "status": "Loaded 5 session(s) | Unified 1F-2F presentation",
+    "native_window": true,
+    "selected_map_changed": false,
+    "roadview_nodes": 1199,
+    "time_unix": 1792327192.275992,
+    "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_unified_presentation_v4/manifest.json",
+    "structural_manifest_sha256": "daa84193d7b7bd658e6ac12b3288d54fa7b341b538f40b97fd6a5c323cf311b9",
+    "architectural_presentation": true,
+    "start_view": "restroom",
+    "ceiling_cutaway": false,
+    "focus_photo": {
+      "session": "lobby",
+      "node": 713
+    },
+    "camera_model_matrix_open3d": [
+      [
+        -0.5442206859588623,
+        -0.2062462419271469,
+        -0.8131951093673706,
+        -9.87568473815918
+      ],
+      [
+        -0.8380425572395325,
+        0.08877383172512054,
+        0.538334310054779,
+        -3.715818405151367
+      ],
+      [
+        -0.038838982582092285,
+        0.9744647741317749,
+        -0.22115570306777954,
+        0.21488532423973083
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "actual_five_session_files_verified": true,
+  "native_render_sha256": "22f85d75c338ec7775c775e40c5d51b5f4724dba76f7dd50afcb099f1be5df81",
+  "selected_map_unchanged": true,
+  "source_pose_changes": 0,
+  "viewer_sha256": "17c3c831a5c8e411c506a271495b32494a98ac855eb82ed6b3a5a8599ced2950",
+  "audit_source_sha256": "d1974238a3710c4a2ffbb543f66f7587bca2096e6c950612cb22be8e292c57da",
+  "scope": "Presentation artifact delivery verification; not surveyed accuracy or navigation approval."
+}

@@ -1,0 +1,16 @@
+{
+  "source_bundle": "outputs/student_union_closed_ceiling_extension_v1",
+  "appearance_reference": "outputs/student_union_lower_ceiling_clearance_v22",
+  "texture_maximum_side_px": 2000,
+  "texture_metres_per_pixel": 0.025,
+  "boundary_blend_m": 0.24,
+  "fill_grid_m": 0.10,
+  "detail_fade_m": 0.30,
+  "source_colour_model": "glTF linear COLOR_0 times baseColorFactor, or linearized PNG times vertex/material factors. Never substitute constant grey for real vertex colours.",
+  "accepted_photo_sheet_priority": "At overlapping XY, prefer the established bank/restroom/upper-roof photo sheet over lower old shards. Keep source photo detail rather than carrying dark sign/fragment edges into the new ceiling.",
+  "inferred_fascia_signature": "Only 8x8 or 16x16 uniform RGB(64,69,77) artificial closure materials; replace with neighbouring upper-wall paint, not floor/sign materials.",
+  "unknown_texture_policy": "Harmonic extension of neighbouring ceiling colour; phase-randomized original high-frequency plaster spectrum with illumination-relative amplitude (no repeating motif). Fascia paint uses nearby real upper-wall colours, not an XY-projected ceiling image. This is inferred material, not recovered unobserved fixtures or lettering.",
+  "geometry_changes": false,
+  "floor_or_sign_texture_changes": false,
+  "navigation_export": false
+}

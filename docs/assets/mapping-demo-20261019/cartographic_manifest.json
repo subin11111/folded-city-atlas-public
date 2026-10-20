@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-19T04:57:11.774630+00:00",
+  "selected_display_manifest_sha256": "d06099c3550edcf0b79c6a1de12862ed4edf14d152c299273a5c2d322c43af36",
+  "OSM_source_sha256": "95a9876d148883c62139be19efa5d92883c7e134cf41a273b1b646bfa394c6d7",
+  "OSM_query_template": "[out:json][timeout:25];(way[\"building\"](around:180,37.542051336731454,127.07786742632618);way[\"highway\"](around:180,37.542051336731454,127.07786742632618););out geom;",
+  "OSM_query_executed_by_this_run": false,
+  "OSM_source_xml_sha256": "5f2473bd925df23bc952585739cf488f7a3eb0c07337a5b4bbf96131b470d9b2",
+  "OSM_features": 101,
+  "OSM_attribution": "© OpenStreetMap contributors",
+  "OSM_licence": "https://www.openstreetmap.org/copyright",
+  "source_licence": "OSM data ODbL; derivative indoor data retained separately",
+  "georeference": {
+    "origin_latitude_deg": 37.542051336731454,
+    "origin_longitude_deg": 127.07786742632618,
+    "R_map_xy_to_EN": [
+      [
+        -0.16867774350440057,
+        -0.985671252926788
+      ],
+      [
+        0.9856712529267881,
+        -0.16867774350440046
+      ]
+    ],
+    "t_map_xy_to_EN_m": [
+      6.932030727303925,
+      -2.3947700791038518
+    ],
+    "scale": 1.0,
+    "yaw_deg": 99.71094917022785,
+    "unique_exterior_fixes": 290,
+    "reported_accuracy_median_m": 14.245954563306654,
+    "fit_residual_median_m": 2.9666240688882026,
+    "fit_residual_p90_m": 5.271965919007659,
+    "bootstrap_yaw_delta_p05_p95_deg": [
+      -10.169401226693651,
+      10.424118147577119
+    ],
+    "status": "COARSE_GNSS_PREVIEW_NOT_SURVEYED",
+    "indoor_gps_used": false,
+    "GNSS_altitude_used": false,
+    "limits": "Bootstrap reuses correlated fixes and is not calibrated confidence; rigid XY placement does not prove footprint accuracy."
+  },
+  "manual_preview_offset": {
+    "status": "USER_GUIDED_VISUAL_CANDIDATE_NOT_SURVEYED",
+    "east_m": 2.0,
+    "north_m": -2.0,
+    "reason": "User suggested slightly lower-right using the CU-side entrance as a visual reference. Two metres east and south is an initial preview, not a measured CU control point.",
+    "changes_original_GNSS_fit": false,
+    "changes_3D_map_or_poses": false
+  },
+  "OSM_edits_or_uploads": false,
+  "routing_ready": false,
+  "coordinate_units": "map_vectors.json metres; *.geojson longitude/latitude WGS84",
+  "levels": [
+    {
+      "level_id": "student_union_1_f1",
+      "label": "1층",
+      "display_height_m": -1.55,
+      "role": "display_floor_envelope_NOT_room_boundary_or_walkability",
+      "source_mask": "outputs/student_union_final_mesh_v9/main_1f_floor_mask.npz",
+      "source_sha256": "a92a8284ef7e544bdd8de8a48d14023efb670c971997d55c0bc659008e8e96b4",
+      "routing_approved": false
+    },
+    {
+      "level_id": "student_union_1_f2",
+      "label": "2층",
+      "display_height_m": 2.6,
+      "role": "display_floor_envelope_NOT_room_boundary_or_walkability",
+      "source_mask": "outputs/student_union_final_mesh_v9/main_2f_floor_mask.npz",
+      "source_sha256": "13f022861e4080d082afb55b98bf0914093e4079b9a4a7215af0717f81bc7cf1",
+      "routing_approved": false
+    }
+  ],
+  "code_sha256": "f0a002a36fb4813e8654d1b07f31c44a19b4522bbabcc81f0302991e95cbf3b7"
+}

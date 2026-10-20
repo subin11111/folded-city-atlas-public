@@ -1,0 +1,26 @@
+{
+  "source_bundle": "outputs/student_union_photo_floors_v6",
+  "maximum_frames_per_session_layer": 120,
+  "maximum_selected_photos": 48,
+  "coarse_side_px": 220,
+  "maximum_texture_side_px": 1800,
+  "metres_per_pixel": 0.02,
+  "depth_tolerance_m": 0.25,
+  "floor_height_tolerance_m": 0.25,
+  "gain_bounds": [0.75, 1.33],
+  "photo_label_feather_px": 4.0,
+  "multiband_levels": 5,
+  "groups": {
+    "lower": ["lobby_floor_1f", "floor2_floor_1f", "sub_floor_1f"],
+    "upper": ["floor2_floor_2f", "sub_floor_2f"]
+  },
+  "charts": [
+    {"id":"lobby_floor_1f","session":"lobby"},
+    {"id":"floor2_floor_1f","session":"floor2"},
+    {"id":"floor2_floor_2f","session":"floor2"},
+    {"id":"sub_floor_1f","session":"bridge_12_sub"},
+    {"id":"sub_floor_2f","session":"bridge_12_sub"}
+  ],
+  "preferred_nodes": {"floor2":[210,720,777,892,905],"lobby":[516,713,811]},
+  "scope":"Reproject actual RGB-D floor photographs on existing source-height anchors. Shared floor photo selection, bounded scalar exposure gains and multiband boundary blending. Retain original fallback texture where no valid photograph exists; never use mean-colour flooring or invent tile layouts. Geometry and source poses unchanged."
+}

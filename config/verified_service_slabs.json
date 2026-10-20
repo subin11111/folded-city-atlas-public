@@ -1,0 +1,22 @@
+{
+  "source_bundle": "outputs/student_union_unified_presentation_v4",
+  "presentation_only": true,
+  "upper_floor_m": 2.6,
+  "ceiling_z_tolerance_to_shared_joint_m": 0.25,
+  "cell_m": 0.1,
+  "maximum_internal_hole_area_m2": 0.6,
+  "minimum_connected_slab_area_m2": 0.25,
+  "upper_floor_support": "outputs/student_union_topology_fixed_v2/floor2/floor2_floor_2f_mask.npz",
+  "atrium_mask": "outputs/student_union_unified_presentation_v4/reviewed_atrium.npz",
+  "scope": "Close photographed 1F ceiling / 2F floor service voids with a shared bounded footprint and side skins. No blanket ceilings, wall-external floor expansion, stair closure or original pose changes.",
+  "bank_objects": [
+    {"id":"lobby_shinhan_heading","session":"lobby","node":811,"plane_index":0,"class":"sign","subtype":"bank_heading","label":"Shinhan Bank heading","visible_text":"신한은행 건국대학교","polygon":[[2,134],[587,282],[599,372],[2,305]],"add_surface":true},
+    {"id":"lobby_shinhan_shutter_poster","session":"lobby","node":811,"plane_index":0,"class":"sign","subtype":"bank_shutter_poster","label":"Shinhan Bank shutter poster","polygon":[[69,498],[451,470],[465,628],[78,648]],"add_surface":false,"explanation":"Retain the already readable source roller-shutter surface. A separate poster trial introduced boundary seams; only the damaged raised heading is replaced."}
+  ],
+  "ceiling_regions": [
+    {"id":"bank_roof_811","session":"lobby","node":811,"kind":"ceiling","polygon":[[0,0],[719,0],[719,210],[565,266],[0,122]]},
+    {"id":"bank_roof_820","session":"lobby","node":820,"kind":"ceiling","polygon":[[0,0],[719,0],[719,650],[0,550]]},
+    {"id":"bank_roof_808","session":"lobby","node":808,"kind":"ceiling","polygon":[[340,0],[719,0],[719,310],[565,280]]},
+    {"id":"bank_roof_833","session":"lobby","node":833,"kind":"ceiling","polygon":[[310,0],[719,0],[719,276],[350,291]]}
+  ]
+}

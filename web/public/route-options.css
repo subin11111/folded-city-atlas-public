@@ -1,0 +1,5 @@
+.route-policy-note{font-size:11px;line-height:1.6;color:#657184;margin:7px 0 13px}
+.route-alternatives{display:grid;gap:6px;margin:13px 0}
+.route-alternatives button{background:#f4f7fb;border:1px solid #e0e6ed;border-radius:9px;padding:10px;text-align:left;color:#45526a;font-size:11px;line-height:1.5;cursor:pointer}
+.route-alternatives button.selected{border-color:#0c6b43;color:#0a5c3c;background:#edf5ef;font-weight:700}
+.route-walk-button{background:#0c6b43;color:white;border:0;border-radius:9px;padding:12px;width:100%;margin-bottom:15px;cursor:pointer}

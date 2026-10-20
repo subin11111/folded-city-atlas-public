@@ -1,0 +1,72 @@
+{
+  "figures": [
+    {
+      "file": "bridge_12_sub/source_comparison.png",
+      "sha256": "4d1251f79af6cc79cad521c0b8320a4776cd70ddaa0dd0d2ca67d205e89f0aa9",
+      "session": "bridge_12_sub",
+      "view": "source",
+      "camera_node": 159,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/audit_comparison.png",
+      "sha256": "ea42a712d3f95e170a79102c0ef408bd708c0d0b115bd9a3454c5bcaaaa1caa9",
+      "session": "bridge_12_sub",
+      "view": "audit",
+      "camera_node": 157,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/stairs_comparison.png",
+      "sha256": "e1d457885a3aa1bfbadfd53798b68177fff570f056f658cf50e5675f1f387288",
+      "session": "bridge_12_sub",
+      "view": "stairs",
+      "camera_node": 108,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/oblique_comparison.png",
+      "sha256": "9a58f0568342ae22f36124802c24fd0fcdf4bfdc5daab4a722f06f5bbc76deb0",
+      "session": "bridge_12_sub",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/source_geometry.png",
+      "sha256": "03998acb160628e15236581156805e9c429e68982a02f3b652cb142e9a23c160",
+      "session": "bridge_12_sub",
+      "view": "source",
+      "camera_node": 159,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/audit_geometry.png",
+      "sha256": "630ab17059cc72f4ad93a7d87e4b99ce510e0696e5c0006b3ab0ace862dc2e3f",
+      "session": "bridge_12_sub",
+      "view": "audit",
+      "camera_node": 157,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/stairs_geometry.png",
+      "sha256": "db248988de55f4af68f31fcb2a649982fa5373998b2fd1bfdf612858a81c00a6",
+      "session": "bridge_12_sub",
+      "view": "stairs",
+      "camera_node": 108,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/oblique_geometry.png",
+      "sha256": "e81355e3d65360d67005e08c7c87ed1ed1712b2eca08d11734c298d8500f04e2",
+      "session": "bridge_12_sub",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    }
+  ]
+}

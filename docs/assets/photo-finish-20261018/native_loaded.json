@@ -1,0 +1,49 @@
+{
+  "loaded_files": [
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/outside/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/lobby/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/bridge_out1f/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/floor2/clean_textured.glb",
+    "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/bridge_12_sub/clean_textured.glb"
+  ],
+  "status": "Loaded 5 session(s) | Photo-blended floors + complete PRIME HALL",
+  "native_window": true,
+  "selected_map_changed": false,
+  "roadview_nodes": 1199,
+  "time_unix": 1792332077.048007,
+  "structural_manifest": "/home/subin/folded-city-atlas/outputs/student_union_photo_finish_v9/manifest.json",
+  "structural_manifest_sha256": "ec558a88a708d56ca10d676850f5e228418761c42d9ebb6e088517786f405997",
+  "architectural_presentation": true,
+  "start_view": "primehall",
+  "ceiling_cutaway": false,
+  "focus_photo": {
+    "session": "floor2",
+    "node": 781
+  },
+  "camera_model_matrix_open3d": [
+    [
+      -0.1878754198551178,
+      -0.07577580213546753,
+      0.979265570640564,
+      -22.485034942626953
+    ],
+    [
+      0.982014000415802,
+      -0.03351721167564392,
+      0.1858091950416565,
+      -9.742860794067383
+    ],
+    [
+      0.018742406740784645,
+      0.9965615272521973,
+      0.08070996403694153,
+      4.31881856918335
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

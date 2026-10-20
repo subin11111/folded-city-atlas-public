@@ -1,0 +1,11 @@
+{
+  "source_bundle": "outputs/student_union_edge_finish_v17",
+  "source_roof_texture": "outputs/student_union_joint_material_v15/floor2/continuous_2f_roof.png",
+  "photo_labels": "outputs/student_union_continuous_horizontals_v1/floor2/roof_photo_labels.png",
+  "surface_mask": "outputs/student_union_joint_material_v15/roof_mask.npz",
+  "band_width_m": 0.16,
+  "low_frequency_sigma_m": 0.10,
+  "detail_sigma_px": 1.2,
+  "maximum_srgb_change": 24,
+  "scope": "Only the existing 2F ceiling photo-source handover band is feathered. Preserve the user-preferred v15 floor appearance and v17 fixed horizontal geometry. No global exposure, recolouring, text editing, generated imagery or new ceiling geometry. Original photo-source interiors and semantic images remain unchanged."
+}

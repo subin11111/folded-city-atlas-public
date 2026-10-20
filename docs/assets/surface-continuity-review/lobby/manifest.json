@@ -1,0 +1,55 @@
+{
+  "figures": [
+    {
+      "file": "lobby/source_comparison.png",
+      "sha256": "c4aac46208abb4fb9c223b70501a43ee5a66c719d0b3b646e6e236aaecf8683e",
+      "session": "lobby",
+      "view": "source",
+      "camera_node": 39,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/audit_comparison.png",
+      "sha256": "1c49d1e6667aa0ae120507ccbf9c5930b2993dd2d429750777b4eb137a3c3685",
+      "session": "lobby",
+      "view": "audit",
+      "camera_node": 38,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/oblique_comparison.png",
+      "sha256": "280e76209d10e9e124ce126470a1bed52f9461f63c0cdd65c519f993508e12b0",
+      "session": "lobby",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/source_geometry.png",
+      "sha256": "3ef7397c09a61ca02d5b40bdbde93ae1aea8ff049ca92d760a83340cc627cd75",
+      "session": "lobby",
+      "view": "source",
+      "camera_node": 39,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "lobby/audit_geometry.png",
+      "sha256": "3bc49a8b43629513cb79c15d487a266e7b7eabe860d13ee8f96721bd4018578b",
+      "session": "lobby",
+      "view": "audit",
+      "camera_node": 38,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "lobby/oblique_geometry.png",
+      "sha256": "4302a3a5e0396253f4d9c30c07479ce39debf3cf99de622d608d9bf0da521e06",
+      "session": "lobby",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    }
+  ]
+}

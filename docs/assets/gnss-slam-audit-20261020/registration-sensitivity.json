@@ -1,0 +1,101 @@
+{
+  "applied_to_map": false,
+  "indoor_fixes_used_for_fit": false,
+  "independent_control_points": false,
+  "source": "337 timestamp-matched exterior fixes and reconstructed web poses",
+  "exterior_slam_span_xy_m": [
+    18.426303204639748,
+    14.31942535835304
+  ],
+  "existing_yaw_deg": 99.71094917022785,
+  "fits": [
+    {
+      "name": "all_exterior_in_sample",
+      "training_count": 337,
+      "yaw_deg": 102.14526158382964,
+      "translation_en_m": [
+        7.109785375572513,
+        -2.209147702637135
+      ],
+      "rotation": [
+        [
+          -0.21039091064486912,
+          -0.977617340638976
+        ],
+        [
+          0.9776173406389757,
+          -0.21039091064486842
+        ]
+      ],
+      "scale": 1.0,
+      "training_rmse_m": 3.3207251598783136,
+      "other_temporal_half_rmse_m": null,
+      "session_discrepancy_rmse_m": {
+        "outside": 3.3207251598783136,
+        "lobby": 16.63570528473464,
+        "bridge_out1f": 8.373134521856498,
+        "floor2": 26.123259661684408,
+        "bridge_12_sub": 33.71189694948295
+      }
+    },
+    {
+      "name": "first_temporal_half",
+      "training_count": 168,
+      "yaw_deg": 92.27716156236968,
+      "translation_en_m": [
+        7.919792459072019,
+        -3.7103741523309584
+      ],
+      "rotation": [
+        [
+          -0.03973350454112934,
+          -0.9992103125052709
+        ],
+        [
+          0.9992103125052705,
+          -0.0397335045411293
+        ]
+      ],
+      "scale": 1.0,
+      "training_rmse_m": 3.092093051491939,
+      "other_temporal_half_rmse_m": 4.807762549598795,
+      "session_discrepancy_rmse_m": {
+        "outside": 4.044492452449039,
+        "lobby": 18.480024243112222,
+        "bridge_out1f": 9.583953615264415,
+        "floor2": 28.329962540956206,
+        "bridge_12_sub": 34.58736815901403
+      }
+    },
+    {
+      "name": "second_temporal_half",
+      "training_count": 169,
+      "yaw_deg": 114.38081759280954,
+      "translation_en_m": [
+        5.317262928612419,
+        -0.5700956863737983
+      ],
+      "rotation": [
+        [
+          -0.4127995132819226,
+          -0.9108219155434328
+        ],
+        [
+          0.9108219155434328,
+          -0.41279951328192266
+        ]
+      ],
+      "scale": 1.0,
+      "training_rmse_m": 2.8531307846571052,
+      "other_temporal_half_rmse_m": 3.9139745022883665,
+      "session_discrepancy_rmse_m": {
+        "outside": 3.4233207182297507,
+        "lobby": 14.272431698426729,
+        "bridge_out1f": 7.432349876738273,
+        "floor2": 24.07874779087791,
+        "bridge_12_sub": 32.75627933380796
+      }
+    }
+  ],
+  "temporal_half_yaw_difference_deg": 22.10365603043985
+}

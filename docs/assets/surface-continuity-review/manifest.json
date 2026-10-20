@@ -1,0 +1,1831 @@
+{
+  "created_utc": "2026-10-17T13:32:31.461447+00:00",
+  "figures": [
+    {
+      "file": "bridge_out1f/source_comparison.png",
+      "sha256": "f89ac166467584b920f3dd52f85f7270a614f0c5d28640a7f39618f611472b30",
+      "session": "bridge_out1f",
+      "view": "source",
+      "camera_node": 80,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/audit_comparison.png",
+      "sha256": "a3ad504bc4b79c18d08413630b606a8303b6641a3ec1726eb25720edf469fe2a",
+      "session": "bridge_out1f",
+      "view": "audit",
+      "camera_node": 81,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/oblique_comparison.png",
+      "sha256": "1d9a0865b3faa8e1facb4a926011e47bca5e85bcf148eb7ecb511c3851409dc3",
+      "session": "bridge_out1f",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_out1f/source_geometry.png",
+      "sha256": "69a10eda6e32cd8289b5ddf10baa3831a3bb016db7197a5e4b94df1c21304f8e",
+      "session": "bridge_out1f",
+      "view": "source",
+      "camera_node": 80,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_out1f/audit_geometry.png",
+      "sha256": "d0ce6119c0953cbe695e4fbd9ef062e633183eba40d1a2d9f40f626a7c5b8676",
+      "session": "bridge_out1f",
+      "view": "audit",
+      "camera_node": 81,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_out1f/oblique_geometry.png",
+      "sha256": "670861199d6d93cc5a224bbaec3a4e5a75b15a3ba9fdb64f68d67e1234f06ffc",
+      "session": "bridge_out1f",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "outside/source_comparison.png",
+      "sha256": "a5762cb0ecbdd7fcd10dbc17069c4ee9af0b2cfd79edeedc321f2da84860a855",
+      "session": "outside",
+      "view": "source",
+      "camera_node": 263,
+      "actual_data": true
+    },
+    {
+      "file": "outside/audit_comparison.png",
+      "sha256": "0cb3ef1315a7c0f3f7543aa1ba3e7fa5f7482e75d6e9d958c7d3b33bd5accc6a",
+      "session": "outside",
+      "view": "audit",
+      "camera_node": 264,
+      "actual_data": true
+    },
+    {
+      "file": "outside/oblique_comparison.png",
+      "sha256": "e5b159a228f419b3a33df25848e8144e9284b82408bffa8e259941c176808218",
+      "session": "outside",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "outside/source_geometry.png",
+      "sha256": "e5e40bf256a925b7dff7309e4047b21da14250af71dfeb541c1202f873fb4f83",
+      "session": "outside",
+      "view": "source",
+      "camera_node": 263,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "outside/audit_geometry.png",
+      "sha256": "962c95cc0d34c87dcd1c87d3c525f6fe978094bf269f1e9757131e6d43c23be2",
+      "session": "outside",
+      "view": "audit",
+      "camera_node": 264,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "outside/oblique_geometry.png",
+      "sha256": "883ea9e63ddea52b9624c112ea2efc5f530524e9ba592b64b3fa293b335324d9",
+      "session": "outside",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "lobby/source_comparison.png",
+      "sha256": "c4aac46208abb4fb9c223b70501a43ee5a66c719d0b3b646e6e236aaecf8683e",
+      "session": "lobby",
+      "view": "source",
+      "camera_node": 39,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/audit_comparison.png",
+      "sha256": "1c49d1e6667aa0ae120507ccbf9c5930b2993dd2d429750777b4eb137a3c3685",
+      "session": "lobby",
+      "view": "audit",
+      "camera_node": 38,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/oblique_comparison.png",
+      "sha256": "280e76209d10e9e124ce126470a1bed52f9461f63c0cdd65c519f993508e12b0",
+      "session": "lobby",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "lobby/source_geometry.png",
+      "sha256": "3ef7397c09a61ca02d5b40bdbde93ae1aea8ff049ca92d760a83340cc627cd75",
+      "session": "lobby",
+      "view": "source",
+      "camera_node": 39,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "lobby/audit_geometry.png",
+      "sha256": "3bc49a8b43629513cb79c15d487a266e7b7eabe860d13ee8f96721bd4018578b",
+      "session": "lobby",
+      "view": "audit",
+      "camera_node": 38,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "lobby/oblique_geometry.png",
+      "sha256": "4302a3a5e0396253f4d9c30c07479ce39debf3cf99de622d608d9bf0da521e06",
+      "session": "lobby",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/source_comparison.png",
+      "sha256": "119237e7dc856643692e6da64ceb73f8824d24b5feb2062526a3663b8315953b",
+      "session": "floor2",
+      "view": "source",
+      "camera_node": 1055,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/audit_comparison.png",
+      "sha256": "762ed2a282c4fb2682d6725380d7ee23aea6ab1c1e5502ece39f241faca0d8fb",
+      "session": "floor2",
+      "view": "audit",
+      "camera_node": 1054,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/stairs_comparison.png",
+      "sha256": "fdf9b2b2041539e9be61c066dd0563574d0954ff204cd054d72851774a0fca15",
+      "session": "floor2",
+      "view": "stairs",
+      "camera_node": 1078,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/oblique_comparison.png",
+      "sha256": "314b00b99a4c750c614b9976395b6bf2d7509c6152e04a3ef9face770cfeb509",
+      "session": "floor2",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "floor2/source_geometry.png",
+      "sha256": "87008571245e4b92c54ca9613abd611d8dfdc2ca158c470bfb7b787d0af2cc6d",
+      "session": "floor2",
+      "view": "source",
+      "camera_node": 1055,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/audit_geometry.png",
+      "sha256": "79c01ea3625d427653432f1cb9bfa58bebf3ab0e8ce942401a05c42f307bd8b0",
+      "session": "floor2",
+      "view": "audit",
+      "camera_node": 1054,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/stairs_geometry.png",
+      "sha256": "40b7dadfbaa1619c757324fa66aa1746dd7c3d7eb9942ac59d3ab1351dbd755c",
+      "session": "floor2",
+      "view": "stairs",
+      "camera_node": 1078,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "floor2/oblique_geometry.png",
+      "sha256": "b03cc6ec7d1d09af5190a44287b514a30cd5a311f3d0999b9374f725d1d69b98",
+      "session": "floor2",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/source_comparison.png",
+      "sha256": "4d1251f79af6cc79cad521c0b8320a4776cd70ddaa0dd0d2ca67d205e89f0aa9",
+      "session": "bridge_12_sub",
+      "view": "source",
+      "camera_node": 159,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/audit_comparison.png",
+      "sha256": "ea42a712d3f95e170a79102c0ef408bd708c0d0b115bd9a3454c5bcaaaa1caa9",
+      "session": "bridge_12_sub",
+      "view": "audit",
+      "camera_node": 157,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/stairs_comparison.png",
+      "sha256": "e1d457885a3aa1bfbadfd53798b68177fff570f056f658cf50e5675f1f387288",
+      "session": "bridge_12_sub",
+      "view": "stairs",
+      "camera_node": 108,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/oblique_comparison.png",
+      "sha256": "9a58f0568342ae22f36124802c24fd0fcdf4bfdc5daab4a722f06f5bbc76deb0",
+      "session": "bridge_12_sub",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true
+    },
+    {
+      "file": "bridge_12_sub/source_geometry.png",
+      "sha256": "03998acb160628e15236581156805e9c429e68982a02f3b652cb142e9a23c160",
+      "session": "bridge_12_sub",
+      "view": "source",
+      "camera_node": 159,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/audit_geometry.png",
+      "sha256": "630ab17059cc72f4ad93a7d87e4b99ce510e0696e5c0006b3ab0ace862dc2e3f",
+      "session": "bridge_12_sub",
+      "view": "audit",
+      "camera_node": 157,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/stairs_geometry.png",
+      "sha256": "db248988de55f4af68f31fcb2a649982fa5373998b2fd1bfdf612858a81c00a6",
+      "session": "bridge_12_sub",
+      "view": "stairs",
+      "camera_node": 108,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "bridge_12_sub/oblique_geometry.png",
+      "sha256": "e81355e3d65360d67005e08c7c87ed1ed1712b2eca08d11734c298d8500f04e2",
+      "session": "bridge_12_sub",
+      "view": "oblique",
+      "camera_node": null,
+      "actual_data": true,
+      "equal_neutral_material": true
+    },
+    {
+      "file": "continuity_metrics.png",
+      "sha256": "732a3f5e7d54c0eb55e21c921eb6c805248a450db496657ee7b05fd0f2de65d9",
+      "actual_data": true
+    }
+  ],
+  "source_manifest_sha256": "6c95abf7b0035f90be028d1e83f6eab60f7beb3860b40d50868ac119e1bbb022",
+  "renderer_sha256": "8165b1dc775c9c70255f66aac0c2115abd6cc43ddd9d63b6bbee4f09ae40a984",
+  "all_inputs_unchanged": true,
+  "source_map_replaced": false,
+  "navigation_ready": false,
+  "previous_display_inputs_sha256": {
+    "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1/bridge_out1f/photo_textured.glb": "f92c94b3fd511ed8251596d201ba325dd7d8db186b93a18d9f554e4825faf94d",
+    "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1/outside/photo_textured.glb": "b34199867ae68ce0a5aecea6f3256c79ac49ea9337c43d87f63dd5f471c0d557",
+    "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1/lobby/photo_textured.glb": "575f955b5c984891b0cbb7f1bddc939b283963f7081c8a18c45ed263f2f463fc",
+    "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1/floor2/photo_textured.glb": "5625c6a637400b11a7b281a6aedde18fecf80f4ea9529711a2107e8f67ce8c2d",
+    "/home/subin/folded-city-atlas/outputs/student_union_surface_layers_v1/bridge_12_sub/photo_textured.glb": "84469970af13d260e0be21c7d6933db332bcf4ef261cbd90e9405e17bc1d9944"
+  },
+  "outputs_verified": 58,
+  "geometry_checks": {
+    "bridge_out1f": {
+      "clean_high_budget.ply": {
+        "finite_vertices": true,
+        "vertices": 315134,
+        "triangles": 598396
+      },
+      "supported_poisson_full.ply": {
+        "finite_vertices": true,
+        "vertices": 85807,
+        "triangles": 167566
+      },
+      "supported_poisson.ply": {
+        "finite_vertices": true,
+        "vertices": 85807,
+        "triangles": 167566
+      }
+    },
+    "outside": {
+      "clean_high_budget.ply": {
+        "finite_vertices": true,
+        "vertices": 326604,
+        "triangles": 600000
+      },
+      "supported_poisson_full.ply": {
+        "finite_vertices": true,
+        "vertices": 264373,
+        "triangles": 517574
+      },
+      "supported_poisson.ply": {
+        "finite_vertices": true,
+        "vertices": 264373,
+        "triangles": 517574
+      }
+    },
+    "lobby": {
+      "clean_high_budget.ply": {
+        "finite_vertices": true,
+        "vertices": 327777,
+        "triangles": 600000
+      },
+      "supported_poisson_full.ply": {
+        "finite_vertices": true,
+        "vertices": 829757,
+        "triangles": 1635373
+      },
+      "supported_poisson.ply": {
+        "finite_vertices": true,
+        "vertices": 309295,
+        "triangles": 599013
+      }
+    },
+    "floor2": {
+      "clean_high_budget.ply": {
+        "finite_vertices": true,
+        "vertices": 326729,
+        "triangles": 600000
+      },
+      "supported_poisson_full.ply": {
+        "finite_vertices": true,
+        "vertices": 771814,
+        "triangles": 1516153
+      },
+      "supported_poisson.ply": {
+        "finite_vertices": true,
+        "vertices": 310522,
+        "triangles": 597338
+      }
+    },
+    "bridge_12_sub": {
+      "clean_high_budget.ply": {
+        "finite_vertices": true,
+        "vertices": 321110,
+        "triangles": 600000
+      },
+      "supported_poisson_full.ply": {
+        "finite_vertices": true,
+        "vertices": 161742,
+        "triangles": 314798
+      },
+      "supported_poisson.ply": {
+        "finite_vertices": true,
+        "vertices": 161742,
+        "triangles": 314798
+      }
+    }
+  },
+  "sessions": {
+    "bridge_out1f": {
+      "baseline_180k": {
+        "topology": {
+          "components": 977,
+          "triangles": 179999,
+          "surface_area_m2": 192.1788915966418,
+          "components_smaller_than_002m2": 904,
+          "small_component_area_fraction": 0.014738066276623541,
+          "largest_component_area_fraction": 0.8524299478985317
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 80,
+            "valid_depth_pixels": 47927,
+            "surface_coverage_on_valid_depth": 0.9937822104450519,
+            "median_absolute_depth_error_m": 0.03033900260925293,
+            "p90_absolute_depth_error_m": 0.1642377853393555,
+            "free_space_conflict_on_hits": 0.0009657981481870289,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 81,
+            "valid_depth_pixels": 35347,
+            "surface_coverage_on_valid_depth": 0.8167029733782216,
+            "median_absolute_depth_error_m": 0.059681057929992676,
+            "p90_absolute_depth_error_m": 1.2269324779510498,
+            "free_space_conflict_on_hits": 0.0035679645281973117,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        }
+      },
+      "original_full_topology": {
+        "components": 2495,
+        "triangles": 626966,
+        "surface_area_m2": 196.81250306692144,
+        "components_smaller_than_002m2": 2417,
+        "small_component_area_fraction": 0.02116611814478638,
+        "largest_component_area_fraction": 0.8457863022767458
+      },
+      "clean_high_budget": {
+        "pruning": {
+          "removed_components": 2417,
+          "removed_triangles": 28570,
+          "removed_area_m2": 4.165756692285591,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 78,
+          "triangles": 598396,
+          "surface_area_m2": 192.6467463746358,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.8640754248041573
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 80,
+            "valid_depth_pixels": 47927,
+            "surface_coverage_on_valid_depth": 0.9937613453794312,
+            "median_absolute_depth_error_m": 0.030257701873779297,
+            "p90_absolute_depth_error_m": 0.16481723785400393,
+            "free_space_conflict_on_hits": 0.00102880658436214,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 81,
+            "valid_depth_pixels": 35347,
+            "surface_coverage_on_valid_depth": 0.81319489631369,
+            "median_absolute_depth_error_m": 0.05790996551513672,
+            "p90_absolute_depth_error_m": 1.2150660514831544,
+            "free_space_conflict_on_hits": 0.00048705816866128585,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 315134,
+          "triangles": 598396,
+          "surface_area_m2": 192.64674637463233,
+          "boundary_edges": 39564,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.6435833333333333,
+          "reference_points_within_10cm": 0.8053333333333333,
+          "reference_to_surface_median_m": 0.030708519741892815,
+          "reference_to_surface_p90_m": 0.1519455149769783,
+          "surface_samples_farther_than_10cm_from_reference": 8.333333333333333e-05,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson_full": {
+        "topology": {
+          "components": 18,
+          "triangles": 167566,
+          "surface_area_m2": 169.0270336153301,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9918813381931587
+        },
+        "metrics": {
+          "vertices": 85807,
+          "triangles": 167566,
+          "surface_area_m2": 169.02703361533327,
+          "boundary_edges": 4324,
+          "nonmanifold_edges": 66,
+          "reference_points_within_5cm": 0.5723333333333334,
+          "reference_points_within_10cm": 0.804,
+          "reference_to_surface_median_m": 0.04124066233634949,
+          "reference_to_surface_p90_m": 0.15598139613866807,
+          "surface_samples_farther_than_10cm_from_reference": 0.0003333333333333333,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson": {
+        "input_oriented_points": 52584,
+        "initial_poisson_faces": 195204,
+        "density_bottom_quantile_removed": 0.01,
+        "unsupported_faces_removed_before_decimation": 24019,
+        "maximum_support_distance_m": 0.1,
+        "maximum_triangle_edge_m": 0.3,
+        "free_space_guard": {
+          "centroid_faces_checked": 169129,
+          "rejected_faces": 408,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "after_decimation_guard": {
+          "centroid_faces_checked": 167566,
+          "rejected_faces": 0,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "pruning": {
+          "removed_components": 108,
+          "removed_triangles": 1155,
+          "removed_area_m2": 0.2246634445135762,
+          "minimum_component_area_m2": 0.02
+        },
+        "display_pruning": {
+          "removed_components": 0,
+          "removed_triangles": 0,
+          "removed_area_m2": 0.0,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 18,
+          "triangles": 167566,
+          "surface_area_m2": 169.0270336153301,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9918813381931587
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 80,
+            "valid_depth_pixels": 47927,
+            "surface_coverage_on_valid_depth": 0.9997496192125525,
+            "median_absolute_depth_error_m": 0.03811931610107422,
+            "p90_absolute_depth_error_m": 0.08949866294860839,
+            "free_space_conflict_on_hits": 8.348116456224565e-05,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 81,
+            "valid_depth_pixels": 35347,
+            "surface_coverage_on_valid_depth": 0.8206919964919229,
+            "median_absolute_depth_error_m": 0.054064929485321045,
+            "p90_absolute_depth_error_m": 0.7946269035339356,
+            "free_space_conflict_on_hits": 0.0,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 85807,
+          "triangles": 167566,
+          "surface_area_m2": 169.02703361533327,
+          "boundary_edges": 4324,
+          "nonmanifold_edges": 66,
+          "reference_points_within_5cm": 0.5723333333333334,
+          "reference_points_within_10cm": 0.804,
+          "reference_to_surface_median_m": 0.04124066233634949,
+          "reference_to_surface_p90_m": 0.15598139613866807,
+          "surface_samples_farther_than_10cm_from_reference": 0.0003333333333333333,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 30915896,
+          "triangles": 167566,
+          "textured_faces": 94059,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 2,
+        "camera_frames": [
+          1,
+          5,
+          8,
+          14,
+          17,
+          20,
+          29,
+          32,
+          36,
+          39,
+          44,
+          47,
+          51,
+          55,
+          61,
+          66,
+          68,
+          71,
+          74,
+          80,
+          82,
+          90,
+          95,
+          99,
+          101,
+          108,
+          111,
+          116,
+          117,
+          118,
+          121,
+          134
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5613250898153563,
+        "unassigned_face_fraction": 0.43867491018464366,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "session": "bridge_out1f",
+      "pose_changes": 0,
+      "source_map_replaced": false,
+      "navigation_ready": false,
+      "display_budget": 600000,
+      "seconds": 17.716494762000366,
+      "camera_nodes": {
+        "source": 80,
+        "audit": 81
+      }
+    },
+    "outside": {
+      "baseline_180k": {
+        "topology": {
+          "components": 950,
+          "triangles": 180000,
+          "surface_area_m2": 441.8456730721635,
+          "components_smaller_than_002m2": 745,
+          "small_component_area_fraction": 0.009000776800638304,
+          "largest_component_area_fraction": 0.8443748683556298
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 263,
+            "valid_depth_pixels": 24565,
+            "surface_coverage_on_valid_depth": 0.9280683899857521,
+            "median_absolute_depth_error_m": 0.16450339555740356,
+            "p90_absolute_depth_error_m": 0.27924485206604,
+            "free_space_conflict_on_hits": 0.0028511272918677077,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 264,
+            "valid_depth_pixels": 35977,
+            "surface_coverage_on_valid_depth": 0.847263529477166,
+            "median_absolute_depth_error_m": 0.1605081558227539,
+            "p90_absolute_depth_error_m": 0.2538781881332398,
+            "free_space_conflict_on_hits": 0.0011810248671347025,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        }
+      },
+      "original_full_topology": {
+        "components": 10068,
+        "triangles": 1611984,
+        "surface_area_m2": 498.88518432926577,
+        "components_smaller_than_002m2": 9825,
+        "small_component_area_fraction": 0.031334573710971925,
+        "largest_component_area_fraction": 0.8375885200670324
+      },
+      "clean_high_budget": {
+        "pruning": {
+          "removed_components": 9825,
+          "removed_triangles": 106041,
+          "removed_area_m2": 15.632354581677195,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 391,
+          "triangles": 600000,
+          "surface_area_m2": 478.3564283758819,
+          "components_smaller_than_002m2": 162,
+          "small_component_area_fraction": 0.0013777554234755177,
+          "largest_component_area_fraction": 0.8640621551157426
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 263,
+            "valid_depth_pixels": 24565,
+            "surface_coverage_on_valid_depth": 0.9414207205373499,
+            "median_absolute_depth_error_m": 0.16279929876327515,
+            "p90_absolute_depth_error_m": 0.2757774591445923,
+            "free_space_conflict_on_hits": 0.0028971720141831706,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 264,
+            "valid_depth_pixels": 35977,
+            "surface_coverage_on_valid_depth": 0.8582983572838202,
+            "median_absolute_depth_error_m": 0.15994858741760254,
+            "p90_absolute_depth_error_m": 0.253883171081543,
+            "free_space_conflict_on_hits": 0.0011658408627222385,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 326604,
+          "triangles": 600000,
+          "surface_area_m2": 478.3564283758935,
+          "boundary_edges": 73848,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.45958333333333334,
+          "reference_points_within_10cm": 0.614,
+          "reference_to_surface_median_m": 0.06111336871981621,
+          "reference_to_surface_p90_m": 0.25549806356430055,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson_full": {
+        "topology": {
+          "components": 83,
+          "triangles": 517574,
+          "surface_area_m2": 433.06326290094574,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9299048454073114
+        },
+        "metrics": {
+          "vertices": 264373,
+          "triangles": 517574,
+          "surface_area_m2": 433.0632629009377,
+          "boundary_edges": 12354,
+          "nonmanifold_edges": 204,
+          "reference_points_within_5cm": 0.43366666666666664,
+          "reference_points_within_10cm": 0.6483333333333333,
+          "reference_to_surface_median_m": 0.06316940486431122,
+          "reference_to_surface_p90_m": 0.23982490152120595,
+          "surface_samples_farther_than_10cm_from_reference": 0.00025,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson": {
+        "input_oriented_points": 139221,
+        "initial_poisson_faces": 587390,
+        "density_bottom_quantile_removed": 0.01,
+        "unsupported_faces_removed_before_decimation": 59408,
+        "maximum_support_distance_m": 0.1,
+        "maximum_triangle_edge_m": 0.3,
+        "free_space_guard": {
+          "centroid_faces_checked": 521739,
+          "rejected_faces": 1139,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "after_decimation_guard": {
+          "centroid_faces_checked": 517574,
+          "rejected_faces": 0,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "pruning": {
+          "removed_components": 250,
+          "removed_triangles": 3026,
+          "removed_area_m2": 0.8939979444380823,
+          "minimum_component_area_m2": 0.02
+        },
+        "display_pruning": {
+          "removed_components": 0,
+          "removed_triangles": 0,
+          "removed_area_m2": 0.0,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 83,
+          "triangles": 517574,
+          "surface_area_m2": 433.06326290094574,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9299048454073114
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 263,
+            "valid_depth_pixels": 24565,
+            "surface_coverage_on_valid_depth": 0.9839202116832892,
+            "median_absolute_depth_error_m": 0.1225963830947876,
+            "p90_absolute_depth_error_m": 0.25648837089538584,
+            "free_space_conflict_on_hits": 0.0005792304509722797,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 264,
+            "valid_depth_pixels": 35977,
+            "surface_coverage_on_valid_depth": 0.9240625955471551,
+            "median_absolute_depth_error_m": 0.13158798217773438,
+            "p90_absolute_depth_error_m": 0.23937568664550782,
+            "free_space_conflict_on_hits": 0.0007219130696345315,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 264373,
+          "triangles": 517574,
+          "surface_area_m2": 433.0632629009377,
+          "boundary_edges": 12354,
+          "nonmanifold_edges": 204,
+          "reference_points_within_5cm": 0.43366666666666664,
+          "reference_points_within_10cm": 0.6483333333333333,
+          "reference_to_surface_median_m": 0.06316940486431122,
+          "reference_to_surface_p90_m": 0.23982490152120595,
+          "surface_samples_farther_than_10cm_from_reference": 0.00025,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 83076260,
+          "triangles": 517574,
+          "textured_faces": 205644,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          8,
+          13,
+          18,
+          23,
+          28,
+          32,
+          38,
+          43,
+          48,
+          55,
+          60,
+          64,
+          69,
+          74,
+          81,
+          86,
+          91,
+          96,
+          101,
+          106,
+          111,
+          116,
+          120,
+          126,
+          132,
+          137,
+          142,
+          148,
+          152,
+          160,
+          166,
+          174,
+          181,
+          186,
+          190,
+          196,
+          206,
+          211,
+          217,
+          223,
+          228,
+          233,
+          238,
+          243,
+          249,
+          254,
+          262,
+          263,
+          268,
+          273,
+          278,
+          284,
+          288,
+          296,
+          305,
+          310,
+          315,
+          322,
+          326,
+          333,
+          338,
+          343,
+          354
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.39732289489039246,
+        "unassigned_face_fraction": 0.6026771051096075,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "session": "outside",
+      "pose_changes": 0,
+      "source_map_replaced": false,
+      "navigation_ready": false,
+      "display_budget": 600000,
+      "seconds": 61.58158197600005,
+      "camera_nodes": {
+        "source": 263,
+        "audit": 264
+      }
+    },
+    "lobby": {
+      "baseline_180k": {
+        "topology": {
+          "components": 715,
+          "triangles": 179999,
+          "surface_area_m2": 1408.401382168167,
+          "components_smaller_than_002m2": 270,
+          "small_component_area_fraction": 0.0020065592702769117,
+          "largest_component_area_fraction": 0.9056704668962801
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 39,
+            "valid_depth_pixels": 41883,
+            "surface_coverage_on_valid_depth": 0.955041424921806,
+            "median_absolute_depth_error_m": 0.06895840167999268,
+            "p90_absolute_depth_error_m": 0.4916367053985595,
+            "free_space_conflict_on_hits": 0.00055,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 38,
+            "valid_depth_pixels": 17270,
+            "surface_coverage_on_valid_depth": 0.9238563983786914,
+            "median_absolute_depth_error_m": 0.30219364166259766,
+            "p90_absolute_depth_error_m": 0.6899333000183107,
+            "free_space_conflict_on_hits": 0.017925415230335317,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        }
+      },
+      "original_full_topology": {
+        "components": 28457,
+        "triangles": 5426312,
+        "surface_area_m2": 1694.438815267953,
+        "components_smaller_than_002m2": 27751,
+        "small_component_area_fraction": 0.024777151598909825,
+        "largest_component_area_fraction": 0.887646451297749
+      },
+      "clean_high_budget": {
+        "pruning": {
+          "removed_components": 27751,
+          "removed_triangles": 290930,
+          "removed_area_m2": 41.98336740097123,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 1447,
+          "triangles": 600000,
+          "surface_area_m2": 1557.069786489024,
+          "components_smaller_than_002m2": 886,
+          "small_component_area_fraction": 0.0028975039825563306,
+          "largest_component_area_fraction": 0.9051171170100839
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 39,
+            "valid_depth_pixels": 41883,
+            "surface_coverage_on_valid_depth": 0.9755509395220018,
+            "median_absolute_depth_error_m": 0.0647730827331543,
+            "p90_absolute_depth_error_m": 0.47865543365478547,
+            "free_space_conflict_on_hits": 0.0008810788320810592,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 38,
+            "valid_depth_pixels": 17270,
+            "surface_coverage_on_valid_depth": 0.9528662420382166,
+            "median_absolute_depth_error_m": 0.30572474002838135,
+            "p90_absolute_depth_error_m": 0.7392998933792114,
+            "free_space_conflict_on_hits": 0.03500243072435586,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 327777,
+          "triangles": 600000,
+          "surface_area_m2": 1557.0697864890203,
+          "boundary_edges": 106670,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.5393333333333333,
+          "reference_points_within_10cm": 0.70575,
+          "reference_to_surface_median_m": 0.04244132712483406,
+          "reference_to_surface_p90_m": 0.21495655179023745,
+          "surface_samples_farther_than_10cm_from_reference": 0.00016666666666666666,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson_full": {
+        "topology": {
+          "components": 132,
+          "triangles": 1635373,
+          "surface_area_m2": 1356.709223891744,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9835343874151226
+        },
+        "metrics": {
+          "vertices": 829757,
+          "triangles": 1635373,
+          "surface_area_m2": 1356.7092238917573,
+          "boundary_edges": 27441,
+          "nonmanifold_edges": 635,
+          "reference_points_within_5cm": 0.4945833333333333,
+          "reference_points_within_10cm": 0.7125,
+          "reference_to_surface_median_m": 0.05064907297492027,
+          "reference_to_surface_p90_m": 0.22464926540851596,
+          "surface_samples_farther_than_10cm_from_reference": 0.0005833333333333334,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson": {
+        "input_oriented_points": 300000,
+        "initial_poisson_faces": 1777235,
+        "density_bottom_quantile_removed": 0.01,
+        "unsupported_faces_removed_before_decimation": 111109,
+        "maximum_support_distance_m": 0.1,
+        "maximum_triangle_edge_m": 0.3,
+        "free_space_guard": {
+          "centroid_faces_checked": 1644636,
+          "rejected_faces": 1687,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "after_decimation_guard": {
+          "centroid_faces_checked": 599328,
+          "rejected_faces": 9,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "pruning": {
+          "removed_components": 697,
+          "removed_triangles": 7576,
+          "removed_area_m2": 2.063766909404446,
+          "minimum_component_area_m2": 0.02
+        },
+        "display_pruning": {
+          "removed_components": 39,
+          "removed_triangles": 306,
+          "removed_area_m2": 0.23864790155603077,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 133,
+          "triangles": 599013,
+          "surface_area_m2": 1345.1568455648935,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.983415592657851
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 39,
+            "valid_depth_pixels": 41883,
+            "surface_coverage_on_valid_depth": 0.9858176348399111,
+            "median_absolute_depth_error_m": 0.06602001190185547,
+            "p90_absolute_depth_error_m": 0.4737303733825685,
+            "free_space_conflict_on_hits": 0.0015500496500278525,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 38,
+            "valid_depth_pixels": 17270,
+            "surface_coverage_on_valid_depth": 0.9879559930515345,
+            "median_absolute_depth_error_m": 0.226678729057312,
+            "p90_absolute_depth_error_m": 0.7955771684646605,
+            "free_space_conflict_on_hits": 0.0,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 309295,
+          "triangles": 599013,
+          "surface_area_m2": 1345.1568455648453,
+          "boundary_edges": 23053,
+          "nonmanifold_edges": 196,
+          "reference_points_within_5cm": 0.49266666666666664,
+          "reference_points_within_10cm": 0.71125,
+          "reference_to_surface_median_m": 0.05116024985909462,
+          "reference_to_surface_p90_m": 0.22545584738254548,
+          "surface_samples_farther_than_10cm_from_reference": 0.0004166666666666667,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 97946432,
+          "triangles": 599013,
+          "textured_faces": 128977,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 4,
+        "camera_frames": [
+          1,
+          21,
+          35,
+          39,
+          49,
+          60,
+          73,
+          85,
+          95,
+          105,
+          116,
+          130,
+          144,
+          154,
+          165,
+          176,
+          187,
+          197,
+          207,
+          219,
+          229,
+          241,
+          251,
+          261,
+          273,
+          284,
+          294,
+          305,
+          316,
+          329,
+          337,
+          339,
+          350,
+          361,
+          372,
+          382,
+          394,
+          406,
+          422,
+          433,
+          444,
+          464,
+          476,
+          493,
+          507,
+          519,
+          532,
+          542,
+          554,
+          565,
+          579,
+          590,
+          603,
+          614,
+          630,
+          640,
+          653,
+          670,
+          682,
+          695,
+          705,
+          719,
+          730,
+          743,
+          753,
+          766,
+          777,
+          788,
+          801,
+          811,
+          821,
+          836,
+          847,
+          862,
+          878,
+          888,
+          903,
+          915,
+          925,
+          958
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.2153158612584368,
+        "unassigned_face_fraction": 0.7846841387415632,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "session": "lobby",
+      "pose_changes": 0,
+      "source_map_replaced": false,
+      "navigation_ready": false,
+      "display_budget": 600000,
+      "seconds": 195.04845028899945,
+      "camera_nodes": {
+        "source": 39,
+        "audit": 38
+      }
+    },
+    "floor2": {
+      "baseline_180k": {
+        "topology": {
+          "components": 812,
+          "triangles": 179999,
+          "surface_area_m2": 1614.0321631464903,
+          "components_smaller_than_002m2": 263,
+          "small_component_area_fraction": 0.001967869800660828,
+          "largest_component_area_fraction": 0.64119635194608
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 1055,
+            "valid_depth_pixels": 35369,
+            "surface_coverage_on_valid_depth": 0.953744804772541,
+            "median_absolute_depth_error_m": 0.35492682456970215,
+            "p90_absolute_depth_error_m": 2.3297125339508056,
+            "free_space_conflict_on_hits": 0.001096848783090742,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 1054,
+            "valid_depth_pixels": 44234,
+            "surface_coverage_on_valid_depth": 0.9244472577655197,
+            "median_absolute_depth_error_m": 0.5734145641326904,
+            "p90_absolute_depth_error_m": 2.879088926315308,
+            "free_space_conflict_on_hits": 0.02846522547197496,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        }
+      },
+      "original_full_topology": {
+        "components": 35463,
+        "triangles": 6330492,
+        "surface_area_m2": 1974.4753267807534,
+        "components_smaller_than_002m2": 34422,
+        "small_component_area_fraction": 0.027303015688456295,
+        "largest_component_area_fraction": 0.8712725110761733
+      },
+      "clean_high_budget": {
+        "pruning": {
+          "removed_components": 34422,
+          "removed_triangles": 376961,
+          "removed_area_m2": 53.90913082356478,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 1978,
+          "triangles": 600000,
+          "surface_area_m2": 1790.3683528886268,
+          "components_smaller_than_002m2": 1217,
+          "small_component_area_fraction": 0.0038346563348882934,
+          "largest_component_area_fraction": 0.8720078173531974
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 1055,
+            "valid_depth_pixels": 35369,
+            "surface_coverage_on_valid_depth": 0.9754021883570358,
+            "median_absolute_depth_error_m": 0.33914637565612793,
+            "p90_absolute_depth_error_m": 1.9594952106475831,
+            "free_space_conflict_on_hits": 0.012406156700194208,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 1054,
+            "valid_depth_pixels": 44234,
+            "surface_coverage_on_valid_depth": 0.9582673961206312,
+            "median_absolute_depth_error_m": 0.47340333461761475,
+            "p90_absolute_depth_error_m": 2.743071222305299,
+            "free_space_conflict_on_hits": 0.049801830706803815,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 326729,
+          "triangles": 600000,
+          "surface_area_m2": 1790.3683528885533,
+          "boundary_edges": 110248,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.5078333333333334,
+          "reference_points_within_10cm": 0.6566666666666666,
+          "reference_to_surface_median_m": 0.04792929068207741,
+          "reference_to_surface_p90_m": 0.22992085516452793,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson_full": {
+        "topology": {
+          "components": 186,
+          "triangles": 1516153,
+          "surface_area_m2": 1548.0802230933748,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9790289000007022
+        },
+        "metrics": {
+          "vertices": 771814,
+          "triangles": 1516153,
+          "surface_area_m2": 1548.0802230933423,
+          "boundary_edges": 31285,
+          "nonmanifold_edges": 946,
+          "reference_points_within_5cm": 0.45575,
+          "reference_points_within_10cm": 0.6606666666666666,
+          "reference_to_surface_median_m": 0.05804288387298584,
+          "reference_to_surface_p90_m": 0.24731756001710892,
+          "surface_samples_farther_than_10cm_from_reference": 8.333333333333333e-05,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson": {
+        "input_oriented_points": 300000,
+        "initial_poisson_faces": 1672151,
+        "density_bottom_quantile_removed": 0.01,
+        "unsupported_faces_removed_before_decimation": 121524,
+        "maximum_support_distance_m": 0.1,
+        "maximum_triangle_edge_m": 0.3,
+        "free_space_guard": {
+          "centroid_faces_checked": 1530365,
+          "rejected_faces": 1135,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "after_decimation_guard": {
+          "centroid_faces_checked": 597852,
+          "rejected_faces": 7,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "pruning": {
+          "removed_components": 1298,
+          "removed_triangles": 13077,
+          "removed_area_m2": 2.7285404487934066,
+          "minimum_component_area_m2": 0.02
+        },
+        "display_pruning": {
+          "removed_components": 68,
+          "removed_triangles": 507,
+          "removed_area_m2": 0.49036093680666715,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 190,
+          "triangles": 597338,
+          "surface_area_m2": 1508.5198071779648,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9784983308073502
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 1055,
+            "valid_depth_pixels": 35369,
+            "surface_coverage_on_valid_depth": 0.994430150696938,
+            "median_absolute_depth_error_m": 0.5094822645187378,
+            "p90_absolute_depth_error_m": 2.402507209777832,
+            "free_space_conflict_on_hits": 0.0,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 1054,
+            "valid_depth_pixels": 44234,
+            "surface_coverage_on_valid_depth": 0.9835194646651897,
+            "median_absolute_depth_error_m": 0.6116082668304443,
+            "p90_absolute_depth_error_m": 2.6053839683532716,
+            "free_space_conflict_on_hits": 0.002712331915871739,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 310522,
+          "triangles": 597338,
+          "surface_area_m2": 1508.5198071779362,
+          "boundary_edges": 28369,
+          "nonmanifold_edges": 135,
+          "reference_points_within_5cm": 0.44758333333333333,
+          "reference_points_within_10cm": 0.6576666666666666,
+          "reference_to_surface_median_m": 0.05902325361967087,
+          "reference_to_surface_p90_m": 0.2475177258253098,
+          "surface_samples_farther_than_10cm_from_reference": 0.0005,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 105552552,
+          "triangles": 597338,
+          "textured_faces": 128222,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 5,
+        "camera_frames": [
+          1,
+          10,
+          20,
+          39,
+          52,
+          66,
+          80,
+          94,
+          105,
+          119,
+          134,
+          148,
+          161,
+          173,
+          183,
+          198,
+          208,
+          220,
+          233,
+          244,
+          257,
+          267,
+          276,
+          286,
+          300,
+          319,
+          328,
+          338,
+          357,
+          388,
+          398,
+          408,
+          422,
+          434,
+          448,
+          460,
+          473,
+          483,
+          500,
+          512,
+          524,
+          535,
+          552,
+          565,
+          574,
+          589,
+          614,
+          623,
+          634,
+          646,
+          656,
+          666,
+          676,
+          686,
+          698,
+          708,
+          720,
+          731,
+          746,
+          759,
+          771,
+          782,
+          791,
+          805,
+          818,
+          829,
+          842,
+          852,
+          864,
+          876,
+          886,
+          896,
+          906,
+          915,
+          925,
+          936,
+          949,
+          963,
+          973,
+          981,
+          984,
+          1017,
+          1033,
+          1047,
+          1055,
+          1063,
+          1075,
+          1088,
+          1098,
+          1110,
+          1128,
+          1150,
+          1164,
+          1180,
+          1194,
+          1218
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.21465568907385768,
+        "unassigned_face_fraction": 0.7853443109261423,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "session": "floor2",
+      "pose_changes": 0,
+      "source_map_replaced": false,
+      "navigation_ready": false,
+      "display_budget": 600000,
+      "seconds": 225.25216354499935,
+      "camera_nodes": {
+        "source": 1055,
+        "audit": 1054
+      }
+    },
+    "bridge_12_sub": {
+      "baseline_180k": {
+        "topology": {
+          "components": 886,
+          "triangles": 179999,
+          "surface_area_m2": 337.84381085815016,
+          "components_smaller_than_002m2": 768,
+          "small_component_area_fraction": 0.009997393896690604,
+          "largest_component_area_fraction": 0.9348184417256523
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 159,
+            "valid_depth_pixels": 36180,
+            "surface_coverage_on_valid_depth": 0.9901326699834162,
+            "median_absolute_depth_error_m": 0.04515814781188965,
+            "p90_absolute_depth_error_m": 0.1719670295715332,
+            "free_space_conflict_on_hits": 0.003712698545627111,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 157,
+            "valid_depth_pixels": 16551,
+            "surface_coverage_on_valid_depth": 0.922663283185306,
+            "median_absolute_depth_error_m": 0.1520071029663086,
+            "p90_absolute_depth_error_m": 0.2463984489440918,
+            "free_space_conflict_on_hits": 0.030646323096064437,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        }
+      },
+      "original_full_topology": {
+        "components": 4111,
+        "triangles": 1106032,
+        "surface_area_m2": 352.4854419156186,
+        "components_smaller_than_002m2": 3980,
+        "small_component_area_fraction": 0.0184619678321623,
+        "largest_component_area_fraction": 0.9254317713041961
+      },
+      "clean_high_budget": {
+        "pruning": {
+          "removed_components": 3980,
+          "removed_triangles": 42778,
+          "removed_area_m2": 6.507574889951663,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 164,
+          "triangles": 600000,
+          "surface_area_m2": 345.59920333352756,
+          "components_smaller_than_002m2": 33,
+          "small_component_area_fraction": 0.000329970789484855,
+          "largest_component_area_fraction": 0.9426505318496535
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 159,
+            "valid_depth_pixels": 36180,
+            "surface_coverage_on_valid_depth": 0.9918739635157545,
+            "median_absolute_depth_error_m": 0.04512381553649902,
+            "p90_absolute_depth_error_m": 0.17246699333190918,
+            "free_space_conflict_on_hits": 0.0029816641587248507,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 157,
+            "valid_depth_pixels": 16551,
+            "surface_coverage_on_valid_depth": 0.9277989245362818,
+            "median_absolute_depth_error_m": 0.15148770809173584,
+            "p90_absolute_depth_error_m": 0.24502873420715332,
+            "free_space_conflict_on_hits": 0.03086741338890336,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 321110,
+          "triangles": 600000,
+          "surface_area_m2": 345.5992033335257,
+          "boundary_edges": 52168,
+          "nonmanifold_edges": 0,
+          "reference_points_within_5cm": 0.70375,
+          "reference_points_within_10cm": 0.8321666666666667,
+          "reference_to_surface_median_m": 0.022809859365224838,
+          "reference_to_surface_p90_m": 0.14482077509164812,
+          "surface_samples_farther_than_10cm_from_reference": 0.0,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson_full": {
+        "topology": {
+          "components": 37,
+          "triangles": 314798,
+          "surface_area_m2": 315.88514373466234,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9634299572556122
+        },
+        "metrics": {
+          "vertices": 161742,
+          "triangles": 314798,
+          "surface_area_m2": 315.885143734654,
+          "boundary_edges": 9240,
+          "nonmanifold_edges": 134,
+          "reference_points_within_5cm": 0.6218333333333333,
+          "reference_points_within_10cm": 0.8244166666666667,
+          "reference_to_surface_median_m": 0.03420138359069824,
+          "reference_to_surface_p90_m": 0.14773529171943667,
+          "surface_samples_farther_than_10cm_from_reference": 0.0003333333333333333,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "supported_poisson": {
+        "input_oriented_points": 95944,
+        "initial_poisson_faces": 368801,
+        "density_bottom_quantile_removed": 0.01,
+        "unsupported_faces_removed_before_decimation": 46696,
+        "maximum_support_distance_m": 0.1,
+        "maximum_triangle_edge_m": 0.3,
+        "free_space_guard": {
+          "centroid_faces_checked": 318111,
+          "rejected_faces": 536,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "after_decimation_guard": {
+          "centroid_faces_checked": 314798,
+          "rejected_faces": 0,
+          "minimum_free_space_votes": 2,
+          "minimum_free_fraction": 0.6,
+          "absolute_tolerance_m": 0.12,
+          "relative_tolerance": 0.02,
+          "scope": "Same-capture face-centre guard; not proof that openings/stair clearance are correct"
+        },
+        "pruning": {
+          "removed_components": 296,
+          "removed_triangles": 2777,
+          "removed_area_m2": 0.36635530864194144,
+          "minimum_component_area_m2": 0.02
+        },
+        "display_pruning": {
+          "removed_components": 0,
+          "removed_triangles": 0,
+          "removed_area_m2": 0.0,
+          "minimum_component_area_m2": 0.02
+        },
+        "topology": {
+          "components": 37,
+          "triangles": 314798,
+          "surface_area_m2": 315.88514373466234,
+          "components_smaller_than_002m2": 0,
+          "small_component_area_fraction": 0.0,
+          "largest_component_area_fraction": 0.9634299572556122
+        },
+        "camera_probes": {
+          "source": {
+            "camera_node": 159,
+            "valid_depth_pixels": 36180,
+            "surface_coverage_on_valid_depth": 1.0,
+            "median_absolute_depth_error_m": 0.04588210582733154,
+            "p90_absolute_depth_error_m": 0.15344972610473634,
+            "free_space_conflict_on_hits": 0.0002211166390270868,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          },
+          "audit": {
+            "camera_node": 157,
+            "valid_depth_pixels": 16551,
+            "surface_coverage_on_valid_depth": 0.998247840009667,
+            "median_absolute_depth_error_m": 0.09953856468200684,
+            "p90_absolute_depth_error_m": 0.19777095317840576,
+            "free_space_conflict_on_hits": 0.014647137150466045,
+            "scope": "Same capture/poses; coverage can improve by inventing surfaces. Compare error and support too."
+          }
+        },
+        "metrics": {
+          "vertices": 161742,
+          "triangles": 314798,
+          "surface_area_m2": 315.885143734654,
+          "boundary_edges": 9240,
+          "nonmanifold_edges": 134,
+          "reference_points_within_5cm": 0.6218333333333333,
+          "reference_points_within_10cm": 0.8244166666666667,
+          "reference_to_surface_median_m": 0.03420138359069824,
+          "reference_to_surface_p90_m": 0.14773529171943667,
+          "surface_samples_farther_than_10cm_from_reference": 0.0003333333333333333,
+          "metric_scope": "Reused same-sensor map self-consistency/coverage, NOT heldout or surveyed accuracy"
+        }
+      },
+      "texture": {
+        "glb": {
+          "bytes": 50101232,
+          "triangles": 314798,
+          "textured_faces": 164825,
+          "unassigned_faces_keep_vertex_rgb": true
+        },
+        "atlas_pages": 3,
+        "camera_frames": [
+          1,
+          5,
+          9,
+          13,
+          16,
+          19,
+          24,
+          26,
+          29,
+          34,
+          40,
+          47,
+          56,
+          60,
+          62,
+          69,
+          75,
+          79,
+          82,
+          85,
+          88,
+          91,
+          94,
+          97,
+          104,
+          107,
+          117,
+          123,
+          126,
+          130,
+          143,
+          146,
+          153,
+          158,
+          159,
+          160,
+          166,
+          170,
+          175,
+          178,
+          181,
+          186,
+          188,
+          193,
+          196,
+          200,
+          204,
+          211
+        ],
+        "native_image_shape": [
+          960,
+          720,
+          3
+        ],
+        "native_photographs_resized": false,
+        "textured_face_fraction": 0.5235897305573733,
+        "unassigned_face_fraction": 0.4764102694426267,
+        "texture_scope": "Single best photo per face; depth-checked projective UV, no generated or averaged lettering",
+        "not_guaranteed": "No semantic sign recognition, no proof of correct text, remaining pose/visibility/seam errors"
+      },
+      "session": "bridge_12_sub",
+      "pose_changes": 0,
+      "source_map_replaced": false,
+      "navigation_ready": false,
+      "display_budget": 600000,
+      "seconds": 33.099313071000324,
+      "camera_nodes": {
+        "source": 159,
+        "audit": 157
+      }
+    }
+  }
+}

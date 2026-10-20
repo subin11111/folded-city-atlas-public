@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-20",
+  "files": [
+    {
+      "name": ".gitignore",
+      "bytes": 8,
+      "sha256": "9a64457e3d7a33fee0b8c78afe75836719f23c7291d67c33d3a507394909e504"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1962,
+      "sha256": "0a03e388cb6775eb2c32c190cf51ba5f699f87d180ebcfc5f92601233d746083"
+    },
+    {
+      "name": "browser-verification.json",
+      "bytes": 1000,
+      "sha256": "8b20451512885f49b075b61564f9ee5c7424f265fce7d7297f0a37baa7d25220"
+    },
+    {
+      "name": "demo-browser-export.json",
+      "bytes": 192278,
+      "sha256": "af4df112396c765e946f253b77ff79c44ea47e7f45e6abaa72ff7bb92812f6de"
+    },
+    {
+      "name": "desktop-gnss.png",
+      "bytes": 462407,
+      "sha256": "d5612e08d682b5b83c186b76e4532f10044328e8329691c0da5e503a3c725fa6"
+    },
+    {
+      "name": "entry-handoff.png",
+      "bytes": 403772,
+      "sha256": "05ae89fa4c91fcdf751eb365e475b432510de9feff275cdbdabcd235778358df"
+    },
+    {
+      "name": "filter-pipeline.png",
+      "bytes": 72467,
+      "sha256": "ab3bb7cf366bbe84f630b1ad7ce98b047f979055d8691ec463124782fd2ff01b"
+    },
+    {
+      "name": "filter_results.json",
+      "bytes": 244299,
+      "sha256": "5b8ab135dab2badede53a533bc88b73084722ad3e24656a479937ceea74c7ed2"
+    },
+    {
+      "name": "gnss-replay.gif",
+      "bytes": 1728815,
+      "sha256": "d28ae56c006abf90507899c71bd5f4bae5727a32720cc3e94492499005c53d3a"
+    },
+    {
+      "name": "mobile-gnss.png",
+      "bytes": 414565,
+      "sha256": "ea26a471775d5c0adbbad3667c674b0a2992c88006d30098f1e6da7bd7acf5e0"
+    },
+    {
+      "name": "outlier-rejection.png",
+      "bytes": 451185,
+      "sha256": "3a3e16124761af40103997f3bfec9e61071e828c9d8ed376e0bdfe4e8d715b4f"
+    },
+    {
+      "name": "recorded-filter-results.json",
+      "bytes": 908035,
+      "sha256": "6fbda290d2c973d404ae96231c45e4dbc7cb0c06efeda5b7c03074be2896d919"
+    },
+    {
+      "name": "recorded-plan.png",
+      "bytes": 239556,
+      "sha256": "4aa1f1e27506b351d5b07d8a70764c9827f8b9c538cfacdee87a048e427e26a0"
+    },
+    {
+      "name": "recorded-time.png",
+      "bytes": 307935,
+      "sha256": "fabdca1f1c702c4915d724bbb4bdc48a882d1321ddd6d5af8ef1d9bd3d58a90e"
+    },
+    {
+      "name": "synthetic-plan.png",
+      "bytes": 163507,
+      "sha256": "6aad958bdbc9984a8722772c9fb94f4bec7a790aa42b7d7ca9780bec3116ed05"
+    },
+    {
+      "name": "synthetic-report.png",
+      "bytes": 154391,
+      "sha256": "d2b74a830ab97db79488794b19fb1213754c522c7a0c1581a4937ecf231673e8"
+    },
+    {
+      "name": "synthetic-time.png",
+      "bytes": 193475,
+      "sha256": "9009bb1bb7f4be6d200455802a03da9f9e1c07f1a7aee4ad91738b78894e0bf7"
+    }
+  ],
+  "scene_image_generation": false,
+  "actual_phone_field_test": false,
+  "recorded_fixes": 338,
+  "synthetic_input_fixes": 97,
+  "common_evaluation_epochs": 96
+}

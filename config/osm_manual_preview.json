@@ -1,0 +1,8 @@
+{
+  "status": "USER_GUIDED_VISUAL_CANDIDATE_NOT_SURVEYED",
+  "east_m": 2.0,
+  "north_m": -2.0,
+  "reason": "User suggested slightly lower-right using the CU-side entrance as a visual reference. Two metres east and south is an initial preview, not a measured CU control point.",
+  "changes_original_GNSS_fit": false,
+  "changes_3D_map_or_poses": false
+}

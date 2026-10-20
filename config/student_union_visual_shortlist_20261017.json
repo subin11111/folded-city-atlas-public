@@ -1,0 +1,21 @@
+{
+  "status": "USER_VISUAL_SHORTLIST_NOT_A_FINAL_MAP_SELECTION",
+  "date_local": "2026-10-17",
+  "original_user_preferences": {
+    "outside": "J계열",
+    "lobby": "H020304, N45, SE3",
+    "bridge_out1f": "H0203",
+    "floor2": "J04",
+    "bridge_12_sub": "H020304, NEWSE3"
+  },
+  "interpretation": "N45 means N04/N05. Ambiguous SE3/NEWSE3 is provisionally expanded to both N05 and N06 for analysis, not a final user choice.",
+  "sessions": {
+    "outside": {"shortlist": ["J01", "J02", "J03", "J04"], "controls": ["O00", "H03", "N02"]},
+    "lobby": {"shortlist": ["H02", "H03", "H04", "N04", "N05", "N06"], "controls": ["O00", "H00", "N02", "J02"]},
+    "bridge_out1f": {"shortlist": ["H02", "H03"], "controls": ["O00", "N02"]},
+    "floor2": {"shortlist": ["J04"], "controls": ["O00", "H00", "F03", "N02", "N06"]},
+    "bridge_12_sub": {"shortlist": ["H02", "H03", "H04", "N05", "N06"], "controls": ["O00", "N02"]}
+  },
+  "default_map_changed": false,
+  "automatic_promotion": false
+}
