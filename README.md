@@ -39,13 +39,13 @@ iPhone 16 Pro로 건국대학교 제1학생회관의 실외, 1층 로비, 메인
 
 ## 읽는 순서
 
-[1. 문제 정의](#problem) → [2. 개념설계](#concept) → [3. 기본설계](#architecture) → [4. 상세설계](#methods) → [5. 구현](#implementation) → [6. 결과](#results)
+[1. 동기](#problem) → [2. 개념설계](#concept) → [3. 기본설계](#architecture) → [4. 상세설계](#methods) → [5. 구현](#implementation) → [6. 결과](#results)
 
 [현재 위치와 보정](#live-gnss) / [사용한 모델](#models) / [실행 방법](#running) / [자료 전체 목록](docs/EVIDENCE.md) / [연구 이력](README_HISTORY.md) / [참고문헌](#references)
 
 <a id="problem"></a>
 
-## 1. 문제 정의
+## 1. 동기
 
 ### 지도상의 도착과 실제 도착은 다르다
 
