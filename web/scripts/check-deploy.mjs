@@ -11,7 +11,7 @@ if(ignorePatterns.includes('*')&&!ignorePatterns.includes('!web/package-lock.jso
 for(const p of ['package.json','package-lock.json','public/product-shell.css','public/journey-shell.css','public/campus-terrain.js','public/campus-appearance.js','public/gnss-recordings.js'])if(!fs.existsSync(path.join(root,p)))errors.push(`Missing ${p}`);
 const required=['public/index.html','public/app.js','public/walk-controller.js','public/photo-viewer.js','public/location-controller.js','public/gnss-filter.js','public/geo-frame.js','public/outdoor-routing.js','public/location.css','public/data/gnss_demo.json','public/data/gnss_outside_recorded.json','api/dispatch.py','server.py','navigation.py','walk.py','photo_library.py','vercel.json','requirements.txt','.python-version'];
 required.push('public/world-map.js','public/world-registration.js','public/world-map.css','public/map-camera.js','public/live-navigation.js','public/data/world_style.json',
- 'public/map-particle-filter.js','public/gravity-heading.js','public/walking-sensors.js',
+ 'public/map-particle-filter.js','public/gravity-heading.js','public/walking-sensors.js','public/geolocation-source.js',
  'public/vendor/maplibre/maplibre-gl.mjs','public/vendor/maplibre/maplibre-gl-worker.mjs','public/vendor/maplibre/maplibre-gl.css','public/vendor/maplibre/LICENSE.txt');
 for(const p of required)if(!fs.existsSync(path.join(root,p)))errors.push(`Missing ${p}`);
 for(const p of ['gnss-audit.html','gnss-audit.js','gnss-audit.css','data/gnss_slam_comparison.json',...['outside','lobby','bridge_out1f','floor2','bridge_12_sub'].map(s=>`data/gnss_${s}_recorded.json`)])if(!fs.existsSync(path.join(root,'public',p)))errors.push(`Missing measured GNSS comparison ${p}`);

@@ -8,7 +8,10 @@ import {createWorldMap} from './world-map.js?v=mobile-clean-1';
 
 export async function createCampusScene(container,{campus,map,navigation,places,onMode,onBuilding,onLoading,onError,onEnterBuilding,onWalkLook,onMapRegion,onMapInteract}) {
   const surface=createDisplayTerrain(campus);
-  const frame={...createCampusFrame(campus,map),terrainHeight:surface.height};
+  const metricFrame=createCampusFrame(campus,map);
+  // The global basemap is flat. Do not float DEM elevations above that plane.
+  // This display frame leaves XY registration and all indoor XYZ data untouched.
+  const frame={...metricFrame,terrainHeight:()=>metricFrame.datum};
   const scene=new THREE.Scene();scene.background=new THREE.Color('#e9eee7');
   const renderer=new THREE.WebGLRenderer({antialias:true});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;
@@ -76,19 +79,9 @@ export async function createCampusScene(container,{campus,map,navigation,places,
   }
 
   // 공개 고도는 배경 지형에만 사용하며 실내 층간 높이는 원래 스캔 기준을 유지한다.
-  const tg=campus.terrain,positions=[],colours=[],indices=[];
   const campusRings=campus.campus;
-  for(let j=0;j<tg.nz;j++)for(let i=0;i<tg.nx;i++) {
-    const x=tg.x0+i*tg.step,z=tg.z0+j*tg.step,h=surface.heights[j*tg.nx+i],p=frame.toLocal([x,z],h);
-    positions.push(...p);
-    const inCampus=campusRings.some(r=>insideRing([x,z],r));
-    const colour=new THREE.Color(inCampus?'#bfcea9':'#d8dccf');colour.multiplyScalar(.975+(h%3)*.009);
-    colours.push(colour.r,colour.g,colour.b);
-    if(i<tg.nx-1&&j<tg.nz-1&&campusRings.some(r=>insideRing([x+tg.step/2,z+tg.step/2],r))) {const a=j*tg.nx+i,b=a+1,c=a+tg.nx,d=c+1;indices.push(a,c,b,b,c,d);}
-  }
-  const terrainGeometry=new THREE.BufferGeometry();terrainGeometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
-  terrainGeometry.setAttribute('color',new THREE.Float32BufferAttribute(colours,3));terrainGeometry.setIndex(indices);terrainGeometry.computeVertexNormals();
-  const terrain=mesh(terrainGeometry,material('#ffffff',{vertexColors:true,side:THREE.DoubleSide}));terrain.receiveShadow=true;
+  const terrainGeometry=new THREE.ShapeGeometry(campusRings.map(ring=>new THREE.Shape(ring.map(p=>new THREE.Vector2(...frame.toLocal(p,frame.datum).slice(0,2))))));
+  const terrain=mesh(terrainGeometry,material('#bfcea9',{side:THREE.DoubleSide}));terrain.receiveShadow=true;
 
   const landColours={water:'#5e9ba9',reservoir:'#5e9ba9',park:'#a6bf87',forest:'#8faa74',wood:'#8faa74',grass:'#b3c98e',pitch:'#8ba46f',garden:'#a0ba83'};
   for(const land of campus.lands) {
@@ -96,7 +89,7 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     const rings=land.r.map(r=>r.map(p=>frame.toLocal(p,frame.terrainHeight(...p))));
     const geometry=new THREE.ShapeGeometry(shapeFrom(rings));const a=geometry.attributes.position;
     const water=['water','reservoir','pond'].includes(land.k);
-    const waterZ=(surface.waters.find(w=>w.land===land)?.height??frame.terrainHeight(...ringCentre(land.r[0])))-frame.datum+.14;
+    const waterZ=.04;
     const R=map.georeference.R_map_xy_to_EN,t=map.georeference.t_map_xy_to_EN_m,offset=map.manual_preview_offset_en_m||[2,-2];
     // Sample by position instead of matching rounded Float32 vertex keys.
     for(let i=0;i<a.count;i++){
@@ -135,7 +128,7 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     const style=appearanceFor(b);
     if(!windowTextures.has(style.id))windowTextures.set(style.id,makeWindowTexture(style));
     const isStudent=b.id===frame.student?.id;
-    const displayBase=isStudent?b.g:Math.min(b.g,...b.o.map(p=>frame.terrainHeight(...p)));
+    const displayBase=frame.datum;
     const rings=[b.o,...(b.ho||[])].map(r=>r.map(p=>frame.toLocal(p,displayBase)));
     const geometry=new THREE.ExtrudeGeometry(shapeFrom(rings),{depth:b.h,bevelEnabled:false,steps:1,curveSegments:1});
     geometry.translate(0,0,displayBase-frame.datum);
@@ -412,9 +405,8 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     if(++labelTick%3===0)updateLabels();
   }
   try{
-    // Campus terrain needs a display lift. Indoor mode instead anchors its
-    // first-floor datum to the flat basemap; all floor differences stay intact.
-    const lift=frame.datum-Math.min(...surface.heights)+.15;
+    // Same flat display plane as the first-floor overlay, not the lowest DEM sample.
+    const lift=.08;
     world=await createWorldMap(container,{mapData:map,campus,frame,scene,lift,onRegion:onMapRegion,onError,onUserMove:onMapInteract,
       onReady(){
         controls.enabled=false;renderer.domElement.hidden=mode!=='walk';world.setSceneMode(mode);world.setVisible(mode!=='walk');focusGrid.visible=false;
@@ -441,7 +433,7 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     // Read-only rendering evidence and deterministic viewpoints for screenshot checks.
     campusView(target,offsetEN){changeMode('campus');animation=null;controls.target.set(...target);camera.position.copy(controls.target).add(new THREE.Vector3(...frame.vectorFromEN(...offsetEN)));controls.update();},
     worldView(options){changeMode('campus');world?.jumpTo(options);},
-    stats(){return {mode,loaded,failed,buildings:buildingMeshes.length,registrationScale:1,terrain:surface.diagnostics,
+    stats(){return {mode,loaded,failed,buildings:buildingMeshes.length,registrationScale:1,terrain:{...surface.diagnostics,renderMode:'flat_basemap',campusBaseZ:.08},
       worldMap:world?.stats()||null,
       locationTracks:livePath.children.map(line=>({kind:line.userData.kind,points:line.geometry.attributes.position.count})),
       appearances:buildingMeshes.map(m=>({id:m.userData.building.id,style:m.userData.appearance}))};}};

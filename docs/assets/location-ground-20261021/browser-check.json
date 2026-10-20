@@ -1,0 +1,60 @@
+{
+  "errors": [],
+  "cases": [
+    {
+      "case": "granted_before_fix",
+      "message": "위치 접근은 허용됐어요. 휴대폰의 위치 신호를 기다리고 있어요."
+    },
+    {
+      "case": "coarse_1500m",
+      "instruction": "대략적인 위치를 찾았어요",
+      "quality": "대략적인 위치 · 수신 범위 약 1500m. 정확해질 때까지 이동 안내를 기다려 주세요.",
+      "state": {
+        "fine": null,
+        "rejected": true
+      }
+    },
+    {
+      "case": "fine_6m",
+      "quality": "위치 수신 범위 약 6m"
+    }
+  ],
+  "before": {
+    "ready": true,
+    "coverage": "global",
+    "provider": "OpenFreeMap",
+    "zoom": 17,
+    "center": [
+      127.0731,
+      37.5413
+    ],
+    "minZoom": 1,
+    "maxBounds": null,
+    "campusDraws": 185,
+    "errors": 0,
+    "sceneMode": "campus",
+    "displayZOffset": 13.732812500000001,
+    "verticalDatum": "display only; first floor aligned to flat basemap in indoor mode",
+    "custom3DCoverage": "konkuk-campus",
+    "outsideBuildingExtrusions": 0
+  },
+  "after": {
+    "ready": true,
+    "coverage": "global",
+    "provider": "OpenFreeMap",
+    "zoom": 17,
+    "center": [
+      127.0731,
+      37.5413
+    ],
+    "minZoom": 1,
+    "maxBounds": null,
+    "campusDraws": 180,
+    "errors": 0,
+    "sceneMode": "campus",
+    "displayZOffset": 0.08,
+    "verticalDatum": "display only; campus bases and indoor first floor aligned to flat basemap",
+    "custom3DCoverage": "konkuk-campus",
+    "outsideBuildingExtrusions": 0
+  }
+}

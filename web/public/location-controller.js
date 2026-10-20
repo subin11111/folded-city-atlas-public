@@ -5,6 +5,7 @@ import {navigationEstimate} from './live-navigation.js';
 import {indoorProgress,requestWalkingSensors} from './indoor-position.js';
 import {MapParticleTracker} from './map-particle-filter.js';
 import {GravityHeading} from './gravity-heading.js';
+import {inspectBrowserPosition,watchBrowserPosition} from './geolocation-source.js';
 import {dockMobileControl} from './mobile-layout.js';
 import {WalkingHeading,StepDetector,strideCalibration,sensorEventTime} from './walking-sensors.js';
 const $=id=>document.getElementById(id),finite=Number.isFinite;
@@ -15,6 +16,7 @@ export function createLocationController({map,campus,entry,navigation,places,get
   const walkingHeading=new WalkingHeading(),gravityHeading=new GravityHeading();let strideSession=null,strideSetting=null;
   try{const saved=JSON.parse(localStorage.getItem('folded-city-stride-v1')||'null');if(saved?.version===1&&finite(saved.coefficient)&&saved.coefficient>=.3&&saved.coefficient<=.8)strideSetting=saved;}catch{}
   let lastGoodAt=0,tracker=null,generation=0,sensorsAttached=false,headingAttached=false,lastDraw=0,error='',wakeLock=null,pendingTransition=null;
+  let stopGeolocation=null,locationStarted=0,locationPermission='unknown',coarseFix=null,coarseAt=0;
   const controls=document.createElement('div');controls.className='location-controls';
   controls.innerHTML='<button id="locateButton" aria-label="현재 위치 사용"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg><span>내 위치</span></button><button id="headingButton" aria-label="휴대폰 방향 사용">➤ <span>휴대폰 방향</span></button>';
   document.querySelector('.map-shell').append(controls);
@@ -22,6 +24,8 @@ export function createLocationController({map,campus,entry,navigation,places,get
   const panel=document.createElement('section');panel.className='location-card';panel.id='locationCard';panel.hidden=true;panel.setAttribute('aria-label','현재 위치 안내');
   panel.innerHTML='<div class="location-summary"><span id="locationMode">현재 위치</span><button id="stopLocation" aria-label="현재 위치 안내 종료">×</button></div><div class="live-navigation-summary" id="liveSummary" hidden><span id="liveDestination"></span><strong id="liveRemaining"></strong></div><strong id="locationInstruction">위치를 찾고 있어요</strong><p id="locationQuality" role="status"></p><p id="headingStatus"></p><div class="location-actions"><button id="followLocation" aria-pressed="true">위치 따라가기</button><button id="confirmEntrance" hidden>입구에서 실내 안내</button><button id="confirmFloor" hidden></button><button id="correctIndoor" hidden>현재 위치 수정</button><button id="retryWalkingSensors" hidden>동작 센서 허용</button><button id="rerouteIndoor" hidden>여기서 경로 다시 찾기</button></div><details><summary>이용 안내</summary><p id="locationHelp">위치 권한을 허용해 주세요. 실내에서는 입구를 확인한 뒤 걸음과 방향 센서로 위치를 추정합니다.</p></details>';
   document.querySelector('.map-shell').append(panel);
+  const retryLocation=document.createElement('button');retryLocation.id='retryLocation';retryLocation.textContent='위치 다시 받기';
+  panel.querySelector('.location-actions').append(retryLocation);retryLocation.onclick=()=>startLive();
   const strideTools=document.createElement('details');strideTools.className='stride-settings';
   strideTools.innerHTML='<summary>보폭 맞추기</summary><p>줄자 등으로 직접 잰 직선 구간을 걸어 주세요. 측정 중에는 위치 안내를 멈추고, 끝난 뒤 시작 위치를 다시 선택합니다.</p><label>직접 잰 거리 (m) <input id="strideDistance" type="number" min="5" max="30" step="0.5" value="10" inputmode="decimal"></label><button id="strideMeasure" type="button">걸음 측정 시작</button><p id="strideStatus" role="status"></p>';
   panel.append(strideTools);
@@ -41,7 +45,8 @@ export function createLocationController({map,campus,entry,navigation,places,get
     if(data.follow&&$('map3d').hidden)$('mapSvg').setAttribute('viewBox',`${x-12} ${-y-12} 24 24`);
   }
   function render(){
-    if(state.mode==='off'){draw(null);return;}
+    if(state.mode==='off'){retryLocation.hidden=true;draw(null);return;}
+    retryLocation.hidden=state.mode!=='live';
     panel.hidden=false;panel.dataset.mode=state.mode;$('locateButton').setAttribute('aria-pressed','true');
     for(const id of ['confirmFloor','correctIndoor','retryWalkingSensors','rerouteIndoor'])$(id).disabled=!!strideSession;
     $('strideDistance').disabled=!!strideSession;
@@ -70,27 +75,33 @@ export function createLocationController({map,campus,entry,navigation,places,get
       if(pendingTransition){const node=state.indoorRoute.route[pendingTransition.end_index];$('confirmFloor').hidden=false;$('confirmFloor').textContent=`${node.level}층에 도착했어요`;}
       strideTools.hidden=false;draw({indoor:true,position:fix.position,raw:fix.position,accuracy:fix.uncertainty,heading:headingStale?null:[Math.cos(fix.yaw),Math.sin(fix.yaw)],headingDegrees:deg,headingUp:false,stale:paused||!!strideSession,follow:state.follow});return;
     }
-    strideTools.hidden=true;$('locationMode').textContent='현재 위치';const fix=state.fix,stale=!lastGoodAt||Date.now()-lastGoodAt>10000,deg=heading();
+    strideTools.hidden=true;$('locationMode').textContent='현재 위치';const fix=state.fix||coarseFix,approximate=!state.fix&&!!coarseFix,stale=approximate||!lastGoodAt||Date.now()-lastGoodAt>10000,deg=heading();
     $('locationHelp').textContent='실외 위치는 휴대폰의 위치 서비스를 사용합니다. 건물에 들어가면 입구에서 실내 안내를 선택해 주세요. 위치·동작 정보는 이 화면에서 처리하며 서버로 보내지 않습니다.';
-    $('locationQuality').textContent=error||(!fix?'위치 권한을 허용해 주세요.':stale?'위치 신호를 기다리고 있어요.':`위치 수신 범위 약 ${Math.round(fix.accuracy)}m`);
+    const waiting=Date.now()-locationStarted>12000;
+    $('locationQuality').textContent=error||(!fix?locationPermission==='granted'?'위치 접근은 허용됐어요. 휴대폰의 위치 신호를 기다리고 있어요.':'휴대폰에서 위치 신호를 받고 있어요.':approximate?Date.now()-coarseAt>15000?'마지막으로 받은 대략적인 위치예요. 위치 다시 받기를 눌러 주세요.':`대략적인 위치 · 수신 범위 약 ${Math.round(fix.accuracy)}m. 정확해질 때까지 이동 안내를 기다려 주세요.`:stale?'위치 신호를 기다리고 있어요.':`위치 수신 범위 약 ${Math.round(fix.accuracy)}m`);
     $('headingStatus').textContent=deg===null?'방향을 보려면 화살표 버튼을 눌러 주세요.':`${Math.round(deg)}° · 휴대폰 방향`;
-    if(!fix){$('locationInstruction').textContent='위치를 찾고 있어요';return;}
+    if(!fix){$('locationInstruction').textContent=error?'위치를 받지 못했어요':waiting?'위치 수신이 늦어지고 있어요':'위치를 찾고 있어요';return;}
     const estimate=navigationEstimate({position:fix.position,route:state.route,entry,indoorDistance:state.indoorDistance,accuracy:fix.accuracy,stale,rejected:state.rejected});
     $('liveRemaining').textContent=estimate.completeConnection?`약 ${Math.round(estimate.knownRemaining)}m · ${estimate.estimatedMinutes}분`:state.goal?`입구 이후 약 ${Math.round(state.indoorDistance)}m`:'목적지를 선택해 주세요';
     let instruction=state.goal?'경로를 따라 학생회관 입구로 이동해 주세요.':'목적지를 선택하면 길을 안내합니다.';
     if(estimate.nearEntry&&state.goal)instruction='입구 앞인가요? 입구에서 실내 안내를 선택해 주세요.';
     else if(estimate.progress&&estimate.qualityOk){const next=state.route.points[estimate.progress.index],vector=[next[0]-fix.position[0],next[1]-fix.position[1]],north=frame.headingVector(0),east=frame.headingVector(90);const bearing=(Math.atan2(vector[0]*east[0]+vector[1]*east[1],vector[0]*north[0]+vector[1]*north[1])*180/Math.PI+360)%360;const diff=deg===null?0:((bearing-deg+540)%360)-180;instruction=`${deg===null?'경로를 따라':Math.abs(diff)<35?'앞으로':Math.abs(diff)>145?'뒤쪽 경로로':diff>0?'오른쪽으로':'왼쪽으로'} 약 ${Math.round(distance(fix.position,next))}m 이동하세요.`;if(estimate.progress.remaining<10)instruction='입구까지 주변 안내와 지도를 확인해 주세요.';}
-    if(!estimate.qualityOk)instruction='위치 신호를 확인하고 있어요. 주변 표지도 함께 봐 주세요.';
+    if(!estimate.qualityOk)instruction=approximate?'대략적인 위치를 찾았어요':'위치 신호를 확인하고 있어요. 주변 표지도 함께 봐 주세요.';
     $('locationInstruction').textContent=instruction;
     draw({position:[...fix.position,0],raw:[...fix.raw,0],accuracy:fix.accuracy,heading:deg===null?null:frame.headingVector(deg),headingDegrees:deg,headingUp:false,stale,follow:state.follow,route:state.route?.found?state.route:null});
   }
   function nextInstruction(fix,progress){const nodes=state.indoorRoute?.route||[],target=nodes[Math.min(nodes.length-1,progress.index+8)];if(!target||target.level!==fix.level)return '표시된 경로를 따라 이동하세요.';const yaw=Math.atan2(target.position[1]-fix.position[1],target.position[0]-fix.position[0]),turn=Math.atan2(Math.sin(yaw-fix.yaw),Math.cos(yaw-fix.yaw));return `${Math.abs(turn)<.6?'앞으로':Math.abs(turn)>2.5?'뒤쪽 통로로':turn>0?'왼쪽으로':'오른쪽으로'} 이동하세요.`;}
   function updateRoute(){if(state.mode!=='live'||!state.fix||!state.goal)return;state.route=router.route(state.fix.position,entry);}
   function ingest(position){
-    if(state.mode!=='live')return;const c=position.coords;
-    if(!finite(c.latitude)||!finite(c.longitude)||Math.abs(c.latitude)>90||Math.abs(c.longitude)>180||Math.abs(Date.now()-position.timestamp)>15000)return;
-    const xy=frame.fromGeo(c.latitude,c.longitude),result=filter.update({x:xy[0],y:xy[1],t:position.timestamp/1000,accuracy:c.accuracy,accuracyConvention:'browser_r95'});state.rejected=!result.accepted;
-    if(result.accepted){state.fix={position:result.position,raw:xy,accuracy:c.accuracy};lastGoodAt=Date.now();error='';updateRoute();}render();
+    if(state.mode!=='live')return;const inspected=inspectBrowserPosition(position),c=position?.coords;
+    if(!inspected.valid){if(!state.fix)error=inspected.reason==='stale'?'오래된 위치가 수신됐어요. 새 위치를 기다리거나 위치 다시 받기를 눌러 주세요.':'위치 정보의 형식이 올바르지 않아요. 위치 다시 받기를 눌러 주세요.';render();return;}
+    locationPermission='granted';
+    const xy=frame.fromGeo(c.latitude,c.longitude),result=filter.update({x:xy[0],y:xy[1],t:position.timestamp/1000,accuracy:c.accuracy,accuracyConvention:'browser_r95'});
+    if(result.reason==='time_order'){render();return;}state.rejected=!result.accepted;
+    if(!state.fix){coarseFix={position:xy,raw:xy,accuracy:c.accuracy};coarseAt=position.timestamp;error='';}
+    if(result.accepted){state.fix={position:result.position,raw:xy,accuracy:c.accuracy};lastGoodAt=Date.now();coarseFix=null;error='';updateRoute();}
+    else if(state.fix&&result.reason==='accuracy')error=`위치 수신 범위가 약 ${Math.round(c.accuracy)}m로 넓어 마지막 위치를 유지하고 있어요.`;
+    render();
   }
   function orientation(event){
     if(!['live','indoor'].includes(state.mode))return;const now=Date.now(),time=sensorEventTime(event,now);
@@ -119,11 +130,14 @@ export function createLocationController({map,campus,entry,navigation,places,get
     error=permission.orientation&&(state.mode!=='indoor'||permission.motion)?'':'동작·방향 접근이 필요해요. Safari에서 이 사이트의 접근을 허용해 주세요.';render();
   }
   function stopSensors(){if(sensorsAttached)window.removeEventListener('devicemotion',motion);if(headingAttached){window.removeEventListener('deviceorientation',orientation);window.removeEventListener('deviceorientationabsolute',orientation);}sensorsAttached=headingAttached=false;wakeLock?.release().catch(()=>{});wakeLock=null;}
-  function stop(){generation++;if(state.watch!==null)navigator.geolocation?.clearWatch(state.watch);state.watch=null;stopSensors();tracker=null;pendingTransition=null;strideSession=null;walkingHeading.reset();gravityHeading.reset();state.mode='off';state.heading=null;state.headingAt=0;panel.hidden=true;$('locateButton').setAttribute('aria-pressed','false');draw(null);}
+  function stop(){generation++;stopGeolocation?.();stopGeolocation=null;state.watch=null;stopSensors();tracker=null;pendingTransition=null;strideSession=null;walkingHeading.reset();gravityHeading.reset();state.mode='off';state.heading=null;state.headingAt=0;panel.hidden=true;$('locateButton').setAttribute('aria-pressed','false');draw(null);}
   async function startLive(){
-    stop();state.mode='live';state.follow=true;state.fix=null;state.route=null;filter.reset();error='';lastGoodAt=0;
-    if(navigator.geolocation)state.watch=navigator.geolocation.watchPosition(ingest,e=>{if(state.mode!=='live')return;error=e.code===1?'위치 접근을 허용해 주세요. 이미 건물 안이라면 실내 안내를 선택해 주세요.':'위치 신호를 기다리고 있어요. 입구에서는 실내 안내를 시작할 수 있어요.';render();},{enableHighAccuracy:true,maximumAge:1000,timeout:15000});
-    else error='이 브라우저에서 위치를 받을 수 없어요. 실내 시작점을 선택해 주세요.';
+    stop();state.mode='live';state.follow=true;state.fix=null;state.route=null;filter.reset();error='';lastGoodAt=0;coarseFix=null;coarseAt=0;locationStarted=Date.now();locationPermission='unknown';const token=generation;
+    try{navigator.permissions?.query({name:'geolocation'}).then(p=>{if(token===generation&&state.mode==='live'){locationPermission=p.state;render();}}).catch(()=>{});}catch{}
+    stopGeolocation=watchBrowserPosition(navigator.geolocation,p=>{if(token===generation)ingest(p);},e=>{if(token!==generation||state.mode!=='live')return;
+      if(e.code===1){locationPermission='denied';error='위치 접근이 차단됐어요. Safari의 웹사이트 설정과 iPhone 위치 서비스에서 이 사이트를 허용해 주세요.';}
+      else if(!state.fix&&!coarseFix)error=e.unsupported?'이 브라우저에서 위치를 받을 수 없어요.':'위치 신호를 받지 못했어요. 잠시 후 위치 다시 받기를 눌러 주세요. 실내라면 시작 장소를 선택할 수 있어요.';
+      render();});
     render();await setView('3d');if(state.mode==='live'){getScene()?.showCampus();collapseSheet();render();}
   }
   function startNavigation(id,details={}){setGoal(id,details);return startLive();}
@@ -160,7 +174,7 @@ export function createLocationController({map,campus,entry,navigation,places,get
     const message=result?'보폭을 저장했어요. 지금 있는 장소를 다시 선택해 주세요.':'측정 조건이 맞지 않아요. 8걸음 이상 걸었는지 확인하고, 지금 있는 장소를 다시 선택해 주세요.';
     stop();notify(message);chooseIndoor();
   };
-  $('followLocation').onclick=()=>{state.follow=!state.follow;$('followLocation').setAttribute('aria-pressed',String(state.follow));$('followLocation').textContent=state.follow?'위치 따라가기':'내 위치로 돌아가기';render();};
+  $('followLocation').onclick=()=>{if(state.mode==='live'&&!state.fix&&!coarseFix){startLive();return;}state.follow=!state.follow;$('followLocation').setAttribute('aria-pressed',String(state.follow));$('followLocation').textContent=state.follow?'위치 따라가기':'내 위치로 돌아가기';render();};
   document.addEventListener('visibilitychange',()=>{if(strideSession){stop();notify('화면이 가려져 보폭 측정을 취소했어요. 현재 위치를 다시 선택해 주세요.');chooseIndoor();return;}if(tracker)tracker.detector.reset();walkingHeading.reset();gravityHeading.reset();state.heading=null;state.headingAt=0;if(document.hidden)wakeLock?.release().catch(()=>{});render();});window.addEventListener('pagehide',stop);
   const timer=setInterval(()=>{if(state.mode!=='off')render();},1000);
   return {state,frame,filter,router,startLive,startNavigation,chooseIndoor,stop,ingest,render,setGoal,

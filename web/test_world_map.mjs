@@ -43,3 +43,13 @@ test('지역 3D 투영 행렬은 같은 지리 기준점에 대응한다',()=>{
     assert.ok(Math.hypot(exact[0]-affine[0],exact[1]-affine[1])/registration.scale<.08);
   }
 });
+
+test('캠퍼스 바닥을 DEM 최저점으로 띄우지 않고 평면 배경과 같은 기준에 둔다',()=>{
+  const source=fs.readFileSync(new URL('./public/campus-scene.js',import.meta.url),'utf8');
+  assert.ok(source.includes('terrainHeight:()=>metricFrame.datum'));
+  assert.ok(source.includes('const displayBase=frame.datum;'));
+  assert.ok(source.includes('const lift=.08;'));
+  assert.ok(!source.includes('frame.datum-Math.min(...surface.heights)'));
+  const z=displayElevationOffset(map,{mode:'indoor'})+map.levels.find(l=>l.id==='1').z;
+  assert.ok(Math.abs(z-.08)<1e-12);
+});

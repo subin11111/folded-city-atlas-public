@@ -141,6 +141,6 @@ export async function createWorldMap(container,{mapData,campus,frame,scene,lift,
     },
     stats(){return {ready,coverage:'global',provider:'OpenFreeMap',zoom:libre.getZoom(),center:libre.getCenter().toArray(),
       minZoom:libre.getMinZoom(),maxBounds:libre.getMaxBounds()||null,campusDraws:draws,errors,
-      sceneMode,displayZOffset,verticalDatum:'display only; first floor aligned to flat basemap in indoor mode',custom3DCoverage:'konkuk-campus',outsideBuildingExtrusions:0};}
+      sceneMode,displayZOffset,verticalDatum:'display only; campus bases and indoor first floor aligned to flat basemap',custom3DCoverage:'konkuk-campus',outsideBuildingExtrusions:0};}
   };
 }
