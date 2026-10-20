@@ -1,32 +1,11 @@
 // Camera-free pedestrian estimates. A confirmed landmark supplies position;
-// live steps and absolute device heading supply motion, never the planned route.
+// live steps and a referenced device heading supply motion, never the planned route.
 import {mul,add,transpose} from './gnss-filter.js';
+import {StepDetector} from './walking-sensors.js';
+export {StepDetector} from './walking-sensors.js';
 const finite=Number.isFinite,rad=Math.PI/180;
 const wrap=a=>Math.atan2(Math.sin(a),Math.cos(a));
 const dist=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
-
-export class StepDetector {
-  constructor(){this.reset();}
-  reset(){this.at=null;this.started=null;this.baseline=null;this.filtered=0;this.peak=0;this.trough=0;this.lastStep=-Infinity;}
-  sample(magnitude,time){
-    if(!finite(magnitude)||!finite(time)||magnitude<0||magnitude>35)return null;
-    if(this.at!==null&&time<=this.at)return null;
-    if(this.at===null||time-this.at>1500){this.reset();this.at=time;this.started=time;this.baseline=magnitude;return null;}
-    const dt=(time-this.at)/1000;this.at=time;
-    this.baseline+=(1-Math.exp(-dt/.8))*(magnitude-this.baseline);
-    this.filtered+=(1-Math.exp(-dt/.055))*(magnitude-this.baseline-this.filtered);
-    if(time-this.started<800)return null;
-    this.peak=Math.max(this.peak,this.filtered);this.trough=Math.min(this.trough,this.filtered);
-    // Require a complete positive/negative cycle; tiny hand tremors do not count.
-    if(this.peak>=.95&&this.filtered<-.3&&time-this.lastStep>=320){
-      const amplitude=this.peak-this.trough;
-      this.peak=0;this.trough=0;this.lastStep=time;
-      return {time,amplitude,length:Math.max(.48,Math.min(.85,.55*Math.pow(amplitude,.25)))};
-    }
-    if(time-this.lastStep>2000&&this.filtered<0)this.peak=0;
-    return null;
-  }
-}
 
 export class IndoorGrid {
   constructor(data){
@@ -67,8 +46,8 @@ export class IndoorGrid {
 }
 
 export class PedestrianTracker {
-  constructor(navigation,position,level='1'){
-    this.grid=new IndoorGrid(navigation);this.detector=new StepDetector();this.reset(position,level);
+  constructor(navigation,position,level='1',options={}){
+    this.grid=new IndoorGrid(navigation);this.detector=new StepDetector(options);this.reset(position,level);
   }
   reset(position,level){
     if(!this.grid.grids[level]||!position?.slice(0,2).every(finite)||!this.grid.free(level,position))throw Error('이 위치에서 안내를 시작할 수 없어요. 가까운 입구나 장소를 선택해 주세요.');
@@ -97,7 +76,7 @@ export class PedestrianTracker {
     this.headingAt=time;return true;
   }
   motion(event,time){
-    const a=event.accelerationIncludingGravity||event.acceleration;
+    const a=event.accelerationIncludingGravity;
     if(!a||![a.x,a.y,a.z].every(finite))return {moved:false,reason:'no_motion'};
     this.lastMotionAt=time;
     const step=this.detector.sample(Math.hypot(a.x,a.y,a.z),time);

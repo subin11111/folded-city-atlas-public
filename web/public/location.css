@@ -13,6 +13,7 @@
 .location-lab #syntheticGnssTools{margin-top:18px;border-top:1px solid #dce5dd;padding-top:12px;font-size:12px;color:#65786c}
 .location-lab #syntheticGnssTools summary{cursor:pointer}.location-lab #syntheticGnssTools button{background:#f7f7f4;color:#52645b}
 .location-card #recordingSource{font-size:11px;overflow-wrap:anywhere;color:#29553c}
+.stride-settings{margin-top:12px;border-top:1px solid #dce7df;padding-top:10px}.stride-settings label{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px}.stride-settings input{width:85px;padding:8px;border:1px solid #cdded2;border-radius:8px;font:inherit;font-size:16px}.stride-settings button{width:100%;margin-top:10px;padding:10px;border:1px solid #cdded2;border-radius:10px;background:#edf5ef;color:#175638;font:inherit;font-size:12px}
 .location-card #recordingProgress{font-size:10px;color:#65786c}
 .recording-controls{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:11px}
 .recording-controls button{border:1px solid #cfddd5;background:#eff7f2;border-radius:9px;color:#19573a;padding:8px;white-space:nowrap;cursor:pointer}

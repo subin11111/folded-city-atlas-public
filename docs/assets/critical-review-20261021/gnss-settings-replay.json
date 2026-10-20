@@ -1,0 +1,476 @@
+{
+  "source_sha256": "c7b5d99c66e44709a10cf8da00072e097570b0032e7c1c912ba3bd6d96f422eb",
+  "filter_sha256": "2763458ae42f1bf6781486cf9153af43e01c35adf584e94aa5e2122bf7fc018f",
+  "settings": {
+    "accelerationSigma": 1.2,
+    "gateChi2": 9.21034,
+    "maxAccuracy": 50,
+    "maxGap": 15,
+    "maxSpeed": 4,
+    "staleSeconds": 10
+  },
+  "reference": "Same-epoch web SLAM pose proxy; no surveyed ground truth",
+  "interpretation": "unspecified_radius is the iOS source convention; browser_95_assumption is sensitivity analysis, not a new browser field trial",
+  "sessions": {
+    "outside": {
+      "unspecified_radius": {
+        "accepted": 338,
+        "history": 338,
+        "metrics": {
+          "raw": {
+            "n": 337,
+            "relative_rmse_m": 4.729985954201466,
+            "mean_delta_map_xy_m": [
+              2.546302855947891,
+              2.2876744692614794
+            ],
+            "bias_norm_m": 3.4230268347646913,
+            "mean_removed_rmse_m": 3.26429998857703,
+            "relative_velocity_rmse_m_s": 0.8463523167773453,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 337,
+            "relative_rmse_m": 4.875232773330208,
+            "mean_delta_map_xy_m": [
+              2.539247802801505,
+              2.302131750357118
+            ],
+            "bias_norm_m": 3.427475747548711,
+            "mean_removed_rmse_m": 3.467031092176469,
+            "relative_velocity_rmse_m_s": 0.6286712488430329,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 337,
+            "relative_rmse_m": 4.660277022437882,
+            "mean_delta_map_xy_m": [
+              2.5596130180437524,
+              2.286321866413151
+            ],
+            "bias_norm_m": 3.4320382397313063,
+            "mean_removed_rmse_m": 3.1526648167676403,
+            "relative_velocity_rmse_m_s": 0.44687242937780386,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      },
+      "browser_95_assumption": {
+        "accepted": 338,
+        "history": 338,
+        "metrics": {
+          "raw": {
+            "n": 337,
+            "relative_rmse_m": 4.729985954201466,
+            "mean_delta_map_xy_m": [
+              2.546302855947891,
+              2.2876744692614794
+            ],
+            "bias_norm_m": 3.4230268347646913,
+            "mean_removed_rmse_m": 3.26429998857703,
+            "relative_velocity_rmse_m_s": 0.8463523167773453,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 337,
+            "relative_rmse_m": 4.784857071114019,
+            "mean_delta_map_xy_m": [
+              2.544920085391153,
+              2.292559400126806
+            ],
+            "bias_norm_m": 3.42526595232211,
+            "mean_removed_rmse_m": 3.3410193574495715,
+            "relative_velocity_rmse_m_s": 0.6622669916299058,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 337,
+            "relative_rmse_m": 4.666262689034765,
+            "mean_delta_map_xy_m": [
+              2.558233230630746,
+              2.287757537936938
+            ],
+            "bias_norm_m": 3.431966173302223,
+            "mean_removed_rmse_m": 3.161584360472964,
+            "relative_velocity_rmse_m_s": 0.44027975726404334,
+            "velocity_intervals": 334,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      }
+    },
+    "lobby": {
+      "unspecified_radius": {
+        "accepted": 293,
+        "history": 293,
+        "metrics": {
+          "raw": {
+            "n": 293,
+            "relative_rmse_m": 18.889303267722738,
+            "mean_delta_map_xy_m": [
+              15.637602688191617,
+              1.927473432360566
+            ],
+            "bias_norm_m": 15.755944010632733,
+            "mean_removed_rmse_m": 10.419021368334331,
+            "relative_velocity_rmse_m_s": 1.4427974937306,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 293,
+            "relative_rmse_m": 18.883252909418452,
+            "mean_delta_map_xy_m": [
+              15.637858889941409,
+              1.899182061214932
+            ],
+            "bias_norm_m": 15.75276239785772,
+            "mean_removed_rmse_m": 10.41286306822962,
+            "relative_velocity_rmse_m_s": 0.8484516279753394,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 293,
+            "relative_rmse_m": 18.83069796592568,
+            "mean_delta_map_xy_m": [
+              15.63217756874725,
+              1.921815024368363
+            ],
+            "bias_norm_m": 15.749868206709944,
+            "mean_removed_rmse_m": 10.321668341658006,
+            "relative_velocity_rmse_m_s": 0.595991714070451,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      },
+      "browser_95_assumption": {
+        "accepted": 293,
+        "history": 293,
+        "metrics": {
+          "raw": {
+            "n": 293,
+            "relative_rmse_m": 18.889303267722738,
+            "mean_delta_map_xy_m": [
+              15.637602688191617,
+              1.927473432360566
+            ],
+            "bias_norm_m": 15.755944010632733,
+            "mean_removed_rmse_m": 10.419021368334331,
+            "relative_velocity_rmse_m_s": 1.4427974937306,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 293,
+            "relative_rmse_m": 18.888628331083254,
+            "mean_delta_map_xy_m": [
+              15.64749675738682,
+              1.9222371541749144
+            ],
+            "bias_norm_m": 15.765124498376839,
+            "mean_removed_rmse_m": 10.403899739063196,
+            "relative_velocity_rmse_m_s": 0.9972181559129103,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 293,
+            "relative_rmse_m": 18.85179838272991,
+            "mean_delta_map_xy_m": [
+              15.641075621604655,
+              1.9325187963275916
+            ],
+            "bias_norm_m": 15.760008740445382,
+            "mean_removed_rmse_m": 10.344681085668293,
+            "relative_velocity_rmse_m_s": 0.6804950939501407,
+            "velocity_intervals": 155,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      }
+    },
+    "bridge_out1f": {
+      "unspecified_radius": {
+        "accepted": 74,
+        "history": 74,
+        "metrics": {
+          "raw": {
+            "n": 74,
+            "relative_rmse_m": 10.552355616858675,
+            "mean_delta_map_xy_m": [
+              8.96682491884182,
+              2.128212974357859
+            ],
+            "bias_norm_m": 9.215923154485813,
+            "mean_removed_rmse_m": 5.139938664542717,
+            "relative_velocity_rmse_m_s": 1.834393401051752,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 74,
+            "relative_rmse_m": 10.55306099282091,
+            "mean_delta_map_xy_m": [
+              8.905043109989625,
+              2.097807060429826
+            ],
+            "bias_norm_m": 9.14880250380141,
+            "mean_removed_rmse_m": 5.259896297897449,
+            "relative_velocity_rmse_m_s": 0.8739827361350683,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 74,
+            "relative_rmse_m": 10.31010489696808,
+            "mean_delta_map_xy_m": [
+              8.901778062362197,
+              2.087017373234416
+            ],
+            "bias_norm_m": 9.143155592449205,
+            "mean_removed_rmse_m": 4.764553368234006,
+            "relative_velocity_rmse_m_s": 0.5618534397100028,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      },
+      "browser_95_assumption": {
+        "accepted": 74,
+        "history": 74,
+        "metrics": {
+          "raw": {
+            "n": 74,
+            "relative_rmse_m": 10.552355616858675,
+            "mean_delta_map_xy_m": [
+              8.96682491884182,
+              2.128212974357859
+            ],
+            "bias_norm_m": 9.215923154485813,
+            "mean_removed_rmse_m": 5.139938664542717,
+            "relative_velocity_rmse_m_s": 1.834393401051752,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 74,
+            "relative_rmse_m": 10.519332147561412,
+            "mean_delta_map_xy_m": [
+              8.905867728271312,
+              2.1372058582400135
+            ],
+            "bias_norm_m": 9.158718735388694,
+            "mean_removed_rmse_m": 5.174381118236181,
+            "relative_velocity_rmse_m_s": 0.9592618738882573,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 74,
+            "relative_rmse_m": 10.379568947384655,
+            "mean_delta_map_xy_m": [
+              8.90616761578933,
+              2.1084074713159953
+            ],
+            "bias_norm_m": 9.152333236155453,
+            "mean_removed_rmse_m": 4.895941979627204,
+            "relative_velocity_rmse_m_s": 0.6505736997082456,
+            "velocity_intervals": 63,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      }
+    },
+    "floor2": {
+      "unspecified_radius": {
+        "accepted": 329,
+        "history": 332,
+        "metrics": {
+          "raw": {
+            "n": 332,
+            "relative_rmse_m": 27.006471961955597,
+            "mean_delta_map_xy_m": [
+              10.436485383931,
+              -6.869993174860388
+            ],
+            "bias_norm_m": 12.494680203656024,
+            "mean_removed_rmse_m": 23.94227421195114,
+            "relative_velocity_rmse_m_s": 6.998818435197746,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 332,
+            "relative_rmse_m": 27.380089578848114,
+            "mean_delta_map_xy_m": [
+              10.883172544344918,
+              -6.399673003247614
+            ],
+            "bias_norm_m": 12.625341943031854,
+            "mean_removed_rmse_m": 24.29547377943612,
+            "relative_velocity_rmse_m_s": 3.6830847890248184,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 332,
+            "relative_rmse_m": 26.46753134665509,
+            "mean_delta_map_xy_m": [
+              10.7168320716186,
+              -6.562640424488214
+            ],
+            "bias_norm_m": 12.566572284931155,
+            "mean_removed_rmse_m": 23.294022336079493,
+            "relative_velocity_rmse_m_s": 1.6041235544925327,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      },
+      "browser_95_assumption": {
+        "accepted": 328,
+        "history": 332,
+        "metrics": {
+          "raw": {
+            "n": 332,
+            "relative_rmse_m": 27.006471961955597,
+            "mean_delta_map_xy_m": [
+              10.436485383931,
+              -6.869993174860388
+            ],
+            "bias_norm_m": 12.494680203656024,
+            "mean_removed_rmse_m": 23.94227421195114,
+            "relative_velocity_rmse_m_s": 6.998818435197746,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 332,
+            "relative_rmse_m": 27.31437928376502,
+            "mean_delta_map_xy_m": [
+              10.93824586683114,
+              -6.327991942394427
+            ],
+            "bias_norm_m": 12.636799621195921,
+            "mean_removed_rmse_m": 24.21542093359341,
+            "relative_velocity_rmse_m_s": 3.7679281052478326,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 332,
+            "relative_rmse_m": 26.6398539698928,
+            "mean_delta_map_xy_m": [
+              10.735643179297226,
+              -6.5237547353536485
+            ],
+            "bias_norm_m": 12.56238075844862,
+            "mean_removed_rmse_m": 23.491879644187105,
+            "relative_velocity_rmse_m_s": 2.0674628992254926,
+            "velocity_intervals": 139,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      }
+    },
+    "bridge_12_sub": {
+      "unspecified_radius": {
+        "accepted": 60,
+        "history": 61,
+        "metrics": {
+          "raw": {
+            "n": 61,
+            "relative_rmse_m": 33.690876684826755,
+            "mean_delta_map_xy_m": [
+              9.56537307134508,
+              -19.86026335727329
+            ],
+            "bias_norm_m": 22.04373885288668,
+            "mean_removed_rmse_m": 25.478397696439572,
+            "relative_velocity_rmse_m_s": 16.63675880325958,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 61,
+            "relative_rmse_m": 33.6116490158525,
+            "mean_delta_map_xy_m": [
+              8.717583011321128,
+              -20.795769791623226
+            ],
+            "bias_norm_m": 22.549064166511737,
+            "mean_removed_rmse_m": 24.92554221635698,
+            "relative_velocity_rmse_m_s": 13.12034287279617,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 61,
+            "relative_rmse_m": 32.17205779345655,
+            "mean_delta_map_xy_m": [
+              9.19093010472637,
+              -20.1192712463069
+            ],
+            "bias_norm_m": 22.119183340992432,
+            "mean_removed_rmse_m": 23.36199972162211,
+            "relative_velocity_rmse_m_s": 2.2155769784803097,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      },
+      "browser_95_assumption": {
+        "accepted": 60,
+        "history": 61,
+        "metrics": {
+          "raw": {
+            "n": 61,
+            "relative_rmse_m": 33.690876684826755,
+            "mean_delta_map_xy_m": [
+              9.56537307134508,
+              -19.86026335727329
+            ],
+            "bias_norm_m": 22.04373885288668,
+            "mean_removed_rmse_m": 25.478397696439572,
+            "relative_velocity_rmse_m_s": 16.63675880325958,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "kalman": {
+            "n": 61,
+            "relative_rmse_m": 33.579830952794666,
+            "mean_delta_map_xy_m": [
+              8.700879509051873,
+              -20.817151195572507
+            ],
+            "bias_norm_m": 22.56233782502081,
+            "mean_removed_rmse_m": 24.870584204797073,
+            "relative_velocity_rmse_m_s": 12.69367531393303,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          },
+          "rts": {
+            "n": 61,
+            "relative_rmse_m": 32.540422709213416,
+            "mean_delta_map_xy_m": [
+              9.15445655181827,
+              -20.160314143739136
+            ],
+            "bias_norm_m": 22.1414168727608,
+            "mean_removed_rmse_m": 23.846105949628658,
+            "relative_velocity_rmse_m_s": 2.926931507380766,
+            "velocity_intervals": 31,
+            "bias_subtraction_used_for_diagnostics_only": true
+          }
+        }
+      }
+    }
+  }
+}

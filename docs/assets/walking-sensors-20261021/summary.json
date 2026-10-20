@@ -1,0 +1,108 @@
+{
+  "baseline_commit": "2197ceca91d97e8890d5354482c82b5747fcfc9c",
+  "baseline_source_sha256": "3bf11480d07090ac87d1793c1649f36efc61dcaa224a4b3fcd76d64985d39903",
+  "revised_source_hashes": {
+    "walking-sensors.js": "5a3182d36e561b0c4bdf539ed7e88620d9be434ee36ae9a1f0f0c373c4b7020c",
+    "indoor-position.js": "8650a75f4e8898e6c1dd31815ab2a33288b01d60cb917a03c0fd4a634ab55a63",
+    "location-controller.js": "0920748dfa148f793d5e287f21941f02dc5117d1671024016c87c4be9c178c39"
+  },
+  "source_recording_sha256": "26e85c7bfb8cbbf7986b83d67b3aa249b7332b8224648cd1f6195bb4381f525e",
+  "registration_offset_en_m": [
+    2,
+    -2
+  ],
+  "protected_files_sha256": {
+    "web/public/data/map.json": "de8048d505d8e81b897cbb7219263edbb07a79b0a909f944983df7ed2e680dda",
+    "web/public/data/navigation.json": "9f45d646ab8aa6e20699b0f062e2a4a03c2ae10ee07581010658ddebd3cf0494",
+    "web/public/data/catalog.json": "3b5c345333610be02551ce9e3e97dc736c95274f4234d00a450ec1f09e752067",
+    "web/public/geo-frame.js": "010edc145a86e0af91d9b9a298e80967bab97dd7a84caf0f1b8737c1c08ee8c6"
+  },
+  "pdr_difference_when_global_offset_removed_m": 0,
+  "photo_matching_accepted_count": 0,
+  "caveats": [
+    "Native log replay, not Safari acquisition. Relative attitude reconstructed from saved NWU quaternion with arbitrary yaw origin.",
+    "Entry confirmation at 30.617s and 2F confirmation at 70.295s are replay assumptions, not observed user clicks.",
+    "Confirmed-entry run assumes the user points into the doorway during initial alignment. No requested route or destination supplies motion.",
+    "No independent step count, measured path length or surveyed positions; no personal stride coefficient is fitted.",
+    "Source photo candidates failed strict correspondence gates. They do not supply calibration positions."
+  ],
+  "sensitivity": [
+    {
+      "implementation": "baseline",
+      "runs": [
+        {
+          "input_hz": "native",
+          "samples": 11230,
+          "count": 146,
+          "assumed_distance_m": 115.15093152096904
+        },
+        {
+          "input_hz": 60,
+          "samples": 6717,
+          "count": 160,
+          "assumed_distance_m": 125.67695735057251
+        },
+        {
+          "input_hz": 50,
+          "samples": 5598,
+          "count": 162,
+          "assumed_distance_m": 127.00506614380305
+        },
+        {
+          "input_hz": 30,
+          "samples": 3359,
+          "count": 164,
+          "assumed_distance_m": 128.2054520776135
+        }
+      ]
+    },
+    {
+      "implementation": "revised",
+      "runs": [
+        {
+          "input_hz": "native",
+          "samples": 11230,
+          "count": 174,
+          "assumed_distance_m": 136.59770707490168
+        },
+        {
+          "input_hz": 60,
+          "samples": 6717,
+          "count": 174,
+          "assumed_distance_m": 136.48770237338763
+        },
+        {
+          "input_hz": 50,
+          "samples": 5598,
+          "count": 174,
+          "assumed_distance_m": 136.44141350926063
+        },
+        {
+          "input_hz": 30,
+          "samples": 3359,
+          "count": 173,
+          "assumed_distance_m": 135.54450504696678
+        }
+      ]
+    }
+  ],
+  "replay_counts": [
+    {
+      "kind": "baseline",
+      "position_updates": 40,
+      "wall_rejections": 29
+    },
+    {
+      "kind": "step_only",
+      "position_updates": 25,
+      "wall_rejections": 70
+    },
+    {
+      "kind": "confirmed_entry",
+      "position_updates": 34,
+      "wall_rejections": 61
+    }
+  ],
+  "top_projection_under_0_3_fraction": 0.6785427986104926,
+  "absolute_accuracy_evaluated": false
+}

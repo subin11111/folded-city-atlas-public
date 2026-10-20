@@ -1,0 +1,356 @@
+{
+  "scope": "Read-only recording-time DB settings and stored results; not a rerun of ARKit or original loop detector",
+  "databases": [
+    {
+      "database": "261016-234854-outside.db",
+      "sha256": "e5a5c517bbddf2ec5b6877bbf38c67e0b88baeda0c4be57b784d60c05949dc91",
+      "schema_version": "0.22.0",
+      "snapshots": [
+        {
+          "stored_at": "2026-10-16 14:42:29",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        },
+        {
+          "stored_at": "2026-10-16 14:49:02",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        }
+      ],
+      "link_rows_by_type": {
+        "0": 704,
+        "1": 55,
+        "2": 14,
+        "7": 354,
+        "9": 354
+      },
+      "note": "Link row counts include directed reverse copies and unary links."
+    },
+    {
+      "database": "261017-000622-1f.db",
+      "sha256": "1d39c5d4a2983c1ade05947bc205074d40cb1f77f5aca63df5519110bf762a8c",
+      "schema_version": "0.22.0",
+      "snapshots": [
+        {
+          "stored_at": "2026-10-16 14:49:58",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        },
+        {
+          "stored_at": "2026-10-16 15:07:00",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        }
+      ],
+      "link_rows_by_type": {
+        "0": 1896,
+        "1": 82,
+        "2": 44,
+        "7": 956,
+        "9": 958
+      },
+      "note": "Link row counts include directed reverse copies and unary links."
+    },
+    {
+      "database": "261017-011331-bridgeout1f.db",
+      "sha256": "bb51298a6bf29e16eb8e8f58f8bf5cd0694f8217ff61152b7e78d78acd8a306b",
+      "schema_version": "0.22.0",
+      "snapshots": [
+        {
+          "stored_at": "2026-10-16 16:10:57",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        },
+        {
+          "stored_at": "2026-10-16 16:13:43",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        }
+      ],
+      "link_rows_by_type": {
+        "0": 266,
+        "1": 2,
+        "7": 130,
+        "9": 134
+      },
+      "note": "Link row counts include directed reverse copies and unary links."
+    },
+    {
+      "database": "261017-013501-2f.db",
+      "sha256": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+      "schema_version": "0.22.0",
+      "snapshots": [
+        {
+          "stored_at": "2026-10-16 16:14:12",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        },
+        {
+          "stored_at": "2026-10-16 16:35:10",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        }
+      ],
+      "link_rows_by_type": {
+        "0": 2428,
+        "1": 87,
+        "2": 42,
+        "7": 1216,
+        "9": 1218
+      },
+      "note": "Link row counts include directed reverse copies and unary links."
+    },
+    {
+      "database": "261017-013904-bridg12_2.db",
+      "sha256": "d72fab3480c7cba541d0c29084b49c93e021f70760b860334807a4d0bde781f5",
+      "schema_version": "0.22.0",
+      "snapshots": [
+        {
+          "stored_at": "2026-10-16 16:35:26",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        },
+        {
+          "stored_at": "2026-10-16 16:39:25",
+          "parameters": {
+            "Kp/DetectorStrategy": "6",
+            "Kp/MaxFeatures": "400",
+            "Kp/NNStrategy": "1",
+            "Kp/NndrRatio": "0.8",
+            "Kp/TfIdfLikelihoodUsed": "true",
+            "Rtabmap/LoopThr": "0.11",
+            "Reg/Strategy": "0",
+            "Vis/FeatureType": "6",
+            "Vis/EstimationType": "1",
+            "Vis/PnPFlags": "0",
+            "Vis/PnPReprojError": "2",
+            "Vis/Iterations": "300",
+            "Vis/MinInliers": "25",
+            "Vis/BundleAdjustment": "1",
+            "Optimizer/Strategy": "2",
+            "Optimizer/Iterations": "10",
+            "GTSAM/Optimizer": "1",
+            "GTSAM/Incremental": "false"
+          }
+        }
+      ],
+      "link_rows_by_type": {
+        "0": 420,
+        "1": 4,
+        "7": 207,
+        "9": 211
+      },
+      "note": "Link row counts include directed reverse copies and unary links."
+    }
+  ],
+  "sources": {
+    "ios_odometry": "https://github.com/introlab/rtabmap/discussions/1155",
+    "parameter_definitions": "https://github.com/introlab/rtabmap/blob/master/corelib/include/rtabmap/core/Parameters.h",
+    "visual_registration": "https://github.com/introlab/rtabmap/blob/master/corelib/src/RegistrationVis.cpp"
+  },
+  "floor2_example": {
+    "node_ids": [
+      656,
+      1055
+    ],
+    "stored_features": {
+      "656": 377,
+      "1055": 383
+    },
+    "shared_dictionary_word_ids": 16,
+    "shared_words_are_not_original_pnp_inlier_count": true,
+    "stored_global_loop_656_1055": true,
+    "common_poses": 1215,
+    "unique_loop_pairs": 66,
+    "trajectory_alignment": "Rigid alignment of first common pose only; no best-fit alignment",
+    "alignment_4x4": [
+      [
+        0.9999968285780215,
+        0.0023917795393402015,
+        -0.0007465654792156747,
+        -0.07534627341898104
+      ],
+      [
+        -0.0023918164924217823,
+        0.9999971813767264,
+        6.437054036627559e-05,
+        0.08795128435568093
+      ],
+      [
+        0.0007466282807840574,
+        -6.25588392113155e-05,
+        0.9999997290181527,
+        -0.7377481955581401
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "not_ground_truth": "This compares stored estimates, not surveyed positional accuracy."
+  }
+}

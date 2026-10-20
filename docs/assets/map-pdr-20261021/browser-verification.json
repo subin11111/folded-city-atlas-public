@@ -1,0 +1,2353 @@
+{
+  "base": "http://127.0.0.1:8791",
+  "capture_type": "Native sensor replay rendered in actual web map; not Safari field walking",
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:8791/api/route?start=prime_hall&end=classical_music&mode=walk&policy=shortest",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8791/api/route?x=-16.64&y=-9.76&level=2&end=classical_music&policy=shortest",
+      "status": 200
+    }
+  ],
+  "route": {
+    "found": true,
+    "distance_m": 23,
+    "policy": "shortest"
+  },
+  "scene": {
+    "mode": "indoor",
+    "loaded": 5,
+    "failed": 0,
+    "buildings": 48,
+    "registrationScale": 1,
+    "terrain": {
+      "displayOnly": true,
+      "maxSlope": 0.35,
+      "rawMaxStep": 62,
+      "displayMaxStep": 1.7500000000000036,
+      "changedVertices": 3063,
+      "passes": 2
+    },
+    "worldMap": {
+      "ready": true,
+      "coverage": "global",
+      "provider": "OpenFreeMap",
+      "zoom": 20.127072361163556,
+      "center": [
+        127.07800475882732,
+        37.54184300277832
+      ],
+      "minZoom": 1,
+      "maxBounds": null,
+      "campusDraws": 161,
+      "errors": 0,
+      "sceneMode": "indoor",
+      "displayZOffset": 1.6300000000000001,
+      "verticalDatum": "display only; first floor aligned to flat basemap in indoor mode",
+      "custom3DCoverage": "konkuk-campus",
+      "outsideBuildingExtrusions": 0
+    },
+    "locationTracks": [],
+    "appearances": [
+      {
+        "id": "way/369210727",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582526",
+        "style": "library-granite"
+      },
+      {
+        "id": "relation/16467731",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210724",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210737",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367253036",
+        "style": "student-brick-accent"
+      },
+      {
+        "id": "relation/16467730",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "relation/16467729",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210735",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210747",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1226351422",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210749",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/175320273",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625240",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210741",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210751",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/471670359",
+        "style": "new-engineering-glass"
+      },
+      {
+        "id": "way/367251119",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/175320274",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/468985595",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582520",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1229028251",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625239",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210721",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582518",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210734",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210739",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625236",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582519",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367553845",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/572774537",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210730",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/637160331",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1214667540",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/372481901",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582522",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625235",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/551625238",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210742",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367253035",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1229632375",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367582523",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210750",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210726",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/572774580",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/367252344",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/369210729",
+        "style": "unverified-neutral"
+      },
+      {
+        "id": "way/1117757877",
+        "style": "unverified-neutral"
+      }
+    ]
+  },
+  "dynamicRoute": {
+    "status": 200,
+    "data": {
+      "found": true,
+      "mode": "spatial",
+      "start": "현재 추정 위치",
+      "end": "고전음악감상실",
+      "distance_m": 20.9,
+      "graph_distance_m": 20.914112549695414,
+      "node_count": 167,
+      "expanded_cells": 2995,
+      "review_connectors": 0,
+      "field_verified": false,
+      "recording_trajectory_used": false,
+      "algorithm": "A*",
+      "grid_resolution_m": 0.12,
+      "policy": "shortest",
+      "alternatives": [
+        {
+          "policy": "shortest",
+          "label": "최단 도보 · 계단 포함",
+          "found": true,
+          "distance_m": 20.9,
+          "portals": [],
+          "operation_verified": null
+        },
+        {
+          "policy": "main_stairs",
+          "label": "메인 계단 이용",
+          "found": true,
+          "distance_m": 20.9,
+          "portals": [],
+          "operation_verified": null
+        },
+        {
+          "policy": "sub_stairs",
+          "label": "오른쪽 서브계단 이용",
+          "found": true,
+          "distance_m": 20.9,
+          "portals": [],
+          "operation_verified": null
+        },
+        {
+          "policy": "elevator",
+          "label": "계단 제외 · 엘리베이터 후보",
+          "found": true,
+          "distance_m": 20.9,
+          "portals": [],
+          "operation_verified": null
+        }
+      ],
+      "elevator_used": false,
+      "route": [
+        {
+          "id": "nav:start",
+          "position": [
+            -16.64,
+            -9.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:178:178",
+          "position": [
+            -16.64,
+            -9.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:179:178",
+          "position": [
+            -16.64,
+            -9.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:180:178",
+          "position": [
+            -16.64,
+            -9.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:181:178",
+          "position": [
+            -16.64,
+            -9.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:182:178",
+          "position": [
+            -16.64,
+            -9.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:183:178",
+          "position": [
+            -16.64,
+            -9.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:184:178",
+          "position": [
+            -16.64,
+            -8.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:185:177",
+          "position": [
+            -16.76,
+            -8.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:186:176",
+          "position": [
+            -16.88,
+            -8.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:187:175",
+          "position": [
+            -17,
+            -8.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:188:174",
+          "position": [
+            -17.12,
+            -8.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:189:174",
+          "position": [
+            -17.12,
+            -8.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:190:174",
+          "position": [
+            -17.12,
+            -8.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:191:174",
+          "position": [
+            -17.12,
+            -8.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:192:174",
+          "position": [
+            -17.12,
+            -7.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:193:174",
+          "position": [
+            -17.12,
+            -7.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:194:174",
+          "position": [
+            -17.12,
+            -7.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:195:174",
+          "position": [
+            -17.12,
+            -7.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:196:174",
+          "position": [
+            -17.12,
+            -7.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:197:174",
+          "position": [
+            -17.12,
+            -7.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:198:174",
+          "position": [
+            -17.12,
+            -7.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:199:174",
+          "position": [
+            -17.12,
+            -7.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:200:174",
+          "position": [
+            -17.12,
+            -7,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:201:174",
+          "position": [
+            -17.12,
+            -6.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:202:174",
+          "position": [
+            -17.12,
+            -6.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:203:174",
+          "position": [
+            -17.12,
+            -6.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:204:174",
+          "position": [
+            -17.12,
+            -6.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:205:174",
+          "position": [
+            -17.12,
+            -6.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:206:174",
+          "position": [
+            -17.12,
+            -6.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:207:174",
+          "position": [
+            -17.12,
+            -6.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:208:174",
+          "position": [
+            -17.12,
+            -6.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:209:174",
+          "position": [
+            -17.12,
+            -5.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:210:174",
+          "position": [
+            -17.12,
+            -5.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:211:174",
+          "position": [
+            -17.12,
+            -5.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:212:174",
+          "position": [
+            -17.12,
+            -5.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:213:174",
+          "position": [
+            -17.12,
+            -5.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:214:174",
+          "position": [
+            -17.12,
+            -5.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:215:174",
+          "position": [
+            -17.12,
+            -5.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:216:174",
+          "position": [
+            -17.12,
+            -5.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:217:174",
+          "position": [
+            -17.12,
+            -4.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:218:174",
+          "position": [
+            -17.12,
+            -4.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:219:174",
+          "position": [
+            -17.12,
+            -4.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:220:174",
+          "position": [
+            -17.12,
+            -4.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:221:174",
+          "position": [
+            -17.12,
+            -4.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:222:174",
+          "position": [
+            -17.12,
+            -4.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:223:174",
+          "position": [
+            -17.12,
+            -4.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:224:174",
+          "position": [
+            -17.12,
+            -4.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:225:174",
+          "position": [
+            -17.12,
+            -4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:226:174",
+          "position": [
+            -17.12,
+            -3.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:227:174",
+          "position": [
+            -17.12,
+            -3.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:228:174",
+          "position": [
+            -17.12,
+            -3.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:229:174",
+          "position": [
+            -17.12,
+            -3.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:230:174",
+          "position": [
+            -17.12,
+            -3.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:231:174",
+          "position": [
+            -17.12,
+            -3.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:232:174",
+          "position": [
+            -17.12,
+            -3.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:233:174",
+          "position": [
+            -17.12,
+            -3.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:234:174",
+          "position": [
+            -17.12,
+            -2.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:235:174",
+          "position": [
+            -17.12,
+            -2.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:236:174",
+          "position": [
+            -17.12,
+            -2.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:237:174",
+          "position": [
+            -17.12,
+            -2.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:238:174",
+          "position": [
+            -17.12,
+            -2.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:239:174",
+          "position": [
+            -17.12,
+            -2.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:240:174",
+          "position": [
+            -17.12,
+            -2.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:241:174",
+          "position": [
+            -17.12,
+            -2.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:242:174",
+          "position": [
+            -17.12,
+            -1.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:243:174",
+          "position": [
+            -17.12,
+            -1.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:244:174",
+          "position": [
+            -17.12,
+            -1.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:245:174",
+          "position": [
+            -17.12,
+            -1.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:246:174",
+          "position": [
+            -17.12,
+            -1.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:247:174",
+          "position": [
+            -17.12,
+            -1.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:248:174",
+          "position": [
+            -17.12,
+            -1.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:249:174",
+          "position": [
+            -17.12,
+            -1.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:250:174",
+          "position": [
+            -17.12,
+            -1,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:251:174",
+          "position": [
+            -17.12,
+            -0.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:252:174",
+          "position": [
+            -17.12,
+            -0.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:253:174",
+          "position": [
+            -17.12,
+            -0.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:254:174",
+          "position": [
+            -17.12,
+            -0.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:255:174",
+          "position": [
+            -17.12,
+            -0.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:256:174",
+          "position": [
+            -17.12,
+            -0.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:257:174",
+          "position": [
+            -17.12,
+            -0.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:258:174",
+          "position": [
+            -17.12,
+            -0.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:259:174",
+          "position": [
+            -17.12,
+            0.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:260:174",
+          "position": [
+            -17.12,
+            0.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:261:174",
+          "position": [
+            -17.12,
+            0.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:262:174",
+          "position": [
+            -17.12,
+            0.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:263:174",
+          "position": [
+            -17.12,
+            0.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:264:174",
+          "position": [
+            -17.12,
+            0.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:265:174",
+          "position": [
+            -17.12,
+            0.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:266:174",
+          "position": [
+            -17.12,
+            0.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:267:174",
+          "position": [
+            -17.12,
+            1.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:268:174",
+          "position": [
+            -17.12,
+            1.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:269:174",
+          "position": [
+            -17.12,
+            1.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:270:174",
+          "position": [
+            -17.12,
+            1.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:271:174",
+          "position": [
+            -17.12,
+            1.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:272:174",
+          "position": [
+            -17.12,
+            1.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:273:174",
+          "position": [
+            -17.12,
+            1.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:274:174",
+          "position": [
+            -17.12,
+            1.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:275:174",
+          "position": [
+            -17.12,
+            2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:276:174",
+          "position": [
+            -17.12,
+            2.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:277:174",
+          "position": [
+            -17.12,
+            2.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:278:174",
+          "position": [
+            -17.12,
+            2.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:279:174",
+          "position": [
+            -17.12,
+            2.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:280:174",
+          "position": [
+            -17.12,
+            2.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:281:174",
+          "position": [
+            -17.12,
+            2.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:282:174",
+          "position": [
+            -17.12,
+            2.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:283:174",
+          "position": [
+            -17.12,
+            2.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:284:174",
+          "position": [
+            -17.12,
+            3.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:285:174",
+          "position": [
+            -17.12,
+            3.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:286:174",
+          "position": [
+            -17.12,
+            3.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:287:174",
+          "position": [
+            -17.12,
+            3.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:288:174",
+          "position": [
+            -17.12,
+            3.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:289:174",
+          "position": [
+            -17.12,
+            3.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:290:174",
+          "position": [
+            -17.12,
+            3.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:291:174",
+          "position": [
+            -17.12,
+            3.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:292:174",
+          "position": [
+            -17.12,
+            4.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:293:174",
+          "position": [
+            -17.12,
+            4.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:294:174",
+          "position": [
+            -17.12,
+            4.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:295:174",
+          "position": [
+            -17.12,
+            4.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:296:174",
+          "position": [
+            -17.12,
+            4.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:297:175",
+          "position": [
+            -17,
+            4.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:298:175",
+          "position": [
+            -17,
+            4.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:299:175",
+          "position": [
+            -17,
+            4.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:300:176",
+          "position": [
+            -16.88,
+            5,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:301:177",
+          "position": [
+            -16.76,
+            5.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:302:178",
+          "position": [
+            -16.64,
+            5.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:303:179",
+          "position": [
+            -16.52,
+            5.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:304:180",
+          "position": [
+            -16.4,
+            5.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:305:181",
+          "position": [
+            -16.28,
+            5.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:306:181",
+          "position": [
+            -16.28,
+            5.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:307:181",
+          "position": [
+            -16.28,
+            5.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:308:181",
+          "position": [
+            -16.28,
+            5.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:309:181",
+          "position": [
+            -16.28,
+            6.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:310:182",
+          "position": [
+            -16.16,
+            6.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:311:182",
+          "position": [
+            -16.16,
+            6.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:312:182",
+          "position": [
+            -16.16,
+            6.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:313:182",
+          "position": [
+            -16.16,
+            6.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:314:182",
+          "position": [
+            -16.16,
+            6.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:315:183",
+          "position": [
+            -16.04,
+            6.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:316:183",
+          "position": [
+            -16.04,
+            6.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:317:183",
+          "position": [
+            -16.04,
+            7.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:318:183",
+          "position": [
+            -16.04,
+            7.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:319:183",
+          "position": [
+            -16.04,
+            7.28,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:320:183",
+          "position": [
+            -16.04,
+            7.4,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:321:183",
+          "position": [
+            -16.04,
+            7.52,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:322:183",
+          "position": [
+            -16.04,
+            7.64,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:323:183",
+          "position": [
+            -16.04,
+            7.76,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:324:183",
+          "position": [
+            -16.04,
+            7.88,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:325:183",
+          "position": [
+            -16.04,
+            8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:326:183",
+          "position": [
+            -16.04,
+            8.12,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:327:183",
+          "position": [
+            -16.04,
+            8.24,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:328:183",
+          "position": [
+            -16.04,
+            8.36,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:329:184",
+          "position": [
+            -15.92,
+            8.48,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:330:184",
+          "position": [
+            -15.92,
+            8.6,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:331:185",
+          "position": [
+            -15.8,
+            8.72,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:332:185",
+          "position": [
+            -15.8,
+            8.84,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:333:185",
+          "position": [
+            -15.8,
+            8.96,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:334:186",
+          "position": [
+            -15.68,
+            9.08,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:335:186",
+          "position": [
+            -15.68,
+            9.2,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:336:187",
+          "position": [
+            -15.56,
+            9.32,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:337:187",
+          "position": [
+            -15.56,
+            9.44,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:338:188",
+          "position": [
+            -15.44,
+            9.56,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:339:188",
+          "position": [
+            -15.44,
+            9.68,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:340:189",
+          "position": [
+            -15.32,
+            9.8,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:341:189",
+          "position": [
+            -15.32,
+            9.92,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:342:190",
+          "position": [
+            -15.2,
+            10.04,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        },
+        {
+          "id": "nav:2:343:190",
+          "position": [
+            -15.2,
+            10.16,
+            2.63
+          ],
+          "level": "2",
+          "session": "navigation",
+          "source_node": null,
+          "kind": "walk"
+        }
+      ],
+      "segments": [
+        {
+          "label": "2층 보행 공간",
+          "kind": "walk",
+          "distance": 20.914112549695428,
+          "start_index": 0,
+          "end_index": 166,
+          "portal_id": null,
+          "photo_node": "floor2:235"
+        }
+      ],
+      "note": "선택한 이동 방식 내 거리 최소 경로입니다. 보행면·문·계단은 현장 검증 전입니다. 엘리베이터는 승강장 사이의 개념적 연결이며 운행·문턱·접근성·대기시간은 확인되지 않았습니다. 최단시간이나 무장애 경로를 보장하지 않습니다."
+    }
+  },
+  "browserModule": {
+    "position": [
+      -16.64,
+      -9.76,
+      2.63
+    ],
+    "level": "2",
+    "yaw": -0.16948803651428718,
+    "steps": 0,
+    "walked": 0,
+    "uncertainty": 1.5,
+    "headingReady": true,
+    "headingAt": 5768.20000000298,
+    "lastMotionAt": 0,
+    "blocked": 0,
+    "method": "map_aided_particle_pdr",
+    "particleCount": 1536,
+    "effectiveParticles": 1536,
+    "estimatedHeadingBiasDegPerSec": 0,
+    "estimatedStrideScale": 1,
+    "lost": false,
+    "rejectedParticles": 0
+  },
+  "selected": {
+    "config": "dense_pf",
+    "seed": 872341,
+    "second": {
+      "steps": 67,
+      "moved": 57,
+      "rejected": 10
+    }
+  }
+}

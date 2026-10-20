@@ -6,6 +6,10 @@
 
 ## 실험 문서
 
+- [지도 보조 PF 180개 조합과 실제 웹의 2층 재생](experiments/2026-10-21-map-particle-pdr.md)
+
+- [비평 반영: 고정 표면 비교와 GNSS 편향 분석](experiments/2026-10-21-critical-review.md)
+
 - [배포 웹과 새 공개 저장소 QR](assets/public-resources-20261021/README.md)
 
 - [실내 표시 고도 기준 정합과 계단 경로 보존](experiments/2026-10-21-display-height-registration.md)

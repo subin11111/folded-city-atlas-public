@@ -1,0 +1,1247 @@
+{
+  "scope": "Existing development-patch consistency, not independent survey accuracy or full RAW/PGO/BA ablation",
+  "sessions": {
+    "outside": {
+      "label": "실외",
+      "candidate": "J01",
+      "candidate_entries": 17,
+      "unique_trajectory_hashes": 15,
+      "matched_patches": 16,
+      "metrics": {
+        "O00": {
+          "n": 16,
+          "median_cm": 14.280180926012626,
+          "p90_cm": 44.25348370867512,
+          "max_cm": 102.77377502108698
+        },
+        "P00": {
+          "n": 16,
+          "median_cm": 14.280180926012626,
+          "p90_cm": 44.25348370867512,
+          "max_cm": 102.77377502108698
+        },
+        "selected": {
+          "n": 16,
+          "median_cm": 7.326763944298789,
+          "p90_cm": 19.737256917106706,
+          "max_cm": 28.955958151193883
+        }
+      },
+      "improved_count": 15,
+      "worsened_count": 1,
+      "patches": [
+        {
+          "session": "outside",
+          "pair": [
+            21,
+            55
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.10514931567211064,
+          "P00": 0.10514931567211064,
+          "selected": 0.09420731141557276
+        },
+        {
+          "session": "outside",
+          "pair": [
+            21,
+            55
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.18377090653679673,
+          "P00": 0.18377090653679673,
+          "selected": 0.1553250107736584
+        },
+        {
+          "session": "outside",
+          "pair": [
+            21,
+            55
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.10164454871820336,
+          "P00": 0.10164454871820336,
+          "selected": 0.07775619961101041
+        },
+        {
+          "session": "outside",
+          "pair": [
+            21,
+            55
+          ],
+          "kind": "wall",
+          "patch_index": 2,
+          "O00": 0.33813062973910557,
+          "P00": 0.33813062973910557,
+          "selected": 0.28955958151193883
+        },
+        {
+          "session": "outside",
+          "pair": [
+            27,
+            236
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.07244764230584025,
+          "P00": 0.07244764230584025,
+          "selected": 0.06877907927496539
+        },
+        {
+          "session": "outside",
+          "pair": [
+            69,
+            323
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.07029188191590452,
+          "P00": 0.07029188191590452,
+          "selected": 0.038734358573683764
+        },
+        {
+          "session": "outside",
+          "pair": [
+            69,
+            323
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 1.0277377502108698,
+          "P00": 1.0277377502108698,
+          "selected": 0.03526247314839526
+        },
+        {
+          "session": "outside",
+          "pair": [
+            95,
+            187
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.10281702857529967,
+          "P00": 0.10281702857529967,
+          "selected": 0.23012794421644378
+        },
+        {
+          "session": "outside",
+          "pair": [
+            113,
+            351
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.2134688006164484,
+          "P00": 0.2134688006164484,
+          "selected": 0.02434313738552095
+        },
+        {
+          "session": "outside",
+          "pair": [
+            113,
+            351
+          ],
+          "kind": "horizontal",
+          "patch_index": 1,
+          "O00": 0.18045430284814187,
+          "P00": 0.18045430284814187,
+          "selected": 0.01608156745986071
+        },
+        {
+          "session": "outside",
+          "pair": [
+            113,
+            351
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.5243596939712845,
+          "P00": 0.5243596939712845,
+          "selected": 0.10215091810912652
+        },
+        {
+          "session": "outside",
+          "pair": [
+            113,
+            351
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.36070998020221795,
+          "P00": 0.36070998020221795,
+          "selected": 0.040167626313162764
+        },
+        {
+          "session": "outside",
+          "pair": [
+            116,
+            148
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.09173637046073016,
+          "P00": 0.09173637046073016,
+          "selected": 0.08440595880254279
+        },
+        {
+          "session": "outside",
+          "pair": [
+            144,
+            268
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.27303637579804035,
+          "P00": 0.27303637579804035,
+          "selected": 0.1646171941256903
+        },
+        {
+          "session": "outside",
+          "pair": [
+            156,
+            191
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.05433704211895504,
+          "P00": 0.05433704211895504,
+          "selected": 0.02640390862387801
+        },
+        {
+          "session": "outside",
+          "pair": [
+            156,
+            191
+          ],
+          "kind": "horizontal",
+          "patch_index": 1,
+          "O00": 0.04697759288270559,
+          "P00": 0.04697759288270559,
+          "selected": 0.03384724324094224
+        }
+      ]
+    },
+    "lobby": {
+      "label": "1층 로비",
+      "candidate": "N05",
+      "candidate_entries": 18,
+      "unique_trajectory_hashes": 16,
+      "matched_patches": 36,
+      "metrics": {
+        "O00": {
+          "n": 36,
+          "median_cm": 3.415088178087659,
+          "p90_cm": 26.808107238782796,
+          "max_cm": 47.73433131972457
+        },
+        "P00": {
+          "n": 36,
+          "median_cm": 3.415088178087659,
+          "p90_cm": 26.808107238782796,
+          "max_cm": 47.73433131972457
+        },
+        "selected": {
+          "n": 36,
+          "median_cm": 4.556410519940668,
+          "p90_cm": 14.22304656688892,
+          "max_cm": 46.64302045140774
+        }
+      },
+      "improved_count": 22,
+      "worsened_count": 14,
+      "patches": [
+        {
+          "session": "lobby",
+          "pair": [
+            82,
+            290
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.47734331319724566,
+          "P00": 0.47734331319724566,
+          "selected": 0.14749489182925668
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            82,
+            515
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.3123967489324738,
+          "P00": 0.3123967489324738,
+          "selected": 0.09146248237033247
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            82,
+            516
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.4043581444112866,
+          "P00": 0.4043581444112866,
+          "selected": 0.1749750279142779
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            120,
+            136
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.04789727716067914,
+          "P00": 0.04789727716067914,
+          "selected": 0.035655048837992274
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            120,
+            136
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.05346667254609126,
+          "P00": 0.05346667254609126,
+          "selected": 0.038857082502663065
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            173,
+            184
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.03038960694174024,
+          "P00": 0.03038960694174024,
+          "selected": 0.07097199696118672
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            173,
+            184
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.021037597490800912,
+          "P00": 0.021037597490800912,
+          "selected": 0.06331698445246223
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            187
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.03206616115685516,
+          "P00": 0.03206616115685516,
+          "selected": 0.027856656896870006
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            187
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.01219723747113879,
+          "P00": 0.01219723747113879,
+          "selected": 0.009458914655827313
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            187
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.012031158914121404,
+          "P00": 0.012031158914121404,
+          "selected": 0.010652059657431753
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            188
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.06382451808756658,
+          "P00": 0.06382451808756658,
+          "selected": 0.05644686755351441
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            188
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.011604892630873786,
+          "P00": 0.011604892630873786,
+          "selected": 0.010130200199247142
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            176,
+            188
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.01328867198706321,
+          "P00": 0.01328867198706321,
+          "selected": 0.013441164642169982
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            289,
+            516
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.03954820217564789,
+          "P00": 0.03954820217564789,
+          "selected": 0.06690236161533916
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            293,
+            518
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.19476554266419685,
+          "P00": 0.19476554266419685,
+          "selected": 0.08247858148933929
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            312,
+            325
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.022592284013169976,
+          "P00": 0.022592284013169976,
+          "selected": 0.014348327699703574
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            312,
+            325
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.047757809242818236,
+          "P00": 0.047757809242818236,
+          "selected": 0.14548265700968982
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            312,
+            326
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.046270510755133554,
+          "P00": 0.046270510755133554,
+          "selected": 0.025856668199977693
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            312,
+            326
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.0217245381329084,
+          "P00": 0.0217245381329084,
+          "selected": 0.12132781173944993
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            312,
+            326
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.014875990242774174,
+          "P00": 0.014875990242774174,
+          "selected": 0.1198198630059962
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            332,
+            357
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.02068561728596853,
+          "P00": 0.02068561728596853,
+          "selected": 0.019003858715866344
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            332,
+            357
+          ],
+          "kind": "horizontal",
+          "patch_index": 1,
+          "O00": 0.015157795459322915,
+          "P00": 0.015157795459322915,
+          "selected": 0.023385797274891727
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            337,
+            350
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.015806170637579678,
+          "P00": 0.015806170637579678,
+          "selected": 0.011424919260290309
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            337,
+            350
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.025052472904831403,
+          "P00": 0.025052472904831403,
+          "selected": 0.03325749772072638
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            337,
+            350
+          ],
+          "kind": "wall",
+          "patch_index": 2,
+          "O00": 0.045359019778273287,
+          "P00": 0.045359019778273287,
+          "selected": 0.05227112789615029
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            415,
+            505
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.031945336266850366,
+          "P00": 0.031945336266850366,
+          "selected": 0.029831868977993684
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            415,
+            505
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.06291873750549554,
+          "P00": 0.06291873750549554,
+          "selected": 0.013205252850872345
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            425,
+            461
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.028077868881894005,
+          "P00": 0.028077868881894005,
+          "selected": 0.02983056310981835
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            445,
+            495
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.05682662404530048,
+          "P00": 0.05682662404530048,
+          "selected": 0.013702677464177415
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            595,
+            650
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.03579346059876023,
+          "P00": 0.03579346059876023,
+          "selected": 0.019827834042295517
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            595,
+            650
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.4619388174886677,
+          "P00": 0.4619388174886677,
+          "selected": 0.08182972867595087
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            595,
+            676
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.08038939056770886,
+          "P00": 0.08038939056770886,
+          "selected": 0.065166443361796
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            647,
+            744
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.2237653958431821,
+          "P00": 0.2237653958431821,
+          "selected": 0.13897827432808857
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            651,
+            676
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.06431278261190236,
+          "P00": 0.06431278261190236,
+          "selected": 0.0662318831458379
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            726,
+            738
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.01647055126396842,
+          "P00": 0.01647055126396842,
+          "selected": 0.46643020451407746
+        },
+        {
+          "session": "lobby",
+          "pair": [
+            726,
+            738
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.03250830296299295,
+          "P00": 0.03250830296299295,
+          "selected": 0.07408875524674
+        }
+      ]
+    },
+    "bridge_out1f": {
+      "label": "실외 연결",
+      "candidate": "H03",
+      "candidate_entries": 17,
+      "unique_trajectory_hashes": 12,
+      "matched_patches": 0,
+      "metrics": {
+        "O00": {
+          "n": 0
+        },
+        "P00": {
+          "n": 0
+        },
+        "selected": {
+          "n": 0
+        }
+      },
+      "improved_count": 0,
+      "worsened_count": 0,
+      "patches": []
+    },
+    "floor2": {
+      "label": "메인 계단·2층",
+      "candidate": "J04",
+      "candidate_entries": 21,
+      "unique_trajectory_hashes": 19,
+      "matched_patches": 38,
+      "metrics": {
+        "O00": {
+          "n": 38,
+          "median_cm": 6.30153609649369,
+          "p90_cm": 26.817131266312217,
+          "max_cm": 100.47343468404557
+        },
+        "P00": {
+          "n": 38,
+          "median_cm": 6.30153609649369,
+          "p90_cm": 26.817131266312217,
+          "max_cm": 100.47343468404557
+        },
+        "selected": {
+          "n": 38,
+          "median_cm": 5.109201070266289,
+          "p90_cm": 14.357055169207689,
+          "max_cm": 54.423920420501084
+        }
+      },
+      "improved_count": 22,
+      "worsened_count": 16,
+      "patches": [
+        {
+          "session": "floor2",
+          "pair": [
+            7,
+            44
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.06429783186601527,
+          "P00": 0.06429783186601527,
+          "selected": 0.09768300981242259
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            7,
+            44
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.08577501982767052,
+          "P00": 0.08577501982767052,
+          "selected": 0.047272487202116104
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            340,
+            355
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.08321431659988959,
+          "P00": 0.08321431659988959,
+          "selected": 0.024800172942073158
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            340,
+            355
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.10713447523770289,
+          "P00": 0.10713447523770289,
+          "selected": 0.0516796458775647
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            432,
+            488
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.0176272660682859,
+          "P00": 0.0176272660682859,
+          "selected": 0.01608662322693377
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            548,
+            981
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 1.0047343468404557,
+          "P00": 1.0047343468404557,
+          "selected": 0.015377465395220804
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            609,
+            1024
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.14155465013231935,
+          "P00": 0.14155465013231935,
+          "selected": 0.07387664206554585
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            620,
+            1025
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.03317182668313184,
+          "P00": 0.03317182668313184,
+          "selected": 0.22591501132106445
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            639,
+            1029
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.005656453794016773,
+          "P00": 0.005656453794016773,
+          "selected": 0.16769298002275512
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            642,
+            1031
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.024027177058821642,
+          "P00": 0.024027177058821642,
+          "selected": 0.18060091178230947
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            642,
+            1031
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.23949634485642474,
+          "P00": 0.23949634485642474,
+          "selected": 0.07488421234055659
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            642,
+            1032
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.039201199544460524,
+          "P00": 0.039201199544460524,
+          "selected": 0.13030939236856207
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            642,
+            1032
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.24916422731543725,
+          "P00": 0.24916422731543725,
+          "selected": 0.06284947076268241
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            643,
+            1033
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.07068602549720059,
+          "P00": 0.07068602549720059,
+          "selected": 0.09219655722382412
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            643,
+            1033
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.25194331400364645,
+          "P00": 0.25194331400364645,
+          "selected": 0.03282260969054951
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            644,
+            1034
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.0346847355529554,
+          "P00": 0.0346847355529554,
+          "selected": 0.12131077783895489
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            644,
+            1034
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.3060366428685647,
+          "P00": 0.3060366428685647,
+          "selected": 0.0956165602581629
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            644,
+            1035
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.3221015178038651,
+          "P00": 0.3221015178038651,
+          "selected": 0.13323236812178602
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            656,
+            1055
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.03814351123981928,
+          "P00": 0.03814351123981928,
+          "selected": 0.046040728570780974
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            656,
+            1055
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.4440018425262466,
+          "P00": 0.4440018425262466,
+          "selected": 0.5442392042050108
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            729,
+            755
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.009210946054872533,
+          "P00": 0.009210946054872533,
+          "selected": 0.008694655664647643
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            729,
+            755
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.03548651626781157,
+          "P00": 0.03548651626781157,
+          "selected": 0.02496783142490395
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            729,
+            755
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.01342387194770871,
+          "P00": 0.01342387194770871,
+          "selected": 0.016506377964811057
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            730,
+            756
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.050021338733486936,
+          "P00": 0.050021338733486936,
+          "selected": 0.05050437552776109
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            730,
+            756
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.057730548532666695,
+          "P00": 0.057730548532666695,
+          "selected": 0.038540621903482786
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            730,
+            756
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.04861888928767438,
+          "P00": 0.04861888928767438,
+          "selected": 0.022340970112054034
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            789,
+            859
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.034860030267466105,
+          "P00": 0.034860030267466105,
+          "selected": 0.06486352619085176
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            790,
+            860
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.014279297945217977,
+          "P00": 0.014279297945217977,
+          "selected": 0.029556590674359787
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            803,
+            882
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.017591017407199924,
+          "P00": 0.017591017407199924,
+          "selected": 0.01888788757739007
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            809,
+            889
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.07185067865892286,
+          "P00": 0.07185067865892286,
+          "selected": 0.022968359108997694
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            809,
+            889
+          ],
+          "kind": "wall",
+          "patch_index": 1,
+          "O00": 0.08887875712822656,
+          "P00": 0.08887875712822656,
+          "selected": 0.06359515801796112
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            828,
+            892
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.06173289006385854,
+          "P00": 0.06173289006385854,
+          "selected": 0.04178206762546961
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            834,
+            897
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.0976465875537652,
+          "P00": 0.0976465875537652,
+          "selected": 0.08849554708777568
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            834,
+            897
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.06684716696079374,
+          "P00": 0.06684716696079374,
+          "selected": 0.02560695965513006
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            841,
+            904
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.05467688141796032,
+          "P00": 0.05467688141796032,
+          "selected": 0.09042719118840274
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            927,
+            948
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.07103123144079411,
+          "P00": 0.07103123144079411,
+          "selected": 0.04466266493659633
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            1081,
+            1131
+          ],
+          "kind": "horizontal",
+          "patch_index": 0,
+          "O00": 0.10530627662949636,
+          "P00": 0.10530627662949636,
+          "selected": 0.11562826170477511
+        },
+        {
+          "session": "floor2",
+          "pair": [
+            1192,
+            1217
+          ],
+          "kind": "wall",
+          "patch_index": 0,
+          "O00": 0.030751476326297423,
+          "P00": 0.030751476326297423,
+          "selected": 0.023292134333164405
+        }
+      ]
+    },
+    "bridge_12_sub": {
+      "label": "서브계단",
+      "candidate": "H03",
+      "candidate_entries": 18,
+      "unique_trajectory_hashes": 16,
+      "matched_patches": 0,
+      "metrics": {
+        "O00": {
+          "n": 0
+        },
+        "P00": {
+          "n": 0
+        },
+        "selected": {
+          "n": 0
+        }
+      },
+      "improved_count": 0,
+      "worsened_count": 0,
+      "patches": []
+    }
+  },
+  "pooled": {
+    "O00": {
+      "n": 90,
+      "median_cm": 5.727858628898359,
+      "p90_cm": 32.370442899738926,
+      "max_cm": 102.77377502108698
+    },
+    "P00": {
+      "n": 90,
+      "median_cm": 5.727858628898359,
+      "p90_cm": 32.370442899738926,
+      "max_cm": 102.77377502108698
+    },
+    "selected": {
+      "n": 90,
+      "median_cm": 5.19753868868575,
+      "p90_cm": 15.625422910886167,
+      "max_cm": 54.423920420501084
+    }
+  },
+  "input_sha256": {
+    "docs\\assets\\session-portfolios\\outside\\summary.json": "c13899f9d3b9c95abd8bc12ad21a0f546bb88964d5d8d99824d4ce6a9812bf51",
+    "docs\\assets\\session-portfolios\\lobby\\summary.json": "b8c9593e1694af8a9e3614c671b696ab54d95446d7789744996b6aab904667f5",
+    "docs\\assets\\session-portfolios\\bridge_out1f\\summary.json": "06b93f9c979515359251eba7273725aaaad7b1d186015d49d488596ffb6833fa",
+    "docs\\assets\\session-portfolios\\floor2\\summary.json": "2e38a9df34f87081c4fbfe6b28f1f8387fcbe3e76b7598dbf43ea7b6185efdf6",
+    "docs\\assets\\session-portfolios\\bridge_12_sub\\summary.json": "3416c13db55068524a6c28ccd94fdd4e770181781a6a80a2ffe4dbdc31b5ed15"
+  }
+}

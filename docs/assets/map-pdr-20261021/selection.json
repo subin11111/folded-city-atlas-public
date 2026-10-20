@@ -1,0 +1,24 @@
+{
+  "run_config": "dense_pf",
+  "frontend": "gyro",
+  "seed": 872341,
+  "seed_selection": "Fixed production default, not best seed",
+  "floorStart": 68.841865234375,
+  "total_combinations": 180,
+  "second": {
+    "steps": 67,
+    "moved": 57,
+    "rejected": 10
+  },
+  "first": {
+    "steps": 30,
+    "moved": 9,
+    "rejected": 21
+  },
+  "guidance_usable_second": 57,
+  "uncertainty_pause_second": 4,
+  "ground_truth_available": false,
+  "same_sensor_different_conditions_not_independent_subjects": true,
+  "retrospective_ancestry_not_used_for_live_location": true,
+  "map_registration_changed": false
+}

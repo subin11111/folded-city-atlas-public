@@ -1,0 +1,49 @@
+{
+  "translation_map_xy_m": [
+    -2.3086979928623776,
+    -1.6339870188447752
+  ],
+  "not_applied_to_operational_map": true,
+  "sessions": {
+    "outside": {
+      "mean_delta_map_xy_m": [
+        2.546302855947891,
+        2.2876744692614794
+      ],
+      "mean_removed_rmse_m": 3.264299988577028,
+      "centered_change_after_removing_preview_offset_max_m": 4.440892098500626e-16
+    },
+    "lobby": {
+      "mean_delta_map_xy_m": [
+        15.57913544326525,
+        1.935696737947265
+      ],
+      "mean_removed_rmse_m": 10.450271686040368,
+      "centered_change_after_removing_preview_offset_max_m": 7.105427357601002e-15
+    },
+    "bridge_out1f": {
+      "mean_delta_map_xy_m": [
+        8.96682491884182,
+        2.128212974357859
+      ],
+      "mean_removed_rmse_m": 5.139938664542716,
+      "centered_change_after_removing_preview_offset_max_m": 3.552713678800501e-15
+    },
+    "floor2": {
+      "mean_delta_map_xy_m": [
+        10.436485383931,
+        -6.869993174860388
+      ],
+      "mean_removed_rmse_m": 23.94227421195114,
+      "centered_change_after_removing_preview_offset_max_m": 2.1316282072803006e-14
+    },
+    "bridge_12_sub": {
+      "mean_delta_map_xy_m": [
+        9.56537307134508,
+        -19.86026335727329
+      ],
+      "mean_removed_rmse_m": 25.478397696439572,
+      "centered_change_after_removing_preview_offset_max_m": 1.0658141036401503e-14
+    }
+  }
+}

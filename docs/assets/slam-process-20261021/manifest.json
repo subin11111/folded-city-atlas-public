@@ -1,0 +1,78 @@
+{
+  "database": "261017-013501-2f.db",
+  "database_sha256": "bd15632bad4bc253461b6ce2dc0c4304d3024785983dddbc968bdb83e48f9c6e",
+  "node": 656,
+  "image_shape_hw": [
+    960,
+    720
+  ],
+  "depth_shape_hw": [
+    256,
+    192
+  ],
+  "depth_range_m": [
+    0.25,
+    4.0
+  ],
+  "minimum_confidence": 50,
+  "valid_pixels": 32617,
+  "intrinsics_at_depth": [
+    [
+      179.12698567708333,
+      0.0,
+      95.81390787760417
+    ],
+    [
+      0.0,
+      179.12698567708333,
+      128.71297200520834
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "optical_to_node": [
+    [
+      -1.1920928955078125e-07,
+      0.0,
+      1.0000001192092896,
+      0.0
+    ],
+    [
+      0.0,
+      -1.000000238418579,
+      0.0,
+      0.0
+    ],
+    [
+      1.0000001192092896,
+      0.0,
+      -1.1920928955078125e-07,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_points_finite": true,
+  "database_unchanged": true,
+  "pointcloud_frame": "optical camera frame; not a global or optimised map",
+  "plot_sample_every": 2,
+  "depth_source": "little-endian float32 reinterpreted from four PNG bytes",
+  "rgb_assignment": "INTER_AREA resize to depth resolution, same valid pixel indices",
+  "case_experiments": {
+    "rgbd_ba": "656/1055 diagnostic, F01 not selected J04",
+    "selected_floor2": "J04 historical pgo6_planes"
+  },
+  "sources": [
+    "src/export_rtabmap_db.py",
+    "src/remeasure_floor2_revisits.py",
+    "src/optimize_geometry_stage.py",
+    "src/build_session_portfolios.py"
+  ]
+}
