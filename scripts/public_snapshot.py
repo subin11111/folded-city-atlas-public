@@ -43,6 +43,10 @@ def validate_content(path, relative):
     if any(pattern.search(data) for pattern in SENSITIVE):
         raise ValueError(f'Publication blocked: sensitive-text pattern in {relative}')
 
+def target_remote(remote, repository):
+    remote=remote.removesuffix('.git')
+    return remote in {f'https://github.com/{repository}',f'git@github.com:{repository}'}
+
 def export_snapshot(source, output, policy, revision='HEAD'):
     source,output=Path(source).resolve(),Path(output).resolve()
     if output.exists():raise ValueError('Export output must be a new directory.')
@@ -82,8 +86,7 @@ def synchronise(snapshot,destination,target_repository,push=False):
     root=Path(git(destination,'rev-parse','--show-toplevel').decode().strip()).resolve()
     if root!=destination:raise ValueError('Destination must be the exact dedicated public checkout.')
     remote=git(destination,'remote','get-url','origin').decode().strip()
-    expected={f'https://github.com/{target_repository}.git',f'git@github.com:{target_repository}.git'}
-    if remote not in expected:raise ValueError('Refusing to modify a checkout with another remote.')
+    if not target_remote(remote,target_repository):raise ValueError('Refusing to modify a checkout with another remote.')
     if git(destination,'status','--porcelain'):raise ValueError('Public checkout must be clean.')
     git(destination,'rm','-r','--ignore-unmatch','--','.')
     for item in snapshot.iterdir():

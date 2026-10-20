@@ -10,6 +10,13 @@ module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 ROOT=Path(__file__).resolve().parents[1]
 
 class PublicationTests(unittest.TestCase):
+    def test_checkout_remote_formats_match_only_the_explicit_public_repository(self):
+        name='subin11111/folded-city-atlas-public'
+        for url in [f'https://github.com/{name}',f'https://github.com/{name}.git',f'git@github.com:{name}',f'git@github.com:{name}.git']:
+            self.assertTrue(module.target_remote(url,name))
+        for url in ['https://github.com/subin11111/folded-city-atlas.git',f'https://github.com/{name}-other.git']:
+            self.assertFalse(module.target_remote(url,name))
+
     def test_only_explicit_source_roots_and_current_files_are_published(self):
         policy=json.loads((ROOT/'.public-export.json').read_text('utf-8'))
         for name in ['README.md','web/public/app.js','docs/experiments/result.md','src/optimise.py']:
