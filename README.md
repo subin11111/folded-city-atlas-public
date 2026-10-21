@@ -1031,9 +1031,9 @@ Windows 이관본에 원래 선택 포즈 CSV가 없어 웹 제작과 동일한 
 | YOLOv8n-seg | 사람과 이동 객체 후보 마스크 추론 | 정적 기둥, 유리와 안내판 오탐으로 최종 마스크에 미적용 |
 | 고정 중심 Gaussian 표현 | gsplat과 Adam으로 RGB, opacity와 scale 학습 | GPU 실험 완료, 최종 표시로 미채택 |
 
-LoFTR와 YOLO는 사전학습 신경망의 추론이며 이 데이터로 가중치를 다시 학습하지 않았다. Gaussian은 장면마다 색과 불투명도, 크기를 피팅한 표현 최적화다. 이 셋을 SIFT, ICP, 칼만 필터와 같은 범주로 묶어 AI 모델 수를 늘리지 않았다. PyTorch, Kornia와 gsplat은 실행 프레임워크 및 라이브러리다.
+LoFTR와 YOLO는 사전학습 신경망의 추론이며 이 데이터로 가중치를 다시 학습하지 않았다. Gaussian은 장면마다 색과 불투명도, 크기를 피팅한 표현 최적화다. 신경망 추론과 장면 표현의 최적화는 SIFT, ICP, 칼만 필터 등의 기하·수치 알고리즘과 구분해 정리했다. PyTorch, Kornia와 gsplat은 실행 프레임워크 및 라이브러리다.
 
-LoFTR의 200회 중 국소 통과 1쌍은 같은 후보군의 SIFT 통과율과 대응시켜 비교한 결과가 아니다. 이를 SIFT보다 성능이 낮다는 결론으로 쓰지 않는다. YOLO의 오탐도 이 촬영본에서의 미채택 근거이며 모델 일반 성능의 비교가 아니다. 이 실험은 본문 기술 결과에 두고, 생성형 AI의 개발 보조 내역과 구분한다.
+LoFTR의 200회 중 국소 통과 1쌍은 같은 후보군의 SIFT 통과율과 대응시켜 비교한 결과가 아니다. 이를 SIFT보다 성능이 낮다는 결론으로 쓰지 않는다. YOLO의 오탐도 이 촬영본에서의 미채택 근거이며 모델 일반 성능의 비교가 아니다.
 
 <details>
 <summary>추론 설정과 Gaussian 학습 결과</summary>
@@ -1078,51 +1078,6 @@ Gaussian 손실은 RGB L1, coverage, clipped-depth L1과 log-scale prior의 합�
 | 경로 | 층별 점유 격자, 8방향 A*, Euclidean heuristic |
 
 초기 폰 로그 처리는 도서관 인근의 별도 예비 실험이다. 이 방법들을 모두 학생회관의 최종 포즈 추정에 적용한 것은 아니다. 단계별 채택 여부는 [연구 이력](README_HISTORY.md)과 원 실험 문서에 구분했다.
-
-### 연구자의 설계와 웹 구현 보조
-
-SLAM과 센서 자료 처리 경험을 바탕으로 수집 조건, 정합 방법과 결과 채택 기준을 정했다. 기존에 구축한 지도·사진의 공통 좌표와 시점 연결, 보행 격자가 연구 결과의 기반이다. 웹 디자인과 JavaScript 프론트엔드는 익숙하지 않은 영역이어서, 원하는 화면과 조작 흐름을 제시하고 생성형 AI의 도움을 받았다.
-
-| 연구자가 구성하고 판단한 것 | AI로 보조한 것 | 확인 방법 |
-| --- | --- | --- |
-| 센서 입력, 좌표계와 정합 방법 | 데이터 형식 연결, 비교 코드와 오류 점검 | 같은 원본 관측과 지표로 전후 대조 |
-| 보행 격자, 연결 조건과 A* 적용 | 정책별 탐색 코드, 모서리 차단과 경로 표시 | Dijkstra 거리 및 문·계단 접근점 대조 |
-| 사진·3D의 위치와 시점 연동 | 기존 연동 결과를 사용하는 웹 패널·전환 버튼 | PRIME HALL의 같은 지점·방향에서 사진과 3D 전환 |
-| 정보의 우선순위와 화면 요구 | Figma 참조 조합, HTML·CSS·JavaScript 구현 | 데스크톱·모바일 실제 화면에서 반복 수정 |
-
-| 활용 AI | 기록에서 대응하는 활용 범위 |
-| --- | --- |
-| GPT-5.6-sol Ultra·Extra high | 초기 개발과 로그·DB 처리 코드 보조. High는 연구자의 추가 사용 내역 |
-| GPT-6.1-sol High | Figma 참조, 웹 화면·사진 패널·모바일 조작과 배포 구성 |
-| GPT-6.1-sol Extra high | 보행 추정 비교 코드, 현재 위치·헤딩 표시와 좌표 대조 |
-| GPT-6 Astra Ultra | 연구자가 추가 사용한 모델로 기재. 개별 요청이 연결된 사례와 구분해 보관 |
-
-모델과 추론 설정은 작업 기록을 기준으로 구분했다. 아래 예시는 개발 중 전달한 요청을 기능별로 정리한 문안이며, 각 결과에는 AI가 낸 코드와 연구자가 확인한 내용을 함께 적었다. [활용 AI / 입력 프롬프트 / 결과 전체 7건](docs/ai_usage.md)
-
-<details>
-<summary>Figma 참조를 지정한 웹 프론트엔드 요청과 결과</summary>
-
-**활용 AI** — OpenAI Codex / GPT-6.1-sol High
-
-| Figma 참조 | 화면 구성에서 지정한 역할 |
-| --- | --- |
-| [Map Navigation Mobile App UI Kit Template](https://www.figma.com/design/66azchpgJfckdmob3l77Lf/Map-Navigation-Mobile-App-UI-Kit-Template--Community-?node-id=0-1) | 지도 중심의 화면 배치 |
-| [Comprehensive Google Maps UI Kit](https://www.figma.com/design/hnxIAXEg8u0ulEOXcQd4LL/Comprehensive-Google-Maps-UI-Kit--Buttons--Search-Bars--and-More--Community-?node-id=1-1496) | 검색창과 지도 조작 버튼 |
-| [Airbnb Home Search and Listing Pages](https://www.figma.com/design/p0kavdlK9etAYer8OS6Uz9/Airbnb---Home--Search--and-Listing-Pages--Community-?node-id=0-1) | 사진이 있는 장소 카드와 목록 |
-
-**입력 프롬프트**
-
-> 위 Figma 참조의 지정 요소를 조합해 기존 /web의 디자인과 JavaScript 프론트엔드를 정리해 줘. 지도 중심의 화면, 검색창·조작 버튼, 사진형 장소 카드를 사용하고 건국대학교의 녹색 계열을 유지해 줘. 기존 지도·장소 데이터와 길찾기 기능, 연구자가 구현해 둔 사진·3D 좌표 및 시점 연결을 그대로 사용해 줘. 장소 검색부터 도착지 선택까지의 정보 순서와 글자 크기·간격을 일관되게 구성해 줘.
-
-**결과**
-
-검색창, 장소 카드, 하단 패널과 지도 조작부의 HTML·CSS·JavaScript가 수정되었다. AI는 기존 장소 ID와 화면 선택 상태를 연결하는 코드를 보조했고, 연구자는 실제 화면에서 정보 우선순위와 조작 순서를 결정했다. 사진·3D 좌표 연동은 기존 구현을 이용했다.
-
-![기존 공통 좌표에 연결한 PRIME HALL 앞의 사진 보기와 3D 보기](docs/assets/visual-story-20261021/photo_and_3d.png)
-
-</details>
-
-LoFTR·YOLO의 영상 입력과 Gaussian의 장면 파라미터 학습은 앞의 기술 실험에, 생성형 AI의 자연어 요청과 코드 보조는 이 절에 구분했다. 연구 그림은 수집 로그, 점군, 계산 결과와 실제 웹 화면으로 만들었다.
 
 <a id="running"></a>
 
