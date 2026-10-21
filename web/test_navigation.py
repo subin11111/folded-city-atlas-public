@@ -73,7 +73,7 @@ class SiteTests(unittest.TestCase):
         self.assertTrue(find_route('entrance','bank',avoid_stairs=True)['found'])
 
     def test_new_destinations_and_policy_minima(self):
-        for goal in ['classical_music','career_office','food_market','cu']:
+        for goal in ['classical_music','career_office','health_room','food_market','cu']:
             a=tuple(self.places['outside_start']['navigation_node']);b=tuple(self.places[goal]['navigation_node'])
             for policy in ['shortest','main_stairs','sub_stairs','elevator']:
                 route=self.nav.search(a,b,policy=policy);reference=self.nav.search(a,b,policy=policy,heuristic=False)
@@ -82,6 +82,19 @@ class SiteTests(unittest.TestCase):
         music=find_route('outside_start','classical_music')
         self.assertIn('sub_stairs',[s['portal_id'] for s in music['segments']])
         self.assertLess(music['distance_m'],find_route('outside_start','classical_music',policy='main_stairs')['distance_m'])
+
+    def test_health_room_is_an_observed_shared_entrance_not_an_invented_interior_door(self):
+        place=self.places['health_room']
+        self.assertEqual(place['level'],'2')
+        self.assertFalse(place['evidence']['individual_room_door_observed'])
+        self.assertTrue(place['evidence']['name_confirmed_by_user'])
+        self.assertIn('공동 출입구',place['arrival_note'])
+        self.assertTrue(self.nav.free(*place['navigation_node']))
+        route=find_route('classical_music','health_room')
+        self.assertTrue(route['found']);self.assertLess(route['distance_m'],2)
+        self.assertTrue(all(p['level']=='2' for p in route['route']))
+        shortest=find_route('outside_start','health_room')
+        self.assertIn('sub_stairs',[s.get('portal_id') for s in shortest['segments']])
 
     def test_elevator_status_and_policy_validation(self):
         elevator=next(p for p in self.nav.data['portals'] if p['kind']=='elevator')

@@ -60,4 +60,17 @@ class WalkTests(unittest.TestCase):
         else:self.fail('엘리베이터 후보 경로가 목적지까지 연결되지 않았습니다.')
         self.assertIn('elevator',kinds);self.assertNotIn('stairs',kinds)
 
+    def test_health_room_arrival_faces_the_sign_once_and_keeps_manual_look(self):
+        start=walk.start('classical_music','health_room')
+        option=next(o for o in start['options'] if o['recommended'])
+        result=walk.transition_for_option(option,'health_room')
+        arrival=result['next'];place=walk.places()['health_room']
+        self.assertTrue(arrival['arrived'])
+        self.assertAlmostEqual(arrival['yaw'],place['arrival_heading'])
+        self.assertIn('공동 출입구',arrival['arrival_note'])
+        self.assertIsNotNone(arrival['photo'])
+        self.assertEqual(arrival['level'],'2')
+        look=walk.snapshot(tuple(place['navigation_node']),0,'health_room',include_photo=False)
+        self.assertEqual(look['yaw'],0)
+
 if __name__=='__main__':unittest.main(verbosity=2)

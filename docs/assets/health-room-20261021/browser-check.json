@@ -1,0 +1,15 @@
+{
+  "base": "http://127.0.0.1:8792/",
+  "routeDistanceM": 43.3,
+  "portals": [
+    "main_door",
+    "sub_stairs"
+  ],
+  "fromMusicDistanceM": 1.6,
+  "arrivalYaw": 1.4557543921356544,
+  "arrivalPhoto": "bridge_12_sub:164",
+  "arrivalNote": "보건실 표지가 있는 공동 출입구 앞까지 안내합니다. 안쪽 개별 호실 경로는 포함하지 않습니다.",
+  "originalNavigationUnchanged": true,
+  "fieldNavigationVerified": false,
+  "errors": []
+}

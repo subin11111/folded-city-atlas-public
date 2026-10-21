@@ -49,7 +49,7 @@ export function createWalkController({navigation,ensureScene,getScene,getGoal,ge
     $('walkLocation').textContent=current.location;$('walkFloor').textContent=`${current.level}F`;
     $('walkGoal').textContent=current.goal;$('walkMiniFloor').textContent=`${current.level}F`;
     $('walkRemaining').textContent=current.arrived?'도착':current.remaining_m===null?'경로 없음':`${current.remaining_m.toFixed(1)} m 남음`;
-    $('walkInstruction').textContent=busy?'선택한 보행 경로를 따라 이동 중…':current.arrived?'목적지 접근 지점에 도착했습니다.':current.policy==='elevator'?'계단 제외 경로 · 엘리베이터 운행·접근성 확인 필요':'이동할 방향을 선택하세요';
+    $('walkInstruction').textContent=busy?'선택한 보행 경로를 따라 이동 중…':current.arrived?(current.arrival_note||'목적지 접근 지점에 도착했습니다.'):current.policy==='elevator'?'계단 제외 경로 · 엘리베이터 운행·접근성 확인 필요':'이동할 방향을 선택하세요';
     $('walkHistory').disabled=busy||lookPending||!history.length;$('walkPhotoButton').disabled=busy||lookPending||!current.photo;
     $('walkPhotoButton').textContent=current.photo?'사진 크게 보기':'이 방향의 사진 없음';
     $('photoNearestDirection').disabled=!current.nearby_view||busy;
@@ -118,6 +118,7 @@ export function createWalkController({navigation,ensureScene,getScene,getGoal,ge
       }});
       if(!backward)history.push({before,option,samples:transition?.samples,reverseSamples:transition?.reverse_samples});
       current=next;
+      if(!backward&&next.arrived)getScene().setWalkYaw(next.yaw);
     }catch(error){onError(error.message);}finally{setBusy(false);if(current&&Math.abs(current.yaw-getScene().getWalkYaw())>.02)onLook();}
   }
   async function goBack(){

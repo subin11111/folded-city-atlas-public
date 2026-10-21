@@ -1,6 +1,6 @@
 const $ = (id) => document.getElementById(id);
 import {loadingScreen} from './loading-screen.js?v=3';
-import {createWalkController} from './walk-controller.js?v=journey-2';
+import {createWalkController} from './walk-controller.js?v=health-room-1';
 import {createBottomSheet} from './sheet-controller.js?v=native-touch-1';
 import {createLocationController} from './location-controller.js?v=mobile-clean-1';
 import {dockMobileControl} from './mobile-layout.js';
@@ -104,12 +104,12 @@ function searchPlaces(query) {
   const q=query.trim().toLowerCase();
   const items=places.filter(p=>!q||[p.name,p.address,...p.aliases].some(s=>s.toLowerCase().includes(q)));
   $('results').replaceChildren();
-  const shown=q?items.slice(0,6):['prime_hall','career_office','classical_music','food_market','cu'].map(id=>placeById[id]).filter(Boolean);
+  const shown=q?items.slice(0,6):['prime_hall','career_office','classical_music','health_room','food_market','cu'].map(id=>placeById[id]).filter(Boolean);
   $('resultsHeading').textContent=q?'검색 결과':'학생회관의 장소';
   for (const p of shown) {
     const b=document.createElement('button');b.className='search-result';
     b.dataset.place=p.id;
-    b.innerHTML=`<img src="/photos_corrected/${escapeHTML(p.photo.split('/').at(-1))}" alt="" loading="lazy" width="72" height="64"><span class="result-copy"><strong>${escapeHTML(p.name)}</strong><small>${p.id==='food_market'?'1층 식당 입구':p.level==='outside'?'실외':p.level+'층'} <span>· 제1학생회관</span></small></span><span class="result-arrow" aria-hidden="true">↗</span>`;
+    b.innerHTML=`<img src="/photos_corrected/${escapeHTML(p.photo.split('/').at(-1))}" alt="" loading="lazy" width="72" height="64"><span class="result-copy"><strong>${escapeHTML(p.name)}</strong><small>${escapeHTML(p.display_location||(p.id==='food_market'?'1층 식당 입구':p.level==='outside'?'실외':p.level+'층'))} <span>· 제1학생회관</span></small></span><span class="result-arrow" aria-hidden="true">↗</span>`;
     b.addEventListener('click',()=>choosePlace(p.id));$('results').appendChild(b);
   }
   const buildings=campus.buildings.filter(b=>campusBuildingMatches(b,q));
@@ -130,7 +130,7 @@ function showJourney(name){
 }
 function updateDestinationPreview(){
   const p=placeById[$('destination').value];
-  $('destinationPreview').innerHTML=`<img src="/photos_corrected/${escapeHTML(p.photo.split('/').at(-1))}" alt="" width="64" height="64"><div><small>도착할 곳</small><strong>${escapeHTML(p.name)}</strong><span>${p.id==='food_market'?'1층 식당 입구까지 안내':p.level==='outside'?'학생회관 실외':`제1학생회관 · ${p.level}층`}</span></div>`;
+  $('destinationPreview').innerHTML=`<img src="/photos_corrected/${escapeHTML(p.photo.split('/').at(-1))}" alt="" width="64" height="64"><div><small>도착할 곳</small><strong>${escapeHTML(p.name)}</strong><span>${escapeHTML(p.display_location||(p.id==='food_market'?'1층 식당 입구까지 안내':p.level==='outside'?'학생회관 실외':`제1학생회관 · ${p.level}층`))}</span></div>`;
 }
 async function choosePlace(id) { $('destination').value=id;$('search').blur();updateDestinationPreview();bottomSheet.set(1);showJourney('route');await findRoute(); }
 let routeRequest=0;
@@ -146,7 +146,7 @@ async function findRoute() {
     const response=await fetch(`/api/route?${query}`); const r=await response.json();if(token!==routeRequest)return;if(!response.ok)throw new Error(r.error);
     state.route=r; $('routePlayer').hidden=!r.found;
     if (!r.found) {location.setIndoorRoute(null);$('routeResult').innerHTML=`<p class="route-note">${escapeHTML(r.message)}</p>`;renderRoute();$('replayLayer').replaceChildren();state.three?.updateRoute([]);return;}
-    const destinationNote=$('destination').value==='food_market'?'식당으로 내려가는 1층 입구까지 안내합니다. 식당 내부는 포함하지 않습니다.':r.elevator_used?'엘리베이터 운행·문턱·접근성을 확인해 주세요. 대기시간 미포함이며 무장애 경로를 보장하지 않습니다.':'실제 개방 여부와 현장 안내를 확인해 주세요.';
+    const destinationNote=[placeById[$('destination').value]?.arrival_note,$('destination').value==='food_market'?'식당으로 내려가는 1층 입구까지 안내합니다. 식당 내부는 포함하지 않습니다.':r.elevator_used?'엘리베이터 운행·문턱·접근성을 확인해 주세요. 대기시간 미포함이며 무장애 경로를 보장하지 않습니다.':'실제 개방 여부와 현장 안내를 확인해 주세요.'].filter(Boolean).map(escapeHTML).join(' ');
     const routeName={shortest:'가장 짧은 도보 경로',main_stairs:'메인 계단 이용',sub_stairs:'오른쪽 서브계단 이용',elevator:'엘리베이터 이용'}[r.policy];
     $('routeResult').innerHTML=`<div class="distance-row"><strong>${r.distance_m.toLocaleString()}<small> m</small></strong><span>${routeName}</span></div><button id="walkRoute" class="route-walk-button">사진으로 경로 미리보기 <span aria-hidden="true">→</span></button><p class="route-note">${destinationNote}</p><details class="route-details"><summary>다른 경로 비교 <span aria-hidden="true">⌄</span></summary><div class="route-alternatives" id="routeAlternatives"></div></details><details class="route-details"><summary>이동 경로 상세 <span aria-hidden="true">⌄</span></summary><div id="steps"></div></details>`;
     for(const alternative of r.alternatives||[]){

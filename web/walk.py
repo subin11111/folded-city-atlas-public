@@ -96,7 +96,7 @@ def snapshot(node,yaw,goal='prime_hall',include_photo=True,policy='shortest'):
     zone='입구 앞' if node in outside_cells() else f'{node[0]}층'
     return {'node':':'.join(map(str,node)),'position':position,'eye_height_m':EYE_HEIGHT,'yaw':yaw,'level':node[0],
         'location':f'제1학생회관 · {zone}','goal':places()[goal]['name'],'remaining_m':round(remaining,1) if remaining is not None else None,
-        'arrived':remaining is not None and remaining<.65,'options':options,
+        'arrived':remaining is not None and remaining<.65,'options':options,'arrival_note':places()[goal].get('arrival_note'),
         'photo':closest_photo(node,yaw) if include_photo else None,
         'nearby_view':photo_library.match(node,yaw,allow_turn=True) if include_photo else None,
         'navigation_source':'spatial floor grid and explicit portals, not recorded camera sequence',
@@ -159,5 +159,9 @@ def transition_for_option(option,goal='prime_hall',policy='shortest'):
         samples.append({'fraction':round(distance/total,5) if total else 1,'position':p,'level':'elevator' if on_elevator else 'stairs' if on_stairs else (sample_node[0] if sample_node else path[-1]['level']),
             'photo':photo,'nearby_view':nearby,'heading':heading,
             'notice':'엘리베이터 연결 시뮬레이션 · 내부 촬영 없음 · 운행 확인 필요' if on_elevator else None})
-    next_view=snapshot(parse_node(option['destination_node']),option['heading'],goal,policy=policy)
+    end_node=parse_node(option['destination_node'])
+    # Face a photographed entrance once on arrival; subsequent manual turns stay free.
+    arrival=places()[goal]
+    next_heading=arrival.get('arrival_heading',option['heading']) if end_node==tuple(arrival['navigation_node']) else option['heading']
+    next_view=snapshot(end_node,next_heading,goal,policy=policy)
     return {'option':option,'next':next_view,'samples':samples,'recording_trajectory_used':False}

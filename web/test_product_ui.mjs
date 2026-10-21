@@ -28,6 +28,8 @@ test('Product menu contains guidance only; research controls are not shipped in 
 test('Real photo cards lead directly from one search into a route',()=>{
   const places=JSON.parse(fs.readFileSync(new URL('./public/data/catalog.json',import.meta.url),'utf8'));
   for(const p of places)assert.ok(fs.existsSync(new URL(`./public/photos_corrected/${p.photo.split('/').at(-1)}`,import.meta.url)),p.id);
+  assert.ok(places.some(p=>p.id==='health_room'&&p.arrival_note.includes('공동 출입구')));
+  assert.ok(app.includes("'classical_music','health_room'"));
   for(const id of ['placesPanel','journeyPanel','changePlace','routeSettings','menuSearch'])assert.ok(html.includes(`id="${id}"`));
   assert.ok(!html.includes('role="tablist"'));
   assert.ok(!app.includes('selectPanel('));

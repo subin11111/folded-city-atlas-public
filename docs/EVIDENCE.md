@@ -6,6 +6,8 @@
 
 ## 실험 문서
 
+- [보건실 위치 대조와 공동 출입구 길안내](assets/health-room-20261021/README.md)
+
 - [모바일 문서 스크롤과 지도 크기](assets/mobile-safari-20261021/README.md)
 
 - [지도 보조 PF 180개 조합과 실제 웹의 2층 재생](experiments/2026-10-21-map-particle-pdr.md)
