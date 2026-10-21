@@ -13,6 +13,7 @@ export function createBottomSheet(){
   const workspace=document.querySelector('.workspace'),sidebar=document.querySelector('.sidebar');
   const grip=document.getElementById('sheetGrip'),scroll=document.getElementById('sheetScroll');
   const mobile=window.matchMedia('(max-width:650px), (max-height:500px) and (pointer:coarse)');
+  const browserNeedsScroll=()=>document.documentElement.dataset.browserScroll==='page';
   let index=1,drag=null,ignoreClick=false;
   const names=['접힘 · 지도 전체 보기','중간 높이','펼침 · 목록 스크롤'];
   const heights=()=>sheetDetents(workspace.getBoundingClientRect().height,parseFloat(getComputedStyle(sidebar).paddingBottom)||0);
@@ -41,6 +42,7 @@ export function createBottomSheet(){
     ignoreClick=moved;set(next);
   }
   grip.addEventListener('pointerdown',event=>{
+    if(event.pointerType==='touch'&&browserNeedsScroll())return;
     if(!mobile.matches)return;event.preventDefault();begin(event.clientY,event.timeStamp);grip.setPointerCapture(event.pointerId);
   });
   grip.addEventListener('pointermove',event=>{if(drag){event.preventDefault();update(event.clientY,event.timeStamp);}});
@@ -58,6 +60,7 @@ export function createBottomSheet(){
   scroll.addEventListener('touchmove',event=>{
     if(!touch||event.touches.length!==1)return;
     const point=event.touches[0],dy=point.clientY-touch.y;
+    if(browserNeedsScroll()&&dy< -8){touch=null;return;}
     if(!touch.claimed&&Math.abs(dy)>8&&Math.abs(dy)>Math.abs(point.clientX-touch.x)){
       if((dy<0&&index<2)||(dy>0&&touch.top<=0&&scroll.scrollTop<=0)){
         touch.claimed=true;begin(touch.y,touch.time);

@@ -16,6 +16,25 @@ export async function createWorldMap(container,{mapData,campus,frame,scene,lift,
   const libre=new LibreMap({container:element,style:'/data/world_style.json',center:[campus.meta.lon,campus.meta.lat],
     zoom:16.1,pitch:50,bearing:-32,minZoom:1,maxZoom:21,maxPitch:70,renderWorldCopies:true,
     attributionControl:false,canvasContextAttributes:{antialias:true},refreshExpiredTiles:true});
+  const root=document.documentElement;
+  let cooperativeTimer=0,lastCooperativeNotice=-Infinity;
+  function releaseCooperative(){
+    cooperativeTimer=0;
+    if(root.dataset.browserScroll==='page')return;
+    // MapLibre 6.15's transient notice still touches its DOM 100 ms later.
+    // Do not remove that DOM until its final notification callback has run.
+    const wait=160-(performance.now()-lastCooperativeNotice);
+    if(wait>0){cooperativeTimer=setTimeout(releaseCooperative,wait);return;}
+    if(libre.cooperativeGestures.isEnabled())libre.cooperativeGestures.disable();
+  }
+  function browserScrollChanged(){
+    clearTimeout(cooperativeTimer);cooperativeTimer=0;
+    if(root.dataset.browserScroll==='page'){
+      if(!libre.cooperativeGestures.isEnabled())libre.cooperativeGestures.enable();
+    }else releaseCooperative();
+  }
+  libre.on('cooperativegestureprevented',()=>{lastCooperativeNotice=performance.now();if(root.dataset.browserScroll!=='page')browserScrollChanged();});
+  root.addEventListener('browser-scroll-change',browserScrollChanged);browserScrollChanged();
   const camera=new THREE.Camera(),model=new THREE.Matrix4().fromArray(registration.matrix);
   let sceneMode='campus',displayZOffset=lift;
   function setSceneMode(next){

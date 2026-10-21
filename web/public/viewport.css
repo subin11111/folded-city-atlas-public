@@ -17,9 +17,9 @@
   html { height:auto;min-height:100%;overflow-x:clip;overflow-y:auto;overscroll-behavior-y:auto; }
   body {
     position:static;width:100%;height:auto;
-    min-height:calc(100vh + 96px);display:block;overflow:visible;overscroll-behavior-y:auto;
+    min-height:calc(100vh + var(--browser-scroll-runway,240px));display:block;overflow:visible;overscroll-behavior-y:auto;
   }
-  @supports(height:100lvh){body{min-height:calc(100lvh + 96px)}}
+  @supports(height:100lvh){body{min-height:calc(100lvh + var(--browser-scroll-runway,240px))}}
   /* Keep native document scroll available to Safari's toolbar animation.
      The sticky frame fills the visible area; the scroll runway is never a blank footer. */
   .app-frame {
@@ -41,6 +41,13 @@
   .sidebar { padding-bottom:var(--safe-bottom);padding-left:var(--safe-left);padding-right:var(--safe-right); }
   .sheet-scroll { padding-bottom:16px; }
   .sidebar,.sheet-scroll { overscroll-behavior-y:auto; }
+  /* A native first swipe must reach the root, including on the list and grip. */
+  html[data-browser-scroll=page] .sheet-scroll { overflow-y:clip; }
+  html[data-browser-scroll=page] .sheet-grip { touch-action:pan-y; }
+  html[data-browser-scroll=page] #threeCanvas .maplibregl-canvas,
+  html[data-browser-scroll=page] #mapSvg { touch-action:pan-y; }
+  .photo-stage { touch-action:pan-y pinch-zoom; }
+  .world-map .maplibregl-cooperative-gesture-screen { display:none; }
   .sheet-grip { flex-shrink:0; }
   .workspace[data-sheet=collapsed] .sheet-grip { height:56px; }
   .walk-topbar { top:calc(10px + var(--safe-top));left:max(10px,var(--safe-left));right:max(10px,var(--safe-right)); }

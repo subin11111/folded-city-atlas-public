@@ -4,7 +4,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {createCampusFrame,insideRing,ringCentre} from './campus-data.js';
 import {createDisplayTerrain} from './campus-terrain.js';
 import {appearanceFor} from './campus-appearance.js';
-import {createWorldMap} from './world-map.js?v=mobile-clean-1';
+import {createWorldMap} from './world-map.js?v=native-touch-1';
 
 export async function createCampusScene(container,{campus,map,navigation,places,onMode,onBuilding,onLoading,onError,onEnterBuilding,onWalkLook,onMapRegion,onMapInteract}) {
   const surface=createDisplayTerrain(campus);

@@ -1,0 +1,195 @@
+{
+  "base": "http://127.0.0.1:8791/",
+  "engine": "Edge Chromium mobile touch dispatch, not hardware Safari toolbar automation",
+  "cases": [
+    {
+      "name": "initial-native-scroll",
+      "scrollY": 0,
+      "mode": "page",
+      "canvasTouchAction": "pan-y",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07700484212114,
+        37.5423274358984
+      ],
+      "bearing": -32,
+      "zoom": 14.5,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "first-map-swipe-scrolls-document",
+      "scrollY": 240,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07700484212114,
+        37.5423274358984
+      ],
+      "bearing": -32,
+      "zoom": 14.5,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "next-one-finger-swipe-pans-map",
+      "scrollY": 240,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.0782148070773,
+        37.53807226139466
+      ],
+      "bearing": -32,
+      "zoom": 14.5,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "two-finger-rotate-and-zoom",
+      "scrollY": 240,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07804588352019,
+        37.538124130634884
+      ],
+      "bearing": -62.71524882290418,
+      "zoom": 14.868543673839298,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "sheet-drag-collapses",
+      "scrollY": 240,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07804588352019,
+        37.538124130634884
+      ],
+      "bearing": -62.71524882290418,
+      "zoom": 14.868543673839298,
+      "sheet": "collapsed",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "sheet-drag-expands",
+      "scrollY": 240,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07804588352019,
+        37.538124130634884
+      ],
+      "bearing": -62.71524882290418,
+      "zoom": 14.868543673839298,
+      "sheet": "expanded",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "root-top-restores-native-swipe",
+      "scrollY": 0,
+      "mode": "page",
+      "canvasTouchAction": "pan-y",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07804588352019,
+        37.538124130634884
+      ],
+      "bearing": -62.71524882290418,
+      "zoom": 14.868543673839298,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "list-swipe-reaches-root",
+      "scrollY": 197,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07804588352019,
+        37.538124130634884
+      ],
+      "bearing": -62.71524882290418,
+      "zoom": 14.868543673839298,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "photo-vertical-swipe-is-native",
+      "scrollY": 185,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.0779306445537,
+        37.5418436380417
+      ],
+      "bearing": -138.07843455508942,
+      "zoom": 18.409052284741065,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 760,
+      "viewport": 760
+    },
+    {
+      "name": "visible-height-reflows",
+      "scrollY": 185,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07679431626252,
+        37.542594573931936
+      ],
+      "bearing": -32,
+      "zoom": 14.5,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 650,
+      "viewport": 650
+    },
+    {
+      "name": "desktop-keeps-normal-map-gestures",
+      "scrollY": 0,
+      "mode": "map",
+      "canvasTouchAction": "none",
+      "touchZoomEnabled": true,
+      "centre": [
+        127.07701201559394,
+        37.5423183334015
+      ],
+      "bearing": -32,
+      "zoom": 14.74662586341284,
+      "sheet": "medium",
+      "frameTop": 0,
+      "frameBottom": 0,
+      "viewport": 800
+    }
+  ],
+  "errors": [],
+  "photoTouchAction": "pan-y pinch-zoom"
+}
