@@ -1,0 +1,20 @@
+{
+  "figure": "five-stage-pipeline.png",
+  "report_figure": "five-stage-pipeline-compact.png",
+  "purpose": "Explain five SLAM functions using the recorded acquisition configuration and the separate offline processing stages.",
+  "new_estimation_experiment": false,
+  "raw_imu_resynchronized_or_reintegrated_offline": false,
+  "acquisition_evidence": "capture-pipeline.json",
+  "raw_rgbd_evidence": "manifest.json",
+  "recorded_features": "capture-stored-features.png",
+  "recorded_pose_comparison": "capture-stored-posegraph.png",
+  "offline_processing_order": "processing-sequence.png",
+  "local_ba_status": "Stored acquisition setting plus a separate offline RGB-D BA comparison, not asserted to generate final J04.",
+  "global_map_status": "Selected poses reproject the original depth observations. No new GNSS, PDR or geographic alignment result is claimed.",
+  "sources": [
+    "https://doi.org/10.1002/rob.21831",
+    "https://github.com/introlab/rtabmap/discussions/1155",
+    "https://github.com/introlab/rtabmap/blob/master/corelib/include/rtabmap/core/Parameters.h",
+    "https://doi.org/10.1007/3-540-44480-7_21"
+  ]
+}
