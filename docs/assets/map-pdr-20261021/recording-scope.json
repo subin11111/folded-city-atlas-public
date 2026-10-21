@@ -1,0 +1,155 @@
+{
+  "source_zip_sha256": "26e85c7bfb8cbbf7986b83d67b3aa249b7332b8224648cd1f6195bb4381f525e",
+  "duration_s": 112.01044213867188,
+  "streams": {
+    "AccelerometerUncalibrated": {
+      "samples": 11230,
+      "start_s": 0.0657578125,
+      "end_s": 112.01044213867188
+    },
+    "Gyroscope": {
+      "samples": 11227,
+      "start_s": 0.09566259765625,
+      "end_s": 112.00047412109375
+    },
+    "Gravity": {
+      "samples": 11227,
+      "start_s": 0.09566259765625,
+      "end_s": 112.00047412109375
+    },
+    "Orientation": {
+      "samples": 11227,
+      "start_s": 0.09566259765625,
+      "end_s": 112.00047412109375
+    },
+    "Barometer": {
+      "samples": 101,
+      "start_s": 2.6529140625,
+      "end_s": 108.30891918945312
+    },
+    "Location": {
+      "samples": 90,
+      "start_s": -8.68668896484375,
+      "end_s": 99.5986103515625
+    }
+  },
+  "gyroscope_median_hz": 100.31839333833466,
+  "photo_count": 11,
+  "photo_observations": [
+    {
+      "t": 20.139,
+      "place": "building exterior"
+    },
+    {
+      "t": 30.617,
+      "place": "outside the entrance doors"
+    },
+    {
+      "t": 40.149,
+      "place": "inside the lobby; CU sign"
+    },
+    {
+      "t": 50.24,
+      "place": "ascending the main staircase"
+    },
+    {
+      "t": 60.154,
+      "place": "upper main staircase"
+    },
+    {
+      "t": 70.295,
+      "place": "second-floor PRIME HALL frontage"
+    },
+    {
+      "t": 110.272,
+      "place": "second-floor corridor"
+    }
+  ],
+  "actual_entry_crossing_photo_bracket_s": [
+    30.617,
+    40.149
+  ],
+  "entry_initialization_assumption_s": 30.617,
+  "entry_button_click_recorded": false,
+  "stairs_barometer_ascent_interval_s": [
+    48.5757434,
+    68.841865234375
+  ],
+  "barometer_lower_window_s": [
+    42,
+    47
+  ],
+  "barometer_upper_window_s": [
+    75,
+    99
+  ],
+  "barometer_floor_rise_m": 4.1827921867370605,
+  "barometer_is_independent_position_ground_truth": false,
+  "replay_skips_pre_entry_samples": true,
+  "replay_disables_pedestrian_steps_on_stairs": true,
+  "second_floor_reset_s": 68.841865234375,
+  "second_floor_reset_is_assumed_confirmation_not_automatic_detection": true,
+  "segments": [
+    {
+      "label": "entry-initialized interval",
+      "start_s": 30.617,
+      "end_s": 48.5757434,
+      "step_candidates": 30,
+      "position_updates": 9,
+      "updates_are_not_position_accuracy": true
+    },
+    {
+      "label": "entry photo bracket subset",
+      "start_s": 30.617,
+      "end_s": 40.149,
+      "step_candidates": 15,
+      "position_updates": 9,
+      "updates_are_not_position_accuracy": true
+    },
+    {
+      "label": "confirmed lobby photo until stairs subset",
+      "start_s": 40.149,
+      "end_s": 48.5757434,
+      "step_candidates": 15,
+      "position_updates": 0,
+      "updates_are_not_position_accuracy": true
+    },
+    {
+      "label": "stairs: updates deliberately disabled",
+      "start_s": 48.5757434,
+      "end_s": 68.841865234375,
+      "step_candidates": 0,
+      "position_updates": 0,
+      "updates_are_not_position_accuracy": true
+    },
+    {
+      "label": "upper floor after reset",
+      "start_s": 68.841865234375,
+      "end_s": 112.01144213867188,
+      "step_candidates": 67,
+      "position_updates": 57,
+      "updates_are_not_position_accuracy": true
+    }
+  ],
+  "ekf_upper_floor": {
+    "steps": 67,
+    "moved": 21,
+    "rejected": 46
+  },
+  "pf_upper_floor_uncertainty_above_7m": 4,
+  "location_samples_in_session": 89,
+  "cached_location_samples_before_start": 1,
+  "last_location_s": 99.5986103515625,
+  "max_location_gap_s": 13.001485839843738,
+  "location_tail_without_new_sample_s": 12.411831787109378,
+  "independent_position_reference_available": false,
+  "native_sensor_recording_not_safari_field_test": true,
+  "new_filter_experiment": false,
+  "map_registration_changed": false,
+  "module_hashes_match_saved_comparison": {
+    "map-particle-filter": true,
+    "gravity-heading": true,
+    "walking-sensors": true,
+    "indoor-position": true
+  }
+}

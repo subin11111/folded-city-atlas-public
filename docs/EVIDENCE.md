@@ -6,6 +6,10 @@
 
 ## 실험 문서
 
+- [개발 보조의 활용 AI·입력 프롬프트·결과](ai_usage.md)
+
+- [실외부터 2층까지의 원 기록과 구간별 추정 범위](assets/map-pdr-20261021/recording-scope.json)
+
 - [보건실 위치 대조와 공동 출입구 길안내](assets/health-room-20261021/README.md)
 
 - [모바일 문서 스크롤과 지도 크기](assets/mobile-safari-20261021/README.md)
