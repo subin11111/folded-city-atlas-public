@@ -427,7 +427,7 @@ export async function createCampusScene(container,{campus,map,navigation,places,
     turnWalk(delta){if(walkState){if(animation)camera.position.set(walkState.position[0],walkState.position[1],walkState.position[2]+walkState.eye);animation=null;walkState.yaw+=delta;onWalkLook?.(walkState.yaw);}},
     getWalkYaw(){return walkState?.yaw||0;},
     focusRoute(){if(route.length){const bounds=new THREE.Box3().setFromPoints(route.map(p=>new THREE.Vector3(...p.position))).expandByScalar(6);fly(bounds,new THREE.Vector3(38,-48,49));}},
-    moveMarker(p){marker.position.set(p[0],p[1],p[2]+.3);marker.visible=mode==='indoor';},
+    moveMarker(p){marker.position.set(p[0],p[1],p[2]+.3);marker.visible=mode==='indoor';world?.repaint();},
     zoom(factor){animation=null;if(mode!=='walk'&&world?.ready)world.zoom(factor);else camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);},
     reset(){mode==='indoor'?showIndoor():showCampus();},
     // Read-only rendering evidence and deterministic viewpoints for screenshot checks.

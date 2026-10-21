@@ -4,6 +4,7 @@ import {createWalkController} from './walk-controller.js?v=health-room-1';
 import {createBottomSheet} from './sheet-controller.js?v=native-touch-1';
 import {createLocationController} from './location-controller.js?v=mobile-clean-1';
 import {dockMobileControl} from './mobile-layout.js';
+import {createRoutePlayback} from './route-playback.js';
 import {applyCampusLabels,campusBuildingMatches} from './campus-data.js';
 const bottomSheet=createBottomSheet();
 const mobileMapControls=document.createElement('section');mobileMapControls.id='menuMapControls';mobileMapControls.className='menu-map-controls';
@@ -12,6 +13,12 @@ document.querySelector('.evidence-body').insertBefore(mobileMapControls,document
 for(const id of ['topView','mapControls'])dockMobileControl($(id));
 const svgNS = 'http://www.w3.org/2000/svg';
 const state = { level: 'all', view: '3d', sceneMode:'campus', selectedBuilding:null, route: null, photoIndex: 0, progress: 0, playing: false, box: [-40,-25,65,60], three: null, threeLoading:null };
+const routePlayback=createRoutePlayback({state,onProgress:setProgress,onPlaying(playing){
+  $('playButton').textContent=playing?'Ⅱ':'▶';
+  $('playButton').setAttribute('aria-label',playing?'경로 미리보기 일시정지':'경로 미리보기 재생');
+  $('playButton').setAttribute('aria-pressed',String(playing));
+}});
+document.addEventListener('visibilitychange',routePlayback.resetClock);
 const escapeHTML = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const [map, places, graph, photos, navigation, campusSource] = await Promise.all([
   'map','catalog','graph','photos','navigation','campus_source'
@@ -138,7 +145,7 @@ async function findRoute() {
   const token=++routeRequest,liveStart=location.indoorSnapshot();showJourney('route');updateDestinationPreview();
   location.setGoal($('destination').value);
   if(walker.isActive())walker.exit();
-  $('routeButton').disabled=true;$('journeyPanel').setAttribute('aria-busy','true');state.playing=false;$('playButton').textContent='▶';
+  $('routeButton').disabled=true;$('journeyPanel').setAttribute('aria-busy','true');routePlayback.setPlaying(false);
   $('routeResult').innerHTML='<p class="route-note">경로를 찾고 있어요…</p>';
   try {
     const query=new URLSearchParams({start:$('start').value,end:$('destination').value,mode:'walk',policy:routePolicy()});
@@ -203,8 +210,7 @@ function setProgress(value) {
   element('circle',{cx:p[0],cy:-p[1],r:.28,fill:'#127a5c'},$('replayLayer'));
   state.currentNode=route[index].id;state.three?.moveMarker(p);
 }
-let last=0;
-function playback(time) {if(state.playing&&state.route?.found){setProgress(Math.min(100,state.progress+(time-last)/500));if(state.progress>=100){state.playing=false;$('playButton').textContent='▶';}}last=time;requestAnimationFrame(playback);}
+function playback(time) {routePlayback.tick(time,document.hidden);requestAnimationFrame(playback);}
 requestAnimationFrame(playback);
 
 function updateSceneHUD() {
@@ -265,7 +271,7 @@ document.querySelectorAll('.dialog-close').forEach(b=>b.addEventListener('click'
 $('previousPhoto').addEventListener('click',()=>showPhoto(state.photoIndex-1));$('nextPhoto').addEventListener('click',()=>showPhoto(state.photoIndex+1));
 $('routePhoto').addEventListener('click',()=>showNearestPhoto(state.currentNode||state.route?.route[0]?.id));
 $('routeProgress').addEventListener('input',e=>setProgress(e.target.value));
-$('playButton').addEventListener('click',()=>{if(state.progress>=100)setProgress(0);state.playing=!state.playing;$('playButton').textContent=state.playing?'Ⅱ':'▶';});
+$('playButton').addEventListener('click',()=>{if(state.progress>=100)setProgress(0);routePlayback.setPlaying(!state.playing);});
 function zoom(factor){const b=state.box;const w=Math.max(5,Math.min(400,b[2]*factor)),h=w*b[3]/b[2];state.box=[b[0]+(b[2]-w)/2,b[1]+(b[3]-h)/2,w,h];applyBox();}
 $('zoomIn').addEventListener('click',()=>state.view==='3d'?state.three?.zoom(.8):zoom(.8));
 $('zoomOut').addEventListener('click',()=>state.view==='3d'?state.three?.zoom(1.25):zoom(1.25));
